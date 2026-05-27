@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/wavelength-frequency",
+  "title": {
+    "en": "Wavelength × Frequency = Speed",
+    "ko": "파장과 주파수의 곱은 속도"
+  },
+  "subtitle": {
+    "en": "stretch a wave and watch its frequency drop to keep the speed constant",
+    "ko": "파장을 늘리며 주파수가 함께 줄어 속도가 일정하게 유지됨을 본다"
+  },
+  "description": {
+    "en": "Stretch a propagating wave and watch its frequency drop in exact reciprocal — the c = fλ relation that connects every wavelength of light to its frequency.",
+    "ko": "진행하는 파동의 파장을 늘리면 주파수가 정확히 그 역수로 줄어든다 — 모든 빛의 파장과 주파수를 묶는 c = fλ 관계다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/sine-anatomy"],
+  "leads_to": [],
+  "see_also": ["em-fundamentals/em-spectrum-tour"],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§2.3" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["wavelength frequency", "c = f lambda", "wave speed", "interactive"],
+  "estimated_hours": 5,
+  "status": "shipped"
+}

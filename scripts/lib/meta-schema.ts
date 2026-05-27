@@ -33,7 +33,9 @@ export interface MetaV2 {
 }
 
 export const SITE = {
-  origin: 'https://encyclopedia.color',
+  // Live production origin. Override later via a custom domain by changing this constant
+  // and re-running `npm run inject-meta`.
+  origin: 'https://encyclopedia-of-color.vercel.app',
   name_en: 'Interactive Encyclopedia of Color',
   name_ko: '색채과학 인터랙티브 백과사전',
   twitter_handle: '@encyclopediacolor',

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/phase-shifter",
+  "title": {
+    "en": "Phase Shifter",
+    "ko": "위상 시프터"
+  },
+  "subtitle": {
+    "en": "slide a wave horizontally and watch its phase rotate around the unit circle",
+    "ko": "정현파를 가로로 미끄러뜨리며 위상이 단위원 위를 회전하는 모습을 본다"
+  },
+  "description": {
+    "en": "Slide a sine wave horizontally in fractions of a wavelength and watch its phase angle traverse the unit circle — the same mapping that gives every complex amplitude in optics.",
+    "ko": "정현파를 파장의 분수 단위로 가로로 미끄러뜨리며 위상각이 단위원 위를 돌아가는 모습을 본다. 광학의 모든 복소 진폭이 같은 사상을 따른다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/sine-anatomy"],
+  "leads_to": ["wave-fundamentals/superposition-basic"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§2.2" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["phase shift", "wave", "unit circle", "interactive"],
+  "estimated_hours": 6,
+  "status": "shipped"
+}

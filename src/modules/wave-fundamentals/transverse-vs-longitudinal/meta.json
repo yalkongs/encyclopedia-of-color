@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/transverse-vs-longitudinal",
+  "title": {
+    "en": "Transverse vs Longitudinal Waves",
+    "ko": "횡파와 종파"
+  },
+  "subtitle": {
+    "en": "compare a wiggling string and a compressing spring side by side",
+    "ko": "흔들리는 줄과 압축되는 용수철을 나란히 비교한다"
+  },
+  "description": {
+    "en": "Compare a string wave that oscillates across its motion with a spring wave that oscillates along its motion — the same distinction that separates light (transverse) from sound (longitudinal).",
+    "ko": "운동 방향과 수직으로 진동하는 줄의 파동과, 운동 방향을 따라 압축·팽창하는 용수철의 파동을 비교한다. 빛(횡파)과 소리(종파)를 구분하는 같은 차이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["wave-polarization/polarization-states"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§2.4" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["transverse wave", "longitudinal wave", "sound vs light", "interactive"],
+  "estimated_hours": 6,
+  "status": "shipped"
+}

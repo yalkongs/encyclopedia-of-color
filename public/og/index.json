@@ -95,6 +95,11 @@
     "square": "og/wave-fundamentals--doppler-effect.sq.png"
   },
   {
+    "id": "wave-fundamentals/phase-shifter",
+    "og": "og/wave-fundamentals--phase-shifter.png",
+    "square": "og/wave-fundamentals--phase-shifter.sq.png"
+  },
+  {
     "id": "wave-fundamentals/sine-anatomy",
     "og": "og/wave-fundamentals--sine-anatomy.png",
     "square": "og/wave-fundamentals--sine-anatomy.sq.png"
@@ -110,9 +115,19 @@
     "square": "og/wave-fundamentals--superposition-basic.sq.png"
   },
   {
+    "id": "wave-fundamentals/transverse-vs-longitudinal",
+    "og": "og/wave-fundamentals--transverse-vs-longitudinal.png",
+    "square": "og/wave-fundamentals--transverse-vs-longitudinal.sq.png"
+  },
+  {
     "id": "wave-fundamentals/wave-packet",
     "og": "og/wave-fundamentals--wave-packet.png",
     "square": "og/wave-fundamentals--wave-packet.sq.png"
+  },
+  {
+    "id": "wave-fundamentals/wavelength-frequency",
+    "og": "og/wave-fundamentals--wavelength-frequency.png",
+    "square": "og/wave-fundamentals--wavelength-frequency.sq.png"
   },
   {
     "id": "wave-interference/soap-bubble",
