@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Shadow Size vs Light Distance — slide the lamp toward an object and w…</title>
+  <meta name="description" content="Slide the lamp toward or away from a small object and watch its shadow stretch and shrink on the wall — geometric optics at its most everyday scale.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/light-propagation/shadow-size/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Shadow Size vs Light Distance">
+  <meta property="og:description"    content="Slide the lamp toward or away from a small object and watch its shadow stretch and shrink on the wall — geometric optics at its most everyday scale.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/light-propagation/shadow-size/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/light-propagation--shadow-size.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Shadow Size vs Light Distance.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Shadow Size vs Light Distance">
+  <meta name="twitter:description"   content="Slide the lamp toward or away from a small object and watch its shadow stretch and shrink on the wall — geometric optics at its most everyday scale.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/light-propagation--shadow-size.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Shadow Size vs Light Distance.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Shadow Size vs Light Distance","alternateName":"light-propagation/shadow-size","description":"Slide the lamp toward or away from a small object and watch its shadow stretch and shrink on the wall — geometric optics at its most everyday scale.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"shadow, geometric optics, interactive","url":"https://encyclopedia.color/modules/light-propagation/shadow-size/","image":"https://encyclopedia.color/og/light-propagation--shadow-size.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-propagation/shadow-size">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Shadow Size vs Light Distance</h1>
+      <p class="module-subtitle">slide the lamp toward an object and watch its shadow stretch on the wall</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The closer the light, the larger the shadow — because tangent rays diverge from a nearer source.
+        </p>
+        <div class="math-block" data-tex="r_{\text{shadow}} \;=\; r_{\text{obj}} \cdot \dfrac{d_{\text{lamp}} + d_{\text{wall}}}{d_{\text{lamp}}}"></div>
+        <p class="zone-guide">
+          Slide the lamp position and the object radius. The umbra on the wall scales by the magnification ratio shown in red.
+        </p>
+
+        <enc-slider id="d" label="Lamp distance d (px)" min="40" max="380" step="2" value="120" unit="px"></enc-slider>
+        <enc-slider id="r" label="Object radius r (px)" min="6" max="80" step="1" value="26" unit="px"></enc-slider>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Shadow geometry"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer data-refs="Hecht, Optics 5e §5">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Encyclopedia of Color</title>
+  <meta name="description" content="A museum-grade laboratory of color science. 518 interactive modules across 12 domains.">
+  <link rel="stylesheet" href="./core/styles/base.css">
+  <style>
+    .landing {
+      max-width: 980px;
+      margin: var(--space-6) auto;
+      padding: 0 var(--space-5);
+    }
+    .landing-header {
+      text-align: center;
+      padding: var(--space-5) 0 var(--space-6) 0;
+      border-bottom: 1px solid var(--border-2);
+    }
+    .landing h1 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--fs-40);
+      letter-spacing: -0.01em;
+      margin-bottom: var(--space-2);
+      color: var(--text-0);
+    }
+    .landing .eyebrow {
+      font-family: var(--font-mono);
+      font-size: var(--fs-12);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--gold-deep);
+      margin-bottom: var(--space-3);
+    }
+    .landing .tagline {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: var(--fs-20);
+      color: var(--text-1);
+      max-width: 60ch;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .landing .intro {
+      max-width: 60ch;
+      margin: var(--space-5) auto;
+      font-family: var(--font-serif);
+      font-size: var(--fs-16);
+      line-height: var(--lh-body);
+      color: var(--text-1);
+    }
+    h2.section-title {
+      font-family: var(--font-serif);
+      font-size: var(--fs-25);
+      font-weight: 500;
+      margin: var(--space-6) 0 var(--space-3) 0;
+      color: var(--text-0);
+      border-bottom: 1px solid var(--border-1);
+      padding-bottom: var(--space-2);
+    }
+    .section-meta {
+      font-family: var(--font-mono);
+      font-size: var(--fs-12);
+      color: var(--gold-deep);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-3);
+    }
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: var(--space-3);
+      margin-top: var(--space-3);
+    }
+    .module-card {
+      display: block;
+      padding: var(--space-4);
+      border: 1px solid var(--border-2);
+      background: var(--bg-1);
+      text-decoration: none;
+      color: var(--text-0);
+      transition: border-color var(--motion-fast) var(--ease-standard),
+                  background var(--motion-fast) var(--ease-standard);
+    }
+    .module-card:hover {
+      border-color: var(--gold-deep);
+      background: var(--bg-2);
+    }
+    .module-card .card-meta {
+      font-family: var(--font-mono);
+      font-size: var(--fs-12);
+      color: var(--gold-deep);
+      letter-spacing: 0.04em;
+      margin-bottom: var(--space-2);
+    }
+    .module-card .card-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--fs-20);
+      color: var(--text-0);
+      margin-bottom: var(--space-1);
+      line-height: 1.3;
+    }
+    .module-card .card-sub {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: var(--fs-14);
+      color: var(--text-1);
+      line-height: 1.5;
+    }
+    .landing-footer {
+      margin-top: var(--space-6);
+      padding-top: var(--space-4);
+      padding-bottom: var(--space-5);
+      border-top: 1px solid var(--border-1);
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: var(--fs-14);
+      color: var(--text-2);
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="landing">
+  <main class="landing">
+    <header class="landing-header">
+      <div class="eyebrow">Volume Ⅰ · Optics & Vision</div>
+      <h1>Interactive Encyclopedia of Color</h1>
+      <p class="tagline">A museum-grade laboratory of color science — every concept manipulated, never narrated.</p>
+    </header>
+
+    <p class="intro">
+      The encyclopedia is composed of 518 independent interactive modules across 12 domains: physical optics, visual physiology, colourant chemistry, colorimetry, design theory, display engineering, print reproduction, anthropology, biology, imaging, computation, and cognition. What follows is the first cohort of golden modules — the visual and editorial baseline against which every successor will be measured.
+    </p>
+
+    <h2 class="section-title">Golden Modules — Phase Zero</h2>
+    <div class="section-meta">five prototypes · two headliners · two references · one atom</div>
+
+    <div class="module-grid">
+      <a class="module-card" href="./modules/wave-fundamentals/sine-anatomy/">
+        <div class="card-meta">L1 · atom · D1 Optics</div>
+        <div class="card-title">Anatomy of a Sine Wave</div>
+        <div class="card-sub">drag three sliders — amplitude, wavelength, phase — and watch each parameter reshape the same curve</div>
+      </a>
+      <a class="module-card" href="./modules/refraction-snell/snells-law/">
+        <div class="card-meta">L3 · reference · D1 Optics</div>
+        <div class="card-title">Snell's Law Refractometer</div>
+        <div class="card-sub">drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time</div>
+      </a>
+      <a class="module-card" href="./modules/wave-interference/soap-bubble/">
+        <div class="card-meta">L3 · reference · D1 Optics</div>
+        <div class="card-title">Soap Bubble Thin-Film Interference</div>
+        <div class="card-sub">slide the film thickness and watch the reflected colour cycle through the structural rainbow</div>
+      </a>
+      <a class="module-card" href="./modules/particle-scattering/sky-color/">
+        <div class="card-meta">L2 · headliner · D1 Optics</div>
+        <div class="card-title">Why the Sky Is Blue</div>
+        <div class="card-sub">move the sun across the sky and watch Rayleigh scattering paint the daytime blue and the sunset red</div>
+      </a>
+      <a class="module-card" href="./modules/color-vision-deficiency/cvd-everyday/">
+        <div class="card-meta">L1 · headliner · D2 Vision</div>
+        <div class="card-title">Everyday Color Confusion</div>
+        <div class="card-sub">toggle between trichromat and dichromat views to see which colour pairs collapse into the same percept</div>
+      </a>
+    </div>
+
+    <footer class="landing-footer">
+      "An online sanctuary of color science — from the physical origin of photons to the neural mechanics of human consciousness."
+    </footer>
+  </main>
+</body>
+</html>

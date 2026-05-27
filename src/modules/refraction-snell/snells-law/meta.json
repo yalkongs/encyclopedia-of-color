@@ -1,0 +1,35 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/snells-law",
+  "title": {
+    "en": "Snell's Law Refractometer",
+    "ko": "스넬의 법칙 굴절계"
+  },
+  "subtitle": {
+    "en": "drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance",
+    "ko": "입사 광선을 끌어 움직이며 n₁ sin θ₁ = n₂ sin θ₂의 재균형을 관찰한다"
+  },
+  "description": {
+    "en": "Drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time, including total internal reflection past the critical angle.",
+    "ko": "입사 광선을 끌어 움직이면 n₁ sin θ₁ = n₂ sin θ₂ 관계가 실시간으로 재균형을 이루며, 임계각을 넘으면 전반사로 전환된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["total-internal-reflection/critical-angle", "wave-polarization/brewsters-angle"],
+  "see_also": ["prism-dispersion/cauchy-formula"],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§4.4" },
+    { "source": "Born & Wolf, Principles of Optics 7e", "section": "§1.5" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["snell's law", "refraction", "critical angle", "interactive optics"],
+  "estimated_hours": 40,
+  "status": "shipped"
+}

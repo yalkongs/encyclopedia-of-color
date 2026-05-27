@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Rayleigh Scattering Curve — compare scattering intensity at violet vs…</title>
+  <meta name="description" content="Compare scattering intensity at the violet end versus the red end of the visible band and see why blue dominates the sky — Rayleigh's 1/λ⁴ law in raw form.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/particle-scattering/rayleigh-spectrum/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Rayleigh Scattering Curve">
+  <meta property="og:description"    content="Compare scattering intensity at the violet end versus the red end of the visible band and see why blue dominates the sky — Rayleigh's 1/λ⁴ law in raw form.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/particle-scattering/rayleigh-spectrum/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/particle-scattering--rayleigh-spectrum.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Rayleigh Scattering Curve.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Rayleigh Scattering Curve">
+  <meta name="twitter:description"   content="Compare scattering intensity at the violet end versus the red end of the visible band and see why blue dominates the sky — Rayleigh's 1/λ⁴ law in raw form.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/particle-scattering--rayleigh-spectrum.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Rayleigh Scattering Curve.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Rayleigh Scattering Curve","alternateName":"particle-scattering/rayleigh-spectrum","description":"Compare scattering intensity at the violet end versus the red end of the visible band and see why blue dominates the sky — Rayleigh's 1/λ⁴ law in raw form.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"rayleigh scattering, 1/lambda^4, interactive","url":"https://encyclopedia.color/modules/particle-scattering/rayleigh-spectrum/","image":"https://encyclopedia.color/og/particle-scattering--rayleigh-spectrum.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="particle-scattering/rayleigh-spectrum">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Rayleigh Scattering Curve</h1>
+      <p class="module-subtitle">slide the probe across the visible band and read scattering intensity at each wavelength</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Rayleigh scattering rises sharply toward shorter wavelengths because the scattering cross-section grows as 1/λ⁴.
+        </p>
+        <div class="math-block" data-tex="I(\lambda) \;\propto\; \dfrac{1}{\lambda^{4}}"></div>
+        <p class="zone-guide">
+          Slide the probe λ. Violet near 400 nm scatters about 9× harder than red near 700 nm — the raw mathematical reason the sky is blue.
+        </p>
+
+        <enc-slider id="lambda" label="Probe wavelength λ (nm)" min="380" max="780" step="1" value="450" unit="nm"></enc-slider>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Rayleigh 1/λ⁴ curve"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.5.2 (Rayleigh Scattering)">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

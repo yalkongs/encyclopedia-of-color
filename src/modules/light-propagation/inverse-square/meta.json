@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-propagation/inverse-square",
+  "title": {
+    "en": "Inverse Square Law",
+    "ko": "빛의 역제곱 법칙"
+  },
+  "subtitle": {
+    "en": "slide the sensor away from the lamp and watch illuminance fall as 1/r²",
+    "ko": "센서를 광원에서 멀리할수록 조도가 1/r²로 감소함을 본다"
+  },
+  "description": {
+    "en": "Slide the sensor away from a point light source and watch illuminance fall as the inverse square of distance — the same law that dims candles, the sun, and stars.",
+    "ko": "점광원에서 센서를 멀리하면 조도가 거리의 제곱에 반비례하여 줄어듦을 관찰한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "light-propagation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["planckian-radiation/photometry-geometry"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.5" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["inverse square law", "illuminance", "photometry", "interactive"],
+  "estimated_hours": 20,
+  "status": "shipped"
+}

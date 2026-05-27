@@ -1,0 +1,9 @@
+.canvas-viewport { padding: 0; }
+kbd {
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  padding: 1px 4px;
+  border: 1px solid var(--border-2);
+  border-radius: 2px;
+  background: var(--bg-2);
+}

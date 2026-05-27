@@ -1,0 +1,19 @@
+# Skip large or local-only artefacts when uploading to Vercel
+node_modules/
+node_modules.nosync/
+.vite/
+.vercel/
+dist/
+public/og-cache/
+
+# Documentation (not needed for the build)
+*.md
+!README.md
+
+# Local scripts that Vercel doesn't run
+scripts/setup-nosync.sh
+scripts/predownload-icloud.mjs
+scripts/og-server.ts
+
+.DS_Store
+*.log

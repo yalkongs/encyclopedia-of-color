@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Critical Angle for Total Internal Reflection — tilt the laser inside…</title>
+  <meta name="description" content="Tilt a laser inside glass or water and find the exact angle past which it can no longer escape — the critical angle that bounces light along an optical fibre.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/total-internal-reflection/critical-angle/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Critical Angle for Total Internal Reflection">
+  <meta property="og:description"    content="Tilt a laser inside glass or water and find the exact angle past which it can no longer escape — the critical angle that bounces light along an optical fibre.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/total-internal-reflection/critical-angle/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/total-internal-reflection--critical-angle.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Critical Angle for Total Internal Reflection.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Critical Angle for Total Internal Reflection">
+  <meta name="twitter:description"   content="Tilt a laser inside glass or water and find the exact angle past which it can no longer escape — the critical angle that bounces light along an optical fibre.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/total-internal-reflection--critical-angle.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Critical Angle for Total Internal Reflection.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Critical Angle for Total Internal Reflection","alternateName":"total-internal-reflection/critical-angle","description":"Tilt a laser inside glass or water and find the exact angle past which it can no longer escape — the critical angle that bounces light along an optical fibre.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"critical angle, total internal reflection, optical fiber, interactive","url":"https://encyclopedia.color/modules/total-internal-reflection/critical-angle/","image":"https://encyclopedia.color/og/total-internal-reflection--critical-angle.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="total-internal-reflection/critical-angle">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Critical Angle for Total Internal Reflection</h1>
+      <p class="module-subtitle">tilt the laser inside glass and find the exact angle where it can no longer escape</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          When light travels from a denser to a rarer medium, beyond a certain angle it cannot refract — it reflects entirely back inside.
+        </p>
+        <div class="math-block" data-tex="\theta_{c} \;=\; \arcsin\!\left(\dfrac{n_{2}}{n_{1}}\right)"></div>
+        <p class="zone-guide">
+          Slide θ₁ across the critical angle. The refracted slate ray vanishes and a crimson reflection takes over — exactly the principle that traps light inside an optical fibre.
+        </p>
+
+        <enc-slider id="theta" label="Incident angle θ₁ (°)" min="0" max="89" step="0.5" value="35" unit="°"></enc-slider>
+        <enc-slider id="n1" label="Dense medium n₁" min="1.0" max="2.5" step="0.01" value="1.50"></enc-slider>
+        <enc-slider id="n2" label="Rare medium n₂" min="1.0" max="2.0" step="0.01" value="1.00"></enc-slider>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Critical angle geometry"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.7 (Total Internal Reflection)">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

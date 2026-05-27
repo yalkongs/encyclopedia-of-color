@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Wave Superposition — slide the phase difference between two sine wave…</title>
+  <meta name="description" content="Slide the phase difference between two sine waves of equal amplitude and watch the sum oscillate between constructive and destructive interference.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/wave-fundamentals/superposition-basic/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Wave Superposition">
+  <meta property="og:description"    content="Slide the phase difference between two sine waves of equal amplitude and watch the sum oscillate between constructive and destructive interference.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/wave-fundamentals/superposition-basic/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/wave-fundamentals--superposition-basic.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Wave Superposition.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Wave Superposition">
+  <meta name="twitter:description"   content="Slide the phase difference between two sine waves of equal amplitude and watch the sum oscillate between constructive and destructive interference.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/wave-fundamentals--superposition-basic.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Wave Superposition.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Wave Superposition","alternateName":"wave-fundamentals/superposition-basic","description":"Slide the phase difference between two sine waves of equal amplitude and watch the sum oscillate between constructive and destructive interference.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"wave superposition, interference, sine wave, interactive","url":"https://encyclopedia.color/modules/wave-fundamentals/superposition-basic/","image":"https://encyclopedia.color/og/wave-fundamentals--superposition-basic.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-fundamentals/superposition-basic">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Wave Superposition</h1>
+      <p class="module-subtitle">slide the phase difference between two sine waves and watch them add</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Two waves of the same frequency add point by point; their sum oscillates between full reinforcement and full cancellation.
+        </p>
+        <div class="math-block" data-tex="y(x) \;=\; \sin(kx) \;+\; \sin(kx + \varphi)"></div>
+        <p class="zone-guide">
+          Slide the phase difference Δφ from 0° to 180°. Watch the bottom (sum) wave grow to double amplitude at 0° and vanish at 180°.
+        </p>
+
+        <enc-slider id="phi" label="Phase difference Δφ (°)" min="0" max="360" step="1" value="60" unit="°"></enc-slider>
+        <enc-slider id="A" label="Amplitude A (px)" min="10" max="80" step="1" value="50" unit="px"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (px)" min="60" max="500" step="2" value="220" unit="px"></enc-slider>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Two sine waves and their sum"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer data-refs="Hecht, Optics 5e §2.5 (Superposition)">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

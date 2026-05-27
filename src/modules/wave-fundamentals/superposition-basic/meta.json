@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/superposition-basic",
+  "title": {
+    "en": "Wave Superposition",
+    "ko": "파동의 중첩"
+  },
+  "subtitle": {
+    "en": "slide the phase difference between two sine waves and see them add",
+    "ko": "두 정현파의 위상차를 움직이며 합쳐지는 모습을 본다"
+  },
+  "description": {
+    "en": "Slide the phase difference between two sine waves of equal amplitude and watch the sum oscillate between constructive and destructive interference.",
+    "ko": "동일한 진폭의 두 정현파 사이 위상차를 움직이며 보강·상쇄 간섭이 교차하는 합성파를 관찰한다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/sine-anatomy"],
+  "leads_to": ["wave-interference/superposition"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§2.5" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["wave superposition", "interference", "sine wave", "interactive"],
+  "estimated_hours": 18,
+  "status": "shipped"
+}

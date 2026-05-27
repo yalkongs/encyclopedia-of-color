@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Anatomy of a Sine Wave — drag amplitude, wavelength, and phase to res…</title>
+  <meta name="description" content="Drag amplitude, wavelength, and phase sliders to see how each parameter reshapes the same sine curve in real time.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/wave-fundamentals/sine-anatomy/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Anatomy of a Sine Wave">
+  <meta property="og:description"    content="Drag amplitude, wavelength, and phase sliders to see how each parameter reshapes the same sine curve in real time.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/wave-fundamentals/sine-anatomy/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/wave-fundamentals--sine-anatomy.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Anatomy of a Sine Wave.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Anatomy of a Sine Wave">
+  <meta name="twitter:description"   content="Drag amplitude, wavelength, and phase sliders to see how each parameter reshapes the same sine curve in real time.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/wave-fundamentals--sine-anatomy.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Anatomy of a Sine Wave.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Anatomy of a Sine Wave","alternateName":"wave-fundamentals/sine-anatomy","description":"Drag amplitude, wavelength, and phase sliders to see how each parameter reshapes the same sine curve in real time.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"sine wave, amplitude, wavelength, phase, interactive","url":"https://encyclopedia.color/modules/wave-fundamentals/sine-anatomy/","image":"https://encyclopedia.color/og/wave-fundamentals--sine-anatomy.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-fundamentals/sine-anatomy">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title" data-i18n="sine.title">Anatomy of a Sine Wave</h1>
+      <p class="module-subtitle" data-i18n="sine.subtitle">drag three sliders — amplitude, wavelength, phase — and watch each parameter reshape the same curve</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition" data-i18n="sine.definition">
+          Every periodic wave can be described by three numbers: how tall, how long, and where its cycle begins.
+        </p>
+        <div class="math-block" data-tex="y(x) = A\,\sin\!\left(\dfrac{2\pi x}{\lambda} + \varphi\right)"></div>
+        <p class="zone-guide" data-i18n="sine.guide">
+          Slide the amplitude to make the wave taller. Slide the wavelength to stretch one cycle wider. Slide the phase to shift the whole curve left or right.
+        </p>
+
+        <enc-slider id="amp" data-i18n-attr="label:sine.amp" label="Amplitude A" min="10" max="120" step="1" value="60" unit="px"></enc-slider>
+        <enc-slider id="lambda" data-i18n-attr="label:sine.lambda" label="Wavelength λ (px)" min="40" max="500" step="1" value="200" unit="px"></enc-slider>
+        <enc-slider id="phase" data-i18n-attr="label:sine.phase" label="Phase φ (°)" min="-180" max="180" step="1" value="0" unit="°"></enc-slider>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Sine wave plot"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer
+      data-refs="Hecht, Optics 5e §2.1 (Wave Motion); CIE 015:2018">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

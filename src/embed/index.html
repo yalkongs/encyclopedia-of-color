@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Embed Demo — Interactive Encyclopedia of Color</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 880px; margin: 48px auto; padding: 0 24px; color: #1a1a2e; background: #f8f2e4; }
+    h1 { font-size: 32px; margin-bottom: 8px; }
+    h2 { font-size: 18px; margin-top: 48px; border-bottom: 1px solid rgba(26,26,46,.15); padding-bottom: 8px; }
+    pre { background: #efe4cb; padding: 12px 16px; overflow-x: auto; font-size: 12px; font-family: 'JetBrains Mono', monospace; border-left: 2px solid #8b6a2f; }
+    p { line-height: 1.6; }
+    .note { color: #5a5a6e; font-style: italic; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Embed Demo</h1>
+  <p>
+    A host site includes one <code>&lt;script&gt;</code> tag and then drops in any
+    <code>&lt;color-…&gt;</code> custom element. The iframe inside auto-resizes via the
+    <code>enc-iframe-resize</code> postMessage protocol.
+  </p>
+
+  <h2>Snell's Law — default state</h2>
+  <pre>&lt;script src="./loader.ts" type="module"&gt;&lt;/script&gt;
+&lt;color-snell-refraction&gt;&lt;/color-snell-refraction&gt;</pre>
+  <color-snell-refraction height="520"></color-snell-refraction>
+
+  <h2>Snell's Law — deep-state (θ₁ = 45°, n₂ = 1.50)</h2>
+  <pre>&lt;color-snell-refraction state="theta1=45&n2=1.50"&gt;&lt;/color-snell-refraction&gt;</pre>
+  <color-snell-refraction state="theta1=45&n2=1.50" height="520"></color-snell-refraction>
+
+  <h2>Sky Color — Korean locale</h2>
+  <pre>&lt;color-sky-color lang="ko"&gt;&lt;/color-sky-color&gt;</pre>
+  <color-sky-color lang="ko" height="480"></color-sky-color>
+
+  <h2>Everyday Color Confusion — Protanope preset</h2>
+  <pre>&lt;color-cvd-everyday state="mode=protanopia"&gt;&lt;/color-cvd-everyday&gt;</pre>
+  <color-cvd-everyday state="mode=protanopia" height="520"></color-cvd-everyday>
+
+  <p class="note">In development this page imports loader.ts directly. In production, hosts include the IIFE-bundled <code>/embed/loader.js</code>.</p>
+
+  <script type="module" src="./loader.ts"></script>
+</body>
+</html>

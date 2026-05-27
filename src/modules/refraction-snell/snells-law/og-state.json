@@ -1,0 +1,4 @@
+{
+  "hero": { "theta1": 45, "n1": 1.0, "n2": 1.33 },
+  "comment": "Air-to-water refraction at 45° — the most familiar physical demo."
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "color-vision-deficiency/cvd-everyday",
+  "title": {
+    "en": "Everyday Color Confusion",
+    "ko": "일상 속 색 혼동"
+  },
+  "subtitle": {
+    "en": "toggle dichromat views to see which colour pairs collapse",
+    "ko": "이색각 시야로 전환하며 어느 색쌍이 합쳐지는지 본다"
+  },
+  "description": {
+    "en": "Toggle between trichromat and dichromat views (protanope, deuteranope, tritanope) to see which colour pairs collapse into the same percept.",
+    "ko": "정상 삼색각과 이색각(적색맹·녹색맹·청색맹) 시야 사이를 전환하며 어느 색쌍이 동일한 지각으로 합쳐지는지 본다."
+  },
+  "tier": "headliner",
+  "bloom_level": "L1",
+  "domain": 2,
+  "category": "color-vision-deficiency",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Brettel, Viénot, Mollon (1997)", "section": "JOSA A 14(10):2647" },
+    { "source": "Machado, Oliveira, Fernandes (2009)", "section": "IEEE TVCG" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["color blindness", "dichromacy", "protanopia", "interactive simulator"],
+  "estimated_hours": 80,
+  "status": "shipped"
+}

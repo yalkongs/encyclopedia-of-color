@@ -1,0 +1,523 @@
+@import './variables.css';
+@import './controls.css';
+
+/* ─────────────────────────────────────────────────────────────
+ * Reset + viewport baseline
+ * ───────────────────────────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;        /* Module pages are single-screen; the scrollable region is the control panel only. */
+  background: var(--bg-0);
+  color: var(--text-1);
+  font-family: var(--font-sans);
+  font-size: var(--fs-14);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Landing page (src/index.html) overrides the no-scroll rule. */
+body.landing {
+  overflow-y: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--text-0);
+  font-weight: 400;
+  line-height: var(--lh-tight);
+  margin: 0;
+}
+
+p { margin: 0; }
+
+a {
+  color: var(--text-0);
+  text-decoration: underline;
+  text-decoration-color: var(--border-2);
+  text-underline-offset: 2px;
+  transition: text-decoration-color var(--motion-fast) var(--ease-standard);
+}
+a:hover { text-decoration-color: var(--text-0); }
+
+code, kbd { font-family: var(--font-mono); font-size: 0.93em; }
+
+/* ─────────────────────────────────────────────────────────────
+ * Module shell — top-level layout container.
+ *
+ * The flex chain (html ▸ body ▸ enc-module-shell ▸ workstation ▸ canvas)
+ * carries height down all the way to the canvas so that grid alignment
+ * is geometric, not text-dependent.
+ * ───────────────────────────────────────────────────────────── */
+
+enc-module-shell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;           /* allow inner flex:1 children to shrink correctly */
+  width: 100%;
+}
+
+.module-header {
+  flex: 0 0 auto;
+  padding: var(--space-4) var(--space-5) var(--space-3);
+  border-bottom: 1px solid var(--border-1);
+  background: var(--bg-0);
+}
+
+.chip-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.chip {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: var(--fs-12);
+  font-family: var(--font-mono);
+  color: var(--text-2);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.chip-tier[data-tier="headliner"] { color: var(--tier-headliner); border-color: var(--tier-headliner); }
+.chip-tier[data-tier="reference"] { color: var(--tier-reference); border-color: var(--tier-reference); }
+.chip-tier[data-tier="atom"]      { color: var(--tier-atom); }
+
+.module-title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-31);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--space-1) 0;
+}
+
+.module-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--text-1);
+  font-size: var(--fs-16);
+  line-height: 1.5;
+  max-width: 78ch;
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Type A — Side panel + canvas
+ *
+ *   ┌──────────────────────────────────┐
+ *   │  Header (auto height)            │
+ *   ├──────────┬───────────────────────┤
+ *   │ Control  │                       │
+ *   │  panel   │   Canvas viewport     │
+ *   │ (320px)  │                       │
+ *   ├──────────┴───────────────────────┤
+ *   │  Footer (auto height)            │
+ *   └──────────────────────────────────┘
+ * ───────────────────────────────────────────────────────────── */
+
+.workstation-A {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  grid-template-rows: 1fr;
+  align-items: stretch;
+}
+
+.control-panel {
+  background: var(--bg-1);
+  border-right: 1px solid var(--border-1);
+  padding: var(--space-4);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-height: 0;
+}
+.control-panel::-webkit-scrollbar { width: 8px; }
+.control-panel::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: var(--radius-1); }
+
+.canvas-viewport {
+  background: var(--canvas-bg);
+  position: relative;
+  display: flex;            /* allow inner stage to flex:1 */
+  align-items: stretch;
+  justify-content: stretch;
+  padding: var(--space-3);
+  min-width: 0;             /* allow narrowing on small screens */
+  min-height: 0;
+}
+
+/* Canvas stage fills viewport after padding. */
+enc-canvas-stage {
+  display: block;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Type B — Stacked comparison (controls top, two viewports below)
+ * ───────────────────────────────────────────────────────────── */
+
+.workstation-B {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.workstation-B .controls-row {
+  background: var(--bg-1);
+  border-bottom: 1px solid var(--border-1);
+  padding: var(--space-3) var(--space-5);
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.workstation-B .compare-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border-1);
+  min-height: 0;
+}
+.workstation-B .compare-row > * {
+  background: var(--canvas-bg);
+  position: relative;
+  min-height: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * 3-Zone text
+ * ───────────────────────────────────────────────────────────── */
+.zone-definition {
+  color: var(--text-0);
+  font-family: var(--font-serif);
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+.zone-guide {
+  color: var(--text-1);
+  font-size: var(--fs-14);
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Math (KaTeX) — display block sits flush in control-panel, no border.
+ * KaTeX's own CSS handles glyph spacing; we just style the container.
+ * ───────────────────────────────────────────────────────────── */
+.math-block {
+  display: block;
+  padding: var(--space-3);
+  background: var(--bg-2);
+  border-left: 2px solid var(--gold-deep);
+  margin: var(--space-2) 0 var(--space-3) 0;
+  color: var(--text-0);
+  overflow-x: auto;
+}
+.math-block .katex-display { margin: 0; }
+.math-block .katex-display > .katex { text-align: left; color: var(--text-0); }
+.math { color: var(--text-0); }
+.katex { font-size: 1.1em; }
+.katex, .katex * { color: var(--text-0); }
+
+/* ─────────────────────────────────────────────────────────────
+ * Footer
+ * ───────────────────────────────────────────────────────────── */
+.module-footer {
+  flex: 0 0 auto;
+  padding: var(--space-3) var(--space-5);
+  background: var(--bg-0);
+  border-top: 1px solid var(--border-1);
+  font-size: var(--fs-12);
+  color: var(--text-2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: space-between;
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+.module-footer .citation {
+  font-family: var(--font-serif);
+  color: var(--gold-deep);
+}
+
+enc-citation-footer { display: contents; }
+
+/* ─────────────────────────────────────────────────────────────
+ * Responsive: mobile fallback for Type A (single column, stage on top)
+ * ───────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .workstation-A {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh 1fr;
+  }
+  .control-panel {
+    border-right: none;
+    border-top: 1px solid var(--border-1);
+    order: 2;
+  }
+  .canvas-viewport {
+    order: 1;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Embed mode — invoked via ?embed=1
+ *
+ * Hides verbose chrome (chips, subtitle, full footer) and condenses
+ * the header into a single thin strip with a canonical link.
+ * ───────────────────────────────────────────────────────────── */
+
+enc-module-shell[data-embed="1"] .module-header {
+  padding: var(--space-2) var(--space-3);
+}
+enc-module-shell[data-embed="1"] .module-title {
+  font-size: var(--fs-16);
+  margin: 0;
+}
+enc-module-shell[data-embed="1"] .module-subtitle {
+  display: none;
+}
+enc-module-shell[data-embed="1"] .chip:not(.chip-tier) {
+  display: none;
+}
+enc-module-shell[data-embed="1"] .chip-row {
+  margin-bottom: 0;
+  gap: var(--space-2);
+  font-size: var(--fs-12);
+}
+enc-module-shell[data-embed="1"] .module-footer {
+  padding: var(--space-1) var(--space-3);
+  font-size: 11px;
+}
+enc-module-shell[data-embed="1"] .control-panel {
+  padding: var(--space-3);
+  font-size: var(--fs-12);
+}
+enc-module-shell[data-embed="1"] .zone-definition,
+enc-module-shell[data-embed="1"] .zone-guide {
+  display: none;        /* Embed viewers want to play, not read */
+}
+enc-module-shell[data-embed="1"] .math-block {
+  margin: 0 0 var(--space-2) 0;
+  padding: var(--space-2);
+}
+enc-module-shell[data-embed="1"] .workstation-A {
+  grid-template-columns: minmax(220px, 280px) 1fr;
+}
+@media (max-width: 600px) {
+  enc-module-shell[data-embed="1"] .workstation-A {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  enc-module-shell[data-embed="1"] .control-panel {
+    border-right: none;
+    border-top: 1px solid var(--border-1);
+    max-height: 35vh;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * OG capture mode — invoked via ?og=1
+ *
+ * Strips ALL chrome (panels, footers, share UI) and lets the canvas
+ * fill the entire viewport. Adds a brand strip at the bottom so the
+ * Playwright capture is a complete OG card by itself.
+ * ───────────────────────────────────────────────────────────── */
+
+enc-module-shell[data-og="1"] .module-header,
+enc-module-shell[data-og="1"] .module-footer,
+enc-module-shell[data-og="1"] .control-panel,
+enc-module-shell[data-og="1"] .header-cluster,
+enc-module-shell[data-og="1"] .share-trigger,
+enc-module-shell[data-og="1"] .canonical-link {
+  display: none !important;
+}
+enc-module-shell[data-og="1"] .workstation-A {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+enc-module-shell[data-og="1"] .canvas-viewport {
+  padding: 0;
+}
+enc-module-shell[data-og="1"]::after {
+  /* Brand strip overlay */
+  content: '📖 Interactive Encyclopedia of Color';
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  padding: 12px 32px;
+  background: var(--bg-1);
+  color: var(--gold-deep);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  border-top: 1px solid var(--border-2);
+  z-index: 100;
+  text-align: center;
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Share dialog
+ * ───────────────────────────────────────────────────────────── */
+.share-backdrop {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(26, 26, 46, 0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+.share-panel {
+  background: var(--bg-0);
+  border: 1px solid var(--border-2);
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--space-4) var(--space-5);
+  box-shadow: 0 8px 32px rgba(26, 26, 46, 0.25);
+}
+.share-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+.share-title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-25);
+  font-weight: 500;
+  color: var(--text-0);
+}
+.share-close {
+  border: none;
+  background: transparent;
+  font-size: var(--fs-20);
+  cursor: pointer;
+  color: var(--text-2);
+  padding: 0 var(--space-2);
+}
+.share-section {
+  margin-bottom: var(--space-4);
+  border-top: 1px solid var(--border-1);
+  padding-top: var(--space-3);
+}
+.share-section:first-of-type { border-top: none; padding-top: 0; }
+.share-label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-12);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-2);
+  margin-bottom: var(--space-2);
+  font-weight: 500;
+}
+.share-row {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+.share-input {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  background: var(--bg-2);
+  border: 1px solid var(--border-1);
+  padding: var(--space-2);
+  color: var(--text-0);
+  border-radius: var(--radius-1);
+  min-width: 0;
+}
+.share-textarea {
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  background: var(--bg-2);
+  border: 1px solid var(--border-1);
+  padding: var(--space-2);
+  color: var(--text-0);
+  border-radius: var(--radius-1);
+  resize: vertical;
+  margin-bottom: var(--space-2);
+}
+.share-social {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.share-social .btn {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  min-width: 80px;
+}
+.share-dim-row {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.share-dim-row label {
+  font-size: var(--fs-12);
+  color: var(--text-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+.share-dim-row select {
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  background: var(--bg-2);
+  border: 1px solid var(--border-1);
+  padding: 2px var(--space-1);
+  color: var(--text-0);
+}
+.cite-tabs {
+  display: inline-flex;
+  border: 1px solid var(--border-2);
+  margin-bottom: var(--space-2);
+  border-radius: var(--radius-1);
+  overflow: hidden;
+}
+.cite-tabs .cite-tab {
+  border: none;
+  border-right: 1px solid var(--border-2);
+  border-radius: 0;
+  background: transparent;
+  padding: var(--space-1) var(--space-3);
+}
+.cite-tabs .cite-tab:last-child { border-right: none; }
+.cite-tabs .cite-tab[aria-pressed="true"] {
+  background: var(--text-0);
+  color: var(--bg-0);
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * Focus
+ * ───────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}

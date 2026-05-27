@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "prism-dispersion/newtons-prism",
+  "title": {
+    "en": "Newton's Prism",
+    "ko": "뉴턴의 프리즘"
+  },
+  "subtitle": {
+    "en": "send white light through a glass prism and watch it fan into the rainbow",
+    "ko": "유리 프리즘을 통과한 백색광이 무지개로 분산되는 모습을 본다"
+  },
+  "description": {
+    "en": "Send a beam of white light through a triangular glass prism and watch it fan out into the visible spectrum — Newton's 1666 experiment that proved white light is composite.",
+    "ko": "삼각 유리 프리즘을 통과한 백색광이 가시광선 스펙트럼으로 분산되는 과정을 본다. 1666년 뉴턴이 백색광의 합성을 증명한 실험."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "prism-dispersion",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": ["prism-dispersion/cauchy-formula"],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§5.5" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["prism", "spectrum", "dispersion", "newton", "interactive"],
+  "estimated_hours": 35,
+  "status": "shipped"
+}

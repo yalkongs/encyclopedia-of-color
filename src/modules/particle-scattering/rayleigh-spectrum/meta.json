@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/rayleigh-spectrum",
+  "title": {
+    "en": "Rayleigh Scattering Curve",
+    "ko": "레일리 산란 곡선"
+  },
+  "subtitle": {
+    "en": "compare scattering intensity at violet vs red and see why blue dominates the sky",
+    "ko": "보라색과 적색 산란 강도를 비교하며 푸른 하늘의 원리를 확인한다"
+  },
+  "description": {
+    "en": "Compare scattering intensity at the violet end versus the red end of the visible band and see why blue dominates the sky — Rayleigh's 1/λ⁴ law in raw form.",
+    "ko": "가시광선의 보라색과 적색 끝에서 산란 강도를 비교하며 푸른 하늘의 원리(1/λ⁴)를 직접 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": ["particle-scattering/sky-color"],
+  "leads_to": ["particle-scattering/mie-clouds"],
+  "see_also": [],
+  "nassau_causes": [10],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§8.5.2" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["rayleigh scattering", "1/lambda^4", "interactive"],
+  "estimated_hours": 22,
+  "status": "shipped"
+}

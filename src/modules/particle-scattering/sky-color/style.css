@@ -1,0 +1,10 @@
+.canvas-viewport { padding: 0; }
+enc-canvas-stage { cursor: ns-resize; }
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-2);
+  vertical-align: -3px;
+  margin-right: 4px;
+}

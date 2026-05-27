@@ -1,0 +1,67 @@
+[
+  {
+    "id": "color-vision-deficiency/cvd-everyday",
+    "og": "og/color-vision-deficiency--cvd-everyday.png",
+    "square": "og/color-vision-deficiency--cvd-everyday.sq.png"
+  },
+  {
+    "id": "light-propagation/inverse-square",
+    "og": "og/light-propagation--inverse-square.png",
+    "square": "og/light-propagation--inverse-square.sq.png"
+  },
+  {
+    "id": "light-propagation/shadow-size",
+    "og": "og/light-propagation--shadow-size.png",
+    "square": "og/light-propagation--shadow-size.sq.png"
+  },
+  {
+    "id": "particle-scattering/rayleigh-spectrum",
+    "og": "og/particle-scattering--rayleigh-spectrum.png",
+    "square": "og/particle-scattering--rayleigh-spectrum.sq.png"
+  },
+  {
+    "id": "particle-scattering/sky-color",
+    "og": "og/particle-scattering--sky-color.png",
+    "square": "og/particle-scattering--sky-color.sq.png"
+  },
+  {
+    "id": "planckian-radiation/filament-heating",
+    "og": "og/planckian-radiation--filament-heating.png",
+    "square": "og/planckian-radiation--filament-heating.sq.png"
+  },
+  {
+    "id": "prism-dispersion/newtons-prism",
+    "og": "og/prism-dispersion--newtons-prism.png",
+    "square": "og/prism-dispersion--newtons-prism.sq.png"
+  },
+  {
+    "id": "refraction-snell/snells-law",
+    "og": "og/refraction-snell--snells-law.png",
+    "square": "og/refraction-snell--snells-law.sq.png"
+  },
+  {
+    "id": "total-internal-reflection/critical-angle",
+    "og": "og/total-internal-reflection--critical-angle.png",
+    "square": "og/total-internal-reflection--critical-angle.sq.png"
+  },
+  {
+    "id": "wave-fundamentals/sine-anatomy",
+    "og": "og/wave-fundamentals--sine-anatomy.png",
+    "square": "og/wave-fundamentals--sine-anatomy.sq.png"
+  },
+  {
+    "id": "wave-fundamentals/superposition-basic",
+    "og": "og/wave-fundamentals--superposition-basic.png",
+    "square": "og/wave-fundamentals--superposition-basic.sq.png"
+  },
+  {
+    "id": "wave-interference/soap-bubble",
+    "og": "og/wave-interference--soap-bubble.png",
+    "square": "og/wave-interference--soap-bubble.sq.png"
+  },
+  {
+    "id": "wave-polarization/malus-law",
+    "og": "og/wave-polarization--malus-law.png",
+    "square": "og/wave-polarization--malus-law.sq.png"
+  }
+]

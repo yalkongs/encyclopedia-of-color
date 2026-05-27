@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Snell's Law Refractometer — drag the incident ray and watch n₁ sin θ₁…</title>
+  <meta name="description" content="Drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time, including total internal reflection past the critical angle.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/refraction-snell/snells-law/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Snell's Law Refractometer">
+  <meta property="og:description"    content="Drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time, including total internal reflection past the critical angle.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/refraction-snell/snells-law/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/refraction-snell--snells-law.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Snell's Law Refractometer.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Snell's Law Refractometer">
+  <meta name="twitter:description"   content="Drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time, including total internal reflection past the critical angle.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/refraction-snell--snells-law.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Snell's Law Refractometer.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Snell's Law Refractometer","alternateName":"refraction-snell/snells-law","description":"Drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time, including total internal reflection past the critical angle.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"snell's law, refraction, critical angle, interactive optics","url":"https://encyclopedia.color/modules/refraction-snell/snells-law/","image":"https://encyclopedia.color/og/refraction-snell--snells-law.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="refraction-snell/snells-law">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title" data-i18n="snell.title">Snell's Law Refractometer</h1>
+      <p class="module-subtitle" data-i18n="snell.subtitle">drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition" data-i18n="snell.definition">
+          Light bends at an interface because its phase velocity changes between media of different refractive index.
+        </p>
+        <div class="math-block" data-tex="n_1\,\sin\theta_1 \;=\; n_2\,\sin\theta_2"></div>
+        <p class="zone-guide" data-i18n="snell.guide">
+          Drag the incident angle slider to tilt the laser. Slide the lower-medium index to see the refracted ray bend toward or away from the normal. Past the critical angle, only total internal reflection remains.
+        </p>
+
+        <enc-slider id="theta1" data-i18n-attr="label:snell.theta1" label="Incident angle θ₁" min="0" max="89" step="0.5" value="30" unit="°"></enc-slider>
+        <enc-slider id="n1" data-i18n-attr="label:snell.n1" label="Upper medium n₁" min="1.00" max="2.50" step="0.01" value="1.00"></enc-slider>
+        <enc-slider id="n2" data-i18n-attr="label:snell.n2" label="Lower medium n₂" min="1.00" max="2.50" step="0.01" value="1.52"></enc-slider>
+
+        <dl class="readout">
+          <dt>θ₂</dt><dd id="theta2-out">—</dd>
+          <dt data-i18n="snell.critical">Critical angle</dt><dd id="tc-out">—</dd>
+          <dt>state</dt><dd id="state-out">refracting</dd>
+        </dl>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Snell's law ray-trace viewport"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer
+      data-refs="Hecht, Optics 5e §4.4; Born &amp; Wolf, Principles of Optics 7e §1.5; CIE 015:2018">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

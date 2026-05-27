@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Newton's Prism — send white light through a glass prism and watch it…</title>
+  <meta name="description" content="Send a beam of white light through a triangular glass prism and watch it fan out into the visible spectrum — Newton's 1666 experiment that proved white light is composite.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/prism-dispersion/newtons-prism/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Newton's Prism">
+  <meta property="og:description"    content="Send a beam of white light through a triangular glass prism and watch it fan out into the visible spectrum — Newton's 1666 experiment that proved white light is composite.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/prism-dispersion/newtons-prism/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/prism-dispersion--newtons-prism.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Newton's Prism.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Newton's Prism">
+  <meta name="twitter:description"   content="Send a beam of white light through a triangular glass prism and watch it fan out into the visible spectrum — Newton's 1666 experiment that proved white light is composite.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/prism-dispersion--newtons-prism.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Newton's Prism.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Newton's Prism","alternateName":"prism-dispersion/newtons-prism","description":"Send a beam of white light through a triangular glass prism and watch it fan out into the visible spectrum — Newton's 1666 experiment that proved white light is composite.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"prism, spectrum, dispersion, newton, interactive","url":"https://encyclopedia.color/modules/prism-dispersion/newtons-prism/","image":"https://encyclopedia.color/og/prism-dispersion--newtons-prism.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="prism-dispersion/newtons-prism">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Newton's Prism</h1>
+      <p class="module-subtitle">send white light through a glass prism and watch it fan into the rainbow</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Different wavelengths refract by different amounts, so a glass prism fans white light into its constituent spectrum.
+        </p>
+        <div class="math-block" data-tex="n(\lambda) \;=\; B \;+\; \dfrac{C}{\lambda^{2}}"></div>
+        <p class="zone-guide">
+          Slide the apex angle α and the entry angle θ₁. Each wavelength exits the prism along its own path — the canonical rainbow of dispersion.
+        </p>
+
+        <enc-slider id="alpha" label="Apex angle α (°)" min="30" max="80" step="0.5" value="60" unit="°"></enc-slider>
+        <enc-slider id="theta" label="Incident angle θ₁ (°)" min="20" max="75" step="0.5" value="45" unit="°"></enc-slider>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Prism dispersion ray trace"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer data-refs="Hecht, Optics 5e §5.5 (Prismatic Refraction)">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

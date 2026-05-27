@@ -1,0 +1,9 @@
+.canvas-viewport { padding: var(--space-3); }
+#color-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-2);
+  vertical-align: -3px;
+  margin-right: 4px;
+}

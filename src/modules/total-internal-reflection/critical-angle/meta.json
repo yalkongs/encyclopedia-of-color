@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "total-internal-reflection/critical-angle",
+  "title": {
+    "en": "Critical Angle for Total Internal Reflection",
+    "ko": "전반사의 임계각"
+  },
+  "subtitle": {
+    "en": "tilt the laser inside glass and find the exact angle where it can no longer escape",
+    "ko": "유리 안의 레이저를 기울이며 빛이 더 이상 빠져나갈 수 없는 정확한 각도를 찾는다"
+  },
+  "description": {
+    "en": "Tilt a laser inside glass or water and find the exact angle past which it can no longer escape — the critical angle that bounces light along an optical fibre.",
+    "ko": "유리나 물 속의 레이저를 기울이며 빛이 더 이상 빠져나갈 수 없는 임계각을 찾는다. 광섬유가 빛을 가두는 바로 그 각도다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "total-internal-reflection",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": ["total-internal-reflection/optical-fiber"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§4.7" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["critical angle", "total internal reflection", "optical fiber", "interactive"],
+  "estimated_hours": 30,
+  "status": "shipped"
+}

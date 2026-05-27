@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/sine-anatomy",
+  "title": {
+    "en": "Anatomy of a Sine Wave",
+    "ko": "정현파의 해부"
+  },
+  "subtitle": {
+    "en": "drag amplitude, wavelength, and phase to reshape one curve",
+    "ko": "진폭·파장·위상 세 슬라이더로 동일한 곡선을 재구성한다"
+  },
+  "description": {
+    "en": "Drag amplitude, wavelength, and phase sliders to see how each parameter reshapes the same sine curve in real time.",
+    "ko": "진폭·파장·위상 슬라이더를 움직여 각 변수가 동일한 정현파를 어떻게 재구성하는지 실시간으로 관찰한다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["wave-fundamentals/superposition-basic"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§2.1" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["sine wave", "amplitude", "wavelength", "phase", "interactive"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

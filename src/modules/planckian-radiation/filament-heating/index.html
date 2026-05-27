@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Heating a Tungsten Filament — raise a blackbody's temperature and wat…</title>
+  <meta name="description" content="Raise the temperature of an idealised tungsten filament from 1000 K to 8000 K and watch the Planckian colour climb from deep red through orange and yellow into bluish white.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/planckian-radiation/filament-heating/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Heating a Tungsten Filament">
+  <meta property="og:description"    content="Raise the temperature of an idealised tungsten filament from 1000 K to 8000 K and watch the Planckian colour climb from deep red through orange and yellow into bluish white.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/planckian-radiation/filament-heating/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/planckian-radiation--filament-heating.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Heating a Tungsten Filament.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Heating a Tungsten Filament">
+  <meta name="twitter:description"   content="Raise the temperature of an idealised tungsten filament from 1000 K to 8000 K and watch the Planckian colour climb from deep red through orange and yellow into bluish white.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/planckian-radiation--filament-heating.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Heating a Tungsten Filament.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Heating a Tungsten Filament","alternateName":"planckian-radiation/filament-heating","description":"Raise the temperature of an idealised tungsten filament from 1000 K to 8000 K and watch the Planckian colour climb from deep red through orange and yellow into bluish white.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"color temperature, blackbody, planckian, filament, interactive","url":"https://encyclopedia.color/modules/planckian-radiation/filament-heating/","image":"https://encyclopedia.color/og/planckian-radiation--filament-heating.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="planckian-radiation/filament-heating">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Heating a Tungsten Filament</h1>
+      <p class="module-subtitle">raise a blackbody's temperature and watch its colour climb from red to white</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Every hot object emits a continuous spectrum whose shape depends only on temperature — the Planck blackbody law.
+        </p>
+        <div class="math-block" data-tex="B(\lambda, T) \;=\; \dfrac{2hc^{2}}{\lambda^{5}} \cdot \dfrac{1}{e^{hc/\lambda kT} - 1}"></div>
+        <p class="zone-guide">
+          Slide T from candle-warm to star-hot. The filament glow updates from spectral integration against the CIE 1931 observer, and the visible-band spectrum redraws beneath.
+        </p>
+
+        <enc-slider id="T" label="Temperature T (K)" min="1000" max="8000" step="25" value="3200" unit="K"></enc-slider>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Filament glow and Planck spectrum"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.5.2; CIE 015:2018">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/*
+ * Design tokens — "Old Book" palette.
+ *
+ * Inspired by https://circle5-eight.vercel.app — a warm paper-ink-gold aesthetic
+ * that reads like a 19th-century physics textbook. UI surfaces are paper, type is
+ * deep ink, accents are gold for emphasis and crimson for warnings.
+ *
+ * Authoritative source: module_specification.md §Ⅳ (to be revised).
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Paper & ink */
+  --bg-0:      #f8f2e4;    /* page paper */
+  --bg-1:      #f4ecd8;    /* card / panel paper, slightly recessed */
+  --bg-2:      #efe4cb;    /* control track / nested element */
+  --canvas-bg: #fbf6e8;    /* canvas paper — barely lighter than --bg-0 */
+
+  /* Ink */
+  --text-0:    #1a1a2e;    /* heading ink (deep navy-black) */
+  --text-1:    #2a2a3d;    /* body ink */
+  --text-2:    #5a5a6e;    /* secondary / labels */
+  --text-3:    #8a8a98;    /* disabled / hint */
+
+  /* Borders & shadows */
+  --border-1:    rgba(26, 26, 46, 0.10);
+  --border-2:    rgba(26, 26, 46, 0.20);
+  --border-focus:#1a1a2e;
+  --shadow-1:    0 1px 0 rgba(26, 26, 46, 0.06);
+
+  /* Accents (used sparingly: tier chips, math, citations, warning state) */
+  --gold:       #b8924c;
+  --gold-deep:  #8b6a2f;
+  --crimson:    #a83232;
+  --slate:      #4a5a6b;
+
+  /* Tier accents — re-mapped to old-book palette */
+  --tier-headliner: var(--gold-deep);
+  --tier-reference: var(--slate);
+  --tier-atom:      var(--text-2);
+
+  /* Spacing */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+
+  /* Radius — textbook-style: nearly square */
+  --radius-0: 0px;
+  --radius-1: 2px;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', 'Noto Serif KR', Georgia, serif;
+  --font-sans:  'Inter', 'Pretendard', -apple-system, system-ui, sans-serif;
+  --font-mono:  'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+
+  /* Type scale (modular 1.25) */
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-20: 20px;
+  --fs-25: 25px;
+  --fs-31: 31px;
+  --fs-40: 40px;
+  --lh-tight: 1.25;
+  --lh-body:  1.6;
+
+  /* Motion */
+  --motion-fast: 120ms;
+  --motion-mid:  240ms;
+  --motion-slow: 400ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+:lang(ko) {
+  --font-serif: 'Noto Serif KR', 'Cormorant Garamond', Georgia, serif;
+  --font-sans:  'Pretendard', 'Inter', -apple-system, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-mid:  0ms;
+    --motion-slow: 0ms;
+  }
+}

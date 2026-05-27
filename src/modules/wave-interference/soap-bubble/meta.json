@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "wave-interference/soap-bubble",
+  "title": {
+    "en": "Soap Bubble Thin-Film Interference",
+    "ko": "비누방울 박막 간섭"
+  },
+  "subtitle": {
+    "en": "sweep film thickness and watch reflected colour cycle the structural rainbow",
+    "ko": "박막 두께를 움직이며 반사색이 구조색 무지개를 순환하는 모습을 본다"
+  },
+  "description": {
+    "en": "Slide the film thickness from 50 to 1500 nanometres and watch the reflected colour cycle through the structural rainbow.",
+    "ko": "박막 두께를 50에서 1500 나노미터까지 움직이며 반사색이 구조색 무지개를 순환하는 모습을 관찰한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "wave-interference",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/sine-anatomy"],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [11],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§9.6" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["thin film interference", "soap bubble", "structural color"],
+  "estimated_hours": 40,
+  "status": "shipped"
+}

@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+node_modules.nosync/
+
+# Build output
+dist/
+.vite/
+
+# OG runtime cache (regenerated on demand by og-server)
+public/og-cache/
+
+# OS / Editor
+.DS_Store
+*.log
+*.swp
+.idea/
+.vscode/
+
+# Vercel
+.vercel/
+
+# Local env
+.env
+.env.local
+.env.*.local

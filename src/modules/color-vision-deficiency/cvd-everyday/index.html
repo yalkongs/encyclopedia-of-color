@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Everyday Color Confusion — toggle dichromat views to see which colour…</title>
+  <meta name="description" content="Toggle between trichromat and dichromat views (protanope, deuteranope, tritanope) to see which colour pairs collapse into the same percept.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/color-vision-deficiency/cvd-everyday/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Everyday Color Confusion">
+  <meta property="og:description"    content="Toggle between trichromat and dichromat views (protanope, deuteranope, tritanope) to see which colour pairs collapse into the same percept.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/color-vision-deficiency/cvd-everyday/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/color-vision-deficiency--cvd-everyday.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Everyday Color Confusion.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Everyday Color Confusion">
+  <meta name="twitter:description"   content="Toggle between trichromat and dichromat views (protanope, deuteranope, tritanope) to see which colour pairs collapse into the same percept.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/color-vision-deficiency--cvd-everyday.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Everyday Color Confusion.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Everyday Color Confusion","alternateName":"color-vision-deficiency/cvd-everyday","description":"Toggle between trichromat and dichromat views (protanope, deuteranope, tritanope) to see which colour pairs collapse into the same percept.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"color blindness, dichromacy, protanopia, interactive simulator","url":"https://encyclopedia.color/modules/color-vision-deficiency/cvd-everyday/","image":"https://encyclopedia.color/og/color-vision-deficiency--cvd-everyday.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-vision-deficiency/cvd-everyday">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="headliner" data-i18n="tier.headliner">Headliner</span>
+      </div>
+      <h1 class="module-title" data-i18n="cvd.title">Everyday Color Confusion</h1>
+      <p class="module-subtitle" data-i18n="cvd.subtitle">toggle between trichromat and dichromat views to see which colour pairs collapse into the same percept</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition" data-i18n="cvd.definition">
+          About one in twelve men and one in two hundred women see colour differently — most often confusing red with green, sometimes blue with yellow.
+        </p>
+        <p class="zone-guide" data-i18n="cvd.guide">
+          Click the four buttons to switch the page through normal, protanope, deuteranope, and tritanope vision. Notice which pairs of colours become indistinguishable.
+        </p>
+
+        <enc-toggle id="mode" label="Vision mode"
+                    options="normal,protanopia,deuteranopia,tritanopia"
+                    labels="Trichromat,Protanope,Deuteranope,Tritanope"
+                    value="normal"></enc-toggle>
+
+        <p style="color: var(--text-2); font-size: var(--fs-12); margin-top: var(--space-3);">
+          Press <kbd>C</kbd> to cycle modes.
+        </p>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Color confusion swatch grid"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer
+      data-refs="Brettel, Viénot, Mollon (1997), JOSA A 14(10):2647; Machado, Oliveira, Fernandes (2009)">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

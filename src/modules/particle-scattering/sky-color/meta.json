@@ -1,0 +1,35 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/sky-color",
+  "title": {
+    "en": "Why the Sky Is Blue",
+    "ko": "하늘은 왜 파란가"
+  },
+  "subtitle": {
+    "en": "move the sun and watch Rayleigh scattering paint the sky and the sunset",
+    "ko": "태양을 움직이며 레일리 산란이 만드는 낮의 푸름과 노을의 붉음을 본다"
+  },
+  "description": {
+    "en": "Move the sun across the sky and watch Rayleigh scattering paint the daytime blue and the sunset red, computed in real time from spectral integration.",
+    "ko": "태양을 하늘 위로 움직이며 레일리 산란이 낮의 푸름과 노을의 붉음을 만드는 과정을 분광 적분으로 실시간 계산한다."
+  },
+  "tier": "headliner",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["particle-scattering/rayleigh-spectrum"],
+  "see_also": [],
+  "nassau_causes": [10],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§8.5" },
+    { "source": "Williamson & Cummins, Light and Color in Nature and Art", "section": "§2" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color", "color-in-nature"],
+  "seo_keywords": ["why is the sky blue", "rayleigh scattering", "sunset", "interactive"],
+  "estimated_hours": 80,
+  "status": "shipped"
+}

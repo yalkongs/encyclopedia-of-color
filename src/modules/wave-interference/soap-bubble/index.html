@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Soap Bubble Thin-Film Interference — sweep film thickness and watch r…</title>
+  <meta name="description" content="Slide the film thickness from 50 to 1500 nanometres and watch the reflected colour cycle through the structural rainbow.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/wave-interference/soap-bubble/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Soap Bubble Thin-Film Interference">
+  <meta property="og:description"    content="Slide the film thickness from 50 to 1500 nanometres and watch the reflected colour cycle through the structural rainbow.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/wave-interference/soap-bubble/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/wave-interference--soap-bubble.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Soap Bubble Thin-Film Interference.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Soap Bubble Thin-Film Interference">
+  <meta name="twitter:description"   content="Slide the film thickness from 50 to 1500 nanometres and watch the reflected colour cycle through the structural rainbow.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/wave-interference--soap-bubble.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Soap Bubble Thin-Film Interference.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Soap Bubble Thin-Film Interference","alternateName":"wave-interference/soap-bubble","description":"Slide the film thickness from 50 to 1500 nanometres and watch the reflected colour cycle through the structural rainbow.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"thin film interference, soap bubble, structural color","url":"https://encyclopedia.color/modules/wave-interference/soap-bubble/","image":"https://encyclopedia.color/og/wave-interference--soap-bubble.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-interference/soap-bubble">
+
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title" data-i18n="soap.title">Soap Bubble Thin-Film Interference</h1>
+      <p class="module-subtitle" data-i18n="soap.subtitle">slide the film thickness from 50 to 1000 nanometres and watch the reflected colour cycle through the structural rainbow</p>
+    </header>
+
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition" data-i18n="soap.definition">
+          Light reflected from the top and bottom of a thin film interferes — constructively for some wavelengths, destructively for others, painting the bubble in structural colour.
+        </p>
+        <div class="math-block" data-tex="2\,n\,d\,\cos\theta \;=\; \left(m + \tfrac{1}{2}\right)\lambda"></div>
+        <p class="zone-guide" data-i18n="soap.guide">
+          Slide the thickness to sweep the film from too-thin to too-thick. Slide the refractive index to switch between soap, oil, and silicate films.
+        </p>
+
+        <enc-slider id="thickness" data-i18n-attr="label:soap.thickness" label="Film thickness d (nm)" min="50" max="1500" step="1" value="350" unit="nm"></enc-slider>
+        <enc-slider id="n" data-i18n-attr="label:soap.n" label="Film index n" min="1.20" max="2.00" step="0.01" value="1.33"></enc-slider>
+
+        <dl class="readout">
+          <dt data-i18n="soap.color">Reflected colour</dt><dd id="color-out"><span id="color-swatch"></span> <span id="color-hex">—</span></dd>
+        </dl>
+      </aside>
+
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Soap bubble interference"></enc-canvas-stage>
+      </main>
+    </div>
+
+    <enc-citation-footer
+      data-refs="Hecht, Optics 5e §9.6 (Thin Films); CIE 015:2018">
+    </enc-citation-footer>
+
+  </enc-module-shell>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

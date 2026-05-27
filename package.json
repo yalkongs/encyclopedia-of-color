@@ -1,0 +1,39 @@
+{
+  "name": "interactive-encyclopedia-of-color",
+  "version": "0.1.0-alpha",
+  "description": "Museum-grade interactive encyclopedia of color science — 518 modules across 12 domains.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "predev": "tsx scripts/inject-meta.ts",
+    "build": "tsx scripts/inject-meta.ts && tsc --noEmit && vite build && vite build --config vite.embed.config.ts",
+    "build:embed": "vite build --config vite.embed.config.ts",
+    "build:og": "tsx scripts/generate-og.ts",
+    "inject-meta": "tsx scripts/inject-meta.ts",
+    "new-module": "tsx scripts/new-module.ts",
+    "verify:og": "tsx scripts/verify-og.ts",
+    "og:server": "tsx scripts/og-server.ts",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "node scripts/predownload-icloud.mjs",
+    "fix-icloud": "bash scripts/setup-nosync.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "glob": "^10.3.10",
+    "playwright": "^1.60.0",
+    "tsx": "^4.22.3",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0"
+  },
+  "dependencies": {
+    "@iframe-resizer/child": "^5.5.9",
+    "@types/katex": "^0.16.8",
+    "katex": "^0.16.47"
+  },
+  "license": "CC-BY-SA-4.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

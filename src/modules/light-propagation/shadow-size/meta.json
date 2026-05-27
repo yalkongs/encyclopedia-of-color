@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-propagation/shadow-size",
+  "title": {
+    "en": "Shadow Size vs Light Distance",
+    "ko": "광원 거리와 그림자 크기"
+  },
+  "subtitle": {
+    "en": "slide the lamp toward an object and watch its shadow stretch on the wall",
+    "ko": "광원을 물체에 가까이 가져가며 벽에 드리우는 그림자가 길어지는 모습을 본다"
+  },
+  "description": {
+    "en": "Slide the lamp toward or away from a small object and watch its shadow stretch and shrink on the wall — geometric optics at its most everyday scale.",
+    "ko": "광원을 작은 물체에 가까이 또는 멀리 가져가며 벽에 드리우는 그림자가 어떻게 늘어나고 줄어드는지 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "light-propagation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["light-propagation/umbra-penumbra"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§5" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["shadow", "geometric optics", "interactive"],
+  "estimated_hours": 15,
+  "status": "shipped"
+}
