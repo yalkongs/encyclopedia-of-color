@@ -10,9 +10,9 @@ public/og-cache/
 *.md
 !README.md
 
-# Local scripts that Vercel doesn't run
+# Local-only scripts (Vercel still needs predownload-icloud.mjs because
+# it's wired into postinstall — the script exits early on non-Darwin).
 scripts/setup-nosync.sh
-scripts/predownload-icloud.mjs
 scripts/og-server.ts
 
 .DS_Store
