@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-basics/subtractive-cmy-mixing",
+  "title": {
+    "en": "Subtractive CMY Mixing",
+    "ko": "물감의 감산 혼합 (CMY)"
+  },
+  "subtitle": {
+    "en": "stack cyan, magenta, and yellow filters and watch each one steal a band of white",
+    "ko": "시안·마젠타·옐로 필터를 겹쳐가며 백색에서 한 대역씩 빠지는 모습을 본다"
+  },
+  "description": {
+    "en": "Stack cyan, magenta, and yellow filters under white light and watch each one steal a band from the spectrum — the principle of every printed page.",
+    "ko": "백색광 아래 시안·마젠타·옐로 필터를 겹치며 각 필터가 스펙트럼의 한 대역씩 빼앗아 가는 모습을 본다. 인쇄물의 기본 원리다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "light-basics",
+  "layout": "A",
+  "prerequisites": ["light-basics/additive-rgb-mixing"],
+  "leads_to": ["four-color-separation/separation-4color"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hunt, The Reproduction of Colour 6e", "section": "§3" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color", "print-workflow"],
+  "seo_keywords": ["subtractive color mixing", "CMY", "filters", "interactive"],
+  "estimated_hours": 5,
+  "status": "shipped"
+}

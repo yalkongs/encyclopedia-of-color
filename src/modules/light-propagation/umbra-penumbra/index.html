@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Umbra and Penumbra — widen the source and watch a hard shadow grow a…</title>
+  <meta name="description" content="Widen an extended light source and watch its shadow split into a dark central umbra surrounded by a soft penumbral fringe — the geometry that paints eclipses.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/light-propagation/umbra-penumbra/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Umbra and Penumbra">
+  <meta property="og:description"    content="Widen an extended light source and watch its shadow split into a dark central umbra surrounded by a soft penumbral fringe — the geometry that paints eclipses.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/light-propagation/umbra-penumbra/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/light-propagation--umbra-penumbra.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Umbra and Penumbra.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Umbra and Penumbra">
+  <meta name="twitter:description"   content="Widen an extended light source and watch its shadow split into a dark central umbra surrounded by a soft penumbral fringe — the geometry that paints eclipses.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/light-propagation--umbra-penumbra.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Umbra and Penumbra.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Umbra and Penumbra","alternateName":"light-propagation/umbra-penumbra","description":"Widen an extended light source and watch its shadow split into a dark central umbra surrounded by a soft penumbral fringe — the geometry that paints eclipses.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"umbra, penumbra, eclipse, shadow, interactive","url":"https://encyclopedia.color/modules/light-propagation/umbra-penumbra/","image":"https://encyclopedia.color/og/light-propagation--umbra-penumbra.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-propagation/umbra-penumbra">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Umbra and Penumbra</h1>
+      <p class="module-subtitle">widen the source and watch a hard shadow grow a soft penumbral fringe</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          An extended source casts two shadow regions — a fully dark umbra where the source is hidden entirely, and a soft penumbra where part of the source is visible.
+        </p>
+        <div class="math-block" data-tex="r_{\text{umbra}} \;=\; r_{\text{obj}}\dfrac{d_{w}}{d_{l}} - S\dfrac{d_{l} + d_{w}}{d_{l}}"></div>
+        <p class="zone-guide">
+          Slide the source radius S upward. The umbra shrinks; if the source becomes larger than the object, the umbra vanishes — only a penumbra remains, as during an annular eclipse.
+        </p>
+        <enc-slider id="s" label="Source radius S (px)" min="2" max="60" step="1" value="14" unit="px"></enc-slider>
+        <enc-slider id="r" label="Object radius R (px)" min="6" max="60" step="1" value="24" unit="px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Umbra and penumbra geometry"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §5 (Shadows of Extended Sources)">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

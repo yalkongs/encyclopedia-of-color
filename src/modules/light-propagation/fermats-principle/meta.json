@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-propagation/fermats-principle",
+  "title": {
+    "en": "Fermat's Principle of Least Time",
+    "ko": "페르마의 최소 시간 원리"
+  },
+  "subtitle": {
+    "en": "drag the refraction point across the water surface and find the path light actually takes",
+    "ko": "굴절점을 수면 위로 끌어 옮기며 빛이 실제로 택하는 최단 시간 경로를 찾는다"
+  },
+  "description": {
+    "en": "Drag the crossing point along a water surface and watch the total travel time change — light's actual path is the one that minimises it, recovering Snell's law from a deeper principle.",
+    "ko": "수면 위 교차점을 끌어 옮기며 총 진행 시간이 어떻게 변하는지 본다. 빛은 그 시간을 최소화하는 경로를 택하고, 그 결과가 곧 스넬의 법칙이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "light-propagation",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": [],
+  "see_also": ["refraction-snell/snells-law"],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§4.4" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["fermats principle", "least time", "interactive optics"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

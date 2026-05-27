@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-propagation/pinhole-camera",
+  "title": {
+    "en": "Pinhole Camera",
+    "ko": "바늘구멍 사진기"
+  },
+  "subtitle": {
+    "en": "shrink the pinhole and trade brightness for sharpness in the inverted image",
+    "ko": "바늘구멍을 작게 줄이며 어두워지지만 또렷해지는 거꾸로 상을 본다"
+  },
+  "description": {
+    "en": "Shrink the pinhole and watch the inverted image grow sharper but dimmer — the same trade-off that haunts every photographer between diffraction blur and aperture geometric blur.",
+    "ko": "바늘구멍을 작게 줄이며 거꾸로 상이 더 또렷해지지만 동시에 어두워지는 모습을 본다. 회절 흐림과 기하 흐림의 절충은 모든 사진가의 영원한 숙제다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "light-propagation",
+  "layout": "A",
+  "prerequisites": ["light-propagation/shadow-size"],
+  "leads_to": ["geometric-optics/thin-lens-basic"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§5.7" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["pinhole camera", "camera obscura", "interactive optics"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

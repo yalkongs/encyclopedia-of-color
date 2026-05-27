@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Fermat's Principle of Least Time — drag the refraction point across t…</title>
+  <meta name="description" content="Drag the crossing point along a water surface and watch the total travel time change — light's actual path is the one that minimises it, recovering Snell's law from a deeper principle.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/light-propagation/fermats-principle/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Fermat's Principle of Least Time">
+  <meta property="og:description"    content="Drag the crossing point along a water surface and watch the total travel time change — light's actual path is the one that minimises it, recovering Snell's law from a deeper principle.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/light-propagation/fermats-principle/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/light-propagation--fermats-principle.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Fermat's Principle of Least Time.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Fermat's Principle of Least Time">
+  <meta name="twitter:description"   content="Drag the crossing point along a water surface and watch the total travel time change — light's actual path is the one that minimises it, recovering Snell's law from a deeper principle.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/light-propagation--fermats-principle.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Fermat's Principle of Least Time.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Fermat's Principle of Least Time","alternateName":"light-propagation/fermats-principle","description":"Drag the crossing point along a water surface and watch the total travel time change — light's actual path is the one that minimises it, recovering Snell's law from a deeper principle.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"fermats principle, least time, interactive optics","url":"https://encyclopedia.color/modules/light-propagation/fermats-principle/","image":"https://encyclopedia.color/og/light-propagation--fermats-principle.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-propagation/fermats-principle">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Fermat's Principle of Least Time</h1>
+      <p class="module-subtitle">drag the refraction point across the water surface and find the path light actually takes</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Among all paths from A to B, light follows the one that takes the least time — and Snell's law falls out as a direct consequence.
+        </p>
+        <div class="math-block" data-tex="T(x) \;=\; \dfrac{n_{1}\,d_{1}(x)}{c} \;+\; \dfrac{n_{2}\,d_{2}(x)}{c}"></div>
+        <p class="zone-guide">
+          Slide the crossing point. The bottom plot shows the total time as a function of x — the gold curve marks the minimum, which exactly satisfies Snell's law.
+        </p>
+        <enc-slider id="x" label="Crossing position x (%)" min="10" max="90" step="0.5" value="50" unit="%"></enc-slider>
+        <enc-slider id="n2" label="Lower medium n₂" min="1.0" max="2.5" step="0.01" value="1.33"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Fermat's principle path optimisation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.4 (Fermat's Principle)">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

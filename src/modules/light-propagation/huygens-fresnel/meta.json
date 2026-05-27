@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-propagation/huygens-fresnel",
+  "title": {
+    "en": "Huygens-Fresnel Wavelets",
+    "ko": "호이겐스-프레넬 파면"
+  },
+  "subtitle": {
+    "en": "narrow a slit and watch secondary wavelets fan out as a circular wavefront",
+    "ko": "슬릿을 좁히며 이차 파동원에서 원형 파면이 퍼져 나가는 모습을 본다"
+  },
+  "description": {
+    "en": "Narrow a slit until each point on its rim acts as a secondary source — the wavelets sum into a fan-out circular wavefront, Huygens's 1690 construction of diffraction.",
+    "ko": "슬릿을 좁혀 가장자리의 모든 점이 이차 파동원으로 거동하기 시작하면, 그 파동들이 합쳐져 둥글게 퍼지는 회절 파면이 된다. 1690년 호이겐스의 작도다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "light-propagation",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/sine-anatomy"],
+  "leads_to": ["light-diffraction/single-double-slit"],
+  "see_also": ["light-diffraction/huygens-principle"],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§10.1" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["huygens principle", "wavelet", "diffraction", "interactive"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -5,14 +5,54 @@
     "square": "og/color-vision-deficiency--cvd-everyday.sq.png"
   },
   {
+    "id": "light-basics/additive-rgb-mixing",
+    "og": "og/light-basics--additive-rgb-mixing.png",
+    "square": "og/light-basics--additive-rgb-mixing.sq.png"
+  },
+  {
+    "id": "light-basics/light-speed-finite",
+    "og": "og/light-basics--light-speed-finite.png",
+    "square": "og/light-basics--light-speed-finite.sq.png"
+  },
+  {
+    "id": "light-basics/subtractive-cmy-mixing",
+    "og": "og/light-basics--subtractive-cmy-mixing.png",
+    "square": "og/light-basics--subtractive-cmy-mixing.sq.png"
+  },
+  {
+    "id": "light-basics/what-is-light",
+    "og": "og/light-basics--what-is-light.png",
+    "square": "og/light-basics--what-is-light.sq.png"
+  },
+  {
+    "id": "light-propagation/fermats-principle",
+    "og": "og/light-propagation--fermats-principle.png",
+    "square": "og/light-propagation--fermats-principle.sq.png"
+  },
+  {
+    "id": "light-propagation/huygens-fresnel",
+    "og": "og/light-propagation--huygens-fresnel.png",
+    "square": "og/light-propagation--huygens-fresnel.sq.png"
+  },
+  {
     "id": "light-propagation/inverse-square",
     "og": "og/light-propagation--inverse-square.png",
     "square": "og/light-propagation--inverse-square.sq.png"
   },
   {
+    "id": "light-propagation/pinhole-camera",
+    "og": "og/light-propagation--pinhole-camera.png",
+    "square": "og/light-propagation--pinhole-camera.sq.png"
+  },
+  {
     "id": "light-propagation/shadow-size",
     "og": "og/light-propagation--shadow-size.png",
     "square": "og/light-propagation--shadow-size.sq.png"
+  },
+  {
+    "id": "light-propagation/umbra-penumbra",
+    "og": "og/light-propagation--umbra-penumbra.png",
+    "square": "og/light-propagation--umbra-penumbra.sq.png"
   },
   {
     "id": "particle-scattering/rayleigh-spectrum",
@@ -45,14 +85,34 @@
     "square": "og/total-internal-reflection--critical-angle.sq.png"
   },
   {
+    "id": "wave-fundamentals/beat-frequency",
+    "og": "og/wave-fundamentals--beat-frequency.png",
+    "square": "og/wave-fundamentals--beat-frequency.sq.png"
+  },
+  {
+    "id": "wave-fundamentals/doppler-effect",
+    "og": "og/wave-fundamentals--doppler-effect.png",
+    "square": "og/wave-fundamentals--doppler-effect.sq.png"
+  },
+  {
     "id": "wave-fundamentals/sine-anatomy",
     "og": "og/wave-fundamentals--sine-anatomy.png",
     "square": "og/wave-fundamentals--sine-anatomy.sq.png"
   },
   {
+    "id": "wave-fundamentals/standing-wave",
+    "og": "og/wave-fundamentals--standing-wave.png",
+    "square": "og/wave-fundamentals--standing-wave.sq.png"
+  },
+  {
     "id": "wave-fundamentals/superposition-basic",
     "og": "og/wave-fundamentals--superposition-basic.png",
     "square": "og/wave-fundamentals--superposition-basic.sq.png"
+  },
+  {
+    "id": "wave-fundamentals/wave-packet",
+    "og": "og/wave-fundamentals--wave-packet.png",
+    "square": "og/wave-fundamentals--wave-packet.sq.png"
   },
   {
     "id": "wave-interference/soap-bubble",

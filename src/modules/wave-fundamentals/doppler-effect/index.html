@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Doppler Effect — speed up a moving source and watch its waves compres…</title>
+  <meta name="description" content="Speed up a moving emitter and watch its outgoing wavefronts compress ahead and stretch behind — the same effect that reddens receding galaxies and pitches passing sirens.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/wave-fundamentals/doppler-effect/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Doppler Effect">
+  <meta property="og:description"    content="Speed up a moving emitter and watch its outgoing wavefronts compress ahead and stretch behind — the same effect that reddens receding galaxies and pitches passing sirens.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/wave-fundamentals/doppler-effect/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/wave-fundamentals--doppler-effect.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Doppler Effect.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Doppler Effect">
+  <meta name="twitter:description"   content="Speed up a moving emitter and watch its outgoing wavefronts compress ahead and stretch behind — the same effect that reddens receding galaxies and pitches passing sirens.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/wave-fundamentals--doppler-effect.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Doppler Effect.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Doppler Effect","alternateName":"wave-fundamentals/doppler-effect","description":"Speed up a moving emitter and watch its outgoing wavefronts compress ahead and stretch behind — the same effect that reddens receding galaxies and pitches passing sirens.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"doppler effect, redshift, wave compression, interactive","url":"https://encyclopedia.color/modules/wave-fundamentals/doppler-effect/","image":"https://encyclopedia.color/og/wave-fundamentals--doppler-effect.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-fundamentals/doppler-effect">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Doppler Effect</h1>
+      <p class="module-subtitle">speed up a moving source and watch its waves compress ahead and stretch behind</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A moving emitter leaves each successive wavefront behind a moving centre — front wavelengths compress, back wavelengths stretch.
+        </p>
+        <div class="math-block" data-tex="\dfrac{f'}{f_{0}} \;=\; \dfrac{1}{1 \mp v/c}"></div>
+        <p class="zone-guide">
+          Slide the source Mach number (v/c). The observer in front sees a higher frequency f', the one behind sees a lower f'. Past Mach 1 the wavefronts pile up into a cone.
+        </p>
+        <enc-slider id="mach" label="Source speed v/c (×0.01)" min="0" max="120" step="1" value="50"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Doppler wavefronts"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §2.7 (Doppler)">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

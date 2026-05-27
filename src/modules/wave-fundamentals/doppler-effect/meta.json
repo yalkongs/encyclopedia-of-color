@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/doppler-effect",
+  "title": {
+    "en": "Doppler Effect",
+    "ko": "도플러 효과"
+  },
+  "subtitle": {
+    "en": "speed up a moving source and watch its waves compress ahead and stretch behind",
+    "ko": "광원을 빠르게 움직이며 앞쪽 파동이 압축되고 뒤쪽이 늘어나는 모습을 본다"
+  },
+  "description": {
+    "en": "Speed up a moving emitter and watch its outgoing wavefronts compress ahead and stretch behind — the same effect that reddens receding galaxies and pitches passing sirens.",
+    "ko": "이동하는 방출체의 속도를 높이며 앞쪽 파면은 압축되고 뒤쪽은 늘어나는 모습을 본다. 멀어지는 은하를 붉게 만들고 지나가는 사이렌의 음을 변조하는 같은 효과다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/sine-anatomy"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§2.7" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["doppler effect", "redshift", "wave compression", "interactive"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

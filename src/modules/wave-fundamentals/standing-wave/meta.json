@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/standing-wave",
+  "title": {
+    "en": "Standing Wave",
+    "ko": "정상파"
+  },
+  "subtitle": {
+    "en": "send a wave into a wall and watch the reflection lock into stationary nodes",
+    "ko": "벽에 부딪힌 파가 반사파와 합쳐져 고정된 절을 만드는 모습을 본다"
+  },
+  "description": {
+    "en": "Send a wave into a perfect reflector and watch the incident and reflected waves lock into stationary nodes and antinodes — the basis of every musical instrument and laser cavity.",
+    "ko": "완전 반사 벽으로 들어간 파동이 반사파와 합쳐져 절(node)과 배(antinode)로 고정되는 모습을 본다. 모든 악기와 레이저 공진기의 기초다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/superposition-basic"],
+  "leads_to": ["modern-optics/laser-cavity-gain"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§2.6" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["standing wave", "node", "antinode", "resonance", "interactive"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Huygens-Fresnel Wavelets — narrow a slit and watch secondary wavelets…</title>
+  <meta name="description" content="Narrow a slit until each point on its rim acts as a secondary source — the wavelets sum into a fan-out circular wavefront, Huygens's 1690 construction of diffraction.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/light-propagation/huygens-fresnel/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Huygens-Fresnel Wavelets">
+  <meta property="og:description"    content="Narrow a slit until each point on its rim acts as a secondary source — the wavelets sum into a fan-out circular wavefront, Huygens's 1690 construction of diffraction.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/light-propagation/huygens-fresnel/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/light-propagation--huygens-fresnel.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Huygens-Fresnel Wavelets.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Huygens-Fresnel Wavelets">
+  <meta name="twitter:description"   content="Narrow a slit until each point on its rim acts as a secondary source — the wavelets sum into a fan-out circular wavefront, Huygens's 1690 construction of diffraction.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/light-propagation--huygens-fresnel.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Huygens-Fresnel Wavelets.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Huygens-Fresnel Wavelets","alternateName":"light-propagation/huygens-fresnel","description":"Narrow a slit until each point on its rim acts as a secondary source — the wavelets sum into a fan-out circular wavefront, Huygens's 1690 construction of diffraction.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"huygens principle, wavelet, diffraction, interactive","url":"https://encyclopedia.color/modules/light-propagation/huygens-fresnel/","image":"https://encyclopedia.color/og/light-propagation--huygens-fresnel.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-propagation/huygens-fresnel">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Huygens-Fresnel Wavelets</h1>
+      <p class="module-subtitle">narrow a slit and watch secondary wavelets fan out as a circular wavefront</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Every point on a wavefront acts as a source of secondary spherical wavelets — their envelope is the next wavefront.
+        </p>
+        <div class="math-block" data-tex="\sin\theta_{\text{half}} \;\approx\; \dfrac{\lambda}{a}"></div>
+        <p class="zone-guide">
+          Slide the slit width a downward. When a is much larger than λ, the wave stays nearly straight; when a approaches λ, the wavelets fan out into a wide cone.
+        </p>
+        <enc-slider id="a" label="Slit width a (px)" min="10" max="300" step="2" value="80" unit="px"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (px)" min="20" max="120" step="2" value="60" unit="px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Huygens-Fresnel construction"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §10.1 (Huygens-Fresnel)">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

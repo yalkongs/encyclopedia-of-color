@@ -1,0 +1,4 @@
+{
+  "hero": { "x": 35, "n2": 1.5 },
+  "comment": "Off-optimum crossing — shows the gap between user's path and the minimum-time path."
+}

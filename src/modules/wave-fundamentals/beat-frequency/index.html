@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Beat Frequency — tune two waves to nearly the same frequency and watc…</title>
+  <meta name="description" content="Tune two waves to nearly the same frequency and watch their sum pulse slowly — the beat envelope at frequency |f₁ − f₂|, the principle a piano tuner listens for.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/wave-fundamentals/beat-frequency/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Beat Frequency">
+  <meta property="og:description"    content="Tune two waves to nearly the same frequency and watch their sum pulse slowly — the beat envelope at frequency |f₁ − f₂|, the principle a piano tuner listens for.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/wave-fundamentals/beat-frequency/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/wave-fundamentals--beat-frequency.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Beat Frequency.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Beat Frequency">
+  <meta name="twitter:description"   content="Tune two waves to nearly the same frequency and watch their sum pulse slowly — the beat envelope at frequency |f₁ − f₂|, the principle a piano tuner listens for.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/wave-fundamentals--beat-frequency.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Beat Frequency.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Beat Frequency","alternateName":"wave-fundamentals/beat-frequency","description":"Tune two waves to nearly the same frequency and watch their sum pulse slowly — the beat envelope at frequency |f₁ − f₂|, the principle a piano tuner listens for.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"beat frequency, wave interference, interactive","url":"https://encyclopedia.color/modules/wave-fundamentals/beat-frequency/","image":"https://encyclopedia.color/og/wave-fundamentals--beat-frequency.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-fundamentals/beat-frequency">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Beat Frequency</h1>
+      <p class="module-subtitle">tune two waves to nearly the same frequency and watch a slow envelope appear</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The sum of two close-frequency waves is a fast carrier modulated by a slow envelope at the difference frequency.
+        </p>
+        <div class="math-block" data-tex="f_{\text{beat}} \;=\; \left|\,f_{1} - f_{2}\,\right|"></div>
+        <p class="zone-guide">
+          Tune f₁ and f₂ near each other. The gold dashed envelope (sum row) pulses at the beat frequency — set them equal and the envelope flattens to a constant.
+        </p>
+        <enc-slider id="f1" label="Frequency f₁ (×0.1 Hz)" min="30" max="80" step="1" value="50"></enc-slider>
+        <enc-slider id="f2" label="Frequency f₂ (×0.1 Hz)" min="30" max="80" step="1" value="55"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Two close-frequency waves and their beat"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §7.1">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

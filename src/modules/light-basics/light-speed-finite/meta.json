@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-basics/light-speed-finite",
+  "title": {
+    "en": "Light Takes Time",
+    "ko": "빛도 시간을 들여 간다"
+  },
+  "subtitle": {
+    "en": "watch a pulse travel from the sun to distant planets at exactly 299,792 km/s",
+    "ko": "광속 299,792 km/s로 태양에서 행성까지 도달하는 펄스의 여행 시간을 본다"
+  },
+  "description": {
+    "en": "Watch a pulse leave the sun and travel outward at exactly 299,792 km/s, taking minutes to reach the inner planets and hours to reach the outer giants.",
+    "ko": "태양에서 출발한 광 펄스가 정확히 299,792 km/s로 외행성을 향해 진행하며 내행성까지 몇 분, 외행성까지 몇 시간이 걸리는지 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "light-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["em-fundamentals/em-wave-propagation"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.1" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["speed of light", "light minutes", "interactive solar system"],
+  "estimated_hours": 5,
+  "status": "shipped"
+}

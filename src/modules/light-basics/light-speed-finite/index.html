@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Light Takes Time — watch a pulse travel from the sun to distant plane…</title>
+  <meta name="description" content="Watch a pulse leave the sun and travel outward at exactly 299,792 km/s, taking minutes to reach the inner planets and hours to reach the outer giants.">
+  <link rel="canonical" href="https://encyclopedia.color/modules/light-basics/light-speed-finite/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Light Takes Time">
+  <meta property="og:description"    content="Watch a pulse leave the sun and travel outward at exactly 299,792 km/s, taking minutes to reach the inner planets and hours to reach the outer giants.">
+  <meta property="og:url"            content="https://encyclopedia.color/modules/light-basics/light-speed-finite/">
+  <meta property="og:image"          content="https://encyclopedia.color/og/light-basics--light-speed-finite.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Light Takes Time.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Light Takes Time">
+  <meta name="twitter:description"   content="Watch a pulse leave the sun and travel outward at exactly 299,792 km/s, taking minutes to reach the inner planets and hours to reach the outer giants.">
+  <meta name="twitter:image"         content="https://encyclopedia.color/og/light-basics--light-speed-finite.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Light Takes Time.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Light Takes Time","alternateName":"light-basics/light-speed-finite","description":"Watch a pulse leave the sun and travel outward at exactly 299,792 km/s, taking minutes to reach the inner planets and hours to reach the outer giants.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"speed of light, light minutes, interactive solar system","url":"https://encyclopedia.color/modules/light-basics/light-speed-finite/","image":"https://encyclopedia.color/og/light-basics--light-speed-finite.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-basics/light-speed-finite">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Light Takes Time</h1>
+      <p class="module-subtitle">watch a pulse travel from the sun to distant planets at exactly 299,792 km/s</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Light moves at a finite speed — fast enough to feel instant, slow enough that the sun you see is already eight minutes in the past.
+        </p>
+        <div class="math-block" data-tex="c \;=\; 299{,}792\,458\,\dfrac{\text{m}}{\text{s}} \;\approx\; 8.3\,\dfrac{\text{min}}{\text{AU}}"></div>
+        <p class="zone-guide">
+          Slide the target distance from Mercury (0.39 AU) to Neptune (30 AU). The gold pulse marches outward at exactly c — its journey takes minutes for inner planets, hours for outer ones.
+        </p>
+        <enc-slider id="au" label="Target distance (AU × 100)" min="10" max="3000" step="5" value="100"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Light pulse across the solar system"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.1; NASA Planetary Fact Sheet">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

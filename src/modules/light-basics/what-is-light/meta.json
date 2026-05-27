@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-basics/what-is-light",
+  "title": {
+    "en": "What Is Light?",
+    "ko": "빛이란 무엇인가"
+  },
+  "subtitle": {
+    "en": "dim the source and watch a smooth wave dissolve into discrete photon arrivals",
+    "ko": "광원을 어둡게 줄이면 매끄러운 파동이 광자 알갱이로 흩어지는 모습을 본다"
+  },
+  "description": {
+    "en": "Dim the source from a steady wave down to faint single arrivals and watch light split between its wave and particle natures — the foundational experiment of quantum optics.",
+    "ko": "광원을 정상파에서 희미한 단일 광자 도달까지 줄이며 빛의 파동성과 입자성이 동시에 드러나는 양자광학의 기초 실험을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "light-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["em-fundamentals/em-wave-propagation"],
+  "see_also": ["wave-fundamentals/sine-anatomy"],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["wave particle duality", "photon", "what is light", "interactive"],
+  "estimated_hours": 6,
+  "status": "shipped"
+}

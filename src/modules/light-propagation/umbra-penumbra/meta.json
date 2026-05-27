@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-propagation/umbra-penumbra",
+  "title": {
+    "en": "Umbra and Penumbra",
+    "ko": "본그림자와 반그림자"
+  },
+  "subtitle": {
+    "en": "widen the source and watch a hard shadow grow a soft penumbral fringe",
+    "ko": "광원의 크기를 키우며 단단한 본그림자에 부드러운 반그림자 띠가 자라는 모습을 본다"
+  },
+  "description": {
+    "en": "Widen an extended light source and watch its shadow split into a dark central umbra surrounded by a soft penumbral fringe — the geometry that paints eclipses.",
+    "ko": "확장 광원의 크기를 키우며 그림자가 어두운 본그림자(umbra)와 부드러운 반그림자(penumbra) 띠로 나뉘는 모습을 본다. 일식·월식이 그려지는 기하다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "light-propagation",
+  "layout": "A",
+  "prerequisites": ["light-propagation/shadow-size"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§5" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["umbra", "penumbra", "eclipse", "shadow", "interactive"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

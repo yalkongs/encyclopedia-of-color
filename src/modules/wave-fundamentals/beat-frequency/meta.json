@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/beat-frequency",
+  "title": {
+    "en": "Beat Frequency",
+    "ko": "맥놀이 주파수"
+  },
+  "subtitle": {
+    "en": "tune two waves to nearly the same frequency and watch a slow envelope appear",
+    "ko": "두 파를 거의 같은 주파수로 맞추며 느린 포락선이 나타나는 모습을 본다"
+  },
+  "description": {
+    "en": "Tune two waves to nearly the same frequency and watch their sum pulse slowly — the beat envelope at frequency |f₁ − f₂|, the principle a piano tuner listens for.",
+    "ko": "두 파를 거의 같은 주파수로 맞추면 합성파가 |f₁ − f₂| 주기로 느리게 진동한다. 피아노 조율사가 귀로 듣는 그 맥놀이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/superposition-basic"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§7.1" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["beat frequency", "wave interference", "interactive"],
+  "estimated_hours": 6,
+  "status": "shipped"
+}

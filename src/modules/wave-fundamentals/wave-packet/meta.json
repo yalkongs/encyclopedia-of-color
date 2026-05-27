@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "wave-fundamentals/wave-packet",
+  "title": {
+    "en": "Wave Packet — Group vs Phase Velocity",
+    "ko": "파속 — 군속도와 위상속도"
+  },
+  "subtitle": {
+    "en": "tune dispersion and watch the envelope and carrier travel at different speeds",
+    "ko": "분산을 조절하며 포락선과 반송파가 서로 다른 속도로 흐르는 모습을 본다"
+  },
+  "description": {
+    "en": "Send a Gaussian-modulated wave packet through a dispersive medium and watch the envelope (information) crawl at the group velocity while individual crests sprint at the phase velocity.",
+    "ko": "가우시안 포락선의 파속을 분산 매질로 보내며 정보가 담긴 포락선이 군속도로 천천히, 개별 마루는 위상속도로 빠르게 움직이는 모습을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "wave-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/superposition-basic"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§7.2" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["wave packet", "group velocity", "phase velocity", "dispersion", "interactive"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

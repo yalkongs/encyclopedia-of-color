@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "light-basics/additive-rgb-mixing",
+  "title": {
+    "en": "Additive RGB Mixing",
+    "ko": "빛의 가산 혼합 (RGB)"
+  },
+  "subtitle": {
+    "en": "overlap three coloured flashlights and watch the secondary colours appear",
+    "ko": "세 색 손전등을 겹쳐 비추며 보조색이 떠오르는 모습을 본다"
+  },
+  "description": {
+    "en": "Overlap red, green, and blue flashlights on a wall and watch yellow, cyan, magenta, and finally white emerge where the beams cross — the principle of every screen.",
+    "ko": "벽에 빨강·녹색·파랑 손전등을 겹쳐 비추며 교차점에 황·청·자 그리고 백색이 떠오르는 모습을 본다. 모든 디스플레이의 원리다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "light-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["light-basics/subtractive-cmy-mixing", "cones-sensitivity/three-channels"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§3" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["additive color mixing", "RGB", "primary colors", "interactive"],
+  "estimated_hours": 5,
+  "status": "shipped"
+}
