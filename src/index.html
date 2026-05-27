@@ -7,123 +7,29 @@
   <meta name="description" content="A museum-grade laboratory of color science. 518 interactive modules across 12 domains.">
   <link rel="stylesheet" href="./core/styles/base.css">
   <style>
-    .landing {
-      max-width: 980px;
-      margin: var(--space-6) auto;
-      padding: 0 var(--space-5);
-    }
-    .landing-header {
-      text-align: center;
-      padding: var(--space-5) 0 var(--space-6) 0;
-      border-bottom: 1px solid var(--border-2);
-    }
-    .landing h1 {
-      font-family: var(--font-serif);
-      font-weight: 500;
-      font-size: var(--fs-40);
-      letter-spacing: -0.01em;
-      margin-bottom: var(--space-2);
-      color: var(--text-0);
-    }
-    .landing .eyebrow {
-      font-family: var(--font-mono);
-      font-size: var(--fs-12);
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--gold-deep);
-      margin-bottom: var(--space-3);
-    }
-    .landing .tagline {
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-size: var(--fs-20);
-      color: var(--text-1);
-      max-width: 60ch;
-      margin: 0 auto;
-      line-height: 1.5;
-    }
-    .landing .intro {
-      max-width: 60ch;
-      margin: var(--space-5) auto;
-      font-family: var(--font-serif);
-      font-size: var(--fs-16);
-      line-height: var(--lh-body);
-      color: var(--text-1);
-    }
-    h2.section-title {
-      font-family: var(--font-serif);
-      font-size: var(--fs-25);
-      font-weight: 500;
-      margin: var(--space-6) 0 var(--space-3) 0;
-      color: var(--text-0);
-      border-bottom: 1px solid var(--border-1);
-      padding-bottom: var(--space-2);
-    }
-    .section-meta {
-      font-family: var(--font-mono);
-      font-size: var(--fs-12);
-      color: var(--gold-deep);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: var(--space-3);
-    }
-    .module-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: var(--space-3);
-      margin-top: var(--space-3);
-    }
-    .module-card {
-      display: block;
-      padding: var(--space-4);
-      border: 1px solid var(--border-2);
-      background: var(--bg-1);
-      text-decoration: none;
-      color: var(--text-0);
-      transition: border-color var(--motion-fast) var(--ease-standard),
-                  background var(--motion-fast) var(--ease-standard);
-    }
-    .module-card:hover {
-      border-color: var(--gold-deep);
-      background: var(--bg-2);
-    }
-    .module-card .card-meta {
-      font-family: var(--font-mono);
-      font-size: var(--fs-12);
-      color: var(--gold-deep);
-      letter-spacing: 0.04em;
-      margin-bottom: var(--space-2);
-    }
-    .module-card .card-title {
-      font-family: var(--font-serif);
-      font-weight: 500;
-      font-size: var(--fs-20);
-      color: var(--text-0);
-      margin-bottom: var(--space-1);
-      line-height: 1.3;
-    }
-    .module-card .card-sub {
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-size: var(--fs-14);
-      color: var(--text-1);
-      line-height: 1.5;
-    }
-    .landing-footer {
-      margin-top: var(--space-6);
-      padding-top: var(--space-4);
-      padding-bottom: var(--space-5);
-      border-top: 1px solid var(--border-1);
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-size: var(--fs-14);
-      color: var(--text-2);
-      text-align: center;
-    }
+    body.landing { font-family: var(--font-sans); }
+    .landing-main { max-width: 980px; margin: var(--space-6) auto; padding: 0 var(--space-5); }
+    .landing-header { text-align: center; padding: var(--space-5) 0 var(--space-6); border-bottom: 1px solid var(--border-2); }
+    .landing h1 { font-family: var(--font-serif); font-weight: 500; font-size: var(--fs-40); letter-spacing: -0.01em; margin-bottom: var(--space-2); color: var(--text-0); }
+    .eyebrow { font-family: var(--font-mono); font-size: var(--fs-12); text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold-deep); margin-bottom: var(--space-3); }
+    .tagline { font-family: var(--font-serif); font-style: italic; font-size: var(--fs-20); color: var(--text-1); max-width: 60ch; margin: 0 auto; line-height: 1.5; }
+    .intro { max-width: 60ch; margin: var(--space-5) auto; font-family: var(--font-serif); font-size: var(--fs-16); line-height: var(--lh-body); color: var(--text-1); }
+    h2.section-title { font-family: var(--font-serif); font-size: var(--fs-25); font-weight: 500; margin: var(--space-6) 0 var(--space-3); color: var(--text-0); border-bottom: 1px solid var(--border-1); padding-bottom: var(--space-2); }
+    .section-meta { font-family: var(--font-mono); font-size: var(--fs-12); color: var(--gold-deep); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--space-3); }
+    .module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-3); margin-top: var(--space-3); }
+    .module-card { display: block; padding: var(--space-4); border: 1px solid var(--border-2); background: var(--bg-1); text-decoration: none; color: var(--text-0); transition: border-color var(--motion-fast) var(--ease-standard), background var(--motion-fast) var(--ease-standard); }
+    .module-card:hover { border-color: var(--gold-deep); background: var(--bg-2); }
+    .module-card .card-meta { font-family: var(--font-mono); font-size: var(--fs-12); color: var(--gold-deep); letter-spacing: 0.04em; margin-bottom: var(--space-2); }
+    .module-card .card-title { font-family: var(--font-serif); font-weight: 500; font-size: var(--fs-20); color: var(--text-0); margin-bottom: var(--space-1); line-height: 1.3; }
+    .module-card .card-sub { font-family: var(--font-serif); font-style: italic; font-size: var(--fs-14); color: var(--text-1); line-height: 1.5; }
+    .domain-cluster { margin-top: var(--space-5); }
+    .domain-cluster h3 { font-family: var(--font-serif); font-size: var(--fs-20); font-weight: 500; color: var(--text-0); margin: 0 0 var(--space-2); }
+    .domain-cluster .sub { font-family: var(--font-mono); font-size: var(--fs-12); color: var(--text-2); letter-spacing: 0.04em; margin-bottom: var(--space-3); }
+    .landing-footer { margin-top: var(--space-6); padding-top: var(--space-4); padding-bottom: var(--space-5); border-top: 1px solid var(--border-1); font-family: var(--font-serif); font-style: italic; font-size: var(--fs-14); color: var(--text-2); text-align: center; }
   </style>
 </head>
 <body class="landing">
-  <main class="landing">
+  <main class="landing-main">
     <header class="landing-header">
       <div class="eyebrow">Volume Ⅰ · Optics & Vision</div>
       <h1>Interactive Encyclopedia of Color</h1>
@@ -131,38 +37,100 @@
     </header>
 
     <p class="intro">
-      The encyclopedia is composed of 518 independent interactive modules across 12 domains: physical optics, visual physiology, colourant chemistry, colorimetry, design theory, display engineering, print reproduction, anthropology, biology, imaging, computation, and cognition. What follows is the first cohort of golden modules — the visual and editorial baseline against which every successor will be measured.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. Below are the 13 modules currently published — the first cohort along the <em>Light to Color</em> learning path.
     </p>
 
-    <h2 class="section-title">Golden Modules — Phase Zero</h2>
-    <div class="section-meta">five prototypes · two headliners · two references · one atom</div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Light & Geometric Optics</h2>
+      <div class="sub">Domain 1 · light-propagation, reflection, refraction</div>
+      <div class="module-grid">
+        <a class="module-card" href="./modules/light-propagation/shadow-size/">
+          <div class="card-meta">L1 · atom</div>
+          <div class="card-title">Shadow Size vs Light Distance</div>
+          <div class="card-sub">slide the lamp toward an object and watch its shadow stretch on the wall</div>
+        </a>
+        <a class="module-card" href="./modules/light-propagation/inverse-square/">
+          <div class="card-meta">L2 · reference</div>
+          <div class="card-title">Inverse Square Law</div>
+          <div class="card-sub">slide the sensor away from the lamp and watch illuminance fall as 1/r²</div>
+        </a>
+        <a class="module-card" href="./modules/refraction-snell/snells-law/">
+          <div class="card-meta">L3 · reference</div>
+          <div class="card-title">Snell's Law Refractometer</div>
+          <div class="card-sub">drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance</div>
+        </a>
+        <a class="module-card" href="./modules/total-internal-reflection/critical-angle/">
+          <div class="card-meta">L3 · reference</div>
+          <div class="card-title">Critical Angle for Total Internal Reflection</div>
+          <div class="card-sub">tilt the laser inside glass and find the angle past which it cannot escape</div>
+        </a>
+      </div>
+    </div>
 
-    <div class="module-grid">
-      <a class="module-card" href="./modules/wave-fundamentals/sine-anatomy/">
-        <div class="card-meta">L1 · atom · D1 Optics</div>
-        <div class="card-title">Anatomy of a Sine Wave</div>
-        <div class="card-sub">drag three sliders — amplitude, wavelength, phase — and watch each parameter reshape the same curve</div>
-      </a>
-      <a class="module-card" href="./modules/refraction-snell/snells-law/">
-        <div class="card-meta">L3 · reference · D1 Optics</div>
-        <div class="card-title">Snell's Law Refractometer</div>
-        <div class="card-sub">drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance in real time</div>
-      </a>
-      <a class="module-card" href="./modules/wave-interference/soap-bubble/">
-        <div class="card-meta">L3 · reference · D1 Optics</div>
-        <div class="card-title">Soap Bubble Thin-Film Interference</div>
-        <div class="card-sub">slide the film thickness and watch the reflected colour cycle through the structural rainbow</div>
-      </a>
-      <a class="module-card" href="./modules/particle-scattering/sky-color/">
-        <div class="card-meta">L2 · headliner · D1 Optics</div>
-        <div class="card-title">Why the Sky Is Blue</div>
-        <div class="card-sub">move the sun across the sky and watch Rayleigh scattering paint the daytime blue and the sunset red</div>
-      </a>
-      <a class="module-card" href="./modules/color-vision-deficiency/cvd-everyday/">
-        <div class="card-meta">L1 · headliner · D2 Vision</div>
-        <div class="card-title">Everyday Color Confusion</div>
-        <div class="card-sub">toggle between trichromat and dichromat views to see which colour pairs collapse into the same percept</div>
-      </a>
+    <div class="domain-cluster">
+      <h2 class="section-title">Wave Optics</h2>
+      <div class="sub">Domain 1 · waves, interference, polarisation, dispersion</div>
+      <div class="module-grid">
+        <a class="module-card" href="./modules/wave-fundamentals/sine-anatomy/">
+          <div class="card-meta">L1 · atom</div>
+          <div class="card-title">Anatomy of a Sine Wave</div>
+          <div class="card-sub">drag amplitude, wavelength, and phase to reshape one curve</div>
+        </a>
+        <a class="module-card" href="./modules/wave-fundamentals/superposition-basic/">
+          <div class="card-meta">L2 · atom</div>
+          <div class="card-title">Wave Superposition</div>
+          <div class="card-sub">slide the phase difference between two sine waves and watch them add</div>
+        </a>
+        <a class="module-card" href="./modules/wave-interference/soap-bubble/">
+          <div class="card-meta">L3 · reference</div>
+          <div class="card-title">Soap Bubble Thin-Film Interference</div>
+          <div class="card-sub">sweep film thickness and watch the reflected colour cycle the rainbow</div>
+        </a>
+        <a class="module-card" href="./modules/prism-dispersion/newtons-prism/">
+          <div class="card-meta">L2 · reference</div>
+          <div class="card-title">Newton's Prism</div>
+          <div class="card-sub">send white light through a prism and watch it fan into the rainbow</div>
+        </a>
+        <a class="module-card" href="./modules/wave-polarization/malus-law/">
+          <div class="card-meta">L3 · reference</div>
+          <div class="card-title">Malus's Law</div>
+          <div class="card-sub">rotate a polariser through 360° and watch I = I₀ cos²θ</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="domain-cluster">
+      <h2 class="section-title">Light Sources & Atmosphere</h2>
+      <div class="sub">Domain 1 · blackbody radiation, atmospheric scattering</div>
+      <div class="module-grid">
+        <a class="module-card" href="./modules/planckian-radiation/filament-heating/">
+          <div class="card-meta">L2 · reference</div>
+          <div class="card-title">Heating a Tungsten Filament</div>
+          <div class="card-sub">raise a blackbody's temperature and watch its colour climb from red to white</div>
+        </a>
+        <a class="module-card" href="./modules/particle-scattering/sky-color/">
+          <div class="card-meta">L2 · headliner</div>
+          <div class="card-title">Why the Sky Is Blue</div>
+          <div class="card-sub">move the sun across the sky and watch Rayleigh scattering paint it</div>
+        </a>
+        <a class="module-card" href="./modules/particle-scattering/rayleigh-spectrum/">
+          <div class="card-meta">L3 · atom</div>
+          <div class="card-title">Rayleigh Scattering Curve</div>
+          <div class="card-sub">compare scattering at violet vs red and see why blue dominates</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="domain-cluster">
+      <h2 class="section-title">Visual Physiology</h2>
+      <div class="sub">Domain 2 · the perceiving eye</div>
+      <div class="module-grid">
+        <a class="module-card" href="./modules/color-vision-deficiency/cvd-everyday/">
+          <div class="card-meta">L1 · headliner</div>
+          <div class="card-title">Everyday Color Confusion</div>
+          <div class="card-sub">toggle dichromat views to see which colour pairs collapse</div>
+        </a>
+      </div>
     </div>
 
     <footer class="landing-footer">
