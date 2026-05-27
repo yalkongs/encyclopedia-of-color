@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "em-fundamentals/poynting-flux",
+  "title": {
+    "en": "Poynting Vector",
+    "ko": "포인팅 벡터"
+  },
+  "subtitle": {
+    "en": "scale E and B and watch their cross product carry energy along the direction of travel",
+    "ko": "E와 B의 크기를 조절하며 그 외적이 진행 방향으로 에너지를 운반하는 모습을 본다"
+  },
+  "description": {
+    "en": "Scale the electric and magnetic field amplitudes and watch the Poynting vector S = E × H / μ₀ — the rate of energy flow per unit area carried by every electromagnetic wave.",
+    "ko": "전기장과 자기장의 진폭을 조절하며 단위 면적당 에너지 흐름인 포인팅 벡터 S = E × H / μ₀를 본다. 모든 전자기파의 에너지 운반 방식이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "em-fundamentals",
+  "layout": "A",
+  "prerequisites": ["em-fundamentals/em-wave-propagation"],
+  "leads_to": ["em-fundamentals/radiation-pressure"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.3" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["poynting vector", "intensity", "electromagnetic energy", "interactive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

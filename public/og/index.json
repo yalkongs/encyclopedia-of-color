@@ -5,6 +5,31 @@
     "square": "og/color-vision-deficiency--cvd-everyday.sq.png"
   },
   {
+    "id": "em-fundamentals/e-and-b-vectors",
+    "og": "og/em-fundamentals--e-and-b-vectors.png",
+    "square": "og/em-fundamentals--e-and-b-vectors.sq.png"
+  },
+  {
+    "id": "em-fundamentals/em-spectrum-tour",
+    "og": "og/em-fundamentals--em-spectrum-tour.png",
+    "square": "og/em-fundamentals--em-spectrum-tour.sq.png"
+  },
+  {
+    "id": "em-fundamentals/em-wave-propagation",
+    "og": "og/em-fundamentals--em-wave-propagation.png",
+    "square": "og/em-fundamentals--em-wave-propagation.sq.png"
+  },
+  {
+    "id": "em-fundamentals/poynting-flux",
+    "og": "og/em-fundamentals--poynting-flux.png",
+    "square": "og/em-fundamentals--poynting-flux.sq.png"
+  },
+  {
+    "id": "em-fundamentals/radiation-pressure",
+    "og": "og/em-fundamentals--radiation-pressure.png",
+    "square": "og/em-fundamentals--radiation-pressure.sq.png"
+  },
+  {
     "id": "light-basics/additive-rgb-mixing",
     "og": "og/light-basics--additive-rgb-mixing.png",
     "square": "og/light-basics--additive-rgb-mixing.sq.png"

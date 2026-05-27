@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "em-fundamentals/e-and-b-vectors",
+  "title": {
+    "en": "E and B Vector Pair",
+    "ko": "전기·자기장 벡터 쌍"
+  },
+  "subtitle": {
+    "en": "rotate a propagating wave and watch E and B oscillate perpendicular to each other",
+    "ko": "진행파를 따라가며 E와 B 벡터가 서로 직교 진동하는 모습을 본다"
+  },
+  "description": {
+    "en": "Watch the electric and magnetic field vectors of a propagating light wave oscillate in perpendicular planes — the geometric heart of every electromagnetic wave.",
+    "ko": "진행하는 빛의 전기장 벡터와 자기장 벡터가 서로 직교하는 평면에서 진동하는 모습을 본다. 모든 전자기파의 기하학적 핵심이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "em-fundamentals",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/sine-anatomy"],
+  "leads_to": ["em-fundamentals/em-wave-propagation", "em-fundamentals/poynting-flux"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.2" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["electric field", "magnetic field", "electromagnetic wave", "interactive"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

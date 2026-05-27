@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>EM Spectrum Tour — drag a probe from radio to gamma and read what kin…</title>
+  <meta name="description" content="Drag a probe across 18 decades of the electromagnetic spectrum, from kilometre radio waves to picometre gamma rays, reading wavelength, frequency, and photon energy.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/em-spectrum-tour/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="EM Spectrum Tour">
+  <meta property="og:description"    content="Drag a probe across 18 decades of the electromagnetic spectrum, from kilometre radio waves to picometre gamma rays, reading wavelength, frequency, and photon energy.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/em-spectrum-tour/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--em-spectrum-tour.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: EM Spectrum Tour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="EM Spectrum Tour">
+  <meta name="twitter:description"   content="Drag a probe across 18 decades of the electromagnetic spectrum, from kilometre radio waves to picometre gamma rays, reading wavelength, frequency, and photon energy.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--em-spectrum-tour.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: EM Spectrum Tour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"EM Spectrum Tour","alternateName":"em-fundamentals/em-spectrum-tour","description":"Drag a probe across 18 decades of the electromagnetic spectrum, from kilometre radio waves to picometre gamma rays, reading wavelength, frequency, and photon energy.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"electromagnetic spectrum, radio gamma ray, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/em-spectrum-tour/","image":"https://encyclopedia-of-color.vercel.app/og/em-fundamentals--em-spectrum-tour.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="em-fundamentals/em-spectrum-tour">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">EM Spectrum Tour</h1>
+      <p class="module-subtitle">drag a probe from radio to gamma and read what kind of radiation it picks up</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Every wavelength of electromagnetic radiation — from kilometre-long radio waves to picometre gamma rays — is the same kind of wave, differing only in frequency.
+        </p>
+        <div class="math-block" data-tex="E_{\text{photon}} \;=\; h\nu \;=\; \dfrac{hc}{\lambda}"></div>
+        <p class="zone-guide">
+          Slide the probe across log₁₀(λ) from −14 (gamma) to +4 (long radio). The readout shows wavelength in metres, frequency in hertz, photon energy in electron-volts, and a typical source.
+        </p>
+        <enc-slider id="log" label="log₁₀(λ in m) × 10" min="-140" max="40" step="1" value="-70"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="EM spectrum band probe"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.6">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

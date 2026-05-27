@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "em-fundamentals/radiation-pressure",
+  "title": {
+    "en": "Radiation Pressure",
+    "ko": "복사압"
+  },
+  "subtitle": {
+    "en": "shine a beam on a sail and watch its momentum push the sail forward",
+    "ko": "광선을 돛에 비추며 광자 운동량이 돛을 미는 모습을 본다"
+  },
+  "description": {
+    "en": "Shine a beam on a perfect absorber or reflector and watch the photon momentum push it forward — the same force that drives solar sails and cosmic dust.",
+    "ko": "완전 흡수체 또는 반사체에 광선을 비추면 광자 운동량이 그 표면을 앞으로 미는 힘이 생긴다. 태양돛과 우주 먼지를 움직이는 같은 힘이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "em-fundamentals",
+  "layout": "A",
+  "prerequisites": ["em-fundamentals/poynting-flux"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.3.2" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["radiation pressure", "solar sail", "photon momentum", "interactive"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

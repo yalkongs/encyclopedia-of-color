@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Radiation Pressure — shine a beam on a sail and watch its momentum pu…</title>
+  <meta name="description" content="Shine a beam on a perfect absorber or reflector and watch the photon momentum push it forward — the same force that drives solar sails and cosmic dust.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/radiation-pressure/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Radiation Pressure">
+  <meta property="og:description"    content="Shine a beam on a perfect absorber or reflector and watch the photon momentum push it forward — the same force that drives solar sails and cosmic dust.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/radiation-pressure/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--radiation-pressure.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Radiation Pressure.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Radiation Pressure">
+  <meta name="twitter:description"   content="Shine a beam on a perfect absorber or reflector and watch the photon momentum push it forward — the same force that drives solar sails and cosmic dust.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--radiation-pressure.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Radiation Pressure.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Radiation Pressure","alternateName":"em-fundamentals/radiation-pressure","description":"Shine a beam on a perfect absorber or reflector and watch the photon momentum push it forward — the same force that drives solar sails and cosmic dust.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"radiation pressure, solar sail, photon momentum, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/radiation-pressure/","image":"https://encyclopedia-of-color.vercel.app/og/em-fundamentals--radiation-pressure.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="em-fundamentals/radiation-pressure">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Radiation Pressure</h1>
+      <p class="module-subtitle">shine a beam on a sail and watch its momentum push the sail forward</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Each photon carries momentum p = E/c; when it strikes a surface, it transfers that momentum — light exerts a measurable pressure.
+        </p>
+        <div class="math-block" data-tex="P_{\text{absorber}} \;=\; \dfrac{I}{c}, \qquad P_{\text{reflector}} \;=\; \dfrac{2I}{c}"></div>
+        <p class="zone-guide">
+          Slide the intensity from candle-faint to solar-bright. Toggle absorber/reflector: a perfect reflector receives twice the pressure because each photon reverses its momentum.
+        </p>
+        <enc-slider id="I" label="Beam intensity I (W/m²)" min="0" max="10000" step="10" value="1361" unit="W/m²"></enc-slider>
+        <enc-toggle id="mode" label="Surface" options="absorb,reflect" labels="Absorber,Reflector" value="absorb"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Radiation pressure on a sail"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.3.2">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

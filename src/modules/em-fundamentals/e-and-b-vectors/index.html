@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>E and B Vector Pair — rotate a propagating wave and watch E and B osc…</title>
+  <meta name="description" content="Watch the electric and magnetic field vectors of a propagating light wave oscillate in perpendicular planes — the geometric heart of every electromagnetic wave.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/e-and-b-vectors/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="E and B Vector Pair">
+  <meta property="og:description"    content="Watch the electric and magnetic field vectors of a propagating light wave oscillate in perpendicular planes — the geometric heart of every electromagnetic wave.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/e-and-b-vectors/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--e-and-b-vectors.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: E and B Vector Pair.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="E and B Vector Pair">
+  <meta name="twitter:description"   content="Watch the electric and magnetic field vectors of a propagating light wave oscillate in perpendicular planes — the geometric heart of every electromagnetic wave.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--e-and-b-vectors.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: E and B Vector Pair.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"E and B Vector Pair","alternateName":"em-fundamentals/e-and-b-vectors","description":"Watch the electric and magnetic field vectors of a propagating light wave oscillate in perpendicular planes — the geometric heart of every electromagnetic wave.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"electric field, magnetic field, electromagnetic wave, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/e-and-b-vectors/","image":"https://encyclopedia-of-color.vercel.app/og/em-fundamentals--e-and-b-vectors.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="em-fundamentals/e-and-b-vectors">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">E and B Vector Pair</h1>
+      <p class="module-subtitle">rotate a propagating wave and watch E and B oscillate perpendicular to each other</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A plane electromagnetic wave carries an electric field E and a magnetic field B that oscillate in perpendicular planes, both transverse to the direction of travel.
+        </p>
+        <div class="math-block" data-tex="\mathbf{E} \perp \mathbf{B} \perp \hat{\mathbf{k}}, \qquad |\mathbf{E}| \;=\; c\,|\mathbf{B}|"></div>
+        <p class="zone-guide">
+          Slide the frequency. The crimson E vector oscillates vertically (y), the gold B vector oscillates out-of-page (z), and both ride the +x propagation direction.
+        </p>
+        <enc-slider id="f" label="Frequency f (×0.1 Hz)" min="3" max="40" step="1" value="10"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="E and B field vector pair"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.2 (Electromagnetic Waves)">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

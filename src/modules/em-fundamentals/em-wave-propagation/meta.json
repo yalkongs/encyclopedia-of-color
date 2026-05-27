@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "em-fundamentals/em-wave-propagation",
+  "title": {
+    "en": "EM Wave Propagation — Right-Hand Rule",
+    "ko": "전자기파의 전파 — 오른손 법칙"
+  },
+  "subtitle": {
+    "en": "rotate E and B around the unit triad and watch the direction of travel rotate with them",
+    "ko": "E와 B 벡터를 회전시키며 진행 방향이 함께 회전하는 모습을 본다"
+  },
+  "description": {
+    "en": "Rotate the E and B field vectors around the unit triad and watch the direction of travel rotate with them — the right-hand rule that picks a single propagation direction from any EM field pair.",
+    "ko": "E와 B 벡터를 회전시키면 진행 방향이 함께 회전하는 모습을 본다. 어떤 E·B 쌍에서도 단 하나의 진행 방향을 골라주는 오른손 법칙이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "em-fundamentals",
+  "layout": "A",
+  "prerequisites": ["em-fundamentals/e-and-b-vectors"],
+  "leads_to": ["em-fundamentals/poynting-flux"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.2" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["right hand rule", "em propagation", "interactive optics"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Poynting Vector — scale E and B and watch their cross product carry e…</title>
+  <meta name="description" content="Scale the electric and magnetic field amplitudes and watch the Poynting vector S = E × H / μ₀ — the rate of energy flow per unit area carried by every electromagnetic wave.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/poynting-flux/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Poynting Vector">
+  <meta property="og:description"    content="Scale the electric and magnetic field amplitudes and watch the Poynting vector S = E × H / μ₀ — the rate of energy flow per unit area carried by every electromagnetic wave.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/poynting-flux/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--poynting-flux.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Poynting Vector.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Poynting Vector">
+  <meta name="twitter:description"   content="Scale the electric and magnetic field amplitudes and watch the Poynting vector S = E × H / μ₀ — the rate of energy flow per unit area carried by every electromagnetic wave.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/em-fundamentals--poynting-flux.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Poynting Vector.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Poynting Vector","alternateName":"em-fundamentals/poynting-flux","description":"Scale the electric and magnetic field amplitudes and watch the Poynting vector S = E × H / μ₀ — the rate of energy flow per unit area carried by every electromagnetic wave.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"poynting vector, intensity, electromagnetic energy, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/em-fundamentals/poynting-flux/","image":"https://encyclopedia-of-color.vercel.app/og/em-fundamentals--poynting-flux.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="em-fundamentals/poynting-flux">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Poynting Vector</h1>
+      <p class="module-subtitle">scale E and B and watch their cross product carry energy along the direction of travel</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Poynting vector S gives the instantaneous energy flux of an electromagnetic field — its magnitude is the watts per square metre crossing a surface.
+        </p>
+        <div class="math-block" data-tex="\mathbf{S} \;=\; \dfrac{1}{\mu_{0}} \mathbf{E} \times \mathbf{B}"></div>
+        <p class="zone-guide">
+          Scale E (crimson) and B (gold) independently. The dark Poynting vector S responds as their cross product; the right-side bar shows relative intensity |S| = |E|·|B|.
+        </p>
+        <enc-slider id="E" label="|E| amplitude (%)" min="0" max="200" step="1" value="100" unit="%"></enc-slider>
+        <enc-slider id="B" label="|B| amplitude (%)" min="0" max="200" step="1" value="100" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Poynting vector geometry"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.3">
+    </enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

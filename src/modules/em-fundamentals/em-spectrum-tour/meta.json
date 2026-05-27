@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "em-fundamentals/em-spectrum-tour",
+  "title": {
+    "en": "EM Spectrum Tour",
+    "ko": "전자기 스펙트럼 투어"
+  },
+  "subtitle": {
+    "en": "drag a probe from radio to gamma and read what kind of radiation it picks up",
+    "ko": "탐침을 라디오에서 감마까지 끌어 옮기며 각 영역의 복사선을 확인한다"
+  },
+  "description": {
+    "en": "Drag a probe across 18 decades of the electromagnetic spectrum, from kilometre radio waves to picometre gamma rays, reading wavelength, frequency, and photon energy.",
+    "ko": "전자기 스펙트럼 18 자릿수를 탐침으로 훑으며 각 대역의 파장·주파수·광자 에너지·전형적 광원을 읽는다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "em-fundamentals",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["wave-fundamentals/wavelength-frequency"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.6" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["electromagnetic spectrum", "radio gamma ray", "interactive"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}
