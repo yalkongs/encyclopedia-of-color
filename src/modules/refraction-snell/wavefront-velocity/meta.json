@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/wavefront-velocity",
+  "title": { "en": "Wavefront Velocity in a Denser Medium", "ko": "밀한 매질에서의 파동 속도" },
+  "subtitle": {
+    "en": "tune the refractive index and watch wavelength shorten while frequency stays fixed",
+    "ko": "굴절률을 조정하며 파장만 짧아지고 주파수는 그대로인 모습을 본다"
+  },
+  "description": {
+    "en": "Tune the refractive index and watch the wavefront slow to v = c/n, the wavelength shrink to λ/n, while the frequency stays fixed — the deeper why behind Snell's law.",
+    "ko": "굴절률을 조정하면 파동 속도는 v = c/n으로 줄고 파장은 λ/n으로 짧아진다 — 주파수는 변하지 않는다. 스넬 법칙의 본질이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law", "wave-fundamentals/wavelength-frequency"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.3" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["wavefront velocity", "v = c/n", "interactive"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

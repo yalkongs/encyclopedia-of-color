@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "reflection-lab/spherical-aberration",
+  "title": { "en": "Spherical vs Parabolic Mirror", "ko": "구면 수차 vs 포물면 거울" },
+  "subtitle": {
+    "en": "toggle sphere or parabola and see how peripheral rays miss the paraxial focus",
+    "ko": "구면과 포물면을 전환하며 주변 광선이 근축 초점을 어떻게 놓치는지 본다"
+  },
+  "description": {
+    "en": "Toggle a sphere or a parabola and watch parallel rays from infinity converge — a sphere lets peripheral rays focus short, a parabola sends every ray to the same focus.",
+    "ko": "구면 거울과 포물면 거울을 전환하며 무한대에서 온 평행 광선의 수렴을 본다. 구면은 주변 광선의 초점이 어긋나고, 포물면은 모든 광선을 한 초점으로 모은다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "reflection-lab",
+  "layout": "A",
+  "prerequisites": ["reflection-lab/spherical-mirrors"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§6.3" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["spherical aberration", "parabolic mirror", "interactive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

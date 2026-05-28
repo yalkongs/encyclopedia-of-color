@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "reflection-lab/plane-mirror",
+  "title": { "en": "Plane Mirror Image", "ko": "평면 거울의 상" },
+  "subtitle": {
+    "en": "drag an object in front of a mirror and watch its virtual twin appear at equal distance behind",
+    "ko": "거울 앞의 물체를 옮기며 같은 거리만큼 뒤에 생기는 가상의 상을 본다"
+  },
+  "description": {
+    "en": "Drag an object in front of a flat mirror and watch its virtual image appear at the same perpendicular distance behind, with left and right reversed.",
+    "ko": "평면 거울 앞의 물체를 옮기면 거울 뒤 같은 수직 거리에 좌우가 반전된 가상의 상이 나타난다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "reflection-lab",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["reflection-lab/spherical-mirrors"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§5.4" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["plane mirror", "virtual image", "interactive optics"],
+  "estimated_hours": 6,
+  "status": "shipped"
+}

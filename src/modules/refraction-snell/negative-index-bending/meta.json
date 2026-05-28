@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/negative-index-bending",
+  "title": { "en": "Negative-Index Refraction", "ko": "음굴절률 굴절" },
+  "subtitle": {
+    "en": "flip the lower medium's index sign and watch the refracted ray emerge on the wrong side of the normal",
+    "ko": "하부 매질의 굴절률 부호를 뒤집으며 굴절광이 법선의 반대편으로 나오는 모습을 본다"
+  },
+  "description": {
+    "en": "Flip the lower medium between positive and negative refractive index and watch the refracted ray emerge on the opposite side of the normal — Veselago-Pendry metamaterials made literal.",
+    "ko": "하부 매질의 굴절률을 양수에서 음수로 전환하면 굴절광이 법선의 반대편으로 나오는 것을 본다. 베셀라고-펜드리 메타물질의 핵심이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": ["modern-optics/metamaterial-negative-n"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Pendry et al. 2000", "section": "PRL 85" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [],
+  "seo_keywords": ["negative index", "metamaterial", "veselago", "interactive"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

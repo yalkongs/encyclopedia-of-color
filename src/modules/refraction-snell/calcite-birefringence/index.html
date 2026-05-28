@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Calcite Birefringence — send a ray into calcite and watch it split in…</title>
+  <meta name="description" content="Send unpolarised light into a calcite crystal and watch it split into ordinary (n_o = 1.658) and extraordinary (n_e = 1.486) rays — the textbook example of birefringence.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/calcite-birefringence/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Calcite Birefringence">
+  <meta property="og:description"    content="Send unpolarised light into a calcite crystal and watch it split into ordinary (n_o = 1.658) and extraordinary (n_e = 1.486) rays — the textbook example of birefringence.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/calcite-birefringence/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--calcite-birefringence.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Calcite Birefringence.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Calcite Birefringence">
+  <meta name="twitter:description"   content="Send unpolarised light into a calcite crystal and watch it split into ordinary (n_o = 1.658) and extraordinary (n_e = 1.486) rays — the textbook example of birefringence.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--calcite-birefringence.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Calcite Birefringence.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Calcite Birefringence","alternateName":"refraction-snell/calcite-birefringence","description":"Send unpolarised light into a calcite crystal and watch it split into ordinary (n_o = 1.658) and extraordinary (n_e = 1.486) rays — the textbook example of birefringence.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"birefringence, calcite, ordinary extraordinary ray, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/refraction-snell/calcite-birefringence/","image":"https://encyclopedia-of-color.vercel.app/og/refraction-snell--calcite-birefringence.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="refraction-snell/calcite-birefringence">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Calcite Birefringence</h1>
+      <p class="module-subtitle">send a ray into calcite and watch it split into ordinary and extraordinary rays</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Anisotropic crystals like calcite have two refractive indices: n_o for light polarised perpendicular to the optical axis, n_e for light along it. The two rays follow different paths.
+        </p>
+        <div class="math-block" data-tex="n_{o} = 1.658, \qquad n_{e} = 1.486 \quad \text{(calcite)}"></div>
+        <p class="zone-guide">
+          Slide the incidence angle. The slate o-ray and crimson e-ray separate inside the crystal, exit parallel, and emerge as two distinct beams below.
+        </p>
+        <enc-slider id="theta" label="Incident angle θ₁ (°)" min="0" max="70" step="0.5" value="30" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Calcite o-ray e-ray"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.4"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

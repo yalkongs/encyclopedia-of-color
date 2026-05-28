@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Wavefront Velocity in a Denser Medium — tune the refractive index and…</title>
+  <meta name="description" content="Tune the refractive index and watch the wavefront slow to v = c/n, the wavelength shrink to λ/n, while the frequency stays fixed — the deeper why behind Snell's law.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/wavefront-velocity/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Wavefront Velocity in a Denser Medium">
+  <meta property="og:description"    content="Tune the refractive index and watch the wavefront slow to v = c/n, the wavelength shrink to λ/n, while the frequency stays fixed — the deeper why behind Snell's law.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/wavefront-velocity/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--wavefront-velocity.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Wavefront Velocity in a Denser Medium.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Wavefront Velocity in a Denser Medium">
+  <meta name="twitter:description"   content="Tune the refractive index and watch the wavefront slow to v = c/n, the wavelength shrink to λ/n, while the frequency stays fixed — the deeper why behind Snell's law.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--wavefront-velocity.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Wavefront Velocity in a Denser Medium.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Wavefront Velocity in a Denser Medium","alternateName":"refraction-snell/wavefront-velocity","description":"Tune the refractive index and watch the wavefront slow to v = c/n, the wavelength shrink to λ/n, while the frequency stays fixed — the deeper why behind Snell's law.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"wavefront velocity, v = c/n, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/refraction-snell/wavefront-velocity/","image":"https://encyclopedia-of-color.vercel.app/og/refraction-snell--wavefront-velocity.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="refraction-snell/wavefront-velocity">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Wavefront Velocity in a Denser Medium</h1>
+      <p class="module-subtitle">tune the refractive index and watch wavelength shorten while frequency stays fixed</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Light's phase velocity drops by n in a denser medium; the frequency stays unchanged, so the wavelength must shorten in proportion.
+        </p>
+        <div class="math-block" data-tex="v \;=\; \dfrac{c}{n}, \qquad \lambda_{n} \;=\; \dfrac{\lambda}{n}"></div>
+        <p class="zone-guide">
+          Slide n. Wavefronts on the right slow down and crowd together; the bottom calipers show the wavelength change while frequency stays constant.
+        </p>
+        <enc-slider id="n2" label="Right medium n" min="1.0" max="2.5" step="0.01" value="1.5"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Wavefront speed across interface"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

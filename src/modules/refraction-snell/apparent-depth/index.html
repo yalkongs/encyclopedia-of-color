@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Apparent Depth — slide a coin deeper in water and watch its apparent…</title>
+  <meta name="description" content="Slide a coin deeper into water and watch its image rise toward the surface — the apparent depth is the real depth divided by the medium's refractive index.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/apparent-depth/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Apparent Depth">
+  <meta property="og:description"    content="Slide a coin deeper into water and watch its image rise toward the surface — the apparent depth is the real depth divided by the medium's refractive index.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/apparent-depth/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--apparent-depth.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Apparent Depth.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Apparent Depth">
+  <meta name="twitter:description"   content="Slide a coin deeper into water and watch its image rise toward the surface — the apparent depth is the real depth divided by the medium's refractive index.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--apparent-depth.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Apparent Depth.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Apparent Depth","alternateName":"refraction-snell/apparent-depth","description":"Slide a coin deeper into water and watch its image rise toward the surface — the apparent depth is the real depth divided by the medium's refractive index.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"apparent depth, refraction, interactive optics","url":"https://encyclopedia-of-color.vercel.app/modules/refraction-snell/apparent-depth/","image":"https://encyclopedia-of-color.vercel.app/og/refraction-snell--apparent-depth.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="refraction-snell/apparent-depth">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Apparent Depth</h1>
+      <p class="module-subtitle">slide a coin deeper in water and watch its apparent depth lag the real one</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Rays bending at the water surface make a submerged object appear nearer the surface — its apparent depth is the real depth divided by n.
+        </p>
+        <div class="math-block" data-tex="d_{\text{app}} \;=\; \dfrac{d_{\text{real}}}{n}"></div>
+        <p class="zone-guide">
+          Slide the real depth d and the refractive index n. The dashed gold rays back-trace to the apparent coin position, always shallower than the real one.
+        </p>
+        <enc-slider id="d" label="Real depth d (px)" min="40" max="240" step="2" value="140" unit="px"></enc-slider>
+        <enc-slider id="n" label="Medium index n" min="1.00" max="2.00" step="0.01" value="1.33"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Apparent depth geometry"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.5"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

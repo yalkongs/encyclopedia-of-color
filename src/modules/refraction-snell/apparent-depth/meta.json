@@ -1,0 +1,29 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/apparent-depth",
+  "title": { "en": "Apparent Depth", "ko": "겉보기 깊이" },
+  "subtitle": {
+    "en": "slide a coin deeper in water and watch its apparent depth lag the real one",
+    "ko": "물속 동전의 실제 깊이와 겉보기 깊이의 차이를 슬라이더로 비교한다"
+  },
+  "description": {
+    "en": "Slide a coin deeper into water and watch its image rise toward the surface — the apparent depth is the real depth divided by the medium's refractive index.",
+    "ko": "동전을 물속 깊이 내려보내며 상이 표면 쪽으로 떠 보이는 현상을 본다. 겉보기 깊이는 실제 깊이를 굴절률로 나눈 값이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.5" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["apparent depth", "refraction", "interactive optics"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

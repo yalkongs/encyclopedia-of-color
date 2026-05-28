@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "reflection-lab/fresnel-equations",
+  "title": { "en": "Fresnel Reflectance Curves", "ko": "프레넬 반사율 곡선" },
+  "subtitle": {
+    "en": "sweep the incidence angle and watch R_s and R_p diverge from each other",
+    "ko": "입사각을 훑으며 R_s와 R_p가 서로 갈라지는 모습을 본다"
+  },
+  "description": {
+    "en": "Sweep the incidence angle and watch s-polarised reflectance rise monotonically while p-polarised reflectance dips to zero at Brewster's angle — the geometry of every polarising filter.",
+    "ko": "입사각을 훑으면 s-편광 반사율은 단조 증가하고 p-편광 반사율은 브루스터 각에서 0으로 떨어진다. 모든 편광 필터의 기하학적 기초다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "reflection-lab",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": ["wave-polarization/brewsters-angle"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.6.2" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["fresnel equations", "polarization", "brewster", "interactive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

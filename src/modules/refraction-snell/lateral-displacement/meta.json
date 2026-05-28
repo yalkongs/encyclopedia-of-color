@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/lateral-displacement",
+  "title": { "en": "Lateral Displacement through a Glass Plate", "ko": "유판 통과 시의 횡적 편위" },
+  "subtitle": {
+    "en": "send a ray through a glass slab and measure how far it shifts sideways on exit",
+    "ko": "유판을 통과한 광선이 출구에서 얼마나 옆으로 밀리는지 측정한다"
+  },
+  "description": {
+    "en": "Send a ray obliquely through a glass slab and measure the parallel lateral shift on exit — the same effect that nudges every photon traversing a window pane.",
+    "ko": "유판을 비스듬히 통과한 광선이 입사 방향과 평행하게 약간 옆으로 밀리는 양을 측정한다. 창유리를 지나는 모든 광자가 받는 편위다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§5.2" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["lateral displacement", "glass slab", "interactive"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

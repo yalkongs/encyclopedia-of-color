@@ -1,0 +1,29 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/calcite-birefringence",
+  "title": { "en": "Calcite Birefringence", "ko": "방해석 복굴절" },
+  "subtitle": {
+    "en": "send a ray into calcite and watch it split into ordinary and extraordinary rays",
+    "ko": "방해석에 들어간 광선이 상광선과 이상광선으로 갈라지는 모습을 본다"
+  },
+  "description": {
+    "en": "Send unpolarised light into a calcite crystal and watch it split into ordinary (n_o = 1.658) and extraordinary (n_e = 1.486) rays — the textbook example of birefringence.",
+    "ko": "편광되지 않은 빛을 방해석에 보내면 상광선(n_o = 1.658)과 이상광선(n_e = 1.486)으로 갈라진다. 복굴절의 교과서적 예다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": ["refraction-snell/snells-law"],
+  "leads_to": ["wave-polarization/photoelasticity"],
+  "see_also": [],
+  "nassau_causes": [14],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.4" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["birefringence", "calcite", "ordinary extraordinary ray", "interactive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

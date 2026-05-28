@@ -100,9 +100,79 @@
     "square": "og/prism-dispersion--newtons-prism.sq.png"
   },
   {
+    "id": "reflection-lab/fresnel-equations",
+    "og": "og/reflection-lab--fresnel-equations.png",
+    "square": "og/reflection-lab--fresnel-equations.sq.png"
+  },
+  {
+    "id": "reflection-lab/grazing-angle-fresnel",
+    "og": "og/reflection-lab--grazing-angle-fresnel.png",
+    "square": "og/reflection-lab--grazing-angle-fresnel.sq.png"
+  },
+  {
+    "id": "reflection-lab/metal-vs-dielectric",
+    "og": "og/reflection-lab--metal-vs-dielectric.png",
+    "square": "og/reflection-lab--metal-vs-dielectric.sq.png"
+  },
+  {
+    "id": "reflection-lab/plane-mirror",
+    "og": "og/reflection-lab--plane-mirror.png",
+    "square": "og/reflection-lab--plane-mirror.sq.png"
+  },
+  {
+    "id": "reflection-lab/retroreflection",
+    "og": "og/reflection-lab--retroreflection.png",
+    "square": "og/reflection-lab--retroreflection.sq.png"
+  },
+  {
+    "id": "reflection-lab/spherical-aberration",
+    "og": "og/reflection-lab--spherical-aberration.png",
+    "square": "og/reflection-lab--spherical-aberration.sq.png"
+  },
+  {
+    "id": "reflection-lab/spherical-mirrors",
+    "og": "og/reflection-lab--spherical-mirrors.png",
+    "square": "og/reflection-lab--spherical-mirrors.sq.png"
+  },
+  {
+    "id": "refraction-snell/apparent-depth",
+    "og": "og/refraction-snell--apparent-depth.png",
+    "square": "og/refraction-snell--apparent-depth.sq.png"
+  },
+  {
+    "id": "refraction-snell/calcite-birefringence",
+    "og": "og/refraction-snell--calcite-birefringence.png",
+    "square": "og/refraction-snell--calcite-birefringence.sq.png"
+  },
+  {
+    "id": "refraction-snell/goos-haenchen-shift",
+    "og": "og/refraction-snell--goos-haenchen-shift.png",
+    "square": "og/refraction-snell--goos-haenchen-shift.sq.png"
+  },
+  {
+    "id": "refraction-snell/lateral-displacement",
+    "og": "og/refraction-snell--lateral-displacement.png",
+    "square": "og/refraction-snell--lateral-displacement.sq.png"
+  },
+  {
+    "id": "refraction-snell/negative-index-bending",
+    "og": "og/refraction-snell--negative-index-bending.png",
+    "square": "og/refraction-snell--negative-index-bending.sq.png"
+  },
+  {
+    "id": "refraction-snell/refraction-direction-intro",
+    "og": "og/refraction-snell--refraction-direction-intro.png",
+    "square": "og/refraction-snell--refraction-direction-intro.sq.png"
+  },
+  {
     "id": "refraction-snell/snells-law",
     "og": "og/refraction-snell--snells-law.png",
     "square": "og/refraction-snell--snells-law.sq.png"
+  },
+  {
+    "id": "refraction-snell/wavefront-velocity",
+    "og": "og/refraction-snell--wavefront-velocity.png",
+    "square": "og/refraction-snell--wavefront-velocity.sq.png"
   },
   {
     "id": "total-internal-reflection/critical-angle",

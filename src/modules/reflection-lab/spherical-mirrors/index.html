@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Spherical Mirrors — switch between concave and convex and place an ob…</title>
+  <meta name="description" content="Toggle a concave or convex mirror and place an object at varying distances. The mirror equation 1/f = 1/s + 1/s' determines whether the image is real, virtual, magnified, or inverted.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/reflection-lab/spherical-mirrors/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Spherical Mirrors">
+  <meta property="og:description"    content="Toggle a concave or convex mirror and place an object at varying distances. The mirror equation 1/f = 1/s + 1/s' determines whether the image is real, virtual, magnified, or inverted.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/reflection-lab/spherical-mirrors/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/reflection-lab--spherical-mirrors.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Spherical Mirrors.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Spherical Mirrors">
+  <meta name="twitter:description"   content="Toggle a concave or convex mirror and place an object at varying distances. The mirror equation 1/f = 1/s + 1/s' determines whether the image is real, virtual, magnified, or inverted.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/reflection-lab--spherical-mirrors.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Spherical Mirrors.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Spherical Mirrors","alternateName":"reflection-lab/spherical-mirrors","description":"Toggle a concave or convex mirror and place an object at varying distances. The mirror equation 1/f = 1/s + 1/s' determines whether the image is real, virtual, magnified, or inverted.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"spherical mirror, concave convex, focal point, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/reflection-lab/spherical-mirrors/","image":"https://encyclopedia-of-color.vercel.app/og/reflection-lab--spherical-mirrors.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="reflection-lab/spherical-mirrors">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Spherical Mirrors</h1>
+      <p class="module-subtitle">switch between concave and convex and place an object across the focal point</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The mirror equation governs every position. Image distance is positive for real images in front of the mirror, negative for virtual images behind.
+        </p>
+        <div class="math-block" data-tex="\dfrac{1}{f} \;=\; \dfrac{1}{s} \;+\; \dfrac{1}{s'}"></div>
+        <p class="zone-guide">
+          Toggle concave / convex and slide focal length f and object distance s. Three principal rays construct the image; the slate arrow marks a real image, gold a virtual one.
+        </p>
+        <enc-toggle id="kind" label="Mirror kind" options="concave,convex" labels="Concave,Convex" value="concave"></enc-toggle>
+        <enc-slider id="f" label="Focal length f (px)" min="40" max="220" step="2" value="120" unit="px"></enc-slider>
+        <enc-slider id="s" label="Object distance s (px)" min="40" max="380" step="2" value="200" unit="px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Spherical mirror ray diagram"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §5.4.3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

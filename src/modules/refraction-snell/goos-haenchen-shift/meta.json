@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/goos-haenchen-shift",
+  "title": { "en": "Goos-Hänchen Shift", "ko": "구스-핸헨 변위" },
+  "subtitle": {
+    "en": "approach the critical angle and watch the totally reflected beam shift sideways along the surface",
+    "ko": "임계각에 가까워질수록 전반사 광선이 표면을 따라 옆으로 미끄러지는 변위를 본다"
+  },
+  "description": {
+    "en": "Approach the critical angle and watch the totally reflected beam shift sideways along the surface — the Goos-Hänchen effect, the evanescent tail's signature on a finite-width beam.",
+    "ko": "임계각에 가까워지면 전반사 광선이 표면을 따라 옆으로 약간 미끄러지는 변위가 나타난다. 유한 폭 빔에 새겨진 에바네센트 꼬리의 흔적이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": ["total-internal-reflection/critical-angle"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Born & Wolf, Principles of Optics 7e", "section": "§1.5.4" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [],
+  "seo_keywords": ["goos hanchen", "evanescent", "TIR shift", "interactive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Which Way Does Light Bend? — toggle the denser medium and watch the r…</title>
+  <meta name="description" content="Toggle which medium is denser and watch the ray bend toward the normal entering a denser medium, away from the normal leaving it — the simplest qualitative result of Snell's law.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/refraction-direction-intro/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Which Way Does Light Bend?">
+  <meta property="og:description"    content="Toggle which medium is denser and watch the ray bend toward the normal entering a denser medium, away from the normal leaving it — the simplest qualitative result of Snell's law.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/refraction-snell/refraction-direction-intro/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--refraction-direction-intro.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Which Way Does Light Bend?.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Which Way Does Light Bend?">
+  <meta name="twitter:description"   content="Toggle which medium is denser and watch the ray bend toward the normal entering a denser medium, away from the normal leaving it — the simplest qualitative result of Snell's law.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/refraction-snell--refraction-direction-intro.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Which Way Does Light Bend?.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Which Way Does Light Bend?","alternateName":"refraction-snell/refraction-direction-intro","description":"Toggle which medium is denser and watch the ray bend toward the normal entering a denser medium, away from the normal leaving it — the simplest qualitative result of Snell's law.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"refraction direction, snell intuition, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/refraction-snell/refraction-direction-intro/","image":"https://encyclopedia-of-color.vercel.app/og/refraction-snell--refraction-direction-intro.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="refraction-snell/refraction-direction-intro">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Which Way Does Light Bend?</h1>
+      <p class="module-subtitle">toggle the denser medium and watch the ray bend toward or away from the normal</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Entering a denser medium, light bends toward the normal; leaving it, away. That single sentence captures the qualitative content of Snell's law.
+        </p>
+        <div class="math-block" data-tex="n_{1} \sin\theta_{1} \;=\; n_{2} \sin\theta_{2}"></div>
+        <p class="zone-guide">
+          Toggle the two scenarios. The crimson label says which way the slate refracted ray bent.
+        </p>
+        <enc-toggle id="mode" label="Scenario" options="enter-dense,leave-dense"
+                    labels="enter denser,leave denser" value="enter-dense"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Refraction direction"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.4"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

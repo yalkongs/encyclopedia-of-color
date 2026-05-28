@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "reflection-lab/grazing-angle-fresnel",
+  "title": { "en": "Grazing Angle Reflection", "ko": "경사각 반사" },
+  "subtitle": {
+    "en": "tilt the eye toward grazing and watch every surface — even matte paper — become a near-perfect mirror",
+    "ko": "시선을 표면에 가까이 기울일수록 무광 종이조차 거울처럼 변하는 모습을 본다"
+  },
+  "description": {
+    "en": "Tilt the viewing angle toward grazing and watch reflectance climb toward 100 % regardless of the material — the trick that lets wet asphalt mirror streetlamps at sunset.",
+    "ko": "시선을 표면에 가까이 기울일수록 어떤 재질이든 반사율이 100 %로 다가가는 모습을 본다. 노을의 가로등을 비누는 젖은 아스팔트의 원리다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "reflection-lab",
+  "layout": "A",
+  "prerequisites": ["reflection-lab/fresnel-equations"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.6" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["grazing reflection", "fresnel", "interactive"],
+  "estimated_hours": 6,
+  "status": "shipped"
+}

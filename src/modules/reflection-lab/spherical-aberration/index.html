@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Spherical vs Parabolic Mirror — toggle sphere or parabola and see how…</title>
+  <meta name="description" content="Toggle a sphere or a parabola and watch parallel rays from infinity converge — a sphere lets peripheral rays focus short, a parabola sends every ray to the same focus.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/reflection-lab/spherical-aberration/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Spherical vs Parabolic Mirror">
+  <meta property="og:description"    content="Toggle a sphere or a parabola and watch parallel rays from infinity converge — a sphere lets peripheral rays focus short, a parabola sends every ray to the same focus.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/reflection-lab/spherical-aberration/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/reflection-lab--spherical-aberration.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Spherical vs Parabolic Mirror.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Spherical vs Parabolic Mirror">
+  <meta name="twitter:description"   content="Toggle a sphere or a parabola and watch parallel rays from infinity converge — a sphere lets peripheral rays focus short, a parabola sends every ray to the same focus.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/reflection-lab--spherical-aberration.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Spherical vs Parabolic Mirror.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Spherical vs Parabolic Mirror","alternateName":"reflection-lab/spherical-aberration","description":"Toggle a sphere or a parabola and watch parallel rays from infinity converge — a sphere lets peripheral rays focus short, a parabola sends every ray to the same focus.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"spherical aberration, parabolic mirror, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/reflection-lab/spherical-aberration/","image":"https://encyclopedia-of-color.vercel.app/og/reflection-lab--spherical-aberration.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="reflection-lab/spherical-aberration">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Spherical vs Parabolic Mirror</h1>
+      <p class="module-subtitle">toggle sphere or parabola and see how peripheral rays miss the paraxial focus</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A spherical mirror focuses only paraxial rays cleanly; peripheral rays converge short of F, producing a caustic blur. A paraboloid focuses every parallel ray to F exactly.
+        </p>
+        <div class="math-block" data-tex="f \;=\; \dfrac{R}{2} \quad\text{(paraxial)}"></div>
+        <p class="zone-guide">
+          Toggle sphere ↔ parabola and slide R. The crimson reflected rays show the caustic in spherical mode; in parabolic mode they all meet at F.
+        </p>
+        <enc-toggle id="shape" label="Mirror shape" options="sphere,parabola" labels="Sphere,Parabola" value="sphere"></enc-toggle>
+        <enc-slider id="r" label="Radius / focal scale R (px)" min="120" max="400" step="4" value="240" unit="px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Spherical aberration"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §6.3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

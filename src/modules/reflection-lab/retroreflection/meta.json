@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "reflection-lab/retroreflection",
+  "title": { "en": "Retroreflection from a Corner Cube", "ko": "직각 코너 큐브의 재귀반사" },
+  "subtitle": {
+    "en": "send a ray into a 90° corner and watch it return exactly parallel to its incoming direction",
+    "ko": "90° 모서리에 광선을 보내면 입사 방향과 정확히 평행하게 되돌아 나오는 모습을 본다"
+  },
+  "description": {
+    "en": "Send a ray at any angle into a 90° corner: it bounces off both walls and returns exactly parallel to its incoming direction — the principle behind road signs and lunar laser ranging.",
+    "ko": "어떤 각도로든 90° 모서리에 광선을 보내면 두 벽에서 반사되어 입사 방향과 정확히 평행하게 되돌아온다. 도로 표지·자전거 반사기·달 레이저 측정의 원리다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "reflection-lab",
+  "layout": "A",
+  "prerequisites": ["reflection-lab/plane-mirror"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.7" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["retroreflection", "corner cube", "interactive"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

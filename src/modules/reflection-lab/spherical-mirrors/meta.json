@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "reflection-lab/spherical-mirrors",
+  "title": { "en": "Spherical Mirrors", "ko": "구면 거울" },
+  "subtitle": {
+    "en": "switch between concave and convex and place an object across the focal point",
+    "ko": "오목과 볼록 거울을 전환하며 초점을 가로지르는 물체 위치별 결상을 본다"
+  },
+  "description": {
+    "en": "Toggle a concave or convex mirror and place an object at varying distances. The mirror equation 1/f = 1/s + 1/s' determines whether the image is real, virtual, magnified, or inverted.",
+    "ko": "오목·볼록 거울을 전환하며 물체 위치를 옮긴다. 거울 방정식 1/f = 1/s + 1/s'에 따라 상이 실상/허상, 확대/축소, 정립/도립이 결정된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "reflection-lab",
+  "layout": "A",
+  "prerequisites": ["reflection-lab/plane-mirror"],
+  "leads_to": ["reflection-lab/spherical-aberration"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§5.4.3" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["spherical mirror", "concave convex", "focal point", "interactive"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

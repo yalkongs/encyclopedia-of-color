@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "refraction-snell/refraction-direction-intro",
+  "title": { "en": "Which Way Does Light Bend?", "ko": "빛은 어느 쪽으로 휘는가" },
+  "subtitle": {
+    "en": "toggle the denser medium and watch the ray bend toward or away from the normal",
+    "ko": "밀한 매질을 전환하며 광선이 법선 쪽 또는 반대쪽으로 휘는 방향을 확인한다"
+  },
+  "description": {
+    "en": "Toggle which medium is denser and watch the ray bend toward the normal entering a denser medium, away from the normal leaving it — the simplest qualitative result of Snell's law.",
+    "ko": "어느 매질이 더 밀한지를 전환하며, 밀한 쪽으로 들어갈 때 법선 쪽으로, 나올 때 법선에서 멀어지는 광선의 휨 방향을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "refraction-snell",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["refraction-snell/snells-law"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.4" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["refraction direction", "snell intuition", "interactive"],
+  "estimated_hours": 4,
+  "status": "shipped"
+}

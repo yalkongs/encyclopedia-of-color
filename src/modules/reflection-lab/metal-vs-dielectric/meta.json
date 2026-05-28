@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "reflection-lab/metal-vs-dielectric",
+  "title": { "en": "Metal vs Dielectric Reflectance", "ko": "금속과 유전체의 반사율 비교" },
+  "subtitle": {
+    "en": "toggle metal or glass and watch one stay bright at every angle while the other dips at Brewster",
+    "ko": "금속과 유리를 전환하며 한쪽은 모든 각에서 밝게 반사하고 다른 쪽은 브루스터에서 떨어지는 모습을 본다"
+  },
+  "description": {
+    "en": "Toggle metal or dielectric: dielectrics dip to zero at Brewster for p-polarisation, metals stay bright everywhere because their complex index forbids that zero.",
+    "ko": "금속과 유전체를 전환하며 반사율 곡선을 비교한다. 유전체는 p-편광이 브루스터 각에서 0이 되지만, 금속은 복소 굴절률 때문에 모든 각에서 밝게 반사한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "reflection-lab",
+  "layout": "A",
+  "prerequisites": ["reflection-lab/fresnel-equations"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.8" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["metal reflectance", "dielectric", "complex refractive index", "interactive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

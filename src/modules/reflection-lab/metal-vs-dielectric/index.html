@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Metal vs Dielectric Reflectance — toggle metal or glass and watch one…</title>
+  <meta name="description" content="Toggle metal or dielectric: dielectrics dip to zero at Brewster for p-polarisation, metals stay bright everywhere because their complex index forbids that zero.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/reflection-lab/metal-vs-dielectric/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Metal vs Dielectric Reflectance">
+  <meta property="og:description"    content="Toggle metal or dielectric: dielectrics dip to zero at Brewster for p-polarisation, metals stay bright everywhere because their complex index forbids that zero.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/reflection-lab/metal-vs-dielectric/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/reflection-lab--metal-vs-dielectric.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Metal vs Dielectric Reflectance.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Metal vs Dielectric Reflectance">
+  <meta name="twitter:description"   content="Toggle metal or dielectric: dielectrics dip to zero at Brewster for p-polarisation, metals stay bright everywhere because their complex index forbids that zero.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/reflection-lab--metal-vs-dielectric.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Metal vs Dielectric Reflectance.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Metal vs Dielectric Reflectance","alternateName":"reflection-lab/metal-vs-dielectric","description":"Toggle metal or dielectric: dielectrics dip to zero at Brewster for p-polarisation, metals stay bright everywhere because their complex index forbids that zero.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"metal reflectance, dielectric, complex refractive index, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/reflection-lab/metal-vs-dielectric/","image":"https://encyclopedia-of-color.vercel.app/og/reflection-lab--metal-vs-dielectric.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="reflection-lab/metal-vs-dielectric">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Metal vs Dielectric Reflectance</h1>
+      <p class="module-subtitle">toggle metal or glass and watch one stay bright at every angle while the other dips at Brewster</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Metals have a large extinction coefficient k, so light cannot enter — only reflect. Dielectrics have k ≈ 0 and obey the real-Fresnel zero at Brewster's angle.
+        </p>
+        <div class="math-block" data-tex="n_{\text{metal}} \;=\; n - i\,k, \qquad R \;=\; |r|^{2}"></div>
+        <p class="zone-guide">
+          Toggle the surface. Glass and water show the textbook Brewster dip in R_p (crimson). Aluminum and silver stay near 90 % reflective at every angle — the reason mirrors are made of metal.
+        </p>
+        <enc-toggle id="mat" label="Surface"
+          options="glass,water,aluminum,silver"
+          labels="Glass,Water,Aluminum,Silver" value="glass"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Metal vs dielectric reflectance"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.8"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -37,9 +37,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 33 modules across 12 categories -->
+    <!-- 47 modules across 13 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>33 modules</strong> are published across 12 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>47 modules</strong> are published across 13 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -186,13 +186,89 @@
       </div>
     </div>
     <div class="domain-cluster">
+      <h2 class="section-title">Reflection</h2>
+      <div class="sub">Domain 1 · specular, mirrors, Fresnel</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/reflection-lab/plane-mirror/">
+        <div class="card-meta">L2 · Atom · Reflection Lab</div>
+        <div class="card-title">Plane Mirror Image</div>
+        <div class="card-sub">drag an object in front of a mirror and watch its virtual twin appear at equal distance behind</div>
+      </a>
+      <a class="module-card" href="./modules/reflection-lab/grazing-angle-fresnel/">
+        <div class="card-meta">L3 · Atom · Reflection Lab</div>
+        <div class="card-title">Grazing Angle Reflection</div>
+        <div class="card-sub">tilt the eye toward grazing and watch every surface — even matte paper — become a near-perfect mirror</div>
+      </a>
+      <a class="module-card" href="./modules/reflection-lab/retroreflection/">
+        <div class="card-meta">L3 · Atom · Reflection Lab</div>
+        <div class="card-title">Retroreflection from a Corner Cube</div>
+        <div class="card-sub">send a ray into a 90° corner and watch it return exactly parallel to its incoming direction</div>
+      </a>
+      <a class="module-card" href="./modules/reflection-lab/spherical-mirrors/">
+        <div class="card-meta">L3 · Reference · Reflection Lab</div>
+        <div class="card-title">Spherical Mirrors</div>
+        <div class="card-sub">switch between concave and convex and place an object across the focal point</div>
+      </a>
+      <a class="module-card" href="./modules/reflection-lab/fresnel-equations/">
+        <div class="card-meta">L4 · Reference · Reflection Lab</div>
+        <div class="card-title">Fresnel Reflectance Curves</div>
+        <div class="card-sub">sweep the incidence angle and watch R_s and R_p diverge from each other</div>
+      </a>
+      <a class="module-card" href="./modules/reflection-lab/metal-vs-dielectric/">
+        <div class="card-meta">L4 · Reference · Reflection Lab</div>
+        <div class="card-title">Metal vs Dielectric Reflectance</div>
+        <div class="card-sub">toggle metal or glass and watch one stay bright at every angle while the other dips at Brewster</div>
+      </a>
+      <a class="module-card" href="./modules/reflection-lab/spherical-aberration/">
+        <div class="card-meta">L4 · Reference · Reflection Lab</div>
+        <div class="card-title">Spherical vs Parabolic Mirror</div>
+        <div class="card-sub">toggle sphere or parabola and see how peripheral rays miss the paraxial focus</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
       <h2 class="section-title">Refraction</h2>
       <div class="sub">Domain 1 · Snell's law, dispersion at interfaces</div>
       <div class="module-grid">
+      <a class="module-card" href="./modules/refraction-snell/refraction-direction-intro/">
+        <div class="card-meta">L1 · Atom · Refraction Snell</div>
+        <div class="card-title">Which Way Does Light Bend?</div>
+        <div class="card-sub">toggle the denser medium and watch the ray bend toward or away from the normal</div>
+      </a>
+      <a class="module-card" href="./modules/refraction-snell/apparent-depth/">
+        <div class="card-meta">L2 · Reference · Refraction Snell</div>
+        <div class="card-title">Apparent Depth</div>
+        <div class="card-sub">slide a coin deeper in water and watch its apparent depth lag the real one</div>
+      </a>
+      <a class="module-card" href="./modules/refraction-snell/lateral-displacement/">
+        <div class="card-meta">L3 · Reference · Refraction Snell</div>
+        <div class="card-title">Lateral Displacement through a Glass Plate</div>
+        <div class="card-sub">send a ray through a glass slab and measure how far it shifts sideways on exit</div>
+      </a>
       <a class="module-card" href="./modules/refraction-snell/snells-law/">
         <div class="card-meta">L3 · Reference · Refraction Snell</div>
         <div class="card-title">Snell's Law Refractometer</div>
         <div class="card-sub">drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance</div>
+      </a>
+      <a class="module-card" href="./modules/refraction-snell/wavefront-velocity/">
+        <div class="card-meta">L3 · Atom · Refraction Snell</div>
+        <div class="card-title">Wavefront Velocity in a Denser Medium</div>
+        <div class="card-sub">tune the refractive index and watch wavelength shorten while frequency stays fixed</div>
+      </a>
+      <a class="module-card" href="./modules/refraction-snell/calcite-birefringence/">
+        <div class="card-meta">L4 · Reference · Refraction Snell</div>
+        <div class="card-title">Calcite Birefringence</div>
+        <div class="card-sub">send a ray into calcite and watch it split into ordinary and extraordinary rays</div>
+      </a>
+      <a class="module-card" href="./modules/refraction-snell/goos-haenchen-shift/">
+        <div class="card-meta">L5 · Atom · Refraction Snell</div>
+        <div class="card-title">Goos-Hänchen Shift</div>
+        <div class="card-sub">approach the critical angle and watch the totally reflected beam shift sideways along the surface</div>
+      </a>
+      <a class="module-card" href="./modules/refraction-snell/negative-index-bending/">
+        <div class="card-meta">L5 · Atom · Refraction Snell</div>
+        <div class="card-title">Negative-Index Refraction</div>
+        <div class="card-sub">flip the lower medium's index sign and watch the refracted ray emerge on the wrong side of the normal</div>
       </a>
       </div>
     </div>
