@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "visual-illusions-library/kanizsa-triangle",
+  "title": {
+    "en": "The Kanizsa Triangle",
+    "ko": "카니자 삼각형"
+  },
+  "subtitle": {
+    "en": "slide the inducers into alignment and watch a bright triangle with crisp edges appear from nothing",
+    "ko": "유도자를 정렬시켜 또렷한 가장자리의 밝은 삼각형이 무에서 나타나는 것을 본다"
+  },
+  "description": {
+    "en": "Three notched discs trick the brain into completing a triangle that is never drawn, edges and all. Slide the inducers out of alignment and watch the illusory contour and its phantom brightness vanish.",
+    "ko": "홈이 팬 세 원반은 뇌를 속여 그려지지 않은 삼각형을 가장자리까지 완성하게 한다. 유도자를 정렬에서 어긋나게 하면 착시 윤곽과 그 환영의 밝기가 무너지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "visual-illusions-library",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/ganglion-cells-dog"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Kanizsa 1955, Rivista di Psicologia", "section": "Subjective Contours" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Kanizsa triangle", "illusory contour", "subjective contour", "completion"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

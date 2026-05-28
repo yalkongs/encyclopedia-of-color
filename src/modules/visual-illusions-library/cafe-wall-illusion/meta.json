@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "visual-illusions-library/cafe-wall-illusion",
+  "title": {
+    "en": "The Café Wall",
+    "ko": "카페 벽 착시"
+  },
+  "subtitle": {
+    "en": "slide the row offset and watch perfectly parallel rows of tiles bend into sloping wedges",
+    "ko": "행 어긋남을 움직여 완벽히 평행한 타일 행들이 기울어진 쐐기로 휘는 것을 본다"
+  },
+  "description": {
+    "en": "Offset rows of light and dark tiles, separated by grey mortar, make the horizontal lines look tilted. Slide the offset and watch parallel rows wedge apart, then snap straight when aligned.",
+    "ko": "회색 모르타르로 나뉜 밝고 어두운 타일 행을 어긋나게 놓으면 수평선이 기울어 보인다. 어긋남을 움직이면 평행한 행이 쐐기처럼 벌어지고, 정렬되면 다시 곧아진다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "visual-illusions-library",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/lateral-inhibition"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Gregory & Heard 1979, Perception", "section": "8" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["café wall", "tilt illusion", "Gregory", "mortar"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

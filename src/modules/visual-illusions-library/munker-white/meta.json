@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "visual-illusions-library/munker-white",
+  "title": {
+    "en": "White's Illusion",
+    "ko": "화이트 착시"
+  },
+  "subtitle": {
+    "en": "toggle the reveal and watch two identical greys, one on black bars and one on white, finally match",
+    "ko": "reveal을 켜서 검은 줄 위와 흰 줄 위의 똑같은 두 회색이 마침내 일치하는 것을 본다"
+  },
+  "description": {
+    "en": "Grey set into black stripes looks lighter than the same grey set into white stripes — assimilation winning over contrast. Toggle the reveal to lift both greys onto neutral and prove they are equal.",
+    "ko": "검은 줄에 박힌 회색은 흰 줄에 박힌 같은 회색보다 밝아 보인다 — 대비를 이긴 동화다. reveal을 켜 두 회색을 중립 위로 올리면 동일함이 증명된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "visual-illusions-library",
+  "layout": "A",
+  "prerequisites": ["opponent-process/bezold-assimilation"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "White 1981, Perception", "section": "10" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["White's illusion", "assimilation", "lightness", "Munker"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "visual-illusions-library/lilac-chaser",
+  "title": {
+    "en": "The Lilac Chaser",
+    "ko": "라일락 체이서"
+  },
+  "subtitle": {
+    "en": "slide the speed, fix the centre cross, and watch a green disc chase a gap that holds only lilac dots",
+    "ko": "속도를 움직이고 가운데 십자를 응시해 라일락 점뿐인 자리를 초록 원이 쫓는 것을 본다"
+  },
+  "description": {
+    "en": "A ring of lilac dots with one blanked, rotating, breeds two illusions at once: a green afterimage chases the gap, and the lilac dots fade away. Slide the speed and fixate the centre to see both.",
+    "ko": "하나가 비워진 채 도는 라일락 점들의 고리는 두 착시를 한꺼번에 낳는다. 초록 잔상이 빈자리를 쫓고, 라일락 점들은 사라진다. 속도를 움직이고 가운데를 응시해 둘 다 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "visual-illusions-library",
+  "layout": "A",
+  "prerequisites": ["opponent-process/opponent-afterimages"],
+  "leads_to": ["visual-illusions-library/troxler-fading"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Bach, Optical Illusions catalogue", "section": "Lilac Chaser" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["lilac chaser", "afterimage", "Troxler", "motion"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

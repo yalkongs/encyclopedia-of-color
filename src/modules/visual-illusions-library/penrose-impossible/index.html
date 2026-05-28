@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Penrose Triangle — toggle the expose view and watch a solid-looki…</title>
+  <meta name="description" content="Each corner of the tribar is locally consistent, yet the whole cannot be built in three dimensions. Toggle the expose view to pull one joint apart and reveal where the eye was fooled.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/visual-illusions-library/penrose-impossible/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Penrose Triangle">
+  <meta property="og:description"    content="Each corner of the tribar is locally consistent, yet the whole cannot be built in three dimensions. Toggle the expose view to pull one joint apart and reveal where the eye was fooled.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/visual-illusions-library/penrose-impossible/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/visual-illusions-library--penrose-impossible.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Penrose Triangle.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Penrose Triangle">
+  <meta name="twitter:description"   content="Each corner of the tribar is locally consistent, yet the whole cannot be built in three dimensions. Toggle the expose view to pull one joint apart and reveal where the eye was fooled.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/visual-illusions-library--penrose-impossible.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Penrose Triangle.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Penrose Triangle","alternateName":"visual-illusions-library/penrose-impossible","description":"Each corner of the tribar is locally consistent, yet the whole cannot be built in three dimensions. Toggle the expose view to pull one joint apart and reveal where the eye was fooled.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Penrose triangle, impossible object, tribar, depth","url":"https://encyclopedia-of-color.vercel.app/modules/visual-illusions-library/penrose-impossible/","image":"https://encyclopedia-of-color.vercel.app/og/visual-illusions-library--penrose-impossible.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="visual-illusions-library/penrose-impossible">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">The Penrose Triangle</h1>
+      <p class="module-subtitle">toggle the expose view and watch a solid-looking triangle break open into a figure that cannot exist</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The visual system reads each corner as a normal right-angle join in depth, then assembles the corners into a whole the laws of solid geometry forbid.
+        </p>
+        <div class="math-block" data-tex="\text{local consistency} \nRightarrow \text{global consistency}"></div>
+        <p class="zone-guide">
+          Study the three beams: each corner looks perfectly ordinary. Toggle the expose view to slide one joint apart and see that the bars never actually meet — the solidity was an inference, not a fact.
+        </p>
+        <enc-toggle id="expose" label="View" options="solid,expose" labels="impossible solid,expose the trick" value="solid"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Penrose impossible triangle"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Penrose &amp; Penrose 1958, British J. Psychology"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

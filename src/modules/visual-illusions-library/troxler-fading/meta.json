@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "visual-illusions-library/troxler-fading",
+  "title": {
+    "en": "Troxler Fading",
+    "ko": "트록슬러 사라짐"
+  },
+  "subtitle": {
+    "en": "slide the softness, fix the centre, and watch the ring of pastel blobs quietly dissolve into the background",
+    "ko": "부드러움을 움직이고 가운데를 응시해 파스텔 얼룩 고리가 배경으로 조용히 녹아드는 것을 본다"
+  },
+  "description": {
+    "en": "Hold your gaze still and the unchanging periphery stops being reported — soft, low-contrast blobs simply fade away. Slide the softness and fixate the centre to watch the ring vanish.",
+    "ko": "시선을 고정하면 변하지 않는 주변부는 더 이상 보고되지 않는다 — 부드럽고 대비 낮은 얼룩들이 그냥 사라진다. 부드러움을 움직이고 가운데를 응시해 고리가 사라지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "visual-illusions-library",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": ["visual-illusions-library/lilac-chaser"],
+  "textbook_refs": [
+    { "source": "Troxler 1804", "section": "Über das Verschwinden gegebener Gegenstände" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Troxler fading", "peripheral fading", "adaptation", "fixation"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

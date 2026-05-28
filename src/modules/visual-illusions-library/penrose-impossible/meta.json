@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "visual-illusions-library/penrose-impossible",
+  "title": {
+    "en": "The Penrose Triangle",
+    "ko": "펜로즈 불가능 삼각형"
+  },
+  "subtitle": {
+    "en": "toggle the expose view and watch a solid-looking triangle break open into a figure that cannot exist",
+    "ko": "expose 시야를 켜서 단단해 보이던 삼각형이 존재할 수 없는 도형으로 갈라지는 것을 본다"
+  },
+  "description": {
+    "en": "Each corner of the tribar is locally consistent, yet the whole cannot be built in three dimensions. Toggle the expose view to pull one joint apart and reveal where the eye was fooled.",
+    "ko": "삼각 막대의 각 모서리는 국소적으로는 모순이 없지만, 전체는 3차원에서 만들 수 없다. expose 시야를 켜 한 이음매를 떼어내면 눈이 속은 지점이 드러난다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "visual-illusions-library",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["visual-illusions-library/kanizsa-triangle"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Penrose & Penrose 1958, British J. Psychology", "section": "Impossible Objects" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Penrose triangle", "impossible object", "tribar", "depth"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}
