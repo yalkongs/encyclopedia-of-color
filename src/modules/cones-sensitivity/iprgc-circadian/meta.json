@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cones-sensitivity/iprgc-circadian",
+  "title": {
+    "en": "ipRGCs and the Body Clock",
+    "ko": "ipRGC와 생체시계"
+  },
+  "subtitle": {
+    "en": "slide the wavelength of evening light and watch blue near 480 nm drive the strongest melatonin suppression",
+    "ko": "저녁 빛의 파장을 움직여 480 nm 근처 청색이 멜라토닌을 가장 강하게 억제하는 것을 본다"
+  },
+  "description": {
+    "en": "Melanopsin-bearing retinal ganglion cells set the circadian clock and peak near 480 nm. Slide the wavelength and watch how blue light suppresses melatonin most, shifting the body clock.",
+    "ko": "멜라놉신을 가진 망막 신경절세포는 생체시계를 맞추며 480 nm 근처에서 가장 민감하다. 파장을 움직이면 청색광이 멜라토닌을 가장 강하게 억제하는 것을 볼 수 있다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "cones-sensitivity",
+  "layout": "A",
+  "prerequisites": ["cones-sensitivity/lms-spectra"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Berson, Dunn & Takao 2002, Science 295", "section": "pp.1070-1073" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["ipRGC", "melanopsin", "circadian", "blue light", "melatonin"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

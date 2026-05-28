@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cones-sensitivity/three-channels",
+  "title": {
+    "en": "Three Channels of Colour",
+    "ko": "색의 세 채널"
+  },
+  "subtitle": {
+    "en": "slide three primaries and watch every colour collapse into a single L, M, S triple",
+    "ko": "세 원색을 움직여 모든 색이 하나의 L·M·S 삼자극으로 환원되는 것을 본다"
+  },
+  "description": {
+    "en": "Trichromacy means three numbers describe any colour your eye can see. Slide the red, green, and blue primaries and watch the L, M, and S cone responses that result.",
+    "ko": "삼색각이란 세 숫자로 모든 색을 기술할 수 있다는 뜻이다. 빨강·초록·파랑 원색을 움직이면 그 결과로 생기는 L·M·S 원추 응답을 볼 수 있다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "cones-sensitivity",
+  "layout": "A",
+  "prerequisites": ["cones-sensitivity/lms-spectra"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5 (Trichromacy)" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["trichromacy", "RGB", "LMS", "color matching"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "rods-adaptation/rhodopsin-kinetics",
+  "title": {
+    "en": "Rhodopsin Bleaching & Recovery",
+    "ko": "로돕신 표백과 재생"
+  },
+  "subtitle": {
+    "en": "slide the time after a bleach and watch rhodopsin regenerate while the visual threshold falls",
+    "ko": "표백 후 시간을 움직여 로돕신이 재생되며 시각 역치가 내려가는 것을 본다"
+  },
+  "description": {
+    "en": "A bright flash bleaches rhodopsin; in the dark it regenerates over minutes. Slide the time since the bleach and watch the unbleached fraction recover and the log threshold fall with it.",
+    "ko": "밝은 섬광은 로돕신을 표백하고, 어둠 속에서 수 분에 걸쳐 재생된다. 표백 후 경과 시간을 움직이면 미표백 분율이 회복되고 그에 따라 로그 역치가 내려가는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "rods-adaptation",
+  "layout": "A",
+  "prerequisites": ["rods-adaptation/pupil-reflex"],
+  "leads_to": ["rods-adaptation/dark-adaptation-curve"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wandell, Foundations of Vision", "section": "§3.2 (Photopigment Bleaching)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["rhodopsin", "bleaching", "regeneration", "Dowling-Rushton"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

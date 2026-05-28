@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cones-sensitivity/firing-rate",
+  "title": {
+    "en": "From Photons to Firing Rate",
+    "ko": "광자에서 발화율로"
+  },
+  "subtitle": {
+    "en": "slide the light intensity and watch the response climb then saturate along a Naka-Rushton curve",
+    "ko": "빛의 세기를 움직여 응답이 Naka-Rushton 곡선을 따라 오르다 포화되는 것을 본다"
+  },
+  "description": {
+    "en": "A photoreceptor's response cannot grow without bound. Slide the light intensity and watch the response follow the Naka-Rushton law — near-linear at first, then saturating once the light is strong.",
+    "ko": "광수용체의 응답은 무한히 커질 수 없다. 빛의 세기를 움직이면 응답이 Naka-Rushton 법칙을 따라 처음엔 거의 선형이다가 강한 빛에서 포화된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "cones-sensitivity",
+  "layout": "A",
+  "prerequisites": ["cones-sensitivity/lms-spectra"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wandell, Foundations of Vision", "section": "§5 (Cone Signals)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Naka-Rushton", "response saturation", "photoreceptor", "adaptation"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

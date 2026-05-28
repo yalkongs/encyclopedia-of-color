@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ipRGCs and the Body Clock — slide the wavelength of evening light and…</title>
+  <meta name="description" content="Melanopsin-bearing retinal ganglion cells set the circadian clock and peak near 480 nm. Slide the wavelength and watch how blue light suppresses melatonin most, shifting the body clock.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/iprgc-circadian/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ipRGCs and the Body Clock">
+  <meta property="og:description"    content="Melanopsin-bearing retinal ganglion cells set the circadian clock and peak near 480 nm. Slide the wavelength and watch how blue light suppresses melatonin most, shifting the body clock.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/iprgc-circadian/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--iprgc-circadian.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ipRGCs and the Body Clock.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ipRGCs and the Body Clock">
+  <meta name="twitter:description"   content="Melanopsin-bearing retinal ganglion cells set the circadian clock and peak near 480 nm. Slide the wavelength and watch how blue light suppresses melatonin most, shifting the body clock.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--iprgc-circadian.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ipRGCs and the Body Clock.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ipRGCs and the Body Clock","alternateName":"cones-sensitivity/iprgc-circadian","description":"Melanopsin-bearing retinal ganglion cells set the circadian clock and peak near 480 nm. Slide the wavelength and watch how blue light suppresses melatonin most, shifting the body clock.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ipRGC, melanopsin, circadian, blue light, melatonin","url":"https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/iprgc-circadian/","image":"https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--iprgc-circadian.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cones-sensitivity/iprgc-circadian">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ipRGCs and the Body Clock</h1>
+      <p class="module-subtitle">slide the wavelength of evening light and watch blue near 480 nm drive the strongest melatonin suppression</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A fifth photoreceptor — the melanopsin-bearing retinal ganglion cell — reports overall light to the circadian clock, peaking near 480 nm.
+        </p>
+        <div class="math-block" data-tex="\text{suppression} \propto \dfrac{m}{m + k},\quad m = I\cdot \bar{s}_{\text{mel}}(\lambda)"></div>
+        <p class="zone-guide">
+          Slide the wavelength of your evening light and read where it crosses the melanopsin curve. Slide the intensity too — blue light near 480 nm suppresses melatonin most and pushes the body clock later.
+        </p>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="400" max="650" step="1" value="480" unit="nm"></enc-slider>
+        <enc-slider id="intensity" label="Light intensity" min="0" max="100" step="1" value="60" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ipRGC melanopsin action spectrum"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Berson, Dunn &amp; Takao 2002, Science 295"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

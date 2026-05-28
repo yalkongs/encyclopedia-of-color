@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>From Photons to Firing Rate — slide the light intensity and watch the…</title>
+  <meta name="description" content="A photoreceptor's response cannot grow without bound. Slide the light intensity and watch the response follow the Naka-Rushton law — near-linear at first, then saturating once the light is strong.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/firing-rate/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="From Photons to Firing Rate">
+  <meta property="og:description"    content="A photoreceptor's response cannot grow without bound. Slide the light intensity and watch the response follow the Naka-Rushton law — near-linear at first, then saturating once the light is strong.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/firing-rate/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--firing-rate.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: From Photons to Firing Rate.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="From Photons to Firing Rate">
+  <meta name="twitter:description"   content="A photoreceptor's response cannot grow without bound. Slide the light intensity and watch the response follow the Naka-Rushton law — near-linear at first, then saturating once the light is strong.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--firing-rate.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: From Photons to Firing Rate.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"From Photons to Firing Rate","alternateName":"cones-sensitivity/firing-rate","description":"A photoreceptor's response cannot grow without bound. Slide the light intensity and watch the response follow the Naka-Rushton law — near-linear at first, then saturating once the light is strong.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Naka-Rushton, response saturation, photoreceptor, adaptation","url":"https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/firing-rate/","image":"https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--firing-rate.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cones-sensitivity/firing-rate">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">From Photons to Firing Rate</h1>
+      <p class="module-subtitle">slide the light intensity and watch the response climb then saturate along a Naka-Rushton curve</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A receptor maps a vast range of light onto a bounded response. The Naka-Rushton equation captures this compressive, saturating relationship.
+        </p>
+        <div class="math-block" data-tex="R = R_{\max}\,\dfrac{I^{\,n}}{I^{\,n} + \sigma^{\,n}}"></div>
+        <p class="zone-guide">
+          Slide the light intensity to move along the response curve. Then slide the semi-saturation σ to shift the whole curve — this is adaptation, letting the same cells stay sensitive across day and dusk.
+        </p>
+        <enc-slider id="logI" label="Light intensity log₁₀ I" min="-2" max="5" step="0.05" value="1.5"></enc-slider>
+        <enc-slider id="logSig" label="Semi-saturation log₁₀ σ" min="-1" max="4" step="0.05" value="1.5"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Naka-Rushton response curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wandell, Foundations of Vision §5"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

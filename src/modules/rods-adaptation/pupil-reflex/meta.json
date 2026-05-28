@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "rods-adaptation/pupil-reflex",
+  "title": {
+    "en": "Pupillary Light Reflex",
+    "ko": "동공 빛 반사"
+  },
+  "subtitle": {
+    "en": "slide the ambient luminance and watch the pupil constrict in bright light and dilate in the dark",
+    "ko": "주변 휘도를 움직여 밝으면 동공이 수축하고 어두우면 확장하는 것을 본다"
+  },
+  "description": {
+    "en": "The iris adjusts the pupil to control how much light reaches the retina. Slide the ambient luminance from starlight to noon and the pupil diameter shifts from about 7 mm down to 2 mm.",
+    "ko": "홍채는 동공을 조절해 망막에 닿는 빛의 양을 통제한다. 주변 휘도를 별빛에서 한낮까지 움직이면 동공 지름이 약 7 mm에서 2 mm까지 줄어든다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 2,
+  "category": "rods-adaptation",
+  "layout": "A",
+  "prerequisites": ["vision-anatomy-basics/eye-cross-section"],
+  "leads_to": ["rods-adaptation/dark-adaptation-curve"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Goldstein, Sensation & Perception 10e", "section": "§2.3 (The Pupil)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["pupil", "iris", "light reflex", "pupil diameter"],
+  "estimated_hours": 6,
+  "status": "shipped"
+}

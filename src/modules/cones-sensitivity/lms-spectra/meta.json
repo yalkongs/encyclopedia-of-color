@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "cones-sensitivity/lms-spectra",
+  "title": {
+    "en": "LMS Cone Sensitivity Curves",
+    "ko": "LMS 원추 분광 감도"
+  },
+  "subtitle": {
+    "en": "see the three overlapping cone curves that turn a spectrum into three numbers",
+    "ko": "스펙트럼을 세 숫자로 바꾸는 세 겹친 원추 곡선을 본다"
+  },
+  "description": {
+    "en": "Human colour vision rests on three cone types — L, M, and S — whose sensitivity curves overlap heavily. Sweep a wavelength to read each cone's response and watch where the curves cross.",
+    "ko": "사람의 색각은 단 세 종류의 원추 L·M·S에 기댄다. 이들 감도 곡선은 크게 겹친다. 어떤 빛이든 L·M·S 세 응답으로 환원된다. 파장을 훑어 각 원추의 응답을 읽고 곡선이 교차하는 지점을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "cones-sensitivity",
+  "layout": "A",
+  "prerequisites": ["vision-anatomy-basics/eye-cross-section"],
+  "leads_to": ["cones-sensitivity/three-channels"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "CIE 170-2:2015", "section": "Cone Fundamentals" },
+    { "source": "Govardovskii et al. 2000", "section": "Visual Pigment Template" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["LMS cones", "cone fundamentals", "spectral sensitivity", "trichromacy"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

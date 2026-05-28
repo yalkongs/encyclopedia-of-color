@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Dark Adaptation Curve — slide the minutes in the dark and watch t…</title>
+  <meta name="description" content="Step into the dark and sensitivity recovers in two stages. Slide the minutes elapsed and watch the fast cone branch give way to the rods at the rod-cone break, where the threshold drops far lower.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/rods-adaptation/dark-adaptation-curve/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Dark Adaptation Curve">
+  <meta property="og:description"    content="Step into the dark and sensitivity recovers in two stages. Slide the minutes elapsed and watch the fast cone branch give way to the rods at the rod-cone break, where the threshold drops far lower.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/rods-adaptation/dark-adaptation-curve/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/rods-adaptation--dark-adaptation-curve.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Dark Adaptation Curve.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Dark Adaptation Curve">
+  <meta name="twitter:description"   content="Step into the dark and sensitivity recovers in two stages. Slide the minutes elapsed and watch the fast cone branch give way to the rods at the rod-cone break, where the threshold drops far lower.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/rods-adaptation--dark-adaptation-curve.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Dark Adaptation Curve.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Dark Adaptation Curve","alternateName":"rods-adaptation/dark-adaptation-curve","description":"Step into the dark and sensitivity recovers in two stages. Slide the minutes elapsed and watch the fast cone branch give way to the rods at the rod-cone break, where the threshold drops far lower.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"dark adaptation, rod-cone break, scotopic, threshold","url":"https://encyclopedia-of-color.vercel.app/modules/rods-adaptation/dark-adaptation-curve/","image":"https://encyclopedia-of-color.vercel.app/og/rods-adaptation--dark-adaptation-curve.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="rods-adaptation/dark-adaptation-curve">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Dark Adaptation Curve</h1>
+      <p class="module-subtitle">slide the minutes in the dark and watch the threshold drop through the rod-cone break</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          In darkness the cones recover quickly to a modest floor, then the slower rods overtake them at the rod-cone break and reach a far lower threshold.
+        </p>
+        <div class="math-block" data-tex="\log T(t) = \min\big[\,T_{\text{cone}}(t),\ T_{\text{rod}}(t)\,\big]"></div>
+        <p class="zone-guide">
+          Slide the time spent in the dark. Watch the faint cone branch bottom out within minutes, then the rod branch cross below it at the break near 7-10 minutes, carrying sensitivity far deeper.
+        </p>
+        <enc-slider id="t" label="Time in the dark (min)" min="0" max="30" step="0.5" value="0" unit="min"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Dark adaptation threshold curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wandell, Foundations of Vision §3.3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>LMS Cone Sensitivity Curves — see the three overlapping cone curves t…</title>
+  <meta name="description" content="Human colour vision rests on three cone types — L, M, and S — whose sensitivity curves overlap heavily. Sweep a wavelength to read each cone's response and watch where the curves cross.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/lms-spectra/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="LMS Cone Sensitivity Curves">
+  <meta property="og:description"    content="Human colour vision rests on three cone types — L, M, and S — whose sensitivity curves overlap heavily. Sweep a wavelength to read each cone's response and watch where the curves cross.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/lms-spectra/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--lms-spectra.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: LMS Cone Sensitivity Curves.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="LMS Cone Sensitivity Curves">
+  <meta name="twitter:description"   content="Human colour vision rests on three cone types — L, M, and S — whose sensitivity curves overlap heavily. Sweep a wavelength to read each cone's response and watch where the curves cross.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--lms-spectra.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: LMS Cone Sensitivity Curves.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"LMS Cone Sensitivity Curves","alternateName":"cones-sensitivity/lms-spectra","description":"Human colour vision rests on three cone types — L, M, and S — whose sensitivity curves overlap heavily. Sweep a wavelength to read each cone's response and watch where the curves cross.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"LMS cones, cone fundamentals, spectral sensitivity, trichromacy","url":"https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/lms-spectra/","image":"https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--lms-spectra.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cones-sensitivity/lms-spectra">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">LMS Cone Sensitivity Curves</h1>
+      <p class="module-subtitle">see the three overlapping cone curves that turn a spectrum into three numbers</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The retina holds three cone types — L, M, and S — whose spectral sensitivities overlap so heavily that any light collapses to just three responses.
+        </p>
+        <div class="math-block" data-tex="(\,L,\,M,\,S\,) = \int E(\lambda)\,\bar{s}_{L,M,S}(\lambda)\,d\lambda"></div>
+        <p class="zone-guide">
+          Slide the wavelength marker across the spectrum. Read where it cuts each curve to get the L, M, and S responses, and notice how tightly the L and M peaks sit together — the root of red–green colour vision.
+        </p>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="390" max="700" step="1" value="550" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="LMS cone sensitivity curves"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 170-2:2015 · Govardovskii et al. 2000"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

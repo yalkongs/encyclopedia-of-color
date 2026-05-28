@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Colour Fades in the Dark — slide the luminance down and watch colours…</title>
+  <meta name="description" content="Below cone threshold only rods respond, and rods cannot tell colours apart. Slide the scene luminance down and watch the swatches drain toward a single bluish grey — night vision in monochrome.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/rods-adaptation/scotopic-color-loss/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Colour Fades in the Dark">
+  <meta property="og:description"    content="Below cone threshold only rods respond, and rods cannot tell colours apart. Slide the scene luminance down and watch the swatches drain toward a single bluish grey — night vision in monochrome.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/rods-adaptation/scotopic-color-loss/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/rods-adaptation--scotopic-color-loss.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Colour Fades in the Dark.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Colour Fades in the Dark">
+  <meta name="twitter:description"   content="Below cone threshold only rods respond, and rods cannot tell colours apart. Slide the scene luminance down and watch the swatches drain toward a single bluish grey — night vision in monochrome.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/rods-adaptation--scotopic-color-loss.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Colour Fades in the Dark.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Colour Fades in the Dark","alternateName":"rods-adaptation/scotopic-color-loss","description":"Below cone threshold only rods respond, and rods cannot tell colours apart. Slide the scene luminance down and watch the swatches drain toward a single bluish grey — night vision in monochrome.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"scotopic, Purkinje shift, desaturation, night vision","url":"https://encyclopedia-of-color.vercel.app/modules/rods-adaptation/scotopic-color-loss/","image":"https://encyclopedia-of-color.vercel.app/og/rods-adaptation--scotopic-color-loss.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="rods-adaptation/scotopic-color-loss">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Colour Fades in the Dark</h1>
+      <p class="module-subtitle">slide the luminance down and watch colours drain to grey as the cones fall silent</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Only cones carry colour. As light drops below their threshold the rods take over, and rods report a single channel — brightness, with no hue.
+        </p>
+        <div class="math-block" data-tex="\text{chroma} \propto f_{\text{cone}}(L),\qquad f_{\text{cone}} \to 0 \ \text{(scotopic)}"></div>
+        <p class="zone-guide">
+          Slide the scene luminance from daylight down to starlight. Watch the colour swatches lose their hue and converge on a dim bluish grey — the Purkinje-shifted world of rod-only night vision.
+        </p>
+        <enc-slider id="logL" label="Scene luminance (log₁₀ cd/m²)" min="-3.5" max="1.5" step="0.05" value="-1"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Scotopic colour loss"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Goldstein, Sensation &amp; Perception 10e §3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

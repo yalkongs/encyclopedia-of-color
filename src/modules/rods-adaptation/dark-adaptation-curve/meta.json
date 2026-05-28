@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "rods-adaptation/dark-adaptation-curve",
+  "title": {
+    "en": "The Dark Adaptation Curve",
+    "ko": "암순응 곡선"
+  },
+  "subtitle": {
+    "en": "slide the minutes in the dark and watch the threshold drop through the rod-cone break",
+    "ko": "어둠 속 시간을 움직여 역치가 간상-원추 분기점을 지나 떨어지는 것을 본다"
+  },
+  "description": {
+    "en": "Step into the dark and sensitivity recovers in two stages. Slide the minutes elapsed and watch the fast cone branch give way to the rods at the rod-cone break, where the threshold drops far lower.",
+    "ko": "어둠에 들어가면 감도는 두 단계로 회복된다. 경과 시간을 움직이면 빠른 원추 분기가 간상-원추 분기점에서 간상체에 자리를 내주고, 역치가 훨씬 더 낮아진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "rods-adaptation",
+  "layout": "A",
+  "prerequisites": ["rods-adaptation/rhodopsin-kinetics"],
+  "leads_to": ["rods-adaptation/scotopic-color-loss"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wandell, Foundations of Vision", "section": "§3.3 (Dark Adaptation)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["dark adaptation", "rod-cone break", "scotopic", "threshold"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

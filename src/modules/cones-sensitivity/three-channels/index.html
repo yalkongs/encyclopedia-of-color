@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Three Channels of Colour — slide three primaries and watch every colo…</title>
+  <meta name="description" content="Trichromacy means three numbers describe any colour your eye can see. Slide the red, green, and blue primaries and watch the L, M, and S cone responses that result.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/three-channels/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Three Channels of Colour">
+  <meta property="og:description"    content="Trichromacy means three numbers describe any colour your eye can see. Slide the red, green, and blue primaries and watch the L, M, and S cone responses that result.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/three-channels/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--three-channels.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Three Channels of Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Three Channels of Colour">
+  <meta name="twitter:description"   content="Trichromacy means three numbers describe any colour your eye can see. Slide the red, green, and blue primaries and watch the L, M, and S cone responses that result.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--three-channels.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Three Channels of Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Three Channels of Colour","alternateName":"cones-sensitivity/three-channels","description":"Trichromacy means three numbers describe any colour your eye can see. Slide the red, green, and blue primaries and watch the L, M, and S cone responses that result.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"trichromacy, RGB, LMS, color matching","url":"https://encyclopedia-of-color.vercel.app/modules/cones-sensitivity/three-channels/","image":"https://encyclopedia-of-color.vercel.app/og/cones-sensitivity--three-channels.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cones-sensitivity/three-channels">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Three Channels of Colour</h1>
+      <p class="module-subtitle">slide three primaries and watch every colour collapse into a single L, M, S triple</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Because the eye carries only three cone types, any mixture of light is encoded as exactly three numbers — the L, M, and S responses.
+        </p>
+        <div class="math-block" data-tex="\begin{pmatrix}L\\M\\S\end{pmatrix} = R\,\mathbf{c}_{610} + G\,\mathbf{c}_{549} + B\,\mathbf{c}_{465}"></div>
+        <p class="zone-guide">
+          Slide the red, green, and blue primary intensities. Watch the mixed colour above and the L, M, S bars below — countless spectra map onto the same three cone numbers, which is why three primaries suffice.
+        </p>
+        <enc-slider id="r" label="Red primary (610 nm)" min="0" max="100" step="1" value="70" unit="%"></enc-slider>
+        <enc-slider id="g" label="Green primary (549 nm)" min="0" max="100" step="1" value="55" unit="%"></enc-slider>
+        <enc-slider id="b" label="Blue primary (465 nm)" min="0" max="100" step="1" value="30" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Three cone channels"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki &amp; Stiles, Color Science 2e §5"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

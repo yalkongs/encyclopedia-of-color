@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "rods-adaptation/scotopic-color-loss",
+  "title": {
+    "en": "Colour Fades in the Dark",
+    "ko": "어둠 속에서 색이 사라진다"
+  },
+  "subtitle": {
+    "en": "slide the luminance down and watch colours drain to grey as the cones fall silent",
+    "ko": "휘도를 낮춰 원추가 침묵하며 색이 회색으로 빠지는 것을 본다"
+  },
+  "description": {
+    "en": "Below cone threshold only rods respond, and rods cannot tell colours apart. Slide the scene luminance down and watch the swatches drain toward a single bluish grey — night vision in monochrome.",
+    "ko": "원추 역치 아래에서는 간상체만 반응하고, 간상체는 색을 구별하지 못한다. 장면 휘도를 낮추면 색 견본들이 하나의 푸르스름한 회색으로 빠지는 것을 본다 — 단색의 밤 시각."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "rods-adaptation",
+  "layout": "A",
+  "prerequisites": ["rods-adaptation/dark-adaptation-curve"],
+  "leads_to": [],
+  "see_also": ["cones-sensitivity/lms-spectra"],
+  "textbook_refs": [
+    { "source": "Goldstein, Sensation & Perception 10e", "section": "§3 (Scotopic Vision)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["scotopic", "Purkinje shift", "desaturation", "night vision"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}
