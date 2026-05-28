@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "total-internal-reflection/evanescent-wave",
+  "title": { "en": "Evanescent Wave Decay", "ko": "에바네센트 파 감쇄" },
+  "subtitle": {
+    "en": "push past the critical angle and watch the field bleed exponentially into forbidden territory",
+    "ko": "임계각을 넘어선 후에도 금지된 매질로 지수 감쇄하며 스며드는 장의 자취를 본다"
+  },
+  "description": {
+    "en": "Push past the critical angle and watch a thin evanescent field bleed into the forbidden medium, falling off as exp(−z/d_p) with penetration depth d_p set by the angle and the index mismatch.",
+    "ko": "임계각을 넘어선 후에도 매우 얇은 에바네센트 장이 금지된 매질로 스며들며 exp(−z/d_p)로 감쇄한다. 침투 깊이 d_p는 각도와 굴절률 차이로 결정된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "total-internal-reflection",
+  "layout": "A",
+  "prerequisites": ["total-internal-reflection/critical-angle"],
+  "leads_to": ["total-internal-reflection/ftir-tunneling"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.7.2" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["evanescent wave", "penetration depth", "TIR", "interactive"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

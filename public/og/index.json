@@ -180,6 +180,26 @@
     "square": "og/total-internal-reflection--critical-angle.sq.png"
   },
   {
+    "id": "total-internal-reflection/evanescent-wave",
+    "og": "og/total-internal-reflection--evanescent-wave.png",
+    "square": "og/total-internal-reflection--evanescent-wave.sq.png"
+  },
+  {
+    "id": "total-internal-reflection/ftir-tunneling",
+    "og": "og/total-internal-reflection--ftir-tunneling.png",
+    "square": "og/total-internal-reflection--ftir-tunneling.sq.png"
+  },
+  {
+    "id": "total-internal-reflection/optical-fiber",
+    "og": "og/total-internal-reflection--optical-fiber.png",
+    "square": "og/total-internal-reflection--optical-fiber.sq.png"
+  },
+  {
+    "id": "total-internal-reflection/snells-window",
+    "og": "og/total-internal-reflection--snells-window.png",
+    "square": "og/total-internal-reflection--snells-window.sq.png"
+  },
+  {
     "id": "wave-fundamentals/beat-frequency",
     "og": "og/wave-fundamentals--beat-frequency.png",
     "square": "og/wave-fundamentals--beat-frequency.sq.png"

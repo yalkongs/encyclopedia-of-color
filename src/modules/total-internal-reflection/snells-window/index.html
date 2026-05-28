@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Snell's Window — dive underwater and watch the entire sky compress in…</title>
+  <meta name="description" content="Tune the water's refractive index and watch the entire above-water hemisphere compress into a circular window — past the critical angle the underwater world becomes a perfect mirror of the bottom.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/total-internal-reflection/snells-window/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Snell's Window">
+  <meta property="og:description"    content="Tune the water's refractive index and watch the entire above-water hemisphere compress into a circular window — past the critical angle the underwater world becomes a perfect mirror of the bottom.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/total-internal-reflection/snells-window/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/total-internal-reflection--snells-window.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Snell's Window.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Snell's Window">
+  <meta name="twitter:description"   content="Tune the water's refractive index and watch the entire above-water hemisphere compress into a circular window — past the critical angle the underwater world becomes a perfect mirror of the bottom.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/total-internal-reflection--snells-window.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Snell's Window.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Snell's Window","alternateName":"total-internal-reflection/snells-window","description":"Tune the water's refractive index and watch the entire above-water hemisphere compress into a circular window — past the critical angle the underwater world becomes a perfect mirror of the bottom.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"snells window, underwater, critical angle, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/total-internal-reflection/snells-window/","image":"https://encyclopedia-of-color.vercel.app/og/total-internal-reflection--snells-window.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="total-internal-reflection/snells-window">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Snell's Window</h1>
+      <p class="module-subtitle">dive underwater and watch the entire sky compress into a 97° cone overhead</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          From below the water surface, every above-water ray bends into a cone of half-angle θ_c. The whole hemisphere of sky compresses into a circular window of about 97°.
+        </p>
+        <div class="math-block" data-tex="\theta_{c} \;=\; \arcsin\!\left(\dfrac{n_{2}}{n_{1}}\right) \;\approx\; 48.6°\;\text{(water)}"></div>
+        <p class="zone-guide">
+          Slide the water index. The pale window widens as n approaches 1; outside the window the underwater world becomes a mirror of the lake bottom.
+        </p>
+        <enc-slider id="n" label="Water index n" min="1.05" max="2.00" step="0.01" value="1.33"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Snell's window"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.7"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

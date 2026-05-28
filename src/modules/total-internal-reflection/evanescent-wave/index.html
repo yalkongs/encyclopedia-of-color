@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Evanescent Wave Decay — push past the critical angle and watch the fi…</title>
+  <meta name="description" content="Push past the critical angle and watch a thin evanescent field bleed into the forbidden medium, falling off as exp(−z/d_p) with penetration depth d_p set by the angle and the index mismatch.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/total-internal-reflection/evanescent-wave/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Evanescent Wave Decay">
+  <meta property="og:description"    content="Push past the critical angle and watch a thin evanescent field bleed into the forbidden medium, falling off as exp(−z/d_p) with penetration depth d_p set by the angle and the index mismatch.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/total-internal-reflection/evanescent-wave/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/total-internal-reflection--evanescent-wave.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Evanescent Wave Decay.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Evanescent Wave Decay">
+  <meta name="twitter:description"   content="Push past the critical angle and watch a thin evanescent field bleed into the forbidden medium, falling off as exp(−z/d_p) with penetration depth d_p set by the angle and the index mismatch.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/total-internal-reflection--evanescent-wave.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Evanescent Wave Decay.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Evanescent Wave Decay","alternateName":"total-internal-reflection/evanescent-wave","description":"Push past the critical angle and watch a thin evanescent field bleed into the forbidden medium, falling off as exp(−z/d_p) with penetration depth d_p set by the angle and the index mismatch.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"evanescent wave, penetration depth, TIR, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/total-internal-reflection/evanescent-wave/","image":"https://encyclopedia-of-color.vercel.app/og/total-internal-reflection--evanescent-wave.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="total-internal-reflection/evanescent-wave">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Evanescent Wave Decay</h1>
+      <p class="module-subtitle">push past the critical angle and watch the field bleed exponentially into forbidden territory</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          At total internal reflection, a non-propagating evanescent field exists in the "forbidden" medium. Its amplitude decays exponentially with a penetration depth d_p of about λ/4 just past θ_c.
+        </p>
+        <div class="math-block" data-tex="d_{p} \;=\; \dfrac{\lambda}{2\pi\sqrt{n_{1}^{2}\sin^{2}\theta - n_{2}^{2}}}"></div>
+        <p class="zone-guide">
+          Slide θ, the dense-medium index, and the wavelength. The gold band below the interface visualises |E|(z), and the right plot shows the same as a curve.
+        </p>
+        <enc-slider id="theta" label="Incidence angle θ (°)" min="30" max="80" step="0.5" value="50" unit="°"></enc-slider>
+        <enc-slider id="n" label="Dense-medium n" min="1.10" max="2.50" step="0.01" value="1.50"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="380" max="780" step="5" value="550" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Evanescent wave decay"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §4.7.2"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

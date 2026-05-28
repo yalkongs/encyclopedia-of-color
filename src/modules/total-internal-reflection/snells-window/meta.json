@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "total-internal-reflection/snells-window",
+  "title": { "en": "Snell's Window", "ko": "스넬의 창" },
+  "subtitle": {
+    "en": "dive underwater and watch the entire sky compress into a 97° cone overhead",
+    "ko": "수면 아래로 들어가 하늘 전체가 머리 위 97° 원뿔로 압축되는 모습을 본다"
+  },
+  "description": {
+    "en": "Tune the water's refractive index and watch the entire above-water hemisphere compress into a circular window — past the critical angle the underwater world becomes a perfect mirror of the bottom.",
+    "ko": "물의 굴절률을 조절하며 수면 위 반구 전체가 원형 창으로 압축되는 모습을 본다. 임계각을 넘어선 영역은 바닥을 비추는 완전한 거울이 된다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "total-internal-reflection",
+  "layout": "A",
+  "prerequisites": ["total-internal-reflection/critical-angle"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.7" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["snells window", "underwater", "critical angle", "interactive"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "total-internal-reflection/ftir-tunneling",
+  "title": { "en": "Frustrated TIR — Optical Tunneling", "ko": "좌절전반사 — 광학적 터널링" },
+  "subtitle": {
+    "en": "bring a second prism within an evanescent length and watch light tunnel across the gap",
+    "ko": "두 번째 프리즘을 에바네센트 길이 안으로 가까이 가져가면 빛이 간극을 가로질러 터널링한다"
+  },
+  "description": {
+    "en": "Bring a second glass surface within an evanescent decay length of a TIR surface and watch the field tunnel across the gap — the optical analogue of quantum tunnelling.",
+    "ko": "전반사가 일어나는 면 근처로 두 번째 유리 표면을 가까이 가져가면 에바네센트 장이 간극을 가로질러 터널링한다 — 양자 터널링의 광학적 유사 현상이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "total-internal-reflection",
+  "layout": "A",
+  "prerequisites": ["total-internal-reflection/evanescent-wave"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§4.7.3" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [],
+  "seo_keywords": ["frustrated TIR", "optical tunneling", "evanescent", "interactive"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

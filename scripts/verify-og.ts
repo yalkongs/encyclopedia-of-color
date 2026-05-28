@@ -106,10 +106,12 @@ function tagValue(html: string, selector: string): string | null {
 }
 
 function readAttr(tag: string, attr: string): string | null {
-  // Match  attr="value"  or  attr='value'  with optional whitespace
-  const re = new RegExp(`\\b${attr}\\s*=\\s*["']([^"']*)["']`, 'i');
+  // Match  attr="value"  or  attr='value'  where the body can contain the
+  // opposite-quote character (e.g. a possessive apostrophe inside a "...").
+  const re = new RegExp(`\\b${attr}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, 'i');
   const m = re.exec(tag);
-  return m ? m[1] : null;
+  if (!m) return null;
+  return m[1] ?? m[2] ?? null;
 }
 
 async function validateModule(id: string): Promise<ValidationResult> {

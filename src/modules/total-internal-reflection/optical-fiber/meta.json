@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "total-internal-reflection/optical-fiber",
+  "title": { "en": "Optical Fiber Acceptance Cone", "ko": "광섬유의 수광 원뿔" },
+  "subtitle": {
+    "en": "feed a ray into a fiber and watch it bounce within if it sits inside the acceptance cone",
+    "ko": "광섬유에 광선을 보내며 수광 원뿔 안에 있을 때만 내부 전반사로 전달되는 모습을 본다"
+  },
+  "description": {
+    "en": "Feed a ray into the core of a step-index fiber and watch it propagate by total internal reflection — only rays inside the acceptance cone (defined by the numerical aperture) actually transmit.",
+    "ko": "단계-굴절률 광섬유 코어에 광선을 보내며 전반사로 진행하는 모습을 본다. 수광 원뿔(NA로 정해지는) 안의 광선만 실제로 전달된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "total-internal-reflection",
+  "layout": "A",
+  "prerequisites": ["total-internal-reflection/critical-angle"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§5.6" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["optical fiber", "numerical aperture", "TIR", "interactive"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

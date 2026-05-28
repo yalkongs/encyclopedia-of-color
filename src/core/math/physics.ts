@@ -87,3 +87,37 @@ export function cauchyN(lambdaNm: number, B = 1.5046, C = 4200): number {
 
 export const DEG = Math.PI / 180;
 export const RAD = 180 / Math.PI;
+
+/**
+ * Evanescent-wave penetration depth at total internal reflection.
+ * Returns d_p in the same length units as λ, where the field amplitude falls
+ * to 1/e. Returns null if not in TIR regime (θ ≤ θ_c).
+ *
+ * Hecht §4.7.2:  d_p = λ / (2π · sqrt(n₁²sin²θ − n₂²))
+ */
+export function evanescentDecayDepth(
+  lambda: number,
+  n1: number,
+  n2: number,
+  thetaRad: number,
+): number | null {
+  const arg = (n1 * Math.sin(thetaRad)) ** 2 - n2 * n2;
+  if (arg <= 0) return null;
+  return lambda / (2 * Math.PI * Math.sqrt(arg));
+}
+
+/**
+ * Frustrated-TIR transmission: when a second medium of higher index lies
+ * within an evanescent decay length of the TIR surface, some fraction of the
+ * field tunnels across the gap. This is the optical analogue of quantum
+ * tunnelling. Returns approximate transmittance ∈ [0, 1].
+ *
+ * Hecht §4.7.3 (qualitative approximation: T ≈ exp(−2 d / d_p)).
+ */
+export function frustratedTIR(
+  gap: number,
+  decayDepth: number,
+): number {
+  if (decayDepth <= 0) return 0;
+  return Math.exp(-2 * gap / decayDepth);
+}
