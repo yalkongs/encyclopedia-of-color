@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/tyndall-laser",
+  "title": {
+    "en": "Tyndall Effect & Beam Attenuation",
+    "ko": "틴들 효과와 빔 감쇠"
+  },
+  "subtitle": {
+    "en": "shine a beam through a colloid and watch it scatter sideways and fade with depth",
+    "ko": "콜로이드에 빔을 쏘아 옆으로 산란하며 깊이에 따라 약해지는 것을 본다"
+  },
+  "description": {
+    "en": "A colloid makes a beam visible from the side as particles scatter it — the Tyndall effect — while the beam dims along its path by Beer-Lambert decay. Tune concentration and wavelength to see both.",
+    "ko": "콜로이드는 입자가 빛을 산란시켜 빔을 옆에서도 보이게 한다(틴들 효과). 빔은 경로를 따라 Beer-Lambert 지수 법칙으로 약해진다. 입자 농도와 파장을 조절해 옆 산란과 감쇠를 함께 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": [
+    "particle-scattering/rayleigh-spectrum"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§8.5 (Scattering)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "Tyndall effect",
+    "Beer-Lambert",
+    "colloid",
+    "beam attenuation"
+  ],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

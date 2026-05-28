@@ -1,0 +1,49 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/brillouin-scattering",
+  "title": {
+    "en": "Brillouin Scattering off Sound Waves",
+    "ko": "음파에 의한 브릴루앙 산란"
+  },
+  "subtitle": {
+    "en": "scatter light from travelling sound waves and measure a gigahertz frequency shift",
+    "ko": "진행하는 음파에서 빛을 산란시켜 기가헤르츠 진동수 천이를 측정한다"
+  },
+  "description": {
+    "en": "Light scattering off thermal sound waves gains a tiny Doppler shift — the Brillouin doublet, only gigahertz from the laser. The shift measures the speed of sound. Tune speed, angle, and index.",
+    "ko": "열적으로 들뜬 음파에서 산란된 빛은 미세한 도플러 천이를 얻는다. 레이저에서 겨우 기가헤르츠 떨어진 브릴루앙 더블릿이다. 이 천이는 물질 속 음속을 잰다. 음속·각도·굴절률을 조절해 라인을 옮긴다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": [
+    "particle-scattering/raman-scattering"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Boyd, Nonlinear Optics",
+      "section": "§9 (Brillouin Scattering)"
+    },
+    {
+      "source": "Fabelinskii, Molecular Scattering of Light",
+      "section": "Ch. 7"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "Brillouin scattering",
+    "acoustic phonon",
+    "sound velocity",
+    "doublet"
+  ],
+  "estimated_hours": 15,
+  "status": "shipped"
+}

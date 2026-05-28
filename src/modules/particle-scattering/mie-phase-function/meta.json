@@ -1,0 +1,49 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/mie-phase-function",
+  "title": {
+    "en": "Scattering Phase Function: Rayleigh to Mie",
+    "ko": "산란 위상함수: Rayleigh에서 Mie로"
+  },
+  "subtitle": {
+    "en": "grow the particle and watch symmetric dipole scattering sharpen into a forward beam",
+    "ko": "입자를 키우며 대칭 쌍극자 산란이 전방 빔으로 날카로워지는 것을 본다"
+  },
+  "description": {
+    "en": "Small particles scatter almost symmetrically fore and aft. As a particle grows, scattering tips forward and the asymmetry g rises toward one. Grow the size to watch dipole lobes become a forward beam.",
+    "ko": "작은 입자는 전방과 후방으로 거의 대칭으로 산란한다(Rayleigh 쌍극자 로브). 입자가 커지면 산란이 급격히 전방으로 쏠리며 비대칭 g가 1에 가까워진다. 크기 매개변수를 키워 극좌표 패턴이 쌍극자에서 전방 탐조등으로 바뀌는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": [
+    "particle-scattering/mie-clouds"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Bohren & Huffman",
+      "section": "§4.4 (Angular Dependence)"
+    },
+    {
+      "source": "van de Hulst",
+      "section": "§9 (Phase Function)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "phase function",
+    "Henyey-Greenstein",
+    "forward scattering",
+    "asymmetry"
+  ],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

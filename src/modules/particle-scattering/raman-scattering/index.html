@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Raman Scattering: Stokes &amp; Anti-Stokes — read a molecule's vibrations…</title>
+  <meta name="description" content="A little scattered light trades energy with molecular vibrations, leaving lines shifted from the laser. Stokes lines are stronger; anti-Stokes grow with temperature — tune mode and temperature.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/particle-scattering/raman-scattering/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Raman Scattering: Stokes &amp; Anti-Stokes">
+  <meta property="og:description"    content="A little scattered light trades energy with molecular vibrations, leaving lines shifted from the laser. Stokes lines are stronger; anti-Stokes grow with temperature — tune mode and temperature.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/particle-scattering/raman-scattering/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/particle-scattering--raman-scattering.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Raman Scattering: Stokes &amp; Anti-Stokes.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Raman Scattering: Stokes &amp; Anti-Stokes">
+  <meta name="twitter:description"   content="A little scattered light trades energy with molecular vibrations, leaving lines shifted from the laser. Stokes lines are stronger; anti-Stokes grow with temperature — tune mode and temperature.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/particle-scattering--raman-scattering.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Raman Scattering: Stokes &amp; Anti-Stokes.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Raman Scattering: Stokes & Anti-Stokes","alternateName":"particle-scattering/raman-scattering","description":"A little scattered light trades energy with molecular vibrations, leaving lines shifted from the laser. Stokes lines are stronger; anti-Stokes grow with temperature — tune mode and temperature.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Raman scattering, Stokes, anti-Stokes, vibrational mode","url":"https://encyclopedia-of-color.vercel.app/modules/particle-scattering/raman-scattering/","image":"https://encyclopedia-of-color.vercel.app/og/particle-scattering--raman-scattering.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="particle-scattering/raman-scattering">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Raman Scattering: Stokes &amp; Anti-Stokes</h1>
+      <p class="module-subtitle">read a molecule's vibrations as lines shifted around the laser frequency</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Most light scatters elastically at the laser line. A little exchanges a vibrational quantum: Stokes lines lose energy (red-shift), anti-Stokes gain it (blue-shift), their ratio set by thermal population.
+        </p>
+        <div class="math-block" data-tex="\dfrac{I_{\text{aS}}}{I_{\text{S}}}=\Bigl(\tfrac{\nu_0+\Delta\nu}{\nu_0-\Delta\nu}\Bigr)^{4}e^{-hc\,\Delta\nu/k_BT}"></div>
+        <p class="zone-guide">
+          Set the vibrational mode (cm⁻¹), the sample temperature, and the laser wavelength. Watch the anti-Stokes line grow toward the Stokes line as temperature rises.
+        </p>
+        <enc-slider id="shift" label="Vibrational mode Δν (cm⁻¹)" min="200" max="3200" step="10" value="1000" unit="cm⁻¹"></enc-slider>
+        <enc-slider id="T" label="Temperature (K)" min="80" max="1200" step="10" value="300" unit="K"></enc-slider>
+        <enc-slider id="laser" label="Laser wavelength (nm)" min="400" max="700" step="1" value="532" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Raman Stokes and anti-Stokes spectrum"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau Ch. 3; Long, The Raman Effect Ch. 5"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

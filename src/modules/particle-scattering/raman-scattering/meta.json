@@ -1,0 +1,51 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/raman-scattering",
+  "title": {
+    "en": "Raman Scattering: Stokes & Anti-Stokes",
+    "ko": "라만 산란: 스토크스와 반스토크스"
+  },
+  "subtitle": {
+    "en": "read a molecule's vibrations as lines shifted around the laser frequency",
+    "ko": "분자의 진동을 레이저 진동수 주변에 나타난 라인으로 읽는다"
+  },
+  "description": {
+    "en": "A little scattered light trades energy with molecular vibrations, leaving lines shifted from the laser. Stokes lines are stronger; anti-Stokes grow with temperature — tune mode and temperature.",
+    "ko": "산란광의 극히 일부가 분자 진동과 에너지를 주고받아 레이저에서 천이된 라인을 남긴다. 스토크스 라인(에너지 손실)이 더 강하고, 반스토크스(에너지 획득)는 온도와 함께 커진다. 모드와 온도를 조절해 스펙트럼을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": [
+    "particle-scattering/rayleigh-spectrum"
+  ],
+  "leads_to": [
+    "particle-scattering/sers-enhancement"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Nassau, The Physics and Chemistry of Color",
+      "section": "Ch. 3 (Vibrations)"
+    },
+    {
+      "source": "Long, The Raman Effect",
+      "section": "Ch. 5"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "Raman scattering",
+    "Stokes",
+    "anti-Stokes",
+    "vibrational mode"
+  ],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

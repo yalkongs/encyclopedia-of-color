@@ -1,0 +1,49 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/sers-enhancement",
+  "title": {
+    "en": "Surface-Enhanced Raman Hot Spots",
+    "ko": "표면증강 라만 핫스팟"
+  },
+  "subtitle": {
+    "en": "squeeze two gold nanoparticles together and watch the Raman signal explode",
+    "ko": "두 금 나노입자를 가까이 붙여 라만 신호가 폭발적으로 커지는 것을 본다"
+  },
+  "description": {
+    "en": "A metal nanogap concentrates light into a plasmonic hot spot, and Raman scales as the field to the fourth power — so a tiny gap amplifies a molecule a billionfold. Tune gap, detuning, and size.",
+    "ko": "금속 나노 틈은 빛을 플라즈몬 핫스팟으로 모으고, 라만 신호는 국소 전기장의 네제곱으로 커진다. 그래서 공명 상태의 1나노미터 이하 틈은 분자 신호를 10억 배까지 증폭한다. 틈·이탈·크기를 조절해 증강을 쫓는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": [
+    "particle-scattering/raman-scattering"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Le Ru & Etchegoin, Principles of SERS",
+      "section": "Ch. 4 (EM Enhancement)"
+    },
+    {
+      "source": "Maier, Plasmonics",
+      "section": "Ch. 5"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "SERS",
+    "plasmonic hot spot",
+    "field enhancement",
+    "nanogap"
+  ],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Surface-Enhanced Raman Hot Spots — squeeze two gold nanoparticles tog…</title>
+  <meta name="description" content="A metal nanogap concentrates light into a plasmonic hot spot, and Raman scales as the field to the fourth power — so a tiny gap amplifies a molecule a billionfold. Tune gap, detuning, and size.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/particle-scattering/sers-enhancement/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Surface-Enhanced Raman Hot Spots">
+  <meta property="og:description"    content="A metal nanogap concentrates light into a plasmonic hot spot, and Raman scales as the field to the fourth power — so a tiny gap amplifies a molecule a billionfold. Tune gap, detuning, and size.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/particle-scattering/sers-enhancement/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/particle-scattering--sers-enhancement.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Surface-Enhanced Raman Hot Spots.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Surface-Enhanced Raman Hot Spots">
+  <meta name="twitter:description"   content="A metal nanogap concentrates light into a plasmonic hot spot, and Raman scales as the field to the fourth power — so a tiny gap amplifies a molecule a billionfold. Tune gap, detuning, and size.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/particle-scattering--sers-enhancement.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Surface-Enhanced Raman Hot Spots.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Surface-Enhanced Raman Hot Spots","alternateName":"particle-scattering/sers-enhancement","description":"A metal nanogap concentrates light into a plasmonic hot spot, and Raman scales as the field to the fourth power — so a tiny gap amplifies a molecule a billionfold. Tune gap, detuning, and size.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"SERS, plasmonic hot spot, field enhancement, nanogap","url":"https://encyclopedia-of-color.vercel.app/modules/particle-scattering/sers-enhancement/","image":"https://encyclopedia-of-color.vercel.app/og/particle-scattering--sers-enhancement.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="particle-scattering/sers-enhancement">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Surface-Enhanced Raman Hot Spots</h1>
+      <p class="module-subtitle">squeeze two gold nanoparticles together and watch the Raman signal explode</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          At a plasmon resonance the gap between two metal nanoparticles concentrates the field enormously. Because Raman scales as the local field to the fourth power, tiny gaps give astronomical enhancement.
+        </p>
+        <div class="math-block" data-tex="\text{EF}\;\approx\;\Bigl|\dfrac{E_{\text{loc}}}{E_0}\Bigr|^{4}"></div>
+        <p class="zone-guide">
+          Tighten the nanogap, tune the laser toward the plasmon resonance, and set the particle size. The hot-spot glow and the enhancement factor (log scale) track the local field.
+        </p>
+        <enc-slider id="gap" label="Nanogap (nm)" min="0.5" max="20" step="0.1" value="2.0" unit="nm"></enc-slider>
+        <enc-slider id="detune" label="Laser detuning from resonance (nm)" min="-150" max="150" step="1" value="0" unit="nm"></enc-slider>
+        <enc-slider id="size" label="Particle radius (nm)" min="10" max="80" step="1" value="40" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="SERS hot spot enhancement"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Le Ru &amp; Etchegoin Ch. 4; Maier, Plasmonics Ch. 5"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

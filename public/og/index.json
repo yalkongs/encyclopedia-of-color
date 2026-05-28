@@ -130,14 +130,44 @@
     "square": "og/light-propagation--umbra-penumbra.sq.png"
   },
   {
+    "id": "particle-scattering/brillouin-scattering",
+    "og": "og/particle-scattering--brillouin-scattering.png",
+    "square": "og/particle-scattering--brillouin-scattering.sq.png"
+  },
+  {
+    "id": "particle-scattering/mie-clouds",
+    "og": "og/particle-scattering--mie-clouds.png",
+    "square": "og/particle-scattering--mie-clouds.sq.png"
+  },
+  {
+    "id": "particle-scattering/mie-phase-function",
+    "og": "og/particle-scattering--mie-phase-function.png",
+    "square": "og/particle-scattering--mie-phase-function.sq.png"
+  },
+  {
+    "id": "particle-scattering/raman-scattering",
+    "og": "og/particle-scattering--raman-scattering.png",
+    "square": "og/particle-scattering--raman-scattering.sq.png"
+  },
+  {
     "id": "particle-scattering/rayleigh-spectrum",
     "og": "og/particle-scattering--rayleigh-spectrum.png",
     "square": "og/particle-scattering--rayleigh-spectrum.sq.png"
   },
   {
+    "id": "particle-scattering/sers-enhancement",
+    "og": "og/particle-scattering--sers-enhancement.png",
+    "square": "og/particle-scattering--sers-enhancement.sq.png"
+  },
+  {
     "id": "particle-scattering/sky-color",
     "og": "og/particle-scattering--sky-color.png",
     "square": "og/particle-scattering--sky-color.sq.png"
+  },
+  {
+    "id": "particle-scattering/tyndall-laser",
+    "og": "og/particle-scattering--tyndall-laser.png",
+    "square": "og/particle-scattering--tyndall-laser.sq.png"
   },
   {
     "id": "planckian-radiation/filament-heating",

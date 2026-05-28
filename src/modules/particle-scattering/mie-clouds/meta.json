@@ -1,0 +1,51 @@
+{
+  "schema_version": "v2",
+  "id": "particle-scattering/mie-clouds",
+  "title": {
+    "en": "Why Clouds Are White: Mie Scattering",
+    "ko": "구름이 흰 이유: 미 산란"
+  },
+  "subtitle": {
+    "en": "grow a droplet from molecule to raindrop and watch blue scattering turn white",
+    "ko": "물방울을 분자에서 빗방울까지 키우며 파란 산란이 흰색으로 바뀌는 것을 본다"
+  },
+  "description": {
+    "en": "Tiny molecules scatter blue far more than red (Rayleigh λ⁻⁴), but huge cloud droplets scatter every wavelength about equally — so clouds look white. Grow the droplet to find the crossover.",
+    "ko": "작은 분자는 파란빛을 빨강보다 훨씬 강하게 산란하지만(Rayleigh, λ⁻⁴), 구름 물방울은 거대하다. 이 경우 산란 효율이 모든 파장에서 거의 같아 모든 색이 똑같이 산란되어 구름은 희게 보인다. 물방울을 키워 전환점을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "particle-scattering",
+  "layout": "A",
+  "prerequisites": [
+    "particle-scattering/rayleigh-spectrum"
+  ],
+  "leads_to": [
+    "particle-scattering/mie-phase-function"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Bohren & Huffman",
+      "section": "Ch. 4 (Mie Theory)"
+    },
+    {
+      "source": "van de Hulst",
+      "section": "§11 (Anomalous Diffraction)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "Mie scattering",
+    "clouds white",
+    "droplet size",
+    "Rayleigh crossover"
+  ],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

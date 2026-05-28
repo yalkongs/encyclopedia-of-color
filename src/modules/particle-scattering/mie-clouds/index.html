@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Why Clouds Are White: Mie Scattering — grow a droplet from molecule t…</title>
+  <meta name="description" content="Tiny molecules scatter blue far more than red (Rayleigh λ⁻⁴), but huge cloud droplets scatter every wavelength about equally — so clouds look white. Grow the droplet to find the crossover.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/particle-scattering/mie-clouds/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Why Clouds Are White: Mie Scattering">
+  <meta property="og:description"    content="Tiny molecules scatter blue far more than red (Rayleigh λ⁻⁴), but huge cloud droplets scatter every wavelength about equally — so clouds look white. Grow the droplet to find the crossover.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/particle-scattering/mie-clouds/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/particle-scattering--mie-clouds.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Why Clouds Are White: Mie Scattering.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Why Clouds Are White: Mie Scattering">
+  <meta name="twitter:description"   content="Tiny molecules scatter blue far more than red (Rayleigh λ⁻⁴), but huge cloud droplets scatter every wavelength about equally — so clouds look white. Grow the droplet to find the crossover.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/particle-scattering--mie-clouds.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Why Clouds Are White: Mie Scattering.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Why Clouds Are White: Mie Scattering","alternateName":"particle-scattering/mie-clouds","description":"Tiny molecules scatter blue far more than red (Rayleigh λ⁻⁴), but huge cloud droplets scatter every wavelength about equally — so clouds look white. Grow the droplet to find the crossover.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Mie scattering, clouds white, droplet size, Rayleigh crossover","url":"https://encyclopedia-of-color.vercel.app/modules/particle-scattering/mie-clouds/","image":"https://encyclopedia-of-color.vercel.app/og/particle-scattering--mie-clouds.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="particle-scattering/mie-clouds">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Why Clouds Are White: Mie Scattering</h1>
+      <p class="module-subtitle">grow a droplet from molecule to raindrop and watch blue scattering turn white</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Scattering strength depends on the size parameter x = 2πr/λ. For tiny particles it scales as λ⁻⁴ (blue wins); for large droplets it flattens to nearly the same value at all colours.
+        </p>
+        <div class="math-block" data-tex="x=\dfrac{2\pi r}{\lambda},\qquad Q_{\text{ext}}\xrightarrow{x\gg1}2\;(\text{all }\lambda)"></div>
+        <p class="zone-guide">
+          Slide the droplet radius across six decades. The curve is scattering efficiency vs wavelength; the swatch is the resulting scattered colour — blue for molecules, white for cloud droplets.
+        </p>
+        <enc-slider id="logr" label="Droplet radius (log nm)" min="-0.5" max="4.5" step="0.05" value="0.0"></enc-slider>
+        <enc-slider id="m" label="Relative index m" min="1.05" max="1.60" step="0.01" value="1.33"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Mie scattering efficiency vs wavelength"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Bohren &amp; Huffman Ch. 4; van de Hulst §11"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
