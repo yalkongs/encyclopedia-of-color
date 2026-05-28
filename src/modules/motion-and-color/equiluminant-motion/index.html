@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>When Motion Meets Equiluminance — slide the colours toward equal lumi…</title>
+  <meta name="description" content="The motion system is nearly colour-blind — it tracks luminance, not hue. Slide a red-green grating toward equal luminance and watch the luminance channel flatten, and the sense of motion fade.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/motion-and-color/equiluminant-motion/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="When Motion Meets Equiluminance">
+  <meta property="og:description"    content="The motion system is nearly colour-blind — it tracks luminance, not hue. Slide a red-green grating toward equal luminance and watch the luminance channel flatten, and the sense of motion fade.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/motion-and-color/equiluminant-motion/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/motion-and-color--equiluminant-motion.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: When Motion Meets Equiluminance.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="When Motion Meets Equiluminance">
+  <meta name="twitter:description"   content="The motion system is nearly colour-blind — it tracks luminance, not hue. Slide a red-green grating toward equal luminance and watch the luminance channel flatten, and the sense of motion fade.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/motion-and-color--equiluminant-motion.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: When Motion Meets Equiluminance.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"When Motion Meets Equiluminance","alternateName":"motion-and-color/equiluminant-motion","description":"The motion system is nearly colour-blind — it tracks luminance, not hue. Slide a red-green grating toward equal luminance and watch the luminance channel flatten, and the sense of motion fade.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"equiluminance, motion perception, magnocellular, luminance","url":"https://encyclopedia-of-color.vercel.app/modules/motion-and-color/equiluminant-motion/","image":"https://encyclopedia-of-color.vercel.app/og/motion-and-color--equiluminant-motion.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="motion-and-color/equiluminant-motion">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">When Motion Meets Equiluminance</h1>
+      <p class="module-subtitle">slide the colours toward equal luminance and watch the drifting bars lose their sense of motion</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The magnocellular motion system reads luminance, not hue. Strip a moving pattern of its luminance contrast and the motion signal starves, even while colour still alternates.
+        </p>
+        <div class="math-block" data-tex="C_{\text{lum}} = \dfrac{|L_1 - L_2|}{L_1 + L_2} \to 0 \ \text{at equiluminance}"></div>
+        <p class="zone-guide">
+          The red-green grating drifts steadily. Slide the green luminance until the lower luminance-only strip flattens to uniform grey — at that point the motion system sees no moving edges, and the drift seems to stall.
+        </p>
+        <enc-slider id="green" label="Green luminance" min="20" max="100" step="1" value="100" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Equiluminant drifting grating"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Livingstone &amp; Hubel 1987"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

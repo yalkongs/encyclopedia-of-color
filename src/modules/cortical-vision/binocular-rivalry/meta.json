@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cortical-vision/binocular-rivalry",
+  "title": {
+    "en": "Binocular Rivalry",
+    "ko": "양안 경쟁"
+  },
+  "subtitle": {
+    "en": "slide the rivalry rate and watch two clashing eye images take turns suppressing each other",
+    "ko": "경쟁 속도를 움직여 충돌하는 두 눈의 상이 번갈아 서로를 억누르는 것을 본다"
+  },
+  "description": {
+    "en": "Show each eye a different image and the brain cannot fuse them — perception flips between the two in waves, patchy at the transitions. Slide the rivalry rate and watch one image suppress the other.",
+    "ko": "두 눈에 서로 다른 상을 보여주면 뇌는 그것을 합치지 못한다. 지각은 둘 사이를 물결처럼 오가며, 전환기에는 조각조각 섞인다. 경쟁 속도를 움직여 한 상이 다른 상을 억누르는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "cortical-vision",
+  "layout": "A",
+  "prerequisites": ["cortical-vision/v1-orientation-columns"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Goldstein, Sensation & Perception 10e", "section": "§4 (Binocular Rivalry)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["binocular rivalry", "perceptual suppression", "bistable", "awareness"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

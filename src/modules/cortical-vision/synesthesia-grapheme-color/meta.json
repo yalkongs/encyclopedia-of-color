@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cortical-vision/synesthesia-grapheme-color",
+  "title": {
+    "en": "Grapheme-Colour Synaesthesia",
+    "ko": "글자-색 공감각"
+  },
+  "subtitle": {
+    "en": "toggle a synaesthete's view and watch a hidden shape pop out as the 2s flush with colour",
+    "ko": "공감각자의 시야로 전환해 2가 색으로 물들며 숨은 도형이 튀어나오는 것을 본다"
+  },
+  "description": {
+    "en": "For a grapheme-colour synaesthete each digit carries an automatic colour. Toggle their view of a field of 5s hiding a triangle of 2s, and watch the shape leap out that others must hunt for.",
+    "ko": "글자-색 공감각자에게는 각 숫자가 자동으로 색을 띤다. 2로 된 삼각형이 5의 들판에 숨은 그림을 공감각자의 시야로 전환하면, 남들은 찾아야 하는 도형이 단번에 튀어나온다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "cortical-vision",
+  "layout": "A",
+  "prerequisites": ["cortical-vision/v4-color-area"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Ramachandran & Hubbard 2001, Proc. R. Soc. B", "section": "Synaesthesia" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["synaesthesia", "grapheme-color", "pop-out", "Ramachandran"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

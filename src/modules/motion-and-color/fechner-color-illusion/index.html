@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Fechner's Flicker Colours — slide the flicker rate and watch a black-…</title>
+  <meta name="description" content="Flickering between black and white at the right rate, a colourless field takes on a ghostly hue. Slide the flicker frequency and find the rate where the strongest illusory colour appears.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/motion-and-color/fechner-color-illusion/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Fechner's Flicker Colours">
+  <meta property="og:description"    content="Flickering between black and white at the right rate, a colourless field takes on a ghostly hue. Slide the flicker frequency and find the rate where the strongest illusory colour appears.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/motion-and-color/fechner-color-illusion/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/motion-and-color--fechner-color-illusion.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Fechner's Flicker Colours.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Fechner's Flicker Colours">
+  <meta name="twitter:description"   content="Flickering between black and white at the right rate, a colourless field takes on a ghostly hue. Slide the flicker frequency and find the rate where the strongest illusory colour appears.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/motion-and-color--fechner-color-illusion.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Fechner's Flicker Colours.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Fechner's Flicker Colours","alternateName":"motion-and-color/fechner-color-illusion","description":"Flickering between black and white at the right rate, a colourless field takes on a ghostly hue. Slide the flicker frequency and find the rate where the strongest illusory colour appears.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Fechner colors, flicker, pattern-induced colors, temporal","url":"https://encyclopedia-of-color.vercel.app/modules/motion-and-color/fechner-color-illusion/","image":"https://encyclopedia-of-color.vercel.app/og/motion-and-color--fechner-color-illusion.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="motion-and-color/fechner-color-illusion">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Fechner's Flicker Colours</h1>
+      <p class="module-subtitle">slide the flicker rate and watch a black-and-white field bloom into faint colour</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          When a field switches black to white and back, the three cone channels lag by different amounts. Their mismatch in time is read by the brain as a tinge of colour.
+        </p>
+        <div class="math-block" data-tex="f \approx 5\text{–}10\,\mathrm{Hz}\ \Rightarrow\ \text{strongest illusory hue}"></div>
+        <p class="zone-guide">
+          Slide the flicker frequency and stare at the centre patch. Around five to ten flickers a second it stops looking purely grey and drifts toward a faint colour that the screen is not actually emitting.
+        </p>
+        <enc-slider id="freq" label="Flicker rate" min="0" max="12" step="0.5" value="8" unit="Hz"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Fechner flicker field"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fechner 1838"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

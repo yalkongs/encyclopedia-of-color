@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>V4 Hue-Selective Cells — slide the stimulus hue and watch which V4 ce…</title>
+  <meta name="description" content="Beyond V1, area V4 holds cells each tuned to a narrow band of hue. Slide the stimulus colour around the wheel and watch the responding cell hand off to its neighbour as the hue sweeps.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/v4-color-area/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="V4 Hue-Selective Cells">
+  <meta property="og:description"    content="Beyond V1, area V4 holds cells each tuned to a narrow band of hue. Slide the stimulus colour around the wheel and watch the responding cell hand off to its neighbour as the hue sweeps.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/v4-color-area/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--v4-color-area.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: V4 Hue-Selective Cells.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="V4 Hue-Selective Cells">
+  <meta name="twitter:description"   content="Beyond V1, area V4 holds cells each tuned to a narrow band of hue. Slide the stimulus colour around the wheel and watch the responding cell hand off to its neighbour as the hue sweeps.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--v4-color-area.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: V4 Hue-Selective Cells.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"V4 Hue-Selective Cells","alternateName":"cortical-vision/v4-color-area","description":"Beyond V1, area V4 holds cells each tuned to a narrow band of hue. Slide the stimulus colour around the wheel and watch the responding cell hand off to its neighbour as the hue sweeps.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"V4, hue tuning, color area, Zeki","url":"https://encyclopedia-of-color.vercel.app/modules/cortical-vision/v4-color-area/","image":"https://encyclopedia-of-color.vercel.app/og/cortical-vision--v4-color-area.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cortical-vision/v4-color-area">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">V4 Hue-Selective Cells</h1>
+      <p class="module-subtitle">slide the stimulus hue and watch which V4 cell, each tuned to its own colour, fires hardest</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Where V1 reports cone contrast, V4 reports hue: its cells are tuned to particular colours, tiling the spectrum with overlapping bands of preference.
+        </p>
+        <div class="math-block" data-tex="r_i(\phi) = \exp\!\big[-\big((\phi - \phi_i)/\sigma\big)^2\big]"></div>
+        <p class="zone-guide">
+          Each curve is one V4 cell's tuning, coloured by its preferred hue. Slide the stimulus colour and watch the marker cross the curves — the tallest crossing is the cell that signals that hue.
+        </p>
+        <enc-slider id="hue" label="Stimulus hue" min="0" max="360" step="1" value="40" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="V4 hue tuning curves"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Zeki 1980, Nature"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

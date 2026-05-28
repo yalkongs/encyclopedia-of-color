@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "motion-and-color/fechner-color-illusion",
+  "title": {
+    "en": "Fechner's Flicker Colours",
+    "ko": "페히너 깜빡임 색"
+  },
+  "subtitle": {
+    "en": "slide the flicker rate and watch a black-and-white field bloom into faint colour",
+    "ko": "깜빡임 속도를 움직여 흑백 화면이 옅은 색으로 피어나는 것을 본다"
+  },
+  "description": {
+    "en": "Flickering between black and white at the right rate, a colourless field takes on a ghostly hue. Slide the flicker frequency and find the rate where the strongest illusory colour appears.",
+    "ko": "적절한 속도로 흑백 사이를 깜빡이면 색 없는 화면이 희미한 색조를 띤다. 깜빡임 주파수를 움직여 가장 강한 착시 색이 나타나는 속도를 찾는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "motion-and-color",
+  "layout": "A",
+  "prerequisites": ["motion-and-color/benham-disk"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Fechner 1838, Annalen der Physik", "section": "Flicker Colours" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Fechner colors", "flicker", "pattern-induced colors", "temporal"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

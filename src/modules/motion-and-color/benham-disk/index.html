@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Benham's Spinning Disk — spin a black-and-white disk and watch faint…</title>
+  <meta name="description" content="A disk printed only in black and white throws off faint colours when it spins, because the cone types recover at different rates. Slide the speed and watch which arcs flush warm or cool.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/motion-and-color/benham-disk/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Benham's Spinning Disk">
+  <meta property="og:description"    content="A disk printed only in black and white throws off faint colours when it spins, because the cone types recover at different rates. Slide the speed and watch which arcs flush warm or cool.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/motion-and-color/benham-disk/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/motion-and-color--benham-disk.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Benham's Spinning Disk.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Benham's Spinning Disk">
+  <meta name="twitter:description"   content="A disk printed only in black and white throws off faint colours when it spins, because the cone types recover at different rates. Slide the speed and watch which arcs flush warm or cool.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/motion-and-color--benham-disk.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Benham's Spinning Disk.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Benham's Spinning Disk","alternateName":"motion-and-color/benham-disk","description":"A disk printed only in black and white throws off faint colours when it spins, because the cone types recover at different rates. Slide the speed and watch which arcs flush warm or cool.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Benham disk, Fechner colors, pattern-induced flicker colors, cone latency","url":"https://encyclopedia-of-color.vercel.app/modules/motion-and-color/benham-disk/","image":"https://encyclopedia-of-color.vercel.app/og/motion-and-color--benham-disk.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="motion-and-color/benham-disk">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Benham's Spinning Disk</h1>
+      <p class="module-subtitle">spin a black-and-white disk and watch faint pastel colours rise out of pure ink</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The disk carries no pigment but black and white. Spinning flickers each radius on and off at its own rhythm, and the L, M, and S cones — recovering at different rates — disagree, painting illusory colour.
+        </p>
+        <div class="math-block" data-tex="\text{colour} \sim \tau_L \neq \tau_M \neq \tau_S \ \text{(cone latencies)}"></div>
+        <p class="zone-guide">
+          Slide the spin speed and fix your gaze on the centre. The arcs at different radii flush into warm reds and cool blues — colours that exist only in your retina, never in the ink.
+        </p>
+        <enc-slider id="rpm" label="Spin speed" min="0" max="600" step="10" value="300" unit="rpm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Benham disk"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Benham 1894, Nature"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

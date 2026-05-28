@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cortical-vision/v1-orientation-columns",
+  "title": {
+    "en": "V1 Orientation Pinwheels",
+    "ko": "V1 방위 컬럼 핀휠"
+  },
+  "subtitle": {
+    "en": "slide the stimulus orientation and watch the matching V1 columns light up across the pinwheel map",
+    "ko": "자극 방위를 움직여 핀휠 지도에서 일치하는 V1 컬럼이 켜지는 것을 본다"
+  },
+  "description": {
+    "en": "Primary visual cortex maps orientation in smooth pinwheels, every angle cycling around a singular centre. Slide the stimulus orientation and watch only the cells tuned to that angle respond.",
+    "ko": "일차 시각겉질은 방위를 매끄러운 핀휠로 지도화한다. 모든 각도가 특이점 중심을 돌며 순환한다. 자극 방위를 움직이면 그 각도에 동조된 세포만 반응하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "cortical-vision",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/ganglion-cells-dog"],
+  "leads_to": ["cortical-vision/blob-stripe-architecture"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hubel, Eye, Brain, and Vision", "section": "§9 (Orientation Columns)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["orientation columns", "pinwheel", "V1", "Hubel Wiesel"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

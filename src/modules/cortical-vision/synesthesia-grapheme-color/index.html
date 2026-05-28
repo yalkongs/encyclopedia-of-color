@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Grapheme-Colour Synaesthesia — toggle a synaesthete's view and watch…</title>
+  <meta name="description" content="For a grapheme-colour synaesthete each digit carries an automatic colour. Toggle their view of a field of 5s hiding a triangle of 2s, and watch the shape leap out that others must hunt for.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/synesthesia-grapheme-color/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Grapheme-Colour Synaesthesia">
+  <meta property="og:description"    content="For a grapheme-colour synaesthete each digit carries an automatic colour. Toggle their view of a field of 5s hiding a triangle of 2s, and watch the shape leap out that others must hunt for.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/synesthesia-grapheme-color/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--synesthesia-grapheme-color.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Grapheme-Colour Synaesthesia.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Grapheme-Colour Synaesthesia">
+  <meta name="twitter:description"   content="For a grapheme-colour synaesthete each digit carries an automatic colour. Toggle their view of a field of 5s hiding a triangle of 2s, and watch the shape leap out that others must hunt for.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--synesthesia-grapheme-color.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Grapheme-Colour Synaesthesia.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Grapheme-Colour Synaesthesia","alternateName":"cortical-vision/synesthesia-grapheme-color","description":"For a grapheme-colour synaesthete each digit carries an automatic colour. Toggle their view of a field of 5s hiding a triangle of 2s, and watch the shape leap out that others must hunt for.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"synaesthesia, grapheme-color, pop-out, Ramachandran","url":"https://encyclopedia-of-color.vercel.app/modules/cortical-vision/synesthesia-grapheme-color/","image":"https://encyclopedia-of-color.vercel.app/og/cortical-vision--synesthesia-grapheme-color.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cortical-vision/synesthesia-grapheme-color">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Grapheme-Colour Synaesthesia</h1>
+      <p class="module-subtitle">toggle a synaesthete's view and watch a hidden shape pop out as the 2s flush with colour</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          In grapheme-colour synaesthesia, cross-activation between the grapheme area and V4 gives every digit an involuntary colour — turning a reading task into a colour pop-out.
+        </p>
+        <div class="math-block" data-tex="\text{grapheme area} \leftrightarrow V4\ \text{(cross-activation)}"></div>
+        <p class="zone-guide">
+          A triangle of 2s hides among 5s. In the normal view you must scan digit by digit. Toggle the synaesthete view and the 2s turn red — the triangle springs out before you can read a thing.
+        </p>
+        <enc-toggle id="view" label="Perception" options="normal,synesthete" labels="non-synaesthete,synaesthete" value="normal"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Grapheme-colour pop-out"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Ramachandran &amp; Hubbard 2001"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

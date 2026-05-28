@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "motion-and-color/equiluminant-motion",
+  "title": {
+    "en": "When Motion Meets Equiluminance",
+    "ko": "등휘도에서 멈추는 운동"
+  },
+  "subtitle": {
+    "en": "slide the colours toward equal luminance and watch the drifting bars lose their sense of motion",
+    "ko": "색을 같은 휘도로 맞춰가며 흐르던 막대가 운동감을 잃는 것을 본다"
+  },
+  "description": {
+    "en": "The motion system is nearly colour-blind — it tracks luminance, not hue. Slide a red-green grating toward equal luminance and watch the luminance channel flatten, and the sense of motion fade.",
+    "ko": "운동 시스템은 거의 색맹이다. 색조가 아니라 휘도를 좇는다. 빨강-초록 격자를 같은 휘도로 맞춰가면 휘도 채널이 평탄해지고 운동감이 사라지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "motion-and-color",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/m-vs-p-pathway"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Livingstone & Hubel 1987, J. Neuroscience", "section": "Equiluminance" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["equiluminance", "motion perception", "magnocellular", "luminance"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

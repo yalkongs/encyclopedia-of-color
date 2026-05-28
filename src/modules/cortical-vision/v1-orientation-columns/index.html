@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>V1 Orientation Pinwheels — slide the stimulus orientation and watch t…</title>
+  <meta name="description" content="Primary visual cortex maps orientation in smooth pinwheels, every angle cycling around a singular centre. Slide the stimulus orientation and watch only the cells tuned to that angle respond.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/v1-orientation-columns/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="V1 Orientation Pinwheels">
+  <meta property="og:description"    content="Primary visual cortex maps orientation in smooth pinwheels, every angle cycling around a singular centre. Slide the stimulus orientation and watch only the cells tuned to that angle respond.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/v1-orientation-columns/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--v1-orientation-columns.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: V1 Orientation Pinwheels.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="V1 Orientation Pinwheels">
+  <meta name="twitter:description"   content="Primary visual cortex maps orientation in smooth pinwheels, every angle cycling around a singular centre. Slide the stimulus orientation and watch only the cells tuned to that angle respond.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--v1-orientation-columns.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: V1 Orientation Pinwheels.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"V1 Orientation Pinwheels","alternateName":"cortical-vision/v1-orientation-columns","description":"Primary visual cortex maps orientation in smooth pinwheels, every angle cycling around a singular centre. Slide the stimulus orientation and watch only the cells tuned to that angle respond.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"orientation columns, pinwheel, V1, Hubel Wiesel","url":"https://encyclopedia-of-color.vercel.app/modules/cortical-vision/v1-orientation-columns/","image":"https://encyclopedia-of-color.vercel.app/og/cortical-vision--v1-orientation-columns.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cortical-vision/v1-orientation-columns">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">V1 Orientation Pinwheels</h1>
+      <p class="module-subtitle">slide the stimulus orientation and watch the matching V1 columns light up across the pinwheel map</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Each patch of V1 prefers one edge orientation, and preference rotates smoothly around pinwheel singularities — a continuous map of every angle across the cortical surface.
+        </p>
+        <div class="math-block" data-tex="r(\theta) = \tfrac{1}{2}\big[1 + \cos 2(\theta - \theta_{\text{pref}})\big]"></div>
+        <p class="zone-guide">
+          The colour wheel encodes each column's preferred orientation. Slide the stimulus bar's angle and watch only the matching-hue columns brighten while the orthogonal ones fall dark.
+        </p>
+        <enc-slider id="theta" label="Stimulus orientation" min="0" max="180" step="1" value="30" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="V1 orientation pinwheel map"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hubel, Eye Brain and Vision §9 · Hubel &amp; Wiesel 1962"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

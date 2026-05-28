@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "cortical-vision/blob-stripe-architecture",
+  "title": {
+    "en": "Blobs, Stripes & Streams",
+    "ko": "블롭·스트라이프와 처리 흐름"
+  },
+  "subtitle": {
+    "en": "toggle a processing stream and watch colour, form, and motion split across V1 blobs and V2 stripes",
+    "ko": "처리 흐름을 전환해 색·형태·운동이 V1 블롭과 V2 스트라이프로 갈라지는 것을 본다"
+  },
+  "description": {
+    "en": "Colour, form, and motion travel partly separate routes through V1 blobs and V2 stripes. Toggle a stream to trace its path: colour via blobs and thin stripes, form and motion via their own.",
+    "ko": "색·형태·운동은 V1 블롭과 V2 스트라이프를 거쳐 부분적으로 분리된 경로로 흐른다. 흐름을 전환하면 그 경로를 따라갈 수 있다. 색은 블롭과 가는 스트라이프, 형태와 운동은 각자의 채널로 간다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 2,
+  "category": "cortical-vision",
+  "layout": "A",
+  "prerequisites": ["cortical-vision/v1-orientation-columns"],
+  "leads_to": ["cortical-vision/v4-color-area"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hubel, Eye, Brain, and Vision", "section": "§7 (Blobs)" },
+    { "source": "Livingstone & Hubel 1988, Science", "section": "240" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["cytochrome oxidase blobs", "V2 stripes", "parallel streams", "color form motion"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

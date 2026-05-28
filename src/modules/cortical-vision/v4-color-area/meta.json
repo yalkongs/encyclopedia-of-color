@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cortical-vision/v4-color-area",
+  "title": {
+    "en": "V4 Hue-Selective Cells",
+    "ko": "V4 색조 선택 세포"
+  },
+  "subtitle": {
+    "en": "slide the stimulus hue and watch which V4 cell, each tuned to its own colour, fires hardest",
+    "ko": "자극 색조를 움직여 저마다 한 색에 동조된 V4 세포 중 어느 것이 가장 강하게 발화하는지 본다"
+  },
+  "description": {
+    "en": "Beyond V1, area V4 holds cells each tuned to a narrow band of hue. Slide the stimulus colour around the wheel and watch the responding cell hand off to its neighbour as the hue sweeps.",
+    "ko": "V1 너머 V4 영역에는 저마다 좁은 색조 대역에 동조된 세포들이 있다. 자극 색을 색상환 둘레로 움직이면 반응하는 세포가 이웃에게 차례로 넘겨지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "cortical-vision",
+  "layout": "A",
+  "prerequisites": ["cortical-vision/v1-orientation-columns"],
+  "leads_to": [],
+  "see_also": ["cones-sensitivity/three-channels"],
+  "textbook_refs": [
+    { "source": "Zeki 1980, Nature", "section": "The Representation of Colours in Cerebral Cortex" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["V4", "hue tuning", "color area", "Zeki"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

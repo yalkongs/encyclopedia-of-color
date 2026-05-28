@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Blobs, Stripes &amp; Streams — toggle a processing stream and watch colou…</title>
+  <meta name="description" content="Colour, form, and motion travel partly separate routes through V1 blobs and V2 stripes. Toggle a stream to trace its path: colour via blobs and thin stripes, form and motion via their own.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/blob-stripe-architecture/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Blobs, Stripes &amp; Streams">
+  <meta property="og:description"    content="Colour, form, and motion travel partly separate routes through V1 blobs and V2 stripes. Toggle a stream to trace its path: colour via blobs and thin stripes, form and motion via their own.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cortical-vision/blob-stripe-architecture/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--blob-stripe-architecture.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Blobs, Stripes &amp; Streams.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Blobs, Stripes &amp; Streams">
+  <meta name="twitter:description"   content="Colour, form, and motion travel partly separate routes through V1 blobs and V2 stripes. Toggle a stream to trace its path: colour via blobs and thin stripes, form and motion via their own.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cortical-vision--blob-stripe-architecture.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Blobs, Stripes &amp; Streams.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Blobs, Stripes & Streams","alternateName":"cortical-vision/blob-stripe-architecture","description":"Colour, form, and motion travel partly separate routes through V1 blobs and V2 stripes. Toggle a stream to trace its path: colour via blobs and thin stripes, form and motion via their own.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"cytochrome oxidase blobs, V2 stripes, parallel streams, color form motion","url":"https://encyclopedia-of-color.vercel.app/modules/cortical-vision/blob-stripe-architecture/","image":"https://encyclopedia-of-color.vercel.app/og/cortical-vision--blob-stripe-architecture.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cortical-vision/blob-stripe-architecture">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Blobs, Stripes &amp; Streams</h1>
+      <p class="module-subtitle">toggle a processing stream and watch colour, form, and motion split across V1 blobs and V2 stripes</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Cytochrome-oxidase blobs in V1 and thin/pale/thick stripes in V2 sort vision into partly separate channels for colour, form, and motion before they reach V4 and MT.
+        </p>
+        <div class="math-block" data-tex="\text{blobs} \to \text{thin stripes} \to V4\ \text{(colour)}"></div>
+        <p class="zone-guide">
+          Toggle a stream and follow the lit path: colour runs through the blobs and thin stripes to V4, form through interblobs and pale stripes, motion through layer 4B and thick stripes to MT.
+        </p>
+        <enc-toggle id="stream" label="Highlight stream" options="color,form,motion" labels="colour,form,motion" value="color"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Blob and stripe architecture"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hubel §7 · Livingstone &amp; Hubel 1988"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
