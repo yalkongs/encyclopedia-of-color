@@ -1,36 +1,15 @@
 /*
- * <enc-citation-footer> — renders module citations from inline children
- * or from a `data-refs` attribute (semicolon-separated).
+ * <enc-citation-footer> — intentionally renders nothing.
  *
- * In v0 we accept hand-written children; later a build step will inject
- * from refs.bib + meta.json.
+ * Per-module source lines were removed to reclaim vertical space (especially on
+ * mobile). All citations now live on the central /reference/ page, generated
+ * from each module's meta.json `textbook_refs` and linked from the landing page.
+ * The element is kept as an inert no-op so existing module markup stays valid.
  */
 
 export class CitationFooter extends HTMLElement {
   connectedCallback() {
-    if (this.children.length > 0) {
-      this._enhance();
-      return;
-    }
-    // Fallback rendering from data-refs.
-    const refs = (this.getAttribute('data-refs') ?? '').split(';').map((s) => s.trim()).filter(Boolean);
-    if (refs.length === 0) return;
-
-    const wrap = document.createElement('div');
-    wrap.className = 'module-footer';
-
-    const source = document.createElement('div');
-    source.className = 'citation';
-    source.innerHTML = `<span data-i18n="ui.source">Source</span> · ${refs.join(' · ')}`;
-    wrap.appendChild(source);
-
-    this.appendChild(wrap);
-  }
-
-  private _enhance() {
-    if (!this.classList.contains('module-footer')) {
-      this.classList.add('module-footer');
-    }
+    // No-op: citations are centralised on the /reference/ page.
   }
 }
 

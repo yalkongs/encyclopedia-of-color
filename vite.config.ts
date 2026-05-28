@@ -31,6 +31,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'src/index.html'),
         'embed/index': resolve(__dirname, 'src/embed/index.html'),
+        reference: resolve(__dirname, 'src/reference/index.html'),
         ...moduleEntries,
       },
       output: {

@@ -18,9 +18,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const MODULES_ROOT = resolve(ROOT, 'src/modules');
 const LANDING_PATH = resolve(ROOT, 'src/index.html');
+const REFERENCE_PATH = resolve(ROOT, 'src/reference/index.html');
 
 const SENTINEL_START = '<!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->';
 const SENTINEL_END   = '<!-- AUTO-LANDING END -->';
+const REF_START = '<!-- AUTO-REFERENCE START · do not edit, run `npm run build:landing` -->';
+const REF_END   = '<!-- AUTO-REFERENCE END -->';
 
 /** Category → (human title, subtitle). Categories not listed fall back to humanised id. */
 const CATEGORY_META: Record<string, { title: string; sub: string }> = {
@@ -108,6 +111,47 @@ ${cards}
     </div>`;
 }
 
+/** One module's consolidated source line for the central reference page. */
+function renderRefModule(m: MetaV2): string {
+  const src = m.textbook_refs.length
+    ? m.textbook_refs
+        .map((r) => `${escHtml(r.source)}${r.section ? ` <span class="sec">${escHtml(r.section)}</span>` : ''}`)
+        .join(' · ')
+    : '<span class="sec">source pending</span>';
+  return `      <div class="ref-module">
+        <div class="rm-title"><a href="../modules/${m.id}/">${escHtml(m.title.en)}</a></div>
+        <div class="rm-src">${src}</div>
+      </div>`;
+}
+
+function renderRefCluster(category: string, modules: MetaV2[]): string {
+  const info = CATEGORY_META[category] ?? { title: humanise(category), sub: '' };
+  const items = modules
+    .slice()
+    .sort((a, b) => {
+      const d = a.bloom_level.localeCompare(b.bloom_level);
+      return d !== 0 ? d : a.id.localeCompare(b.id);
+    })
+    .map(renderRefModule)
+    .join('\n');
+  return `      <h2 class="ref-section">${escHtml(info.title)}</h2>\n${items}`;
+}
+
+/** Replace a sentinel-delimited block in a file; skip gracefully if missing. */
+async function replaceBlock(
+  path: string, start: string, end: string, block: string, label: string,
+): Promise<void> {
+  let html: string;
+  try { html = await readFile(path, 'utf-8'); }
+  catch { console.warn(`[build-landing] ${label}: ${path} not found — skipping`); return; }
+  const s = html.indexOf(start), e = html.indexOf(end);
+  if (s < 0 || e <= s) { console.warn(`[build-landing] ${label}: sentinels missing — skipping`); return; }
+  const next = html.slice(0, s) + block + html.slice(e + end.length);
+  if (next === html) { console.log(`[build-landing] ${label}: no change`); return; }
+  await writeFile(path, next);
+  console.log(`[build-landing] wrote ${label}`);
+}
+
 async function main() {
   const metaPaths = findModuleMetas();
   const modules: ModuleEntry[] = [];
@@ -160,29 +204,14 @@ async function main() {
     sections,
     `    ${SENTINEL_END}`,
   ].join('\n');
+  await replaceBlock(LANDING_PATH, SENTINEL_START, SENTINEL_END, block, 'landing');
 
-  const html = await readFile(LANDING_PATH, 'utf-8');
-  const startIdx = html.indexOf(SENTINEL_START);
-  const endIdx   = html.indexOf(SENTINEL_END);
-  let next: string;
-  if (startIdx >= 0 && endIdx > startIdx) {
-    next = html.slice(0, startIdx) + block + html.slice(endIdx + SENTINEL_END.length);
-  } else {
-    // No sentinel yet — append before </main>
-    const mainEnd = html.indexOf('</main>');
-    if (mainEnd < 0) {
-      console.error('[build-landing] src/index.html has no </main> tag — aborting');
-      process.exit(1);
-    }
-    next = html.slice(0, mainEnd) + block + '\n  ' + html.slice(mainEnd);
-  }
+  // Central reference page: every module's cited sources, gathered by category.
+  const refSections = sortedCats.map((c) => renderRefCluster(c, byCategory.get(c)!)).join('\n');
+  const refBlock = [REF_START, refSections, `    ${REF_END}`].join('\n');
+  await replaceBlock(REFERENCE_PATH, REF_START, REF_END, refBlock, 'reference');
 
-  if (next === html) {
-    console.log(`[build-landing] no change · ${modules.length} modules · ${sortedCats.length} categories`);
-    return;
-  }
-  await writeFile(LANDING_PATH, next);
-  console.log(`[build-landing] wrote ${modules.length} module cards across ${sortedCats.length} categories`);
+  console.log(`[build-landing] ${modules.length} modules across ${sortedCats.length} categories`);
   for (const c of sortedCats) {
     console.log(`  · ${c}: ${byCategory.get(c)!.length}`);
   }
