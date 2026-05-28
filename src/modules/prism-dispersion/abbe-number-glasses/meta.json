@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "prism-dispersion/abbe-number-glasses",
+  "title": {
+    "en": "Abbe Number of Optical Glasses",
+    "ko": "광학 유리의 아베수"
+  },
+  "subtitle": {
+    "en": "compare crown and flint glasses by their inverse-dispersion figure of merit V_d",
+    "ko": "크라운과 플린트 유리를 아베수 V_d로 비교한다"
+  },
+  "description": {
+    "en": "Overlay Sellmeier curves for BK7 crown, fused silica, and SF11 flint. Read the d/F/C lines and let the Abbe number V_d = (n_d−1)/(n_F−n_C) show how strongly each glass disperses.",
+    "ko": "BK7 크라운, 용융 석영, SF11 플린트 세 유리의 Sellmeier 곡선을 겹쳐 본다. d/F/C 선의 굴절률을 읽어 아베수 V_d = (n_d−1)/(n_F−n_C)로 각 유리의 분산 강도를 한눈에 비교한다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "prism-dispersion",
+  "layout": "A",
+  "prerequisites": ["prism-dispersion/newtons-prism"],
+  "leads_to": ["prism-dispersion/sellmeier-dispersion"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§6.3.2 (Achromatic Doublet)" },
+    { "source": "Schott Optical Glass Catalogue", "section": "BK7, SF11 data sheets" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Abbe number", "BK7", "SF11", "crown flint", "dispersion"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

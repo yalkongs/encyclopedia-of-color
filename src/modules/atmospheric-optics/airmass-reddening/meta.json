@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "atmospheric-optics/airmass-reddening",
+  "title": {
+    "en": "Airmass & the Reddening Sun",
+    "ko": "대기 질량과 붉어지는 태양"
+  },
+  "subtitle": {
+    "en": "drop the sun toward the horizon and watch the lengthening air path steal its blue",
+    "ko": "태양을 지평선으로 내리며 길어진 대기 경로가 푸른빛을 걸러내는 과정을 본다"
+  },
+  "description": {
+    "en": "As the sun sinks, sunlight crosses more air: airmass grows from 1 at the zenith toward 38 at the horizon. Rayleigh scattering removes blue first, so the disk reddens from white to gold to deep red.",
+    "ko": "태양이 지평선으로 내려갈수록 햇빛은 더 두꺼운 대기를 통과한다. 대기 질량은 천정에서 1, 지평선에서 약 38까지 커진다. Rayleigh 산란이 푸른빛을 먼저 걸러내어 태양 원반이 흰색→금색→짙은 붉은색으로 변한다. 투과 스펙트럼과 원반 색을 함께 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "atmospheric-optics",
+  "layout": "A",
+  "prerequisites": ["particle-scattering/sky-color"],
+  "leads_to": ["atmospheric-optics/blue-hour-twilight"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§8.5.2 (Scattering & the Sky)" },
+    { "source": "Kasten & Young 1989", "section": "Revised optical airmass" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["airmass", "sunset", "Rayleigh", "reddening", "Kasten-Young"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

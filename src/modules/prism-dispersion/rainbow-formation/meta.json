@@ -1,0 +1,37 @@
+{
+  "schema_version": "v2",
+  "id": "prism-dispersion/rainbow-formation",
+  "title": {
+    "en": "Primary Rainbow in a Raindrop",
+    "ko": "빗방울 속 1차 무지개"
+  },
+  "subtitle": {
+    "en": "trace a sunbeam refracting, bouncing off the back wall, and exiting near forty two degrees",
+    "ko": "햇빛이 빗방울 속에서 굴절하고 뒷면 반사 후 약 42도로 빠져나오는 경로를 본다"
+  },
+  "description": {
+    "en": "A sunray refracts into a raindrop, reflects off the back, and refracts out near 42° from the antisolar point. Sweep the impact parameter and watch the rainbow angle hold steady as a caustic.",
+    "ko": "햇빛이 빗방울에 들어가 굴절하고 뒷면에서 반사한 뒤 다시 굴절해 빠져나온다. 사출각은 태양 반대 방향에서 약 42°에 모이며, b/R을 바꿔도 이 무지개각이 코스틱처럼 안정적으로 유지되는 모습을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "prism-dispersion",
+  "layout": "A",
+  "prerequisites": [
+    "prism-dispersion/newtons-prism",
+    "total-internal-reflection/critical-angle"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§5.5.2 (Rainbow)" },
+    { "source": "Minnaert, The Nature of Light and Colour", "section": "§169" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["rainbow", "raindrop", "Descartes", "42 degrees", "caustic"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

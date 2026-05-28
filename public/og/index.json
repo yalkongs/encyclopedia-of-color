@@ -1,5 +1,15 @@
 [
   {
+    "id": "atmospheric-optics/airmass-reddening",
+    "og": "og/atmospheric-optics--airmass-reddening.png",
+    "square": "og/atmospheric-optics--airmass-reddening.sq.png"
+  },
+  {
+    "id": "atmospheric-optics/blue-hour-twilight",
+    "og": "og/atmospheric-optics--blue-hour-twilight.png",
+    "square": "og/atmospheric-optics--blue-hour-twilight.sq.png"
+  },
+  {
     "id": "color-vision-deficiency/cvd-everyday",
     "og": "og/color-vision-deficiency--cvd-everyday.png",
     "square": "og/color-vision-deficiency--cvd-everyday.sq.png"
@@ -95,9 +105,29 @@
     "square": "og/planckian-radiation--filament-heating.sq.png"
   },
   {
+    "id": "prism-dispersion/abbe-number-glasses",
+    "og": "og/prism-dispersion--abbe-number-glasses.png",
+    "square": "og/prism-dispersion--abbe-number-glasses.sq.png"
+  },
+  {
+    "id": "prism-dispersion/minimum-deviation",
+    "og": "og/prism-dispersion--minimum-deviation.png",
+    "square": "og/prism-dispersion--minimum-deviation.sq.png"
+  },
+  {
     "id": "prism-dispersion/newtons-prism",
     "og": "og/prism-dispersion--newtons-prism.png",
     "square": "og/prism-dispersion--newtons-prism.sq.png"
+  },
+  {
+    "id": "prism-dispersion/rainbow-formation",
+    "og": "og/prism-dispersion--rainbow-formation.png",
+    "square": "og/prism-dispersion--rainbow-formation.sq.png"
+  },
+  {
+    "id": "prism-dispersion/sellmeier-dispersion",
+    "og": "og/prism-dispersion--sellmeier-dispersion.png",
+    "square": "og/prism-dispersion--sellmeier-dispersion.sq.png"
   },
   {
     "id": "reflection-lab/fresnel-equations",

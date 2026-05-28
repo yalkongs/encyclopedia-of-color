@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Sellmeier Dispersion Through a Prism — fan a Sellmeier-modelled glass…</title>
+  <meta name="description" content="Send white light into a Sellmeier-modelled prism and toggle between crown (BK7), fused silica, and flint (SF11). Watch the visible spectrum spread — flint nearly twice as wide as crown.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/sellmeier-dispersion/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Sellmeier Dispersion Through a Prism">
+  <meta property="og:description"    content="Send white light into a Sellmeier-modelled prism and toggle between crown (BK7), fused silica, and flint (SF11). Watch the visible spectrum spread — flint nearly twice as wide as crown.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/sellmeier-dispersion/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/prism-dispersion--sellmeier-dispersion.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Sellmeier Dispersion Through a Prism.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Sellmeier Dispersion Through a Prism">
+  <meta name="twitter:description"   content="Send white light into a Sellmeier-modelled prism and toggle between crown (BK7), fused silica, and flint (SF11). Watch the visible spectrum spread — flint nearly twice as wide as crown.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/prism-dispersion--sellmeier-dispersion.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Sellmeier Dispersion Through a Prism.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Sellmeier Dispersion Through a Prism","alternateName":"prism-dispersion/sellmeier-dispersion","description":"Send white light into a Sellmeier-modelled prism and toggle between crown (BK7), fused silica, and flint (SF11). Watch the visible spectrum spread — flint nearly twice as wide as crown.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Sellmeier, dispersion, prism, BK7, SF11","url":"https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/sellmeier-dispersion/","image":"https://encyclopedia-of-color.vercel.app/og/prism-dispersion--sellmeier-dispersion.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="prism-dispersion/sellmeier-dispersion">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Sellmeier Dispersion Through a Prism</h1>
+      <p class="module-subtitle">fan a Sellmeier-modelled glass and see how flint disperses farther than crown</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Sellmeier equation fits a glass's refractive index across the visible band from three resonance terms. Different glasses give very different spreads.
+        </p>
+        <div class="math-block" data-tex="n^{2}(\lambda) \;=\; 1 \;+\; \sum_{i=1}^{3} \dfrac{B_i\,\lambda^{2}}{\lambda^{2} - C_i}"></div>
+        <p class="zone-guide">
+          Pick a glass and adjust apex α and entry angle. Each visible wavelength refracts at its own Sellmeier index — the gold readout reports the angular spread between red and violet.
+        </p>
+        <enc-slider id="glass" label="Glass (0 BK7 · 1 Silica · 2 SF11)" min="0" max="2" step="1" value="0"></enc-slider>
+        <enc-slider id="alpha" label="Apex α (°)" min="30" max="80" step="0.5" value="60" unit="°"></enc-slider>
+        <enc-slider id="theta" label="Entry angle θ₁ (°)" min="25" max="75" step="0.5" value="48" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Sellmeier prism dispersion"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht §3.5; Born &amp; Wolf §2.3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

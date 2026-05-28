@@ -1,0 +1,37 @@
+{
+  "schema_version": "v2",
+  "id": "prism-dispersion/sellmeier-dispersion",
+  "title": {
+    "en": "Sellmeier Dispersion Through a Prism",
+    "ko": "Sellmeier 분산을 거친 프리즘"
+  },
+  "subtitle": {
+    "en": "fan a Sellmeier-modelled glass and see how flint disperses farther than crown",
+    "ko": "Sellmeier로 모형화한 유리에서 백색광이 분산되는 정도를 본다"
+  },
+  "description": {
+    "en": "Send white light into a Sellmeier-modelled prism and toggle between crown (BK7), fused silica, and flint (SF11). Watch the visible spectrum spread — flint nearly twice as wide as crown.",
+    "ko": "Sellmeier로 정확히 모형화한 삼각 프리즘에 백색광을 보낸다. 크라운(BK7), 용융 석영, 플린트(SF11) 사이를 전환하며 가시광선이 어떻게 다른 폭으로 분산되는지 본다. 플린트는 크라운의 거의 두 배."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "prism-dispersion",
+  "layout": "A",
+  "prerequisites": [
+    "prism-dispersion/newtons-prism",
+    "prism-dispersion/abbe-number-glasses"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hecht, Optics 5e", "section": "§3.5 (Dispersion)" },
+    { "source": "Born & Wolf, Principles of Optics 7e", "section": "§2.3" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Sellmeier", "dispersion", "prism", "BK7", "SF11"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

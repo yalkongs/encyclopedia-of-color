@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Airmass &amp; the Reddening Sun — drop the sun toward the horizon and wat…</title>
+  <meta name="description" content="As the sun sinks, sunlight crosses more air: airmass grows from 1 at the zenith toward 38 at the horizon. Rayleigh scattering removes blue first, so the disk reddens from white to gold to deep red.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/airmass-reddening/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Airmass &amp; the Reddening Sun">
+  <meta property="og:description"    content="As the sun sinks, sunlight crosses more air: airmass grows from 1 at the zenith toward 38 at the horizon. Rayleigh scattering removes blue first, so the disk reddens from white to gold to deep red.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/airmass-reddening/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--airmass-reddening.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Airmass &amp; the Reddening Sun.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Airmass &amp; the Reddening Sun">
+  <meta name="twitter:description"   content="As the sun sinks, sunlight crosses more air: airmass grows from 1 at the zenith toward 38 at the horizon. Rayleigh scattering removes blue first, so the disk reddens from white to gold to deep red.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--airmass-reddening.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Airmass &amp; the Reddening Sun.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Airmass & the Reddening Sun","alternateName":"atmospheric-optics/airmass-reddening","description":"As the sun sinks, sunlight crosses more air: airmass grows from 1 at the zenith toward 38 at the horizon. Rayleigh scattering removes blue first, so the disk reddens from white to gold to deep red.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"airmass, sunset, Rayleigh, reddening, Kasten-Young","url":"https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/airmass-reddening/","image":"https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--airmass-reddening.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="atmospheric-optics/airmass-reddening">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Airmass &amp; the Reddening Sun</h1>
+      <p class="module-subtitle">drop the sun toward the horizon and watch the lengthening air path steal its blue</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Airmass is the relative length of the path sunlight takes through the atmosphere. At the horizon it is roughly 38× the zenith path, so short-wavelength light is scattered away.
+        </p>
+        <div class="math-block" data-tex="T(\lambda) = e^{-\tau_R(\lambda)\,X},\quad \tau_R \propto \lambda^{-4}"></div>
+        <p class="zone-guide">
+          Lower the solar elevation and watch the sun disk redden as the airmass X climbs. The turbidity slider adds aerosol, deepening the effect. The right panel plots the transmitted spectrum.
+        </p>
+        <enc-slider id="h" label="Solar elevation (°)" min="0" max="90" step="0.5" value="20" unit="°"></enc-slider>
+        <enc-slider id="t" label="Aerosol turbidity ×" min="1.0" max="4.0" step="0.1" value="1.0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Airmass reddening of the sun"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht §8.5.2; Kasten &amp; Young 1989"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

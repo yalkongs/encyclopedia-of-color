@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "prism-dispersion/minimum-deviation",
+  "title": {
+    "en": "Minimum Deviation Angle",
+    "ko": "최소 편차각"
+  },
+  "subtitle": {
+    "en": "find the geometry where a prism bends light by the smallest possible angle",
+    "ko": "프리즘이 빛을 가장 적게 꺾는 입사 조건을 찾아본다"
+  },
+  "description": {
+    "en": "Sweep the incidence angle and watch the total deviation D(θ₁) traced by the ray. At symmetric passage the curve hits its minimum D_m — the canonical method for measuring a glass's refractive index.",
+    "ko": "입사각을 변화시키며 광선이 그리는 편차 곡선 D(θ₁)를 본다. 대칭 통과 시 곡선이 최솟값 D_m에 도달한다. 유리 굴절률 측정에 쓰이는 기본 방법이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "prism-dispersion",
+  "layout": "A",
+  "prerequisites": ["prism-dispersion/newtons-prism"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§5.5.1" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["minimum deviation", "prism", "refractometer", "interactive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

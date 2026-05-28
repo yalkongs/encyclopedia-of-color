@@ -105,6 +105,15 @@ function tagValue(html: string, selector: string): string | null {
   return null;
 }
 
+function decodeEntities(s: string): string {
+  return s
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
+}
+
 function readAttr(tag: string, attr: string): string | null {
   // Match  attr="value"  or  attr='value'  where the body can contain the
   // opposite-quote character (e.g. a possessive apostrophe inside a "...").
@@ -170,7 +179,9 @@ async function validateModule(id: string): Promise<ValidationResult> {
   }
 
   // (4) Title length constraints (Google: ≤60, X: ≤70)
-  const title = tagValue(html, 'title') ?? '';
+  // Measure the *rendered* length: search engines and social cards count the
+  // displayed characters, so HTML entities (&amp; → &, &#39; → ') count as one.
+  const title = decodeEntities(tagValue(html, 'title') ?? '');
   checks.push({
     name: 'title length ≤ 70',
     ok: title.length > 0 && title.length <= 70,

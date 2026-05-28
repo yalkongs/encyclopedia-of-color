@@ -85,6 +85,59 @@ export function cauchyN(lambdaNm: number, B = 1.5046, C = 4200): number {
   return B + C / (lambdaNm * lambdaNm);
 }
 
+/**
+ * Sellmeier dispersion (1st-order, three-term):
+ *   n²(λ) = 1 + Σᵢ Bᵢ · λ² / (λ² − Cᵢ),  with λ in micrometres.
+ * Hecht §3.5.1; Schott / Malitson coefficients.
+ */
+export function sellmeierN(
+  lambdaNm: number,
+  B: [number, number, number],
+  C: [number, number, number],
+): number {
+  const lUm = lambdaNm / 1000;
+  const l2 = lUm * lUm;
+  const n2 =
+    1 +
+    (B[0] * l2) / (l2 - C[0]) +
+    (B[1] * l2) / (l2 - C[1]) +
+    (B[2] * l2) / (l2 - C[2]);
+  return Math.sqrt(Math.max(0, n2));
+}
+
+/** Standard Sellmeier coefficient bundles (λ in µm). */
+export const SELLMEIER = {
+  BK7: {
+    B: [1.03961212, 0.231792344, 1.01046945] as [number, number, number],
+    C: [0.00600069867, 0.0200179144, 103.560653] as [number, number, number],
+  },
+  FUSED_SILICA: {
+    B: [0.6961663, 0.4079426, 0.8974794] as [number, number, number],
+    C: [0.004679148, 0.01351206, 97.93434] as [number, number, number],
+  },
+  SF11: {
+    B: [1.73759695, 0.313747346, 1.89878101] as [number, number, number],
+    C: [0.013188707, 0.0623068142, 155.23629] as [number, number, number],
+  },
+};
+
+/**
+ * Abbe number V_d = (n_d − 1) / (n_F − n_C), the standard inverse-dispersion
+ * figure of merit for an optical glass.
+ *   - d-line: 587.6 nm (helium)
+ *   - F-line: 486.1 nm (hydrogen)
+ *   - C-line: 656.3 nm (hydrogen)
+ * Crown glasses sit near V ≈ 60; flint glasses near V ≈ 25-35.
+ */
+export function abbeNumber(
+  nFn: (lambdaNm: number) => number,
+): number {
+  const nd = nFn(587.6);
+  const nF = nFn(486.1);
+  const nC = nFn(656.3);
+  return (nd - 1) / (nF - nC);
+}
+
 export const DEG = Math.PI / 180;
 export const RAD = 180 / Math.PI;
 

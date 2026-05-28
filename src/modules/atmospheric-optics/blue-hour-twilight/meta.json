@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "atmospheric-optics/blue-hour-twilight",
+  "title": {
+    "en": "Twilight, the Blue Hour & Earth's Shadow",
+    "ko": "박명, 블루 아워, 지구 그림자"
+  },
+  "subtitle": {
+    "en": "sink the sun below the horizon and watch civil, nautical, and astronomical twilight pass",
+    "ko": "태양을 지평선 아래로 내리며 시민·항해·천문 박명이 차례로 지나가는 모습을 본다"
+  },
+  "description": {
+    "en": "Push the sun below the horizon through civil, nautical, and astronomical twilight. A golden glow lingers sunward while Earth's blue-grey shadow and the pink Belt of Venus rise opposite.",
+    "ko": "태양을 지평선 아래로 내리며 시민·항해·천문 박명의 세 단계를 지나간다. 태양 쪽에는 금빛 노을이 남고, 반대쪽에는 지구 자신의 그림자가 푸른 쐐기로 떠오르며 그 위를 분홍빛 비너스의 띠가 덮는다. 하늘 전체는 사진가들의 블루 아워로 깊어진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "atmospheric-optics",
+  "layout": "A",
+  "prerequisites": ["atmospheric-optics/airmass-reddening"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Minnaert, The Nature of Light and Colour", "section": "§176-180 (Twilight)" },
+    { "source": "Lynch & Livingston, Color and Light in Nature", "section": "§2.7" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["twilight", "blue hour", "Belt of Venus", "Earth shadow", "civil nautical"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Minimum Deviation Angle — find the geometry where a prism bends light…</title>
+  <meta name="description" content="Sweep the incidence angle and watch the total deviation D(θ₁) traced by the ray. At symmetric passage the curve hits its minimum D_m — the canonical method for measuring a glass's refractive index.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/minimum-deviation/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Minimum Deviation Angle">
+  <meta property="og:description"    content="Sweep the incidence angle and watch the total deviation D(θ₁) traced by the ray. At symmetric passage the curve hits its minimum D_m — the canonical method for measuring a glass's refractive index.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/minimum-deviation/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/prism-dispersion--minimum-deviation.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Minimum Deviation Angle.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Minimum Deviation Angle">
+  <meta name="twitter:description"   content="Sweep the incidence angle and watch the total deviation D(θ₁) traced by the ray. At symmetric passage the curve hits its minimum D_m — the canonical method for measuring a glass's refractive index.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/prism-dispersion--minimum-deviation.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Minimum Deviation Angle.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Minimum Deviation Angle","alternateName":"prism-dispersion/minimum-deviation","description":"Sweep the incidence angle and watch the total deviation D(θ₁) traced by the ray. At symmetric passage the curve hits its minimum D_m — the canonical method for measuring a glass's refractive index.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"minimum deviation, prism, refractometer, interactive","url":"https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/minimum-deviation/","image":"https://encyclopedia-of-color.vercel.app/og/prism-dispersion--minimum-deviation.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="prism-dispersion/minimum-deviation">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Minimum Deviation Angle</h1>
+      <p class="module-subtitle">find the geometry where a prism bends light by the smallest possible angle</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A prism's total deviation D(θ₁) depends on entry angle. The curve has a single minimum D_m at the symmetric pass — when the ray inside the prism runs parallel to the base.
+        </p>
+        <div class="math-block" data-tex="n \;=\; \dfrac{\sin\!\bigl((\alpha + D_m)/2\bigr)}{\sin(\alpha/2)}"></div>
+        <p class="zone-guide">
+          Sweep θ₁ to trace the deviation curve. The crimson dot tracks the current ray; the gold dashed line marks D_m for the chosen α and n.
+        </p>
+        <enc-slider id="alpha" label="Apex α (°)" min="20" max="80" step="0.5" value="60" unit="°"></enc-slider>
+        <enc-slider id="n" label="Refractive index n" min="1.30" max="1.90" step="0.005" value="1.520"></enc-slider>
+        <enc-slider id="theta" label="Entry angle θ₁ (°)" min="20" max="85" step="0.25" value="50" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Minimum deviation curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §5.5.1"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Abbe Number of Optical Glasses — compare crown and flint glasses by t…</title>
+  <meta name="description" content="Overlay Sellmeier curves for BK7 crown, fused silica, and SF11 flint. Read the d/F/C lines and let the Abbe number V_d = (n_d−1)/(n_F−n_C) show how strongly each glass disperses.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/abbe-number-glasses/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Abbe Number of Optical Glasses">
+  <meta property="og:description"    content="Overlay Sellmeier curves for BK7 crown, fused silica, and SF11 flint. Read the d/F/C lines and let the Abbe number V_d = (n_d−1)/(n_F−n_C) show how strongly each glass disperses.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/abbe-number-glasses/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/prism-dispersion--abbe-number-glasses.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Abbe Number of Optical Glasses.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Abbe Number of Optical Glasses">
+  <meta name="twitter:description"   content="Overlay Sellmeier curves for BK7 crown, fused silica, and SF11 flint. Read the d/F/C lines and let the Abbe number V_d = (n_d−1)/(n_F−n_C) show how strongly each glass disperses.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/prism-dispersion--abbe-number-glasses.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Abbe Number of Optical Glasses.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Abbe Number of Optical Glasses","alternateName":"prism-dispersion/abbe-number-glasses","description":"Overlay Sellmeier curves for BK7 crown, fused silica, and SF11 flint. Read the d/F/C lines and let the Abbe number V_d = (n_d−1)/(n_F−n_C) show how strongly each glass disperses.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Abbe number, BK7, SF11, crown flint, dispersion","url":"https://encyclopedia-of-color.vercel.app/modules/prism-dispersion/abbe-number-glasses/","image":"https://encyclopedia-of-color.vercel.app/og/prism-dispersion--abbe-number-glasses.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="prism-dispersion/abbe-number-glasses">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Abbe Number of Optical Glasses</h1>
+      <p class="module-subtitle">compare crown and flint glasses by their inverse-dispersion figure of merit V_d</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Abbe number compresses an entire dispersion curve into a single figure. Higher V_d means weaker chromatic spread.
+        </p>
+        <div class="math-block" data-tex="V_d \;=\; \dfrac{n_d - 1}{\,n_F - n_C\,}"></div>
+        <p class="zone-guide">
+          Three Sellmeier curves overlay: BK7 crown (high V_d), fused silica, SF11 flint (low V_d). Slide λ to read every glass at the same wavelength; gold ticks mark the C/d/F lines used in V_d.
+        </p>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="380" max="780" step="1" value="587" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Abbe number comparison plot"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §6.3.2; Schott BK7/SF11"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
