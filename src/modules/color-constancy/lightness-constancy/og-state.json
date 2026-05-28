@@ -1,0 +1,4 @@
+{
+  "hero": { "shadow": 55, "meter": "on" },
+  "comment": "Meter on, showing equal luminance across the sun/shadow boundary."
+}

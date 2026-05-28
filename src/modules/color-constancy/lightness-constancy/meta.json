@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-constancy/lightness-constancy",
+  "title": {
+    "en": "White Paper in Shadow",
+    "ko": "그늘 속 흰 종이"
+  },
+  "subtitle": {
+    "en": "slide the shadow deeper and watch white paper stay white even as it reflects less light than nearby grey",
+    "ko": "그늘을 더 깊게 하며 흰 종이가 곁의 회색보다 적은 빛을 반사해도 계속 희게 보이는 것을 본다"
+  },
+  "description": {
+    "en": "Lightness tracks reflectance, not raw luminance. Slide the shadow deeper until a white card in shade reflects the same light as a grey card in the sun — yet one still looks white and the other grey.",
+    "ko": "밝기 지각은 원시 휘도가 아니라 반사율을 좇는다. 그늘을 깊게 하여 그늘 속 흰 카드가 햇빛 속 회색 카드와 같은 빛을 반사하게 해도, 하나는 여전히 희고 다른 하나는 회색으로 보인다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "color-constancy",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["color-constancy/checker-shadow-illusion"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Goldstein, Sensation & Perception 10e", "section": "§9.4 (Lightness Constancy)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["lightness constancy", "shadow", "reflectance", "luminance"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

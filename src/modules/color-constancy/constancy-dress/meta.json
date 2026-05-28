@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-constancy/constancy-dress",
+  "title": {
+    "en": "The Dress",
+    "ko": "그 드레스"
+  },
+  "subtitle": {
+    "en": "toggle the assumed light and watch one set of pixels flip between white-gold and blue-black",
+    "ko": "가정한 빛을 전환해 같은 픽셀이 흰금색과 청흑색 사이를 오가는 것을 본다"
+  },
+  "description": {
+    "en": "The 2015 dress split the internet because its pixels are ambiguous. Toggle the light your brain assumes and watch the same stripes resolve to white-and-gold or blue-and-black.",
+    "ko": "2015년의 드레스는 픽셀이 모호해 인터넷을 둘로 갈랐다. 뇌가 가정하는 빛을 전환하면 같은 줄무늬가 흰금색 또는 청흑색으로 해석되는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "color-constancy",
+  "layout": "A",
+  "prerequisites": ["color-constancy/constancy-vries"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Lafer-Sousa, Hermann & Conway 2015, Current Biology", "section": "25(13)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["the dress", "color constancy", "ambiguous illuminant", "blue black white gold"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

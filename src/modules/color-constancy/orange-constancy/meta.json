@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-constancy/orange-constancy",
+  "title": {
+    "en": "An Orange Under Any Light",
+    "ko": "어떤 빛에서도 오렌지"
+  },
+  "subtitle": {
+    "en": "toggle between the raw sensor and the perceiving brain and watch one orange survive three different lights",
+    "ko": "원시 센서와 지각하는 뇌를 전환해 하나의 오렌지가 세 가지 빛에서 살아남는 것을 본다"
+  },
+  "description": {
+    "en": "Photographed under daylight, tungsten, and blue shade, an orange sends the eye three different colours. Toggle the perceiving view and watch the brain discount each light to keep the fruit orange.",
+    "ko": "주광·텅스텐·푸른 그늘 아래에서 오렌지는 눈에 세 가지 색을 보낸다. 지각 시야로 전환하면 뇌가 각 빛을 덜어내 과일을 계속 주황으로 유지하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "color-constancy",
+  "layout": "A",
+  "prerequisites": ["color-constancy/constancy-vries"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Fairchild, Color Appearance Models 3e", "section": "§8 (Chromatic Adaptation)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["color constancy", "illumination", "chromatic adaptation", "discounting the illuminant"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

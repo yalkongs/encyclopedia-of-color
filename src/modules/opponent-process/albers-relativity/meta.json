@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "opponent-process/albers-relativity",
+  "title": {
+    "en": "One Colour, Two Faces",
+    "ko": "하나의 색, 두 얼굴"
+  },
+  "subtitle": {
+    "en": "slide one colour onto two backgrounds and toggle the reveal to prove the twin squares are identical",
+    "ko": "한 색을 두 배경에 올리고 reveal을 켜서 두 사각형이 동일함을 증명한다"
+  },
+  "description": {
+    "en": "Albers showed a colour is never seen alone: the same square reads warmer or cooler depending on its surround. Slide the centre colour, then toggle the reveal to slide the twins together as one.",
+    "ko": "알베르스는 색이 결코 홀로 보이지 않음을 보였다. 같은 사각형도 주변에 따라 더 따뜻하거나 차갑게 읽힌다. 중심 색을 움직인 뒤 reveal을 켜 쌍둥이를 하나로 모은다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "opponent-process",
+  "layout": "A",
+  "prerequisites": ["opponent-process/opponent-afterimages"],
+  "leads_to": [],
+  "see_also": ["receptive-fields/lateral-inhibition"],
+  "textbook_refs": [
+    { "source": "Albers 1963", "section": "Interaction of Color" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Albers", "simultaneous contrast", "interaction of color", "surround"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

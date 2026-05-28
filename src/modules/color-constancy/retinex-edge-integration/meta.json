@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-constancy/retinex-edge-integration",
+  "title": {
+    "en": "Land's Retinex",
+    "ko": "랜드의 리티넥스"
+  },
+  "subtitle": {
+    "en": "slide an illumination gradient across a Mondrian and watch retinex integrate edges to recover flat reflectance",
+    "ko": "몬드리안에 조명 기울기를 드리우고 리티넥스가 가장자리를 적분해 평탄한 반사율을 되찾는 것을 본다"
+  },
+  "description": {
+    "en": "Land's retinex recovers surface colour by trusting sharp edges and ignoring slow illumination gradients. Slide a gradient across the Mondrian and toggle retinex to watch the uneven light wash away.",
+    "ko": "랜드의 리티넥스는 급한 가장자리는 신뢰하고 느린 조명 기울기는 무시해 표면 색을 되찾는다. 몬드리안에 기울기를 드리우고 리티넥스를 켜면 고르지 않은 빛이 씻겨나가는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "color-constancy",
+  "layout": "A",
+  "prerequisites": ["color-constancy/lightness-constancy"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Land & McCann 1971, J. Opt. Soc. Am.", "section": "Lightness and Retinex Theory" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["retinex", "Land", "edge integration", "lightness"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

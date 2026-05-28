@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "opponent-process/bezold-assimilation",
+  "title": {
+    "en": "The Bezold Spreading Effect",
+    "ko": "베졸트 동화 효과"
+  },
+  "subtitle": {
+    "en": "slide the base colour and watch black lines darken it while white lines lighten the very same hue",
+    "ko": "바탕 색을 움직여 검은 선은 어둡게, 흰 선은 같은 색을 밝게 만드는 것을 본다"
+  },
+  "description": {
+    "en": "Unlike contrast, assimilation pulls a colour toward its neighbours. Slide the base hue: laced with black lines it looks darker, with white lines lighter — though the base is identical in both halves.",
+    "ko": "대비와 달리 동화는 색을 이웃 쪽으로 끌어당긴다. 바탕 색을 움직이면 검은 선이 섞인 쪽은 더 어둡게, 흰 선이 섞인 쪽은 더 밝게 보인다 — 두 절반의 바탕은 같은데도."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "opponent-process",
+  "layout": "A",
+  "prerequisites": ["opponent-process/albers-relativity"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "von Bezold 1874", "section": "Die Farbenlehre" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Bezold effect", "assimilation", "spreading", "color spread"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

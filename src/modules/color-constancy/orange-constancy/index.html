@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>An Orange Under Any Light — toggle between the raw sensor and the per…</title>
+  <meta name="description" content="Photographed under daylight, tungsten, and blue shade, an orange sends the eye three different colours. Toggle the perceiving view and watch the brain discount each light to keep the fruit orange.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-constancy/orange-constancy/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="An Orange Under Any Light">
+  <meta property="og:description"    content="Photographed under daylight, tungsten, and blue shade, an orange sends the eye three different colours. Toggle the perceiving view and watch the brain discount each light to keep the fruit orange.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-constancy/orange-constancy/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-constancy--orange-constancy.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: An Orange Under Any Light.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="An Orange Under Any Light">
+  <meta name="twitter:description"   content="Photographed under daylight, tungsten, and blue shade, an orange sends the eye three different colours. Toggle the perceiving view and watch the brain discount each light to keep the fruit orange.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-constancy--orange-constancy.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: An Orange Under Any Light.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"An Orange Under Any Light","alternateName":"color-constancy/orange-constancy","description":"Photographed under daylight, tungsten, and blue shade, an orange sends the eye three different colours. Toggle the perceiving view and watch the brain discount each light to keep the fruit orange.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"color constancy, illumination, chromatic adaptation, discounting the illuminant","url":"https://encyclopedia-of-color.vercel.app/modules/color-constancy/orange-constancy/","image":"https://encyclopedia-of-color.vercel.app/og/color-constancy--orange-constancy.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-constancy/orange-constancy">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">An Orange Under Any Light</h1>
+      <p class="module-subtitle">toggle between the raw sensor and the perceiving brain and watch one orange survive three different lights</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Colour constancy is the brain estimating the illuminant and dividing it out, so an object keeps its colour as the light around it changes.
+        </p>
+        <div class="math-block" data-tex="\text{surface} \approx \dfrac{\text{cone signal}}{\text{estimated illuminant}}"></div>
+        <p class="zone-guide">
+          The same orange sits under daylight, tungsten, and cool shade. Toggle to the raw-sensor view to see the three different colours it actually reflects, then back to the perceiving view where the brain holds it orange.
+        </p>
+        <enc-toggle id="view" label="View" options="perceived,raw" labels="perceiving brain,raw sensor" value="perceived"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Orange under three illuminants"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fairchild, Color Appearance Models 3e §8"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

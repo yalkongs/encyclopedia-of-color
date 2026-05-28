@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "opponent-process/opponent-afterimages",
+  "title": {
+    "en": "Complementary Afterimages",
+    "ko": "보색 잔상"
+  },
+  "subtitle": {
+    "en": "slide the adapting colour, stare at the dot, then watch its opponent bloom on the white field",
+    "ko": "적응 색을 움직여 점을 응시한 뒤, 흰 화면에 그 반대색이 피어오르는 것을 본다"
+  },
+  "description": {
+    "en": "Stare at a colour and the opponent channel fatigues; look away and its complement floods back. Slide the adapting colour and watch the predicted afterimage glow and fade on the neutral field.",
+    "ko": "한 색을 응시하면 그 대립 채널이 피로해진다. 시선을 돌리면 보색이 밀려든다. 적응 색을 움직여 예측된 잔상이 중립 화면에서 빛나고 사라지는 것을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "opponent-process",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["opponent-process/opponent-cancellation"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hering 1878", "section": "Zur Lehre vom Lichtsinne" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["afterimage", "opponent process", "complementary", "Hering"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

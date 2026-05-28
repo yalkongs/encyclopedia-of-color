@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Successive Contrast &amp; Recovery — slide the adapting colour and watch…</title>
+  <meta name="description" content="Adapt to a colour and a neutral patch shown afterward looks tinged with the opposite hue, fading as the channel recovers. Slide the adapting colour and watch the aftereffect decay along its curve.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/opponent-process/successive-contrast/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Successive Contrast &amp; Recovery">
+  <meta property="og:description"    content="Adapt to a colour and a neutral patch shown afterward looks tinged with the opposite hue, fading as the channel recovers. Slide the adapting colour and watch the aftereffect decay along its curve.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/opponent-process/successive-contrast/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/opponent-process--successive-contrast.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Successive Contrast &amp; Recovery.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Successive Contrast &amp; Recovery">
+  <meta name="twitter:description"   content="Adapt to a colour and a neutral patch shown afterward looks tinged with the opposite hue, fading as the channel recovers. Slide the adapting colour and watch the aftereffect decay along its curve.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/opponent-process--successive-contrast.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Successive Contrast &amp; Recovery.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Successive Contrast & Recovery","alternateName":"opponent-process/successive-contrast","description":"Adapt to a colour and a neutral patch shown afterward looks tinged with the opposite hue, fading as the channel recovers. Slide the adapting colour and watch the aftereffect decay along its curve.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"successive contrast, adaptation, recovery, aftereffect","url":"https://encyclopedia-of-color.vercel.app/modules/opponent-process/successive-contrast/","image":"https://encyclopedia-of-color.vercel.app/og/opponent-process--successive-contrast.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="opponent-process/successive-contrast">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Successive Contrast &amp; Recovery</h1>
+      <p class="module-subtitle">slide the adapting colour and watch a neutral patch carry its opponent tint, then recover over time</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Adaptation biases the opponent channels. A neutral surface viewed afterwards is read against that bias, so it appears tinged with the complementary hue until the bias decays.
+        </p>
+        <div class="math-block" data-tex="a(t) = a_0\,e^{-t/\tau}"></div>
+        <p class="zone-guide">
+          Slide the adapting colour. The patch begins steeped in the complementary tint, then fades to true neutral as the curve below tracks the recovering channel — successive contrast in time.
+        </p>
+        <enc-slider id="hue" label="Adapting colour" min="0" max="360" step="1" value="120" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Successive contrast recovery"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Goldstein, Sensation &amp; Perception 10e §9"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

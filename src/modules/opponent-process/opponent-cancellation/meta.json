@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "opponent-process/opponent-cancellation",
+  "title": {
+    "en": "Hering Hue Cancellation",
+    "ko": "헤링 대립색 취소"
+  },
+  "subtitle": {
+    "en": "slide opposing colours into a test patch and watch it cancel all the way to neutral grey",
+    "ko": "대립색을 시험 색에 더해 중립 회색까지 상쇄되는 것을 본다"
+  },
+  "description": {
+    "en": "Hering's method measures hue by cancelling it: add green until no red remains, add blue until no yellow remains. Slide the two opponent axes and null the orange test patch to grey.",
+    "ko": "헤링의 방법은 색을 상쇄해 측정한다. 빨강이 없어질 때까지 초록을, 노랑이 없어질 때까지 파랑을 더한다. 두 대립 축을 움직여 주황 시험 색을 회색으로 상쇄한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "opponent-process",
+  "layout": "A",
+  "prerequisites": ["opponent-process/opponent-afterimages"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5.10 (Hue Cancellation)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["hue cancellation", "opponent process", "Hering", "Hurvich Jameson"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

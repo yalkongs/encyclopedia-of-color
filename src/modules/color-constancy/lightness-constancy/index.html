@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>White Paper in Shadow — slide the shadow deeper and watch white paper…</title>
+  <meta name="description" content="Lightness tracks reflectance, not raw luminance. Slide the shadow deeper until a white card in shade reflects the same light as a grey card in the sun — yet one still looks white and the other grey.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-constancy/lightness-constancy/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="White Paper in Shadow">
+  <meta property="og:description"    content="Lightness tracks reflectance, not raw luminance. Slide the shadow deeper until a white card in shade reflects the same light as a grey card in the sun — yet one still looks white and the other grey.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-constancy/lightness-constancy/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-constancy--lightness-constancy.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: White Paper in Shadow.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="White Paper in Shadow">
+  <meta name="twitter:description"   content="Lightness tracks reflectance, not raw luminance. Slide the shadow deeper until a white card in shade reflects the same light as a grey card in the sun — yet one still looks white and the other grey.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-constancy--lightness-constancy.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: White Paper in Shadow.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"White Paper in Shadow","alternateName":"color-constancy/lightness-constancy","description":"Lightness tracks reflectance, not raw luminance. Slide the shadow deeper until a white card in shade reflects the same light as a grey card in the sun — yet one still looks white and the other grey.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"lightness constancy, shadow, reflectance, luminance","url":"https://encyclopedia-of-color.vercel.app/modules/color-constancy/lightness-constancy/","image":"https://encyclopedia-of-color.vercel.app/og/color-constancy--lightness-constancy.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-constancy/lightness-constancy">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">White Paper in Shadow</h1>
+      <p class="module-subtitle">slide the shadow deeper and watch white paper stay white even as it reflects less light than nearby grey</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          What looks white is the surface judged to reflect the most light in its region — not the surface sending the most light to the eye. The brain factors out the shadow.
+        </p>
+        <div class="math-block" data-tex="\text{lightness} \sim \dfrac{\text{luminance}}{\text{local illumination}}"></div>
+        <p class="zone-guide">
+          Slide the shadow deeper until the white card in shade sends the eye exactly as much light as the grey card in sunlight. Toggle the meter to confirm the two equal luminances — they still look white and grey.
+        </p>
+        <enc-slider id="shadow" label="Shadow depth" min="20" max="80" step="1" value="55" unit="%"></enc-slider>
+        <enc-toggle id="meter" label="Light meter" options="off,on" labels="hide,measure" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Lightness constancy in shadow"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Goldstein, Sensation &amp; Perception 10e §9.4"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

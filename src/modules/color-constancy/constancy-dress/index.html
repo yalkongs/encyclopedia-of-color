@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Dress — toggle the assumed light and watch one set of pixels flip…</title>
+  <meta name="description" content="The 2015 dress split the internet because its pixels are ambiguous. Toggle the light your brain assumes and watch the same stripes resolve to white-and-gold or blue-and-black.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-constancy/constancy-dress/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Dress">
+  <meta property="og:description"    content="The 2015 dress split the internet because its pixels are ambiguous. Toggle the light your brain assumes and watch the same stripes resolve to white-and-gold or blue-and-black.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-constancy/constancy-dress/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-constancy--constancy-dress.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Dress.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Dress">
+  <meta name="twitter:description"   content="The 2015 dress split the internet because its pixels are ambiguous. Toggle the light your brain assumes and watch the same stripes resolve to white-and-gold or blue-and-black.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-constancy--constancy-dress.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Dress.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Dress","alternateName":"color-constancy/constancy-dress","description":"The 2015 dress split the internet because its pixels are ambiguous. Toggle the light your brain assumes and watch the same stripes resolve to white-and-gold or blue-and-black.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"the dress, color constancy, ambiguous illuminant, blue black white gold","url":"https://encyclopedia-of-color.vercel.app/modules/color-constancy/constancy-dress/","image":"https://encyclopedia-of-color.vercel.app/og/color-constancy--constancy-dress.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-constancy/constancy-dress">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Dress</h1>
+      <p class="module-subtitle">toggle the assumed light and watch one set of pixels flip between white-gold and blue-black</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          To name a colour the brain must guess the light. Assume a cool blue light and it subtracts blue, reading white-gold; assume warm light and it subtracts warmth, reading blue-black.
+        </p>
+        <div class="math-block" data-tex="\text{surface} = \text{adapt}(\text{pixels};\ \text{assumed light} \to \text{neutral})"></div>
+        <p class="zone-guide">
+          The centre swatch holds the dress's actual, fixed pixels. Toggle the light your visual system assumes and watch the very same stripes resolve into two famously opposite dresses.
+        </p>
+        <enc-toggle id="assume" label="Assumed light" options="cool,warm" labels="cool daylight,warm indoor" value="cool"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="The dress under two assumed lights"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Lafer-Sousa, Hermann &amp; Conway 2015, Current Biology"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

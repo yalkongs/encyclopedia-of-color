@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Von Kries Adaptation — slide the illuminant from daylight to tungsten…</title>
+  <meta name="description" content="Chromatic adaptation rescales each cone channel so a white surface still looks white under a coloured light. Slide the illuminant and compare the raw cast with the Bradford-adapted appearance.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-constancy/constancy-vries/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Von Kries Adaptation">
+  <meta property="og:description"    content="Chromatic adaptation rescales each cone channel so a white surface still looks white under a coloured light. Slide the illuminant and compare the raw cast with the Bradford-adapted appearance.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-constancy/constancy-vries/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-constancy--constancy-vries.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Von Kries Adaptation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Von Kries Adaptation">
+  <meta name="twitter:description"   content="Chromatic adaptation rescales each cone channel so a white surface still looks white under a coloured light. Slide the illuminant and compare the raw cast with the Bradford-adapted appearance.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-constancy--constancy-vries.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Von Kries Adaptation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Von Kries Adaptation","alternateName":"color-constancy/constancy-vries","description":"Chromatic adaptation rescales each cone channel so a white surface still looks white under a coloured light. Slide the illuminant and compare the raw cast with the Bradford-adapted appearance.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Von Kries, chromatic adaptation, Bradford, white balance","url":"https://encyclopedia-of-color.vercel.app/modules/color-constancy/constancy-vries/","image":"https://encyclopedia-of-color.vercel.app/og/color-constancy--constancy-vries.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-constancy/constancy-vries">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Von Kries Adaptation</h1>
+      <p class="module-subtitle">slide the illuminant from daylight to tungsten and watch adaptation discount the colour cast</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The visual system rescales each cone channel to the prevailing light, so a white wall reads white whether lit by noon sky or a warm bulb — chromatic adaptation.
+        </p>
+        <div class="math-block" data-tex="\begin{pmatrix}\rho'\\\gamma'\\\beta'\end{pmatrix} = \begin{pmatrix}\rho_d/\rho_s & & \\ & \gamma_d/\gamma_s & \\ & & \beta_d/\beta_s\end{pmatrix}\begin{pmatrix}\rho\\\gamma\\\beta\end{pmatrix}"></div>
+        <p class="zone-guide">
+          Slide the illuminant warmth. The top swatches are the raw light reaching the eye — drenched in the lamp's colour. The bottom swatches apply the Bradford transform back to daylight: the cast lifts and the colours hold.
+        </p>
+        <enc-slider id="warm" label="Illuminant (daylight → tungsten)" min="0" max="100" step="1" value="70" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Von Kries chromatic adaptation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fairchild, Color Appearance Models 3e §8.3 · CIE 159:2004"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

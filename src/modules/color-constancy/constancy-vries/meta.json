@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "color-constancy/constancy-vries",
+  "title": {
+    "en": "Von Kries Adaptation",
+    "ko": "Von Kries 적응"
+  },
+  "subtitle": {
+    "en": "slide the illuminant from daylight to tungsten and watch adaptation discount the colour cast",
+    "ko": "광원을 주광에서 텅스텐으로 움직여 적응이 색 캐스트를 덜어내는 것을 본다"
+  },
+  "description": {
+    "en": "Chromatic adaptation rescales each cone channel so a white surface still looks white under a coloured light. Slide the illuminant and compare the raw cast with the Bradford-adapted appearance.",
+    "ko": "색채 적응은 각 원추 채널을 다시 스케일해 유색 조명 아래에서도 흰 표면이 희게 보이게 한다. 광원을 움직여 원시 캐스트와 Bradford로 적응된 외관을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "color-constancy",
+  "layout": "A",
+  "prerequisites": ["cones-sensitivity/three-channels"],
+  "leads_to": ["color-constancy/retinex-edge-integration"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Fairchild, Color Appearance Models 3e", "section": "§8.3 (Von Kries)" },
+    { "source": "CIE 159:2004", "section": "CAT02 / Bradford" }
+  ],
+  "standards": ["CIE 159:2004"],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Von Kries", "chromatic adaptation", "Bradford", "white balance"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

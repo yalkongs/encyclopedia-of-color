@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Land's Retinex — slide an illumination gradient across a Mondrian and…</title>
+  <meta name="description" content="Land's retinex recovers surface colour by trusting sharp edges and ignoring slow illumination gradients. Slide a gradient across the Mondrian and toggle retinex to watch the uneven light wash away.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-constancy/retinex-edge-integration/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Land's Retinex">
+  <meta property="og:description"    content="Land's retinex recovers surface colour by trusting sharp edges and ignoring slow illumination gradients. Slide a gradient across the Mondrian and toggle retinex to watch the uneven light wash away.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-constancy/retinex-edge-integration/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-constancy--retinex-edge-integration.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Land's Retinex.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Land's Retinex">
+  <meta name="twitter:description"   content="Land's retinex recovers surface colour by trusting sharp edges and ignoring slow illumination gradients. Slide a gradient across the Mondrian and toggle retinex to watch the uneven light wash away.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-constancy--retinex-edge-integration.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Land's Retinex.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Land's Retinex","alternateName":"color-constancy/retinex-edge-integration","description":"Land's retinex recovers surface colour by trusting sharp edges and ignoring slow illumination gradients. Slide a gradient across the Mondrian and toggle retinex to watch the uneven light wash away.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"retinex, Land, edge integration, lightness","url":"https://encyclopedia-of-color.vercel.app/modules/color-constancy/retinex-edge-integration/","image":"https://encyclopedia-of-color.vercel.app/og/color-constancy--retinex-edge-integration.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-constancy/retinex-edge-integration">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Land's Retinex</h1>
+      <p class="module-subtitle">slide an illumination gradient across a Mondrian and watch retinex integrate edges to recover flat reflectance</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Retinex assumes illumination changes slowly while reflectance changes at sharp edges. Integrating only the steep edges along a path recovers each patch's true lightness.
+        </p>
+        <div class="math-block" data-tex="\log R(x) = \sum_{\text{edges}} \big[\log L_{i+1} - \log L_i\big]_{\text{thresholded}}"></div>
+        <p class="zone-guide">
+          Slide the illumination gradient to tilt the light across the Mondrian; the raw view dims toward one side. Toggle retinex and the gradient dissolves — only the edge-defined reflectances remain.
+        </p>
+        <enc-slider id="grad" label="Illumination gradient" min="0" max="80" step="1" value="55" unit="%"></enc-slider>
+        <enc-toggle id="mode" label="Processing" options="raw,retinex" labels="raw light,retinex" value="raw"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Retinex on a Mondrian"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Land &amp; McCann 1971, JOSA"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

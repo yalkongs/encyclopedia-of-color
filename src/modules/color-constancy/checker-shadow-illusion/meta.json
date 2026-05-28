@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-constancy/checker-shadow-illusion",
+  "title": {
+    "en": "Adelson's Checker Shadow",
+    "ko": "아델슨 체커 그림자"
+  },
+  "subtitle": {
+    "en": "toggle the connecting bars and watch two squares of identical grey finally admit they match",
+    "ko": "연결 막대를 켜서 똑같은 회색의 두 칸이 마침내 일치함을 인정하는 것을 본다"
+  },
+  "description": {
+    "en": "Square A in light and square B in shadow send the eye exactly the same grey, yet B looks far lighter. Toggle the connecting bars and watch the two squares merge, proving the luminance is identical.",
+    "ko": "빛 속의 A 칸과 그늘 속의 B 칸은 눈에 똑같은 회색을 보내지만 B가 훨씬 밝아 보인다. 연결 막대를 켜면 두 칸이 하나로 이어져 휘도가 동일함이 드러난다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "color-constancy",
+  "layout": "A",
+  "prerequisites": ["color-constancy/lightness-constancy"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Adelson 1995", "section": "Checkershadow Illusion" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["checker shadow", "Adelson", "lightness illusion", "simultaneous contrast"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

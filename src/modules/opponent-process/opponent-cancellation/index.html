@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Hering Hue Cancellation — slide opposing colours into a test patch an…</title>
+  <meta name="description" content="Hering's method measures hue by cancelling it: add green until no red remains, add blue until no yellow remains. Slide the two opponent axes and null the orange test patch to grey.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/opponent-process/opponent-cancellation/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Hering Hue Cancellation">
+  <meta property="og:description"    content="Hering's method measures hue by cancelling it: add green until no red remains, add blue until no yellow remains. Slide the two opponent axes and null the orange test patch to grey.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/opponent-process/opponent-cancellation/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/opponent-process--opponent-cancellation.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Hering Hue Cancellation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Hering Hue Cancellation">
+  <meta name="twitter:description"   content="Hering's method measures hue by cancelling it: add green until no red remains, add blue until no yellow remains. Slide the two opponent axes and null the orange test patch to grey.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/opponent-process--opponent-cancellation.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Hering Hue Cancellation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Hering Hue Cancellation","alternateName":"opponent-process/opponent-cancellation","description":"Hering's method measures hue by cancelling it: add green until no red remains, add blue until no yellow remains. Slide the two opponent axes and null the orange test patch to grey.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"hue cancellation, opponent process, Hering, Hurvich Jameson","url":"https://encyclopedia-of-color.vercel.app/modules/opponent-process/opponent-cancellation/","image":"https://encyclopedia-of-color.vercel.app/og/opponent-process--opponent-cancellation.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="opponent-process/opponent-cancellation">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Hering Hue Cancellation</h1>
+      <p class="module-subtitle">slide opposing colours into a test patch and watch it cancel all the way to neutral grey</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Red-green and blue-yellow are opposed channels that cannot both be positive. Adding the opposite colour subtracts a hue until the channel reads zero.
+        </p>
+        <div class="math-block" data-tex="r\text{-}g = 0,\quad y\text{-}b = 0 \ \Rightarrow\ \text{neutral}"></div>
+        <p class="zone-guide">
+          The patch starts orange — positive red and positive yellow. Slide green to cancel the red, then blue to cancel the yellow, and watch the residual meters drop to zero as the patch turns grey.
+        </p>
+        <enc-slider id="rg" label="add green ← → add red" min="-100" max="100" step="1" value="0"></enc-slider>
+        <enc-slider id="yb" label="add blue ← → add yellow" min="-100" max="100" step="1" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Hering hue cancellation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki &amp; Stiles §5.10 · Hurvich &amp; Jameson 1957"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "opponent-process/successive-contrast",
+  "title": {
+    "en": "Successive Contrast & Recovery",
+    "ko": "계차 대비와 회복"
+  },
+  "subtitle": {
+    "en": "slide the adapting colour and watch a neutral patch carry its opponent tint, then recover over time",
+    "ko": "적응 색을 움직여 중립 패치가 그 보색 색조를 띠었다가 시간이 지나며 회복하는 것을 본다"
+  },
+  "description": {
+    "en": "Adapt to a colour and a neutral patch shown afterward looks tinged with the opposite hue, fading as the channel recovers. Slide the adapting colour and watch the aftereffect decay along its curve.",
+    "ko": "한 색에 적응한 뒤 보이는 중립 패치는 반대 색조를 띠며, 채널이 회복하면서 사라진다. 적응 색을 움직여 잔효과가 곡선을 따라 감소하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "opponent-process",
+  "layout": "A",
+  "prerequisites": ["opponent-process/opponent-afterimages"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Goldstein, Sensation & Perception 10e", "section": "§9 (Successive Contrast)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["successive contrast", "adaptation", "recovery", "aftereffect"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

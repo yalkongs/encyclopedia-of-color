@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "opponent-process/watercolor-effect",
+  "title": {
+    "en": "Pinna's Watercolour Effect",
+    "ko": "피나 수채화 효과"
+  },
+  "subtitle": {
+    "en": "toggle which contour sits inside and watch a faint wash flood the whole enclosed shape",
+    "ko": "어느 윤곽선이 안쪽인지 전환해 옅은 물감이 닫힌 도형 전체에 번지는 것을 본다"
+  },
+  "description": {
+    "en": "A wiggly double outline makes its enclosed area glow with the inner line's colour, as if washed in watercolour. Toggle which contour sits inside and watch the tint of the whole region flip.",
+    "ko": "구불구불한 이중 윤곽선은 닫힌 영역을 안쪽 선의 색으로 물들여 수채화처럼 보이게 한다. 어느 윤곽선이 안쪽인지 전환하면 영역 전체의 색조가 뒤집히는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "opponent-process",
+  "layout": "A",
+  "prerequisites": ["opponent-process/bezold-assimilation"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Pinna, Brelstaff & Spillmann 2001, Vision Research", "section": "41" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["watercolor illusion", "Pinna", "color spreading", "figure"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}
