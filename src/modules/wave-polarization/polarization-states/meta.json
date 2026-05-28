@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/polarization-states",
+  "title": {
+    "en": "Linear, Circular & Elliptical States",
+    "ko": "선·원·타원 편광 상태"
+  },
+  "subtitle": {
+    "en": "set two amplitudes and a phase shift and watch the electric vector trace its ellipse",
+    "ko": "두 진폭과 위상차를 정해 전기 벡터가 그리는 타원을 본다"
+  },
+  "description": {
+    "en": "Add two perpendicular oscillations and the electric vector traces an ellipse. Equal amplitudes with a quarter-wave shift give a circle; zero shift a line. Tune them to walk every polarization state.",
+    "ko": "수직한 두 진동을 더하면 전기 벡터가 타원을 그린다. 같은 진폭에 1/4파장 위상차면 원, 위상차 0이면 직선이 된다. 진폭과 위상을 조절해 모든 편광 상태를 둘러본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/malus-law"],
+  "leads_to": ["wave-polarization/stokes-parameters"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.1 (States of Polarization)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["polarization states", "elliptical", "circular", "Jones vector"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

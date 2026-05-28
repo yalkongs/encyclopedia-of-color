@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/optical-activity",
+  "title": {
+    "en": "Optical Activity of a Sugar Solution",
+    "ko": "설탕 용액의 광학 활성"
+  },
+  "subtitle": {
+    "en": "send polarized light through sugar and watch its plane of vibration rotate",
+    "ko": "편광을 설탕 용액에 통과시켜 진동면이 회전하는 것을 본다"
+  },
+  "description": {
+    "en": "Chiral molecules like sugar rotate the plane of polarization by an angle set by concentration, path, and wavelength. Tune them to watch the rotation grow — the basis of the saccharimeter.",
+    "ko": "설탕 같은 손대칭 분자는 선편광의 진동면을 농도·경로 길이·파장으로 정해지는 각만큼 돌린다. 이를 조절해 회전이 커지는 모습을 본다. 당도계의 원리다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/malus-law"],
+  "leads_to": ["wave-polarization/faraday-rotation"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.10 (Optical Activity)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["optical activity", "sugar", "specific rotation", "saccharimeter"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

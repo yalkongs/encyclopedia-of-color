@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/lcd-shutter",
+  "title": {
+    "en": "Twisted-Nematic LCD Shutter",
+    "ko": "꼬인 네마틱 LCD 셔터"
+  },
+  "subtitle": {
+    "en": "apply a voltage to untwist the liquid crystal and switch a pixel from bright to dark",
+    "ko": "전압으로 액정의 꼬임을 풀어 픽셀을 밝음에서 어둠으로 전환한다"
+  },
+  "description": {
+    "en": "With no voltage a twisted-nematic cell rotates polarization 90°, so light passes crossed polarizers. Apply voltage and the twist relaxes, darkening the pixel — how every LCD pixel switches.",
+    "ko": "꼬인 네마틱 셀은 전압이 없으면 편광을 90° 돌려, 빛이 교차 편광판을 통과해 밝은 픽셀이 된다. 전압을 걸면 분자가 일어서며 꼬임이 풀려 픽셀이 어두워진다. 모든 LCD 픽셀이 이렇게 전환된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/malus-law"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.11.2 (Liquid Crystals)" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["LCD", "twisted nematic", "liquid crystal", "polarization rotation"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

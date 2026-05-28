@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Poincaré Sphere — place every polarization state on a globe where…</title>
+  <meta name="description" content="Every fully-polarized state is one point on a sphere: equator linear, poles circular, the rest elliptical. Set orientation and ellipticity to move the point, and rotate the globe to see its geometry.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/poincare-sphere/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Poincaré Sphere">
+  <meta property="og:description"    content="Every fully-polarized state is one point on a sphere: equator linear, poles circular, the rest elliptical. Set orientation and ellipticity to move the point, and rotate the globe to see its geometry.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/poincare-sphere/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--poincare-sphere.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Poincaré Sphere.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Poincaré Sphere">
+  <meta name="twitter:description"   content="Every fully-polarized state is one point on a sphere: equator linear, poles circular, the rest elliptical. Set orientation and ellipticity to move the point, and rotate the globe to see its geometry.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--poincare-sphere.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Poincaré Sphere.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Poincaré Sphere","alternateName":"wave-polarization/poincare-sphere","description":"Every fully-polarized state is one point on a sphere: equator linear, poles circular, the rest elliptical. Set orientation and ellipticity to move the point, and rotate the globe to see its geometry.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Poincare sphere, polarization, Stokes, ellipticity","url":"https://encyclopedia-of-color.vercel.app/modules/wave-polarization/poincare-sphere/","image":"https://encyclopedia-of-color.vercel.app/og/wave-polarization--poincare-sphere.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-polarization/poincare-sphere">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Poincaré Sphere</h1>
+      <p class="module-subtitle">place every polarization state on a globe where poles are circular and equator linear</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Longitude is twice the ellipse orientation ψ; latitude is twice the ellipticity χ. So linear states ring the equator and circular states sit at the poles.
+        </p>
+        <div class="math-block" data-tex="(S_1,S_2,S_3)=(\cos2\chi\cos2\psi,\,\cos2\chi\sin2\psi,\,\sin2\chi)"></div>
+        <p class="zone-guide">
+          Set the orientation ψ and ellipticity χ to move the state point, and rotate the view to inspect its position. The equator is highlighted; the poles are right- and left-circular.
+        </p>
+        <enc-slider id="psi" label="Orientation ψ (°)" min="0" max="180" step="1" value="30" unit="°"></enc-slider>
+        <enc-slider id="chi" label="Ellipticity χ (°)" min="-45" max="45" step="1" value="20" unit="°"></enc-slider>
+        <enc-slider id="az" label="View rotation (°)" min="0" max="360" step="2" value="35" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Poincaré sphere"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.13.2 (Poincaré Sphere)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

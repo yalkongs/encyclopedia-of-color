@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Stokes Parameters of Any Beam — reduce any polarization, even partial…</title>
+  <meta name="description" content="The four Stokes parameters describe any beam — fully, partially, or unpolarized — from measurable intensities. Set amplitudes, phase, and a depolarization, then read the degree of polarization.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/stokes-parameters/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Stokes Parameters of Any Beam">
+  <meta property="og:description"    content="The four Stokes parameters describe any beam — fully, partially, or unpolarized — from measurable intensities. Set amplitudes, phase, and a depolarization, then read the degree of polarization.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/stokes-parameters/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--stokes-parameters.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Stokes Parameters of Any Beam.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Stokes Parameters of Any Beam">
+  <meta name="twitter:description"   content="The four Stokes parameters describe any beam — fully, partially, or unpolarized — from measurable intensities. Set amplitudes, phase, and a depolarization, then read the degree of polarization.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--stokes-parameters.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Stokes Parameters of Any Beam.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Stokes Parameters of Any Beam","alternateName":"wave-polarization/stokes-parameters","description":"The four Stokes parameters describe any beam — fully, partially, or unpolarized — from measurable intensities. Set amplitudes, phase, and a depolarization, then read the degree of polarization.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Stokes parameters, degree of polarization, partial polarization","url":"https://encyclopedia-of-color.vercel.app/modules/wave-polarization/stokes-parameters/","image":"https://encyclopedia-of-color.vercel.app/og/wave-polarization--stokes-parameters.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-polarization/stokes-parameters">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Stokes Parameters of Any Beam</h1>
+      <p class="module-subtitle">reduce any polarization, even partial, to four measurable numbers S₀ S₁ S₂ S₃</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          S₀ is total intensity; S₁ favours horizontal vs vertical; S₂ favours ±45°; S₃ favours right vs left circular. Together they pin down any state.
+        </p>
+        <div class="math-block" data-tex="S_0^2 \ge S_1^2+S_2^2+S_3^2,\quad \text{DOP}=\dfrac{\sqrt{S_1^2+S_2^2+S_3^2}}{S_0}"></div>
+        <p class="zone-guide">
+          Set the amplitudes, phase, and a depolarization that mixes in unpolarized light. The bars show the Stokes vector; the readout gives the degree of polarization.
+        </p>
+        <enc-slider id="ax" label="x amplitude aₓ" min="0" max="1" step="0.01" value="0.90"></enc-slider>
+        <enc-slider id="ay" label="y amplitude a_y" min="0" max="1" step="0.01" value="0.60"></enc-slider>
+        <enc-slider id="delta" label="Phase shift δ (°)" min="-180" max="180" step="1" value="60" unit="°"></enc-slider>
+        <enc-slider id="depol" label="Depolarization" min="0" max="1" step="0.01" value="0.00"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Stokes parameter bars"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.13.1 (Stokes Parameters)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

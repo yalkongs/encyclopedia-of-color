@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/photoelasticity",
+  "title": {
+    "en": "Photoelastic Stress Fringes",
+    "ko": "광탄성 응력 무늬"
+  },
+  "subtitle": {
+    "en": "squeeze a clear plastic between crossed polarizers and read stress as colour bands",
+    "ko": "교차 편광판 사이의 투명 플라스틱을 눌러 응력을 색띠로 읽는다"
+  },
+  "description": {
+    "en": "Stressed plastic turns birefringent, retarding light in proportion to load. Between crossed polarizers each retardation becomes a coloured isochromatic fringe. Raise the load to multiply the orders.",
+    "ko": "응력을 받은 투명 플라스틱은 복굴절을 띠어 하중에 비례해 빛을 지연시킨다. 교차 편광판 사이에서 각 지연량은 색을 띤 등색 무늬로 나타난다. 응력을 키우면 무지개 무늬 차수가 늘어난다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/polarization-states"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.10 (Photoelasticity)" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["photoelasticity", "stress fringes", "birefringence", "isochromatic"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

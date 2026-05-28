@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Photoelastic Stress Fringes — squeeze a clear plastic between crossed…</title>
+  <meta name="description" content="Stressed plastic turns birefringent, retarding light in proportion to load. Between crossed polarizers each retardation becomes a coloured isochromatic fringe. Raise the load to multiply the orders.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/photoelasticity/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Photoelastic Stress Fringes">
+  <meta property="og:description"    content="Stressed plastic turns birefringent, retarding light in proportion to load. Between crossed polarizers each retardation becomes a coloured isochromatic fringe. Raise the load to multiply the orders.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/photoelasticity/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--photoelasticity.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Photoelastic Stress Fringes.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Photoelastic Stress Fringes">
+  <meta name="twitter:description"   content="Stressed plastic turns birefringent, retarding light in proportion to load. Between crossed polarizers each retardation becomes a coloured isochromatic fringe. Raise the load to multiply the orders.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--photoelasticity.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Photoelastic Stress Fringes.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Photoelastic Stress Fringes","alternateName":"wave-polarization/photoelasticity","description":"Stressed plastic turns birefringent, retarding light in proportion to load. Between crossed polarizers each retardation becomes a coloured isochromatic fringe. Raise the load to multiply the orders.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"photoelasticity, stress fringes, birefringence, isochromatic","url":"https://encyclopedia-of-color.vercel.app/modules/wave-polarization/photoelasticity/","image":"https://encyclopedia-of-color.vercel.app/og/wave-polarization--photoelasticity.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-polarization/photoelasticity">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Photoelastic Stress Fringes</h1>
+      <p class="module-subtitle">squeeze a clear plastic between crossed polarizers and read stress as colour bands</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Mechanical stress makes plastic birefringent. Between crossed polarizers the retardation it adds shows up as coloured isochromatic fringes — a map of internal stress.
+        </p>
+        <div class="math-block" data-tex="\Gamma=\dfrac{2\pi}{\lambda}\,C\,(\sigma_1-\sigma_2)\,d,\quad I\propto\sin^2(\Gamma/2)"></div>
+        <p class="zone-guide">
+          Increase the applied load to raise the peak stress, and choose monochromatic or white light. Watch the fringe orders multiply near the loaded corner of the bracket.
+        </p>
+        <enc-slider id="load" label="Applied load" min="0" max="100" step="1" value="55"></enc-slider>
+        <enc-slider id="white" label="White light (0 mono · 1 white)" min="0" max="1" step="1" value="1"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Photoelastic stress fringe pattern"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.10 (Photoelasticity)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

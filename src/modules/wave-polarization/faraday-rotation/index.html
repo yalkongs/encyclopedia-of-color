@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Faraday Rotation &amp; Optical Isolators — rotate polarization with a mag…</title>
+  <meta name="description" content="A magnetic field along the beam rotates polarization by β = V·B·L. A return pass doubles it instead of undoing it — the non-reciprocity behind the one-way optical isolator.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/faraday-rotation/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Faraday Rotation &amp; Optical Isolators">
+  <meta property="og:description"    content="A magnetic field along the beam rotates polarization by β = V·B·L. A return pass doubles it instead of undoing it — the non-reciprocity behind the one-way optical isolator.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/faraday-rotation/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--faraday-rotation.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Faraday Rotation &amp; Optical Isolators.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Faraday Rotation &amp; Optical Isolators">
+  <meta name="twitter:description"   content="A magnetic field along the beam rotates polarization by β = V·B·L. A return pass doubles it instead of undoing it — the non-reciprocity behind the one-way optical isolator.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--faraday-rotation.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Faraday Rotation &amp; Optical Isolators.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Faraday Rotation & Optical Isolators","alternateName":"wave-polarization/faraday-rotation","description":"A magnetic field along the beam rotates polarization by β = V·B·L. A return pass doubles it instead of undoing it — the non-reciprocity behind the one-way optical isolator.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Faraday rotation, optical isolator, Verdet constant, non-reciprocal","url":"https://encyclopedia-of-color.vercel.app/modules/wave-polarization/faraday-rotation/","image":"https://encyclopedia-of-color.vercel.app/og/wave-polarization--faraday-rotation.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-polarization/faraday-rotation">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Faraday Rotation &amp; Optical Isolators</h1>
+      <p class="module-subtitle">rotate polarization with a magnetic field and exploit its non-reciprocity</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A longitudinal magnetic field makes a medium rotate polarization. Crucially the sense is fixed by the field, not the propagation direction, so a round trip doubles rather than cancels the rotation.
+        </p>
+        <div class="math-block" data-tex="\beta = V\,B\,L\quad(V:\text{ Verdet constant})"></div>
+        <p class="zone-guide">
+          Set the magnetic field B and path length L. Toggle the return pass to see the rotation double — the non-reciprocity that makes a one-way optical isolator possible.
+        </p>
+        <enc-slider id="B" label="Magnetic field B (T)" min="0" max="3" step="0.05" value="1.5" unit="T"></enc-slider>
+        <enc-slider id="L" label="Path length L (cm)" min="1" max="20" step="0.5" value="10" unit="cm"></enc-slider>
+        <enc-slider id="back" label="Return pass (0 single · 1 reflected)" min="0" max="1" step="1" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Faraday rotation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.11.3 (Faraday Effect)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

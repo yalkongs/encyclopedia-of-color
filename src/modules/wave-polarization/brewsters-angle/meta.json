@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/brewsters-angle",
+  "title": {
+    "en": "Brewster's Angle & Polarization by Reflection",
+    "ko": "브루스터 각과 반사 편광"
+  },
+  "subtitle": {
+    "en": "find the incidence angle where reflected light becomes perfectly s-polarized",
+    "ko": "반사광이 완전히 s편광이 되는 입사각을 찾는다"
+  },
+  "description": {
+    "en": "At Brewster's angle the p-polarized reflectance drops to zero and the reflected beam is purely s-polarized. Sweep the incidence angle to watch the p-curve touch zero at θ_B = arctan(n₂/n₁).",
+    "ko": "브루스터 각에서 p편광 반사율이 0으로 떨어져 반사광은 순수한 s편광이 된다. 두 굴절률을 조절하고 입사각을 훑어 p곡선이 θ_B = arctan(n₂/n₁) 에서 0에 닿는 모습을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/sunglasses", "reflection-lab/grazing-angle-fresnel"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.6.2 (Polarization by Reflection)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Brewster angle", "polarization by reflection", "Fresnel", "s-polarized"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

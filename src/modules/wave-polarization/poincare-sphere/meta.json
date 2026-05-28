@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/poincare-sphere",
+  "title": {
+    "en": "The Poincaré Sphere",
+    "ko": "푸앵카레 구"
+  },
+  "subtitle": {
+    "en": "place every polarization state on a globe where poles are circular and equator linear",
+    "ko": "모든 편광 상태를 극이 원편광, 적도가 선편광인 구 위에 놓는다"
+  },
+  "description": {
+    "en": "Every fully-polarized state is one point on a sphere: equator linear, poles circular, the rest elliptical. Set orientation and ellipticity to move the point, and rotate the globe to see its geometry.",
+    "ko": "완전 편광 상태는 모두 구 위의 한 점이다. 적도는 선편광, 두 극은 우·좌 원편광, 나머지는 타원편광이다. 방위와 타원율을 바꿔 점을 옮기고 구를 돌려 그 기하를 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/stokes-parameters"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.13.2 (Poincaré Sphere)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Poincare sphere", "polarization", "Stokes", "ellipticity"],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Linear, Circular &amp; Elliptical States — set two amplitudes and a phase…</title>
+  <meta name="description" content="Add two perpendicular oscillations and the electric vector traces an ellipse. Equal amplitudes with a quarter-wave shift give a circle; zero shift a line. Tune them to walk every polarization state.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/polarization-states/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Linear, Circular &amp; Elliptical States">
+  <meta property="og:description"    content="Add two perpendicular oscillations and the electric vector traces an ellipse. Equal amplitudes with a quarter-wave shift give a circle; zero shift a line. Tune them to walk every polarization state.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/polarization-states/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--polarization-states.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Linear, Circular &amp; Elliptical States.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Linear, Circular &amp; Elliptical States">
+  <meta name="twitter:description"   content="Add two perpendicular oscillations and the electric vector traces an ellipse. Equal amplitudes with a quarter-wave shift give a circle; zero shift a line. Tune them to walk every polarization state.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--polarization-states.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Linear, Circular &amp; Elliptical States.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Linear, Circular & Elliptical States","alternateName":"wave-polarization/polarization-states","description":"Add two perpendicular oscillations and the electric vector traces an ellipse. Equal amplitudes with a quarter-wave shift give a circle; zero shift a line. Tune them to walk every polarization state.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"polarization states, elliptical, circular, Jones vector","url":"https://encyclopedia-of-color.vercel.app/modules/wave-polarization/polarization-states/","image":"https://encyclopedia-of-color.vercel.app/og/wave-polarization--polarization-states.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-polarization/polarization-states">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Linear, Circular &amp; Elliptical States</h1>
+      <p class="module-subtitle">set two amplitudes and a phase shift and watch the electric vector trace its ellipse</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Any polarization is two perpendicular oscillations with a phase offset. Their combination sweeps out an ellipse whose shape and tilt encode the state.
+        </p>
+        <div class="math-block" data-tex="E_x=a_x\cos\omega t,\;\; E_y=a_y\cos(\omega t+\delta)"></div>
+        <p class="zone-guide">
+          Set the x and y amplitudes and the phase shift δ. The traced curve is the polarization ellipse; the readout gives its orientation ψ, ellipticity χ, and handedness.
+        </p>
+        <enc-slider id="ax" label="x amplitude aₓ" min="0" max="1" step="0.01" value="1.00"></enc-slider>
+        <enc-slider id="ay" label="y amplitude a_y" min="0" max="1" step="0.01" value="1.00"></enc-slider>
+        <enc-slider id="delta" label="Phase shift δ (°)" min="-180" max="180" step="1" value="90" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Polarization ellipse"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.1 (States of Polarization)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

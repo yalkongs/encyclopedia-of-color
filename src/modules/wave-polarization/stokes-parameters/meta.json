@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/stokes-parameters",
+  "title": {
+    "en": "Stokes Parameters of Any Beam",
+    "ko": "임의 빔의 스토크스 매개변수"
+  },
+  "subtitle": {
+    "en": "reduce any polarization, even partial, to four measurable numbers S₀ S₁ S₂ S₃",
+    "ko": "부분 편광까지 포함한 임의의 편광을 네 측정값 S₀ S₁ S₂ S₃ 로 환원한다"
+  },
+  "description": {
+    "en": "The four Stokes parameters describe any beam — fully, partially, or unpolarized — from measurable intensities. Set amplitudes, phase, and a depolarization, then read the degree of polarization.",
+    "ko": "네 개의 스토크스 매개변수는 완전·부분·비편광을 모두, 검출기가 실제로 잴 수 있는 세기로 기술한다. 진폭·위상·탈편광을 정하고 스토크스 벡터와 편광도를 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/polarization-states"],
+  "leads_to": ["wave-polarization/poincare-sphere"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.13.1 (Stokes Parameters)" }],
+  "standards": [],
+  "interaction_count": 4,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Stokes parameters", "degree of polarization", "partial polarization"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

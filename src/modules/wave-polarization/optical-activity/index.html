@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Optical Activity of a Sugar Solution — send polarized light through s…</title>
+  <meta name="description" content="Chiral molecules like sugar rotate the plane of polarization by an angle set by concentration, path, and wavelength. Tune them to watch the rotation grow — the basis of the saccharimeter.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/optical-activity/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Optical Activity of a Sugar Solution">
+  <meta property="og:description"    content="Chiral molecules like sugar rotate the plane of polarization by an angle set by concentration, path, and wavelength. Tune them to watch the rotation grow — the basis of the saccharimeter.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/optical-activity/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--optical-activity.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Optical Activity of a Sugar Solution.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Optical Activity of a Sugar Solution">
+  <meta name="twitter:description"   content="Chiral molecules like sugar rotate the plane of polarization by an angle set by concentration, path, and wavelength. Tune them to watch the rotation grow — the basis of the saccharimeter.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--optical-activity.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Optical Activity of a Sugar Solution.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Optical Activity of a Sugar Solution","alternateName":"wave-polarization/optical-activity","description":"Chiral molecules like sugar rotate the plane of polarization by an angle set by concentration, path, and wavelength. Tune them to watch the rotation grow — the basis of the saccharimeter.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"optical activity, sugar, specific rotation, saccharimeter","url":"https://encyclopedia-of-color.vercel.app/modules/wave-polarization/optical-activity/","image":"https://encyclopedia-of-color.vercel.app/og/wave-polarization--optical-activity.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-polarization/optical-activity">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Optical Activity of a Sugar Solution</h1>
+      <p class="module-subtitle">send polarized light through sugar and watch its plane of vibration rotate</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Chiral molecules see right- and left-circular light at slightly different speeds, so a linear input emerges rotated. The rotation grows with concentration and path, and falls with wavelength.
+        </p>
+        <div class="math-block" data-tex="\beta=[\alpha]_\lambda\,c\,L,\qquad [\alpha]_\lambda=[\alpha]_{589}\Bigl(\tfrac{589}{\lambda}\Bigr)^{2}"></div>
+        <p class="zone-guide">
+          Set the sucrose concentration, the tube length, and the wavelength. The output polarization arrow rotates by β; shorter wavelengths rotate more (rotatory dispersion).
+        </p>
+        <enc-slider id="c" label="Concentration (g/100 mL)" min="0" max="60" step="1" value="30" unit="g"></enc-slider>
+        <enc-slider id="L" label="Tube length (cm)" min="2" max="40" step="1" value="20" unit="cm"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="400" max="700" step="1" value="589" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Optical activity sugar tube"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.10 (Optical Activity)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

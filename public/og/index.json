@@ -345,8 +345,53 @@
     "square": "og/wave-interference--youngs-double-slit-full.sq.png"
   },
   {
+    "id": "wave-polarization/brewsters-angle",
+    "og": "og/wave-polarization--brewsters-angle.png",
+    "square": "og/wave-polarization--brewsters-angle.sq.png"
+  },
+  {
+    "id": "wave-polarization/faraday-rotation",
+    "og": "og/wave-polarization--faraday-rotation.png",
+    "square": "og/wave-polarization--faraday-rotation.sq.png"
+  },
+  {
+    "id": "wave-polarization/lcd-shutter",
+    "og": "og/wave-polarization--lcd-shutter.png",
+    "square": "og/wave-polarization--lcd-shutter.sq.png"
+  },
+  {
     "id": "wave-polarization/malus-law",
     "og": "og/wave-polarization--malus-law.png",
     "square": "og/wave-polarization--malus-law.sq.png"
+  },
+  {
+    "id": "wave-polarization/optical-activity",
+    "og": "og/wave-polarization--optical-activity.png",
+    "square": "og/wave-polarization--optical-activity.sq.png"
+  },
+  {
+    "id": "wave-polarization/photoelasticity",
+    "og": "og/wave-polarization--photoelasticity.png",
+    "square": "og/wave-polarization--photoelasticity.sq.png"
+  },
+  {
+    "id": "wave-polarization/poincare-sphere",
+    "og": "og/wave-polarization--poincare-sphere.png",
+    "square": "og/wave-polarization--poincare-sphere.sq.png"
+  },
+  {
+    "id": "wave-polarization/polarization-states",
+    "og": "og/wave-polarization--polarization-states.png",
+    "square": "og/wave-polarization--polarization-states.sq.png"
+  },
+  {
+    "id": "wave-polarization/stokes-parameters",
+    "og": "og/wave-polarization--stokes-parameters.png",
+    "square": "og/wave-polarization--stokes-parameters.sq.png"
+  },
+  {
+    "id": "wave-polarization/sunglasses",
+    "og": "og/wave-polarization--sunglasses.png",
+    "square": "og/wave-polarization--sunglasses.sq.png"
   }
 ]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Brewster's Angle &amp; Polarization by Reflection — find the incidence an…</title>
+  <meta name="description" content="At Brewster's angle the p-polarized reflectance drops to zero and the reflected beam is purely s-polarized. Sweep the incidence angle to watch the p-curve touch zero at θ_B = arctan(n₂/n₁).">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/brewsters-angle/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Brewster's Angle &amp; Polarization by Reflection">
+  <meta property="og:description"    content="At Brewster's angle the p-polarized reflectance drops to zero and the reflected beam is purely s-polarized. Sweep the incidence angle to watch the p-curve touch zero at θ_B = arctan(n₂/n₁).">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-polarization/brewsters-angle/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--brewsters-angle.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Brewster's Angle &amp; Polarization by Reflection.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Brewster's Angle &amp; Polarization by Reflection">
+  <meta name="twitter:description"   content="At Brewster's angle the p-polarized reflectance drops to zero and the reflected beam is purely s-polarized. Sweep the incidence angle to watch the p-curve touch zero at θ_B = arctan(n₂/n₁).">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-polarization--brewsters-angle.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Brewster's Angle &amp; Polarization by Reflection.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Brewster's Angle & Polarization by Reflection","alternateName":"wave-polarization/brewsters-angle","description":"At Brewster's angle the p-polarized reflectance drops to zero and the reflected beam is purely s-polarized. Sweep the incidence angle to watch the p-curve touch zero at θ_B = arctan(n₂/n₁).","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Brewster angle, polarization by reflection, Fresnel, s-polarized","url":"https://encyclopedia-of-color.vercel.app/modules/wave-polarization/brewsters-angle/","image":"https://encyclopedia-of-color.vercel.app/og/wave-polarization--brewsters-angle.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-polarization/brewsters-angle">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Brewster's Angle &amp; Polarization by Reflection</h1>
+      <p class="module-subtitle">find the incidence angle where reflected light becomes perfectly s-polarized</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The p-polarized reflectance falls to zero at one special angle, where the reflected and refracted rays are perpendicular. The reflected beam is then pure s-polarization.
+        </p>
+        <div class="math-block" data-tex="\tan\theta_B=\dfrac{n_2}{n_1},\qquad R_p(\theta_B)=0"></div>
+        <p class="zone-guide">
+          Set the two indices and sweep the incidence angle. The crimson curve is R_p, the slate curve R_s. The gold line marks Brewster's angle where R_p vanishes.
+        </p>
+        <enc-slider id="n1" label="Incident index n₁" min="1.00" max="1.60" step="0.01" value="1.00"></enc-slider>
+        <enc-slider id="n2" label="Transmitted index n₂" min="1.20" max="2.40" step="0.01" value="1.50"></enc-slider>
+        <enc-slider id="theta" label="Incidence angle θ (°)" min="0" max="89" step="0.5" value="56" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Brewster angle reflectance curves"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §8.6.2 (Polarization by Reflection)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

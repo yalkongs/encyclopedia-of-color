@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/faraday-rotation",
+  "title": {
+    "en": "Faraday Rotation & Optical Isolators",
+    "ko": "패러데이 회전과 광 아이솔레이터"
+  },
+  "subtitle": {
+    "en": "rotate polarization with a magnetic field and exploit its non-reciprocity",
+    "ko": "자기장으로 편광을 돌리고 그 비가역성을 이용한다"
+  },
+  "description": {
+    "en": "A magnetic field along the beam rotates polarization by β = V·B·L. A return pass doubles it instead of undoing it — the non-reciprocity behind the one-way optical isolator.",
+    "ko": "빔 방향의 자기장은 편광을 β = V·B·L 만큼 돌린다. 설탕과 달리 되돌아올 때 회전이 상쇄되지 않고 두 배가 된다. 이 비가역성 덕분에 패러데이 회전자는 한 방향만 통과시키는 광 아이솔레이터가 된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/optical-activity"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.11.3 (Faraday Effect)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Faraday rotation", "optical isolator", "Verdet constant", "non-reciprocal"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

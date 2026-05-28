@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-polarization/sunglasses",
+  "title": {
+    "en": "How Polarized Sunglasses Kill Glare",
+    "ko": "편광 선글라스가 눈부심을 없애는 원리"
+  },
+  "subtitle": {
+    "en": "rotate a polarizing lens over horizontally-polarized glare and watch it vanish",
+    "ko": "수평 편광된 반사광 위에서 편광 렌즈를 돌려 눈부심이 사라지는 것을 본다"
+  },
+  "description": {
+    "en": "Light reflected off water and roads is mostly horizontally polarized. A vertical polarizing filter blocks it while passing useful light. Rotate the lens axis and watch glare fade by Malus's law.",
+    "ko": "물과 도로에서 반사된 빛은 대부분 수평 편광이다. 수직 편광 필터는 이를 막으면서 쓸모 있는 빛은 통과시킨다. 렌즈 축을 돌리면 말루스 법칙에 따라 축이 수직이 될수록 눈부심이 사라진다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "wave-polarization",
+  "layout": "A",
+  "prerequisites": ["wave-polarization/malus-law"],
+  "leads_to": ["wave-polarization/brewsters-angle"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§8.1 (Polarized Light)" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["polarized sunglasses", "glare", "Malus law", "polarization"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}
