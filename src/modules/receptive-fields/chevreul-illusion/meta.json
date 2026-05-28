@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "receptive-fields/chevreul-illusion",
+  "title": {
+    "en": "Chevreul's Staircase",
+    "ko": "슈브뢸 계단 착시"
+  },
+  "subtitle": {
+    "en": "slide the step count and watch each flat grey band look scalloped — then isolate one to prove it's uniform",
+    "ko": "단 수를 움직여 평탄한 회색 띠가 골이 진 듯 보이는 것을 본 뒤, 하나를 분리해 균일함을 확인한다"
+  },
+  "description": {
+    "en": "A staircase of uniform grey steps looks fluted: each band seems darker at its lighter edge and lighter at its darker edge. Slide the step count, then isolate one band to prove it is perfectly flat.",
+    "ko": "균일한 회색 단의 계단은 골이 진 듯 보인다. 각 띠는 밝은 쪽 가장자리가 더 어둡고 어두운 쪽이 더 밝아 보인다. 단 수를 움직인 뒤 한 띠를 분리해 완전히 균일함을 확인한다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "receptive-fields",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/ganglion-cells-mach"],
+  "leads_to": ["receptive-fields/craik-cornsweet-illusion"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Chevreul, De la loi du contraste simultané des couleurs (1839)", "section": "Ch. 1" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Chevreul illusion", "simultaneous contrast", "staircase", "scalloping"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

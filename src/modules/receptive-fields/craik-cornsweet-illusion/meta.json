@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "receptive-fields/craik-cornsweet-illusion",
+  "title": {
+    "en": "The Cornsweet Edge",
+    "ko": "콘스위트 에지 착시"
+  },
+  "subtitle": {
+    "en": "slide the cusp height and watch two equal greys split apart — then cover the edge to make them merge again",
+    "ko": "첨점 높이를 움직여 같은 두 회색이 갈라지는 것을 본 뒤, 가장자리를 덮어 다시 합쳐지게 한다"
+  },
+  "description": {
+    "en": "Two greys of identical luminance flank a cusp edge — a bright lip beside a dark lip. The brain reads it as a real step and shades the regions apart. Slide the cusp, then cover it to undo the illusion.",
+    "ko": "같은 휘도의 두 회색이 첨점 가장자리를 사이에 둔다. 밝은 입술과 어두운 입술이 맞붙는다. 뇌는 이를 실제 계단으로 읽어 영역 전체를 다르게 칠한다. 첨점을 움직인 뒤 가장자리를 덮으면 착시가 무너진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "receptive-fields",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/ganglion-cells-mach"],
+  "leads_to": ["receptive-fields/center-surround-color"],
+  "see_also": ["receptive-fields/chevreul-illusion"],
+  "textbook_refs": [
+    { "source": "Wandell, Foundations of Vision", "section": "§5.6 (Cornsweet Effect)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Cornsweet illusion", "Craik-O'Brien", "edge filling-in", "brightness"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

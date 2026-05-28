@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "receptive-fields/center-surround-color",
+  "title": {
+    "en": "Double-Opponent Colour Fields",
+    "ko": "이중대립 색 수용장"
+  },
+  "subtitle": {
+    "en": "slide the centre and surround colours and watch a double-opponent cell fire hardest for a chromatic edge",
+    "ko": "중심과 주변의 색을 움직여 이중대립 세포가 색 경계에 가장 강하게 반응하는 것을 본다"
+  },
+  "description": {
+    "en": "Some cells oppose colour across space — red in the centre versus green in the surround. Slide the centre and surround colours and watch the cell respond to chromatic edges, not to flat colour fields.",
+    "ko": "어떤 세포는 공간에 걸쳐 색을 대립시킨다. 중심의 빨강과 주변의 초록이 맞선다. 중심과 주변의 색을 움직이면 세포가 평탄한 색 면이 아니라 색 경계에 반응하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "receptive-fields",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/ganglion-cells-dog"],
+  "leads_to": [],
+  "see_also": ["cones-sensitivity/three-channels"],
+  "textbook_refs": [
+    { "source": "Hubel, Eye, Brain, and Vision", "section": "§7 (Colour)" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["double opponent", "color opponency", "center surround", "red-green"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

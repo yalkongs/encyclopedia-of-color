@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Magno vs Parvo Pathways — slide the spatial frequency and watch the f…</title>
+  <meta name="description" content="Two streams leave the retina: fast magnocellular cells for motion and coarse form, small parvocellular cells for fine detail and colour. Slide the spatial frequency to see which carries the signal.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/m-vs-p-pathway/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Magno vs Parvo Pathways">
+  <meta property="og:description"    content="Two streams leave the retina: fast magnocellular cells for motion and coarse form, small parvocellular cells for fine detail and colour. Slide the spatial frequency to see which carries the signal.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/m-vs-p-pathway/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--m-vs-p-pathway.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Magno vs Parvo Pathways.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Magno vs Parvo Pathways">
+  <meta name="twitter:description"   content="Two streams leave the retina: fast magnocellular cells for motion and coarse form, small parvocellular cells for fine detail and colour. Slide the spatial frequency to see which carries the signal.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--m-vs-p-pathway.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Magno vs Parvo Pathways.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Magno vs Parvo Pathways","alternateName":"receptive-fields/m-vs-p-pathway","description":"Two streams leave the retina: fast magnocellular cells for motion and coarse form, small parvocellular cells for fine detail and colour. Slide the spatial frequency to see which carries the signal.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"magnocellular, parvocellular, visual pathway, spatial frequency","url":"https://encyclopedia-of-color.vercel.app/modules/receptive-fields/m-vs-p-pathway/","image":"https://encyclopedia-of-color.vercel.app/og/receptive-fields--m-vs-p-pathway.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="receptive-fields/m-vs-p-pathway">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Magno vs Parvo Pathways</h1>
+      <p class="module-subtitle">slide the spatial frequency and watch the fast magno and fine-detail parvo streams trade dominance</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Retinal output splits in two: large magnocellular cells report fast, coarse, achromatic change, while small parvocellular cells carry fine detail and colour.
+        </p>
+        <div class="math-block" data-tex="\text{M: low } f_{\text{spatial}},\ \text{fast};\quad \text{P: high } f_{\text{spatial}},\ \text{colour}"></div>
+        <p class="zone-guide">
+          Slide the spatial frequency of the stimulus and watch the magno curve dominate coarse patterns while the parvo curve carries fine detail. Toggle a colour stimulus and watch the colour-blind magno pathway drop out.
+        </p>
+        <enc-slider id="sf" label="Spatial frequency (cyc/deg)" min="0.5" max="40" step="0.5" value="2"></enc-slider>
+        <enc-toggle id="stim" label="Stimulus" options="lum,color" labels="achromatic,chromatic" value="lum"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Magnocellular versus parvocellular pathways"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wandell §6 · Livingstone &amp; Hubel 1988"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

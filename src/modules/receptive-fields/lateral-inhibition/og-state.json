@@ -1,0 +1,4 @@
+{
+  "hero": { "bar": 32, "overlay": "off" },
+  "comment": "Clean Hermann grid at default scale — the illusory crossings read best without the overlay."
+}

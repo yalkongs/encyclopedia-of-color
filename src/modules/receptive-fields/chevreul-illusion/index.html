@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Chevreul's Staircase — slide the step count and watch each flat grey…</title>
+  <meta name="description" content="A staircase of uniform grey steps looks fluted: each band seems darker at its lighter edge and lighter at its darker edge. Slide the step count, then isolate one band to prove it is perfectly flat.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/chevreul-illusion/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Chevreul's Staircase">
+  <meta property="og:description"    content="A staircase of uniform grey steps looks fluted: each band seems darker at its lighter edge and lighter at its darker edge. Slide the step count, then isolate one band to prove it is perfectly flat.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/chevreul-illusion/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--chevreul-illusion.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Chevreul's Staircase.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Chevreul's Staircase">
+  <meta name="twitter:description"   content="A staircase of uniform grey steps looks fluted: each band seems darker at its lighter edge and lighter at its darker edge. Slide the step count, then isolate one band to prove it is perfectly flat.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--chevreul-illusion.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Chevreul's Staircase.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Chevreul's Staircase","alternateName":"receptive-fields/chevreul-illusion","description":"A staircase of uniform grey steps looks fluted: each band seems darker at its lighter edge and lighter at its darker edge. Slide the step count, then isolate one band to prove it is perfectly flat.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Chevreul illusion, simultaneous contrast, staircase, scalloping","url":"https://encyclopedia-of-color.vercel.app/modules/receptive-fields/chevreul-illusion/","image":"https://encyclopedia-of-color.vercel.app/og/receptive-fields--chevreul-illusion.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="receptive-fields/chevreul-illusion">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Chevreul's Staircase</h1>
+      <p class="module-subtitle">slide the step count and watch each flat grey band look scalloped — then isolate one to prove it's uniform</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Each step is painted a single flat grey, yet simultaneous contrast at the borders makes every band look like a shallow gradient — the Chevreul illusion.
+        </p>
+        <div class="math-block" data-tex="L(x) = \text{const within a step};\quad \text{percept} \neq \text{const}"></div>
+        <p class="zone-guide">
+          Slide the number of steps and watch each band appear fluted — lighter beside its darker neighbour, darker beside its lighter one. Then toggle isolate to slip neutral gaps between bands and watch the scalloping vanish.
+        </p>
+        <enc-slider id="steps" label="Number of steps" min="4" max="12" step="1" value="8"></enc-slider>
+        <enc-toggle id="isolate" label="Isolate bands" options="off,on" labels="abut,gaps" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Chevreul staircase"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Chevreul, Loi du contraste simultané (1839)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

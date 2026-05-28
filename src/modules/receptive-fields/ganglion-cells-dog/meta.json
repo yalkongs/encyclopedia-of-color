@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "receptive-fields/ganglion-cells-dog",
+  "title": {
+    "en": "On/Off-Center Receptive Fields",
+    "ko": "On/Off 중심 수용장"
+  },
+  "subtitle": {
+    "en": "slide the centre and surround widths and watch a ganglion cell's excitatory core and inhibitory ring take shape",
+    "ko": "중심과 주변의 폭을 움직여 신경절세포의 흥분성 중심과 억제성 주변 고리가 만들어지는 것을 본다"
+  },
+  "description": {
+    "en": "A retinal ganglion cell answers to contrast, not absolute light. Slide the centre and surround widths to shape its difference-of-Gaussians field, and flip between on-centre and off-centre.",
+    "ko": "망막 신경절세포는 절대 광량이 아니라 대비에 반응한다. 중심과 주변의 폭을 움직여 그 차분-가우시안 수용장을 빚고, on-중심과 off-중심을 전환해 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "receptive-fields",
+  "layout": "A",
+  "prerequisites": ["vision-anatomy-basics/eye-cross-section"],
+  "leads_to": ["receptive-fields/ganglion-cells-mach"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hubel, Eye, Brain, and Vision", "section": "§5 (The Retina)" },
+    { "source": "Wandell, Foundations of Vision", "section": "§5 (Center-Surround)" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["receptive field", "difference of gaussians", "ganglion cell", "center surround"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "receptive-fields/m-vs-p-pathway",
+  "title": {
+    "en": "Magno vs Parvo Pathways",
+    "ko": "자기세포 vs 소세포 경로"
+  },
+  "subtitle": {
+    "en": "slide the spatial frequency and watch the fast magno and fine-detail parvo streams trade dominance",
+    "ko": "공간 주파수를 움직여 빠른 자기세포와 세밀한 소세포 흐름이 우세를 주고받는 것을 본다"
+  },
+  "description": {
+    "en": "Two streams leave the retina: fast magnocellular cells for motion and coarse form, small parvocellular cells for fine detail and colour. Slide the spatial frequency to see which carries the signal.",
+    "ko": "망막에서 두 흐름이 떠난다. 운동과 거친 형태를 위한 빠른 자기세포, 세밀함과 색을 위한 작은 소세포다. 공간 주파수를 움직여 어느 경로가 신호를 나르는지 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "receptive-fields",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/ganglion-cells-dog"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wandell, Foundations of Vision", "section": "§6 (Visual Pathways)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["magnocellular", "parvocellular", "visual pathway", "spatial frequency"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

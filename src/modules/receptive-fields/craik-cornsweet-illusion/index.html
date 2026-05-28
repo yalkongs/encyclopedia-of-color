@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Cornsweet Edge — slide the cusp height and watch two equal greys…</title>
+  <meta name="description" content="Two greys of identical luminance flank a cusp edge — a bright lip beside a dark lip. The brain reads it as a real step and shades the regions apart. Slide the cusp, then cover it to undo the illusion.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/craik-cornsweet-illusion/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Cornsweet Edge">
+  <meta property="og:description"    content="Two greys of identical luminance flank a cusp edge — a bright lip beside a dark lip. The brain reads it as a real step and shades the regions apart. Slide the cusp, then cover it to undo the illusion.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/craik-cornsweet-illusion/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--craik-cornsweet-illusion.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Cornsweet Edge.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Cornsweet Edge">
+  <meta name="twitter:description"   content="Two greys of identical luminance flank a cusp edge — a bright lip beside a dark lip. The brain reads it as a real step and shades the regions apart. Slide the cusp, then cover it to undo the illusion.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--craik-cornsweet-illusion.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Cornsweet Edge.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Cornsweet Edge","alternateName":"receptive-fields/craik-cornsweet-illusion","description":"Two greys of identical luminance flank a cusp edge — a bright lip beside a dark lip. The brain reads it as a real step and shades the regions apart. Slide the cusp, then cover it to undo the illusion.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Cornsweet illusion, Craik-O'Brien, edge filling-in, brightness","url":"https://encyclopedia-of-color.vercel.app/modules/receptive-fields/craik-cornsweet-illusion/","image":"https://encyclopedia-of-color.vercel.app/og/receptive-fields--craik-cornsweet-illusion.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="receptive-fields/craik-cornsweet-illusion">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Cornsweet Edge</h1>
+      <p class="module-subtitle">slide the cusp height and watch two equal greys split apart — then cover the edge to make them merge again</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The two flat regions carry identical luminance. Only the central cusp differs — yet the visual system propagates that edge outward and shades each region whole.
+        </p>
+        <div class="math-block" data-tex="L_{\text{left}} = L_{\text{right}},\quad \text{percept}_{\text{left}} \neq \text{percept}_{\text{right}}"></div>
+        <p class="zone-guide">
+          Slide the cusp height: the left region looks lighter, the right darker, though both plateaus are the same grey. Toggle the cover to mask the edge — with the cusp hidden, the two regions snap back to identical.
+        </p>
+        <enc-slider id="amp" label="Cusp height" min="0" max="0.3" step="0.01" value="0.16"></enc-slider>
+        <enc-toggle id="cover" label="Cover the edge" options="off,on" labels="show,cover" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Cornsweet edge illusion"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wandell, Foundations of Vision §5.6 · Cornsweet 1970"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

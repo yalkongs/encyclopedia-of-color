@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "receptive-fields/lateral-inhibition",
+  "title": {
+    "en": "Hermann Grid & Lateral Inhibition",
+    "ko": "헤르만 격자와 측방 억제"
+  },
+  "subtitle": {
+    "en": "slide the bar width and watch ghostly grey blobs flicker at the crossings you aren't looking at",
+    "ko": "막대 폭을 움직여 바라보지 않는 교차점에 회색 얼룩이 깜빡이는 것을 본다"
+  },
+  "description": {
+    "en": "Dark blocks separated by light streets make grey smudges flicker at the crossings you aren't fixating. Slide the bar width and watch this lateral-inhibition illusion strengthen and fade.",
+    "ko": "밝은 길로 나뉜 어두운 블록은 응시하지 않는 교차점에 회색 얼룩을 만든다. 막대 폭을 움직이면 이 측방 억제 착시가 강해지고 사라지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "receptive-fields",
+  "layout": "A",
+  "prerequisites": ["receptive-fields/ganglion-cells-dog"],
+  "leads_to": ["receptive-fields/ganglion-cells-mach"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Goldstein, Sensation & Perception 10e", "section": "§3.5 (Lateral Inhibition)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Hermann grid", "lateral inhibition", "simultaneous contrast", "ganglion cell"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

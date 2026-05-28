@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Double-Opponent Colour Fields — slide the centre and surround colours…</title>
+  <meta name="description" content="Some cells oppose colour across space — red in the centre versus green in the surround. Slide the centre and surround colours and watch the cell respond to chromatic edges, not to flat colour fields.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/center-surround-color/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Double-Opponent Colour Fields">
+  <meta property="og:description"    content="Some cells oppose colour across space — red in the centre versus green in the surround. Slide the centre and surround colours and watch the cell respond to chromatic edges, not to flat colour fields.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/receptive-fields/center-surround-color/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--center-surround-color.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Double-Opponent Colour Fields.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Double-Opponent Colour Fields">
+  <meta name="twitter:description"   content="Some cells oppose colour across space — red in the centre versus green in the surround. Slide the centre and surround colours and watch the cell respond to chromatic edges, not to flat colour fields.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/receptive-fields--center-surround-color.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Double-Opponent Colour Fields.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Double-Opponent Colour Fields","alternateName":"receptive-fields/center-surround-color","description":"Some cells oppose colour across space — red in the centre versus green in the surround. Slide the centre and surround colours and watch the cell respond to chromatic edges, not to flat colour fields.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"double opponent, color opponency, center surround, red-green","url":"https://encyclopedia-of-color.vercel.app/modules/receptive-fields/center-surround-color/","image":"https://encyclopedia-of-color.vercel.app/og/receptive-fields--center-surround-color.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="receptive-fields/center-surround-color">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Double-Opponent Colour Fields</h1>
+      <p class="module-subtitle">slide the centre and surround colours and watch a double-opponent cell fire hardest for a chromatic edge</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A double-opponent cell compares colour across space: it likes one hue in the centre and the opposite hue in the surround, so it answers to chromatic borders, not flat washes.
+        </p>
+        <div class="math-block" data-tex="R = (c_{\text{centre}}) - k\,(c_{\text{surround}})"></div>
+        <p class="zone-guide">
+          Slide the centre and surround colours along the chosen opponent axis. The response peaks when the centre and surround carry opposite colours and collapses when both match — pick the red-green or blue-yellow channel to compare.
+        </p>
+        <enc-slider id="centre" label="Centre colour" min="-100" max="100" step="1" value="100"></enc-slider>
+        <enc-slider id="surround" label="Surround colour" min="-100" max="100" step="1" value="-100"></enc-slider>
+        <enc-toggle id="channel" label="Opponent channel" options="rg,by" labels="red-green,blue-yellow" value="rg"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Double-opponent colour receptive field"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hubel, Eye Brain and Vision §7"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
