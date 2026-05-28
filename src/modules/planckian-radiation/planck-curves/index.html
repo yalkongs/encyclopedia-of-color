@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Planck's Blackbody Radiation Curves — heat a blackbody and watch its…</title>
+  <meta name="description" content="Every warm body glows with a Planck spectrum fixed by its temperature. Heat it and the curve rises while its peak slides from infrared toward blue. Sweep temperature across the family of curves.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/planck-curves/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Planck's Blackbody Radiation Curves">
+  <meta property="og:description"    content="Every warm body glows with a Planck spectrum fixed by its temperature. Heat it and the curve rises while its peak slides from infrared toward blue. Sweep temperature across the family of curves.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/planck-curves/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/planckian-radiation--planck-curves.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Planck's Blackbody Radiation Curves.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Planck's Blackbody Radiation Curves">
+  <meta name="twitter:description"   content="Every warm body glows with a Planck spectrum fixed by its temperature. Heat it and the curve rises while its peak slides from infrared toward blue. Sweep temperature across the family of curves.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/planckian-radiation--planck-curves.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Planck's Blackbody Radiation Curves.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Planck's Blackbody Radiation Curves","alternateName":"planckian-radiation/planck-curves","description":"Every warm body glows with a Planck spectrum fixed by its temperature. Heat it and the curve rises while its peak slides from infrared toward blue. Sweep temperature across the family of curves.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Planck curve, blackbody, color temperature, spectrum","url":"https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/planck-curves/","image":"https://encyclopedia-of-color.vercel.app/og/planckian-radiation--planck-curves.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="planckian-radiation/planck-curves">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Planck's Blackbody Radiation Curves</h1>
+      <p class="module-subtitle">heat a blackbody and watch its spectrum brighten, peak and shift toward blue</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A blackbody's emission depends only on its temperature. The Planck law gives the spectral radiance at every wavelength — a curve that rises and shifts blueward as the body heats.
+        </p>
+        <div class="math-block" data-tex="M_\lambda=\dfrac{2\pi hc^{2}}{\lambda^{5}}\,\dfrac{1}{e^{hc/\lambda k_BT}-1}"></div>
+        <p class="zone-guide">
+          Slide the temperature from a dim ember to a blue-white star. The curve is the Planck spectrum (visible band highlighted); the swatch shows the colour the body would glow.
+        </p>
+        <enc-slider id="T" label="Temperature (K)" min="1000" max="12000" step="50" value="3000" unit="K"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Planck blackbody radiation curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.5.2 (Blackbody Radiation)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "planckian-radiation/photometry-geometry",
+  "title": {
+    "en": "Lumens, Candela, Lux & Nits",
+    "ko": "루멘·칸델라·럭스·니트"
+  },
+  "subtitle": {
+    "en": "follow one lamp's light from total flux to intensity, illuminance and luminance",
+    "ko": "한 램프의 빛을 총 광속에서 광도·조도·휘도까지 따라간다"
+  },
+  "description": {
+    "en": "Total light output is lumens; focus it into a cone for candela; spread it on a surface for lux, falling as 1/distance². Per emitting area it is nits. Tune flux, beam angle, and distance.",
+    "ko": "총 광 출력은 루멘이고, 원뿔로 모으면 칸델라, 면에 펼치면 거리²에 반비례하는 럭스가 된다. 발광 면적당으로는 니트다. 광속·빔 각·거리를 조절해 네 광도 단위가 어떻게 연결되는지 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "planckian-radiation",
+  "layout": "A",
+  "prerequisites": [
+    "planckian-radiation/photopic-scotopic"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "CIE 015:2018",
+      "section": "Photometric Quantities"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "lumen",
+    "candela",
+    "lux",
+    "nit",
+    "inverse square"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Stefan-Boltzmann's T⁴ Law — integrate the Planck curve and watch tota…</title>
+  <meta name="description" content="The whole area under a blackbody Planck curve is its total radiated power, and it grows as T⁴ — double the temperature and output leaps sixteenfold. Set two temperatures to compare the dramatic ratio.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/stefan-boltzmann/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Stefan-Boltzmann's T⁴ Law">
+  <meta property="og:description"    content="The whole area under a blackbody Planck curve is its total radiated power, and it grows as T⁴ — double the temperature and output leaps sixteenfold. Set two temperatures to compare the dramatic ratio.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/stefan-boltzmann/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/planckian-radiation--stefan-boltzmann.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Stefan-Boltzmann's T⁴ Law.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Stefan-Boltzmann's T⁴ Law">
+  <meta name="twitter:description"   content="The whole area under a blackbody Planck curve is its total radiated power, and it grows as T⁴ — double the temperature and output leaps sixteenfold. Set two temperatures to compare the dramatic ratio.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/planckian-radiation--stefan-boltzmann.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Stefan-Boltzmann's T⁴ Law.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Stefan-Boltzmann's T⁴ Law","alternateName":"planckian-radiation/stefan-boltzmann","description":"The whole area under a blackbody Planck curve is its total radiated power, and it grows as T⁴ — double the temperature and output leaps sixteenfold. Set two temperatures to compare the dramatic ratio.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Stefan-Boltzmann, T^4 law, radiant exitance, blackbody","url":"https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/stefan-boltzmann/","image":"https://encyclopedia-of-color.vercel.app/og/planckian-radiation--stefan-boltzmann.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="planckian-radiation/stefan-boltzmann">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Stefan-Boltzmann's T⁴ Law</h1>
+      <p class="module-subtitle">integrate the Planck curve and watch total radiated power soar as temperature to the fourth</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Adding up the Planck curve over all wavelengths gives the total power a blackbody radiates per unit area — and that integral works out to σT⁴.
+        </p>
+        <div class="math-block" data-tex="M=\int_0^\infty M_\lambda\,d\lambda=\sigma T^{4},\quad \sigma=5.67\times10^{-8}\,\tfrac{W}{m^2K^4}"></div>
+        <p class="zone-guide">
+          Set a temperature and a reference temperature. The quartic curve is exitance vs T; the gold readout gives the ratio M/M_ref = (T/T_ref)⁴ — note how fast it climbs.
+        </p>
+        <enc-slider id="T" label="Temperature T (K)" min="300" max="8000" step="50" value="3000" unit="K"></enc-slider>
+        <enc-slider id="Tref" label="Reference T_ref (K)" min="300" max="8000" step="50" value="1500" unit="K"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Stefan-Boltzmann T^4 curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §3.5.2 (Stefan-Boltzmann)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

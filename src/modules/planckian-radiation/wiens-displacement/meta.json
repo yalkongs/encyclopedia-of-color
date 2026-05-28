@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "planckian-radiation/wiens-displacement",
+  "title": {
+    "en": "Wien's Displacement Law",
+    "ko": "빈의 변위 법칙"
+  },
+  "subtitle": {
+    "en": "track how a blackbody's peak wavelength slides inversely with its temperature",
+    "ko": "흑체의 봉우리 파장이 온도에 반비례해 이동하는 것을 추적한다"
+  },
+  "description": {
+    "en": "The wavelength where a blackbody glows brightest is simply b/T. Cool embers peak in the infrared, the Sun in the visible, hot stars in the ultraviolet. Sweep temperature to trace the inverse curve.",
+    "ko": "흑체가 가장 밝게 빛나는 파장은 단순히 b/T 다. 식은 잉걸불은 적외선 깊숙이, 태양은 가시광, 뜨거운 별은 자외선에서 정점을 찍는다. 온도를 훑어 반비례 곡선을 그리고 친숙한 천체를 그 위에 놓는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "planckian-radiation",
+  "layout": "A",
+  "prerequisites": [
+    "planckian-radiation/planck-curves"
+  ],
+  "leads_to": [
+    "planckian-radiation/stefan-boltzmann"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§3.5.2 (Wien's Law)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "Wien displacement",
+    "peak wavelength",
+    "blackbody",
+    "temperature"
+  ],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

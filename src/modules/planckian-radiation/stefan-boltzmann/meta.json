@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "planckian-radiation/stefan-boltzmann",
+  "title": {
+    "en": "Stefan-Boltzmann's T⁴ Law",
+    "ko": "스테판-볼츠만 T⁴ 법칙"
+  },
+  "subtitle": {
+    "en": "integrate the Planck curve and watch total radiated power soar as temperature to the fourth",
+    "ko": "플랑크 곡선을 적분해 총 복사 출력이 온도의 네제곱으로 치솟는 것을 본다"
+  },
+  "description": {
+    "en": "The whole area under a blackbody Planck curve is its total radiated power, and it grows as T⁴ — double the temperature and output leaps sixteenfold. Set two temperatures to compare the dramatic ratio.",
+    "ko": "흑체 플랑크 곡선 아래 전체 넓이가 총 복사 출력이며 T⁴ 로 커진다. 온도를 두 배로 하면 출력은 16배로 뛴다. 두 온도를 정해 복사 출사도를 비교하고 극적인 비율을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "planckian-radiation",
+  "layout": "A",
+  "prerequisites": [
+    "planckian-radiation/planck-curves"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§3.5.2 (Stefan-Boltzmann)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "Stefan-Boltzmann",
+    "T^4 law",
+    "radiant exitance",
+    "blackbody"
+  ],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

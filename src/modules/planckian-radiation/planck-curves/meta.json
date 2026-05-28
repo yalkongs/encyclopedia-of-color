@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "planckian-radiation/planck-curves",
+  "title": {
+    "en": "Planck's Blackbody Radiation Curves",
+    "ko": "플랑크 흑체 복사 곡선"
+  },
+  "subtitle": {
+    "en": "heat a blackbody and watch its spectrum brighten, peak and shift toward blue",
+    "ko": "흑체를 가열하며 스펙트럼이 밝아지고 봉우리가 파란 쪽으로 이동하는 것을 본다"
+  },
+  "description": {
+    "en": "Every warm body glows with a Planck spectrum fixed by its temperature. Heat it and the curve rises while its peak slides from infrared toward blue. Sweep temperature across the family of curves.",
+    "ko": "따뜻한 물체는 온도만으로 정해지는 매끄러운 플랑크 스펙트럼으로 빛난다. 가열하면 곡선 전체가 올라가고 봉우리가 적외선에서 파란 쪽으로 미끄러진다. 온도를 훑어 곡선군과 물체가 띨 색을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "planckian-radiation",
+  "layout": "A",
+  "prerequisites": [
+    "planckian-radiation/filament-heating"
+  ],
+  "leads_to": [
+    "planckian-radiation/wiens-displacement"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§3.5.2 (Blackbody Radiation)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "Planck curve",
+    "blackbody",
+    "color temperature",
+    "spectrum"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

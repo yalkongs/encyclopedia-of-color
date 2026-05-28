@@ -175,6 +175,31 @@
     "square": "og/planckian-radiation--filament-heating.sq.png"
   },
   {
+    "id": "planckian-radiation/photometry-geometry",
+    "og": "og/planckian-radiation--photometry-geometry.png",
+    "square": "og/planckian-radiation--photometry-geometry.sq.png"
+  },
+  {
+    "id": "planckian-radiation/photopic-scotopic",
+    "og": "og/planckian-radiation--photopic-scotopic.png",
+    "square": "og/planckian-radiation--photopic-scotopic.sq.png"
+  },
+  {
+    "id": "planckian-radiation/planck-curves",
+    "og": "og/planckian-radiation--planck-curves.png",
+    "square": "og/planckian-radiation--planck-curves.sq.png"
+  },
+  {
+    "id": "planckian-radiation/stefan-boltzmann",
+    "og": "og/planckian-radiation--stefan-boltzmann.png",
+    "square": "og/planckian-radiation--stefan-boltzmann.sq.png"
+  },
+  {
+    "id": "planckian-radiation/wiens-displacement",
+    "og": "og/planckian-radiation--wiens-displacement.png",
+    "square": "og/planckian-radiation--wiens-displacement.sq.png"
+  },
+  {
     "id": "prism-dispersion/abbe-number-glasses",
     "og": "og/prism-dispersion--abbe-number-glasses.png",
     "square": "og/prism-dispersion--abbe-number-glasses.sq.png"

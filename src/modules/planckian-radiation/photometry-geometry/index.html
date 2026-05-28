@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Lumens, Candela, Lux &amp; Nits — follow one lamp's light from total flux…</title>
+  <meta name="description" content="Total light output is lumens; focus it into a cone for candela; spread it on a surface for lux, falling as 1/distance². Per emitting area it is nits. Tune flux, beam angle, and distance.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/photometry-geometry/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Lumens, Candela, Lux &amp; Nits">
+  <meta property="og:description"    content="Total light output is lumens; focus it into a cone for candela; spread it on a surface for lux, falling as 1/distance². Per emitting area it is nits. Tune flux, beam angle, and distance.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/photometry-geometry/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/planckian-radiation--photometry-geometry.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Lumens, Candela, Lux &amp; Nits.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Lumens, Candela, Lux &amp; Nits">
+  <meta name="twitter:description"   content="Total light output is lumens; focus it into a cone for candela; spread it on a surface for lux, falling as 1/distance². Per emitting area it is nits. Tune flux, beam angle, and distance.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/planckian-radiation--photometry-geometry.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Lumens, Candela, Lux &amp; Nits.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Lumens, Candela, Lux & Nits","alternateName":"planckian-radiation/photometry-geometry","description":"Total light output is lumens; focus it into a cone for candela; spread it on a surface for lux, falling as 1/distance². Per emitting area it is nits. Tune flux, beam angle, and distance.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"lumen, candela, lux, nit, inverse square","url":"https://encyclopedia-of-color.vercel.app/modules/planckian-radiation/photometry-geometry/","image":"https://encyclopedia-of-color.vercel.app/og/planckian-radiation--photometry-geometry.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="planckian-radiation/photometry-geometry">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Lumens, Candela, Lux &amp; Nits</h1>
+      <p class="module-subtitle">follow one lamp's light from total flux to intensity, illuminance and luminance</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Luminous flux Φ (lumen) is total light. Intensity I = Φ/Ω (candela) is flux per steradian. Illuminance E = I/d² (lux) is what lands on a surface, falling with the square of distance.
+        </p>
+        <div class="math-block" data-tex="I=\dfrac{\Phi}{\Omega}\,(\text{cd}),\quad E=\dfrac{I}{d^{2}}\,(\text{lx}),\quad \Omega=2\pi(1-\cos\theta)"></div>
+        <p class="zone-guide">
+          Set the lamp's flux, its beam half-angle, and the distance to the wall. Watch the beam tighten into more candela, and the wall illuminance drop as 1/d². The patch brightness tracks lux.
+        </p>
+        <enc-slider id="flux" label="Luminous flux Φ (lm)" min="50" max="4000" step="10" value="800" unit="lm"></enc-slider>
+        <enc-slider id="beam" label="Beam half-angle θ (°)" min="5" max="90" step="1" value="30" unit="°"></enc-slider>
+        <enc-slider id="dist" label="Distance d (m)" min="0.5" max="8" step="0.1" value="2.0" unit="m"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Photometric units geometry"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 015:2018 — Photometric Quantities"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

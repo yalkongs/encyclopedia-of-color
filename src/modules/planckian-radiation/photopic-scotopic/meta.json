@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "planckian-radiation/photopic-scotopic",
+  "title": {
+    "en": "Photopic & Scotopic Sensitivity",
+    "ko": "주간·야간 시감도"
+  },
+  "subtitle": {
+    "en": "dim the lights and watch the eye's peak sensitivity shift blueward — the Purkinje effect",
+    "ko": "조명을 낮추며 눈의 최대 감도가 파란 쪽으로 옮겨가는 푸르키네 효과를 본다"
+  },
+  "description": {
+    "en": "By day the eye peaks at 555 nm (cones, V(λ)); in the dark at 507 nm (rods, V′(λ)). So at dusk reds darken while blues stay bright — the Purkinje shift. Cross-fade adaptation to watch the two curves.",
+    "ko": "낮에는 눈이 555 nm(원뿔, V(λ))에서, 어둠에서는 507 nm(막대, V'(λ))에서 정점을 찍는다. 그래서 땅거미가 지면 빨강은 어두워지고 파랑은 밝게 남는 푸르키네 이동이 일어난다. 순응을 교차시켜 두 곡선과 빨강·파랑 물체의 밝기 역전을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "planckian-radiation",
+  "layout": "A",
+  "prerequisites": [
+    "planckian-radiation/filament-heating"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "CIE 015:2018",
+      "section": "Photopic & Scotopic V(λ)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "photopic",
+    "scotopic",
+    "Purkinje effect",
+    "luminosity function"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
