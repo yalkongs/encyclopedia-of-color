@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "coherence/temporal-coherence",
+  "title": {
+    "en": "Temporal Coherence & Coherence Length",
+    "ko": "시간적 결맞음과 결맞음 길이"
+  },
+  "subtitle": {
+    "en": "narrow the linewidth and watch fringes survive to ever larger path differences",
+    "ko": "선폭을 좁혀 더 큰 경로차에서도 무늬가 살아남는 것을 본다"
+  },
+  "description": {
+    "en": "How far two beams interfere is the coherence length L_c = λ²/Δλ. A broad source loses fringe contrast at once; a narrow laser keeps it over metres. Tune linewidth and path difference.",
+    "ko": "두 빔이 얼마나 멀리 떨어져도 간섭하는지가 결맞음 길이 L_c = λ²/Δλ 다. 넓은 광원은 무늬 대비를 곧 잃지만, 좁은 레이저 선은 수 미터에 걸쳐 무늬를 유지한다. 선폭과 경로차를 조절해 가시도가 감쇠하는 모습을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "coherence",
+  "layout": "A",
+  "prerequisites": [
+    "wave-interference/michelson-interferometer"
+  ],
+  "leads_to": [
+    "coherence/spatial-coherence"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§12.1 (Temporal Coherence)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "temporal coherence",
+    "coherence length",
+    "linewidth",
+    "fringe visibility"
+  ],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "aberrations/distortion-barrel-pincushion",
+  "title": {
+    "en": "Barrel & Pincushion Distortion",
+    "ko": "배럴·핀쿠션 왜곡"
+  },
+  "subtitle": {
+    "en": "warp a square grid as magnification changes with distance from the axis",
+    "ko": "축에서 멀어질수록 배율이 변해 정사각 격자가 휘는 것을 본다"
+  },
+  "description": {
+    "en": "Distortion keeps points sharp but bends straight lines, because magnification changes with field height. Dial the radial coefficients to bow a grid outward (barrel) or pinch it inward (pincushion).",
+    "ko": "왜곡은 점은 또렷하게 두면서 직선을 휘게 하는 유일한 수차로, 배율이 상고에 따라 달라지기 때문이다. 방사 계수를 조절해 격자를 바깥으로 부풀리거나(배럴), 안으로 조이거나(핀쿠션), 둘을 합쳐 콧수염 왜곡을 만든다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "aberrations",
+  "layout": "A",
+  "prerequisites": [
+    "geometric-optics/thin-lens-basic"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§6.3.1 (Distortion)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "barrel distortion",
+    "pincushion",
+    "radial distortion",
+    "aberration"
+  ],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "modern-optics/laser-cavity-gain",
+  "title": {
+    "en": "Laser Cavity Gain & Threshold",
+    "ko": "레이저 공진기 이득과 문턱"
+  },
+  "subtitle": {
+    "en": "pump a gain medium until round-trip gain beats loss and the beam switches on",
+    "ko": "이득 매질을 펌핑해 왕복 이득이 손실을 이기면 빔이 켜지는 순간을 본다"
+  },
+  "description": {
+    "en": "A laser oscillates only when round-trip gain from the inverted medium exceeds cavity loss. Below threshold there is faint glow; above it, output climbs nearly linearly. Tune pump and reflectivity.",
+    "ko": "레이저는 반전된 매질의 왕복 이득이 공진기 손실을 넘을 때만 발진한다. 문턱 아래에서는 희미한 빛뿐이고, 넘으면 출력이 펌프에 거의 선형으로 치솟는다. 펌프 출력과 거울 반사율을 조절해 문턱의 꺾임을 찾는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "modern-optics",
+  "layout": "A",
+  "prerequisites": [
+    "wave-interference/fabry-perot-etalon"
+  ],
+  "leads_to": [
+    "modern-optics/second-harmonic-generation"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§13.1 (Lasers)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "laser threshold",
+    "population inversion",
+    "cavity gain",
+    "stimulated emission"
+  ],
+  "estimated_hours": 15,
+  "status": "shipped"
+}

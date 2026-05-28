@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Thin-Lens Equation — slide an object past a lens and trace the th…</title>
+  <meta name="description" content="Three special rays — parallel, through-centre, through-focus — pin down where a lens forms an image. Slide the object across the focal point to flip the image from real-inverted to virtual-upright.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/geometric-optics/thin-lens-basic/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Thin-Lens Equation">
+  <meta property="og:description"    content="Three special rays — parallel, through-centre, through-focus — pin down where a lens forms an image. Slide the object across the focal point to flip the image from real-inverted to virtual-upright.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/geometric-optics/thin-lens-basic/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/geometric-optics--thin-lens-basic.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Thin-Lens Equation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Thin-Lens Equation">
+  <meta name="twitter:description"   content="Three special rays — parallel, through-centre, through-focus — pin down where a lens forms an image. Slide the object across the focal point to flip the image from real-inverted to virtual-upright.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/geometric-optics--thin-lens-basic.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Thin-Lens Equation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Thin-Lens Equation","alternateName":"geometric-optics/thin-lens-basic","description":"Three special rays — parallel, through-centre, through-focus — pin down where a lens forms an image. Slide the object across the focal point to flip the image from real-inverted to virtual-upright.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"thin lens equation, ray tracing, real image, magnification","url":"https://encyclopedia-of-color.vercel.app/modules/geometric-optics/thin-lens-basic/","image":"https://encyclopedia-of-color.vercel.app/og/geometric-optics--thin-lens-basic.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="geometric-optics/thin-lens-basic">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Thin-Lens Equation</h1>
+      <p class="module-subtitle">slide an object past a lens and trace the three rays that locate its image</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A converging lens images an object using three predictable rays. Their crossing point is the image; where it lands depends only on the object distance and the focal length.
+        </p>
+        <div class="math-block" data-tex="\dfrac{1}{s_o}+\dfrac{1}{s_i}=\dfrac{1}{f},\qquad m=-\dfrac{s_i}{s_o}"></div>
+        <p class="zone-guide">
+          Move the object and change the focal length. Inside the focal point the image turns virtual and upright; beyond it, real and inverted. The gold readout gives image distance and magnification.
+        </p>
+        <enc-slider id="so" label="Object distance s_o (cm)" min="20" max="400" step="2" value="240" unit="cm"></enc-slider>
+        <enc-slider id="f" label="Focal length f (cm)" min="40" max="160" step="2" value="100" unit="cm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Thin lens ray tracing"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §5.2 (Thin Lenses)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

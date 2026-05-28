@@ -1,0 +1,49 @@
+{
+  "schema_version": "v2",
+  "id": "modern-optics/second-harmonic-generation",
+  "title": {
+    "en": "Second-Harmonic Generation",
+    "ko": "이차 고조파 발생"
+  },
+  "subtitle": {
+    "en": "drive a nonlinear crystal hard enough to double the frequency and turn infrared to green",
+    "ko": "비선형 결정을 강하게 구동해 진동수를 두 배로 만들어 적외선을 녹색으로 바꾼다"
+  },
+  "description": {
+    "en": "In a χ² crystal two infrared photons merge into one of double the frequency — 1064 nm becomes 532 nm green. It needs high intensity and phase matching. Tune intensity, length, and phase mismatch.",
+    "ko": "χ² 결정에서는 적외선 광자 둘이 합쳐 진동수가 두 배인 광자 하나가 된다. 1064 nm가 532 nm 녹색이 된다. 변환에는 높은 세기와 위상 정합이 필요하며, 정합을 벗어나면 sinc² 무늬를 따른다. 세기·길이·위상 차를 조절해 녹색을 최대로 만든다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 1,
+  "category": "modern-optics",
+  "layout": "A",
+  "prerequisites": [
+    "modern-optics/laser-cavity-gain"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Boyd, Nonlinear Optics",
+      "section": "§2.2 (SHG)"
+    },
+    {
+      "source": "Born & Wolf, Principles of Optics",
+      "section": "§16"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "second harmonic",
+    "SHG",
+    "nonlinear optics",
+    "phase matching"
+  ],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

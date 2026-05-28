@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Barrel &amp; Pincushion Distortion — warp a square grid as magnification…</title>
+  <meta name="description" content="Distortion keeps points sharp but bends straight lines, because magnification changes with field height. Dial the radial coefficients to bow a grid outward (barrel) or pinch it inward (pincushion).">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/aberrations/distortion-barrel-pincushion/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Barrel &amp; Pincushion Distortion">
+  <meta property="og:description"    content="Distortion keeps points sharp but bends straight lines, because magnification changes with field height. Dial the radial coefficients to bow a grid outward (barrel) or pinch it inward (pincushion).">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/aberrations/distortion-barrel-pincushion/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/aberrations--distortion-barrel-pincushion.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Barrel &amp; Pincushion Distortion.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Barrel &amp; Pincushion Distortion">
+  <meta name="twitter:description"   content="Distortion keeps points sharp but bends straight lines, because magnification changes with field height. Dial the radial coefficients to bow a grid outward (barrel) or pinch it inward (pincushion).">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/aberrations--distortion-barrel-pincushion.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Barrel &amp; Pincushion Distortion.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Barrel & Pincushion Distortion","alternateName":"aberrations/distortion-barrel-pincushion","description":"Distortion keeps points sharp but bends straight lines, because magnification changes with field height. Dial the radial coefficients to bow a grid outward (barrel) or pinch it inward (pincushion).","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"barrel distortion, pincushion, radial distortion, aberration","url":"https://encyclopedia-of-color.vercel.app/modules/aberrations/distortion-barrel-pincushion/","image":"https://encyclopedia-of-color.vercel.app/og/aberrations--distortion-barrel-pincushion.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="aberrations/distortion-barrel-pincushion">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Barrel &amp; Pincushion Distortion</h1>
+      <p class="module-subtitle">warp a square grid as magnification changes with distance from the axis</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          When magnification varies with how far a point is off-axis, straight lines bow. Outward bowing is barrel; inward pinching is pincushion; a mix gives a moustache profile.
+        </p>
+        <div class="math-block" data-tex="r' = r\,(1 + k_1 r^{2} + k_2 r^{4})"></div>
+        <p class="zone-guide">
+          Adjust the primary and secondary radial coefficients. The faint grid is the undistorted scene; the crimson grid is the distorted image. The readout names the distortion type.
+        </p>
+        <enc-slider id="k1" label="Primary coefficient k₁" min="-0.45" max="0.45" step="0.01" value="-0.25"></enc-slider>
+        <enc-slider id="k2" label="Secondary coefficient k₂" min="-0.40" max="0.40" step="0.01" value="0.00"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Barrel and pincushion distortion grid"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §6.3.1 (Distortion)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

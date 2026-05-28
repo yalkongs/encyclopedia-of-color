@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Temporal Coherence &amp; Coherence Length — narrow the linewidth and watc…</title>
+  <meta name="description" content="How far two beams interfere is the coherence length L_c = λ²/Δλ. A broad source loses fringe contrast at once; a narrow laser keeps it over metres. Tune linewidth and path difference.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/coherence/temporal-coherence/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Temporal Coherence &amp; Coherence Length">
+  <meta property="og:description"    content="How far two beams interfere is the coherence length L_c = λ²/Δλ. A broad source loses fringe contrast at once; a narrow laser keeps it over metres. Tune linewidth and path difference.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/coherence/temporal-coherence/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/coherence--temporal-coherence.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Temporal Coherence &amp; Coherence Length.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Temporal Coherence &amp; Coherence Length">
+  <meta name="twitter:description"   content="How far two beams interfere is the coherence length L_c = λ²/Δλ. A broad source loses fringe contrast at once; a narrow laser keeps it over metres. Tune linewidth and path difference.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/coherence--temporal-coherence.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Temporal Coherence &amp; Coherence Length.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Temporal Coherence & Coherence Length","alternateName":"coherence/temporal-coherence","description":"How far two beams interfere is the coherence length L_c = λ²/Δλ. A broad source loses fringe contrast at once; a narrow laser keeps it over metres. Tune linewidth and path difference.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"temporal coherence, coherence length, linewidth, fringe visibility","url":"https://encyclopedia-of-color.vercel.app/modules/coherence/temporal-coherence/","image":"https://encyclopedia-of-color.vercel.app/og/coherence--temporal-coherence.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="coherence/temporal-coherence">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Temporal Coherence &amp; Coherence Length</h1>
+      <p class="module-subtitle">narrow the linewidth and watch fringes survive to ever larger path differences</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Interference needs the two paths to differ by less than the coherence length. That length is set by the spectral width: the purer the colour, the longer the coherence.
+        </p>
+        <div class="math-block" data-tex="L_c=\dfrac{\lambda^{2}}{\Delta\lambda},\qquad V(\Delta L)=e^{-(\Delta L/L_c)^{2}}"></div>
+        <p class="zone-guide">
+          Set the centre wavelength, the linewidth Δλ, and the path difference ΔL. The strip shows fringe contrast; the curve is visibility versus ΔL with the coherence length marked.
+        </p>
+        <enc-slider id="lambda" label="Centre wavelength λ (nm)" min="400" max="700" step="1" value="550" unit="nm"></enc-slider>
+        <enc-slider id="dlam" label="Linewidth Δλ (nm)" min="0.1" max="40" step="0.1" value="10" unit="nm"></enc-slider>
+        <enc-slider id="dL" label="Path difference ΔL (µm)" min="0" max="120" step="0.5" value="20" unit="µm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Temporal coherence fringe visibility"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §12.1 (Temporal Coherence)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

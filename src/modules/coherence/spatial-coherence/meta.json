@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "coherence/spatial-coherence",
+  "title": {
+    "en": "Spatial Coherence & Source Size",
+    "ko": "공간적 결맞음과 광원 크기"
+  },
+  "subtitle": {
+    "en": "widen the source and watch a double slit's fringes lose their contrast",
+    "ko": "광원을 넓히며 이중슬릿 무늬의 대비가 사라지는 것을 본다"
+  },
+  "description": {
+    "en": "An extended source lights two slits with partially-correlated waves, so visibility falls as the source grows or slits separate — the van Cittert-Zernike theorem. Tune source size and separation.",
+    "ko": "넓은 광원은 두 슬릿을 부분적으로만 상관된 빛으로 비추므로, 광원이 커지거나 슬릿이 벌어지면 무늬 가시도가 떨어진다. 판 시터르트-제르니케 정리다. 광원 크기·슬릿 간격·거리를 조절해 무늬가 사라지는 지점을 찾는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "coherence",
+  "layout": "A",
+  "prerequisites": [
+    "coherence/temporal-coherence",
+    "wave-interference/youngs-double-slit-full"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§12.4 (Spatial Coherence)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "spatial coherence",
+    "van Cittert-Zernike",
+    "source size",
+    "fringe visibility"
+  ],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

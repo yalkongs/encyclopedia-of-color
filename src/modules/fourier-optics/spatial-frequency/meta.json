@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "fourier-optics/spatial-frequency",
+  "title": {
+    "en": "Spatial Frequency & Image Sums",
+    "ko": "공간 주파수와 이미지 합성"
+  },
+  "subtitle": {
+    "en": "build a pattern by stacking sinusoidal gratings of rising spatial frequency",
+    "ko": "공간 주파수가 높아지는 정현 격자를 쌓아 패턴을 만든다"
+  },
+  "description": {
+    "en": "Any image is a sum of sinusoidal gratings, each with its own spatial frequency and contrast — the basis of Fourier optics. Add harmonics to watch smooth gratings build into sharp bars.",
+    "ko": "모든 이미지는 저마다의 공간 주파수·방향·대비를 가진 정현 격자의 합이다. Fourier 광학의 토대다. 고조파를 하나씩 더하며 매끄러운 격자가 날카로운 막대로 쌓이는 모습을 본다. 렌즈 개구가 통과시키는 주파수를 제한하는 것과 같다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "fourier-optics",
+  "layout": "A",
+  "prerequisites": [
+    "light-diffraction/diffraction-grating"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§11.2 (Fourier Methods)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "spatial frequency",
+    "Fourier optics",
+    "harmonics",
+    "square wave"
+  ],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

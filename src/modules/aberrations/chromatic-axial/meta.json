@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "aberrations/chromatic-axial",
+  "title": {
+    "en": "Axial Chromatic Aberration",
+    "ko": "축상 색수차"
+  },
+  "subtitle": {
+    "en": "watch a simple lens focus blue and red light at different points along the axis",
+    "ko": "단순 렌즈가 파랑과 빨강을 축 위 다른 지점에 맺는 것을 본다"
+  },
+  "description": {
+    "en": "Glass bends blue light more than red, so a single lens has no one focus — blue converges nearer, red farther. Tune dispersion and lens power to spread the foci and see the coloured axial blur.",
+    "ko": "유리는 파란빛을 빨강보다 더 꺾어, 단순 렌즈에는 단일 초점이 없다. 파랑은 가깝게, 빨강은 멀게 모인다. 분산과 렌즈 굴절력을 조절해 초점이 벌어지고 단순 광학을 괴롭히는 색 번짐을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "aberrations",
+  "layout": "A",
+  "prerequisites": [
+    "geometric-optics/lensmakers-equation",
+    "prism-dispersion/abbe-number-glasses"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§6.3.2 (Chromatic Aberration)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "chromatic aberration",
+    "axial",
+    "dispersion",
+    "focal shift"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

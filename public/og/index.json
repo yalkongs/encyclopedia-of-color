@@ -1,5 +1,15 @@
 [
   {
+    "id": "aberrations/chromatic-axial",
+    "og": "og/aberrations--chromatic-axial.png",
+    "square": "og/aberrations--chromatic-axial.sq.png"
+  },
+  {
+    "id": "aberrations/distortion-barrel-pincushion",
+    "og": "og/aberrations--distortion-barrel-pincushion.png",
+    "square": "og/aberrations--distortion-barrel-pincushion.sq.png"
+  },
+  {
     "id": "atmospheric-optics/airmass-reddening",
     "og": "og/atmospheric-optics--airmass-reddening.png",
     "square": "og/atmospheric-optics--airmass-reddening.sq.png"
@@ -8,6 +18,16 @@
     "id": "atmospheric-optics/blue-hour-twilight",
     "og": "og/atmospheric-optics--blue-hour-twilight.png",
     "square": "og/atmospheric-optics--blue-hour-twilight.sq.png"
+  },
+  {
+    "id": "coherence/spatial-coherence",
+    "og": "og/coherence--spatial-coherence.png",
+    "square": "og/coherence--spatial-coherence.sq.png"
+  },
+  {
+    "id": "coherence/temporal-coherence",
+    "og": "og/coherence--temporal-coherence.png",
+    "square": "og/coherence--temporal-coherence.sq.png"
   },
   {
     "id": "color-vision-deficiency/cvd-everyday",
@@ -38,6 +58,21 @@
     "id": "em-fundamentals/radiation-pressure",
     "og": "og/em-fundamentals--radiation-pressure.png",
     "square": "og/em-fundamentals--radiation-pressure.sq.png"
+  },
+  {
+    "id": "fourier-optics/spatial-frequency",
+    "og": "og/fourier-optics--spatial-frequency.png",
+    "square": "og/fourier-optics--spatial-frequency.sq.png"
+  },
+  {
+    "id": "geometric-optics/lensmakers-equation",
+    "og": "og/geometric-optics--lensmakers-equation.png",
+    "square": "og/geometric-optics--lensmakers-equation.sq.png"
+  },
+  {
+    "id": "geometric-optics/thin-lens-basic",
+    "og": "og/geometric-optics--thin-lens-basic.png",
+    "square": "og/geometric-optics--thin-lens-basic.sq.png"
   },
   {
     "id": "light-basics/additive-rgb-mixing",
@@ -128,6 +163,16 @@
     "id": "light-propagation/umbra-penumbra",
     "og": "og/light-propagation--umbra-penumbra.png",
     "square": "og/light-propagation--umbra-penumbra.sq.png"
+  },
+  {
+    "id": "modern-optics/laser-cavity-gain",
+    "og": "og/modern-optics--laser-cavity-gain.png",
+    "square": "og/modern-optics--laser-cavity-gain.sq.png"
+  },
+  {
+    "id": "modern-optics/second-harmonic-generation",
+    "og": "og/modern-optics--second-harmonic-generation.png",
+    "square": "og/modern-optics--second-harmonic-generation.sq.png"
   },
   {
     "id": "particle-scattering/brillouin-scattering",

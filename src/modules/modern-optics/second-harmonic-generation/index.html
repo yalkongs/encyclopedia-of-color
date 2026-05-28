@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Second-Harmonic Generation — drive a nonlinear crystal hard enough to…</title>
+  <meta name="description" content="In a χ² crystal two infrared photons merge into one of double the frequency — 1064 nm becomes 532 nm green. It needs high intensity and phase matching. Tune intensity, length, and phase mismatch.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/modern-optics/second-harmonic-generation/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Second-Harmonic Generation">
+  <meta property="og:description"    content="In a χ² crystal two infrared photons merge into one of double the frequency — 1064 nm becomes 532 nm green. It needs high intensity and phase matching. Tune intensity, length, and phase mismatch.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/modern-optics/second-harmonic-generation/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/modern-optics--second-harmonic-generation.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Second-Harmonic Generation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Second-Harmonic Generation">
+  <meta name="twitter:description"   content="In a χ² crystal two infrared photons merge into one of double the frequency — 1064 nm becomes 532 nm green. It needs high intensity and phase matching. Tune intensity, length, and phase mismatch.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/modern-optics--second-harmonic-generation.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Second-Harmonic Generation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Second-Harmonic Generation","alternateName":"modern-optics/second-harmonic-generation","description":"In a χ² crystal two infrared photons merge into one of double the frequency — 1064 nm becomes 532 nm green. It needs high intensity and phase matching. Tune intensity, length, and phase mismatch.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"second harmonic, SHG, nonlinear optics, phase matching","url":"https://encyclopedia-of-color.vercel.app/modules/modern-optics/second-harmonic-generation/","image":"https://encyclopedia-of-color.vercel.app/og/modern-optics--second-harmonic-generation.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="modern-optics/second-harmonic-generation">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Second-Harmonic Generation</h1>
+      <p class="module-subtitle">drive a nonlinear crystal hard enough to double the frequency and turn infrared to green</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A strong field in a χ² crystal radiates at twice its frequency. The doubled waves add up only if they stay in step with the fundamental — phase matching. Otherwise the output oscillates as a sinc².
+        </p>
+        <div class="math-block" data-tex="P_{2\omega}\propto P_\omega^{2}\,L^{2}\,\operatorname{sinc}^{2}\!\Bigl(\tfrac{\Delta k\,L}{2}\Bigr)"></div>
+        <p class="zone-guide">
+          Set the input intensity, crystal length, and phase mismatch Δk·L. The crystal turns infrared green when intensity is high and phase-matched; the curve shows the sinc² acceptance.
+        </p>
+        <enc-slider id="I" label="Input intensity" min="0" max="100" step="1" value="60"></enc-slider>
+        <enc-slider id="L" label="Crystal length L (mm)" min="1" max="20" step="0.5" value="10" unit="mm"></enc-slider>
+        <enc-slider id="dk" label="Phase mismatch Δk·L (rad)" min="-12" max="12" step="0.2" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Second harmonic generation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Boyd, Nonlinear Optics §2.2; Born &amp; Wolf §16"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

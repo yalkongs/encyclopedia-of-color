@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "geometric-optics/thin-lens-basic",
+  "title": {
+    "en": "The Thin-Lens Equation",
+    "ko": "얇은 렌즈 방정식"
+  },
+  "subtitle": {
+    "en": "slide an object past a lens and trace the three rays that locate its image",
+    "ko": "물체를 렌즈 앞에서 움직이며 상을 찾는 세 광선을 추적한다"
+  },
+  "description": {
+    "en": "Three special rays — parallel, through-centre, through-focus — pin down where a lens forms an image. Slide the object across the focal point to flip the image from real-inverted to virtual-upright.",
+    "ko": "평행 광선, 중심 통과 광선, 초점 통과 광선 세 가지가 렌즈가 상을 맺는 위치를 정한다. 물체를 초점 너머로 움직이며 상이 실상·도립에서 허상·정립으로 뒤집히는 모습을 본다. 1/s_o + 1/s_i = 1/f 그대로다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "geometric-optics",
+  "layout": "A",
+  "prerequisites": [
+    "refraction-snell/snells-law"
+  ],
+  "leads_to": [
+    "geometric-optics/lensmakers-equation"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§5.2 (Thin Lenses)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "thin lens equation",
+    "ray tracing",
+    "real image",
+    "magnification"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

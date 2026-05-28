@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "geometric-optics/lensmakers-equation",
+  "title": {
+    "en": "The Lensmaker's Equation",
+    "ko": "렌즈 제작자 방정식"
+  },
+  "subtitle": {
+    "en": "reshape the two glass surfaces and the index to set a lens's focal length",
+    "ko": "두 유리 면과 굴절률을 바꿔 렌즈의 초점거리를 정한다"
+  },
+  "description": {
+    "en": "A lens's power comes from its two curved surfaces and the glass index. Bend each face or raise the index to shrink the focal length, or reshape it between biconvex, plano-convex, and meniscus.",
+    "ko": "렌즈의 굴절력은 두 곡면과 유리 굴절률에서 나온다. 각 면을 휘고 굴절률을 높여 초점거리가 줄어드는 모습을 본다. 양볼록·평볼록·메니스커스로 렌즈 형태도 바뀐다. 평행 광선이 초점 위치를 보여준다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "geometric-optics",
+  "layout": "A",
+  "prerequisites": [
+    "geometric-optics/thin-lens-basic"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht, Optics 5e",
+      "section": "§5.2.3 (Lensmaker's Equation)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "light-to-color"
+  ],
+  "seo_keywords": [
+    "lensmaker equation",
+    "radius of curvature",
+    "focal length",
+    "lens shape"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

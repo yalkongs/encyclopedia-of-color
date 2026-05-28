@@ -38,6 +38,11 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'wave-polarization':            { title: 'Polarization',          sub: 'Domain 1 · Malus, Brewster, birefringence' },
   'particle-scattering':          { title: 'Scattering',            sub: 'Domain 1 · Rayleigh, Mie, Tyndall, sky/sunset' },
   'planckian-radiation':          { title: 'Planckian Radiation',   sub: 'Domain 1 · blackbody, colour temperature, photometry' },
+  'geometric-optics':             { title: 'Geometric Optics',      sub: 'Domain 1 · lenses, imaging, instruments' },
+  'aberrations':                  { title: 'Aberrations',           sub: 'Domain 1 · chromatic, coma, distortion' },
+  'fourier-optics':               { title: 'Fourier Optics',        sub: 'Domain 1 · spatial frequency, 4f, filtering' },
+  'coherence':                    { title: 'Coherence',             sub: 'Domain 1 · temporal, spatial, speckle' },
+  'modern-optics':                { title: 'Modern Optics',         sub: 'Domain 1 · lasers, nonlinear, metamaterials' },
   // Domain 2
   'vision-anatomy-basics':        { title: 'Vision Anatomy',        sub: 'Domain 2 · the perceiving eye' },
   'rods-adaptation':              { title: 'Rod Cells & Adaptation', sub: 'Domain 2 · scotopic vision and dark adaptation' },
@@ -127,6 +132,7 @@ async function main() {
     'prism-dispersion', 'atmospheric-optics',
     'wave-interference', 'light-diffraction', 'wave-polarization',
     'particle-scattering', 'planckian-radiation',
+    'geometric-optics', 'aberrations', 'fourier-optics', 'coherence', 'modern-optics',
   ];
   const D2_ORDER = [
     'vision-anatomy-basics', 'rods-adaptation', 'cones-sensitivity',

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Laser Cavity Gain &amp; Threshold — pump a gain medium until round-trip g…</title>
+  <meta name="description" content="A laser oscillates only when round-trip gain from the inverted medium exceeds cavity loss. Below threshold there is faint glow; above it, output climbs nearly linearly. Tune pump and reflectivity.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/modern-optics/laser-cavity-gain/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Laser Cavity Gain &amp; Threshold">
+  <meta property="og:description"    content="A laser oscillates only when round-trip gain from the inverted medium exceeds cavity loss. Below threshold there is faint glow; above it, output climbs nearly linearly. Tune pump and reflectivity.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/modern-optics/laser-cavity-gain/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/modern-optics--laser-cavity-gain.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Laser Cavity Gain &amp; Threshold.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Laser Cavity Gain &amp; Threshold">
+  <meta name="twitter:description"   content="A laser oscillates only when round-trip gain from the inverted medium exceeds cavity loss. Below threshold there is faint glow; above it, output climbs nearly linearly. Tune pump and reflectivity.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/modern-optics--laser-cavity-gain.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Laser Cavity Gain &amp; Threshold.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Laser Cavity Gain & Threshold","alternateName":"modern-optics/laser-cavity-gain","description":"A laser oscillates only when round-trip gain from the inverted medium exceeds cavity loss. Below threshold there is faint glow; above it, output climbs nearly linearly. Tune pump and reflectivity.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"laser threshold, population inversion, cavity gain, stimulated emission","url":"https://encyclopedia-of-color.vercel.app/modules/modern-optics/laser-cavity-gain/","image":"https://encyclopedia-of-color.vercel.app/og/modern-optics--laser-cavity-gain.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="modern-optics/laser-cavity-gain">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Laser Cavity Gain &amp; Threshold</h1>
+      <p class="module-subtitle">pump a gain medium until round-trip gain beats loss and the beam switches on</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Light bounces between two mirrors through an amplifying medium. Lasing begins only when one round-trip gains more than it loses to output coupling and absorption.
+        </p>
+        <div class="math-block" data-tex="\text{threshold: } g_{\text{round trip}} = -\ln(R_1R_2) + \text{loss}"></div>
+        <p class="zone-guide">
+          Raise the pump and adjust the output mirror reflectivity. Below threshold output stays near zero; above it, power rises almost linearly. The curve marks the threshold kink and operating point.
+        </p>
+        <enc-slider id="pump" label="Pump power" min="0" max="100" step="1" value="50"></enc-slider>
+        <enc-slider id="R" label="Output mirror reflectivity" min="0.80" max="0.999" step="0.001" value="0.95"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Laser threshold curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §13.1 (Lasers)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
