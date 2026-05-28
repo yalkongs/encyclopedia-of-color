@@ -66,12 +66,13 @@ function rainbowPath(bRatio: number, n: number) {
   const sinT3 = n * sinI3;
   if (sinT3 > 1) return null;  // would TIR, no exit.
   const cosT3 = Math.sqrt(1 - sinT3 * sinT3);
-  // Standard refraction vector form (entering medium with index 1):
-  // t = (n1/n2)*v + (n1/n2 * cosI − cosT) * n̂   (n̂ = outward normal of incident medium = same as n3)
-  const mu = n;  // n1/n2 = n/1
+  // Vector refraction (Snell), glass → air, with n3 the outward drop normal:
+  //   T = η·v2 − (η·cosI − cosT)·n̂,  η = n1/n2 = n/1
+  // (GLSL-style form; the normal-component term is subtracted, not added.)
+  const mu = n;
   const v3 = {
-    x: mu * v2.x + (mu * cosI3 - cosT3) * n3.x,
-    y: mu * v2.y + (mu * cosI3 - cosT3) * n3.y,
+    x: mu * v2.x - (mu * cosI3 - cosT3) * n3.x,
+    y: mu * v2.y - (mu * cosI3 - cosT3) * n3.y,
   };
   const len = Math.hypot(v3.x, v3.y) || 1;
   v3.x /= len; v3.y /= len;
