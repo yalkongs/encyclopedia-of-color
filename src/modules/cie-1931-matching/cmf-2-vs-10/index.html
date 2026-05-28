@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>2° vs 10° Standard Observer — slide the wavelength and compare the 19…</title>
+  <meta name="description" content="The field size changes which cones sample a colour, so the CIE defined two observers. Slide the wavelength and read how the 2° and 10° colour-matching functions differ, most of all in the blue.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/cmf-2-vs-10/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="2° vs 10° Standard Observer">
+  <meta property="og:description"    content="The field size changes which cones sample a colour, so the CIE defined two observers. Slide the wavelength and read how the 2° and 10° colour-matching functions differ, most of all in the blue.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/cmf-2-vs-10/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--cmf-2-vs-10.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: 2° vs 10° Standard Observer.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="2° vs 10° Standard Observer">
+  <meta name="twitter:description"   content="The field size changes which cones sample a colour, so the CIE defined two observers. Slide the wavelength and read how the 2° and 10° colour-matching functions differ, most of all in the blue.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--cmf-2-vs-10.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: 2° vs 10° Standard Observer.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"2° vs 10° Standard Observer","alternateName":"cie-1931-matching/cmf-2-vs-10","description":"The field size changes which cones sample a colour, so the CIE defined two observers. Slide the wavelength and read how the 2° and 10° colour-matching functions differ, most of all in the blue.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"standard observer, 2 degree, 10 degree, color matching function","url":"https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/cmf-2-vs-10/","image":"https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--cmf-2-vs-10.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cie-1931-matching/cmf-2-vs-10">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">2° vs 10° Standard Observer</h1>
+      <p class="module-subtitle">slide the wavelength and compare the 1931 2° and 1964 10° colour-matching functions side by side</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A 2° field falls on the fovea; a 10° field spreads onto rod-rich, macular-pigment-free retina. The CIE tabulated a colour-matching function set for each.
+        </p>
+        <div class="math-block" data-tex="(\bar{x}_{2},\bar{y}_{2},\bar{z}_{2}) \;\neq\; (\bar{x}_{10},\bar{y}_{10},\bar{z}_{10})"></div>
+        <p class="zone-guide">
+          Solid curves are the 1931 2° observer, dashed the 1964 10°. Slide the wavelength marker and read all six values — the largest divergence sits in the blue, where macular pigment screens the foveal 2° field.
+        </p>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="380" max="780" step="5" value="450" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="2 degree vs 10 degree CMF"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 015:2018, Table 1"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

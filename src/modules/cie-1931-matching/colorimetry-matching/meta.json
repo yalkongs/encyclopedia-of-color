@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "cie-1931-matching/colorimetry-matching",
+  "title": {
+    "en": "The Colour-Matching Experiment",
+    "ko": "등색 실험"
+  },
+  "subtitle": {
+    "en": "slide the test wavelength and watch one primary go negative — added back to the test side to force a match",
+    "ko": "시험 파장을 움직여 한 원색이 음수가 되어 시험 쪽에 더해져야 일치하는 것을 본다"
+  },
+  "description": {
+    "en": "Observers matched each wavelength by mixing three primaries, but cyans need red added to the test side. Slide the test wavelength and watch that negative lobe of the red matching function appear.",
+    "ko": "관찰자는 세 원색을 섞어 각 파장을 맞췄지만, 청록은 빨강을 시험 쪽에 더해야 한다. 시험 파장을 움직이면 적색 등색함수의 그 음의 로브가 나타나는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 4,
+  "category": "cie-1931-matching",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["cie-1931-matching/observer-integral"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5.2 (Colour Matching)" },
+    { "source": "CIE 015:2018", "section": "Standard Observer" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["color matching", "Wright Guild", "negative lobe", "RGB primaries"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

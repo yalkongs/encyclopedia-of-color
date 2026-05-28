@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>RGB ↔ XYZ Matrices — slide the primaries and switch RGB spaces to wat…</title>
+  <meta name="description" content="Each RGB working space is a 3×3 matrix away from XYZ, set by its primaries and white point. Slide the R, G, B amounts and switch between sRGB, Adobe RGB, and ProPhoto to read the resulting XYZ.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/lindbloom-matrices/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="RGB ↔ XYZ Matrices">
+  <meta property="og:description"    content="Each RGB working space is a 3×3 matrix away from XYZ, set by its primaries and white point. Slide the R, G, B amounts and switch between sRGB, Adobe RGB, and ProPhoto to read the resulting XYZ.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/lindbloom-matrices/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/xyz-transformation--lindbloom-matrices.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: RGB ↔ XYZ Matrices.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="RGB ↔ XYZ Matrices">
+  <meta name="twitter:description"   content="Each RGB working space is a 3×3 matrix away from XYZ, set by its primaries and white point. Slide the R, G, B amounts and switch between sRGB, Adobe RGB, and ProPhoto to read the resulting XYZ.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/xyz-transformation--lindbloom-matrices.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: RGB ↔ XYZ Matrices.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"RGB ↔ XYZ Matrices","alternateName":"xyz-transformation/lindbloom-matrices","description":"Each RGB working space is a 3×3 matrix away from XYZ, set by its primaries and white point. Slide the R, G, B amounts and switch between sRGB, Adobe RGB, and ProPhoto to read the resulting XYZ.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"RGB to XYZ, matrix, Lindbloom, working space","url":"https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/lindbloom-matrices/","image":"https://encyclopedia-of-color.vercel.app/og/xyz-transformation--lindbloom-matrices.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="xyz-transformation/lindbloom-matrices">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">RGB ↔ XYZ Matrices</h1>
+      <p class="module-subtitle">slide the primaries and switch RGB spaces to watch the 3×3 matrix carry a colour into XYZ</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A working space's primaries and white point fix one 3×3 matrix from linear RGB to XYZ. Wider primaries (ProPhoto) reach more of the diagram than narrow ones (sRGB).
+        </p>
+        <div class="math-block" data-tex="\begin{pmatrix}X\\Y\\Z\end{pmatrix} = \mathbf{M}\begin{pmatrix}R\\G\\B\end{pmatrix}"></div>
+        <p class="zone-guide">
+          Pick a working space to see its matrix, then slide the linear R, G, B amounts. The product is read out as XYZ and projected to a chromaticity (x, y); the swatch shows the colour.
+        </p>
+        <enc-toggle id="space" label="Working space" options="sRGB,AdobeRGB,ProPhoto" labels="sRGB,Adobe,ProPhoto" value="sRGB"></enc-toggle>
+        <enc-slider id="r" label="R (linear)" min="0" max="100" step="1" value="80" unit="%"></enc-slider>
+        <enc-slider id="g" label="G (linear)" min="0" max="100" step="1" value="50" unit="%"></enc-slider>
+        <enc-slider id="b" label="B (linear)" min="0" max="100" step="1" value="20" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="RGB to XYZ matrices"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Lindbloom, brucelindbloom.com"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The RGB Cube into XYZ — slide the transform and watch the unit RGB cu…</title>
+  <meta name="description" content="A working-space-to-XYZ conversion is a single linear map — a 3×3 matrix that shears, scales, and rotates. Slide from the identity to the sRGB matrix and watch the unit cube deform into XYZ.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/matrix-3d-rotation/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The RGB Cube into XYZ">
+  <meta property="og:description"    content="A working-space-to-XYZ conversion is a single linear map — a 3×3 matrix that shears, scales, and rotates. Slide from the identity to the sRGB matrix and watch the unit cube deform into XYZ.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/matrix-3d-rotation/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/xyz-transformation--matrix-3d-rotation.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The RGB Cube into XYZ.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The RGB Cube into XYZ">
+  <meta name="twitter:description"   content="A working-space-to-XYZ conversion is a single linear map — a 3×3 matrix that shears, scales, and rotates. Slide from the identity to the sRGB matrix and watch the unit cube deform into XYZ.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/xyz-transformation--matrix-3d-rotation.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The RGB Cube into XYZ.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The RGB Cube into XYZ","alternateName":"xyz-transformation/matrix-3d-rotation","description":"A working-space-to-XYZ conversion is a single linear map — a 3×3 matrix that shears, scales, and rotates. Slide from the identity to the sRGB matrix and watch the unit cube deform into XYZ.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"linear transform, matrix, RGB cube, XYZ","url":"https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/matrix-3d-rotation/","image":"https://encyclopedia-of-color.vercel.app/og/xyz-transformation--matrix-3d-rotation.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="xyz-transformation/matrix-3d-rotation">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The RGB Cube into XYZ</h1>
+      <p class="module-subtitle">slide the transform and watch the unit RGB cube shear into the parallelepiped that XYZ occupies</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A 3×3 matrix is a linear map: it sends the straight edges of the RGB cube to straight edges, but stretches, shears, and rotates the whole shape into a parallelepiped.
+        </p>
+        <div class="math-block" data-tex="\mathbf{v}' = \big[(1-t)\,\mathbf{I} + t\,\mathbf{M}_{sRGB}\big]\,\mathbf{v}"></div>
+        <p class="zone-guide">
+          The corners are coloured by their RGB value. Slide from the identity (a plain cube) toward the sRGB-to-XYZ matrix and watch the cube tilt and skew into the slanted box that linear sRGB carves out of XYZ.
+        </p>
+        <enc-slider id="t" label="Transform" min="0" max="100" step="1" value="100" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="RGB cube linear transform"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki &amp; Stiles §3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

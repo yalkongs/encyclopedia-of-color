@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "xyz-transformation/xyz-projective-locus",
+  "title": {
+    "en": "Projecting XYZ to xy",
+    "ko": "XYZ를 xy로 사영"
+  },
+  "subtitle": {
+    "en": "slide the projection and watch the 3-D spectral curve flatten onto the familiar horseshoe",
+    "ko": "사영을 움직여 3차원 분광 곡선이 익숙한 말발굽으로 납작해지는 것을 본다"
+  },
+  "description": {
+    "en": "Chromaticity throws away brightness by dividing X, Y, Z by their sum — a central projection onto the unit plane. Slide the projection and watch the 3-D spectral locus collapse into the 2-D horseshoe.",
+    "ko": "색도는 X·Y·Z를 합으로 나눠 밝기를 버린다 — 단위 평면으로의 중심 사영이다. 사영을 움직이면 3차원 분광 궤적이 2차원 말발굽으로 납작해지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "xyz-transformation",
+  "layout": "A",
+  "prerequisites": ["cie-1931-matching/observer-integral"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§3 (Chromaticity)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["chromaticity", "projection", "spectral locus", "horseshoe"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

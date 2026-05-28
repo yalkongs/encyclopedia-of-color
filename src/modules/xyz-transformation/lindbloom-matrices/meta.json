@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "xyz-transformation/lindbloom-matrices",
+  "title": {
+    "en": "RGB ↔ XYZ Matrices",
+    "ko": "RGB↔XYZ 행렬"
+  },
+  "subtitle": {
+    "en": "slide the primaries and switch RGB spaces to watch the 3×3 matrix carry a colour into XYZ",
+    "ko": "원색을 움직이고 RGB 공간을 바꿔 3×3 행렬이 색을 XYZ로 옮기는 것을 본다"
+  },
+  "description": {
+    "en": "Each RGB working space is a 3×3 matrix away from XYZ, set by its primaries and white point. Slide the R, G, B amounts and switch between sRGB, Adobe RGB, and ProPhoto to read the resulting XYZ.",
+    "ko": "각 RGB 작업 공간은 원색과 백색점이 정하는 3×3 행렬만큼 XYZ에서 떨어져 있다. R·G·B 양을 움직이고 sRGB·Adobe RGB·ProPhoto를 전환해 그 결과 XYZ를 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "xyz-transformation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Lindbloom, brucelindbloom.com", "section": "RGB/XYZ Matrices" }
+  ],
+  "standards": [],
+  "interaction_count": 4,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["RGB to XYZ", "matrix", "Lindbloom", "working space"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "xyz-transformation/matrix-3d-rotation",
+  "title": {
+    "en": "The RGB Cube into XYZ",
+    "ko": "RGB 큐브의 XYZ 변환"
+  },
+  "subtitle": {
+    "en": "slide the transform and watch the unit RGB cube shear into the parallelepiped that XYZ occupies",
+    "ko": "변환을 움직여 단위 RGB 큐브가 XYZ가 차지하는 평행육면체로 기울어지는 것을 본다"
+  },
+  "description": {
+    "en": "A working-space-to-XYZ conversion is a single linear map — a 3×3 matrix that shears, scales, and rotates. Slide from the identity to the sRGB matrix and watch the unit cube deform into XYZ.",
+    "ko": "작업 공간에서 XYZ로의 변환은 하나의 선형 사상 — 기울이고 늘이고 회전하는 3×3 행렬이다. 항등에서 sRGB 행렬로 움직여 단위 큐브가 XYZ로 변형되는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "xyz-transformation",
+  "layout": "A",
+  "prerequisites": ["xyz-transformation/lindbloom-matrices"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§3 (Linear Transforms)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["linear transform", "matrix", "RGB cube", "XYZ"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

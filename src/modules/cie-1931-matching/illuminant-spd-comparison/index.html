@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Standard Illuminant Spectra — toggle A, D50, D65, or FL11 and watch a…</title>
+  <meta name="description" content="Every light source has its own spectral power distribution. Toggle the CIE illuminants: incandescent A glows red-heavy, the daylights curve smoothly, and fluorescent FL11 spikes at its mercury lines.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/illuminant-spd-comparison/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Standard Illuminant Spectra">
+  <meta property="og:description"    content="Every light source has its own spectral power distribution. Toggle the CIE illuminants: incandescent A glows red-heavy, the daylights curve smoothly, and fluorescent FL11 spikes at its mercury lines.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/illuminant-spd-comparison/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--illuminant-spd-comparison.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Standard Illuminant Spectra.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Standard Illuminant Spectra">
+  <meta name="twitter:description"   content="Every light source has its own spectral power distribution. Toggle the CIE illuminants: incandescent A glows red-heavy, the daylights curve smoothly, and fluorescent FL11 spikes at its mercury lines.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--illuminant-spd-comparison.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Standard Illuminant Spectra.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Standard Illuminant Spectra","alternateName":"cie-1931-matching/illuminant-spd-comparison","description":"Every light source has its own spectral power distribution. Toggle the CIE illuminants: incandescent A glows red-heavy, the daylights curve smoothly, and fluorescent FL11 spikes at its mercury lines.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"standard illuminant, SPD, D65, fluorescent FL11","url":"https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/illuminant-spd-comparison/","image":"https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--illuminant-spd-comparison.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cie-1931-matching/illuminant-spd-comparison">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Standard Illuminant Spectra</h1>
+      <p class="module-subtitle">toggle A, D50, D65, or FL11 and watch a smooth daylight curve give way to a fluorescent's jagged spikes</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          An illuminant is defined by how much power it emits at each wavelength. That spectral shape — not just its colour temperature — decides how objects under it appear.
+        </p>
+        <div class="math-block" data-tex="S(\lambda)\ \text{relative power, normalised at 560 nm}"></div>
+        <p class="zone-guide">
+          Toggle each CIE illuminant. Incandescent A climbs steadily into the red; daylight D50 and D65 sweep smoothly; fluorescent FL11 erupts in narrow mercury spikes that make metamerism notoriously hard to manage.
+        </p>
+        <enc-toggle id="ill" label="Illuminant" options="A,D50,D65,FL11" labels="A,D50,D65,FL11" value="D65"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Standard illuminant SPDs"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 015:2018, Tables 5, 10"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cie-1931-matching/observer-integral",
+  "title": {
+    "en": "Spectrum to Tristimulus",
+    "ko": "스펙트럼에서 삼자극치로"
+  },
+  "subtitle": {
+    "en": "slide a light's spectrum and watch it integrate against the observer into the three numbers X, Y, Z",
+    "ko": "빛의 스펙트럼을 움직여 관찰자와 적분되어 세 숫자 X·Y·Z로 바뀌는 것을 본다"
+  },
+  "description": {
+    "en": "Tristimulus values are integrals of a spectrum against the three colour-matching functions. Slide a light's peak and width and watch X, Y, Z and the resulting colour fall out of the integral.",
+    "ko": "삼자극치는 스펙트럼을 세 등색함수와 적분한 값이다. 빛의 피크와 폭을 움직이면 X·Y·Z와 그 결과 색이 적분에서 나오는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "cie-1931-matching",
+  "layout": "A",
+  "prerequisites": ["cie-1931-matching/cmf-2-vs-10"],
+  "leads_to": ["xyz-transformation/xyz-projective-locus"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "§7 (Tristimulus Values)" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["tristimulus", "XYZ", "integration", "colour matching function"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

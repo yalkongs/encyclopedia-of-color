@@ -1,0 +1,4 @@
+{
+  "hero": { "space": "sRGB", "r": 80, "g": 50, "b": 20 },
+  "comment": "sRGB matrix with a warm RGB input and its XYZ readout."
+}

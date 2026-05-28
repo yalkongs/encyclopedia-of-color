@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cie-1931-matching/illuminant-spd-comparison",
+  "title": {
+    "en": "Standard Illuminant Spectra",
+    "ko": "표준 광원 스펙트럼"
+  },
+  "subtitle": {
+    "en": "toggle A, D50, D65, or FL11 and watch a smooth daylight curve give way to a fluorescent's jagged spikes",
+    "ko": "A·D50·D65·FL11을 전환해 매끄러운 주광 곡선이 형광등의 들쭉날쭉한 스파이크로 바뀌는 것을 본다"
+  },
+  "description": {
+    "en": "Every light source has its own spectral power distribution. Toggle the CIE illuminants: incandescent A glows red-heavy, the daylights curve smoothly, and fluorescent FL11 spikes at its mercury lines.",
+    "ko": "모든 광원은 고유한 분광 분포를 가진다. CIE 광원을 전환하면 백열등 A는 적색이 강하고, 주광은 매끄럽게 휘며, 형광등 FL11은 수은선에서 스파이크를 이루는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 4,
+  "category": "cie-1931-matching",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": ["planckian-radiation/planck-curves"],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "Tables 5, 10 (Illuminants)" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["standard illuminant", "SPD", "D65", "fluorescent FL11"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

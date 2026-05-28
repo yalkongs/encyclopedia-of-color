@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Projecting XYZ to xy — slide the projection and watch the 3-D spectra…</title>
+  <meta name="description" content="Chromaticity throws away brightness by dividing X, Y, Z by their sum — a central projection onto the unit plane. Slide the projection and watch the 3-D spectral locus collapse into the 2-D horseshoe.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/xyz-projective-locus/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Projecting XYZ to xy">
+  <meta property="og:description"    content="Chromaticity throws away brightness by dividing X, Y, Z by their sum — a central projection onto the unit plane. Slide the projection and watch the 3-D spectral locus collapse into the 2-D horseshoe.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/xyz-projective-locus/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/xyz-transformation--xyz-projective-locus.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Projecting XYZ to xy.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Projecting XYZ to xy">
+  <meta name="twitter:description"   content="Chromaticity throws away brightness by dividing X, Y, Z by their sum — a central projection onto the unit plane. Slide the projection and watch the 3-D spectral locus collapse into the 2-D horseshoe.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/xyz-transformation--xyz-projective-locus.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Projecting XYZ to xy.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Projecting XYZ to xy","alternateName":"xyz-transformation/xyz-projective-locus","description":"Chromaticity throws away brightness by dividing X, Y, Z by their sum — a central projection onto the unit plane. Slide the projection and watch the 3-D spectral locus collapse into the 2-D horseshoe.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"chromaticity, projection, spectral locus, horseshoe","url":"https://encyclopedia-of-color.vercel.app/modules/xyz-transformation/xyz-projective-locus/","image":"https://encyclopedia-of-color.vercel.app/og/xyz-transformation--xyz-projective-locus.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="xyz-transformation/xyz-projective-locus">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Projecting XYZ to xy</h1>
+      <p class="module-subtitle">slide the projection and watch the 3-D spectral curve flatten onto the familiar horseshoe</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The chromaticity diagram is a central projection: divide each tristimulus by X+Y+Z and you collapse a 3-D cone of colours onto a 2-D plane, discarding luminance.
+        </p>
+        <div class="math-block" data-tex="x = \dfrac{X}{X+Y+Z},\qquad y = \dfrac{Y}{X+Y+Z}"></div>
+        <p class="zone-guide">
+          At the left, the spectral locus sweeps through 3-D XYZ space. Slide the projection toward 1 and watch every point fall onto the unit plane, tracing the horseshoe-shaped chromaticity boundary.
+        </p>
+        <enc-slider id="proj" label="Projection to xy" min="0" max="100" step="1" value="0" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="XYZ to xy projection"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki &amp; Stiles §3"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Spectrum to Tristimulus — slide a light's spectrum and watch it integ…</title>
+  <meta name="description" content="Tristimulus values are integrals of a spectrum against the three colour-matching functions. Slide a light's peak and width and watch X, Y, Z and the resulting colour fall out of the integral.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/observer-integral/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Spectrum to Tristimulus">
+  <meta property="og:description"    content="Tristimulus values are integrals of a spectrum against the three colour-matching functions. Slide a light's peak and width and watch X, Y, Z and the resulting colour fall out of the integral.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/observer-integral/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--observer-integral.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Spectrum to Tristimulus.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Spectrum to Tristimulus">
+  <meta name="twitter:description"   content="Tristimulus values are integrals of a spectrum against the three colour-matching functions. Slide a light's peak and width and watch X, Y, Z and the resulting colour fall out of the integral.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--observer-integral.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Spectrum to Tristimulus.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Spectrum to Tristimulus","alternateName":"cie-1931-matching/observer-integral","description":"Tristimulus values are integrals of a spectrum against the three colour-matching functions. Slide a light's peak and width and watch X, Y, Z and the resulting colour fall out of the integral.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"tristimulus, XYZ, integration, colour matching function","url":"https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/observer-integral/","image":"https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--observer-integral.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cie-1931-matching/observer-integral">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Spectrum to Tristimulus</h1>
+      <p class="module-subtitle">slide a light's spectrum and watch it integrate against the observer into the three numbers X, Y, Z</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The eye reduces an entire spectrum to just three numbers by integrating it against the colour-matching functions — the projection from infinite-dimensional light to 3-D colour.
+        </p>
+        <div class="math-block" data-tex="X = \int E(\lambda)\,\bar{x}(\lambda)\,d\lambda,\ \ Y = \int E\bar{y},\ \ Z = \int E\bar{z}"></div>
+        <p class="zone-guide">
+          Slide the light's peak wavelength and width. The grey curve is the spectrum, the faint curves the observer; the bars are the three integrals X, Y, Z, and the swatch is the colour they encode.
+        </p>
+        <enc-slider id="peak" label="Spectrum peak (nm)" min="400" max="700" step="1" value="520" unit="nm"></enc-slider>
+        <enc-slider id="width" label="Spectrum width (nm)" min="8" max="120" step="1" value="40" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Spectrum to tristimulus integration"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 015:2018 §7"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

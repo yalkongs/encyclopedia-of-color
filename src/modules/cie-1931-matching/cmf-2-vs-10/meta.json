@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "cie-1931-matching/cmf-2-vs-10",
+  "title": {
+    "en": "2° vs 10° Standard Observer",
+    "ko": "2° vs 10° 표준 관찰자"
+  },
+  "subtitle": {
+    "en": "slide the wavelength and compare the 1931 2° and 1964 10° colour-matching functions side by side",
+    "ko": "파장을 움직여 1931 2°와 1964 10° 등색함수를 나란히 비교한다"
+  },
+  "description": {
+    "en": "The field size changes which cones sample a colour, so the CIE defined two observers. Slide the wavelength and read how the 2° and 10° colour-matching functions differ, most of all in the blue.",
+    "ko": "시야 크기에 따라 어떤 원추가 색을 표집하는지 달라지므로 CIE는 두 관찰자를 정의했다. 파장을 움직여 2°와 10° 등색함수가, 특히 파랑에서 어떻게 다른지 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "cie-1931-matching",
+  "layout": "A",
+  "prerequisites": ["cones-sensitivity/lms-spectra"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "Table 1 (Standard Observers)" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["standard observer", "2 degree", "10 degree", "color matching function"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

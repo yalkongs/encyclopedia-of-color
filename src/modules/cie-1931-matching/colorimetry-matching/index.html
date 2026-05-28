@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Colour-Matching Experiment — slide the test wavelength and watch…</title>
+  <meta name="description" content="Observers matched each wavelength by mixing three primaries, but cyans need red added to the test side. Slide the test wavelength and watch that negative lobe of the red matching function appear.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/colorimetry-matching/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Colour-Matching Experiment">
+  <meta property="og:description"    content="Observers matched each wavelength by mixing three primaries, but cyans need red added to the test side. Slide the test wavelength and watch that negative lobe of the red matching function appear.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/colorimetry-matching/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--colorimetry-matching.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Colour-Matching Experiment.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Colour-Matching Experiment">
+  <meta name="twitter:description"   content="Observers matched each wavelength by mixing three primaries, but cyans need red added to the test side. Slide the test wavelength and watch that negative lobe of the red matching function appear.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--colorimetry-matching.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Colour-Matching Experiment.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Colour-Matching Experiment","alternateName":"cie-1931-matching/colorimetry-matching","description":"Observers matched each wavelength by mixing three primaries, but cyans need red added to the test side. Slide the test wavelength and watch that negative lobe of the red matching function appear.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"color matching, Wright Guild, negative lobe, RGB primaries","url":"https://encyclopedia-of-color.vercel.app/modules/cie-1931-matching/colorimetry-matching/","image":"https://encyclopedia-of-color.vercel.app/og/cie-1931-matching--colorimetry-matching.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="cie-1931-matching/colorimetry-matching">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Colour-Matching Experiment</h1>
+      <p class="module-subtitle">slide the test wavelength and watch one primary go negative — added back to the test side to force a match</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          To match a pure wavelength, observers mixed red, green, and blue primaries on one half of a split field. Some colours are too saturated, so a primary must be added to the test half instead.
+        </p>
+        <div class="math-block" data-tex="\text{test} + r_-R \;=\; r_+R + gG + bB"></div>
+        <p class="zone-guide">
+          Slide the test wavelength. The split field shows the test on the left and the primary mix on the right; when the red amount runs negative, that red is spilled onto the test side — the origin of the negative lobe plotted below.
+        </p>
+        <enc-slider id="lambda" label="Test wavelength (nm)" min="440" max="650" step="1" value="500" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="RGB colour-matching experiment"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki &amp; Stiles §5.2 · CIE 015:2018"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

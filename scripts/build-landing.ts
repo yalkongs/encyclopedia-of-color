@@ -54,7 +54,12 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'opponent-process':             { title: 'Opponent Process',      sub: 'Domain 2 · Hering channels, afterimages' },
   'color-constancy':              { title: 'Color Constancy',       sub: 'Domain 2 · Von Kries, the Dress, retinex' },
   'color-vision-deficiency':      { title: 'Color Vision Deficiency', sub: 'Domain 2 · dichromacy and anomalous trichromacy' },
+  // Domain 4
+  'cie-1931-matching':            { title: 'CIE 1931 Matching',       sub: 'Domain 4 · colour-matching functions and the standard observer' },
+  'xyz-transformation':           { title: 'XYZ Transformation',      sub: 'Domain 4 · linear maps, projection, and sRGB encoding' },
 };
+
+const D4_ORDER = ['cie-1931-matching', 'xyz-transformation'];
 
 interface ModuleEntry { meta: MetaV2; href: string }
 
@@ -183,10 +188,12 @@ async function main() {
     'receptive-fields', 'opponent-process', 'color-constancy',
     'nonlinear-visual-shifts', 'macadam-jnd', 'color-vision-deficiency',
   ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
-    ...[...byCategory.keys()].filter((c) => !D1_ORDER.includes(c) && !D2_ORDER.includes(c)).sort(),
+    ...D4_ORDER.filter((c) => byCategory.has(c)),
+    ...[...byCategory.keys()].filter((c) => !known.includes(c)).sort(),
   ];
 
   const sections = sortedCats

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "xyz-transformation/srgb-gamma-encoding",
+  "title": {
+    "en": "sRGB Gamma Encoding",
+    "ko": "sRGB 감마 인코딩"
+  },
+  "subtitle": {
+    "en": "slide the linear value and watch the sRGB transfer curve bend through its linear toe and 2.4 power",
+    "ko": "선형 값을 움직여 sRGB 전달 곡선이 선형 발끝과 2.4 거듭제곱을 지나 휘는 것을 본다"
+  },
+  "description": {
+    "en": "sRGB does not use a pure power law: a short linear segment near black avoids an infinite slope, then a 2.4 power takes over. Slide the linear value and compare the hybrid curve with a plain gamma 2.2.",
+    "ko": "sRGB는 순수 거듭제곱을 쓰지 않는다. 검정 근처의 짧은 선형 구간이 무한 기울기를 피하고, 이후 2.4 거듭제곱이 이어받는다. 선형 값을 움직여 혼합 곡선을 단순 감마 2.2와 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "xyz-transformation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "IEC 61966-2-1:1999", "section": "sRGB" }
+  ],
+  "standards": ["IEC 61966-2-1"],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["sRGB", "gamma", "transfer function", "EOTF"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}
