@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Mapping the Visual Field — trace how far each eye sees in every direc…</title>
+  <meta name="description" content="One eye sees about 100° toward the temple but only 60° toward the nose, with a blind spot off-centre. Sweep a stimulus around the field to trace the boundary that perimetry measures.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/visual-field-test/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Mapping the Visual Field">
+  <meta property="og:description"    content="One eye sees about 100° toward the temple but only 60° toward the nose, with a blind spot off-centre. Sweep a stimulus around the field to trace the boundary that perimetry measures.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/visual-field-test/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--visual-field-test.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Mapping the Visual Field.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Mapping the Visual Field">
+  <meta name="twitter:description"   content="One eye sees about 100° toward the temple but only 60° toward the nose, with a blind spot off-centre. Sweep a stimulus around the field to trace the boundary that perimetry measures.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--visual-field-test.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Mapping the Visual Field.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Mapping the Visual Field","alternateName":"vision-anatomy-basics/visual-field-test","description":"One eye sees about 100° toward the temple but only 60° toward the nose, with a blind spot off-centre. Sweep a stimulus around the field to trace the boundary that perimetry measures.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"visual field, perimetry, peripheral vision, blind spot","url":"https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/visual-field-test/","image":"https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--visual-field-test.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="vision-anatomy-basics/visual-field-test">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Mapping the Visual Field</h1>
+      <p class="module-subtitle">trace how far each eye sees in every direction and where its blind spot hides</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The monocular field is wide toward the temple, clipped by the nose and brow on the other sides. Perimetry maps this boundary and the blind spot to screen for visual loss.
+        </p>
+        <div class="math-block" data-tex="\text{temporal }100^{\circ},\ \text{nasal }60^{\circ},\ \text{up }60^{\circ},\ \text{down }75^{\circ}"></div>
+        <p class="zone-guide">
+          Move the test stimulus by direction and eccentricity. Inside the gold boundary it is seen; cross the line and it falls outside the field. The shaded patch is the blind spot.
+        </p>
+        <enc-slider id="dir" label="Direction (°, 0 = temporal)" min="0" max="359" step="1" value="0" unit="°"></enc-slider>
+        <enc-slider id="ecc" label="Eccentricity (°)" min="0" max="110" step="1" value="50" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Visual field perimetry chart"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Goldstein, Sensation &amp; Perception 10e §2.5 (Visual Field)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

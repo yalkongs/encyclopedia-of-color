@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Anatomy of the Eye — tour the optical parts that bend light onto the…</title>
+  <meta name="description" content="The eye is a living camera: cornea and lens bend incoming light, the iris sets the aperture, and the retina catches the image at the fovea. Step through each structure to see what it does.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/eye-cross-section/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Anatomy of the Eye">
+  <meta property="og:description"    content="The eye is a living camera: cornea and lens bend incoming light, the iris sets the aperture, and the retina catches the image at the fovea. Step through each structure to see what it does.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/eye-cross-section/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--eye-cross-section.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Anatomy of the Eye.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Anatomy of the Eye">
+  <meta name="twitter:description"   content="The eye is a living camera: cornea and lens bend incoming light, the iris sets the aperture, and the retina catches the image at the fovea. Step through each structure to see what it does.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--eye-cross-section.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Anatomy of the Eye.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Anatomy of the Eye","alternateName":"vision-anatomy-basics/eye-cross-section","description":"The eye is a living camera: cornea and lens bend incoming light, the iris sets the aperture, and the retina catches the image at the fovea. Step through each structure to see what it does.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"eye anatomy, cornea, retina, fovea, cross-section","url":"https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/eye-cross-section/","image":"https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--eye-cross-section.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="vision-anatomy-basics/eye-cross-section">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Remember</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Anatomy of the Eye</h1>
+      <p class="module-subtitle">tour the optical parts that bend light onto the retina, structure by structure</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Light passes the cornea, the pupil set by the iris, and the crystalline lens before forming an image on the retina — sharpest at the fovea, absent at the optic disc.
+        </p>
+        <div class="math-block" data-tex="\text{cornea} \to \text{iris} \to \text{lens} \to \text{retina (fovea)}"></div>
+        <p class="zone-guide">
+          Step the selector through each structure. The highlighted part is named with its role, and a light ray shows how the cornea and lens converge it onto the fovea.
+        </p>
+        <enc-slider id="part" label="Structure (0 overview → 6 optic nerve)" min="0" max="6" step="1" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Eye cross-section anatomy"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Goldstein, Sensation &amp; Perception 10e §2 (The Eye)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "vision-anatomy-basics/fovea-vs-periphery",
+  "title": {
+    "en": "Fovea vs Periphery Acuity",
+    "ko": "중심와 vs 주변시 해상도"
+  },
+  "subtitle": {
+    "en": "see why only a thumbnail-sized patch of your vision is actually sharp",
+    "ko": "시야에서 엄지손톱만 한 영역만 실제로 또렷한 이유를 본다"
+  },
+  "description": {
+    "en": "Cone density and acuity peak at the fovea and fall fast, so detail is sharp only where you fixate. Move a target into the periphery to watch its pattern dissolve along the E2 acuity curve.",
+    "ko": "원추 밀도와 해상도는 중심와에서 최고이고 빠르게 떨어져, 응시하는 점에서만 또렷하다. 표적을 주변시로 옮기면 세밀한 무늬가 무너진다. E2 감쇠 법칙의 해상도 곡선 그대로다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "vision-anatomy-basics",
+  "layout": "A",
+  "prerequisites": [
+    "vision-anatomy-basics/eye-cross-section"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Wandell, Foundations of Vision",
+      "section": "§3 (Sampling)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "vision-and-perception"
+  ],
+  "seo_keywords": [
+    "fovea",
+    "peripheral vision",
+    "visual acuity",
+    "eccentricity"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

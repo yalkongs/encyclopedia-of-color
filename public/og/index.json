@@ -370,6 +370,31 @@
     "square": "og/total-internal-reflection--snells-window.sq.png"
   },
   {
+    "id": "vision-anatomy-basics/blind-spot-finder",
+    "og": "og/vision-anatomy-basics--blind-spot-finder.png",
+    "square": "og/vision-anatomy-basics--blind-spot-finder.sq.png"
+  },
+  {
+    "id": "vision-anatomy-basics/eye-cross-section",
+    "og": "og/vision-anatomy-basics--eye-cross-section.png",
+    "square": "og/vision-anatomy-basics--eye-cross-section.sq.png"
+  },
+  {
+    "id": "vision-anatomy-basics/fovea-vs-periphery",
+    "og": "og/vision-anatomy-basics--fovea-vs-periphery.png",
+    "square": "og/vision-anatomy-basics--fovea-vs-periphery.sq.png"
+  },
+  {
+    "id": "vision-anatomy-basics/visual-field-test",
+    "og": "og/vision-anatomy-basics--visual-field-test.png",
+    "square": "og/vision-anatomy-basics--visual-field-test.sq.png"
+  },
+  {
+    "id": "vision-anatomy-basics/visual-pathway-tour",
+    "og": "og/vision-anatomy-basics--visual-pathway-tour.png",
+    "square": "og/vision-anatomy-basics--visual-pathway-tour.sq.png"
+  },
+  {
     "id": "wave-fundamentals/beat-frequency",
     "og": "og/wave-fundamentals--beat-frequency.png",
     "square": "og/wave-fundamentals--beat-frequency.sq.png"

@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "vision-anatomy-basics/visual-pathway-tour",
+  "title": {
+    "en": "The Visual Pathway: Eye to V1",
+    "ko": "시각 경로: 눈에서 V1까지"
+  },
+  "subtitle": {
+    "en": "follow signals from each retina through the optic chiasm to the visual cortex",
+    "ko": "각 망막의 신호가 시신경 교차를 지나 시각 피질에 이르는 길을 따라간다"
+  },
+  "description": {
+    "en": "At the optic chiasm the nasal half of each retina crosses, so the left half of the world reaches the right brain and vice versa. Toggle the stimulus side to see which fibres cross.",
+    "ko": "시신경 교차에서 각 망막의 코쪽 절반이 건너가므로, 두 눈이 본 세상의 왼쪽 절반은 우뇌로, 오른쪽 절반은 좌뇌로 모인다. 자극 위치를 바꿔 어느 망막 섬유가 교차하고 어느 피질이 켜지는지 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "vision-anatomy-basics",
+  "layout": "A",
+  "prerequisites": [
+    "vision-anatomy-basics/eye-cross-section"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hubel, Eye, Brain, and Vision",
+      "section": "§3 (Pathways)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "vision-and-perception"
+  ],
+  "seo_keywords": [
+    "visual pathway",
+    "optic chiasm",
+    "LGN",
+    "V1",
+    "hemifield"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

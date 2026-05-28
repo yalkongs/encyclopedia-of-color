@@ -1,0 +1,45 @@
+{
+  "schema_version": "v2",
+  "id": "vision-anatomy-basics/blind-spot-finder",
+  "title": {
+    "en": "Find Your Blind Spot",
+    "ko": "맹점 찾기"
+  },
+  "subtitle": {
+    "en": "place a target where the optic nerve leaves the retina and watch it vanish",
+    "ko": "시신경이 망막을 떠나는 자리에 표적을 놓아 사라지게 한다"
+  },
+  "description": {
+    "en": "Where the optic nerve exits there are no photoreceptors, so each eye has a blind patch. Slide a target to about 15° from the fixation cross and it drops onto the optic disc and vanishes.",
+    "ko": "시신경이 빠져나가는 자리에는 광수용체가 없어 각 눈에 작은 맹점이 있다. 표적을 응시점 십자에서 약 15°까지 옮기면 시신경 원판에 떨어져 사라진다. 뇌가 조용히 그 빈자리를 메운다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 2,
+  "category": "vision-anatomy-basics",
+  "layout": "A",
+  "prerequisites": [
+    "vision-anatomy-basics/eye-cross-section"
+  ],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Goldstein, Sensation & Perception 10e",
+      "section": "§2.4 (Blind Spot)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "vision-and-perception"
+  ],
+  "seo_keywords": [
+    "blind spot",
+    "optic disc",
+    "fixation",
+    "filling-in"
+  ],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

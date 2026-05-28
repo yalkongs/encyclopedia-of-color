@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Fovea vs Periphery Acuity — see why only a thumbnail-sized patch of y…</title>
+  <meta name="description" content="Cone density and acuity peak at the fovea and fall fast, so detail is sharp only where you fixate. Move a target into the periphery to watch its pattern dissolve along the E2 acuity curve.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/fovea-vs-periphery/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Fovea vs Periphery Acuity">
+  <meta property="og:description"    content="Cone density and acuity peak at the fovea and fall fast, so detail is sharp only where you fixate. Move a target into the periphery to watch its pattern dissolve along the E2 acuity curve.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/fovea-vs-periphery/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--fovea-vs-periphery.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Fovea vs Periphery Acuity.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Fovea vs Periphery Acuity">
+  <meta name="twitter:description"   content="Cone density and acuity peak at the fovea and fall fast, so detail is sharp only where you fixate. Move a target into the periphery to watch its pattern dissolve along the E2 acuity curve.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--fovea-vs-periphery.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Fovea vs Periphery Acuity.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Fovea vs Periphery Acuity","alternateName":"vision-anatomy-basics/fovea-vs-periphery","description":"Cone density and acuity peak at the fovea and fall fast, so detail is sharp only where you fixate. Move a target into the periphery to watch its pattern dissolve along the E2 acuity curve.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"fovea, peripheral vision, visual acuity, eccentricity","url":"https://encyclopedia-of-color.vercel.app/modules/vision-anatomy-basics/fovea-vs-periphery/","image":"https://encyclopedia-of-color.vercel.app/og/vision-anatomy-basics--fovea-vs-periphery.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="vision-anatomy-basics/fovea-vs-periphery">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Fovea vs Periphery Acuity</h1>
+      <p class="module-subtitle">see why only a thumbnail-sized patch of your vision is actually sharp</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Cones crowd the fovea and thin out toward the edge, so resolvable detail collapses with eccentricity. Peripheral vision is great for motion, poor for fine pattern.
+        </p>
+        <div class="math-block" data-tex="\text{acuity}(E)=\dfrac{E_2}{E_2+E},\qquad E_2\approx2.5^{\circ}"></div>
+        <p class="zone-guide">
+          A row of gratings sits at growing eccentricity from the fixation cross. Set the pattern's fineness and the highlighted eccentricity; watch peripheral patches wash out as the acuity curve falls.
+        </p>
+        <enc-slider id="ecc" label="Highlighted eccentricity (°)" min="0" max="30" step="0.5" value="12" unit="°"></enc-slider>
+        <enc-slider id="freq" label="Pattern fineness" min="2" max="16" step="1" value="8"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Fovea vs periphery acuity"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wandell, Foundations of Vision §3 (Sampling)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

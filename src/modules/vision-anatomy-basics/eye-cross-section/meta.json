@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "vision-anatomy-basics/eye-cross-section",
+  "title": {
+    "en": "Anatomy of the Eye",
+    "ko": "눈의 단면 해부"
+  },
+  "subtitle": {
+    "en": "tour the optical parts that bend light onto the retina, structure by structure",
+    "ko": "빛을 망막에 모으는 광학 구조를 하나씩 둘러본다"
+  },
+  "description": {
+    "en": "The eye is a living camera: cornea and lens bend incoming light, the iris sets the aperture, and the retina catches the image at the fovea. Step through each structure to see what it does.",
+    "ko": "눈은 살아 있는 카메라다. 각막과 수정체가 들어오는 빛을 꺾고, 홍채가 조리개를 정하며, 망막이 중심와에서 상을 받는다. 각 구조를 차례로 짚어 역할과 빛이 모이는 위치를 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 2,
+  "category": "vision-anatomy-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [
+    "vision-anatomy-basics/fovea-vs-periphery"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Goldstein, Sensation & Perception 10e",
+      "section": "§2 (The Eye)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "vision-and-perception"
+  ],
+  "seo_keywords": [
+    "eye anatomy",
+    "cornea",
+    "retina",
+    "fovea",
+    "cross-section"
+  ],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "vision-anatomy-basics/visual-field-test",
+  "title": {
+    "en": "Mapping the Visual Field",
+    "ko": "시야 지도 그리기"
+  },
+  "subtitle": {
+    "en": "trace how far each eye sees in every direction and where its blind spot hides",
+    "ko": "각 눈이 방향마다 얼마나 멀리 보는지와 맹점이 숨은 자리를 그린다"
+  },
+  "description": {
+    "en": "One eye sees about 100° toward the temple but only 60° toward the nose, with a blind spot off-centre. Sweep a stimulus around the field to trace the boundary that perimetry measures.",
+    "ko": "한쪽 눈은 관자놀이 쪽으로 약 100°, 코 쪽으로는 60°만 보며, 중심에서 약간 벗어난 곳에 맹점이 있다. 시표를 시야 둘레로 돌려 시야검사가 재는 정상 경계를 그리고 시야 밖으로 벗어나는 지점을 찾는다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 2,
+  "category": "vision-anatomy-basics",
+  "layout": "A",
+  "prerequisites": [
+    "vision-anatomy-basics/blind-spot-finder"
+  ],
+  "leads_to": [
+    "vision-anatomy-basics/visual-pathway-tour"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Goldstein, Sensation & Perception 10e",
+      "section": "§2.5 (Visual Field)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "vision-and-perception"
+  ],
+  "seo_keywords": [
+    "visual field",
+    "perimetry",
+    "peripheral vision",
+    "blind spot"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}
