@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "macadam-jnd/jnd-ciede2000",
+  "title": {
+    "en": "CIEDE2000 Weighting",
+    "ko": "CIEDE2000 가중치"
+  },
+  "subtitle": {
+    "en": "slide a test colour in L*a*b* and watch ΔE2000's weights bend the distance away from plain ΔE76",
+    "ko": "L*a*b*에서 시험 색을 움직여 ΔE2000의 가중치가 단순 ΔE76에서 거리를 휘게 하는 것을 본다"
+  },
+  "description": {
+    "en": "Equal steps in L*a*b* are not equally visible, so CIEDE2000 reweights lightness, chroma, and hue. Slide a test colour and compare plain ΔE76 with ΔE2000 and its SL, SC, SH terms.",
+    "ko": "L*a*b*에서 같은 거리가 똑같이 보이지는 않으므로 CIEDE2000은 명도·채도·색상을 다시 가중한다. 시험 색을 움직여 단순 ΔE76과 ΔE2000, 그 SL·SC·SH 항을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "macadam-jnd",
+  "layout": "A",
+  "prerequisites": ["cones-sensitivity/lms-spectra"],
+  "leads_to": [],
+  "see_also": ["macadam-jnd/macadam-ellipses"],
+  "textbook_refs": [
+    { "source": "CIE 224:2017", "section": "CIEDE2000" },
+    { "source": "Sharma, Wu & Dalal 2005, Color Res. Appl.", "section": "30(1)" }
+  ],
+  "standards": ["CIE 224:2017"],
+  "interaction_count": 3,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["CIEDE2000", "delta E", "color difference", "Lab"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

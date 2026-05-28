@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "nonlinear-visual-shifts/shift-abney",
+  "title": {
+    "en": "The Abney Effect",
+    "ko": "압니 효과"
+  },
+  "subtitle": {
+    "en": "slide white into a spectral hue and watch its perceived colour drift even as the dominant wavelength holds",
+    "ko": "스펙트럼 색에 흰색을 더해, 주파장은 그대로인데 지각 색이 표류하는 것을 본다"
+  },
+  "description": {
+    "en": "Adding white to a pure colour shifts its apparent hue, so lines of constant perceived hue curve rather than running straight from white. Slide the purity and dominant wavelength to trace the bend.",
+    "ko": "순색에 흰색을 더하면 보이는 색상이 이동하므로, 지각 색상이 일정한 선은 흰색에서 곧게 뻗지 않고 휜다. 순도와 주파장을 움직여 그 휨을 따라간다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "nonlinear-visual-shifts",
+  "layout": "A",
+  "prerequisites": ["nonlinear-visual-shifts/shift-bezold"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5.13 (Abney Effect)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Abney effect", "hue shift", "purity", "desaturation"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

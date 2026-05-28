@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The 25 MacAdam Ellipses — slide the magnification and watch 25 just-n…</title>
+  <meta name="description" content="MacAdam measured how far a colour must move before it looks different, getting an ellipse at each point — tiny in blue, large in green. Slide the magnification to see all 25 at once.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/macadam-ellipses/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The 25 MacAdam Ellipses">
+  <meta property="og:description"    content="MacAdam measured how far a colour must move before it looks different, getting an ellipse at each point — tiny in blue, large in green. Slide the magnification to see all 25 at once.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/macadam-ellipses/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/macadam-jnd--macadam-ellipses.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The 25 MacAdam Ellipses.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The 25 MacAdam Ellipses">
+  <meta name="twitter:description"   content="MacAdam measured how far a colour must move before it looks different, getting an ellipse at each point — tiny in blue, large in green. Slide the magnification to see all 25 at once.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/macadam-jnd--macadam-ellipses.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The 25 MacAdam Ellipses.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The 25 MacAdam Ellipses","alternateName":"macadam-jnd/macadam-ellipses","description":"MacAdam measured how far a colour must move before it looks different, getting an ellipse at each point — tiny in blue, large in green. Slide the magnification to see all 25 at once.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"MacAdam ellipses, JND, chromaticity, color discrimination","url":"https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/macadam-ellipses/","image":"https://encyclopedia-of-color.vercel.app/og/macadam-jnd--macadam-ellipses.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="macadam-jnd/macadam-ellipses">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The 25 MacAdam Ellipses</h1>
+      <p class="module-subtitle">slide the magnification and watch 25 just-noticeable-difference ellipses swell across the chromaticity chart</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Around any colour there is a region the eye cannot tell apart from it. Plotted on the CIE diagram these regions are ellipses, and their size and tilt vary dramatically with position.
+        </p>
+        <div class="math-block" data-tex="\text{1 JND} = \text{ellipse } (a, b, \theta) \ \text{at } (x, y)"></div>
+        <p class="zone-guide">
+          The real ellipses are far too small to see, so slide the magnification to inflate them. Notice the tiny tight ellipses in the blue corner and the sprawling ones in green — colour space is not uniform.
+        </p>
+        <enc-slider id="mag" label="Magnification" min="1" max="20" step="1" value="10" unit="×"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="MacAdam ellipses on the CIE diagram"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="MacAdam 1942, JOSA 32(5) · Wyszecki &amp; Stiles Table 2(5.4.1)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

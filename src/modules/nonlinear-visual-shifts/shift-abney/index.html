@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Abney Effect — slide white into a spectral hue and watch its perc…</title>
+  <meta name="description" content="Adding white to a pure colour shifts its apparent hue, so lines of constant perceived hue curve rather than running straight from white. Slide the purity and dominant wavelength to trace the bend.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-abney/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Abney Effect">
+  <meta property="og:description"    content="Adding white to a pure colour shifts its apparent hue, so lines of constant perceived hue curve rather than running straight from white. Slide the purity and dominant wavelength to trace the bend.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-abney/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-abney.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Abney Effect.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Abney Effect">
+  <meta name="twitter:description"   content="Adding white to a pure colour shifts its apparent hue, so lines of constant perceived hue curve rather than running straight from white. Slide the purity and dominant wavelength to trace the bend.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-abney.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Abney Effect.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Abney Effect","alternateName":"nonlinear-visual-shifts/shift-abney","description":"Adding white to a pure colour shifts its apparent hue, so lines of constant perceived hue curve rather than running straight from white. Slide the purity and dominant wavelength to trace the bend.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Abney effect, hue shift, purity, desaturation","url":"https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-abney/","image":"https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-abney.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="nonlinear-visual-shifts/shift-abney">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Abney Effect</h1>
+      <p class="module-subtitle">slide white into a spectral hue and watch its perceived colour drift even as the dominant wavelength holds</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Diluting a colour with white keeps its dominant wavelength fixed, yet its apparent hue shifts. So lines of constant perceived hue bow away from the straight purity lines.
+        </p>
+        <div class="math-block" data-tex="\text{dominant }\lambda = \text{const} \;\nRightarrow\; \text{hue} = \text{const}"></div>
+        <p class="zone-guide">
+          The straight line is constant dominant wavelength as white is mixed in; the curved line is constant perceived hue. Slide purity to move the swatch along the straight path and watch its hue leave the curve.
+        </p>
+        <enc-slider id="lambda" label="Dominant wavelength (nm)" min="460" max="620" step="1" value="490" unit="nm"></enc-slider>
+        <enc-slider id="purity" label="Purity" min="0" max="100" step="1" value="70" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Abney effect on the CIE diagram"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki &amp; Stiles §5.13"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

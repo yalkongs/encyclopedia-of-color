@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "nonlinear-visual-shifts/shift-hk",
+  "title": {
+    "en": "Helmholtz-Kohlrausch Effect",
+    "ko": "헬름홀츠-콜라우슈 효과"
+  },
+  "subtitle": {
+    "en": "slide the saturation and watch the colour read brighter than a grey of exactly the same luminance",
+    "ko": "채도를 움직여 색이 정확히 같은 휘도의 회색보다 밝게 읽히는 것을 본다"
+  },
+  "description": {
+    "en": "A saturated colour looks brighter than a grey of the same luminance — brightness is not just luminance. Slide the saturation and watch the computed H-K boost climb while both patches stay matched.",
+    "ko": "채도 높은 색은 같은 휘도의 회색보다 밝아 보인다 — 밝기는 휘도만이 아니다. 채도를 움직이면 두 패치의 휘도가 같은 채로 계산된 H-K 부스트가 오르는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "nonlinear-visual-shifts",
+  "layout": "A",
+  "prerequisites": ["planckian-radiation/photopic-scotopic"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Fairchild, Color Appearance Models 3e", "section": "§7 (Helmholtz-Kohlrausch)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Helmholtz-Kohlrausch", "brightness", "luminance", "chroma"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

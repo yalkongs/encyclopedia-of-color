@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "nonlinear-visual-shifts/shift-bezold",
+  "title": {
+    "en": "Bezold-Brücke Shift",
+    "ko": "베졸트-브뤼케 이동"
+  },
+  "subtitle": {
+    "en": "slide a single wavelength brighter and watch its hue drift — except at the three invariant points",
+    "ko": "한 파장을 밝게 움직여 색상이 표류하는 것을 본다 — 세 불변점만 빼고"
+  },
+  "description": {
+    "en": "Raising a light's intensity shifts its hue: most colours drift toward yellow or blue. Slide the wavelength and intensity and watch the shift vanish at the invariant points near 478, 503, and 578 nm.",
+    "ko": "빛의 세기를 높이면 색상이 이동한다. 대부분의 색은 노랑이나 파랑으로 표류한다. 파장과 세기를 움직이면 478·503·578 nm 부근 불변점에서 이동이 사라지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "nonlinear-visual-shifts",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["nonlinear-visual-shifts/shift-abney"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5.13 (Bezold-Brücke)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Bezold-Brücke", "hue shift", "intensity", "invariant hues"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

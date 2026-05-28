@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "macadam-jnd/macadam-ellipses",
+  "title": {
+    "en": "The 25 MacAdam Ellipses",
+    "ko": "맥애덤 25 타원"
+  },
+  "subtitle": {
+    "en": "slide the magnification and watch 25 just-noticeable-difference ellipses swell across the chromaticity chart",
+    "ko": "배율을 움직여 25개의 가까스로 구별되는 차이 타원이 색도 도표 위로 부푸는 것을 본다"
+  },
+  "description": {
+    "en": "MacAdam measured how far a colour must move before it looks different, getting an ellipse at each point — tiny in blue, large in green. Slide the magnification to see all 25 at once.",
+    "ko": "맥애덤은 색이 달라 보이려면 얼마나 움직여야 하는지 측정해 각 지점에서 타원을 얻었다 — 파랑에서는 작고 초록에서는 크다. 배율을 움직여 25개를 한꺼번에 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "macadam-jnd",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["macadam-jnd/jnd-tensors"],
+  "see_also": ["macadam-jnd/jnd-ciede2000"],
+  "textbook_refs": [
+    { "source": "MacAdam 1942, JOSA", "section": "32(5)" },
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "Table 2(5.4.1)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["MacAdam ellipses", "JND", "chromaticity", "color discrimination"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

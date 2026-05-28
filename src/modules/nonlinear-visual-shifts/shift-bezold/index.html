@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Bezold-Brücke Shift — slide a single wavelength brighter and watch it…</title>
+  <meta name="description" content="Raising a light's intensity shifts its hue: most colours drift toward yellow or blue. Slide the wavelength and intensity and watch the shift vanish at the invariant points near 478, 503, and 578 nm.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-bezold/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Bezold-Brücke Shift">
+  <meta property="og:description"    content="Raising a light's intensity shifts its hue: most colours drift toward yellow or blue. Slide the wavelength and intensity and watch the shift vanish at the invariant points near 478, 503, and 578 nm.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-bezold/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-bezold.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Bezold-Brücke Shift.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Bezold-Brücke Shift">
+  <meta name="twitter:description"   content="Raising a light's intensity shifts its hue: most colours drift toward yellow or blue. Slide the wavelength and intensity and watch the shift vanish at the invariant points near 478, 503, and 578 nm.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-bezold.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Bezold-Brücke Shift.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Bezold-Brücke Shift","alternateName":"nonlinear-visual-shifts/shift-bezold","description":"Raising a light's intensity shifts its hue: most colours drift toward yellow or blue. Slide the wavelength and intensity and watch the shift vanish at the invariant points near 478, 503, and 578 nm.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Bezold-Brücke, hue shift, intensity, invariant hues","url":"https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-bezold/","image":"https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-bezold.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="nonlinear-visual-shifts/shift-bezold">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Bezold-Brücke Shift</h1>
+      <p class="module-subtitle">slide a single wavelength brighter and watch its hue drift — except at the three invariant points</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Hue is not fixed by wavelength alone. As a monochromatic light grows brighter its hue shifts toward yellow or blue — but three special wavelengths hold their hue at any intensity.
+        </p>
+        <div class="math-block" data-tex="\Delta\text{hue} = f(\lambda)\cdot I,\qquad f(478)=f(503)=f(578)=0"></div>
+        <p class="zone-guide">
+          The left patch is a dim wavelength, the right the same wavelength turned up. Slide the wavelength: between the marked invariants the bright patch drifts in hue; park it on 478, 503, or 578 nm and the drift disappears.
+        </p>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="430" max="650" step="1" value="530" unit="nm"></enc-slider>
+        <enc-slider id="intensity" label="Intensity boost" min="0" max="100" step="1" value="80" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Bezold-Brücke hue shift"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki &amp; Stiles §5.13 · Purdy 1931"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

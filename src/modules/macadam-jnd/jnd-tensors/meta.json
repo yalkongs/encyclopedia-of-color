@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "macadam-jnd/jnd-tensors",
+  "title": {
+    "en": "The JND as a Tensor",
+    "ko": "텐서로서의 JND"
+  },
+  "subtitle": {
+    "en": "slide across the colour centres and watch the discrimination ellipse stretch and rotate away from a circle",
+    "ko": "색 중심들을 가로질러 움직여 구별 타원이 원에서 늘어나고 회전하는 것을 본다"
+  },
+  "description": {
+    "en": "At each colour the threshold is not a circle but an ellipse — a little metric tensor describing how distance is measured locally. Slide across the centres and watch its axes and tilt change.",
+    "ko": "각 색에서 역치는 원이 아니라 타원이다 — 거리가 국소적으로 어떻게 측정되는지를 나타내는 작은 계량 텐서다. 중심들을 가로질러 움직이며 축과 기울기가 변하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 2,
+  "category": "macadam-jnd",
+  "layout": "A",
+  "prerequisites": ["macadam-jnd/macadam-ellipses"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "MacAdam 1942, JOSA", "section": "32(5)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["JND", "metric tensor", "discrimination ellipse", "line element"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

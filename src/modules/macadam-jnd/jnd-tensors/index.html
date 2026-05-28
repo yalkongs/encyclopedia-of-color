@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The JND as a Tensor — slide across the colour centres and watch the d…</title>
+  <meta name="description" content="At each colour the threshold is not a circle but an ellipse — a little metric tensor describing how distance is measured locally. Slide across the centres and watch its axes and tilt change.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/jnd-tensors/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The JND as a Tensor">
+  <meta property="og:description"    content="At each colour the threshold is not a circle but an ellipse — a little metric tensor describing how distance is measured locally. Slide across the centres and watch its axes and tilt change.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/jnd-tensors/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/macadam-jnd--jnd-tensors.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The JND as a Tensor.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The JND as a Tensor">
+  <meta name="twitter:description"   content="At each colour the threshold is not a circle but an ellipse — a little metric tensor describing how distance is measured locally. Slide across the centres and watch its axes and tilt change.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/macadam-jnd--jnd-tensors.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The JND as a Tensor.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The JND as a Tensor","alternateName":"macadam-jnd/jnd-tensors","description":"At each colour the threshold is not a circle but an ellipse — a little metric tensor describing how distance is measured locally. Slide across the centres and watch its axes and tilt change.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"JND, metric tensor, discrimination ellipse, line element","url":"https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/jnd-tensors/","image":"https://encyclopedia-of-color.vercel.app/og/macadam-jnd--jnd-tensors.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="macadam-jnd/jnd-tensors">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The JND as a Tensor</h1>
+      <p class="module-subtitle">slide across the colour centres and watch the discrimination ellipse stretch and rotate away from a circle</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A uniform colour space would make every threshold a circle. MacAdam's data make it an ellipse, encoding a position-dependent metric — distance is measured differently in every direction.
+        </p>
+        <div class="math-block" data-tex="ds^2 = g_{11}dx^2 + 2g_{12}\,dx\,dy + g_{22}dy^2"></div>
+        <p class="zone-guide">
+          Slide through the 25 colour centres. The solid ellipse is the measured threshold; the dashed circle is what a uniform space would predict. Read the semi-axes and tilt — the ellipse rarely matches the circle.
+        </p>
+        <enc-slider id="idx" label="Colour centre" min="0" max="24" step="1" value="3"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="JND tensor ellipse"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="MacAdam 1942, JOSA 32(5)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

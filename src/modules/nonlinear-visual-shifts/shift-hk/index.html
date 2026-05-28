@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Helmholtz-Kohlrausch Effect — slide the saturation and watch the colo…</title>
+  <meta name="description" content="A saturated colour looks brighter than a grey of the same luminance — brightness is not just luminance. Slide the saturation and watch the computed H-K boost climb while both patches stay matched.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-hk/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Helmholtz-Kohlrausch Effect">
+  <meta property="og:description"    content="A saturated colour looks brighter than a grey of the same luminance — brightness is not just luminance. Slide the saturation and watch the computed H-K boost climb while both patches stay matched.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-hk/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-hk.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Helmholtz-Kohlrausch Effect.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Helmholtz-Kohlrausch Effect">
+  <meta name="twitter:description"   content="A saturated colour looks brighter than a grey of the same luminance — brightness is not just luminance. Slide the saturation and watch the computed H-K boost climb while both patches stay matched.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-hk.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Helmholtz-Kohlrausch Effect.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Helmholtz-Kohlrausch Effect","alternateName":"nonlinear-visual-shifts/shift-hk","description":"A saturated colour looks brighter than a grey of the same luminance — brightness is not just luminance. Slide the saturation and watch the computed H-K boost climb while both patches stay matched.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Helmholtz-Kohlrausch, brightness, luminance, chroma","url":"https://encyclopedia-of-color.vercel.app/modules/nonlinear-visual-shifts/shift-hk/","image":"https://encyclopedia-of-color.vercel.app/og/nonlinear-visual-shifts--shift-hk.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="nonlinear-visual-shifts/shift-hk">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Helmholtz-Kohlrausch Effect</h1>
+      <p class="module-subtitle">slide the saturation and watch the colour read brighter than a grey of exactly the same luminance</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Perceived brightness rises with colourfulness, not luminance alone. A vivid patch looks brighter than a grey that reflects exactly as much light.
+        </p>
+        <div class="math-block" data-tex="B = Y\,\big(1 + k\cdot \text{chroma}\big)"></div>
+        <p class="zone-guide">
+          The two patches carry the identical luminance — confirm it on the meter. Slide the saturation: the colour pulls ahead in apparent brightness, the boost the bar tracks, even though the pixels never change their luminance.
+        </p>
+        <enc-slider id="hue" label="Hue" min="0" max="360" step="1" value="240" unit="°"></enc-slider>
+        <enc-slider id="sat" label="Saturation" min="0" max="100" step="1" value="80" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Helmholtz-Kohlrausch effect"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fairchild, Color Appearance Models 3e §7"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

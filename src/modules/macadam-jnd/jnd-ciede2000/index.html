@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CIEDE2000 Weighting — slide a test colour in L*a*b* and watch ΔE2000'…</title>
+  <meta name="description" content="Equal steps in L*a*b* are not equally visible, so CIEDE2000 reweights lightness, chroma, and hue. Slide a test colour and compare plain ΔE76 with ΔE2000 and its SL, SC, SH terms.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/jnd-ciede2000/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CIEDE2000 Weighting">
+  <meta property="og:description"    content="Equal steps in L*a*b* are not equally visible, so CIEDE2000 reweights lightness, chroma, and hue. Slide a test colour and compare plain ΔE76 with ΔE2000 and its SL, SC, SH terms.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/jnd-ciede2000/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/macadam-jnd--jnd-ciede2000.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CIEDE2000 Weighting.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CIEDE2000 Weighting">
+  <meta name="twitter:description"   content="Equal steps in L*a*b* are not equally visible, so CIEDE2000 reweights lightness, chroma, and hue. Slide a test colour and compare plain ΔE76 with ΔE2000 and its SL, SC, SH terms.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/macadam-jnd--jnd-ciede2000.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CIEDE2000 Weighting.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CIEDE2000 Weighting","alternateName":"macadam-jnd/jnd-ciede2000","description":"Equal steps in L*a*b* are not equally visible, so CIEDE2000 reweights lightness, chroma, and hue. Slide a test colour and compare plain ΔE76 with ΔE2000 and its SL, SC, SH terms.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CIEDE2000, delta E, color difference, Lab","url":"https://encyclopedia-of-color.vercel.app/modules/macadam-jnd/jnd-ciede2000/","image":"https://encyclopedia-of-color.vercel.app/og/macadam-jnd--jnd-ciede2000.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="macadam-jnd/jnd-ciede2000">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CIEDE2000 Weighting</h1>
+      <p class="module-subtitle">slide a test colour in L*a*b* and watch ΔE2000's weights bend the distance away from plain ΔE76</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A straight distance in L*a*b* over-counts differences in saturated colours. CIEDE2000 divides each axis by a weight — S_L, S_C, S_H — plus a rotation term for blues.
+        </p>
+        <div class="math-block" data-tex="\Delta E_{00} = \sqrt{\left(\tfrac{\Delta L'}{S_L}\right)^2 + \left(\tfrac{\Delta C'}{S_C}\right)^2 + \left(\tfrac{\Delta H'}{S_H}\right)^2 + R_T\,\tfrac{\Delta C'}{S_C}\tfrac{\Delta H'}{S_H}}"></div>
+        <p class="zone-guide">
+          The reference swatch is fixed; slide the test swatch's lightness, a*, and b*. Read both differences below — out in high chroma, ΔE2000 shrinks well under the raw ΔE76 the eye would over-report.
+        </p>
+        <enc-slider id="dl" label="ΔL*" min="-40" max="40" step="0.5" value="0"></enc-slider>
+        <enc-slider id="da" label="Δa*" min="-40" max="40" step="0.5" value="12"></enc-slider>
+        <enc-slider id="db" label="Δb*" min="-40" max="40" step="0.5" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIEDE2000 weighting"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 224:2017 · Sharma, Wu &amp; Dalal 2005"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
