@@ -36,103 +36,249 @@
       <p class="tagline">A museum-grade laboratory of color science — every concept manipulated, never narrated.</p>
     </header>
 
+    <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
+    <!-- 33 modules across 12 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. Below are the 13 modules currently published — the first cohort along the <em>Light to Color</em> learning path.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>33 modules</strong> are published across 12 categories — every one an independent, embeddable simulation.
     </p>
-
     <div class="domain-cluster">
-      <h2 class="section-title">Light & Geometric Optics</h2>
-      <div class="sub">Domain 1 · light-propagation, reflection, refraction</div>
+      <h2 class="section-title">Light Basics</h2>
+      <div class="sub">Domain 1 · the building blocks of light</div>
       <div class="module-grid">
-        <a class="module-card" href="./modules/light-propagation/shadow-size/">
-          <div class="card-meta">L1 · atom</div>
-          <div class="card-title">Shadow Size vs Light Distance</div>
-          <div class="card-sub">slide the lamp toward an object and watch its shadow stretch on the wall</div>
-        </a>
-        <a class="module-card" href="./modules/light-propagation/inverse-square/">
-          <div class="card-meta">L2 · reference</div>
-          <div class="card-title">Inverse Square Law</div>
-          <div class="card-sub">slide the sensor away from the lamp and watch illuminance fall as 1/r²</div>
-        </a>
-        <a class="module-card" href="./modules/refraction-snell/snells-law/">
-          <div class="card-meta">L3 · reference</div>
-          <div class="card-title">Snell's Law Refractometer</div>
-          <div class="card-sub">drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance</div>
-        </a>
-        <a class="module-card" href="./modules/total-internal-reflection/critical-angle/">
-          <div class="card-meta">L3 · reference</div>
-          <div class="card-title">Critical Angle for Total Internal Reflection</div>
-          <div class="card-sub">tilt the laser inside glass and find the angle past which it cannot escape</div>
-        </a>
+      <a class="module-card" href="./modules/light-basics/additive-rgb-mixing/">
+        <div class="card-meta">L1 · Atom · Light Basics</div>
+        <div class="card-title">Additive RGB Mixing</div>
+        <div class="card-sub">overlap three coloured flashlights and watch the secondary colours appear</div>
+      </a>
+      <a class="module-card" href="./modules/light-basics/light-speed-finite/">
+        <div class="card-meta">L1 · Atom · Light Basics</div>
+        <div class="card-title">Light Takes Time</div>
+        <div class="card-sub">watch a pulse travel from the sun to distant planets at exactly 299,792 km/s</div>
+      </a>
+      <a class="module-card" href="./modules/light-basics/subtractive-cmy-mixing/">
+        <div class="card-meta">L1 · Atom · Light Basics</div>
+        <div class="card-title">Subtractive CMY Mixing</div>
+        <div class="card-sub">stack cyan, magenta, and yellow filters and watch each one steal a band of white</div>
+      </a>
+      <a class="module-card" href="./modules/light-basics/what-is-light/">
+        <div class="card-meta">L1 · Atom · Light Basics</div>
+        <div class="card-title">What Is Light?</div>
+        <div class="card-sub">dim the source and watch a smooth wave dissolve into discrete photon arrivals</div>
+      </a>
       </div>
     </div>
-
     <div class="domain-cluster">
-      <h2 class="section-title">Wave Optics</h2>
-      <div class="sub">Domain 1 · waves, interference, polarisation, dispersion</div>
+      <h2 class="section-title">Light Propagation</h2>
+      <div class="sub">Domain 1 · shadows, pinholes, ray geometry</div>
       <div class="module-grid">
-        <a class="module-card" href="./modules/wave-fundamentals/sine-anatomy/">
-          <div class="card-meta">L1 · atom</div>
-          <div class="card-title">Anatomy of a Sine Wave</div>
-          <div class="card-sub">drag amplitude, wavelength, and phase to reshape one curve</div>
-        </a>
-        <a class="module-card" href="./modules/wave-fundamentals/superposition-basic/">
-          <div class="card-meta">L2 · atom</div>
-          <div class="card-title">Wave Superposition</div>
-          <div class="card-sub">slide the phase difference between two sine waves and watch them add</div>
-        </a>
-        <a class="module-card" href="./modules/wave-interference/soap-bubble/">
-          <div class="card-meta">L3 · reference</div>
-          <div class="card-title">Soap Bubble Thin-Film Interference</div>
-          <div class="card-sub">sweep film thickness and watch the reflected colour cycle the rainbow</div>
-        </a>
-        <a class="module-card" href="./modules/prism-dispersion/newtons-prism/">
-          <div class="card-meta">L2 · reference</div>
-          <div class="card-title">Newton's Prism</div>
-          <div class="card-sub">send white light through a prism and watch it fan into the rainbow</div>
-        </a>
-        <a class="module-card" href="./modules/wave-polarization/malus-law/">
-          <div class="card-meta">L3 · reference</div>
-          <div class="card-title">Malus's Law</div>
-          <div class="card-sub">rotate a polariser through 360° and watch I = I₀ cos²θ</div>
-        </a>
+      <a class="module-card" href="./modules/light-propagation/shadow-size/">
+        <div class="card-meta">L1 · Atom · Light Propagation</div>
+        <div class="card-title">Shadow Size vs Light Distance</div>
+        <div class="card-sub">slide the lamp toward an object and watch its shadow stretch on the wall</div>
+      </a>
+      <a class="module-card" href="./modules/light-propagation/inverse-square/">
+        <div class="card-meta">L2 · Reference · Light Propagation</div>
+        <div class="card-title">Inverse Square Law</div>
+        <div class="card-sub">slide the sensor away from the lamp and watch illuminance fall as 1/r²</div>
+      </a>
+      <a class="module-card" href="./modules/light-propagation/umbra-penumbra/">
+        <div class="card-meta">L2 · Reference · Light Propagation</div>
+        <div class="card-title">Umbra and Penumbra</div>
+        <div class="card-sub">widen the source and watch a hard shadow grow a soft penumbral fringe</div>
+      </a>
+      <a class="module-card" href="./modules/light-propagation/huygens-fresnel/">
+        <div class="card-meta">L3 · Reference · Light Propagation</div>
+        <div class="card-title">Huygens-Fresnel Wavelets</div>
+        <div class="card-sub">narrow a slit and watch secondary wavelets fan out as a circular wavefront</div>
+      </a>
+      <a class="module-card" href="./modules/light-propagation/pinhole-camera/">
+        <div class="card-meta">L3 · Reference · Light Propagation</div>
+        <div class="card-title">Pinhole Camera</div>
+        <div class="card-sub">shrink the pinhole and trade brightness for sharpness in the inverted image</div>
+      </a>
+      <a class="module-card" href="./modules/light-propagation/fermats-principle/">
+        <div class="card-meta">L4 · Reference · Light Propagation</div>
+        <div class="card-title">Fermat's Principle of Least Time</div>
+        <div class="card-sub">drag the refraction point across the water surface and find the path light actually takes</div>
+      </a>
       </div>
     </div>
-
     <div class="domain-cluster">
-      <h2 class="section-title">Light Sources & Atmosphere</h2>
-      <div class="sub">Domain 1 · blackbody radiation, atmospheric scattering</div>
+      <h2 class="section-title">Electromagnetic Waves</h2>
+      <div class="sub">Domain 1 · E, B, Poynting, spectrum</div>
       <div class="module-grid">
-        <a class="module-card" href="./modules/planckian-radiation/filament-heating/">
-          <div class="card-meta">L2 · reference</div>
-          <div class="card-title">Heating a Tungsten Filament</div>
-          <div class="card-sub">raise a blackbody's temperature and watch its colour climb from red to white</div>
-        </a>
-        <a class="module-card" href="./modules/particle-scattering/sky-color/">
-          <div class="card-meta">L2 · headliner</div>
-          <div class="card-title">Why the Sky Is Blue</div>
-          <div class="card-sub">move the sun across the sky and watch Rayleigh scattering paint it</div>
-        </a>
-        <a class="module-card" href="./modules/particle-scattering/rayleigh-spectrum/">
-          <div class="card-meta">L3 · atom</div>
-          <div class="card-title">Rayleigh Scattering Curve</div>
-          <div class="card-sub">compare scattering at violet vs red and see why blue dominates</div>
-        </a>
+      <a class="module-card" href="./modules/em-fundamentals/em-spectrum-tour/">
+        <div class="card-meta">L1 · Atom · Em Fundamentals</div>
+        <div class="card-title">EM Spectrum Tour</div>
+        <div class="card-sub">drag a probe from radio to gamma and read what kind of radiation it picks up</div>
+      </a>
+      <a class="module-card" href="./modules/em-fundamentals/em-wave-propagation/">
+        <div class="card-meta">L2 · Reference · Em Fundamentals</div>
+        <div class="card-title">EM Wave Propagation — Right-Hand Rule</div>
+        <div class="card-sub">rotate E and B around the unit triad and watch the direction of travel rotate with them</div>
+      </a>
+      <a class="module-card" href="./modules/em-fundamentals/e-and-b-vectors/">
+        <div class="card-meta">L3 · Reference · Em Fundamentals</div>
+        <div class="card-title">E and B Vector Pair</div>
+        <div class="card-sub">rotate a propagating wave and watch E and B oscillate perpendicular to each other</div>
+      </a>
+      <a class="module-card" href="./modules/em-fundamentals/poynting-flux/">
+        <div class="card-meta">L4 · Reference · Em Fundamentals</div>
+        <div class="card-title">Poynting Vector</div>
+        <div class="card-sub">scale E and B and watch their cross product carry energy along the direction of travel</div>
+      </a>
+      <a class="module-card" href="./modules/em-fundamentals/radiation-pressure/">
+        <div class="card-meta">L4 · Reference · Em Fundamentals</div>
+        <div class="card-title">Radiation Pressure</div>
+        <div class="card-sub">shine a beam on a sail and watch its momentum push the sail forward</div>
+      </a>
       </div>
     </div>
-
     <div class="domain-cluster">
-      <h2 class="section-title">Visual Physiology</h2>
-      <div class="sub">Domain 2 · the perceiving eye</div>
+      <h2 class="section-title">Wave Fundamentals</h2>
+      <div class="sub">Domain 1 · sine, phase, beats, packets</div>
       <div class="module-grid">
-        <a class="module-card" href="./modules/color-vision-deficiency/cvd-everyday/">
-          <div class="card-meta">L1 · headliner</div>
-          <div class="card-title">Everyday Color Confusion</div>
-          <div class="card-sub">toggle dichromat views to see which colour pairs collapse</div>
-        </a>
+      <a class="module-card" href="./modules/wave-fundamentals/sine-anatomy/">
+        <div class="card-meta">L1 · Atom · Wave Fundamentals</div>
+        <div class="card-title">Anatomy of a Sine Wave</div>
+        <div class="card-sub">drag amplitude, wavelength, and phase to reshape one curve</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/transverse-vs-longitudinal/">
+        <div class="card-meta">L1 · Atom · Wave Fundamentals</div>
+        <div class="card-title">Transverse vs Longitudinal Waves</div>
+        <div class="card-sub">compare a wiggling string and a compressing spring side by side</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/phase-shifter/">
+        <div class="card-meta">L2 · Atom · Wave Fundamentals</div>
+        <div class="card-title">Phase Shifter</div>
+        <div class="card-sub">slide a wave horizontally and watch its phase rotate around the unit circle</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/superposition-basic/">
+        <div class="card-meta">L2 · Atom · Wave Fundamentals</div>
+        <div class="card-title">Wave Superposition</div>
+        <div class="card-sub">slide the phase difference between two sine waves and see them add</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/wavelength-frequency/">
+        <div class="card-meta">L2 · Atom · Wave Fundamentals</div>
+        <div class="card-title">Wavelength × Frequency = Speed</div>
+        <div class="card-sub">stretch a wave and watch its frequency drop to keep the speed constant</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/beat-frequency/">
+        <div class="card-meta">L3 · Atom · Wave Fundamentals</div>
+        <div class="card-title">Beat Frequency</div>
+        <div class="card-sub">tune two waves to nearly the same frequency and watch a slow envelope appear</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/doppler-effect/">
+        <div class="card-meta">L3 · Reference · Wave Fundamentals</div>
+        <div class="card-title">Doppler Effect</div>
+        <div class="card-sub">speed up a moving source and watch its waves compress ahead and stretch behind</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/standing-wave/">
+        <div class="card-meta">L3 · Atom · Wave Fundamentals</div>
+        <div class="card-title">Standing Wave</div>
+        <div class="card-sub">send a wave into a wall and watch the reflection lock into stationary nodes</div>
+      </a>
+      <a class="module-card" href="./modules/wave-fundamentals/wave-packet/">
+        <div class="card-meta">L4 · Reference · Wave Fundamentals</div>
+        <div class="card-title">Wave Packet — Group vs Phase Velocity</div>
+        <div class="card-sub">tune dispersion and watch the envelope and carrier travel at different speeds</div>
+      </a>
       </div>
     </div>
-
+    <div class="domain-cluster">
+      <h2 class="section-title">Refraction</h2>
+      <div class="sub">Domain 1 · Snell's law, dispersion at interfaces</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/refraction-snell/snells-law/">
+        <div class="card-meta">L3 · Reference · Refraction Snell</div>
+        <div class="card-title">Snell's Law Refractometer</div>
+        <div class="card-sub">drag the incident ray and watch n₁ sin θ₁ = n₂ sin θ₂ rebalance</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Total Internal Reflection</h2>
+      <div class="sub">Domain 1 · critical angle, fibres, evanescence</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/total-internal-reflection/critical-angle/">
+        <div class="card-meta">L3 · Reference · Total Internal Reflection</div>
+        <div class="card-title">Critical Angle for Total Internal Reflection</div>
+        <div class="card-sub">tilt the laser inside glass and find the exact angle where it can no longer escape</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Prism &amp; Dispersion</h2>
+      <div class="sub">Domain 1 · wavelength-dependent refraction</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/prism-dispersion/newtons-prism/">
+        <div class="card-meta">L2 · Reference · Prism Dispersion</div>
+        <div class="card-title">Newton's Prism</div>
+        <div class="card-sub">send white light through a glass prism and watch it fan into the rainbow</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Interference</h2>
+      <div class="sub">Domain 1 · superposition, thin films, gratings</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/wave-interference/soap-bubble/">
+        <div class="card-meta">L3 · Reference · Wave Interference</div>
+        <div class="card-title">Soap Bubble Thin-Film Interference</div>
+        <div class="card-sub">sweep film thickness and watch reflected colour cycle the structural rainbow</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Polarization</h2>
+      <div class="sub">Domain 1 · Malus, Brewster, birefringence</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/wave-polarization/malus-law/">
+        <div class="card-meta">L3 · Reference · Wave Polarization</div>
+        <div class="card-title">Malus's Law</div>
+        <div class="card-sub">rotate a polariser between crossed filters and watch I = I₀ cos²θ</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Scattering</h2>
+      <div class="sub">Domain 1 · Rayleigh, Mie, Tyndall, sky/sunset</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/particle-scattering/sky-color/">
+        <div class="card-meta">L2 · Headliner · Particle Scattering</div>
+        <div class="card-title">Why the Sky Is Blue</div>
+        <div class="card-sub">move the sun and watch Rayleigh scattering paint the sky and the sunset</div>
+      </a>
+      <a class="module-card" href="./modules/particle-scattering/rayleigh-spectrum/">
+        <div class="card-meta">L3 · Atom · Particle Scattering</div>
+        <div class="card-title">Rayleigh Scattering Curve</div>
+        <div class="card-sub">compare scattering intensity at violet vs red and see why blue dominates the sky</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Planckian Radiation</h2>
+      <div class="sub">Domain 1 · blackbody, colour temperature, photometry</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/planckian-radiation/filament-heating/">
+        <div class="card-meta">L2 · Reference · Planckian Radiation</div>
+        <div class="card-title">Heating a Tungsten Filament</div>
+        <div class="card-sub">raise a blackbody's temperature and watch its colour climb from red to white</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Color Vision Deficiency</h2>
+      <div class="sub">Domain 2 · dichromacy and anomalous trichromacy</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/color-vision-deficiency/cvd-everyday/">
+        <div class="card-meta">L1 · Headliner · Color Vision Deficiency</div>
+        <div class="card-title">Everyday Color Confusion</div>
+        <div class="card-sub">toggle dichromat views to see which colour pairs collapse</div>
+      </a>
+      </div>
+    </div>
+    <!-- AUTO-LANDING END -->
     <footer class="landing-footer">
       "An online sanctuary of color science — from the physical origin of photons to the neural mechanics of human consciousness."
     </footer>

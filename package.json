@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predev": "tsx scripts/inject-meta.ts",
-    "build": "tsx scripts/inject-meta.ts && tsc --noEmit && vite build && vite build --config vite.embed.config.ts",
+    "predev": "tsx scripts/inject-meta.ts && tsx scripts/build-landing.ts",
+    "build": "tsx scripts/inject-meta.ts && tsx scripts/build-landing.ts && tsc --noEmit && vite build && vite build --config vite.embed.config.ts",
     "build:embed": "vite build --config vite.embed.config.ts",
     "build:og": "tsx scripts/generate-og.ts",
+    "build:landing": "tsx scripts/build-landing.ts",
     "inject-meta": "tsx scripts/inject-meta.ts",
     "new-module": "tsx scripts/new-module.ts",
     "verify:og": "tsx scripts/verify-og.ts",
