@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Diffraction Grating &amp; Spectral Orders — pack more lines per millimetr…</title>
+  <meta name="description" content="Thousands of slits turn diffraction into a spectrometer: d·sinθ = mλ sends each wavelength to its own angle per order. Change line density and wavelength to watch the orders sharpen and fan out.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/light-diffraction/diffraction-grating/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Diffraction Grating &amp; Spectral Orders">
+  <meta property="og:description"    content="Thousands of slits turn diffraction into a spectrometer: d·sinθ = mλ sends each wavelength to its own angle per order. Change line density and wavelength to watch the orders sharpen and fan out.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/light-diffraction/diffraction-grating/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/light-diffraction--diffraction-grating.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Diffraction Grating &amp; Spectral Orders.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Diffraction Grating &amp; Spectral Orders">
+  <meta name="twitter:description"   content="Thousands of slits turn diffraction into a spectrometer: d·sinθ = mλ sends each wavelength to its own angle per order. Change line density and wavelength to watch the orders sharpen and fan out.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/light-diffraction--diffraction-grating.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Diffraction Grating &amp; Spectral Orders.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Diffraction Grating & Spectral Orders","alternateName":"light-diffraction/diffraction-grating","description":"Thousands of slits turn diffraction into a spectrometer: d·sinθ = mλ sends each wavelength to its own angle per order. Change line density and wavelength to watch the orders sharpen and fan out.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"diffraction grating, grating equation, spectral order, dispersion","url":"https://encyclopedia-of-color.vercel.app/modules/light-diffraction/diffraction-grating/","image":"https://encyclopedia-of-color.vercel.app/og/light-diffraction--diffraction-grating.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-diffraction/diffraction-grating">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Diffraction Grating &amp; Spectral Orders</h1>
+      <p class="module-subtitle">pack more lines per millimetre and watch the spectral orders sharpen and spread</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          With many slits, light only survives where every slit adds in phase. Those sharp principal maxima land at angles set by the grating equation.
+        </p>
+        <div class="math-block" data-tex="d\,\sin\theta_m = m\,\lambda,\qquad d=\dfrac{1}{\text{lines per mm}}"></div>
+        <p class="zone-guide">
+          Set the line density and wavelength, or switch to white light to watch each order fan into a spectrum. Higher density spreads the orders farther apart.
+        </p>
+        <enc-slider id="density" label="Grating density (lines/mm)" min="100" max="1200" step="10" value="600" unit="/mm"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="380" max="780" step="1" value="550" unit="nm"></enc-slider>
+        <enc-slider id="white" label="White light (0 mono · 1 white)" min="0" max="1" step="1" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Diffraction grating spectral orders"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §10.2.7 (Diffraction Grating)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

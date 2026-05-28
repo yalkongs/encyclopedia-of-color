@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/fresnel-zone-plate",
+  "title": {
+    "en": "Fresnel Zone Plate",
+    "ko": "프레넬 존 플레이트"
+  },
+  "subtitle": {
+    "en": "block alternate Fresnel zones and watch flat rings focus light like a lens",
+    "ko": "프레넬 존을 번갈아 가리면 평평한 고리들이 렌즈처럼 빛을 모으는 것을 본다"
+  },
+  "description": {
+    "en": "A zone plate focuses light with no curved glass: blocking every other Fresnel zone lets only in-phase wavelets reach the focus. Ring radii follow r_n = √(nλf). Tune focus, wavelength, and zone count.",
+    "ko": "존 플레이트는 휘어진 유리 없이 빛을 모은다. 프레넬 존을 하나 걸러 가리면 위상이 맞는 소파만 초점에 도달한다. 고리 반지름은 r_n = √(nλf) 를 따른다. 초점거리·파장·존 개수를 조절해 플레이트를 설계한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": ["light-diffraction/airy-disc"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10.3.1 (Zone Plate)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Fresnel zone plate", "zone plate", "focusing", "diffractive lens"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

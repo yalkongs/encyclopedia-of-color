@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/rayleigh-criterion",
+  "title": {
+    "en": "Rayleigh's Resolution Criterion",
+    "ko": "레일리 분해능 기준"
+  },
+  "subtitle": {
+    "en": "slide two star images together until their Airy discs can no longer be told apart",
+    "ko": "두 별의 에어리 디스크를 겹쳐 더는 구분되지 않는 지점을 찾는다"
+  },
+  "description": {
+    "en": "Two sources are just resolvable when one Airy disc's centre lands on the other's first dark ring, leaving a ~26% dip. Move them together and widen the aperture to see Δθ = 1.22 λ/D in action.",
+    "ko": "두 점광원은 한 에어리 디스크의 중심이 다른 디스크의 첫 암륜에 놓일 때 겨우 분해된다. 둘 사이에 약 26%의 골이 생긴다. 광원을 가까이 모으고 개구를 넓혀 분해능 한계 Δθ = 1.22 λ/D 를 직접 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": ["light-diffraction/airy-disc"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10.2.5 (Resolution)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Rayleigh criterion", "resolution", "Airy disc", "telescope"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/single-double-slit",
+  "title": {
+    "en": "Single- and Double-Slit Fraunhofer Pattern",
+    "ko": "단일·이중 슬릿 프라운호퍼 무늬"
+  },
+  "subtitle": {
+    "en": "watch the broad sinc-squared envelope modulate the fine double-slit fringes",
+    "ko": "넓은 sinc² 포락선이 가는 이중슬릿 무늬를 변조하는 모습을 본다"
+  },
+  "description": {
+    "en": "A slit's far-field pattern is a sinc² envelope; add a second slit and fine cos² fringes appear inside it. Tune width, separation, and wavelength, and switch between one and two slits.",
+    "ko": "슬릿의 원거리 무늬는 sinc² 포락선이며, 슬릿을 하나 더하면 그 안에 가는 cos² 무늬가 생긴다. 슬릿 폭·간격·파장을 조절해 포락선과 무늬의 크기가 어떻게 달라지는지 보고, 단일·이중 슬릿을 전환한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": ["light-diffraction/huygens-principle", "wave-interference/youngs-double-slit-full"],
+  "leads_to": ["light-diffraction/diffraction-grating"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10.2 (Fraunhofer Diffraction)" }],
+  "standards": [],
+  "interaction_count": 4,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["single slit", "double slit", "Fraunhofer", "sinc squared"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

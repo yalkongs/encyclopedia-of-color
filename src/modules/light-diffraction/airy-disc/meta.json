@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/airy-disc",
+  "title": {
+    "en": "The Airy Disc of a Circular Aperture",
+    "ko": "원형 개구의 에어리 디스크"
+  },
+  "subtitle": {
+    "en": "diffract light through a round hole and find the central disc and faint rings",
+    "ko": "둥근 구멍으로 회절시켜 중심 원반과 흐린 고리들을 찾는다"
+  },
+  "description": {
+    "en": "A circular aperture spreads a point of light into the Airy pattern — a bright central disc ringed by faint halos, sized by the Bessel function J₁. Tune diameter and wavelength to shrink the disc.",
+    "ko": "원형 개구는 점광원을 에어리 무늬로 퍼뜨린다. 밝은 중심 원반과 흐린 고리들이 둘러싼다. 그 크기는 베셀 함수 J₁ 을 따른다. 개구 지름과 파장을 조절해 구멍이 넓어질수록 원반이 작아지는 모습을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": ["light-diffraction/single-double-slit"],
+  "leads_to": ["light-diffraction/rayleigh-criterion"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10.2.5 (Circular Apertures)" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Airy disc", "circular aperture", "Bessel function", "diffraction"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

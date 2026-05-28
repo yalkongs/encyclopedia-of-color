@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Babinet's Complementary-Screen Principle — swap a slit for a wire of…</title>
+  <meta name="description" content="Babinet's principle: an aperture and its exact complement diffract identically except at the central beam. A thin wire scatters the same side fringes as a slit of equal width — how hairs get measured.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/light-diffraction/babinet-principle/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Babinet's Complementary-Screen Principle">
+  <meta property="og:description"    content="Babinet's principle: an aperture and its exact complement diffract identically except at the central beam. A thin wire scatters the same side fringes as a slit of equal width — how hairs get measured.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/light-diffraction/babinet-principle/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/light-diffraction--babinet-principle.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Babinet's Complementary-Screen Principle.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Babinet's Complementary-Screen Principle">
+  <meta name="twitter:description"   content="Babinet's principle: an aperture and its exact complement diffract identically except at the central beam. A thin wire scatters the same side fringes as a slit of equal width — how hairs get measured.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/light-diffraction--babinet-principle.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Babinet's Complementary-Screen Principle.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Babinet's Complementary-Screen Principle","alternateName":"light-diffraction/babinet-principle","description":"Babinet's principle: an aperture and its exact complement diffract identically except at the central beam. A thin wire scatters the same side fringes as a slit of equal width — how hairs get measured.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Babinet principle, complementary screen, wire diffraction, slit","url":"https://encyclopedia-of-color.vercel.app/modules/light-diffraction/babinet-principle/","image":"https://encyclopedia-of-color.vercel.app/og/light-diffraction--babinet-principle.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-diffraction/babinet-principle">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Babinet's Complementary-Screen Principle</h1>
+      <p class="module-subtitle">swap a slit for a wire of the same width and find the identical side fringes</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          An aperture and its complement add up to an unobstructed beam. So away from the centre their diffracted fields are equal and opposite — meaning equal intensity.
+        </p>
+        <div class="math-block" data-tex="U_{\text{slit}}+U_{\text{wire}}=U_0,\quad |U_{\text{wire}}|^2=|U_{\text{slit}}|^2\;(\theta\neq0)"></div>
+        <p class="zone-guide">
+          Set the object width and wavelength, then switch between a slit and the complementary wire. The side fringes overlap exactly; only the central beam differs.
+        </p>
+        <enc-slider id="a" label="Object width a (µm)" min="20" max="200" step="1" value="80" unit="µm"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="380" max="780" step="1" value="550" unit="nm"></enc-slider>
+        <enc-slider id="mode" label="Object (0 slit · 1 wire)" min="0" max="1" step="1" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Babinet complementary diffraction"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §10.3.3 (Babinet's Principle)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

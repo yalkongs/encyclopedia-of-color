@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/babinet-principle",
+  "title": {
+    "en": "Babinet's Complementary-Screen Principle",
+    "ko": "바비넷의 상보 스크린 원리"
+  },
+  "subtitle": {
+    "en": "swap a slit for a wire of the same width and find the identical side fringes",
+    "ko": "슬릿을 같은 폭의 가는 선으로 바꿔도 옆 무늬가 똑같음을 확인한다"
+  },
+  "description": {
+    "en": "Babinet's principle: an aperture and its exact complement diffract identically except at the central beam. A thin wire scatters the same side fringes as a slit of equal width — how hairs get measured.",
+    "ko": "바비넷 원리에 따르면 개구와 그 정확한 상보(여집합)는 중심 빔을 빼면 어디서나 똑같이 회절한다. 가는 선은 같은 폭의 슬릿과 동일한 옆 무늬를 만든다. 머리카락과 섬유를 회절로 재는 비결이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": ["light-diffraction/single-double-slit"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10.3.3 (Babinet's Principle)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Babinet principle", "complementary screen", "wire diffraction", "slit"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

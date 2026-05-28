@@ -60,6 +60,46 @@
     "square": "og/light-basics--what-is-light.sq.png"
   },
   {
+    "id": "light-diffraction/airy-disc",
+    "og": "og/light-diffraction--airy-disc.png",
+    "square": "og/light-diffraction--airy-disc.sq.png"
+  },
+  {
+    "id": "light-diffraction/babinet-principle",
+    "og": "og/light-diffraction--babinet-principle.png",
+    "square": "og/light-diffraction--babinet-principle.sq.png"
+  },
+  {
+    "id": "light-diffraction/diffraction-grating",
+    "og": "og/light-diffraction--diffraction-grating.png",
+    "square": "og/light-diffraction--diffraction-grating.sq.png"
+  },
+  {
+    "id": "light-diffraction/fresnel-zone-plate",
+    "og": "og/light-diffraction--fresnel-zone-plate.png",
+    "square": "og/light-diffraction--fresnel-zone-plate.sq.png"
+  },
+  {
+    "id": "light-diffraction/huygens-principle",
+    "og": "og/light-diffraction--huygens-principle.png",
+    "square": "og/light-diffraction--huygens-principle.sq.png"
+  },
+  {
+    "id": "light-diffraction/rayleigh-criterion",
+    "og": "og/light-diffraction--rayleigh-criterion.png",
+    "square": "og/light-diffraction--rayleigh-criterion.sq.png"
+  },
+  {
+    "id": "light-diffraction/single-double-slit",
+    "og": "og/light-diffraction--single-double-slit.png",
+    "square": "og/light-diffraction--single-double-slit.sq.png"
+  },
+  {
+    "id": "light-diffraction/sound-vs-light",
+    "og": "og/light-diffraction--sound-vs-light.png",
+    "square": "og/light-diffraction--sound-vs-light.sq.png"
+  },
+  {
     "id": "light-propagation/fermats-principle",
     "og": "og/light-propagation--fermats-principle.png",
     "square": "og/light-propagation--fermats-principle.sq.png"

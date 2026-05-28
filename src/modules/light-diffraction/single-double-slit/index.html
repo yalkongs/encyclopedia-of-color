@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Single- and Double-Slit Fraunhofer Pattern — watch the broad sinc-squ…</title>
+  <meta name="description" content="A slit's far-field pattern is a sinc² envelope; add a second slit and fine cos² fringes appear inside it. Tune width, separation, and wavelength, and switch between one and two slits.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/light-diffraction/single-double-slit/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Single- and Double-Slit Fraunhofer Pattern">
+  <meta property="og:description"    content="A slit's far-field pattern is a sinc² envelope; add a second slit and fine cos² fringes appear inside it. Tune width, separation, and wavelength, and switch between one and two slits.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/light-diffraction/single-double-slit/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/light-diffraction--single-double-slit.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Single- and Double-Slit Fraunhofer Pattern.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Single- and Double-Slit Fraunhofer Pattern">
+  <meta name="twitter:description"   content="A slit's far-field pattern is a sinc² envelope; add a second slit and fine cos² fringes appear inside it. Tune width, separation, and wavelength, and switch between one and two slits.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/light-diffraction--single-double-slit.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Single- and Double-Slit Fraunhofer Pattern.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Single- and Double-Slit Fraunhofer Pattern","alternateName":"light-diffraction/single-double-slit","description":"A slit's far-field pattern is a sinc² envelope; add a second slit and fine cos² fringes appear inside it. Tune width, separation, and wavelength, and switch between one and two slits.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"single slit, double slit, Fraunhofer, sinc squared","url":"https://encyclopedia-of-color.vercel.app/modules/light-diffraction/single-double-slit/","image":"https://encyclopedia-of-color.vercel.app/og/light-diffraction--single-double-slit.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="light-diffraction/single-double-slit">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Single- and Double-Slit Fraunhofer Pattern</h1>
+      <p class="module-subtitle">watch the broad sinc-squared envelope modulate the fine double-slit fringes</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A slit of width a gives a sinc² envelope; spacing d between two slits adds cos² fringes inside it. The envelope sets which interference orders survive.
+        </p>
+        <div class="math-block" data-tex="I=I_0\,\cos^{2}\!\beta\;\operatorname{sinc}^{2}\!\alpha,\;\; \alpha=\tfrac{\pi a\sin\theta}{\lambda},\;\beta=\tfrac{\pi d\sin\theta}{\lambda}"></div>
+        <p class="zone-guide">
+          Toggle one or two slits, then tune width a, separation d, and wavelength. The dashed line is the single-slit envelope; the solid curve is the full intensity.
+        </p>
+        <enc-slider id="mode" label="Slits (0 single · 1 double)" min="0" max="1" step="1" value="1"></enc-slider>
+        <enc-slider id="a" label="Slit width a (µm)" min="2" max="30" step="0.5" value="10" unit="µm"></enc-slider>
+        <enc-slider id="d" label="Slit separation d (µm)" min="10" max="120" step="1" value="50" unit="µm"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="380" max="780" step="1" value="550" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Single/double slit diffraction pattern"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §10.2 (Fraunhofer)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

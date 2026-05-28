@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/sound-vs-light",
+  "title": {
+    "en": "Why Sound Bends but Light Barely Does",
+    "ko": "소리는 휘고 빛은 거의 안 휘는 이유"
+  },
+  "subtitle": {
+    "en": "compare wavelength to opening size and see why diffraction is dramatic for sound",
+    "ko": "파장과 구멍 크기를 견주어 소리에서 회절이 뚜렷한 이유를 본다"
+  },
+  "description": {
+    "en": "Diffraction is strong only when the wavelength rivals the opening. Sound spans metres, so it bends around doorways; light's half-micron wave barely spreads. Sweep the wavelength-to-slit ratio.",
+    "ko": "회절은 파장이 구멍 크기에 견줄 만할 때만 강하다. 소리는 파장이 미터급이라 문틈을 돌아 휘지만, 0.5µm의 빛은 거의 퍼지지 않는다. 파장-슬릿 비를 바꿔 퍼짐각이 변하는 모습을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["light-diffraction/huygens-principle"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10 (Diffraction)" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["diffraction", "sound vs light", "wavelength", "intuition"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

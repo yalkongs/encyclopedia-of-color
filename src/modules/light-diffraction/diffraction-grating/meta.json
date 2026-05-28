@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/diffraction-grating",
+  "title": {
+    "en": "Diffraction Grating & Spectral Orders",
+    "ko": "회절 격자와 분광 차수"
+  },
+  "subtitle": {
+    "en": "pack more lines per millimetre and watch the spectral orders sharpen and spread",
+    "ko": "밀리미터당 선을 늘리며 분광 차수가 날카로워지고 벌어지는 모습을 본다"
+  },
+  "description": {
+    "en": "Thousands of slits turn diffraction into a spectrometer: d·sinθ = mλ sends each wavelength to its own angle per order. Change line density and wavelength to watch the orders sharpen and fan out.",
+    "ko": "수천 개의 슬릿은 회절을 분광기로 바꾼다. 격자 방정식 d·sinθ = mλ 가 각 파장을 차수마다 고유한 각도로 보낸다. 선 밀도와 파장을 바꿔 주극대가 날카로워지고 스펙트럼으로 퍼지는 모습을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": ["light-diffraction/single-double-slit"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10.2.7 (The Diffraction Grating)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["diffraction grating", "grating equation", "spectral order", "dispersion"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

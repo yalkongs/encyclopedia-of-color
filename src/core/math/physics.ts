@@ -142,6 +142,70 @@ export const DEG = Math.PI / 180;
 export const RAD = 180 / Math.PI;
 
 /**
+ * First-order Bessel function of the first kind J₁(x).
+ * Polynomial + asymptotic approximation, Abramowitz & Stegun 9.4.4 / 9.4.6
+ * (absolute error < 1.3e-7). Used for circular-aperture (Airy) diffraction.
+ */
+export function besselJ1(x: number): number {
+  const ax = Math.abs(x);
+  let result: number;
+  if (ax < 3) {
+    const t = x / 3;
+    const t2 = t * t;
+    result =
+      x *
+      (0.5 +
+        t2 *
+          (-0.56249985 +
+            t2 *
+              (0.21093573 +
+                t2 *
+                  (-0.03954289 +
+                    t2 * (0.00443319 + t2 * (-0.00031761 + t2 * 0.00001109))))));
+  } else {
+    const z = 3 / ax;
+    const f1 =
+      0.79788456 +
+      z *
+        (0.00000156 +
+          z *
+            (0.01659667 +
+              z *
+                (0.00017105 +
+                  z * (-0.00249511 + z * (0.00113653 + z * -0.00020033)))));
+    const theta =
+      ax -
+      2.35619449 +
+      z *
+        (0.12499612 +
+          z *
+            (0.0000565 +
+              z *
+                (-0.00637879 +
+                  z * (0.00074348 + z * (0.00079824 + z * -0.00029166)))));
+    result = (1 / Math.sqrt(ax)) * f1 * Math.cos(theta);
+    if (x < 0) result = -result;
+  }
+  return result;
+}
+
+/**
+ * Airy-pattern normalised intensity for a circular aperture:
+ *   I(u)/I₀ = [2 J₁(u)/u]²,   u = (π D / λ) sinθ.
+ * Returns 1 at u → 0. Hecht §10.2.5.
+ */
+export function airyIntensity(u: number): number {
+  if (Math.abs(u) < 1e-8) return 1;
+  const r = (2 * besselJ1(u)) / u;
+  return r * r;
+}
+
+/** Fresnel zone radius rₙ = √(n λ f) for a zone plate of focal length f. */
+export function fresnelZoneRadius(n: number, lambda: number, f: number): number {
+  return Math.sqrt(n * lambda * f);
+}
+
+/**
  * Evanescent-wave penetration depth at total internal reflection.
  * Returns d_p in the same length units as λ, where the field amplitude falls
  * to 1/e. Returns null if not in TIR regime (θ ≤ θ_c).

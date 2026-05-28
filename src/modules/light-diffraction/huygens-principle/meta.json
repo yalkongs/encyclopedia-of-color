@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "light-diffraction/huygens-principle",
+  "title": {
+    "en": "Huygens' Principle of Secondary Wavelets",
+    "ko": "호이겐스의 2차 파면 원리"
+  },
+  "subtitle": {
+    "en": "treat every point of a wavefront as a tiny source and rebuild the next wavefront",
+    "ko": "파면의 모든 점을 작은 광원으로 보고 다음 파면을 다시 세운다"
+  },
+  "description": {
+    "en": "Huygens imagined every point of a wavefront spawning a spherical wavelet whose common envelope is the next wavefront. Bend the front from flat to curved and watch the wavelets rebuild it.",
+    "ko": "호이겐스는 파면의 모든 점이 구면 소파를 내보낸다고 보았고, 그 공통 포락선이 다음 순간의 파면이 된다. 파면을 평면에서 곡면으로 바꾸며 2차 소파가 전진하는 파면을 다시 세우는 모습을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 1,
+  "category": "light-diffraction",
+  "layout": "A",
+  "prerequisites": ["light-diffraction/sound-vs-light"],
+  "leads_to": ["light-diffraction/single-double-slit"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§10.1 (Huygens-Fresnel)" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Huygens principle", "secondary wavelets", "wavefront", "envelope"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}
