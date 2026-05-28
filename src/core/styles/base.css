@@ -132,7 +132,7 @@ enc-module-shell {
   flex: 1 1 auto;
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(280px, 360px) 1fr;
+  grid-template-columns: clamp(360px, 32%, 560px) 1fr;
   grid-template-rows: 1fr;
   align-items: stretch;
 }
