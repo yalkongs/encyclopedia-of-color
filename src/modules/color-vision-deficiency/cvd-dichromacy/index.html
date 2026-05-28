@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Seeing as a Dichromat — toggle protan, deutan, or tritan and watch a…</title>
+  <meta name="description" content="A dichromat is missing one cone type, so a whole axis of colour collapses. Toggle protanopia, deuteranopia, or tritanopia and compare the full palette with what those two cones can still tell apart.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-vision-deficiency/cvd-dichromacy/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Seeing as a Dichromat">
+  <meta property="og:description"    content="A dichromat is missing one cone type, so a whole axis of colour collapses. Toggle protanopia, deuteranopia, or tritanopia and compare the full palette with what those two cones can still tell apart.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-vision-deficiency/cvd-dichromacy/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-vision-deficiency--cvd-dichromacy.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Seeing as a Dichromat.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Seeing as a Dichromat">
+  <meta name="twitter:description"   content="A dichromat is missing one cone type, so a whole axis of colour collapses. Toggle protanopia, deuteranopia, or tritanopia and compare the full palette with what those two cones can still tell apart.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-vision-deficiency--cvd-dichromacy.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Seeing as a Dichromat.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Seeing as a Dichromat","alternateName":"color-vision-deficiency/cvd-dichromacy","description":"A dichromat is missing one cone type, so a whole axis of colour collapses. Toggle protanopia, deuteranopia, or tritanopia and compare the full palette with what those two cones can still tell apart.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"dichromacy, protanopia, deuteranopia, tritanopia","url":"https://encyclopedia-of-color.vercel.app/modules/color-vision-deficiency/cvd-dichromacy/","image":"https://encyclopedia-of-color.vercel.app/og/color-vision-deficiency--cvd-dichromacy.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-vision-deficiency/cvd-dichromacy">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Seeing as a Dichromat</h1>
+      <p class="module-subtitle">toggle protan, deutan, or tritan and watch a hue wheel collapse along that dichromat's confusion axis</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          With one cone class absent, two of the three colour dimensions remain. Colours that differed only along the lost axis become indistinguishable — they fall on a confusion line.
+        </p>
+        <div class="math-block" data-tex="\text{LMS} \to \text{project onto the surviving two-cone plane}"></div>
+        <p class="zone-guide">
+          The top wheel is normal trichromatic vision. Toggle the dichromat type and watch the bottom wheel lose a whole band of distinctions — red-green for protan and deutan, blue-yellow for tritan.
+        </p>
+        <enc-toggle id="type" label="Dichromacy" options="protanopia,deuteranopia,tritanopia" labels="protan,deutan,tritan" value="deuteranopia"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Dichromat simulation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Brettel, Viénot &amp; Mollon 1997, JOSA A"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-vision-deficiency/cvd-dichromacy",
+  "title": {
+    "en": "Seeing as a Dichromat",
+    "ko": "이색각자의 시야"
+  },
+  "subtitle": {
+    "en": "toggle protan, deutan, or tritan and watch a hue wheel collapse along that dichromat's confusion axis",
+    "ko": "적·녹·청 이색각을 전환해 색상환이 그 혼동축을 따라 무너지는 것을 본다"
+  },
+  "description": {
+    "en": "A dichromat is missing one cone type, so a whole axis of colour collapses. Toggle protanopia, deuteranopia, or tritanopia and compare the full palette with what those two cones can still tell apart.",
+    "ko": "이색각자는 한 원추 종류가 없어 색의 한 축 전체가 무너진다. 적색맹·녹색맹·청색맹을 전환해 전체 팔레트와 남은 두 원추가 구별할 수 있는 색을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 2,
+  "category": "color-vision-deficiency",
+  "layout": "A",
+  "prerequisites": ["cones-sensitivity/lms-spectra"],
+  "leads_to": ["color-vision-deficiency/cvd-brettel-pipeline"],
+  "see_also": ["color-vision-deficiency/cvd-everyday"],
+  "textbook_refs": [
+    { "source": "Brettel, Viénot & Mollon 1997, JOSA A", "section": "14(10)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["dichromacy", "protanopia", "deuteranopia", "tritanopia"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

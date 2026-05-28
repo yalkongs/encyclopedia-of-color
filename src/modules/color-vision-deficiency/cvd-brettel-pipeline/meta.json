@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "color-vision-deficiency/cvd-brettel-pipeline",
+  "title": {
+    "en": "The Brettel Algorithm",
+    "ko": "Brettel 알고리즘"
+  },
+  "subtitle": {
+    "en": "slide a test colour through the pipeline and watch RGB become LMS, lose a cone, and return simulated",
+    "ko": "시험 색을 파이프라인에 흘려 RGB가 LMS가 되고 한 원추를 잃고 시뮬레이션으로 돌아오는 것을 본다"
+  },
+  "description": {
+    "en": "Dichromat simulation runs in four steps: sRGB to linear to LMS, replace the missing cone with the two-cone plane, then back to sRGB. Slide a test colour and watch each stage transform it.",
+    "ko": "이색각 시뮬레이션은 네 단계로 진행된다. sRGB→선형→LMS, 없는 원추를 두-원추 평면으로 대체, 다시 sRGB로. 시험 색을 움직여 각 단계가 색을 바꾸는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 2,
+  "category": "color-vision-deficiency",
+  "layout": "A",
+  "prerequisites": ["color-vision-deficiency/cvd-dichromacy", "cones-sensitivity/lms-spectra"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Brettel, Viénot & Mollon 1997, JOSA A", "section": "14(10)" },
+    { "source": "Viénot, Brettel & Mollon 1999, Color Res. Appl.", "section": "24(4)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["vision-and-perception"],
+  "seo_keywords": ["Brettel algorithm", "LMS projection", "dichromat simulation", "Viénot"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

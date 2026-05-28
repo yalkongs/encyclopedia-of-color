@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Anomaly &amp; Daltonization — slide the deficiency severity, then toggle…</title>
+  <meta name="description" content="Anomalous trichromacy is a partial shift, not a missing cone. Slide the severity to dim red-green contrast, then toggle Daltonization to push the lost difference into channels the observer still sees.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-vision-deficiency/cvd-anomaly/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Anomaly &amp; Daltonization">
+  <meta property="og:description"    content="Anomalous trichromacy is a partial shift, not a missing cone. Slide the severity to dim red-green contrast, then toggle Daltonization to push the lost difference into channels the observer still sees.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-vision-deficiency/cvd-anomaly/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-vision-deficiency--cvd-anomaly.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Anomaly &amp; Daltonization.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Anomaly &amp; Daltonization">
+  <meta name="twitter:description"   content="Anomalous trichromacy is a partial shift, not a missing cone. Slide the severity to dim red-green contrast, then toggle Daltonization to push the lost difference into channels the observer still sees.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-vision-deficiency--cvd-anomaly.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Anomaly &amp; Daltonization.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Anomaly & Daltonization","alternateName":"color-vision-deficiency/cvd-anomaly","description":"Anomalous trichromacy is a partial shift, not a missing cone. Slide the severity to dim red-green contrast, then toggle Daltonization to push the lost difference into channels the observer still sees.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"anomalous trichromacy, deuteranomaly, daltonization, correction","url":"https://encyclopedia-of-color.vercel.app/modules/color-vision-deficiency/cvd-anomaly/","image":"https://encyclopedia-of-color.vercel.app/og/color-vision-deficiency--cvd-anomaly.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-vision-deficiency/cvd-anomaly">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.2">D2 Vision</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Anomaly &amp; Daltonization</h1>
+      <p class="module-subtitle">slide the deficiency severity, then toggle Daltonization to push lost contrast back into view</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          In anomalous trichromacy a cone's sensitivity is shifted, not absent, so red-green contrast is weakened by degrees. Daltonization recolours an image to route that lost contrast into a visible direction.
+        </p>
+        <div class="math-block" data-tex="\text{out} = \text{img} + M\,(\text{img} - \text{sim}(\text{img}))"></div>
+        <p class="zone-guide">
+          The top row is the true palette; the bottom is a deuteranomalous observer's view. Slide the severity to fade the red-green pairs together, then toggle Daltonization and watch the bottom row regain its distinctions.
+        </p>
+        <enc-slider id="sev" label="Deficiency severity" min="0" max="100" step="1" value="80" unit="%"></enc-slider>
+        <enc-toggle id="dalt" label="Daltonization" options="off,on" labels="off,correct" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Anomalous trichromacy and daltonization"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fidaner et al. 2005 · Brettel et al. 1997"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
