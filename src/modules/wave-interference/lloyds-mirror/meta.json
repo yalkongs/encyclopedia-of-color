@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-interference/lloyds-mirror",
+  "title": {
+    "en": "Lloyd's Single-Mirror Interference",
+    "ko": "로이드 거울 간섭"
+  },
+  "subtitle": {
+    "en": "interfere a source with its own mirror image and find the tell-tale dark edge fringe",
+    "ko": "광원과 그 거울상을 간섭시켜 가장자리의 어두운 무늬를 찾는다"
+  },
+  "description": {
+    "en": "A source and its grazing-mirror image form two coherent beams; reflection flips the phase by π. The fringes are the negative of Young's — dark at the mirror edge where path difference is zero.",
+    "ko": "하나의 광원과 거울에 비친 상이 결맞은 두 빔을 이룬다. 반사파는 반파장 위상이 뒤집혀, 무늬가 영의 실험의 음화처럼 나타나고 경로차가 0인 거울 가장자리에 어두운 무늬가 생긴다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "wave-interference",
+  "layout": "A",
+  "prerequisites": ["wave-interference/youngs-double-slit-full"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§9.4.1 (Lloyd's Mirror)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Lloyd's mirror", "phase shift", "interference", "dark fringe"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

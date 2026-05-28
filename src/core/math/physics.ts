@@ -160,6 +160,59 @@ export function evanescentDecayDepth(
 }
 
 /**
+ * Fabry-Perot Airy transmittance for a lossless cavity of two mirrors with
+ * (intensity) reflectance R. δ is the round-trip phase: δ = 4π n d cosθ / λ.
+ *   T(δ) = 1 / (1 + F·sin²(δ/2)),   F = 4R/(1−R)²  (coefficient of finesse)
+ * Hecht §9.6.1.
+ */
+export function airyTransmittance(deltaRad: number, R: number): number {
+  const F = coefficientOfFinesse(R);
+  const s = Math.sin(deltaRad / 2);
+  return 1 / (1 + F * s * s);
+}
+
+/** Coefficient of finesse F = 4R/(1−R)². */
+export function coefficientOfFinesse(R: number): number {
+  const d = 1 - R;
+  return (4 * R) / (d * d);
+}
+
+/** Reflective finesse 𝓕 = π√R/(1−R): ratio of FSR to fringe FWHM. */
+export function reflectiveFinesse(R: number): number {
+  return (Math.PI * Math.sqrt(R)) / (1 - R);
+}
+
+/**
+ * General single-layer reflectance for a film of index n1, thickness d (nm),
+ * between media n0 (incidence) and n2 (substrate), at wavelength λ (nm).
+ * Uses the complex amplitude recursion at near-normal incidence:
+ *   r = (r01 + r12 e^{−2iβ}) / (1 + r01 r12 e^{−2iβ}),  β = 2π n1 d / λ
+ * Returns reflectance R = |r|² ∈ [0,1]. Hecht §9.7 (AR coatings).
+ */
+export function thinFilmReflectanceGeneral(
+  lambdaNm: number,
+  filmThicknessNm: number,
+  n0: number,
+  n1: number,
+  n2: number,
+): number {
+  const r01 = (n0 - n1) / (n0 + n1);
+  const r12 = (n1 - n2) / (n1 + n2);
+  const beta = (2 * Math.PI * n1 * filmThicknessNm) / lambdaNm;
+  const cos2b = Math.cos(2 * beta);
+  const sin2b = Math.sin(2 * beta);
+  // Numerator   r01 + r12·e^{−2iβ}
+  const numRe = r01 + r12 * cos2b;
+  const numIm = -r12 * sin2b;
+  // Denominator 1 + r01·r12·e^{−2iβ}
+  const denRe = 1 + r01 * r12 * cos2b;
+  const denIm = -r01 * r12 * sin2b;
+  const numMag2 = numRe * numRe + numIm * numIm;
+  const denMag2 = denRe * denRe + denIm * denIm;
+  return numMag2 / denMag2;
+}
+
+/**
  * Frustrated-TIR transmission: when a second medium of higher index lies
  * within an evanescent decay length of the TIR surface, some fraction of the
  * field tunnels across the gap. This is the optical analogue of quantum

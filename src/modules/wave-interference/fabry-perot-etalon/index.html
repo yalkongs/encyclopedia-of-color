@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Fabry-Perot Etalon &amp; Finesse — raise the mirror reflectance and watch…</title>
+  <meta name="description" content="Two reflective mirrors make light bounce many times, so only wavelengths fitting whole round trips pass. Raise the reflectance to sharpen the Airy peaks — the finesse behind laser cavities.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-interference/fabry-perot-etalon/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Fabry-Perot Etalon &amp; Finesse">
+  <meta property="og:description"    content="Two reflective mirrors make light bounce many times, so only wavelengths fitting whole round trips pass. Raise the reflectance to sharpen the Airy peaks — the finesse behind laser cavities.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-interference/fabry-perot-etalon/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-interference--fabry-perot-etalon.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Fabry-Perot Etalon &amp; Finesse.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Fabry-Perot Etalon &amp; Finesse">
+  <meta name="twitter:description"   content="Two reflective mirrors make light bounce many times, so only wavelengths fitting whole round trips pass. Raise the reflectance to sharpen the Airy peaks — the finesse behind laser cavities.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-interference--fabry-perot-etalon.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Fabry-Perot Etalon &amp; Finesse.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Fabry-Perot Etalon & Finesse","alternateName":"wave-interference/fabry-perot-etalon","description":"Two reflective mirrors make light bounce many times, so only wavelengths fitting whole round trips pass. Raise the reflectance to sharpen the Airy peaks — the finesse behind laser cavities.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Fabry-Perot, etalon, finesse, Airy function, FSR","url":"https://encyclopedia-of-color.vercel.app/modules/wave-interference/fabry-perot-etalon/","image":"https://encyclopedia-of-color.vercel.app/og/wave-interference--fabry-perot-etalon.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-interference/fabry-perot-etalon">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Fabry-Perot Etalon &amp; Finesse</h1>
+      <p class="module-subtitle">raise the mirror reflectance and watch broad fringes sharpen into laser-like spikes</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Multiple reflections between two mirrors transmit only at resonant phases. Higher mirror reflectance means more round trips and a sharper, taller transmission peak.
+        </p>
+        <div class="math-block" data-tex="T(\delta)=\dfrac{1}{1+F\sin^{2}(\delta/2)},\;\; \mathcal{F}=\dfrac{\pi\sqrt{R}}{1-R}"></div>
+        <p class="zone-guide">
+          Raise mirror reflectance R to sharpen the Airy peaks. Cavity spacing d sets the free spectral range; the gold readout gives the finesse and FWHM. The curve plots transmission across three orders.
+        </p>
+        <enc-slider id="R" label="Mirror reflectance R" min="0.10" max="0.98" step="0.01" value="0.70"></enc-slider>
+        <enc-slider id="d" label="Cavity spacing d (µm)" min="5" max="200" step="1" value="50" unit="µm"></enc-slider>
+        <enc-slider id="lambda" label="Centre wavelength λ (nm)" min="380" max="780" step="1" value="633" unit="nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Fabry-Perot transmission"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §9.6.3 (Fabry-Perot)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

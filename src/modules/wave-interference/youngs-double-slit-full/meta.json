@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-interference/youngs-double-slit-full",
+  "title": {
+    "en": "Young's Double-Slit Interference",
+    "ko": "영의 이중슬릿 간섭"
+  },
+  "subtitle": {
+    "en": "set slit spacing and wavelength, then read the bright-fringe spacing on the screen",
+    "ko": "슬릿 간격과 파장을 정하고 스크린의 밝은 무늬 간격을 읽는다"
+  },
+  "description": {
+    "en": "Two coherent slits send overlapping waves to a screen. Set the slit separation d, wavelength λ, and screen distance L, then watch the cos² fringe pattern and read the bright-fringe spacing Δy = λL/d.",
+    "ko": "결맞은 두 슬릿이 스크린에 겹치는 파동을 보낸다. 슬릿 간격 d, 파장 λ, 스크린 거리 L을 정하고 cos² 무늬와 밝은 무늬 간격 Δy = λL/d 를 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "wave-interference",
+  "layout": "A",
+  "prerequisites": ["wave-fundamentals/superposition-basic"],
+  "leads_to": ["light-diffraction/single-double-slit"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§9.3 (Young's Experiment)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Young double slit", "interference", "fringe spacing", "interactive"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

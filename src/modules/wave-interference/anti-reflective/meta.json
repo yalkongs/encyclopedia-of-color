@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-interference/anti-reflective",
+  "title": {
+    "en": "Quarter-Wave Anti-Reflection Coating",
+    "ko": "1/4 파장 무반사 코팅"
+  },
+  "subtitle": {
+    "en": "tune a thin film so its two reflections cancel and the lens stops glaring",
+    "ko": "박막을 조절해 두 반사파를 상쇄시켜 렌즈의 반사를 없앤다"
+  },
+  "description": {
+    "en": "A quarter-wave film makes its two surface reflections arrive half a wavelength apart and cancel. Tune coating index, thickness, and substrate to slide the reflectance dip across the visible band.",
+    "ko": "1/4 파장 박막은 두 표면에서의 반사파를 반파장 어긋나게 만들어 서로 상쇄시킨다. 코팅 굴절률·두께·기판을 조절해 반사율 골을 가시광 대역에서 이동시켜 본다. 모든 코팅 렌즈의 원리다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 1,
+  "category": "wave-interference",
+  "layout": "A",
+  "prerequisites": ["wave-interference/soap-bubble", "wave-interference/newtons-rings"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§9.7 (Anti-Reflection Coatings)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["anti-reflection", "quarter-wave", "MgF2", "coating", "interference"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

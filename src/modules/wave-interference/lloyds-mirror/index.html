@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Lloyd's Single-Mirror Interference — interfere a source with its own…</title>
+  <meta name="description" content="A source and its grazing-mirror image form two coherent beams; reflection flips the phase by π. The fringes are the negative of Young's — dark at the mirror edge where path difference is zero.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-interference/lloyds-mirror/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Lloyd's Single-Mirror Interference">
+  <meta property="og:description"    content="A source and its grazing-mirror image form two coherent beams; reflection flips the phase by π. The fringes are the negative of Young's — dark at the mirror edge where path difference is zero.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-interference/lloyds-mirror/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-interference--lloyds-mirror.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Lloyd's Single-Mirror Interference.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Lloyd's Single-Mirror Interference">
+  <meta name="twitter:description"   content="A source and its grazing-mirror image form two coherent beams; reflection flips the phase by π. The fringes are the negative of Young's — dark at the mirror edge where path difference is zero.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-interference--lloyds-mirror.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Lloyd's Single-Mirror Interference.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Lloyd's Single-Mirror Interference","alternateName":"wave-interference/lloyds-mirror","description":"A source and its grazing-mirror image form two coherent beams; reflection flips the phase by π. The fringes are the negative of Young's — dark at the mirror edge where path difference is zero.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Lloyd's mirror, phase shift, interference, dark fringe","url":"https://encyclopedia-of-color.vercel.app/modules/wave-interference/lloyds-mirror/","image":"https://encyclopedia-of-color.vercel.app/og/wave-interference--lloyds-mirror.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-interference/lloyds-mirror">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Lloyd's Single-Mirror Interference</h1>
+      <p class="module-subtitle">interfere a source with its own mirror image and find the tell-tale dark edge fringe</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A source and its mirror image form two coherent beams separated by 2h. Because reflection flips the phase by π, the fringes are the inverse of Young's — dark where the path difference is zero.
+        </p>
+        <div class="math-block" data-tex="I(y)\propto\sin^{2}\!\Bigl(\dfrac{\pi\,(2h)\,y}{\lambda L}\Bigr),\qquad \Delta y=\dfrac{\lambda L}{2h}"></div>
+        <p class="zone-guide">
+          Raise the source height h above the mirror, set the wavelength, and slide the screen distance L. Watch the virtual source S′ and the dark fringe pinned to the mirror edge.
+        </p>
+        <enc-slider id="h" label="Source height h (µm)" min="20" max="160" step="1" value="60" unit="µm"></enc-slider>
+        <enc-slider id="lambda" label="Wavelength λ (nm)" min="380" max="780" step="1" value="540" unit="nm"></enc-slider>
+        <enc-slider id="L" label="Screen distance L (cm)" min="30" max="200" step="1" value="120" unit="cm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Lloyd's mirror interference"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §9.4.1 (Lloyd's Mirror)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-interference/newtons-rings",
+  "title": {
+    "en": "Newton's Rings",
+    "ko": "뉴턴의 원무늬"
+  },
+  "subtitle": {
+    "en": "press a lens onto flat glass and read the dark-ring radii of the air wedge",
+    "ko": "렌즈를 평면 유리에 얹어 공기 쐐기가 만드는 어두운 원무늬 반지름을 읽는다"
+  },
+  "description": {
+    "en": "A plano-convex lens on flat glass traps a thin air wedge. Reflected light interferes into rings — dark at the contact, spaced r_m = √(mλR). Tune lens curvature and wavelength to watch them shift.",
+    "ko": "평볼록 렌즈를 평면 유리에 얹으면 얇은 공기 쐐기가 갇힌다. 반사광이 간섭해 동심원 무늬를 만들며, 접촉점은 어둡고 반지름은 r_m = √(mλR) 로 배열된다. 렌즈 곡률과 파장을 바꿔 무늬가 조여지거나 벌어지는 모습을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 1,
+  "category": "wave-interference",
+  "layout": "A",
+  "prerequisites": ["wave-interference/soap-bubble"],
+  "leads_to": ["wave-interference/anti-reflective"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§9.6.1 (Newton's Rings)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Newton's rings", "air wedge", "interference", "thin film"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

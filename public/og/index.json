@@ -275,9 +275,34 @@
     "square": "og/wave-fundamentals--wavelength-frequency.sq.png"
   },
   {
+    "id": "wave-interference/anti-reflective",
+    "og": "og/wave-interference--anti-reflective.png",
+    "square": "og/wave-interference--anti-reflective.sq.png"
+  },
+  {
+    "id": "wave-interference/fabry-perot-etalon",
+    "og": "og/wave-interference--fabry-perot-etalon.png",
+    "square": "og/wave-interference--fabry-perot-etalon.sq.png"
+  },
+  {
+    "id": "wave-interference/lloyds-mirror",
+    "og": "og/wave-interference--lloyds-mirror.png",
+    "square": "og/wave-interference--lloyds-mirror.sq.png"
+  },
+  {
+    "id": "wave-interference/newtons-rings",
+    "og": "og/wave-interference--newtons-rings.png",
+    "square": "og/wave-interference--newtons-rings.sq.png"
+  },
+  {
     "id": "wave-interference/soap-bubble",
     "og": "og/wave-interference--soap-bubble.png",
     "square": "og/wave-interference--soap-bubble.sq.png"
+  },
+  {
+    "id": "wave-interference/youngs-double-slit-full",
+    "og": "og/wave-interference--youngs-double-slit-full.png",
+    "square": "og/wave-interference--youngs-double-slit-full.sq.png"
   },
   {
     "id": "wave-polarization/malus-law",

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Quarter-Wave Anti-Reflection Coating — tune a thin film so its two re…</title>
+  <meta name="description" content="A quarter-wave film makes its two surface reflections arrive half a wavelength apart and cancel. Tune coating index, thickness, and substrate to slide the reflectance dip across the visible band.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wave-interference/anti-reflective/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Quarter-Wave Anti-Reflection Coating">
+  <meta property="og:description"    content="A quarter-wave film makes its two surface reflections arrive half a wavelength apart and cancel. Tune coating index, thickness, and substrate to slide the reflectance dip across the visible band.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wave-interference/anti-reflective/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wave-interference--anti-reflective.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Quarter-Wave Anti-Reflection Coating.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Quarter-Wave Anti-Reflection Coating">
+  <meta name="twitter:description"   content="A quarter-wave film makes its two surface reflections arrive half a wavelength apart and cancel. Tune coating index, thickness, and substrate to slide the reflectance dip across the visible band.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wave-interference--anti-reflective.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Quarter-Wave Anti-Reflection Coating.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Quarter-Wave Anti-Reflection Coating","alternateName":"wave-interference/anti-reflective","description":"A quarter-wave film makes its two surface reflections arrive half a wavelength apart and cancel. Tune coating index, thickness, and substrate to slide the reflectance dip across the visible band.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"anti-reflection, quarter-wave, MgF2, coating, interference","url":"https://encyclopedia-of-color.vercel.app/modules/wave-interference/anti-reflective/","image":"https://encyclopedia-of-color.vercel.app/og/wave-interference--anti-reflective.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wave-interference/anti-reflective">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.1">D1 Optics</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Quarter-Wave Anti-Reflection Coating</h1>
+      <p class="module-subtitle">tune a thin film so its two reflections cancel and the lens stops glaring</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A film a quarter-wavelength thick makes the reflection off its top arrive half a cycle behind the reflection off the substrate, so they cancel. Perfect cancellation needs n_film = √(n_air·n_sub).
+        </p>
+        <div class="math-block" data-tex="n_1 d=\tfrac{\lambda_0}{4},\qquad n_1=\sqrt{n_0\,n_2}"></div>
+        <p class="zone-guide">
+          Set the coating index, its thickness, and the substrate index. The curve is reflectance across the visible band; the dashed line is bare glass. The gold readout reports the minimum reflectance and its wavelength.
+        </p>
+        <enc-slider id="n1" label="Coating index n₁" min="1.20" max="1.70" step="0.01" value="1.23"></enc-slider>
+        <enc-slider id="d" label="Coating thickness d (nm)" min="40" max="260" step="1" value="112" unit="nm"></enc-slider>
+        <enc-slider id="n2" label="Substrate index n₂" min="1.45" max="1.90" step="0.01" value="1.52"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Anti-reflection coating reflectance"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht, Optics 5e §9.7 (AR Coatings)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

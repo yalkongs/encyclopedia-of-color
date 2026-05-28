@@ -1,0 +1,31 @@
+{
+  "schema_version": "v2",
+  "id": "wave-interference/fabry-perot-etalon",
+  "title": {
+    "en": "Fabry-Perot Etalon & Finesse",
+    "ko": "패브리-페로 에탈론과 피네스"
+  },
+  "subtitle": {
+    "en": "raise the mirror reflectance and watch broad fringes sharpen into laser-like spikes",
+    "ko": "거울 반사율을 높여 넓던 무늬가 레이저처럼 날카로운 봉우리로 좁아지는 것을 본다"
+  },
+  "description": {
+    "en": "Two reflective mirrors make light bounce many times, so only wavelengths fitting whole round trips pass. Raise the reflectance to sharpen the Airy peaks — the finesse behind laser cavities.",
+    "ko": "반사율 높은 두 거울 사이에서 빛이 여러 번 왕복하며, 왕복 정수배에 맞는 파장만 투과한다. 거울 반사율을 높여 Airy 봉우리가 날카로워지는 모습을 본다. 레이저 공동과 분광기를 떠받치는 피네스다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 1,
+  "category": "wave-interference",
+  "layout": "A",
+  "prerequisites": ["wave-interference/anti-reflective"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Hecht, Optics 5e", "section": "§9.6.3 (Fabry-Perot)" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["light-to-color"],
+  "seo_keywords": ["Fabry-Perot", "etalon", "finesse", "Airy function", "FSR"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}
