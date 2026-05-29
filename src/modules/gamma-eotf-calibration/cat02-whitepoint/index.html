@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>White-Point Adaptation (CAT02) — move a screen from D65 to D50 and a…</title>
+  <meta name="description" content="Changing a white point shifts every colour. A chromatic adaptation transform rescales cone-like responses by the destination-to-source white ratio. Compare CAT02, Bradford, and von Kries for D65/D50.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/gamma-eotf-calibration/cat02-whitepoint/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="White-Point Adaptation (CAT02)">
+  <meta property="og:description"    content="Changing a white point shifts every colour. A chromatic adaptation transform rescales cone-like responses by the destination-to-source white ratio. Compare CAT02, Bradford, and von Kries for D65/D50.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/gamma-eotf-calibration/cat02-whitepoint/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/gamma-eotf-calibration--cat02-whitepoint.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: White-Point Adaptation (CAT02).">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="White-Point Adaptation (CAT02)">
+  <meta name="twitter:description"   content="Changing a white point shifts every colour. A chromatic adaptation transform rescales cone-like responses by the destination-to-source white ratio. Compare CAT02, Bradford, and von Kries for D65/D50.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/gamma-eotf-calibration--cat02-whitepoint.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: White-Point Adaptation (CAT02).">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"White-Point Adaptation (CAT02)","alternateName":"gamma-eotf-calibration/cat02-whitepoint","description":"Changing a white point shifts every colour. A chromatic adaptation transform rescales cone-like responses by the destination-to-source white ratio. Compare CAT02, Bradford, and von Kries for D65/D50.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CAT02, chromatic adaptation, white point, D50, D65","url":"https://encyclopedia-of-color.vercel.app/modules/gamma-eotf-calibration/cat02-whitepoint/","image":"https://encyclopedia-of-color.vercel.app/og/gamma-eotf-calibration--cat02-whitepoint.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="gamma-eotf-calibration/cat02-whitepoint">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">White-Point Adaptation (CAT02)</h1>
+      <p class="module-subtitle">move a screen from D65 to D50 and a chromatic adaptation transform decides which way every colour drifts</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Changing a display's white point shifts every colour. A chromatic adaptation transform (CAT) does this the way the eye does: convert to cone-like responses, rescale each cone by the ratio of destination to source white, convert back. CAT02 is the matrix used inside CIECAM; Bradford and von Kries are alternatives.
+        </p>
+        <div class="math-block" data-tex="\rho' = \rho\left[(1{-}D)+D\,\tfrac{\rho_{dst}}{\rho_{src}}\right]"></div>
+        <p class="zone-guide">
+          Pick a direction and a transform, then sweep the degree of adaptation D from 0 (no change) to full. Watch the patch grid warm or cool, and compare how CAT02, Bradford, and plain von Kries push the same colours differently.
+        </p>
+        <enc-toggle id="dir" label="Direction" options="d65to50,d50to65" labels="D65 → D50,D50 → D65" value="d65to50"></enc-toggle>
+        <enc-toggle id="method" label="Transform" options="cat02,bradford,vonKries" labels="CAT02,Bradford,von Kries" value="cat02"></enc-toggle>
+        <enc-slider id="degree" label="Degree of adaptation D" min="0" max="100" step="1" value="100" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CAT02 white-point adaptation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fairchild §9; CIE 159:2004 (CIECAM02)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

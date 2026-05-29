@@ -1,0 +1,1 @@
+{ "hero": { "dir": "d65to50", "method": "cat02", "degree": 100 }, "comment": "Patch grid warming as it adapts D65 to D50 via CAT02." }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Subpixel Layouts — stripe, PenTile diamond, BGR — the arrangement of…</title>
+  <meta name="description" content="Panels arrange subpixels differently: RGB stripe gives one red, green, and blue per pixel; PenTile diamond shares green-rich subpixels with sparser red and blue; BGR reverses them. Zoom in to compare.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/subpixel-rendering/subpixel-layout-zoom/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Subpixel Layouts">
+  <meta property="og:description"    content="Panels arrange subpixels differently: RGB stripe gives one red, green, and blue per pixel; PenTile diamond shares green-rich subpixels with sparser red and blue; BGR reverses them. Zoom in to compare.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/subpixel-rendering/subpixel-layout-zoom/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/subpixel-rendering--subpixel-layout-zoom.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Subpixel Layouts.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Subpixel Layouts">
+  <meta name="twitter:description"   content="Panels arrange subpixels differently: RGB stripe gives one red, green, and blue per pixel; PenTile diamond shares green-rich subpixels with sparser red and blue; BGR reverses them. Zoom in to compare.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/subpixel-rendering--subpixel-layout-zoom.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Subpixel Layouts.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Subpixel Layouts","alternateName":"subpixel-rendering/subpixel-layout-zoom","description":"Panels arrange subpixels differently: RGB stripe gives one red, green, and blue per pixel; PenTile diamond shares green-rich subpixels with sparser red and blue; BGR reverses them. Zoom in to compare.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"subpixel, PenTile, RGB stripe, layout, display","url":"https://encyclopedia-of-color.vercel.app/modules/subpixel-rendering/subpixel-layout-zoom/","image":"https://encyclopedia-of-color.vercel.app/og/subpixel-rendering--subpixel-layout-zoom.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="subpixel-rendering/subpixel-layout-zoom">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Subpixel Layouts</h1>
+      <p class="module-subtitle">stripe, PenTile diamond, BGR — the arrangement of the tiny lamps changes how sharp text and colour can be</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Not every panel lays its subpixels out the same way. The classic RGB stripe gives one red, green, and blue per pixel. PenTile diamond (common on OLED phones) shares green-rich subpixels between pixels, so it has fewer reds and blues and leans on the eye's green sensitivity. BGR and RGBW are other rearrangements.
+        </p>
+        <div class="math-block" data-tex="\text{stripe} \;|\; \text{PenTile (RGBG)} \;|\; \text{BGR}"></div>
+        <p class="zone-guide">
+          Switch the layout and see a magnified white field. Stripe is even thirds; PenTile shows its sparse, offset red/blue dots among denser greens. The layout decides how subpixel anti-aliasing and apparent sharpness behave.
+        </p>
+        <enc-toggle id="layout" label="Layout" options="stripe,pentile,bgr" labels="RGB stripe,PenTile,BGR" value="stripe"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Subpixel layout zoom"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton §24; PenTile subpixel layouts"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

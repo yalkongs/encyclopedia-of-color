@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "subpixel-rendering/subpixel-layout-zoom",
+  "title": {
+    "en": "Subpixel Layouts",
+    "ko": "서브픽셀 배열"
+  },
+  "subtitle": {
+    "en": "stripe, PenTile diamond, BGR — the arrangement of the tiny lamps changes how sharp text and colour can be",
+    "ko": "스트라이프·펜타일 다이아몬드·BGR — 작은 램프의 배열이 글자와 색의 선명함을 좌우한다"
+  },
+  "description": {
+    "en": "Panels arrange subpixels differently: RGB stripe gives one red, green, and blue per pixel; PenTile diamond shares green-rich subpixels with sparser red and blue; BGR reverses them. Zoom in to compare.",
+    "ko": "패널마다 서브픽셀 배열이 다르다. RGB 스트라이프는 픽셀당 빨강·초록·파랑 하나씩, 펜타일 다이아몬드는 초록은 촘촘하고 빨강·파랑은 드물게 공유하며, BGR은 순서를 뒤집는다. 배열을 전환해 확대된 백색 필드로 각 기하를 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "subpixel-rendering",
+  "layout": "A",
+  "prerequisites": [
+    "display-physics-intro/subpixel-magnifier"
+  ],
+  "leads_to": [
+    "subpixel-rendering/subpixel-cleartype"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Poynton §24",
+      "section": "Subpixel geometry"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "subpixel",
+    "PenTile",
+    "RGB stripe",
+    "layout",
+    "display"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

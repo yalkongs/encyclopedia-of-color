@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "subpixel-rendering/subpixel-cleartype",
+  "title": {
+    "en": "ClearType on Real Glyphs",
+    "ko": "실제 글자의 ClearType"
+  },
+  "subtitle": {
+    "en": "sample each letter three times across every pixel and the strokes sharpen — but the curves pick up red and cyan edges",
+    "ko": "글자를 픽셀마다 세 번 표본화하면 획이 또렷해진다 — 그러나 곡선엔 빨강·청록 가장자리가 생긴다"
+  },
+  "description": {
+    "en": "ClearType rasterises text at triple horizontal resolution and feeds the three samples to a pixel R, G, B subpixels. Stems sharpen, but on curves the channels disagree and edges fringe red and cyan.",
+    "ko": "ClearType는 텍스트를 가로 3배 해상도로 래스터화해 세 표본을 픽셀의 R·G·B 서브픽셀에 넣는다. 획은 또렷해지나 곡선에선 채널이 어긋나 빨강·청록으로 번진다. 같은 글자의 서브픽셀·그레이스케일 렌더를 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "subpixel-rendering",
+  "layout": "A",
+  "prerequisites": [
+    "subpixel-rendering/subpixel-layout-zoom"
+  ],
+  "leads_to": [
+    "subpixel-rendering/pentile-rgbg-sharpening"
+  ],
+  "see_also": [
+    "typography-color-interaction/anti-alias-fringing"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Microsoft ClearType",
+      "section": "Subpixel font rendering"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "ClearType",
+    "subpixel rendering",
+    "font",
+    "fringe",
+    "anti-aliasing"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

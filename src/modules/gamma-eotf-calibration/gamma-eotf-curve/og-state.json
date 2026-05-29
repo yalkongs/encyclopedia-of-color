@@ -1,0 +1,1 @@
+{ "hero": { "gamma": 2.2, "scale": "linear" }, "comment": "sRGB EOTF against an adjustable power-law gamma curve." }

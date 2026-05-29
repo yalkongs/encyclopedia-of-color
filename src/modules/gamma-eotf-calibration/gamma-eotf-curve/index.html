@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Gamma / EOTF Curve — a display does not turn code values into lig…</title>
+  <meta name="description" content="The EOTF maps a code value to display luminance. A power law L = V^gamma is textbook gamma; the sRGB curve adds a linear toe near black that lifts deep shadows. Compare them on linear and log axes.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/gamma-eotf-calibration/gamma-eotf-curve/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Gamma / EOTF Curve">
+  <meta property="og:description"    content="The EOTF maps a code value to display luminance. A power law L = V^gamma is textbook gamma; the sRGB curve adds a linear toe near black that lifts deep shadows. Compare them on linear and log axes.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/gamma-eotf-calibration/gamma-eotf-curve/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/gamma-eotf-calibration--gamma-eotf-curve.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Gamma / EOTF Curve.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Gamma / EOTF Curve">
+  <meta name="twitter:description"   content="The EOTF maps a code value to display luminance. A power law L = V^gamma is textbook gamma; the sRGB curve adds a linear toe near black that lifts deep shadows. Compare them on linear and log axes.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/gamma-eotf-calibration--gamma-eotf-curve.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Gamma / EOTF Curve.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Gamma / EOTF Curve","alternateName":"gamma-eotf-calibration/gamma-eotf-curve","description":"The EOTF maps a code value to display luminance. A power law L = V^gamma is textbook gamma; the sRGB curve adds a linear toe near black that lifts deep shadows. Compare them on linear and log axes.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"EOTF, gamma, sRGB, transfer function, luminance","url":"https://encyclopedia-of-color.vercel.app/modules/gamma-eotf-calibration/gamma-eotf-curve/","image":"https://encyclopedia-of-color.vercel.app/og/gamma-eotf-calibration--gamma-eotf-curve.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="gamma-eotf-calibration/gamma-eotf-curve">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Gamma / EOTF Curve</h1>
+      <p class="module-subtitle">a display does not turn code values into light linearly — it bends them through an electro-optical transfer function</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The EOTF (electro-optical transfer function) maps an encoded code value to emitted luminance. A pure power law L = V<sup>γ</sup> is the textbook gamma; the sRGB EOTF is close to γ = 2.2 overall but inserts a small linear segment near black that lifts the deepest shadows.
+        </p>
+        <div class="math-block" data-tex="L = V^{\gamma}\quad\text{vs}\quad L_{sRGB}=\left(\tfrac{V+0.055}{1.055}\right)^{2.4}"></div>
+        <p class="zone-guide">
+          Drag γ and watch the power curve swing against the fixed sRGB reference. Switch the luminance axis to log scale to magnify the shadows, where sRGB's linear toe parts company with a true 2.2 power law.
+        </p>
+        <enc-slider id="gamma" label="Power-law γ" min="1.8" max="2.6" step="0.01" value="2.2"></enc-slider>
+        <enc-toggle id="scale" label="Luminance axis" options="linear,log" labels="linear,log" value="linear"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Gamma EOTF curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton §23; IEC 61966-2-1 (sRGB)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

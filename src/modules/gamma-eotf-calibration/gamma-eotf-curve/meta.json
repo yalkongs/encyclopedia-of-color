@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "gamma-eotf-calibration/gamma-eotf-curve",
+  "title": {
+    "en": "The Gamma / EOTF Curve",
+    "ko": "감마 / EOTF 곡선"
+  },
+  "subtitle": {
+    "en": "a display does not turn code values into light linearly — it bends them through an electro-optical transfer function",
+    "ko": "디스플레이는 코드값을 빛으로 선형 변환하지 않는다 — 전기·광학 전달 함수로 휘게 한다"
+  },
+  "description": {
+    "en": "The EOTF maps a code value to display luminance. A power law L = V^gamma is textbook gamma; the sRGB curve adds a linear toe near black that lifts deep shadows. Compare them on linear and log axes.",
+    "ko": "EOTF는 코드값을 디스플레이 휘도로 사상한다. 순수 거듭제곱 L = V^감마가 교과서적 감마이고, sRGB 곡선은 감마 2.2를 따르되 검정 부근에 선형 구간을 더해 가장 어두운 그림자를 들어 올린다. 선형·로그 축에서 둘을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "gamma-eotf-calibration",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [
+    "gamma-eotf-calibration/probe-calibration-workflow"
+  ],
+  "see_also": [
+    "gamma-eotf-calibration/cat02-whitepoint"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Poynton",
+      "section": "§23"
+    }
+  ],
+  "standards": [
+    "IEC 61966-2-1"
+  ],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "EOTF",
+    "gamma",
+    "sRGB",
+    "transfer function",
+    "luminance"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

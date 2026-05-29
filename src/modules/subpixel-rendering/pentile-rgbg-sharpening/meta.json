@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "subpixel-rendering/pentile-rgbg-sharpening",
+  "title": {
+    "en": "PenTile RGBG Sharpening",
+    "ko": "펜타일 RGBG 샤프닝"
+  },
+  "subtitle": {
+    "en": "a green-rich panel renders only half as many reds and blues — sharpening hides the loss but stains text with magenta and green",
+    "ko": "초록이 많은 패널은 빨강·파랑이 절반뿐 — 샤프닝이 손실을 가리지만 글자에 마젠타·초록 얼룩을 남긴다"
+  },
+  "description": {
+    "en": "PenTile RGBG panels render full-resolution green but only half-resolution red and blue, shared between pixels. Subpixel sharpening raises acutance yet overshoots, fringing text green and magenta.",
+    "ko": "펜타일 RGBG 패널은 초록은 전해상도, 빨강·파랑은 픽셀끼리 공유해 절반 해상도로 렌더한다. 빨강·파랑의 미세 디테일은 소실되고, 서브픽셀 샤프닝은 또렷함을 높이지만 과도하게 작용해 글자를 초록·마젠타로 번지게 한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "subpixel-rendering",
+  "layout": "A",
+  "prerequisites": [
+    "subpixel-rendering/subpixel-cleartype"
+  ],
+  "leads_to": [],
+  "see_also": [
+    "subpixel-rendering/subpixel-layout-zoom"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Poynton",
+      "section": "§24"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "PenTile",
+    "RGBG",
+    "subpixel sharpening",
+    "OLED text",
+    "fringing"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "gamma-eotf-calibration/cat02-whitepoint",
+  "title": {
+    "en": "White-Point Adaptation (CAT02)",
+    "ko": "백색점 적응 (CAT02)"
+  },
+  "subtitle": {
+    "en": "move a screen from D65 to D50 and a chromatic adaptation transform decides which way every colour drifts",
+    "ko": "화면을 D65에서 D50으로 옮기면 색채 적응 변환이 모든 색이 어디로 이동할지 결정한다"
+  },
+  "description": {
+    "en": "Changing a white point shifts every colour. A chromatic adaptation transform rescales cone-like responses by the destination-to-source white ratio. Compare CAT02, Bradford, and von Kries for D65/D50.",
+    "ko": "디스플레이의 백색점을 바꾸면 모든 색이 이동한다. 색채 적응 변환은 원뿔 유사 응답을 도착·출발 백색의 비율로 재조정한다. 적응 정도를 조절하고 D65↔D50에서 CAT02·Bradford·von Kries를 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "gamma-eotf-calibration",
+  "layout": "A",
+  "prerequisites": [
+    "gamma-eotf-calibration/gamma-eotf-curve"
+  ],
+  "leads_to": [],
+  "see_also": [
+    "color-appearance-models/ciecam02"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Fairchild",
+      "section": "§9"
+    }
+  ],
+  "standards": [
+    "CIE 159:2004"
+  ],
+  "interaction_count": 3,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "CAT02",
+    "chromatic adaptation",
+    "white point",
+    "D50",
+    "D65"
+  ],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

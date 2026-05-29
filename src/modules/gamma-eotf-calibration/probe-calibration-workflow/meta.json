@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "gamma-eotf-calibration/probe-calibration-workflow",
+  "title": {
+    "en": "Probe Calibration Loop",
+    "ko": "프로브 캘리브레이션 루프"
+  },
+  "subtitle": {
+    "en": "a colorimeter measures the panel, builds a correction, measures again — each pass drags the response toward the target",
+    "ko": "측색기가 패널을 측정하고 보정을 만들어 다시 측정한다 — 매 패스마다 응답이 목표로 끌려간다"
+  },
+  "description": {
+    "en": "A colorimeter reads grayscale patches, compares them to a target gamma and white point, and writes a correction LUT. Step the loop and watch a blue-tinted panel converge to neutral gamma 2.2.",
+    "ko": "측색기가 그레이스케일 패치를 읽어 목표 감마·백색점과 비교하고 보정 LUT를 기록한 뒤 반복한다. 매 패스마다 잔여 오차가 줄어든다. 루프를 단계별로 진행하며 어둡고 푸른 패널이 중립 감마 2.2로 수렴하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "gamma-eotf-calibration",
+  "layout": "A",
+  "prerequisites": [
+    "gamma-eotf-calibration/gamma-eotf-curve"
+  ],
+  "leads_to": [],
+  "see_also": [
+    "gamma-eotf-calibration/cat02-whitepoint"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Poynton",
+      "section": "§23"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "monitor calibration",
+    "colorimeter",
+    "Spyder",
+    "i1Display",
+    "LUT"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
