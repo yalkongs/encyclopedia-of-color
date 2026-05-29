@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Simultaneous Contrast — one grey, pasted onto four different fields —…</title>
+  <meta name="description" content="Chevreul named the law; Itten made it a principle: a field casts its complement onto its centre, so one identical grey is tinted differently over each surround. Reveal on neutral to prove it.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-simultaneous/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Simultaneous Contrast">
+  <meta property="og:description"    content="Chevreul named the law; Itten made it a principle: a field casts its complement onto its centre, so one identical grey is tinted differently over each surround. Reveal on neutral to prove it.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-simultaneous/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-simultaneous.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Simultaneous Contrast.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Simultaneous Contrast">
+  <meta name="twitter:description"   content="Chevreul named the law; Itten made it a principle: a field casts its complement onto its centre, so one identical grey is tinted differently over each surround. Reveal on neutral to prove it.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-simultaneous.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Simultaneous Contrast.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Simultaneous Contrast","alternateName":"ittens-contrasts/contrast-simultaneous","description":"Chevreul named the law; Itten made it a principle: a field casts its complement onto its centre, so one identical grey is tinted differently over each surround. Reveal on neutral to prove it.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Itten, simultaneous contrast, induced complement, surround","url":"https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-simultaneous/","image":"https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-simultaneous.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="ittens-contrasts/contrast-simultaneous">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Simultaneous Contrast</h1>
+      <p class="module-subtitle">one grey, pasted onto four different fields — and four different colours seem to look back at you</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Chevreul named the law; Itten made it a design principle. A colour casts its complement onto whatever sits within it, so an identical centre takes on a different tint over each surround. The field, not the pigment, is doing the work.
+        </p>
+        <div class="math-block" data-tex="\text{centre}_{\text{const}} \;+\; \text{field}(h) \;\Rightarrow\; \text{centre shifts toward } h+180^\circ"></div>
+        <p class="zone-guide">
+          Raise the surround saturation and the four identical grey centres drift apart, each toward its field's complement. Hit reveal to drop all four onto one neutral ground — and watch them snap back to being one and the same grey.
+        </p>
+        <enc-slider id="sat" label="Surround saturation" min="0" max="90" step="1" value="70" unit="%"></enc-slider>
+        <enc-toggle id="reveal" label="Ground" options="fields,neutral" labels="four fields,reveal (neutral)" value="fields"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Simultaneous contrast on four surrounds"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Itten, The Art of Color (1961) — Simultaneous contrast; Chevreul (1839)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "ittens-contrasts/contrast-tension-score",
+  "title": {
+    "en": "Contrast Tension Score",
+    "ko": "대비 긴장 점수"
+  },
+  "subtitle": {
+    "en": "turn three of Itten's contrasts into one number — and watch which axis is carrying the tension between two colours",
+    "ko": "이텐의 세 대비를 하나의 숫자로 — 두 색 사이의 긴장을 어느 축이 짊어지는지 본다"
+  },
+  "description": {
+    "en": "Three Itten contrasts read off a colour pair — hue opposition, light-dark, saturation. Combine them into one tension score; the bar shows which axis dominates. A heuristic, not a measurement.",
+    "ko": "이텐의 세 대비는 색 쌍에서 바로 읽힌다 — 보색 색상 대립, 명암, 채도. 이를 하나의 긴장 점수로 합치면 스택 막대가 어느 축이 지배하는지 보여준다. 측정된 심리물리량이 아닌 디자인 휴리스틱이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "ittens-contrasts",
+  "layout": "A",
+  "prerequisites": ["ittens-contrasts/contrast-sandbox"],
+  "leads_to": ["apca-contrast-matcher/apca-lc-contrast"],
+  "see_also": ["color-difference-delta-e/delta-e-00"],
+  "textbook_refs": [
+    { "source": "Itten, The Art of Color (1961)", "section": "The seven contrasts" }
+  ],
+  "standards": [],
+  "interaction_count": 4,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Itten", "contrast tension", "color contrast", "design heuristic"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

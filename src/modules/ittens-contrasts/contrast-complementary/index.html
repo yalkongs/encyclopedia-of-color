@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Complementary Contrast — opposite hues sharpen each other side by sid…</title>
+  <meta name="description" content="A complementary pair sits across the wheel — side by side each intensifies the other, but their optical average cancels to grey. Choose a hue; the centre strip shows the pair mixing to neutral.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-complementary/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Complementary Contrast">
+  <meta property="og:description"    content="A complementary pair sits across the wheel — side by side each intensifies the other, but their optical average cancels to grey. Choose a hue; the centre strip shows the pair mixing to neutral.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-complementary/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-complementary.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Complementary Contrast.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Complementary Contrast">
+  <meta name="twitter:description"   content="A complementary pair sits across the wheel — side by side each intensifies the other, but their optical average cancels to grey. Choose a hue; the centre strip shows the pair mixing to neutral.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-complementary.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Complementary Contrast.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Complementary Contrast","alternateName":"ittens-contrasts/contrast-complementary","description":"A complementary pair sits across the wheel — side by side each intensifies the other, but their optical average cancels to grey. Choose a hue; the centre strip shows the pair mixing to neutral.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Itten, complementary contrast, complements, color wheel","url":"https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-complementary/","image":"https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-complementary.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="ittens-contrasts/contrast-complementary">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Complementary Contrast</h1>
+      <p class="module-subtitle">opposite hues sharpen each other side by side — yet average to a dead grey when mixed, the proof that they are complements</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A complementary pair sits directly across the wheel. Placed side by side, each makes the other look more intense — the eye craves the balance. But average their light and they cancel to neutral grey. Intensification apart, annihilation together: that is the signature of true complements.
+        </p>
+        <div class="math-block" data-tex="h \;\text{and}\; h+180^\circ \;\Rightarrow\; \text{mix} \to \text{grey}"></div>
+        <p class="zone-guide">
+          Choose a hue; its complement appears beside it. The two large fields intensify one another. The centre strip is their optical average — for a true complementary pair it lands on neutral grey, neither hue winning.
+        </p>
+        <enc-slider id="hue" label="Hue" min="0" max="359" step="1" value="20" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Complementary contrast and cancellation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Itten, The Art of Color (1961) — Complementary contrast"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

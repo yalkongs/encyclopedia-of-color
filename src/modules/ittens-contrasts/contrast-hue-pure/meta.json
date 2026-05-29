@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "ittens-contrasts/contrast-hue-pure",
+  "title": {
+    "en": "Contrast of Pure Hue",
+    "ko": "순색 대비"
+  },
+  "subtitle": {
+    "en": "Itten's first contrast — undiluted primaries clash hardest; drain the saturation and the energy drains with it",
+    "ko": "이텐의 첫 대비 — 순수한 원색이 가장 세게 부딪힌다; 채도를 빼면 에너지도 함께 빠진다"
+  },
+  "description": {
+    "en": "Itten's contrast of hue is strongest among the three primaries at full saturation; add hues and it softens, desaturate and it collapses to grey. Set the count and drain the saturation to feel it fade.",
+    "ko": "이텐의 색상 대비는 완전 채도의 세 원색에서 가장 강하다 — 색을 더하면 누그러지고, 탈채도하면 회색으로 무너진다. 색상 수를 정하고 채도를 빼며 충돌이 사그라드는 것을 느낀다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 5,
+  "category": "ittens-contrasts",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/bauhaus-geometry"],
+  "leads_to": ["ittens-contrasts/contrast-complementary"],
+  "see_also": ["ittens-contrasts/contrast-sandbox"],
+  "textbook_refs": [
+    { "source": "Itten, The Art of Color (1961)", "section": "Contrast of hue" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Itten", "contrast of hue", "primaries", "saturation", "color contrast"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Seven Contrasts — Itten's whole system on one page — step through…</title>
+  <meta name="description" content="Itten organised colour into seven contrasts — hue, light-dark, cold-warm, complementary, simultaneous, saturation, extension. Step through the gallery to compare them; five have their own modules.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-sandbox/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Seven Contrasts">
+  <meta property="og:description"    content="Itten organised colour into seven contrasts — hue, light-dark, cold-warm, complementary, simultaneous, saturation, extension. Step through the gallery to compare them; five have their own modules.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-sandbox/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-sandbox.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Seven Contrasts.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Seven Contrasts">
+  <meta name="twitter:description"   content="Itten organised colour into seven contrasts — hue, light-dark, cold-warm, complementary, simultaneous, saturation, extension. Step through the gallery to compare them; five have their own modules.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-sandbox.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Seven Contrasts.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Seven Contrasts","alternateName":"ittens-contrasts/contrast-sandbox","description":"Itten organised colour into seven contrasts — hue, light-dark, cold-warm, complementary, simultaneous, saturation, extension. Step through the gallery to compare them; five have their own modules.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Itten, seven contrasts, color design, contrast","url":"https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-sandbox/","image":"https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-sandbox.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="ittens-contrasts/contrast-sandbox">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Seven Contrasts</h1>
+      <p class="module-subtitle">Itten's whole system on one page — step through the seven contrasts and see each one's signature side by side</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Itten organised colour design into seven contrasts: hue, light-dark, cold-warm, complementary, simultaneous, saturation, and extension (area proportion). A composition usually leans on one or two; the gallery shows all seven so you can compare their character at a glance.
+        </p>
+        <div class="math-block" data-tex="\text{hue · value · temp · complement · simultaneous · saturation · extension}"></div>
+        <p class="zone-guide">
+          Step the selector through the seven. The chosen contrast enlarges with its name and idea; the rest stay as thumbnails. The dedicated modules go deeper on hue, value, warm-cool, complementary, and simultaneous contrast.
+        </p>
+        <enc-slider id="pick" label="Contrast" min="1" max="7" step="1" value="1"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Gallery of Itten's seven contrasts"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Itten, The Art of Color (1961) — The seven contrasts"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

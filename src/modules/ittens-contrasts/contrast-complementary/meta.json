@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "ittens-contrasts/contrast-complementary",
+  "title": {
+    "en": "Complementary Contrast",
+    "ko": "보색 대비"
+  },
+  "subtitle": {
+    "en": "opposite hues sharpen each other side by side — yet average to a dead grey when mixed, the proof that they are complements",
+    "ko": "마주 보는 색상은 나란히 두면 서로를 날카롭게 한다 — 그러나 섞으면 죽은 회색이 된다, 보색이라는 증거"
+  },
+  "description": {
+    "en": "A complementary pair sits across the wheel — side by side each intensifies the other, but their optical average cancels to grey. Choose a hue; the centre strip shows the pair mixing to neutral.",
+    "ko": "보색 쌍은 색환 반대편에 있다 — 나란히 두면 서로를 강화하지만 광학 평균은 중성 회색으로 상쇄된다. 색상을 고르면 그 보색이 옆에 나타나고, 가운데 띠가 둘이 회색으로 섞이는 것을 보여준다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "ittens-contrasts",
+  "layout": "A",
+  "prerequisites": ["ittens-contrasts/contrast-hue-pure"],
+  "leads_to": ["ittens-contrasts/contrast-simultaneous"],
+  "see_also": ["opponent-process/opponent-cancellation"],
+  "textbook_refs": [
+    { "source": "Itten, The Art of Color (1961)", "section": "Complementary contrast" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Itten", "complementary contrast", "complements", "color wheel"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

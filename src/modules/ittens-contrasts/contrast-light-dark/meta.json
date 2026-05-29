@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "ittens-contrasts/contrast-light-dark",
+  "title": {
+    "en": "Light-Dark Contrast",
+    "ko": "명암 대비"
+  },
+  "subtitle": {
+    "en": "the most fundamental contrast of all — set two values on Itten's grey ladder and read the gap between them",
+    "ko": "가장 근본적인 대비 — 이텐의 회색 사다리에서 두 값을 정하고 그 차이를 읽는다"
+  },
+  "description": {
+    "en": "Light-dark survives even in greyscale. Itten built a ladder of grey steps; any colour is placed by where it falls. Set a lighter and darker value and read ΔL* — a wide gap is crisp, a narrow one flat.",
+    "ko": "명암은 흑백에서도 살아남는 대비다. 이텐은 회색 단계의 사다리를 만들었고, 어떤 색이든 그 위치로 놓인다. 밝은 값과 어두운 값을 정해 ΔL*을 읽는다 — 큰 차이는 선명하고 작은 차이는 평평하다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 5,
+  "category": "ittens-contrasts",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/bauhaus-geometry"],
+  "leads_to": ["ittens-contrasts/contrast-cool-warm"],
+  "see_also": ["apca-contrast-matcher/apca-lc-contrast"],
+  "textbook_refs": [
+    { "source": "Itten, The Art of Color (1961)", "section": "Light-dark contrast" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Itten", "light-dark contrast", "value", "lightness", "greyscale"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

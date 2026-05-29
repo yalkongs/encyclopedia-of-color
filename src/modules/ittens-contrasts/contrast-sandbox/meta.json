@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "ittens-contrasts/contrast-sandbox",
+  "title": {
+    "en": "The Seven Contrasts",
+    "ko": "일곱 가지 대비"
+  },
+  "subtitle": {
+    "en": "Itten's whole system on one page — step through the seven contrasts and see each one's signature side by side",
+    "ko": "이텐의 체계를 한 페이지에 — 일곱 대비를 차례로 넘기며 각 특징을 나란히 본다"
+  },
+  "description": {
+    "en": "Itten organised colour into seven contrasts — hue, light-dark, cold-warm, complementary, simultaneous, saturation, extension. Step through the gallery to compare them; five have their own modules.",
+    "ko": "이텐은 색 디자인을 일곱 대비로 정리했다 — 색상·명암·한난·보색·동시·채도·면적. 선택기를 넘기며 각 특징을 갤러리에서 비교한다. 그중 다섯 가지는 전용 모듈에서 더 깊이 다룬다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "ittens-contrasts",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/bauhaus-geometry"],
+  "leads_to": ["ittens-contrasts/contrast-tension-score"],
+  "see_also": ["ittens-contrasts/contrast-hue-pure", "ittens-contrasts/contrast-simultaneous"],
+  "textbook_refs": [
+    { "source": "Itten, The Art of Color (1961)", "section": "The seven contrasts" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Itten", "seven contrasts", "color design", "contrast"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

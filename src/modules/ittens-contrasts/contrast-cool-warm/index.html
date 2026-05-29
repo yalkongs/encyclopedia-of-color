@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Warm-Cool Contrast — Itten placed orange-red at the warm pole and blu…</title>
+  <meta name="description" content="Colour has no physical temperature, only Itten's convention: orange-red warmest, blue-green coolest. Two hues project onto the warm-cool axis; the gap is their contrast — not a measurement.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-cool-warm/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Warm-Cool Contrast">
+  <meta property="og:description"    content="Colour has no physical temperature, only Itten's convention: orange-red warmest, blue-green coolest. Two hues project onto the warm-cool axis; the gap is their contrast — not a measurement.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-cool-warm/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-cool-warm.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Warm-Cool Contrast.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Warm-Cool Contrast">
+  <meta name="twitter:description"   content="Colour has no physical temperature, only Itten's convention: orange-red warmest, blue-green coolest. Two hues project onto the warm-cool axis; the gap is their contrast — not a measurement.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-cool-warm.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Warm-Cool Contrast.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Warm-Cool Contrast","alternateName":"ittens-contrasts/contrast-cool-warm","description":"Colour has no physical temperature, only Itten's convention: orange-red warmest, blue-green coolest. Two hues project onto the warm-cool axis; the gap is their contrast — not a measurement.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Itten, warm cool contrast, color temperature, hue","url":"https://encyclopedia-of-color.vercel.app/modules/ittens-contrasts/contrast-cool-warm/","image":"https://encyclopedia-of-color.vercel.app/og/ittens-contrasts--contrast-cool-warm.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="ittens-contrasts/contrast-cool-warm">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Warm-Cool Contrast</h1>
+      <p class="module-subtitle">Itten placed orange-red at the warm pole and blue-green at the cool — set two hues and read their felt temperatures</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Colour has no physical temperature, but it carries one by convention. Itten fixed orange-red as the warmest hue and blue-green as the coolest, the two poles of an expressive axis. Every other hue projects somewhere between, and a warm beside a cool advances against a receding.
+        </p>
+        <div class="math-block" data-tex="\text{temperature} = \cos(h - 30^\circ)\quad(+1\,\text{warm} \to -1\,\text{cool})"></div>
+        <p class="zone-guide">
+          Pick two hues. Each is placed on the warm-cool axis by its projection toward the orange pole; the swatches and the gap between the markers show the warm-cool contrast. This is Itten's convention, not a measurement.
+        </p>
+        <enc-slider id="h1" label="Hue A" min="0" max="359" step="1" value="30" unit="°"></enc-slider>
+        <enc-slider id="h2" label="Hue B" min="0" max="359" step="1" value="210" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Warm-cool contrast axis"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Itten, The Art of Color (1961) — Cold-warm contrast"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

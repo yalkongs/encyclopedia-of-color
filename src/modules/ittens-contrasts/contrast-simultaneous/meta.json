@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "ittens-contrasts/contrast-simultaneous",
+  "title": {
+    "en": "Simultaneous Contrast",
+    "ko": "동시 대비"
+  },
+  "subtitle": {
+    "en": "one grey, pasted onto four different fields — and four different colours seem to look back at you",
+    "ko": "하나의 회색을 네 다른 바탕에 붙이면 — 네 개의 다른 색이 마주 보는 듯하다"
+  },
+  "description": {
+    "en": "Chevreul named the law; Itten made it a principle: a field casts its complement onto its centre, so one identical grey is tinted differently over each surround. Reveal on neutral to prove it.",
+    "ko": "슈브뢸이 법칙을 명명했고 이텐이 디자인 원리로 삼았다. 바탕은 안에 든 것에 자기 보색을 드리워, 동일한 회색 중심이 각 surround 위에서 다른 색조를 띤다. 채도를 올린 뒤 중성 바탕에 펼쳐 하나임을 증명한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "ittens-contrasts",
+  "layout": "A",
+  "prerequisites": ["ittens-contrasts/contrast-complementary"],
+  "leads_to": ["ittens-contrasts/contrast-sandbox"],
+  "see_also": ["historical-color-systems/chevreul-circle-1839", "opponent-process/albers-relativity"],
+  "textbook_refs": [
+    { "source": "Itten, The Art of Color (1961)", "section": "Simultaneous contrast" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path", "vision-and-perception"],
+  "seo_keywords": ["Itten", "simultaneous contrast", "induced complement", "surround"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}
