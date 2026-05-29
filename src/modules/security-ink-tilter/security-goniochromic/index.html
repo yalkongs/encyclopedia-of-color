@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Goniochromic Multilayer Stacks — stacking many quarter-wave layers tu…</title>
+  <meta name="description" content="A distributed Bragg reflector stacks many quarter-wave layers so reflections add in phase at one wavelength: a tall, narrow peak. More layers means a purer colour; tilting sweeps the hue.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/security-ink-tilter/security-goniochromic/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Goniochromic Multilayer Stacks">
+  <meta property="og:description"    content="A distributed Bragg reflector stacks many quarter-wave layers so reflections add in phase at one wavelength: a tall, narrow peak. More layers means a purer colour; tilting sweeps the hue.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/security-ink-tilter/security-goniochromic/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/security-ink-tilter--security-goniochromic.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Goniochromic Multilayer Stacks.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Goniochromic Multilayer Stacks">
+  <meta name="twitter:description"   content="A distributed Bragg reflector stacks many quarter-wave layers so reflections add in phase at one wavelength: a tall, narrow peak. More layers means a purer colour; tilting sweeps the hue.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/security-ink-tilter--security-goniochromic.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Goniochromic Multilayer Stacks.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Goniochromic Multilayer Stacks","alternateName":"security-ink-tilter/security-goniochromic","description":"A distributed Bragg reflector stacks many quarter-wave layers so reflections add in phase at one wavelength: a tall, narrow peak. More layers means a purer colour; tilting sweeps the hue.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"goniochromic, Bragg reflector, multilayer, security ink, iridescence","url":"https://encyclopedia-of-color.vercel.app/modules/security-ink-tilter/security-goniochromic/","image":"https://encyclopedia-of-color.vercel.app/og/security-ink-tilter--security-goniochromic.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="security-ink-tilter/security-goniochromic">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Goniochromic Multilayer Stacks</h1>
+      <p class="module-subtitle">stacking many quarter-wave layers turns a faint tint into a saturated, angle-travelling colour — the engine behind security flakes</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A single film gives a weak, broad colour. A distributed Bragg reflector stacks many high/low-index quarter-wave layers so their reflections add in phase at one wavelength — a tall, narrow peak. More layers means a purer, brighter colour; tilting slides that peak across the spectrum, so the flake travels through many hues, not just two.
+        </p>
+        <div class="math-block" data-tex="\lambda_{peak} = \lambda_0 \cos\theta_{film},\quad \Delta\lambda \propto 1/N"></div>
+        <p class="zone-guide">
+          Add layers and watch the reflectance peak narrow and the swatch saturate. Tilt to sweep the hue. (The peak is approximated as a band that narrows with layer count; a real DBR transfer-matrix gives the same envelope.)
+        </p>
+        <enc-slider id="tilt" label="Viewing tilt" min="0" max="65" step="1" value="0" unit="°"></enc-slider>
+        <enc-slider id="layers" label="Bragg layers" min="2" max="12" step="1" value="5" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Goniochromic multilayer Bragg stack"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Schmid 2005; distributed Bragg reflector"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

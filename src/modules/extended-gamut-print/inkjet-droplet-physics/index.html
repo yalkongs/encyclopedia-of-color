@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Inkjet: How a Drop Is Fired — two ways to spit a picolitre of ink — b…</title>
+  <meta name="description" content="Drop-on-demand nozzles fire on command. Thermal heads flash-boil a bubble whose collapse kicks the drop, shedding satellites; piezo heads flex a crystal for cleaner drops and gentler inks.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/extended-gamut-print/inkjet-droplet-physics/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Inkjet: How a Drop Is Fired">
+  <meta property="og:description"    content="Drop-on-demand nozzles fire on command. Thermal heads flash-boil a bubble whose collapse kicks the drop, shedding satellites; piezo heads flex a crystal for cleaner drops and gentler inks.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/extended-gamut-print/inkjet-droplet-physics/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/extended-gamut-print--inkjet-droplet-physics.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Inkjet: How a Drop Is Fired.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Inkjet: How a Drop Is Fired">
+  <meta name="twitter:description"   content="Drop-on-demand nozzles fire on command. Thermal heads flash-boil a bubble whose collapse kicks the drop, shedding satellites; piezo heads flex a crystal for cleaner drops and gentler inks.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/extended-gamut-print--inkjet-droplet-physics.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Inkjet: How a Drop Is Fired.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Inkjet: How a Drop Is Fired","alternateName":"extended-gamut-print/inkjet-droplet-physics","description":"Drop-on-demand nozzles fire on command. Thermal heads flash-boil a bubble whose collapse kicks the drop, shedding satellites; piezo heads flex a crystal for cleaner drops and gentler inks.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"inkjet, piezo, thermal, drop-on-demand, droplet","url":"https://encyclopedia-of-color.vercel.app/modules/extended-gamut-print/inkjet-droplet-physics/","image":"https://encyclopedia-of-color.vercel.app/og/extended-gamut-print--inkjet-droplet-physics.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="extended-gamut-print/inkjet-droplet-physics">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Inkjet: How a Drop Is Fired</h1>
+      <p class="module-subtitle">two ways to spit a picolitre of ink — boil a bubble behind it, or squeeze the chamber with a flexing crystal</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A drop-on-demand nozzle ejects ink only when told to. Thermal (bubble-jet) heads flash-boil a microscopic bubble whose collapse kicks the drop out — cheap, but the violent collapse tends to shed trailing satellite droplets. Piezo heads flex a crystal wall to pressurise the chamber — gentler, cleaner drops, and they can fire inks the heater would cook.
+        </p>
+        <div class="math-block" data-tex="\text{thermal: bubble pulse}\quad|\quad\text{piezo: mechanical squeeze}"></div>
+        <p class="zone-guide">
+          Switch the actuator and watch the chamber: a growing-then-collapsing vapour bubble, or a wall flexing inward. Raise the firing frequency to pack more drops into the stream. Thermal mode sheds a small satellite behind each drop.
+        </p>
+        <enc-toggle id="mode" label="Actuator" options="thermal,piezo" labels="thermal,piezo" value="thermal"></enc-toggle>
+        <enc-slider id="freq" label="Firing frequency" min="4" max="20" step="1" value="9" unit=" kHz"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Inkjet droplet ejection mechanism"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §4.6; drop-on-demand inkjet"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

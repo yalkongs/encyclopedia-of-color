@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "extended-gamut-print/inkjet-droplet-physics",
+  "title": {
+    "en": "Inkjet: How a Drop Is Fired",
+    "ko": "잉크젯: 액적은 어떻게 발사되나"
+  },
+  "subtitle": {
+    "en": "two ways to spit a picolitre of ink — boil a bubble behind it, or squeeze the chamber with a flexing crystal",
+    "ko": "피코리터 잉크를 뱉는 두 방법 — 뒤에서 버블을 끓이거나, 휘는 결정으로 챔버를 짜거나"
+  },
+  "description": {
+    "en": "Drop-on-demand nozzles fire on command. Thermal heads flash-boil a bubble whose collapse kicks the drop, shedding satellites; piezo heads flex a crystal for cleaner drops and gentler inks.",
+    "ko": "드롭온디맨드 노즐은 명령 시에만 발사한다. 열방식은 버블을 순간 끓여 그 붕괴로 액적을 차내며 새틀라이트를 남긴다. 피에조는 결정을 휘어 더 깨끗한 액적을 내고, 히터가 태울 잉크도 견딘다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "extended-gamut-print",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§4.6"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "inkjet",
+    "piezo",
+    "thermal",
+    "drop-on-demand",
+    "droplet"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

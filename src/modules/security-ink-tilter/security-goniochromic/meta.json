@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "security-ink-tilter/security-goniochromic",
+  "title": {
+    "en": "Goniochromic Multilayer Stacks",
+    "ko": "고니오크로믹 다층 스택"
+  },
+  "subtitle": {
+    "en": "stacking many quarter-wave layers turns a faint tint into a saturated, angle-travelling colour — the engine behind security flakes",
+    "ko": "사분파장 층을 여러 겹 쌓으면 옅은 색조가 각도에 따라 이동하는 진한 색이 된다 — 보안 플레이크의 원리"
+  },
+  "description": {
+    "en": "A distributed Bragg reflector stacks many quarter-wave layers so reflections add in phase at one wavelength: a tall, narrow peak. More layers means a purer colour; tilting sweeps the hue.",
+    "ko": "분포 브래그 반사기는 고/저 굴절률 사분파장 층을 여러 겹 쌓아 한 파장에서 반사가 동위상으로 더해지게 한다 — 높고 좁은 피크다. 층이 많을수록 색이 순수해지고, 기울이면 색상이 휩쓸린다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "security-ink-tilter",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Schmid 2005",
+      "section": "DBR"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "goniochromic",
+    "Bragg reflector",
+    "multilayer",
+    "security ink",
+    "iridescence"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

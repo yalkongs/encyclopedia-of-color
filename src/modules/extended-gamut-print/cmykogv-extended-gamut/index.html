@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CMYKOGV Extended Gamut — three extra inks — orange, green, violet — p…</title>
+  <meta name="description" content="Four-colour process prints only inside the hexagon of its primaries. Orange, green, and violet inks replace the muddy two-ink overprints with vivid single inks, bulging the gamut polygon outward.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/extended-gamut-print/cmykogv-extended-gamut/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CMYKOGV Extended Gamut">
+  <meta property="og:description"    content="Four-colour process prints only inside the hexagon of its primaries. Orange, green, and violet inks replace the muddy two-ink overprints with vivid single inks, bulging the gamut polygon outward.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/extended-gamut-print/cmykogv-extended-gamut/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/extended-gamut-print--cmykogv-extended-gamut.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CMYKOGV Extended Gamut.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CMYKOGV Extended Gamut">
+  <meta name="twitter:description"   content="Four-colour process prints only inside the hexagon of its primaries. Orange, green, and violet inks replace the muddy two-ink overprints with vivid single inks, bulging the gamut polygon outward.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/extended-gamut-print--cmykogv-extended-gamut.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CMYKOGV Extended Gamut.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CMYKOGV Extended Gamut","alternateName":"extended-gamut-print/cmykogv-extended-gamut","description":"Four-colour process prints only inside the hexagon of its primaries. Orange, green, and violet inks replace the muddy two-ink overprints with vivid single inks, bulging the gamut polygon outward.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CMYKOGV, extended gamut, orange green violet, wide gamut, printing","url":"https://encyclopedia-of-color.vercel.app/modules/extended-gamut-print/cmykogv-extended-gamut/","image":"https://encyclopedia-of-color.vercel.app/og/extended-gamut-print--cmykogv-extended-gamut.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="extended-gamut-print/cmykogv-extended-gamut">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CMYKOGV Extended Gamut</h1>
+      <p class="module-subtitle">three extra inks — orange, green, violet — push the printable polygon outward into colours four-colour process can never reach</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Four-colour process can only print inside the hexagon spanned by its primaries and secondaries (red, green, blue overprints). Adding orange, green, and violet inks replaces those muddy two-ink overprints with vivid single inks, so the gamut polygon bulges outward — capturing saturated oranges, greens, and purples that CMYK clips. Chromaticities here are illustrative.
+        </p>
+        <div class="math-block" data-tex="\text{CMYK hexagon} \;\subsetneq\; \text{CMYKOGV polygon}"></div>
+        <p class="zone-guide">
+          Switch between the two ink sets: colours inside the active gamut show at full saturation, the rest grey out. Watch the oranges, greens, and violets light up when the extra inks join, and read the coverage gain.
+        </p>
+        <enc-toggle id="gamut" label="Ink set" options="cmyk,cmykogv" labels="CMYK,CMYKOGV" value="cmyk"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CMYKOGV extended gamut on the chromaticity diagram"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="HP Indigo CMYKOGV; extended-gamut printing"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

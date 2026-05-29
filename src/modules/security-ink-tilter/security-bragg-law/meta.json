@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "security-ink-tilter/security-bragg-law",
+  "title": {
+    "en": "Banknote OVI: Tilt to Shift",
+    "ko": "지폐 OVI: 기울이면 변색"
+  },
+  "subtitle": {
+    "en": "the colour-shifting denomination on a banknote is thin-film interference — tilt the note and the reflected peak slides toward blue",
+    "ko": "지폐의 변색 액면 숫자는 박막 간섭이다 — 지폐를 기울이면 반사 피크가 파랑 쪽으로 미끄러진다"
+  },
+  "description": {
+    "en": "Optically variable ink is a thin-film interference coating, not a pigment. The reinforced wavelength is 2nd cos(theta), so tilting the note shortens it — the green-to-blue flip a copier cannot fake.",
+    "ko": "광학가변잉크는 안료가 아니라 박막 간섭 코팅이다. 보강되는 파장은 2nd·cosθ라 지폐를 기울이면 짧아진다 — 복사기가 흉내 못 내는 녹색→파랑 변색이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "security-ink-tilter",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Schmid 2005",
+      "section": "OVI"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "OVI",
+    "optically variable ink",
+    "thin film",
+    "banknote",
+    "security"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

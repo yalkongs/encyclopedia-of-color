@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "extended-gamut-print/cmykogv-extended-gamut",
+  "title": {
+    "en": "CMYKOGV Extended Gamut",
+    "ko": "CMYKOGV 확장 색역"
+  },
+  "subtitle": {
+    "en": "three extra inks — orange, green, violet — push the printable polygon outward into colours four-colour process can never reach",
+    "ko": "세 추가 잉크 — 오렌지·그린·바이올렛 — 가 인쇄 가능 다각형을 4도 공정이 닿지 못하는 색으로 밀어낸다"
+  },
+  "description": {
+    "en": "Four-colour process prints only inside the hexagon of its primaries. Orange, green, and violet inks replace the muddy two-ink overprints with vivid single inks, bulging the gamut polygon outward.",
+    "ko": "4도 공정은 원색과 중첩으로 이루는 육각형 안만 인쇄한다. 오렌지·그린·바이올렛 잉크가 그 칙칙한 2도 중첩을 선명한 단색 잉크로 대체해 색역 다각형을 바깥으로 부풀린다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "extended-gamut-print",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "HP Indigo",
+      "section": "CMYKOGV"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "CMYKOGV",
+    "extended gamut",
+    "orange green violet",
+    "wide gamut",
+    "printing"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Banknote OVI: Tilt to Shift — the colour-shifting denomination on a b…</title>
+  <meta name="description" content="Optically variable ink is a thin-film interference coating, not a pigment. The reinforced wavelength is 2nd cos(theta), so tilting the note shortens it — the green-to-blue flip a copier cannot fake.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/security-ink-tilter/security-bragg-law/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Banknote OVI: Tilt to Shift">
+  <meta property="og:description"    content="Optically variable ink is a thin-film interference coating, not a pigment. The reinforced wavelength is 2nd cos(theta), so tilting the note shortens it — the green-to-blue flip a copier cannot fake.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/security-ink-tilter/security-bragg-law/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/security-ink-tilter--security-bragg-law.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Banknote OVI: Tilt to Shift.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Banknote OVI: Tilt to Shift">
+  <meta name="twitter:description"   content="Optically variable ink is a thin-film interference coating, not a pigment. The reinforced wavelength is 2nd cos(theta), so tilting the note shortens it — the green-to-blue flip a copier cannot fake.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/security-ink-tilter--security-bragg-law.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Banknote OVI: Tilt to Shift.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Banknote OVI: Tilt to Shift","alternateName":"security-ink-tilter/security-bragg-law","description":"Optically variable ink is a thin-film interference coating, not a pigment. The reinforced wavelength is 2nd cos(theta), so tilting the note shortens it — the green-to-blue flip a copier cannot fake.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"OVI, optically variable ink, thin film, banknote, security","url":"https://encyclopedia-of-color.vercel.app/modules/security-ink-tilter/security-bragg-law/","image":"https://encyclopedia-of-color.vercel.app/og/security-ink-tilter--security-bragg-law.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="security-ink-tilter/security-bragg-law">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Banknote OVI: Tilt to Shift</h1>
+      <p class="module-subtitle">the colour-shifting denomination on a banknote is thin-film interference — tilt the note and the reflected peak slides toward blue</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Optically variable ink (OVI) is not a pigment but an interference coating. Light reflecting off the top and bottom of a thin film travels different distances; wavelengths that reinforce dominate the colour. The extra path is 2·n·d·cos θ, so as you tilt the note the reinforced wavelength shortens — the famous green-to-blue flip that a colour photocopier cannot fake.
+        </p>
+        <div class="math-block" data-tex="m\lambda = 2 n d \cos\theta_{film}"></div>
+        <p class="zone-guide">
+          Tilt the note and watch the security patch shift colour as the reflectance peak (below) slides toward shorter wavelengths. Change the film thickness to retune which two colours the note flips between.
+        </p>
+        <enc-slider id="tilt" label="Viewing tilt" min="0" max="65" step="1" value="0" unit="°"></enc-slider>
+        <enc-slider id="thick" label="Film thickness" min="250" max="430" step="5" value="265" unit=" nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Banknote OVI thin-film colour shift"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Schmid 2005; thin-film interference"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
