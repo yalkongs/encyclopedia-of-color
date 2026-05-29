@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "emerging-display-tech/dlp-lcos-projector",
+  "title": {
+    "en": "DLP & LCoS Projection Engines",
+    "ko": "DLP & LCoS 프로젝션 엔진"
+  },
+  "subtitle": {
+    "en": "a chip of tilting micromirrors paints grey by flicking thousands of times a second — and colour by spinning a wheel past the beam",
+    "ko": "기울어지는 마이크로미러 칩이 초당 수천 번 깜빡여 회색을 그리고 — 빔 앞에서 휠을 돌려 색을 만든다"
+  },
+  "description": {
+    "en": "A DLP chip is a grid of micromirrors that tilt to send light to the screen or a dump; grey is duty cycle, and a spinning wheel flashes R, G, B in turn. LCoS holds three reflective panels on.",
+    "ko": "DLP 칩은 빛을 화면이나 덤프로 보내도록 기우는 마이크로미러 격자다 — 회색은 듀티 사이클이고, 도는 휠이 R·G·B를 차례로 번쩍인다. LCoS는 대신 세 반사형 패널을 동시에 켜 둔다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "emerging-display-tech",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "TI DLP",
+      "section": "Digital Micromirror Device"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "DLP",
+    "LCoS",
+    "micromirror",
+    "color wheel",
+    "projector"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

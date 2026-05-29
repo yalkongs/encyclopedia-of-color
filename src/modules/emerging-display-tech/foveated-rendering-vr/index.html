@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Foveated Rendering for VR — the eye only sees sharply at its centre —…</title>
+  <meta name="description" content="Human acuity drops away from the fovea, so an eye-tracked VR headset renders the gaze point sharply and lets the periphery go coarse. Done right it saves most of the pixel work with no visible loss.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/emerging-display-tech/foveated-rendering-vr/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Foveated Rendering for VR">
+  <meta property="og:description"    content="Human acuity drops away from the fovea, so an eye-tracked VR headset renders the gaze point sharply and lets the periphery go coarse. Done right it saves most of the pixel work with no visible loss.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/emerging-display-tech/foveated-rendering-vr/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/emerging-display-tech--foveated-rendering-vr.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Foveated Rendering for VR.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Foveated Rendering for VR">
+  <meta name="twitter:description"   content="Human acuity drops away from the fovea, so an eye-tracked VR headset renders the gaze point sharply and lets the periphery go coarse. Done right it saves most of the pixel work with no visible loss.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/emerging-display-tech--foveated-rendering-vr.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Foveated Rendering for VR.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Foveated Rendering for VR","alternateName":"emerging-display-tech/foveated-rendering-vr","description":"Human acuity drops away from the fovea, so an eye-tracked VR headset renders the gaze point sharply and lets the periphery go coarse. Done right it saves most of the pixel work with no visible loss.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"foveated rendering, VR, eye tracking, acuity, GPU","url":"https://encyclopedia-of-color.vercel.app/modules/emerging-display-tech/foveated-rendering-vr/","image":"https://encyclopedia-of-color.vercel.app/og/emerging-display-tech--foveated-rendering-vr.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="emerging-display-tech/foveated-rendering-vr">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Foveated Rendering for VR</h1>
+      <p class="module-subtitle">the eye only sees sharply at its centre — so render full detail at the gaze point and let the periphery go coarse, unnoticed</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Human acuity falls off steeply away from the fovea. A VR headset with eye tracking exploits this: it renders the gaze point at full resolution and drops detail with eccentricity, matching the eye's own falloff. Done right, the periphery looks unchanged while the GPU draws far fewer pixels.
+        </p>
+        <div class="math-block" data-tex="\text{detail}(e) \;\sim\; \frac{1}{1 + (e/e_0)^2}"></div>
+        <p class="zone-guide">
+          Move the gaze point across the scene and raise the foveation strength. Watch the periphery coarsen while the centre stays crisp, and read how much pixel work is saved. Push too hard and the blocky edge creeps into where you can notice it.
+        </p>
+        <enc-slider id="gaze" label="Gaze position" min="0" max="100" step="1" value="50" unit="%"></enc-slider>
+        <enc-slider id="strength" label="Foveation strength" min="0" max="100" step="1" value="60" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Foveated rendering resolution falloff"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Patney et al. 2016; foveated rendering"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "emerging-display-tech/miniled-local-dimming",
+  "title": {
+    "en": "Mini-LED Local Dimming",
+    "ko": "Mini-LED 로컬 디밍"
+  },
+  "subtitle": {
+    "en": "thousands of tiny backlight zones chase deep blacks — but a bright object on black still leaks a soft halo the size of one zone",
+    "ko": "수천 개의 작은 백라이트 존이 깊은 검정을 좇는다 — 그러나 검정 위 밝은 물체는 여전히 한 존 크기의 부드러운 헤일로를 흘린다"
+  },
+  "description": {
+    "en": "A Mini-LED LCD splits its backlight into hundreds or thousands of dimmable zones. But the LCD cannot fully block a lit zone, so a bright mark on black is ringed by a bloom one zone wide.",
+    "ko": "Mini-LED LCD는 백라이트를 수백~수천 개의 디밍 존으로 나눠 깊은 검정을 낸다. 하지만 LCD는 켜진 존을 완전히 막지 못해, 검정 위 밝은 표식은 한 존 너비의 블루밍에 둘러싸인다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "emerging-display-tech",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Mini-LED",
+      "section": "Local dimming"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Mini-LED",
+    "local dimming",
+    "blooming",
+    "backlight zones",
+    "contrast"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

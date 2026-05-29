@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "emerging-display-tech/laser-projection-rgb",
+  "title": {
+    "en": "RGB Laser Projection",
+    "ko": "RGB 레이저 프로젝션"
+  },
+  "subtitle": {
+    "en": "three monochromatic lasers give an enormous colour gamut — but their coherence sprinkles the image with shimmering speckle",
+    "ko": "세 단색 레이저가 거대한 색역을 주지만 — 그 결맞음이 이미지에 어른거리는 스페클을 뿌린다"
+  },
+  "description": {
+    "en": "RGB laser projectors use near-monochromatic primaries for a gamut near Rec. 2020, but their coherence sprinkles the image with speckle. Despeckling sums decorrelated states to smooth the shimmer.",
+    "ko": "RGB 레이저 프로젝터는 거의 단색인 원색으로 Rec. 2020에 가까운 색역을 내지만, 결맞음이 이미지에 스페클을 뿌린다. 디스페클은 상관 없는 여러 상태를 합쳐 어른거림을 평균으로 지운다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "emerging-display-tech",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Laser projection",
+      "section": "Speckle"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "laser projector",
+    "speckle",
+    "Rec. 2020",
+    "gamut",
+    "RGB laser"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

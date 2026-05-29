@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "emerging-display-tech/microled-self-emissive",
+  "title": {
+    "en": "microLED: Every Pixel a Lamp",
+    "ko": "microLED: 모든 픽셀이 램프"
+  },
+  "subtitle": {
+    "en": "millions of inorganic LEDs, one per subpixel — perfect blacks like OLED, but far brighter and free of organic burn-in",
+    "ko": "서브픽셀마다 하나씩, 수백만 개의 무기 LED — OLED 같은 완벽한 검정에 훨씬 밝고 유기물 번인이 없다"
+  },
+  "description": {
+    "en": "microLED makes each subpixel an inorganic LED emitting its own light: perfect blacks like OLED, far brighter and burn-in-free, with no backlight to leak through dark pixels.",
+    "ko": "microLED은 각 서브픽셀을 스스로 빛을 내는 무기 LED로 만든다: OLED 같은 완벽한 검정에 훨씬 밝고 번인이 없다. 진짜 검정 격자를 어두운 픽셀로 백라이트가 새는 LCD와 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "emerging-display-tech",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "microLED",
+      "section": "Self-emissive display"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "microLED",
+    "self-emissive",
+    "perfect black",
+    "contrast",
+    "burn-in"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

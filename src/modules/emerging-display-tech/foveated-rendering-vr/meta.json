@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "emerging-display-tech/foveated-rendering-vr",
+  "title": {
+    "en": "Foveated Rendering for VR",
+    "ko": "VR 중심와 렌더링"
+  },
+  "subtitle": {
+    "en": "the eye only sees sharply at its centre — so render full detail at the gaze point and let the periphery go coarse, unnoticed",
+    "ko": "눈은 중심에서만 또렷이 본다 — 그러니 시선 지점은 전부 그리고 주변부는 거칠게 둬도 알아채지 못한다"
+  },
+  "description": {
+    "en": "Human acuity drops away from the fovea, so an eye-tracked VR headset renders the gaze point sharply and lets the periphery go coarse. Done right it saves most of the pixel work with no visible loss.",
+    "ko": "인간의 시력은 중심와에서 멀어지면 급격히 떨어진다. 시선 추적 VR 헤드셋은 시선 지점을 또렷이 렌더하고 주변부를 거칠게 둔다. 잘하면 눈에 띄는 손실 없이 픽셀 작업의 대부분을 아낀다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 6,
+  "category": "emerging-display-tech",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Patney et al. 2016",
+      "section": "Foveated rendering"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "foveated rendering",
+    "VR",
+    "eye tracking",
+    "acuity",
+    "GPU"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

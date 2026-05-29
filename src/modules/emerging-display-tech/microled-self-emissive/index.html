@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>microLED: Every Pixel a Lamp — millions of inorganic LEDs, one per su…</title>
+  <meta name="description" content="microLED makes each subpixel an inorganic LED emitting its own light: perfect blacks like OLED, far brighter and burn-in-free, with no backlight to leak through dark pixels.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/emerging-display-tech/microled-self-emissive/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="microLED: Every Pixel a Lamp">
+  <meta property="og:description"    content="microLED makes each subpixel an inorganic LED emitting its own light: perfect blacks like OLED, far brighter and burn-in-free, with no backlight to leak through dark pixels.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/emerging-display-tech/microled-self-emissive/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/emerging-display-tech--microled-self-emissive.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: microLED: Every Pixel a Lamp.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="microLED: Every Pixel a Lamp">
+  <meta name="twitter:description"   content="microLED makes each subpixel an inorganic LED emitting its own light: perfect blacks like OLED, far brighter and burn-in-free, with no backlight to leak through dark pixels.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/emerging-display-tech--microled-self-emissive.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: microLED: Every Pixel a Lamp.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"microLED: Every Pixel a Lamp","alternateName":"emerging-display-tech/microled-self-emissive","description":"microLED makes each subpixel an inorganic LED emitting its own light: perfect blacks like OLED, far brighter and burn-in-free, with no backlight to leak through dark pixels.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"microLED, self-emissive, perfect black, contrast, burn-in","url":"https://encyclopedia-of-color.vercel.app/modules/emerging-display-tech/microled-self-emissive/","image":"https://encyclopedia-of-color.vercel.app/og/emerging-display-tech--microled-self-emissive.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="emerging-display-tech/microled-self-emissive">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">microLED: Every Pixel a Lamp</h1>
+      <p class="module-subtitle">millions of inorganic LEDs, one per subpixel — perfect blacks like OLED, but far brighter and free of organic burn-in</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          microLED makes each subpixel a microscopic inorganic LED that emits its own light. Like OLED there is no backlight, so an off pixel is truly black; unlike OLED the emitter is inorganic, reaching far higher peak brightness with no burn-in. The catch is manufacturing — placing millions of perfect emitters by "mass transfer".
+        </p>
+        <div class="math-block" data-tex="\text{contrast} = \tfrac{L_{white}}{L_{black}} \to \infty \quad (L_{black}=0)"></div>
+        <p class="zone-guide">
+          Drive the peak brightness and compare a self-emissive grid against an LCD whose backlight leaks through "black" pixels. On microLED the dark areas stay perfectly black at any brightness; on the LCD the floor rises with the backlight.
+        </p>
+        <enc-slider id="bright" label="Peak brightness" min="100" max="4000" step="50" value="1500" unit=" nits"></enc-slider>
+        <enc-toggle id="tech" label="Panel" options="microled,lcd" labels="microLED,LCD (leaky)" value="microled"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="microLED self-emissive vs LCD"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="microLED self-emissive display; mass transfer"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "emerging-display-tech/eink-electrophoretic",
+  "title": {
+    "en": "E-Ink: Particles, Not Pixels",
+    "ko": "E-Ink: 픽셀이 아닌 입자"
+  },
+  "subtitle": {
+    "en": "an e-reader page is a layer of microcapsules — charged white and black flakes that a field pulls to the surface and then holds without power",
+    "ko": "전자책 페이지는 마이크로캡슐 층이다 — 전기장이 표면으로 끌어올린 뒤 전원 없이 붙잡는 대전된 흰·검정 입자"
+  },
+  "description": {
+    "en": "Electrophoretic ink is a sheet of microcapsules holding charged white and black pigments in oil. A voltage drags one colour to the surface; reverse it for the other. With no power the image holds.",
+    "ko": "전기영동 잉크는 기름 속에 대전된 흰·검정 안료를 담은 마이크로캡슐 시트다. 전압이 한 색을 표면으로 끌어올리고, 반대로 걸면 다른 색이 올라온다. 전원이 없어도 이미지는 유지된다 — 쌍안정."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "emerging-display-tech",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "E Ink",
+      "section": "Electrophoretic display"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "E-Ink",
+    "electrophoretic",
+    "e-reader",
+    "bistable",
+    "microcapsule"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
