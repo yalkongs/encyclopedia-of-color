@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/ucs-1976-uv",
+  "title": {
+    "en": "The 1976 u'v' Diagram",
+    "ko": "CIE 1976 u'v' 도표"
+  },
+  "subtitle": {
+    "en": "toggle between xy and u'v' and watch the cramped green corner of the chart stretch into a fairer map",
+    "ko": "xy와 u'v'를 전환해 도표의 비좁은 초록 구석이 더 공정한 지도로 펴지는 것을 본다"
+  },
+  "description": {
+    "en": "The 1931 xy diagram crushes greens and exaggerates blues. The 1976 u'v' transform rescales it toward perceptual uniformity. Toggle between them and watch the horseshoe redistribute its colours.",
+    "ko": "1931 xy 도표는 초록을 짓누르고 파랑을 과장한다. 1976 u'v' 변환은 이를 지각적 균일성 쪽으로 다시 스케일한다. 둘을 전환하면 말발굽이 색을 재분배하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": ["xyz-transformation/xyz-projective-locus"],
+  "leads_to": [],
+  "see_also": ["macadam-jnd/macadam-ellipses"],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "§8.1 (UCS u'v')" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["u'v'", "UCS", "uniform chromaticity", "1976"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

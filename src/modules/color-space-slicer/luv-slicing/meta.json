@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/luv-slicing",
+  "title": {
+    "en": "Slicing CIELUV",
+    "ko": "CIELUV 슬라이서"
+  },
+  "subtitle": {
+    "en": "slide the lightness and compare CIELUV's slice with CIELAB — same colours, a different stretch",
+    "ko": "명도를 움직여 CIELUV의 단면을 CIELAB와 비교한다 — 같은 색, 다른 변형"
+  },
+  "description": {
+    "en": "CIELUV shares lightness with CIELAB but spaces chromaticity by the u*v* projective transform, so additive mixtures fall on straight lines. Slide L* and see its gamut island differ from Lab's.",
+    "ko": "CIELUV는 CIELAB와 명도를 공유하지만 색도를 u*v* 사영 변환으로 배치해 가산 혼합이 직선에 놓인다. L*를 움직여 그 색역 섬이 Lab과 다른 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": ["color-space-slicer/lab-slicing"],
+  "leads_to": ["color-space-slicer/ucs-1976-uv"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "§8.1 (CIELUV)" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["CIELUV", "Luv", "uniform space", "gamut slice"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

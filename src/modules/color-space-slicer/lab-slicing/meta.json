@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/lab-slicing",
+  "title": {
+    "en": "Slicing CIELAB",
+    "ko": "CIELAB 슬라이서"
+  },
+  "subtitle": {
+    "en": "slide the lightness and watch the a*b* plane fill with every displayable colour at that L*",
+    "ko": "명도를 움직여 a*b* 평면이 그 L*에서 표시 가능한 모든 색으로 채워지는 것을 본다"
+  },
+  "description": {
+    "en": "CIELAB stacks colours by lightness L* over a red-green (a*) and yellow-blue (b*) plane. Slide L* and watch the sRGB gamut at that level form an irregular island — colour space is not a tidy box.",
+    "ko": "CIELAB는 색을 명도 L*로 쌓고, 적-녹(a*)·황-청(b*) 평면 위에 둔다. L*를 움직이면 그 층의 sRGB 색역이 불규칙한 섬을 이룬다 — 색공간은 깔끔한 상자가 아니다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": ["color-space-slicer/xyy-slicing"],
+  "leads_to": ["color-space-slicer/luv-slicing"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "§8.2 (CIELAB)" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["CIELAB", "Lab", "lightness", "gamut slice"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

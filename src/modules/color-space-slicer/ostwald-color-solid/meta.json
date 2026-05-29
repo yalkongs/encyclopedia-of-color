@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/ostwald-color-solid",
+  "title": {
+    "en": "The Ostwald Solid",
+    "ko": "오스트발트 색입체"
+  },
+  "subtitle": {
+    "en": "slide the hue and read the double-cone cross-section: full colour at the rim, white above, black below",
+    "ko": "색상을 움직여 이중원뿔 단면을 읽는다 — 가장자리는 순색, 위는 흰색, 아래는 검정"
+  },
+  "description": {
+    "en": "Ostwald idealised colour as a double cone: white at the top apex, black at the bottom, full colours around the equator. Slide the hue to see the axial slice through that hue and its complement.",
+    "ko": "오스트발트는 색을 이중원뿔로 이상화했다 — 위 꼭짓점에 순백, 아래에 검정, 적도에 순색. 색상을 움직여 그 색상과 보색을 지나는 축 단면을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": ["color-space-slicer/ncs-natural-system"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Ostwald 1916", "section": "Die Farbenfibel" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Ostwald", "color solid", "double cone", "full color content"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

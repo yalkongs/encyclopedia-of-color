@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Ostwald Solid — slide the hue and read the double-cone cross-sect…</title>
+  <meta name="description" content="Ostwald idealised colour as a double cone: white at the top apex, black at the bottom, full colours around the equator. Slide the hue to see the axial slice through that hue and its complement.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/ostwald-color-solid/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Ostwald Solid">
+  <meta property="og:description"    content="Ostwald idealised colour as a double cone: white at the top apex, black at the bottom, full colours around the equator. Slide the hue to see the axial slice through that hue and its complement.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/ostwald-color-solid/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--ostwald-color-solid.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Ostwald Solid.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Ostwald Solid">
+  <meta name="twitter:description"   content="Ostwald idealised colour as a double cone: white at the top apex, black at the bottom, full colours around the equator. Slide the hue to see the axial slice through that hue and its complement.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--ostwald-color-solid.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Ostwald Solid.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Ostwald Solid","alternateName":"color-space-slicer/ostwald-color-solid","description":"Ostwald idealised colour as a double cone: white at the top apex, black at the bottom, full colours around the equator. Slide the hue to see the axial slice through that hue and its complement.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Ostwald, color solid, double cone, full color content","url":"https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/ostwald-color-solid/","image":"https://encyclopedia-of-color.vercel.app/og/color-space-slicer--ostwald-color-solid.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-space-slicer/ostwald-color-solid">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Ostwald Solid</h1>
+      <p class="module-subtitle">slide the hue and read the double-cone cross-section: full colour at the rim, white above, black below</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Ostwald built colour from full colour, white, and black content that sum to a whole. Stacking every hue's triangle around a shared white-black axis makes a double cone.
+        </p>
+        <div class="math-block" data-tex="\text{full colour} + \text{white} + \text{black} = 1"></div>
+        <p class="zone-guide">
+          Slide the hue. The diamond is the axial slice through the double cone — this hue on the right, its complement on the left, white at the top apex, black at the bottom. The hue ring marks the pair.
+        </p>
+        <enc-slider id="hue" label="Hue" min="0" max="360" step="1" value="30" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Ostwald double-cone cross-section"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Ostwald 1916, Die Farbenfibel"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

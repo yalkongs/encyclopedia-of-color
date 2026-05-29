@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/munsell-tree-3d",
+  "title": {
+    "en": "The Munsell Tree",
+    "ko": "먼셀 색입체"
+  },
+  "subtitle": {
+    "en": "slide the value and watch a hue-by-chroma page of the irregular Munsell colour tree fill in",
+    "ko": "명도를 움직여 불규칙한 먼셀 색나무의 색상×채도 페이지가 채워지는 것을 본다"
+  },
+  "description": {
+    "en": "Munsell organises colour by Value up, Chroma outward, Hue around. Slide the Value and read a hue-by-chroma page; its ragged edge shows how far each hue can be pushed — the tree is famously lopsided.",
+    "ko": "먼셀은 색을 명도(위)·채도(바깥)·색상(둘레)로 정리한다. 명도를 움직여 색상×채도 페이지를 읽는다. 들쭉날쭉한 가장자리는 각 색상이 얼마나 멀리 갈 수 있는지 보여준다 — 색나무는 비대칭으로 유명하다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": ["color-space-slicer/lab-slicing"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Munsell 1905", "section": "A Color Notation" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Munsell", "value chroma hue", "color tree", "color order"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Slicing CIELUV — slide the lightness and compare CIELUV's slice with…</title>
+  <meta name="description" content="CIELUV shares lightness with CIELAB but spaces chromaticity by the u*v* projective transform, so additive mixtures fall on straight lines. Slide L* and see its gamut island differ from Lab's.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/luv-slicing/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Slicing CIELUV">
+  <meta property="og:description"    content="CIELUV shares lightness with CIELAB but spaces chromaticity by the u*v* projective transform, so additive mixtures fall on straight lines. Slide L* and see its gamut island differ from Lab's.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/luv-slicing/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--luv-slicing.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Slicing CIELUV.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Slicing CIELUV">
+  <meta name="twitter:description"   content="CIELUV shares lightness with CIELAB but spaces chromaticity by the u*v* projective transform, so additive mixtures fall on straight lines. Slide L* and see its gamut island differ from Lab's.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--luv-slicing.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Slicing CIELUV.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Slicing CIELUV","alternateName":"color-space-slicer/luv-slicing","description":"CIELUV shares lightness with CIELAB but spaces chromaticity by the u*v* projective transform, so additive mixtures fall on straight lines. Slide L* and see its gamut island differ from Lab's.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CIELUV, Luv, uniform space, gamut slice","url":"https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/luv-slicing/","image":"https://encyclopedia-of-color.vercel.app/og/color-space-slicer--luv-slicing.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-space-slicer/luv-slicing">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Slicing CIELUV</h1>
+      <p class="module-subtitle">slide the lightness and compare CIELUV's slice with CIELAB — same colours, a different stretch</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          CIELUV uses the same L* as CIELAB but lays out chromaticity with the u*v* transform, the one that keeps additive colour mixtures on straight lines — handy for displays.
+        </p>
+        <div class="math-block" data-tex="u^* = 13L^*(u'-u_n'),\quad v^* = 13L^*(v'-v_n')"></div>
+        <p class="zone-guide">
+          Slide the lightness L*. The filled island is the sRGB gamut at that level on the u*v* plane. Compare its shape to the CIELAB page at the same lightness — the colours are identical, but the spacing differs.
+        </p>
+        <enc-slider id="L" label="Lightness L*" min="5" max="98" step="1" value="60" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIELUV lightness slice"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 015:2018 §8.1"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

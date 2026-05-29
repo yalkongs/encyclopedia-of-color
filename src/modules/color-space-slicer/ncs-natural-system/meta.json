@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/ncs-natural-system",
+  "title": {
+    "en": "The NCS Triangle",
+    "ko": "NCS 자연색 시스템"
+  },
+  "subtitle": {
+    "en": "slide the hue and read the natural-colour triangle where blackness, whiteness, and chromaticness sum to 100",
+    "ko": "색상을 움직여 흑색도·백색도·유채색도가 100으로 합쳐지는 자연색 삼각형을 읽는다"
+  },
+  "description": {
+    "en": "NCS describes colour the way we see it: how black, how white, how chromatic, summing to 100. Slide the hue around the Y-R-B-G circle and read its constant-hue triangle of nuances.",
+    "ko": "NCS는 색을 보이는 그대로 기술한다 — 얼마나 검고, 희고, 유채로운지, 합이 100. Y-R-B-G 색상환 둘레로 색상을 움직여 그 일정 색상 삼각형의 뉘앙스를 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": ["color-space-slicer/ostwald-color-solid"],
+  "textbook_refs": [
+    { "source": "Hård & Sivik 1981, Color Res. Appl.", "section": "NCS" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["NCS", "natural color system", "blackness chromaticness", "nuance"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

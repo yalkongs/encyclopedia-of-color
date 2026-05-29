@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Slicing CIELAB — slide the lightness and watch the a*b* plane fill wi…</title>
+  <meta name="description" content="CIELAB stacks colours by lightness L* over a red-green (a*) and yellow-blue (b*) plane. Slide L* and watch the sRGB gamut at that level form an irregular island — colour space is not a tidy box.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/lab-slicing/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Slicing CIELAB">
+  <meta property="og:description"    content="CIELAB stacks colours by lightness L* over a red-green (a*) and yellow-blue (b*) plane. Slide L* and watch the sRGB gamut at that level form an irregular island — colour space is not a tidy box.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/lab-slicing/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--lab-slicing.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Slicing CIELAB.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Slicing CIELAB">
+  <meta name="twitter:description"   content="CIELAB stacks colours by lightness L* over a red-green (a*) and yellow-blue (b*) plane. Slide L* and watch the sRGB gamut at that level form an irregular island — colour space is not a tidy box.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--lab-slicing.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Slicing CIELAB.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Slicing CIELAB","alternateName":"color-space-slicer/lab-slicing","description":"CIELAB stacks colours by lightness L* over a red-green (a*) and yellow-blue (b*) plane. Slide L* and watch the sRGB gamut at that level form an irregular island — colour space is not a tidy box.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CIELAB, Lab, lightness, gamut slice","url":"https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/lab-slicing/","image":"https://encyclopedia-of-color.vercel.app/og/color-space-slicer--lab-slicing.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-space-slicer/lab-slicing">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Slicing CIELAB</h1>
+      <p class="module-subtitle">slide the lightness and watch the a*b* plane fill with every displayable colour at that L*</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          CIELAB is a perceptual solid: lightness L* runs vertically, red-green a* and yellow-blue b* span each horizontal page. A cut at one L* shows that page.
+        </p>
+        <div class="math-block" data-tex="L^* \in [0,100],\quad a^*: \text{red↔green},\quad b^*: \text{yellow↔blue}"></div>
+        <p class="zone-guide">
+          Slide the lightness L*. The filled region is every sRGB colour at that L*, plotted on the a*b* plane; the side profile shows where the cut sits in the football-shaped solid. The boundary is ragged because the gamut is.
+        </p>
+        <enc-slider id="L" label="Lightness L*" min="5" max="98" step="1" value="60" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIELAB lightness slice"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 015:2018 §8.2"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

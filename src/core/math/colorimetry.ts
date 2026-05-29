@@ -46,6 +46,39 @@ export function labToCss(lab: Lab): string {
   return srgbCss(linearSrgbFromXyz(labToXyz(lab)));
 }
 
+/** CIE 1976 u', v' chromaticity from XYZ. */
+export function uvPrime(xyz: V3): [number, number] {
+  const d = xyz[0] + 15 * xyz[1] + 3 * xyz[2] || 1e-9;
+  return [(4 * xyz[0]) / d, (9 * xyz[1]) / d];
+}
+
+/** XYZ → CIE L*u*v* under the given white (default D65). */
+export function xyzToLuv(xyz: V3, white: WhitePoint = D65): Lab {
+  const [up, vp] = uvPrime(xyz);
+  const [unp, vnp] = uvPrime([white.X, white.Y, white.Z]);
+  const yr = xyz[1] / white.Y;
+  const L = yr > Math.pow(6 / 29, 3) ? 116 * Math.cbrt(yr) - 16 : Math.pow(29 / 3, 3) * yr;
+  return [L, 13 * L * (up - unp), 13 * L * (vp - vnp)];
+}
+
+/** CIE L*u*v* → XYZ under the given white (default D65). */
+export function luvToXyz(luv: Lab, white: WhitePoint = D65): V3 {
+  const [L, u, v] = luv;
+  if (L <= 0) return [0, 0, 0];
+  const [unp, vnp] = uvPrime([white.X, white.Y, white.Z]);
+  const up = u / (13 * L) + unp;
+  const vp = v / (13 * L) + vnp;
+  const Y = L > 8 ? white.Y * Math.pow((L + 16) / 116, 3) : white.Y * L * Math.pow(3 / 29, 3);
+  const X = Y * (9 * up) / (4 * vp);
+  const Z = Y * (12 - 3 * up - 20 * vp) / (4 * vp);
+  return [X, Y, Z];
+}
+
+/** True if a linear-sRGB triple is inside the displayable gamut. */
+export function srgbInGamut(lin: V3, eps = 0.002): boolean {
+  return lin.every((c) => c >= -eps && c <= 1 + eps);
+}
+
 /** CIEDE2000 colour difference (Sharma 2005 formulation, k_L=k_C=k_H=1). */
 export function deltaE2000(lab1: Lab, lab2: Lab): number {
   const [L1, a1, b1] = lab1, [L2, a2, b2] = lab2;

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/xyy-slicing",
+  "title": {
+    "en": "Slicing xyY",
+    "ko": "xyY 색공간 슬라이서"
+  },
+  "subtitle": {
+    "en": "slide the luminance and watch the displayable colours at that Y trace an ever-changing island on the chart",
+    "ko": "휘도를 움직여 그 Y에서 표시 가능한 색이 도표 위에 변하는 섬을 그리는 것을 본다"
+  },
+  "description": {
+    "en": "xyY keeps chromaticity on the familiar diagram and luminance on a third axis. Slide Y and watch the gamut of displayable colours at that brightness shrink and shift across the chromaticity chart.",
+    "ko": "xyY는 색도를 익숙한 도표에, 휘도를 셋째 축에 둔다. Y를 움직이면 그 밝기에서 표시 가능한 색역이 색도 도표 위에서 줄어들고 이동하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": ["xyz-transformation/xyz-projective-locus"],
+  "leads_to": ["color-space-slicer/lab-slicing"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hunt, The Reproduction of Colour 6e", "section": "§3 (xyY)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["xyY", "chromaticity", "luminance", "gamut slice"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

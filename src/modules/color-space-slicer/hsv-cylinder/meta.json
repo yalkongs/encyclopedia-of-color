@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-space-slicer/hsv-cylinder",
+  "title": {
+    "en": "The HSV Hexcone",
+    "ko": "HSV 육각뿔"
+  },
+  "subtitle": {
+    "en": "slide the value and watch the hue-saturation disc brighten from a single black point to a full colour wheel",
+    "ko": "명도를 움직여 색상-채도 원반이 한 점의 검정에서 가득 찬 색상환으로 밝아지는 것을 본다"
+  },
+  "description": {
+    "en": "HSV wraps hue around a disc, saturation outward, value upward — a hexcone that pinches to black at the bottom. Slide the value and watch each horizontal slice grow from a point to a full wheel.",
+    "ko": "HSV는 색상을 원반에 두르고 채도를 바깥으로, 명도를 위로 둔다 — 아래에서 검정으로 좁혀지는 육각뿔이다. 명도를 움직이면 각 수평 단면이 점에서 가득 찬 환으로 커지는 것을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 4,
+  "category": "color-space-slicer",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["color-space-slicer/hsl-double-cone"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Smith 1978, SIGGRAPH", "section": "Color Gamut Transform Pairs" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["HSV", "hexcone", "value", "saturation"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

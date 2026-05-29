@@ -57,9 +57,10 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   // Domain 4
   'cie-1931-matching':            { title: 'CIE 1931 Matching',       sub: 'Domain 4 · colour-matching functions and the standard observer' },
   'xyz-transformation':           { title: 'XYZ Transformation',      sub: 'Domain 4 · linear maps, projection, and sRGB encoding' },
+  'color-space-slicer':           { title: 'Colour-Space Slicer',     sub: 'Domain 4 · slicing the colour solids — Lab, Luv, HSV, Munsell, NCS, Ostwald' },
 };
 
-const D4_ORDER = ['cie-1931-matching', 'xyz-transformation'];
+const D4_ORDER = ['cie-1931-matching', 'xyz-transformation', 'color-space-slicer'];
 
 interface ModuleEntry { meta: MetaV2; href: string }
 

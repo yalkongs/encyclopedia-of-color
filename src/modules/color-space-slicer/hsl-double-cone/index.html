@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The HSL Double Cone — slide the lightness and watch the colour disc w…</title>
+  <meta name="description" content="HSL puts pure black and pure white at the two apexes, with the most colourful slice at the equator. Slide the lightness and watch the available chroma swell at the middle and vanish at both ends.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/hsl-double-cone/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The HSL Double Cone">
+  <meta property="og:description"    content="HSL puts pure black and pure white at the two apexes, with the most colourful slice at the equator. Slide the lightness and watch the available chroma swell at the middle and vanish at both ends.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/hsl-double-cone/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--hsl-double-cone.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The HSL Double Cone.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The HSL Double Cone">
+  <meta name="twitter:description"   content="HSL puts pure black and pure white at the two apexes, with the most colourful slice at the equator. Slide the lightness and watch the available chroma swell at the middle and vanish at both ends.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-space-slicer--hsl-double-cone.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The HSL Double Cone.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The HSL Double Cone","alternateName":"color-space-slicer/hsl-double-cone","description":"HSL puts pure black and pure white at the two apexes, with the most colourful slice at the equator. Slide the lightness and watch the available chroma swell at the middle and vanish at both ends.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"HSL, double cone, lightness, chroma","url":"https://encyclopedia-of-color.vercel.app/modules/color-space-slicer/hsl-double-cone/","image":"https://encyclopedia-of-color.vercel.app/og/color-space-slicer--hsl-double-cone.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-space-slicer/hsl-double-cone">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">The HSL Double Cone</h1>
+      <p class="module-subtitle">slide the lightness and watch the colour disc widen to full chroma at the middle, then pinch to white</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          HSL splits brightness symmetrically: black at the bottom apex, white at the top, the most saturated colours around the equator. The solid is two cones base to base.
+        </p>
+        <div class="math-block" data-tex="\text{chroma}_{\max} = 1 - |2L - 1|"></div>
+        <p class="zone-guide">
+          Slide the lightness. The disc's radius is the chroma available at that level — widest at L = 50%, shrinking to a point at pure black and pure white. The side profile shows the cut in the double cone.
+        </p>
+        <enc-slider id="l" label="Lightness" min="0" max="100" step="1" value="50" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="HSL double cone slice"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Joblove &amp; Greenberg 1978, SIGGRAPH"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
