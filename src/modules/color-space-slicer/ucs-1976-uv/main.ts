@@ -5,8 +5,17 @@ import '@core/components/citation-footer';
 import { CanvasStage } from '@core/components/canvas-stage';
 import { EncToggle } from '@core/components/toggle';
 import { theme, axisStyle } from '@core/render/theme';
-import { SPECTRAL_LOCUS, xyToCss } from '@core/math/colorimetry';
+import { SPECTRAL_LOCUS } from '@core/math/colorimetry';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateFromUrl } from '@core/state/url-state';
+
+function xyTuple(x: number, y: number): [number, number, number] {
+  if (y <= 1e-4) return [0, 0, 0];
+  const lin = linearSrgbFromXyz([x / y, 1, (1 - x - y) / y]);
+  const m = Math.max(lin[0], lin[1], lin[2], 1e-6);
+  return srgb8([lin[0] / m, lin[1] / m, lin[2] / m]);
+}
 
 // Locus in u'v'.
 const LOCUS_UV = SPECTRAL_LOCUS.map(([x, y]) => {
@@ -59,16 +68,12 @@ class Ucs1976 {
     const s = Math.min(plotW / AMAX, plotH / BMAX);
     const px = (a: number) => plotX + a * s, py = (b: number) => plotY + plotH - b * s;
 
-    const step = 3;
-    for (let sy = 0; sy < plotH; sy += step) {
-      for (let sx = 0; sx < plotW; sx += step) {
-        const a = sx / s, b = (plotH - sy) / s;
-        if (!pointInPoly(a, b, locus)) continue;
-        const [cx, cy] = uv ? uvToXy(a, b) : [a, b];
-        ctx.fillStyle = xyToCss(cx, cy);
-        ctx.fillRect(plotX + sx, plotY + (plotH - sy) - step, step, step);
-      }
-    }
+    fillRegionAA(ctx, plotX, plotY, plotX + plotW, plotY + plotH, (sxp, syp) => {
+      const a = (sxp - plotX) / s, b = (plotY + plotH - syp) / s;
+      if (!pointInPoly(a, b, locus)) return null;
+      const [cx, cy] = uv ? uvToXy(a, b) : [a, b];
+      return xyTuple(cx, cy);
+    });
     ctx.strokeStyle = theme.inkAlpha(0.45); ctx.lineWidth = 1.2;
     ctx.beginPath(); locus.forEach(([a, b], i) => { const X = px(a), Y = py(b); i === 0 ? ctx.moveTo(X, Y) : ctx.lineTo(X, Y); }); ctx.closePath(); ctx.stroke();
     ctx.strokeStyle = axisStyle.baseline; ctx.lineWidth = 1;

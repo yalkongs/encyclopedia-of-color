@@ -106,12 +106,18 @@ const M_LIN_FROM_XYZ: M3 = [
 export function xyzFromLinearSrgb(lin: V3): V3 { return mul(M_XYZ_FROM_LIN, lin); }
 export function linearSrgbFromXyz(xyz: V3): V3 { return mul(M_LIN_FROM_XYZ, xyz); }
 
-/** Gamma-encode a linear-sRGB triple (0..1) to a CSS `rgb()` string, clamped. */
-export function srgbCss(lin: V3): string {
+/** Gamma-encode a linear-sRGB triple (0..1) to 0..255 integer channels, clamped. */
+export function srgb8(lin: V3): [number, number, number] {
   const enc = (c: number) => {
     const x = Math.max(0, Math.min(1, c));
     const v = x <= 0.0031308 ? 12.92 * x : 1.055 * Math.pow(x, 1 / 2.4) - 0.055;
     return Math.round(v * 255);
   };
-  return `rgb(${enc(lin[0])},${enc(lin[1])},${enc(lin[2])})`;
+  return [enc(lin[0]), enc(lin[1]), enc(lin[2])];
+}
+
+/** Gamma-encode a linear-sRGB triple (0..1) to a CSS `rgb()` string, clamped. */
+export function srgbCss(lin: V3): string {
+  const [r, g, b] = srgb8(lin);
+  return `rgb(${r},${g},${b})`;
 }

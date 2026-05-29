@@ -5,6 +5,7 @@ import '@core/components/citation-footer';
 import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme } from '@core/render/theme';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 function hsvToRgb(h: number, s: number, v: number): [number, number, number] {
@@ -44,16 +45,14 @@ class HsvCylinder {
     ctx.fillStyle = theme.paperBg; ctx.fillRect(0, 0, w, h);
     const V = this.v / 100;
 
-    const cx = w * 0.36, cy = h * 0.5, R = Math.min(w * 0.26, h * 0.4), step = 3;
-    for (let sy = -R; sy <= R; sy += step) {
-      for (let sx = -R; sx <= R; sx += step) {
-        const r = Math.hypot(sx, sy); if (r > R) continue;
-        const hue = (Math.atan2(sy, sx) * 180 / Math.PI + 360) % 360;
-        const [rr, gg, bb] = hsvToRgb(hue, r / R, V);
-        ctx.fillStyle = `rgb(${Math.round(rr * 255)},${Math.round(gg * 255)},${Math.round(bb * 255)})`;
-        ctx.fillRect(cx + sx, cy + sy, step, step);
-      }
-    }
+    const cx = w * 0.36, cy = h * 0.5, R = Math.min(w * 0.26, h * 0.4);
+    fillRegionAA(ctx, cx - R, cy - R, cx + R, cy + R, (x, y) => {
+      const sx = x - cx, sy = y - cy;
+      const r = Math.hypot(sx, sy); if (r > R) return null;
+      const hue = (Math.atan2(sy, sx) * 180 / Math.PI + 360) % 360;
+      const [rr, gg, bb] = hsvToRgb(hue, r / R, V);
+      return [rr * 255, gg * 255, bb * 255];
+    });
     ctx.strokeStyle = theme.inkAlpha(0.4); ctx.lineWidth = 1;
     ctx.beginPath(); ctx.arc(cx, cy, R, 0, 2 * Math.PI); ctx.stroke();
     ctx.fillStyle = theme.inkMute; ctx.font = '11px Inter, sans-serif'; ctx.textAlign = 'center';

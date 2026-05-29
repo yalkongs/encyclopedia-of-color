@@ -5,6 +5,7 @@ import '@core/components/citation-footer';
 import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme } from '@core/render/theme';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 type RGB = [number, number, number];
@@ -43,16 +44,13 @@ class Ostwald {
     const den = (B[1] - F[1]) * (A[0] - F[0]) + (F[0] - B[0]) * (A[1] - F[1]);
     const minX = Math.min(A[0], B[0], F[0]), maxX = Math.max(A[0], B[0], F[0]);
     const minY = Math.min(A[1], B[1], F[1]), maxY = Math.max(A[1], B[1], F[1]);
-    for (let py = minY; py <= maxY; py += 3) {
-      for (let px = minX; px <= maxX; px += 3) {
-        const a = ((B[1] - F[1]) * (px - F[0]) + (F[0] - B[0]) * (py - F[1])) / den;
-        const b = ((F[1] - A[1]) * (px - F[0]) + (A[0] - F[0]) * (py - F[1])) / den;
-        const c = 1 - a - b;
-        if (a < 0 || b < 0 || c < 0) continue;
-        ctx.fillStyle = cssOf([a * 1 + c * col[0], a * 1 + c * col[1], a * 1 + c * col[2]]);
-        ctx.fillRect(px, py, 3, 3);
-      }
-    }
+    fillRegionAA(ctx, minX, minY, maxX, maxY, (px, py) => {
+      const a = ((B[1] - F[1]) * (px - F[0]) + (F[0] - B[0]) * (py - F[1])) / den;
+      const b = ((F[1] - A[1]) * (px - F[0]) + (A[0] - F[0]) * (py - F[1])) / den;
+      const c = 1 - a - b;
+      if (a < 0 || b < 0 || c < 0) return null;
+      return [(a + c * col[0]) * 255, (a + c * col[1]) * 255, (a + c * col[2]) * 255];
+    });
   }
 
   private draw() {

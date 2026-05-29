@@ -6,7 +6,8 @@ import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme, axisStyle } from '@core/render/theme';
 import { luvToXyz, srgbInGamut } from '@core/math/colorimetry';
-import { linearSrgbFromXyz, srgbCss } from '@core/math/color-adaptation';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 const UVMAX = 150;
@@ -39,16 +40,11 @@ class LuvSlicing {
 
     const cx = w * 0.34, cy = h * 0.5, R = Math.min(w * 0.28, h * 0.4);
     const sc = R / UVMAX;
-    const step = 3;
-    for (let sy = -R; sy <= R; sy += step) {
-      for (let sx = -R; sx <= R; sx += step) {
-        const u = sx / sc, v = -sy / sc;
-        const lin = linearSrgbFromXyz(luvToXyz([this.L, u, v]));
-        if (!srgbInGamut(lin)) continue;
-        ctx.fillStyle = srgbCss(lin);
-        ctx.fillRect(cx + sx, cy + sy, step, step);
-      }
-    }
+    fillRegionAA(ctx, cx - R, cy - R, cx + R, cy + R, (x, y) => {
+      const u = (x - cx) / sc, v = -(y - cy) / sc;
+      const lin = linearSrgbFromXyz(luvToXyz([this.L, u, v]));
+      return srgbInGamut(lin) ? srgb8(lin) : null;
+    });
     ctx.strokeStyle = theme.inkAlpha(0.4); ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(cx - R, cy); ctx.lineTo(cx + R, cy); ctx.moveTo(cx, cy - R); ctx.lineTo(cx, cy + R); ctx.stroke();
     ctx.fillStyle = axisStyle.label; ctx.font = '11px Inter, sans-serif'; ctx.textAlign = 'center';

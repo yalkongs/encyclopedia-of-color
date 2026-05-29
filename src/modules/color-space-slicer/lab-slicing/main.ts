@@ -6,7 +6,8 @@ import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme, axisStyle } from '@core/render/theme';
 import { labToXyz, srgbInGamut } from '@core/math/colorimetry';
-import { linearSrgbFromXyz, srgbCss } from '@core/math/color-adaptation';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 const ABMAX = 128;
@@ -39,16 +40,11 @@ class LabSlicing {
 
     const cx = w * 0.34, cy = h * 0.5, R = Math.min(w * 0.28, h * 0.4);
     const sc = R / ABMAX;
-    const step = 3;
-    for (let sy = -R; sy <= R; sy += step) {
-      for (let sx = -R; sx <= R; sx += step) {
-        const a = sx / sc, b = -sy / sc;
-        const lin = linearSrgbFromXyz(labToXyz([this.L, a, b]));
-        if (!srgbInGamut(lin)) continue;
-        ctx.fillStyle = srgbCss(lin);
-        ctx.fillRect(cx + sx, cy + sy, step, step);
-      }
-    }
+    fillRegionAA(ctx, cx - R, cy - R, cx + R, cy + R, (x, y) => {
+      const a = (x - cx) / sc, b = -(y - cy) / sc;
+      const lin = linearSrgbFromXyz(labToXyz([this.L, a, b]));
+      return srgbInGamut(lin) ? srgb8(lin) : null;
+    });
     // Axes.
     ctx.strokeStyle = theme.inkAlpha(0.4); ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(cx - R, cy); ctx.lineTo(cx + R, cy); ctx.moveTo(cx, cy - R); ctx.lineTo(cx, cy + R); ctx.stroke();

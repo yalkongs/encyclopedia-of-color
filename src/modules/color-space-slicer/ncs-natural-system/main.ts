@@ -5,6 +5,7 @@ import '@core/components/citation-footer';
 import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme } from '@core/render/theme';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 type RGB = [number, number, number];
@@ -49,16 +50,13 @@ class Ncs {
     const x0 = w * 0.12, y0 = h * 0.14, H = h * 0.66, Wd = w * 0.42;
     const W: [number, number] = [x0, y0], S: [number, number] = [x0, y0 + H], C: [number, number] = [x0 + Wd, y0 + H / 2];
     const den = (S[1] - C[1]) * (W[0] - C[0]) + (C[0] - S[0]) * (W[1] - C[1]);
-    for (let py = y0; py <= y0 + H; py += 3) {
-      for (let px = x0; px <= x0 + Wd; px += 3) {
-        const a = ((S[1] - C[1]) * (px - C[0]) + (C[0] - S[0]) * (py - C[1])) / den;
-        const b = ((C[1] - W[1]) * (px - C[0]) + (W[0] - C[0]) * (py - C[1])) / den;
-        const c = 1 - a - b;
-        if (a < 0 || b < 0 || c < 0) continue;
-        ctx.fillStyle = cssOf([a * 1 + c * hc[0], a * 1 + c * hc[1], a * 1 + c * hc[2]]);
-        ctx.fillRect(px, py, 3, 3);
-      }
-    }
+    fillRegionAA(ctx, x0, y0, x0 + Wd, y0 + H, (px, py) => {
+      const a = ((S[1] - C[1]) * (px - C[0]) + (C[0] - S[0]) * (py - C[1])) / den;
+      const b = ((C[1] - W[1]) * (px - C[0]) + (W[0] - C[0]) * (py - C[1])) / den;
+      const c = 1 - a - b;
+      if (a < 0 || b < 0 || c < 0) return null;
+      return [(a + c * hc[0]) * 255, (a + c * hc[1]) * 255, (a + c * hc[2]) * 255];
+    });
     ctx.strokeStyle = theme.inkAlpha(0.5); ctx.lineWidth = 1.2;
     ctx.beginPath(); ctx.moveTo(W[0], W[1]); ctx.lineTo(S[0], S[1]); ctx.lineTo(C[0], C[1]); ctx.closePath(); ctx.stroke();
     ctx.fillStyle = theme.ink; ctx.font = '600 12px Inter, sans-serif';

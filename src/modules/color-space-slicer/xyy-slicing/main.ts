@@ -6,7 +6,8 @@ import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme, axisStyle } from '@core/render/theme';
 import { SPECTRAL_LOCUS, srgbInGamut } from '@core/math/colorimetry';
-import { linearSrgbFromXyz, srgbCss } from '@core/math/color-adaptation';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 const XMAX = 0.74, YMAX = 0.84;
@@ -43,17 +44,12 @@ class XyySlicing {
     const px = (x: number) => plotX + x * s, py = (y: number) => plotY + plotH - y * s;
 
     // Gamut-bounded slice fill.
-    const step = 3;
-    for (let sy = 0; sy < plotH; sy += step) {
-      for (let sx = 0; sx < plotW; sx += step) {
-        const x = sx / s, y = (plotH - sy) / s;
-        if (y < 1e-3 || x + y > 1) continue;
-        const lin = linearSrgbFromXyz([(x / y) * Yv, Yv, ((1 - x - y) / y) * Yv]);
-        if (!srgbInGamut(lin)) continue;
-        ctx.fillStyle = srgbCss(lin);
-        ctx.fillRect(plotX + sx, plotY + (plotH - sy) - step, step, step);
-      }
-    }
+    fillRegionAA(ctx, plotX, plotY, plotX + plotW, plotY + plotH, (sxp, syp) => {
+      const x = (sxp - plotX) / s, y = (plotY + plotH - syp) / s;
+      if (y < 1e-3 || x + y > 1) return null;
+      const lin = linearSrgbFromXyz([(x / y) * Yv, Yv, ((1 - x - y) / y) * Yv]);
+      return srgbInGamut(lin) ? srgb8(lin) : null;
+    });
     // Spectral locus outline.
     ctx.strokeStyle = theme.inkAlpha(0.45); ctx.lineWidth = 1.2;
     ctx.beginPath(); SPECTRAL_LOCUS.forEach(([x, y], i) => { const X = px(x), Y = py(y); i === 0 ? ctx.moveTo(X, Y) : ctx.lineTo(X, Y); }); ctx.closePath(); ctx.stroke();

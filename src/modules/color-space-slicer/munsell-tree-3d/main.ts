@@ -6,7 +6,8 @@ import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme } from '@core/render/theme';
 import { labToXyz, srgbInGamut } from '@core/math/colorimetry';
-import { linearSrgbFromXyz, srgbCss } from '@core/math/color-adaptation';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 const CHROMA_SCALE = 5; // Munsell chroma → a*b* radius
@@ -39,19 +40,15 @@ class MunsellTree {
     const L = this.value * 10; // Value 0-10 → L* 0-100 (approx)
 
     const cx = w * 0.36, cy = h * 0.5, R = Math.min(w * 0.28, h * 0.4);
-    const step = 3;
-    for (let sy = -R; sy <= R; sy += step) {
-      for (let sx = -R; sx <= R; sx += step) {
-        const r = Math.hypot(sx, sy); if (r > R) continue;
-        const C = (r / R) * 18;             // chroma 0-18
-        const ang = Math.atan2(-sy, sx);
-        const a = C * CHROMA_SCALE * Math.cos(ang), b = C * CHROMA_SCALE * Math.sin(ang);
-        const lin = linearSrgbFromXyz(labToXyz([L, a, b]));
-        if (!srgbInGamut(lin)) continue;
-        ctx.fillStyle = srgbCss(lin);
-        ctx.fillRect(cx + sx, cy + sy, step, step);
-      }
-    }
+    fillRegionAA(ctx, cx - R, cy - R, cx + R, cy + R, (x, y) => {
+      const sx = x - cx, sy = y - cy;
+      const r = Math.hypot(sx, sy); if (r > R) return null;
+      const C = (r / R) * 18;             // chroma 0-18
+      const ang = Math.atan2(-sy, sx);
+      const a = C * CHROMA_SCALE * Math.cos(ang), b = C * CHROMA_SCALE * Math.sin(ang);
+      const lin = linearSrgbFromXyz(labToXyz([L, a, b]));
+      return srgbInGamut(lin) ? srgb8(lin) : null;
+    });
     // Chroma rings + hue spokes.
     ctx.strokeStyle = theme.inkAlpha(0.25); ctx.lineWidth = 1;
     for (let c = 4; c <= 16; c += 4) { ctx.beginPath(); ctx.arc(cx, cy, (c / 18) * R, 0, 2 * Math.PI); ctx.stroke(); }
