@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "color-harmony-generator/harmony-code-exporter",
+  "title": { "en": "Palette Code Exporter", "ko": "팔레트 코드 내보내기" },
+  "subtitle": {
+    "en": "build a tonal scale in OKLCH, then read it out as Tailwind, CSS custom properties, or JSON tokens",
+    "ko": "OKLCH로 톤 스케일을 만들고 Tailwind·CSS 변수·JSON 토큰으로 내보낸다"
+  },
+  "description": {
+    "en": "A palette is useful once it leaves the picker. Generate a 50-900 OKLCH tonal ramp from one hue and export it as Tailwind, CSS variables, or JSON tokens. Set hue and chroma; the code re-emits live.",
+    "ko": "팔레트는 피커를 벗어나야 쓸모가 있다. OKLCH로 한 색상에서 50-900 톤 램프를 명도 균등하게 생성해 Tailwind 색 객체·CSS 변수·JSON 토큰으로 내보낸다. 색상·채도를 정하면 코드가 다시 생성된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 5,
+  "category": "color-harmony-generator",
+  "layout": "A",
+  "prerequisites": ["color-harmony-generator/harmony-wheel"],
+  "leads_to": ["color-harmony-generator/material-3-tonal-palette"],
+  "see_also": [],
+  "textbook_refs": [{ "source": "Ottosson 2020", "section": "OKLab tonal ramps" }],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["color tokens", "Tailwind", "CSS variables", "palette export", "OKLCH"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

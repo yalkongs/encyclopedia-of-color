@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "color-harmony-generator/material-3-tonal-palette",
+  "title": { "en": "Material 3 Tonal Palette", "ko": "Material 3 톤 팔레트" },
+  "subtitle": {
+    "en": "one source hue becomes thirteen tones from 0 to 100 — and the roles (primary, container, on-surface) read straight off them",
+    "ko": "하나의 시드 색상이 0–100의 열세 톤이 되고, 역할(primary·container·on-surface)이 그대로 읽힌다"
+  },
+  "description": {
+    "en": "Material You builds a palette from one seed: HCT fixes hue and chroma and steps Tone (CIELAB L*) 0-100. Roles are named tones — Primary 40, Container 90. Chroma clamps to gamut at each tone.",
+    "ko": "Material You는 하나의 시드로 UI 팔레트를 만든다 — HCT가 색상·채도를 고정하고 톤(CIELAB 명도)을 0–100으로 단계화한다. 역할은 이름 붙은 톤이다(Primary 40, Container 90). 색상·채도를 정하면 톤마다 채도가 색역에 맞춰 제한된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 5,
+  "category": "color-harmony-generator",
+  "layout": "A",
+  "prerequisites": ["color-harmony-generator/harmony-code-exporter"],
+  "leads_to": ["color-harmony-generator/radix-color-scale"],
+  "see_also": ["color-space-slicer/lab-slicing"],
+  "textbook_refs": [{ "source": "Material Design 3", "section": "HCT tonal palettes" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Material 3", "Material You", "tonal palette", "HCT", "tone"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

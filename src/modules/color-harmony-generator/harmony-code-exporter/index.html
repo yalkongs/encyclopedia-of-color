@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Palette Code Exporter — build a tonal scale in OKLCH, then read it ou…</title>
+  <meta name="description" content="A palette is useful once it leaves the picker. Generate a 50-900 OKLCH tonal ramp from one hue and export it as Tailwind, CSS variables, or JSON tokens. Set hue and chroma; the code re-emits live.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-harmony-generator/harmony-code-exporter/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Palette Code Exporter">
+  <meta property="og:description"    content="A palette is useful once it leaves the picker. Generate a 50-900 OKLCH tonal ramp from one hue and export it as Tailwind, CSS variables, or JSON tokens. Set hue and chroma; the code re-emits live.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-harmony-generator/harmony-code-exporter/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-harmony-generator--harmony-code-exporter.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Palette Code Exporter.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Palette Code Exporter">
+  <meta name="twitter:description"   content="A palette is useful once it leaves the picker. Generate a 50-900 OKLCH tonal ramp from one hue and export it as Tailwind, CSS variables, or JSON tokens. Set hue and chroma; the code re-emits live.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-harmony-generator--harmony-code-exporter.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Palette Code Exporter.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Palette Code Exporter","alternateName":"color-harmony-generator/harmony-code-exporter","description":"A palette is useful once it leaves the picker. Generate a 50-900 OKLCH tonal ramp from one hue and export it as Tailwind, CSS variables, or JSON tokens. Set hue and chroma; the code re-emits live.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"color tokens, Tailwind, CSS variables, palette export, OKLCH","url":"https://encyclopedia-of-color.vercel.app/modules/color-harmony-generator/harmony-code-exporter/","image":"https://encyclopedia-of-color.vercel.app/og/color-harmony-generator--harmony-code-exporter.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-harmony-generator/harmony-code-exporter">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Palette Code Exporter</h1>
+      <p class="module-subtitle">build a tonal scale in OKLCH, then read it out as Tailwind, CSS custom properties, or JSON tokens</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A design palette is only useful once it leaves the colour picker. Generate a 50-900 tonal ramp from one hue in OKLCH — evenly stepped in lightness — and export it in the shape your toolchain expects: a Tailwind colour object, a block of CSS variables, or a JSON token set.
+        </p>
+        <div class="math-block" data-tex="\{50, 100, \dots, 900\} \to \text{hex} \to \text{Tailwind | CSS | JSON}"></div>
+        <p class="zone-guide">
+          Set the brand hue and chroma; the ramp updates and the code panel re-emits in the chosen format. Every step is computed in OKLCH so the lightness progression is perceptually even, not arithmetic in sRGB.
+        </p>
+        <enc-slider id="hue" label="Brand hue" min="0" max="359" step="1" value="265" unit="°"></enc-slider>
+        <enc-slider id="C" label="Chroma C" min="4" max="32" step="1" value="16" unit="/100"></enc-slider>
+        <enc-toggle id="fmt" label="Format" options="tw,css,json" labels="Tailwind,CSS vars,JSON" value="tw"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Palette code exporter"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Ottosson 2020, OKLab; Tailwind / CSS Color 4 token conventions"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
