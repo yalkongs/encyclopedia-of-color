@@ -5,8 +5,10 @@ import '@core/components/citation-footer';
 import { CanvasStage } from '@core/components/canvas-stage';
 import { EncToggle } from '@core/components/toggle';
 import { theme, axisStyle } from '@core/render/theme';
-import { SPECTRAL_LOCUS, xyToCss } from '@core/math/colorimetry';
-import { SRGB, ADOBE_RGB, DISPLAY_P3, BT2020, gamutTriangleArea, xyInGamut, type RgbSpace } from '@core/math/rgb-spaces';
+import { SPECTRAL_LOCUS } from '@core/math/colorimetry';
+import { SRGB, ADOBE_RGB, DISPLAY_P3, BT2020, gamutTriangleArea, type RgbSpace } from '@core/math/rgb-spaces';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateFromUrl } from '@core/state/url-state';
 
 const SPACES: Record<string, RgbSpace> = { srgb: SRGB, adobe: ADOBE_RGB, p3: DISPLAY_P3, bt2020: BT2020 };
@@ -40,17 +42,11 @@ class GamutOverlap {
     const px = (x: number) => plotX + x * s;
     const py = (y: number) => plotY + plotH - y * s;
 
-    // filled locus
-    const step = 3;
-    for (let sy = 0; sy < plotH; sy += step) {
-      for (let sx = 0; sx < plotW; sx += step) {
-        const x = sx / s, y = (plotH - sy) / s;
-        if (!xyInGamut(x, y, BT2020) && !insideLocus(x, y)) continue;
-        if (!insideLocus(x, y)) continue;
-        ctx.fillStyle = xyToCss(x, y);
-        ctx.fillRect(plotX + sx, plotY + (plotH - sy) - step, step, step);
-      }
-    }
+    // filled locus (subsample anti-aliased boundary)
+    fillRegionAA(ctx, plotX, plotY, plotX + plotW, plotY + plotH, (sxp, syp) => {
+      const x = (sxp - plotX) / s, y = (plotY + plotH - syp) / s;
+      return insideLocus(x, y) ? xyTuple(x, y) : null;
+    });
     ctx.strokeStyle = theme.inkAlpha(0.4); ctx.lineWidth = 1.1;
     ctx.beginPath(); SPECTRAL_LOCUS.forEach(([x, y], i) => { i === 0 ? ctx.moveTo(px(x), py(y)) : ctx.lineTo(px(x), py(y)); }); ctx.closePath(); ctx.stroke();
 
@@ -96,6 +92,13 @@ class GamutOverlap {
       ctx.beginPath(); ctx.arc(px(p[0]), py(p[1]), 4, 0, Math.PI * 2); ctx.fillStyle = color; ctx.fill();
     }
   }
+}
+
+function xyTuple(x: number, y: number): [number, number, number] {
+  if (y <= 1e-4) return [0, 0, 0];
+  const lin = linearSrgbFromXyz([x / y, 1, (1 - x - y) / y]);
+  const m = Math.max(lin[0], lin[1], lin[2], 1e-6);
+  return srgb8([lin[0] / m, lin[1] / m, lin[2] / m]);
 }
 
 function insideLocus(x: number, y: number): boolean {
