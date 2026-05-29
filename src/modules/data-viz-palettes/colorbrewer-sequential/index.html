@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ColorBrewer Families — match the palette to the data — sequential for…</title>
+  <meta name="description" content="ColorBrewer sorts palettes into three jobs: sequential for magnitude, diverging for deviation from a midpoint, qualitative for categories. Switch families for example schemes and a chart.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/colorbrewer-sequential/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ColorBrewer Families">
+  <meta property="og:description"    content="ColorBrewer sorts palettes into three jobs: sequential for magnitude, diverging for deviation from a midpoint, qualitative for categories. Switch families for example schemes and a chart.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/colorbrewer-sequential/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--colorbrewer-sequential.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ColorBrewer Families.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ColorBrewer Families">
+  <meta name="twitter:description"   content="ColorBrewer sorts palettes into three jobs: sequential for magnitude, diverging for deviation from a midpoint, qualitative for categories. Switch families for example schemes and a chart.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--colorbrewer-sequential.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ColorBrewer Families.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ColorBrewer Families","alternateName":"data-viz-palettes/colorbrewer-sequential","description":"ColorBrewer sorts palettes into three jobs: sequential for magnitude, diverging for deviation from a midpoint, qualitative for categories. Switch families for example schemes and a chart.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ColorBrewer, sequential, diverging, qualitative, palette","url":"https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/colorbrewer-sequential/","image":"https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--colorbrewer-sequential.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="data-viz-palettes/colorbrewer-sequential">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ColorBrewer Families</h1>
+      <p class="module-subtitle">match the palette to the data — sequential for magnitude, diverging for deviation, qualitative for categories</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Cynthia Brewer's ColorBrewer sorts map palettes into three jobs. Sequential ramps encode ordered magnitude (low to high). Diverging ramps put a neutral midpoint between two opposed directions (below/above a baseline). Qualitative sets give maximally distinct hues for unordered categories.
+        </p>
+        <div class="math-block" data-tex="\text{sequential} \;|\; \text{diverging} \;|\; \text{qualitative}"></div>
+        <p class="zone-guide">
+          Switch families to see two example schemes each, with a sample chart below: a gradient for sequential, a centred bar for diverging, distinct category blocks for qualitative. Picking the wrong family is the most common data-viz colour mistake.
+        </p>
+        <enc-toggle id="type" label="Family" options="sequential,diverging,qualitative" labels="sequential,diverging,qualitative" value="sequential"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ColorBrewer palette families"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Brewer, ColorBrewer 2.0; Harrower & Brewer 2003"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

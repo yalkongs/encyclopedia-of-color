@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "data-viz-palettes/colorbrewer-sequential",
+  "title": { "en": "ColorBrewer Families", "ko": "ColorBrewer 계열" },
+  "subtitle": {
+    "en": "match the palette to the data — sequential for magnitude, diverging for deviation, qualitative for categories",
+    "ko": "데이터에 팔레트를 맞춘다 — 크기엔 순차, 편차엔 발산, 범주엔 정성"
+  },
+  "description": {
+    "en": "ColorBrewer sorts palettes into three jobs: sequential for magnitude, diverging for deviation from a midpoint, qualitative for categories. Switch families for example schemes and a chart.",
+    "ko": "브루어의 ColorBrewer는 팔레트를 세 용도로 나눈다 — 순차(크기 순서), 발산(중점 기준 편차), 정성(순서 없는 범주). 계열을 전환해 예시 스킴과 어울리는 샘플 차트를 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "data-viz-palettes",
+  "layout": "A",
+  "prerequisites": ["data-viz-palettes/viridis-vs-jet"],
+  "leads_to": [],
+  "see_also": ["data-viz-palettes/cividis-cvd-safe"],
+  "textbook_refs": [{ "source": "Harrower & Brewer 2003", "section": "ColorBrewer.org" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["ColorBrewer", "sequential", "diverging", "qualitative", "palette"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

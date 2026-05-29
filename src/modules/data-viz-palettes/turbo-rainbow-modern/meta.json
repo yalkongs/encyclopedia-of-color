@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "data-viz-palettes/turbo-rainbow-modern",
+  "title": { "en": "Turbo: a Fixed Rainbow", "ko": "Turbo: 개선된 무지개" },
+  "subtitle": {
+    "en": "when you still want a rainbow, Turbo smooths jet's muddy bands and harsh jumps — though it's still not luminance-monotonic",
+    "ko": "그래도 무지개가 필요할 때, Turbo는 jet의 탁한 띠와 급격한 점프를 매끄럽게 한다 — 다만 명도 단조는 아니다"
+  },
+  "description": {
+    "en": "Rainbows hurt quantitative data but help when locality matters. Turbo keeps the rainbow but removes jet's muddy bands and harsh jumps. Both still rise then fall, so viridis wins for ordered data.",
+    "ko": "무지개는 정량 데이터엔 해롭지만 국소성이 중요할 땐 쓸모 있다. 구글의 Turbo는 무지개를 유지하며 jet의 탁한 띠와 급격한 명도 점프를 없앤다. 명도 곡선을 비교하라 — 둘 다 오르내리므로 순서 데이터엔 viridis가 낫다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "data-viz-palettes",
+  "layout": "A",
+  "prerequisites": ["data-viz-palettes/viridis-vs-jet"],
+  "leads_to": [],
+  "see_also": ["data-viz-palettes/cubehelix-luminance-monotonic"],
+  "textbook_refs": [{ "source": "Mikhailov 2019", "section": "Turbo, An Improved Rainbow Colormap (Google AI)" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Turbo", "rainbow colormap", "jet", "data visualization"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Rec.709 → P3 LUT — the same RGB code means a different colour in each…</title>
+  <meta name="description" content="An RGB code is not a colour until you name its primaries: as Rec.709 one green, as Display P3 more saturated. A LUT rewrites codes so a 709 grade keeps its look on P3. Slide the hue to plot both.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/cinema-lut-apply/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Rec.709 → P3 LUT">
+  <meta property="og:description"    content="An RGB code is not a colour until you name its primaries: as Rec.709 one green, as Display P3 more saturated. A LUT rewrites codes so a 709 grade keeps its look on P3. Slide the hue to plot both.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/cinema-lut-apply/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--cinema-lut-apply.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Rec.709 → P3 LUT.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Rec.709 → P3 LUT">
+  <meta name="twitter:description"   content="An RGB code is not a colour until you name its primaries: as Rec.709 one green, as Display P3 more saturated. A LUT rewrites codes so a 709 grade keeps its look on P3. Slide the hue to plot both.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--cinema-lut-apply.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Rec.709 → P3 LUT.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Rec.709 → P3 LUT","alternateName":"data-viz-palettes/cinema-lut-apply","description":"An RGB code is not a colour until you name its primaries: as Rec.709 one green, as Display P3 more saturated. A LUT rewrites codes so a 709 grade keeps its look on P3. Slide the hue to plot both.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"LUT, Rec.709, DCI-P3, cinema, color space","url":"https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/cinema-lut-apply/","image":"https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--cinema-lut-apply.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="data-viz-palettes/cinema-lut-apply">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Rec.709 → P3 LUT</h1>
+      <p class="module-subtitle">the same RGB code means a different colour in each space — that gap is what a colour-transform LUT exists to close</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A code like (0, 200, 0) is not a colour until you say which primaries it rides on. Read it as Rec.709 and you get one green; read the identical code as Display P3 and you get a more saturated one, because P3's primaries sit further out. A LUT rewrites the codes so a clip graded in 709 keeps its intended look on a P3 display.
+        </p>
+        <div class="math-block" data-tex="XYZ = M_{709}\,\text{RGB} \neq M_{P3}\,\text{RGB}"></div>
+        <p class="zone-guide">
+          Slide the source hue of a saturated code value. Both interpretations are plotted on the chromaticity diagram with their gamut triangles, and shown as swatches. The distance between the two points is exactly what a 709→P3 conversion must correct.
+        </p>
+        <enc-slider id="hue" label="Source hue" min="0" max="359" step="1" value="140" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Rec.709 versus Display P3 interpretation of the same code"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="DCI-P3; ITU-R BT.709; colour-managed LUT conversion"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

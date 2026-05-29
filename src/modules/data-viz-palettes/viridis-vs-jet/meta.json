@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "data-viz-palettes/viridis-vs-jet",
+  "title": { "en": "Viridis vs Jet", "ko": "Viridis 대 Jet" },
+  "subtitle": {
+    "en": "why the old rainbow lies — jet's lightness zigzags and invents bands, while viridis climbs smoothly",
+    "ko": "옛 무지개가 거짓말하는 이유 — jet의 명도는 지그재그로 가짜 띠를 만들고, viridis는 매끄럽게 오른다"
+  },
+  "description": {
+    "en": "A good colormap rises monotonically in lightness. Jet brightens in the middle and darkens at both ends, faking bands; viridis climbs all the way. Compare the ramps, curves, and greyscale.",
+    "ko": "좋은 컬러맵은 지각 명도가 단조 증가한다. jet은 중간이 밝고 양끝이 어두워 가짜 띠를 만들지만 viridis는 끝까지 오른다. 램프·명도 곡선·그레이스케일을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "data-viz-palettes",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["data-viz-palettes/cividis-cvd-safe", "data-viz-palettes/turbo-rainbow-modern"],
+  "see_also": ["data-viz-palettes/cubehelix-luminance-monotonic"],
+  "textbook_refs": [{ "source": "Smith & van der Walt 2015", "section": "A Better Default Colormap (viridis)" }],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["viridis", "jet", "colormap", "perceptually uniform", "data visualization"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

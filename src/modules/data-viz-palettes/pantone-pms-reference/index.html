@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Pantone Spot Colours — a brand-red that no CMYK mix can hit — browse…</title>
+  <meta name="description" content="Pantone names pre-mixed spot inks — physical recipes, not screen colours. They print identically everywhere and many fall outside the CMYK gamut. The screen swatch only approximates the physical chip.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/pantone-pms-reference/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Pantone Spot Colours">
+  <meta property="og:description"    content="Pantone names pre-mixed spot inks — physical recipes, not screen colours. They print identically everywhere and many fall outside the CMYK gamut. The screen swatch only approximates the physical chip.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/pantone-pms-reference/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--pantone-pms-reference.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Pantone Spot Colours.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Pantone Spot Colours">
+  <meta name="twitter:description"   content="Pantone names pre-mixed spot inks — physical recipes, not screen colours. They print identically everywhere and many fall outside the CMYK gamut. The screen swatch only approximates the physical chip.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--pantone-pms-reference.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Pantone Spot Colours.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Pantone Spot Colours","alternateName":"data-viz-palettes/pantone-pms-reference","description":"Pantone names pre-mixed spot inks — physical recipes, not screen colours. They print identically everywhere and many fall outside the CMYK gamut. The screen swatch only approximates the physical chip.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Pantone, PMS, spot color, CMYK gamut, brand color","url":"https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/pantone-pms-reference/","image":"https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--pantone-pms-reference.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="data-viz-palettes/pantone-pms-reference">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Pantone Spot Colours</h1>
+      <p class="module-subtitle">a brand-red that no CMYK mix can hit — browse the PMS system and why spot inks exist alongside process colour</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Pantone Matching System names pre-mixed spot inks, each a physical recipe rather than a screen colour. Brands rely on them because a spot ink reproduces identically on every press, and many — bright oranges, deep blues, neons — sit outside the CMYK process gamut entirely. On a screen we can only approximate them.
+        </p>
+        <div class="math-block" data-tex="\text{PMS spot ink} \neq \text{CMYK mix} \neq \text{sRGB}"></div>
+        <p class="zone-guide">
+          Step through a sampler of well-known PMS colours. The large swatch is an approximate sRGB rendering; the strip shows neighbours. Remember the on-screen value only stands in for a physical ink chip.
+        </p>
+        <enc-slider id="i" label="Swatch" min="0" max="11" step="1" value="0"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Pantone PMS spot colour reference"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Pantone Matching System (approximate sRGB renderings)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

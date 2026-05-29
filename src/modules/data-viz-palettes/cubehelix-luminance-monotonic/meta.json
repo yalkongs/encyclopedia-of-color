@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "data-viz-palettes/cubehelix-luminance-monotonic",
+  "title": { "en": "Cubehelix", "ko": "큐브헬릭스" },
+  "subtitle": {
+    "en": "a colour helix wound around the grey diagonal — luminance always climbs, so it prints perfectly in black and white",
+    "ko": "회색 대각선을 감는 색의 나선 — 명도가 항상 올라 흑백 인쇄에도 완벽하다"
+  },
+  "description": {
+    "en": "Green's cubehelix spirals through RGB around the grey diagonal, so lightness always rises with the data. Tune start, rotations, hue, gamma; the colour changes but the greyscale stays monotonic.",
+    "ko": "그린의 큐브헬릭스는 흑백 대각선 주위로 RGB를 나선으로 감아 지각 명도가 데이터와 함께 늘 증가한다. 시작·회전·색상·감마를 조절해도 색만 바뀌고 그레이스케일은 매끄러운 단조 흑백을 유지한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 5,
+  "category": "data-viz-palettes",
+  "layout": "A",
+  "prerequisites": ["data-viz-palettes/viridis-vs-jet"],
+  "leads_to": [],
+  "see_also": ["data-viz-palettes/turbo-rainbow-modern"],
+  "textbook_refs": [{ "source": "Green 2011", "section": "A colour scheme for astronomical intensity images" }],
+  "standards": [],
+  "interaction_count": 4,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["cubehelix", "monotonic luminance", "colormap", "greyscale safe"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

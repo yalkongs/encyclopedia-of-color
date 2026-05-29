@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "data-viz-palettes/pantone-pms-reference",
+  "title": { "en": "Pantone Spot Colours", "ko": "팬톤 스팟 컬러" },
+  "subtitle": {
+    "en": "a brand-red that no CMYK mix can hit — browse the PMS system and why spot inks exist alongside process colour",
+    "ko": "어떤 CMYK 혼합도 못 내는 브랜드 레드 — PMS 시스템과 스팟 잉크가 존재하는 이유를 훑는다"
+  },
+  "description": {
+    "en": "Pantone names pre-mixed spot inks — physical recipes, not screen colours. They print identically everywhere and many fall outside the CMYK gamut. The screen swatch only approximates the physical chip.",
+    "ko": "팬톤은 미리 섞은 스팟 잉크에 이름을 붙인다 — 화면 색이 아닌 물리적 배합이다. 브랜드는 어디서나 똑같이 인쇄되고 다수가 CMYK 색역 밖이라 쓴다. 샘플러를 훑어보라 — 화면 스워치는 물리 칩의 근사일 뿐이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "data-viz-palettes",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": ["gamut-mapping-3d/gamut-overlapping-3d"],
+  "textbook_refs": [{ "source": "Pantone Matching System", "section": "Spot colour reference" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Pantone", "PMS", "spot color", "CMYK gamut", "brand color"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

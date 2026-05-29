@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "data-viz-palettes/cinema-lut-apply",
+  "title": { "en": "Rec.709 → P3 LUT", "ko": "Rec.709 → P3 LUT" },
+  "subtitle": {
+    "en": "the same RGB code means a different colour in each space — that gap is what a colour-transform LUT exists to close",
+    "ko": "같은 RGB 코드가 공간마다 다른 색이다 — 그 차이를 메우려 색 변환 LUT가 있다"
+  },
+  "description": {
+    "en": "An RGB code is not a colour until you name its primaries: as Rec.709 one green, as Display P3 more saturated. A LUT rewrites codes so a 709 grade keeps its look on P3. Slide the hue to plot both.",
+    "ko": "RGB 코드는 원색을 정해야 색이 된다 — Rec.709로 읽으면 한 초록, Display P3로 읽으면 더 선명하다. LUT는 709 그레이딩이 P3에서 같아 보이도록 코드를 다시 쓴다. 색상을 움직여 두 해석을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 5,
+  "category": "data-viz-palettes",
+  "layout": "A",
+  "prerequisites": ["gamut-mapping-3d/gamut-overlapping-3d"],
+  "leads_to": [],
+  "see_also": ["hdr-color-spaces/bt2020-vs-rec709"],
+  "textbook_refs": [{ "source": "DCI-P3 / BT.709", "section": "Colour-space conversion" }],
+  "standards": ["DCI-P3", "ITU-R BT.709"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["LUT", "Rec.709", "DCI-P3", "cinema", "color space"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

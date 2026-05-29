@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2",
+  "id": "data-viz-palettes/cividis-cvd-safe",
+  "title": { "en": "Cividis: CVD-Safe", "ko": "Cividis: 색각이상 안전" },
+  "subtitle": {
+    "en": "a colormap built for colour-blind vision — see it survive deuteranopia where jet falls apart",
+    "ko": "색맹 시각을 위해 만든 컬러맵 — jet이 무너지는 적록색약에서도 살아남는 것을 본다"
+  },
+  "description": {
+    "en": "Cividis is a blue-to-yellow ramp tuned so red-green colour-deficient viewers read the same order — it avoids the red-green axis. Jet leans on it and muddles under simulation. Pick a deficiency.",
+    "ko": "Cividis는 적록 색각이상자도 같은 순서로 읽도록 최적화된 파랑→노랑 램프다. 적록 축을 피하지만 jet은 그 축에 의존해 시뮬레이션에서 뭉개진다. 결손 유형을 골라 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "data-viz-palettes",
+  "layout": "A",
+  "prerequisites": ["data-viz-palettes/viridis-vs-jet"],
+  "leads_to": [],
+  "see_also": ["color-vision-deficiency/cvd-dichromacy"],
+  "textbook_refs": [{ "source": "Nuñez, Anderton & Renslow 2018", "section": "Optimizing colormaps for CVD (cividis)" }],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["cividis", "color blind", "CVD", "colormap", "accessibility"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

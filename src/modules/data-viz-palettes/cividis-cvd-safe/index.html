@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Cividis: CVD-Safe — a colormap built for colour-blind vision — see it…</title>
+  <meta name="description" content="Cividis is a blue-to-yellow ramp tuned so red-green colour-deficient viewers read the same order — it avoids the red-green axis. Jet leans on it and muddles under simulation. Pick a deficiency.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/cividis-cvd-safe/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Cividis: CVD-Safe">
+  <meta property="og:description"    content="Cividis is a blue-to-yellow ramp tuned so red-green colour-deficient viewers read the same order — it avoids the red-green axis. Jet leans on it and muddles under simulation. Pick a deficiency.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/cividis-cvd-safe/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--cividis-cvd-safe.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Cividis: CVD-Safe.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Cividis: CVD-Safe">
+  <meta name="twitter:description"   content="Cividis is a blue-to-yellow ramp tuned so red-green colour-deficient viewers read the same order — it avoids the red-green axis. Jet leans on it and muddles under simulation. Pick a deficiency.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--cividis-cvd-safe.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Cividis: CVD-Safe.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Cividis: CVD-Safe","alternateName":"data-viz-palettes/cividis-cvd-safe","description":"Cividis is a blue-to-yellow ramp tuned so red-green colour-deficient viewers read the same order — it avoids the red-green axis. Jet leans on it and muddles under simulation. Pick a deficiency.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"cividis, color blind, CVD, colormap, accessibility","url":"https://encyclopedia-of-color.vercel.app/modules/data-viz-palettes/cividis-cvd-safe/","image":"https://encyclopedia-of-color.vercel.app/og/data-viz-palettes--cividis-cvd-safe.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="data-viz-palettes/cividis-cvd-safe">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Cividis: CVD-Safe</h1>
+      <p class="module-subtitle">a colormap built for colour-blind vision — see it survive deuteranopia where jet falls apart</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Cividis was optimised so that people with red-green colour vision deficiency read it the same as everyone else: a blue-to-yellow ramp whose order survives because it avoids the red-green axis entirely. Jet leans on exactly that axis, so under CVD its middle muddles.
+        </p>
+        <div class="math-block" data-tex="\text{order preserved under deutan/protan/tritan}"></div>
+        <p class="zone-guide">
+          Choose a deficiency type. The top ramp is cividis as designed; the middle is cividis as that viewer sees it — still ordered. The bottom is jet under the same simulation, where the sequence collapses.
+        </p>
+        <enc-toggle id="cvd" label="Vision" options="deuteranopia,protanopia,tritanopia" labels="deutan,protan,tritan" value="deuteranopia"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Cividis under colour-vision-deficiency simulation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nuñez, Anderton & Renslow 2018 (cividis)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
