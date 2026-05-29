@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-difference-delta-e/delta-e-00",
+  "title": {
+    "en": "CIEDE2000 — The Weighted Difference",
+    "ko": "CIEDE2000 — 가중 색차"
+  },
+  "subtitle": {
+    "en": "move a sample near a blue reference and watch the lightness, chroma, hue, and rotation terms that bend ΔE76 into ΔE2000",
+    "ko": "파랑 기준색 근처에서 샘플을 움직여 ΔE76을 ΔE2000으로 휘게 하는 명도·채도·색상·회전 항을 본다"
+  },
+  "description": {
+    "en": "CIEDE2000 reweights each axis with SL, SC, SH and adds a rotation term RT that couples chroma and hue near the blue region. Move the sample, watch the four terms, and compare ΔE76 with ΔE2000.",
+    "ko": "CIEDE2000은 SL·SC·SH로 각 축을 재가중하고, 파랑 영역에서 채도와 색상을 묶는 회전 항 RT를 더한다. 샘플을 움직여 네 항을 보고 ΔE76과 ΔE2000을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "color-difference-delta-e",
+  "layout": "A",
+  "prerequisites": ["color-difference-delta-e/delta-e-76"],
+  "leads_to": ["color-difference-delta-e/cmc-1c"],
+  "see_also": ["macadam-jnd/jnd-ciede2000"],
+  "textbook_refs": [
+    { "source": "Sharma, Wu & Dalal 2005", "section": "The CIEDE2000 colour-difference formula" }
+  ],
+  "standards": ["CIE 224:2017"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path", "vision-and-perception"],
+  "seo_keywords": ["CIEDE2000", "Delta E 2000", "color difference", "rotation term"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

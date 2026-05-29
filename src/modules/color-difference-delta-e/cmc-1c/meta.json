@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-difference-delta-e/cmc-1c",
+  "title": {
+    "en": "CMC(l:c) — The Tolerance Ellipse",
+    "ko": "CMC(l:c) — 허용공차 타원"
+  },
+  "subtitle": {
+    "en": "drag a sample around a reference and see whether it falls inside the tilted, chroma-stretched acceptance ellipse the textile trade uses",
+    "ko": "기준색 주위로 샘플을 움직여, 직물 산업이 쓰는 채도로 늘어나고 기운 합격 타원 안에 드는지 본다"
+  },
+  "description": {
+    "en": "CMC(l:c) shapes a tolerance ellipsoid around the reference — stretched along chroma, narrow across hue, tilted to follow the radius. A sample passes when ΔE_CMC ≤ 1. Toggle l:c 2:1 versus 1:1.",
+    "ko": "CMC(l:c)는 기준색 둘레에 허용 타원체를 만든다 — 채도로 늘어나고 색상으로 좁으며 반지름을 따라 기운다. 샘플은 ΔE_CMC ≤ 1일 때 합격한다. l:c를 2:1과 1:1로 전환해 명도 띠가 변하는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "color-difference-delta-e",
+  "layout": "A",
+  "prerequisites": ["color-difference-delta-e/delta-e-94"],
+  "leads_to": [],
+  "see_also": ["color-difference-delta-e/delta-e-00", "macadam-jnd/macadam-ellipses"],
+  "textbook_refs": [
+    { "source": "Clarke, McDonald & Rigg 1984", "section": "Modification to the JPC79 colour-difference formula" }
+  ],
+  "standards": ["ISO 105-J03"],
+  "interaction_count": 4,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["CMC", "color tolerance", "textile", "acceptability ellipse"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

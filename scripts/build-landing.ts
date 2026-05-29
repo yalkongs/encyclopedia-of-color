@@ -58,9 +58,11 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'cie-1931-matching':            { title: 'CIE 1931 Matching',       sub: 'Domain 4 · colour-matching functions and the standard observer' },
   'xyz-transformation':           { title: 'XYZ Transformation',      sub: 'Domain 4 · linear maps, projection, and sRGB encoding' },
   'color-space-slicer':           { title: 'Colour-Space Slicer',     sub: 'Domain 4 · slicing the colour solids — Lab, Luv, HSV, Munsell, NCS, Ostwald' },
+  'oklch-harmony-explorer':       { title: 'OKLCH Harmony Explorer',  sub: 'Domain 4 · OKLab hue linearity and perceptually uniform palettes' },
+  'color-difference-delta-e':     { title: 'Colour Difference ΔE',    sub: 'Domain 4 · ΔE76, CIEDE2000, CIE94, and the CMC tolerance ellipse' },
 };
 
-const D4_ORDER = ['cie-1931-matching', 'xyz-transformation', 'color-space-slicer'];
+const D4_ORDER = ['cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e'];
 
 interface ModuleEntry { meta: MetaV2; href: string }
 

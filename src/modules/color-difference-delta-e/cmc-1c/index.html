@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CMC(l:c) — The Tolerance Ellipse — drag a sample around a reference a…</title>
+  <meta name="description" content="CMC(l:c) shapes a tolerance ellipsoid around the reference — stretched along chroma, narrow across hue, tilted to follow the radius. A sample passes when ΔE_CMC ≤ 1. Toggle l:c 2:1 versus 1:1.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/cmc-1c/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CMC(l:c) — The Tolerance Ellipse">
+  <meta property="og:description"    content="CMC(l:c) shapes a tolerance ellipsoid around the reference — stretched along chroma, narrow across hue, tilted to follow the radius. A sample passes when ΔE_CMC ≤ 1. Toggle l:c 2:1 versus 1:1.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/cmc-1c/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--cmc-1c.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CMC(l:c) — The Tolerance Ellipse.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CMC(l:c) — The Tolerance Ellipse">
+  <meta name="twitter:description"   content="CMC(l:c) shapes a tolerance ellipsoid around the reference — stretched along chroma, narrow across hue, tilted to follow the radius. A sample passes when ΔE_CMC ≤ 1. Toggle l:c 2:1 versus 1:1.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--cmc-1c.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CMC(l:c) — The Tolerance Ellipse.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CMC(l:c) — The Tolerance Ellipse","alternateName":"color-difference-delta-e/cmc-1c","description":"CMC(l:c) shapes a tolerance ellipsoid around the reference — stretched along chroma, narrow across hue, tilted to follow the radius. A sample passes when ΔE_CMC ≤ 1. Toggle l:c 2:1 versus 1:1.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CMC, color tolerance, textile, acceptability ellipse","url":"https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/cmc-1c/","image":"https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--cmc-1c.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-difference-delta-e/cmc-1c">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CMC(l:c) — The Tolerance Ellipse</h1>
+      <p class="module-subtitle">drag a sample around a reference and see whether it falls inside the tilted, chroma-stretched acceptance ellipse the textile trade uses</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          CMC(l:c) shapes a tolerance ellipsoid around the reference: stretched along chroma, narrow across hue, and tilted to follow the radius. A sample passes when ΔE_CMC ≤ 1 — inside the ellipse on the a*b* plane and within the lightness band.
+        </p>
+        <div class="math-block" data-tex="\Delta E_{CMC} = \sqrt{\left(\tfrac{\Delta L}{l\,S_L}\right)^2 + \left(\tfrac{\Delta C}{c\,S_C}\right)^2 + \left(\tfrac{\Delta H}{S_H}\right)^2}"></div>
+        <p class="zone-guide">
+          Move the sample's lightness and a*, b*. The ellipse is the ΔE_CMC = 1 acceptance boundary; the bar at right is the lightness band. Switch l:c between 2:1 (acceptability — the textile default) and 1:1 (perceptibility) and watch the lightness band resize.
+        </p>
+        <enc-slider id="dL" label="ΔL*" min="-16" max="16" step="1" value="4"></enc-slider>
+        <enc-slider id="da" label="Δa*" min="-30" max="30" step="1" value="6"></enc-slider>
+        <enc-slider id="db" label="Δb*" min="-30" max="30" step="1" value="9"></enc-slider>
+        <enc-toggle id="lc" label="l : c" options="2,1" labels="2:1 acceptability,1:1 perceptibility" value="2"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CMC tolerance ellipse"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Clarke, McDonald & Rigg 1984; ISO 105-J03"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

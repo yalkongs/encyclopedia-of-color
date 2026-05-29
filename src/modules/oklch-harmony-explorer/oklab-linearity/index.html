@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Does the Hue Stay Put? — fade a saturated colour to white in CIELAB a…</title>
+  <meta name="description" content="Fade a saturated colour to white in CIELAB and in OKLab. CIELAB bends blue toward purple at the midpoint while OKLab holds its hue. Slide the endpoint hue and read the midpoint shift in each space.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/oklch-harmony-explorer/oklab-linearity/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Does the Hue Stay Put?">
+  <meta property="og:description"    content="Fade a saturated colour to white in CIELAB and in OKLab. CIELAB bends blue toward purple at the midpoint while OKLab holds its hue. Slide the endpoint hue and read the midpoint shift in each space.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/oklch-harmony-explorer/oklab-linearity/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/oklch-harmony-explorer--oklab-linearity.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Does the Hue Stay Put?.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Does the Hue Stay Put?">
+  <meta name="twitter:description"   content="Fade a saturated colour to white in CIELAB and in OKLab. CIELAB bends blue toward purple at the midpoint while OKLab holds its hue. Slide the endpoint hue and read the midpoint shift in each space.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/oklch-harmony-explorer--oklab-linearity.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Does the Hue Stay Put?.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Does the Hue Stay Put?","alternateName":"oklch-harmony-explorer/oklab-linearity","description":"Fade a saturated colour to white in CIELAB and in OKLab. CIELAB bends blue toward purple at the midpoint while OKLab holds its hue. Slide the endpoint hue and read the midpoint shift in each space.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"OKLab, hue linearity, CIELAB, perceptual color space","url":"https://encyclopedia-of-color.vercel.app/modules/oklch-harmony-explorer/oklab-linearity/","image":"https://encyclopedia-of-color.vercel.app/og/oklch-harmony-explorer--oklab-linearity.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="oklch-harmony-explorer/oklab-linearity">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Does the Hue Stay Put?</h1>
+      <p class="module-subtitle">fade a saturated colour to white in CIELAB and in OKLab — watch CIELAB's blue swing to purple while OKLab holds its hue</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A perceptually linear space should hold a colour's hue as it brightens toward white. CIELAB bends — blues drift purple at the midpoint. OKLab was fit to keep these lines straight.
+        </p>
+        <div class="math-block" data-tex="h_{\text{mid}} \overset{?}{=} h_{\text{endpoint}}"></div>
+        <p class="zone-guide">
+          Choose the saturated endpoint's hue. Both strips fade that colour to white — the top in CIELAB, the bottom in OKLab. The readout reports the hue measured at the 50% midpoint of each strip; a faithful space keeps it near the endpoint hue.
+        </p>
+        <enc-slider id="hue" label="Endpoint hue" min="0" max="360" step="1" value="264" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIELAB versus OKLab interpolation strips"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Ottosson 2020, A perceptual color space for image processing"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

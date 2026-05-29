@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-difference-delta-e/delta-e-76",
+  "title": {
+    "en": "ΔE76 — Straight-Line Colour Distance",
+    "ko": "ΔE76 — 직선 색차"
+  },
+  "subtitle": {
+    "en": "move the sample patch through L*a*b* and read the plain Euclidean distance to the reference — the first colour-difference metric",
+    "ko": "샘플 패치를 L*a*b*에서 움직여 기준색까지의 유클리드 거리를 읽는다 — 최초의 색차 척도"
+  },
+  "description": {
+    "en": "The 1976 metric treats L*a*b* as ordinary space: colour difference is the straight-line distance between two points. Move the sample's L*, a*, b* and read ΔE76 against the just-noticeable threshold.",
+    "ko": "1976 척도는 L*a*b*를 보통 공간으로 다룬다 — 색차는 두 점 사이의 직선 거리다. 샘플의 L*·a*·b*를 움직여 인지 가능 한계선과 비교해 ΔE76을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "color-difference-delta-e",
+  "layout": "A",
+  "prerequisites": ["color-space-slicer/lab-slicing"],
+  "leads_to": ["color-difference-delta-e/delta-e-94", "color-difference-delta-e/delta-e-00"],
+  "see_also": ["macadam-jnd/macadam-ellipses"],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "§8.2.1.2 (CIE 1976 colour difference)" }
+  ],
+  "standards": ["CIE 015:2018"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path", "vision-and-perception"],
+  "seo_keywords": ["Delta E", "ΔE76", "color difference", "CIELAB distance"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CIE94 — Chroma Loosens the Tolerance — push the reference chroma up a…</title>
+  <meta name="description" content="CIE94 divides the chroma and hue terms by SC = 1 + K1·C1 and SH = 1 + K2·C1, so vivid references tolerate larger shifts. Raise C1 at a fixed shift and watch ΔE94 fall while ΔE76 holds.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/delta-e-94/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CIE94 — Chroma Loosens the Tolerance">
+  <meta property="og:description"    content="CIE94 divides the chroma and hue terms by SC = 1 + K1·C1 and SH = 1 + K2·C1, so vivid references tolerate larger shifts. Raise C1 at a fixed shift and watch ΔE94 fall while ΔE76 holds.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/delta-e-94/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--delta-e-94.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CIE94 — Chroma Loosens the Tolerance.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CIE94 — Chroma Loosens the Tolerance">
+  <meta name="twitter:description"   content="CIE94 divides the chroma and hue terms by SC = 1 + K1·C1 and SH = 1 + K2·C1, so vivid references tolerate larger shifts. Raise C1 at a fixed shift and watch ΔE94 fall while ΔE76 holds.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--delta-e-94.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CIE94 — Chroma Loosens the Tolerance.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CIE94 — Chroma Loosens the Tolerance","alternateName":"color-difference-delta-e/delta-e-94","description":"CIE94 divides the chroma and hue terms by SC = 1 + K1·C1 and SH = 1 + K2·C1, so vivid references tolerate larger shifts. Raise C1 at a fixed shift and watch ΔE94 fall while ΔE76 holds.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CIE94, Delta E 94, chroma weighting, color tolerance","url":"https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/delta-e-94/","image":"https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--delta-e-94.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-difference-delta-e/delta-e-94">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CIE94 — Chroma Loosens the Tolerance</h1>
+      <p class="module-subtitle">push the reference chroma up and watch the same colour shift count for less, because SC grows with C₁</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          CIE94 keeps the same shift but divides the chroma and hue terms by SC = 1 + K₁·C₁ and SH = 1 + K₂·C₁. The more saturated the reference, the larger those denominators — so a vivid colour tolerates a bigger error than a pale one.
+        </p>
+        <div class="math-block" data-tex="\Delta E_{94} = \sqrt{\left(\tfrac{\Delta L}{k_L}\right)^2 + \left(\tfrac{\Delta C}{S_C}\right)^2 + \left(\tfrac{\Delta H}{S_H}\right)^2}"></div>
+        <p class="zone-guide">
+          Raise the reference chroma C₁ and hold the colour shift fixed. The SC, SH meters stretch and ΔE94 falls — while the plain ΔE76 (no weighting) stays put. Toggle the graphic-arts and textile parameter sets.
+        </p>
+        <enc-slider id="c1" label="Reference chroma C₁" min="2" max="90" step="1" value="20"></enc-slider>
+        <enc-slider id="off" label="Sample shift" min="1" max="18" step="1" value="8"></enc-slider>
+        <enc-toggle id="mode" label="Parameters" options="graphic,textiles" labels="graphic arts,textiles" value="graphic"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIE94 chroma weighting meters"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 116-1995; CIE 015:2018 §8.2.1.3 (CIE94)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

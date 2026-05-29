@@ -1,0 +1,4 @@
+{
+  "hero": { "hue": 264 },
+  "comment": "Blue endpoint — the canonical case where CIELAB drifts purple and OKLab does not."
+}

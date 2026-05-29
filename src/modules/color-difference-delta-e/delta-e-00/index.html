@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CIEDE2000 — The Weighted Difference — move a sample near a blue refer…</title>
+  <meta name="description" content="CIEDE2000 reweights each axis with SL, SC, SH and adds a rotation term RT that couples chroma and hue near the blue region. Move the sample, watch the four terms, and compare ΔE76 with ΔE2000.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/delta-e-00/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CIEDE2000 — The Weighted Difference">
+  <meta property="og:description"    content="CIEDE2000 reweights each axis with SL, SC, SH and adds a rotation term RT that couples chroma and hue near the blue region. Move the sample, watch the four terms, and compare ΔE76 with ΔE2000.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/delta-e-00/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--delta-e-00.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CIEDE2000 — The Weighted Difference.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CIEDE2000 — The Weighted Difference">
+  <meta name="twitter:description"   content="CIEDE2000 reweights each axis with SL, SC, SH and adds a rotation term RT that couples chroma and hue near the blue region. Move the sample, watch the four terms, and compare ΔE76 with ΔE2000.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--delta-e-00.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CIEDE2000 — The Weighted Difference.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CIEDE2000 — The Weighted Difference","alternateName":"color-difference-delta-e/delta-e-00","description":"CIEDE2000 reweights each axis with SL, SC, SH and adds a rotation term RT that couples chroma and hue near the blue region. Move the sample, watch the four terms, and compare ΔE76 with ΔE2000.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CIEDE2000, Delta E 2000, color difference, rotation term","url":"https://encyclopedia-of-color.vercel.app/modules/color-difference-delta-e/delta-e-00/","image":"https://encyclopedia-of-color.vercel.app/og/color-difference-delta-e--delta-e-00.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-difference-delta-e/delta-e-00">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CIEDE2000 — The Weighted Difference</h1>
+      <p class="module-subtitle">move a sample near a blue reference and watch the lightness, chroma, hue, and rotation terms that bend ΔE76 into ΔE2000</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          CIEDE2000 keeps the Euclidean idea but reweights each axis — SL, SC, SH — and adds a rotation term RT that couples chroma and hue. RT only wakes up near the blue region (h ≈ 275°), correcting a known CIELAB failure.
+        </p>
+        <div class="math-block" data-tex="\Delta E_{00} = \sqrt{T_L^2 + T_C^2 + T_H^2 + R_T\,T_C T_H}"></div>
+        <p class="zone-guide">
+          Drag the sample around the blue reference. The bars show each weighted term; the rotation term turns red when RT is active. Compare the plain ΔE76 with ΔE2000 — they diverge most exactly here, in the blues.
+        </p>
+        <enc-slider id="L" label="Sample L*" min="0" max="100" step="1" value="42"></enc-slider>
+        <enc-slider id="a" label="Sample a*" min="-80" max="80" step="1" value="8"></enc-slider>
+        <enc-slider id="b" label="Sample b*" min="-80" max="80" step="1" value="-38"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIEDE2000 term breakdown"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Sharma, Wu & Dalal 2005, The CIEDE2000 colour-difference formula; CIE 224:2017"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

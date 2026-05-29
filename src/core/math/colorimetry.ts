@@ -80,7 +80,17 @@ export function srgbInGamut(lin: V3, eps = 0.002): boolean {
 }
 
 /** CIEDE2000 colour difference (Sharma 2005 formulation, k_L=k_C=k_H=1). */
-export function deltaE2000(lab1: Lab, lab2: Lab): number {
+export interface CIEDE2000Terms {
+  dE: number;
+  tL: number; // weighted lightness term ΔL'/SL
+  tC: number; // weighted chroma term ΔC'/SC
+  tH: number; // weighted hue term ΔH'/SH
+  RT: number; // rotation coefficient (couples C and H in the blue region)
+  rot: number; // signed rotation contribution RT·tC·tH (under the root)
+}
+
+/** Full CIEDE2000 decomposition (Sharma, Wu & Dalal 2005). Verified vs reference data. */
+export function deltaE2000Terms(lab1: Lab, lab2: Lab): CIEDE2000Terms {
   const [L1, a1, b1] = lab1, [L2, a2, b2] = lab2;
   const C1 = Math.hypot(a1, b1), C2 = Math.hypot(a2, b2);
   const Cbar = (C1 + C2) / 2;
@@ -126,7 +136,54 @@ export function deltaE2000(lab1: Lab, lab2: Lab): number {
   const RT = -Math.sin((2 * dTheta) * DEG) * RC;
 
   const tL = dLp / SL, tC = dCp / SC, tH = dHp / SH;
-  return Math.sqrt(tL * tL + tC * tC + tH * tH + RT * tC * tH);
+  const rot = RT * tC * tH;
+  return { dE: Math.sqrt(tL * tL + tC * tC + tH * tH + rot), tL, tC, tH, RT, rot };
+}
+
+export function deltaE2000(lab1: Lab, lab2: Lab): number {
+  return deltaE2000Terms(lab1, lab2).dE;
+}
+
+/*
+ * CIE94 colour difference (CIE 116-1995). The first argument is the reference;
+ * chroma weights SC, SH derive from C1. `textiles` swaps the graphic-arts
+ * parameters (kL=1, K1=.045, K2=.015) for textile ones (kL=2, K1=.048, K2=.014).
+ * Verified vs colour-science: graphic [100,21.57,272.23]→[100,426.68,72.40] = 83.779.
+ */
+export function deltaE94(ref: Lab, sample: Lab, textiles = false): number {
+  const kL = textiles ? 2 : 1;
+  const K1 = textiles ? 0.048 : 0.045;
+  const K2 = textiles ? 0.014 : 0.015;
+  const [L1, a1, b1] = ref, [L2, a2, b2] = sample;
+  const C1 = Math.hypot(a1, b1), C2 = Math.hypot(a2, b2);
+  const dL = L1 - L2, dC = C1 - C2, da = a1 - a2, db = b1 - b2;
+  const dH = Math.sqrt(Math.max(0, da * da + db * db - dC * dC));
+  const SC = 1 + K1 * C1, SH = 1 + K2 * C1;
+  return Math.hypot(dL / kL, dC / SC, dH / SH);
+}
+
+/*
+ * CMC(l:c) colour difference (Clarke, McDonald & Rigg 1984; ISO 105-J03).
+ * Default l=2,c=1 = textile acceptability tolerance; l=c=1 = perceptibility.
+ * The first argument is the reference (C1, h1 set the anisotropic ellipsoid).
+ * Verified vs colour-science: [48.99,-0.106,400.66]→[50.66,-0.117,402.82] (l=2) = 0.8997.
+ */
+export function deltaECMC(ref: Lab, sample: Lab, l = 2, c = 1): number {
+  const [L1, a1, b1] = ref, [L2, a2, b2] = sample;
+  const C1 = Math.hypot(a1, b1), C2 = Math.hypot(a2, b2);
+  const dL = L1 - L2, dC = C1 - C2, da = a1 - a2, db = b1 - b2;
+  const dH = Math.sqrt(Math.max(0, da * da + db * db - dC * dC));
+  let H1 = Math.atan2(b1, a1) / DEG;
+  if (H1 < 0) H1 += 360;
+  const T = H1 >= 164 && H1 <= 345
+    ? 0.56 + Math.abs(0.2 * Math.cos((H1 + 168) * DEG))
+    : 0.36 + Math.abs(0.4 * Math.cos((H1 + 35) * DEG));
+  const C1_4 = C1 ** 4;
+  const F = Math.sqrt(C1_4 / (C1_4 + 1900));
+  const SL = L1 < 16 ? 0.511 : (0.040975 * L1) / (1 + 0.01765 * L1);
+  const SC = (0.0638 * C1) / (1 + 0.0131 * C1) + 0.638;
+  const SH = SC * (F * T + 1 - F);
+  return Math.hypot(dL / (l * SL), dC / (c * SC), dH / SH);
 }
 
 /**

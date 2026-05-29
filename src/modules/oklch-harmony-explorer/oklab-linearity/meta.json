@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "oklch-harmony-explorer/oklab-linearity",
+  "title": {
+    "en": "Does the Hue Stay Put?",
+    "ko": "색상은 그대로 유지되는가?"
+  },
+  "subtitle": {
+    "en": "fade a saturated colour to white in CIELAB and in OKLab — watch CIELAB's blue swing to purple while OKLab holds its hue",
+    "ko": "포화색을 CIELAB과 OKLab에서 흰색으로 페이드 — CIELAB의 파랑이 보라로 휘는 동안 OKLab은 색상을 지킨다"
+  },
+  "description": {
+    "en": "Fade a saturated colour to white in CIELAB and in OKLab. CIELAB bends blue toward purple at the midpoint while OKLab holds its hue. Slide the endpoint hue and read the midpoint shift in each space.",
+    "ko": "포화색을 CIELAB과 OKLab에서 흰색으로 페이드한다. CIELAB은 중점에서 파랑을 보라 쪽으로 휘지만 OKLab은 색상을 유지한다. 끝점 색상을 움직여 각 공간의 중점 색상 이동을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "oklch-harmony-explorer",
+  "layout": "A",
+  "prerequisites": ["color-space-slicer/lab-slicing"],
+  "leads_to": ["oklch-harmony-explorer/oklch-uniform-palette"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Ottosson 2020", "section": "A perceptual color space for image processing" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["OKLab", "hue linearity", "CIELAB", "perceptual color space"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

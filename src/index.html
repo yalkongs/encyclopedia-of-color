@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 171 modules across 34 categories -->
+    <!-- 177 modules across 36 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>171 modules</strong> are published across 34 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>177 modules</strong> are published across 36 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -1012,6 +1012,48 @@
         <div class="card-meta">L4 · Reference · Color Space Slicer</div>
         <div class="card-title">Slicing xyY</div>
         <div class="card-sub">slide the luminance and watch the displayable colours at that Y trace an ever-changing island on the chart</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">OKLCH Harmony Explorer</h2>
+      <div class="sub">Domain 4 · OKLab hue linearity and perceptually uniform palettes</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/oklch-harmony-explorer/oklab-linearity/">
+        <div class="card-meta">L5 · Reference · Oklch Harmony Explorer</div>
+        <div class="card-title">Does the Hue Stay Put?</div>
+        <div class="card-sub">fade a saturated colour to white in CIELAB and in OKLab — watch CIELAB's blue swing to purple while OKLab holds its hue</div>
+      </a>
+      <a class="module-card" href="./modules/oklch-harmony-explorer/oklch-uniform-palette/">
+        <div class="card-meta">L6 · Reference · Oklch Harmony Explorer</div>
+        <div class="card-title">An OKLCH Palette</div>
+        <div class="card-sub">fix lightness and chroma, step the hue in equal angles, and build a palette whose swatches feel evenly spaced and evenly bright</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Colour Difference ΔE</h2>
+      <div class="sub">Domain 4 · ΔE76, CIEDE2000, CIE94, and the CMC tolerance ellipse</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/color-difference-delta-e/delta-e-76/">
+        <div class="card-meta">L4 · Reference · Color Difference Delta E</div>
+        <div class="card-title">ΔE76 — Straight-Line Colour Distance</div>
+        <div class="card-sub">move the sample patch through L*a*b* and read the plain Euclidean distance to the reference — the first colour-difference metric</div>
+      </a>
+      <a class="module-card" href="./modules/color-difference-delta-e/cmc-1c/">
+        <div class="card-meta">L5 · Reference · Color Difference Delta E</div>
+        <div class="card-title">CMC(l:c) — The Tolerance Ellipse</div>
+        <div class="card-sub">drag a sample around a reference and see whether it falls inside the tilted, chroma-stretched acceptance ellipse the textile trade uses</div>
+      </a>
+      <a class="module-card" href="./modules/color-difference-delta-e/delta-e-00/">
+        <div class="card-meta">L5 · Reference · Color Difference Delta E</div>
+        <div class="card-title">CIEDE2000 — The Weighted Difference</div>
+        <div class="card-sub">move a sample near a blue reference and watch the lightness, chroma, hue, and rotation terms that bend ΔE76 into ΔE2000</div>
+      </a>
+      <a class="module-card" href="./modules/color-difference-delta-e/delta-e-94/">
+        <div class="card-meta">L5 · Reference · Color Difference Delta E</div>
+        <div class="card-title">CIE94 — Chroma Loosens the Tolerance</div>
+        <div class="card-sub">push the reference chroma up and watch the same colour shift count for less, because SC grows with C₁</div>
       </a>
       </div>
     </div>

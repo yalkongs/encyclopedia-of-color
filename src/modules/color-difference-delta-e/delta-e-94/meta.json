@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-difference-delta-e/delta-e-94",
+  "title": {
+    "en": "CIE94 — Chroma Loosens the Tolerance",
+    "ko": "CIE94 — 채도가 허용공차를 늦춘다"
+  },
+  "subtitle": {
+    "en": "push the reference chroma up and watch the same colour shift count for less, because SC grows with C₁",
+    "ko": "기준 채도를 올리면 SC가 C₁과 함께 커져 같은 색 이동이 더 작게 계산되는 것을 본다"
+  },
+  "description": {
+    "en": "CIE94 divides the chroma and hue terms by SC = 1 + K1·C1 and SH = 1 + K2·C1, so vivid references tolerate larger shifts. Raise C1 at a fixed shift and watch ΔE94 fall while ΔE76 holds.",
+    "ko": "CIE94는 채도·색상 항을 SC = 1 + K1·C1, SH = 1 + K2·C1로 나눠 선명한 기준색이 더 큰 이동을 허용한다. 고정 이동에서 C1을 올리면 ΔE76은 그대로인데 ΔE94는 떨어진다. 직물 파라미터도 전환한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "color-difference-delta-e",
+  "layout": "A",
+  "prerequisites": ["color-difference-delta-e/delta-e-76"],
+  "leads_to": ["color-difference-delta-e/cmc-1c"],
+  "see_also": ["color-difference-delta-e/delta-e-00"],
+  "textbook_refs": [
+    { "source": "CIE 015:2018", "section": "§8.2.1.3 (CIE94)" }
+  ],
+  "standards": ["CIE 116-1995"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["CIE94", "Delta E 94", "chroma weighting", "color tolerance"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

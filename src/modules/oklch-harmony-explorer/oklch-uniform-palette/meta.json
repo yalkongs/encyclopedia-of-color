@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "oklch-harmony-explorer/oklch-uniform-palette",
+  "title": {
+    "en": "An OKLCH Palette",
+    "ko": "OKLCH 균일 팔레트"
+  },
+  "subtitle": {
+    "en": "fix lightness and chroma, step the hue in equal angles, and build a palette whose swatches feel evenly spaced and evenly bright",
+    "ko": "명도와 채도를 고정하고 색상을 등각으로 돌려, 균등하고 균일한 밝기의 팔레트를 만든다"
+  },
+  "description": {
+    "en": "OKLCH separates lightness, chroma, and hue. Hold L and C, step the hue in equal angles, and the swatches read as equally bright and evenly spaced. Out-of-gamut swatches are struck through.",
+    "ko": "OKLCH는 명도·채도·색상을 분리한다. L과 C를 고정하고 색상을 등각으로 돌리면 스워치가 균일한 밝기와 균등한 간격으로 읽힌다. sRGB 색역을 벗어난 스워치는 빗금으로 표시된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 4,
+  "category": "oklch-harmony-explorer",
+  "layout": "A",
+  "prerequisites": ["oklch-harmony-explorer/oklab-linearity"],
+  "leads_to": [],
+  "see_also": ["color-space-slicer/lab-slicing"],
+  "textbook_refs": [
+    { "source": "Ottosson 2020", "section": "A perceptual color space for image processing" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["OKLCH", "palette", "perceptual uniformity", "color harmony"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}
