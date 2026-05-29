@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 247 modules across 52 categories -->
+    <!-- 255 modules across 54 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>247 modules</strong> are published across 52 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>255 modules</strong> are published across 54 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -1500,6 +1500,58 @@
         <div class="card-meta">L5 · Reference · Gamma Eotf Calibration</div>
         <div class="card-title">White-Point Adaptation (CAT02)</div>
         <div class="card-sub">move a screen from D65 to D50 and a chromatic adaptation transform decides which way every colour drifts</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">HDR &amp; Tone Mapping</h2>
+      <div class="sub">Domain 6 · PQ, HLG, Reinhard/ACES/Hable operators</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/hdr-pq-tone-mapping/hdr-pq-curve/">
+        <div class="card-meta">L5 · Reference · Hdr Pq Tone Mapping</div>
+        <div class="card-title">The PQ Curve (ST 2084)</div>
+        <div class="card-sub">unlike gamma, perceptual quantization ties a code value to an absolute number of nits — the same code is the same light on any HDR display</div>
+      </a>
+      <a class="module-card" href="./modules/hdr-pq-tone-mapping/hlg-broadcast/">
+        <div class="card-meta">L5 · Reference · Hdr Pq Tone Mapping</div>
+        <div class="card-title">HLG: Display-Referred HDR</div>
+        <div class="card-sub">broadcast HDR cannot assume a fixed peak — hybrid log-gamma bends its output to whatever brightness the receiving display can manage</div>
+      </a>
+      <a class="module-card" href="./modules/hdr-pq-tone-mapping/tonemapping-aces/">
+        <div class="card-meta">L5 · Reference · Hdr Pq Tone Mapping</div>
+        <div class="card-title">Tone-Mapping Operators</div>
+        <div class="card-sub">a scene carries far more range than a screen — an operator decides how to fold the highlights down without crushing or clipping</div>
+      </a>
+      <a class="module-card" href="./modules/hdr-pq-tone-mapping/dolby-vision-metadata/">
+        <div class="card-meta">L6 · Reference · Hdr Pq Tone Mapping</div>
+        <div class="card-title">Dynamic Metadata (Dolby Vision)</div>
+        <div class="card-sub">a single fixed tone curve cannot flatter a dark interior and a blazing sunset at once — per-shot metadata refits the curve scene by scene</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Blue Light &amp; Circadian</h2>
+      <div class="sub">Domain 6 · night shift, ipRGC, melatonin, the myth</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/blue-light-circadian/night-shift-intro/">
+        <div class="card-meta">L1 · Atom · Blue Light Circadian</div>
+        <div class="card-title">Night Shift: Warming the White</div>
+        <div class="card-sub">after sunset the phone slides its white point toward amber — the same pixels, recoloured by a warmer reference white</div>
+      </a>
+      <a class="module-card" href="./modules/blue-light-circadian/bl-filter-spd/">
+        <div class="card-meta">L4 · Reference · Blue Light Circadian</div>
+        <div class="card-title">Blue-Light Filter on the SPD</div>
+        <div class="card-sub">a warm filter does its circadian work in a narrow 460-480 nm window — exactly where the non-visual photoreceptor peaks</div>
+      </a>
+      <a class="module-card" href="./modules/blue-light-circadian/blue-light-myth-debunk/">
+        <div class="card-meta">L4 · Reference · Blue Light Circadian</div>
+        <div class="card-title">Blue Light: Signal vs Scare</div>
+        <div class="card-sub">screens nudge the body clock but do not cook the retina — and the daytime sky outshines any phone by orders of magnitude</div>
+      </a>
+      <a class="module-card" href="./modules/blue-light-circadian/bl-iprgc-melatonin/">
+        <div class="card-meta">L5 · Reference · Blue Light Circadian</div>
+        <div class="card-title">Light to Melatonin Suppression</div>
+        <div class="card-sub">the ipRGC clock signal rises with melanopic light along an S-curve — modest at screen levels, saturating under daylight</div>
       </a>
       </div>
     </div>

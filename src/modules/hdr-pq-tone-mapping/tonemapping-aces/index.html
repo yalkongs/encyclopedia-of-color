@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Tone-Mapping Operators — a scene carries far more range than a screen…</title>
+  <meta name="description" content="A scene holds more luminance than a screen can show. Tone-mapping operators fold that range into 0-1: Reinhard, the ACES fit, and Hable filmic each roll off highlights differently.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/hdr-pq-tone-mapping/tonemapping-aces/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Tone-Mapping Operators">
+  <meta property="og:description"    content="A scene holds more luminance than a screen can show. Tone-mapping operators fold that range into 0-1: Reinhard, the ACES fit, and Hable filmic each roll off highlights differently.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/hdr-pq-tone-mapping/tonemapping-aces/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/hdr-pq-tone-mapping--tonemapping-aces.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Tone-Mapping Operators.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Tone-Mapping Operators">
+  <meta name="twitter:description"   content="A scene holds more luminance than a screen can show. Tone-mapping operators fold that range into 0-1: Reinhard, the ACES fit, and Hable filmic each roll off highlights differently.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/hdr-pq-tone-mapping--tonemapping-aces.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Tone-Mapping Operators.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Tone-Mapping Operators","alternateName":"hdr-pq-tone-mapping/tonemapping-aces","description":"A scene holds more luminance than a screen can show. Tone-mapping operators fold that range into 0-1: Reinhard, the ACES fit, and Hable filmic each roll off highlights differently.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"tone mapping, ACES, Hable, Reinhard, HDR","url":"https://encyclopedia-of-color.vercel.app/modules/hdr-pq-tone-mapping/tonemapping-aces/","image":"https://encyclopedia-of-color.vercel.app/og/hdr-pq-tone-mapping--tonemapping-aces.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="hdr-pq-tone-mapping/tonemapping-aces">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Tone-Mapping Operators</h1>
+      <p class="module-subtitle">a scene carries far more range than a screen — an operator decides how to fold the highlights down without crushing or clipping</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A rendered scene holds luminances well beyond 1.0; a display tops out. A tone-mapping operator compresses that range into 0–1. Simple Reinhard never quite reaches white; the filmic Hable and the ACES fit add an S-shaped toe and shoulder that hold shadow and highlight detail the way film stock does.
+        </p>
+        <div class="math-block" data-tex="\text{ACES: } \frac{x(2.51x+0.03)}{x(2.43x+0.59)+0.14}"></div>
+        <p class="zone-guide">
+          Switch operators and raise exposure to push more scene into the highlights. Watch where each curve rolls off: hard clipping blows out, Reinhard desaturates everything, the filmic curves keep a graceful shoulder. The strip below previews a ramp through the chosen operator.
+        </p>
+        <enc-toggle id="op" label="Operator" options="clip,reinhard,reinhardExtended,aces,hable" labels="clip,Reinhard,Reinhard ext,ACES (fit),Hable" value="aces"></enc-toggle>
+        <enc-slider id="exposure" label="Exposure" min="-2" max="3" step="0.1" value="0" unit=" EV"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="HDR tone-mapping operators"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Reinhard §3–4; Narkowicz 2016; Hable 2010"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

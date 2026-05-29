@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-pq-tone-mapping/hlg-broadcast",
+  "title": {
+    "en": "HLG: Display-Referred HDR",
+    "ko": "HLG 방송 HDR"
+  },
+  "subtitle": {
+    "en": "broadcast HDR cannot assume a fixed peak — hybrid log-gamma bends its output to whatever brightness the receiving display can manage",
+    "ko": "방송 HDR은 고정 피크를 가정할 수 없다 — HLG은 수신 디스플레이가 낼 수 있는 밝기에 출력을 맞춘다"
+  },
+  "description": {
+    "en": "Hybrid Log-Gamma is display-referred: a scene signal plus a display OOTF whose system gamma depends on panel peak. One broadcast signal adapts to 1,000- and 4,000-nit TVs alike.",
+    "ko": "Hybrid Log-Gamma은 디스플레이 기준이다: 장면 기준 신호에 더해, 패널 피크 휘도에 따라 시스템 감마가 정해지는 디스플레이측 OOTF가 작용한다. 하나의 방송 신호가 1,000·4,000 nit TV에 모두 맞춰진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "hdr-pq-tone-mapping",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "ITU-R BT.2100",
+      "section": "HLG"
+    }
+  ],
+  "standards": [
+    "BT.2100",
+    "ARIB STD-B67"
+  ],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "HLG",
+    "BT.2100",
+    "broadcast HDR",
+    "OOTF",
+    "system gamma"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

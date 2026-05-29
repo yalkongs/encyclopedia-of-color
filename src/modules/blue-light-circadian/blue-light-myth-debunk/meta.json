@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "blue-light-circadian/blue-light-myth-debunk",
+  "title": {
+    "en": "Blue Light: Signal vs Scare",
+    "ko": "블루라이트: 신호와 과장"
+  },
+  "subtitle": {
+    "en": "screens nudge the body clock but do not cook the retina — and the daytime sky outshines any phone by orders of magnitude",
+    "ko": "화면은 생체시계를 살짝 밀지만 망막을 굽지 않는다 — 그리고 낮 하늘은 어떤 폰보다 수만 배 밝다"
+  },
+  "description": {
+    "en": "Blue-light claims mix one real effect with two overstated ones: the evening circadian nudge is genuine but modest, screen retinal damage has no clinical support, and blue-blocking glasses barely help.",
+    "ko": "블루라이트 주장은 하나의 실제 효과와 두 과장을 섞는다: 저녁의 서카디안 자극은 진짜지만 작고, 화면으로 인한 망막 손상은 임상 근거가 없으며, 블루라이트 차단 안경은 거의 도움이 안 된다. 주광이 어떤 폰보다 압도적이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "blue-light-circadian",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "AAO",
+      "section": "2017 statement"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "blue light",
+    "myth",
+    "circadian",
+    "AAO",
+    "blue blocking glasses"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

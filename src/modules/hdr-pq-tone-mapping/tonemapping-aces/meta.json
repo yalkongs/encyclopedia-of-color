@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-pq-tone-mapping/tonemapping-aces",
+  "title": {
+    "en": "Tone-Mapping Operators",
+    "ko": "톤 매핑 연산자"
+  },
+  "subtitle": {
+    "en": "a scene carries far more range than a screen — an operator decides how to fold the highlights down without crushing or clipping",
+    "ko": "장면은 화면보다 훨씬 넓은 범위를 담는다 — 연산자가 하이라이트를 뭉개거나 잘리지 않게 접는다"
+  },
+  "description": {
+    "en": "A scene holds more luminance than a screen can show. Tone-mapping operators fold that range into 0-1: Reinhard, the ACES fit, and Hable filmic each roll off highlights differently.",
+    "ko": "장면은 화면이 표현할 수 있는 것보다 넓은 휘도를 담는다. 톤매핑 연산자는 그 범위를 0~1로 접는다: Reinhard, ACES 근사, Hable 필름 곡선은 하이라이트를 저마다 다르게 굴린다. 숄더와 토를 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "hdr-pq-tone-mapping",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Reinhard",
+      "section": "§3-4"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "tone mapping",
+    "ACES",
+    "Hable",
+    "Reinhard",
+    "HDR"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

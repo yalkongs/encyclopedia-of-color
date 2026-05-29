@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-pq-tone-mapping/hdr-pq-curve",
+  "title": {
+    "en": "The PQ Curve (ST 2084)",
+    "ko": "PQ 곡선"
+  },
+  "subtitle": {
+    "en": "unlike gamma, perceptual quantization ties a code value to an absolute number of nits — the same code is the same light on any HDR display",
+    "ko": "감마와 달리 PQ는 코드값을 절대 nits에 묶는다 — 같은 코드는 어떤 HDR 디스플레이에서도 같은 빛"
+  },
+  "description": {
+    "en": "PQ (ST 2084) maps each code value to an absolute luminance in cd/m2, 0 to 10,000, spaced to eye contrast sensitivity. Unlike relative gamma, the same code is the same nits on any HDR display.",
+    "ko": "PQ(SMPTE ST 2084)는 코드값을 절대 휘도(cd/m2, 0~10,000)로 사상하며 눈의 대비 감도에 맞춰 배치한다. 상대적 감마와 달리 같은 코드는 어떤 HDR 디스플레이에서도 같은 nits를 뜻한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "hdr-pq-tone-mapping",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "SMPTE ST 2084",
+      "section": "PQ EOTF"
+    }
+  ],
+  "standards": [
+    "ST 2084",
+    "BT.2100"
+  ],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "PQ",
+    "ST 2084",
+    "HDR",
+    "nits",
+    "EOTF"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

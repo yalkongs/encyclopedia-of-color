@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "blue-light-circadian/bl-filter-spd",
+  "title": {
+    "en": "Blue-Light Filter on the SPD",
+    "ko": "블루라이트 필터 SPD"
+  },
+  "subtitle": {
+    "en": "a warm filter does its circadian work in a narrow 460-480 nm window — exactly where the non-visual photoreceptor peaks",
+    "ko": "따뜻한 필터는 460-480 nm 좁은 창에서 서카디안 작용을 한다 — 비시각 광수용체가 정점인 바로 그 대역"
+  },
+  "description": {
+    "en": "A display blue primary overlaps melanopsin, the ipRGC pigment peaking near 480 nm. A blue-light filter attenuates that band, cutting melanopic-weighted output far more than overall brightness.",
+    "ko": "디스플레이의 파랑 원색은 480 nm 부근에서 정점인 ipRGC 색소 멜라놉신과 겹친다. 블루라이트 필터는 그 대역을 줄여 전체 밝기보다 멜라놉 가중 출력을 훨씬 더 낮춘다. 필터를 올려 그 격차를 보라."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "blue-light-circadian",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "CIE S 026",
+      "section": "Melanopic"
+    }
+  ],
+  "standards": [
+    "CIE S 026"
+  ],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "blue light filter",
+    "melanopsin",
+    "ipRGC",
+    "SPD",
+    "melanopic"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

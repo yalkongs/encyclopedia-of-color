@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-pq-tone-mapping/dolby-vision-metadata",
+  "title": {
+    "en": "Dynamic Metadata (Dolby Vision)",
+    "ko": "동적 메타데이터 (Dolby Vision)"
+  },
+  "subtitle": {
+    "en": "a single fixed tone curve cannot flatter a dark interior and a blazing sunset at once — per-shot metadata refits the curve scene by scene",
+    "ko": "하나의 고정 톤 곡선은 어두운 실내와 타오르는 노을을 동시에 살릴 수 없다 — 샷별 메타데이터가 장면마다 곡선을 다시 맞춘다"
+  },
+  "description": {
+    "en": "HDR10 ships one static tone curve sized for the film peak, so on a dim display a dark scene is buried. Dolby Vision carries per-scene metadata and refits the curve shot by shot to fill the panel.",
+    "ko": "HDR10은 영화 전체의 피크에 맞춘 정적 톤 곡선 하나를 보낸다 — 어두운 디스플레이에서 어두운 장면은 묻힌다. Dolby Vision은 장면별 메타데이터를 실어 샷마다 곡선을 다시 맞춰 각 장면이 패널을 채우게 한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 6,
+  "category": "hdr-pq-tone-mapping",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "SMPTE ST 2094",
+      "section": "Dynamic metadata"
+    }
+  ],
+  "standards": [
+    "ST 2094"
+  ],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Dolby Vision",
+    "dynamic metadata",
+    "HDR10",
+    "tone mapping",
+    "ST 2094"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "blue-light-circadian/night-shift-intro",
+  "title": {
+    "en": "Night Shift: Warming the White",
+    "ko": "야간 모드: 백색 워밍"
+  },
+  "subtitle": {
+    "en": "after sunset the phone slides its white point toward amber — the same pixels, recoloured by a warmer reference white",
+    "ko": "해가 지면 폰은 백색점을 호박색으로 민다 — 같은 픽셀을 더 따뜻한 기준 백색으로 다시 칠한다"
+  },
+  "description": {
+    "en": "Night Shift and f.lux lower the display colour temperature, sliding the white point down the Planckian locus from cool 6500 K to warm 2700 K. Content is unchanged; only the reference white warms.",
+    "ko": "Night Shift와 f.lux는 디스플레이 색온도를 낮춰 백색점을 Planckian 궤적을 따라 차가운 6500 K에서 따뜻한 2700 K로 내린다. 콘텐츠는 그대로이고 기준 백색만 따뜻해져 파랑을 줄인다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 6,
+  "category": "blue-light-circadian",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Apple Night Shift",
+      "section": "Colour temperature"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Night Shift",
+    "color temperature",
+    "f.lux",
+    "white point",
+    "blue light"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

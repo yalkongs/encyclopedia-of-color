@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>HLG: Display-Referred HDR — broadcast HDR cannot assume a fixed peak…</title>
+  <meta name="description" content="Hybrid Log-Gamma is display-referred: a scene signal plus a display OOTF whose system gamma depends on panel peak. One broadcast signal adapts to 1,000- and 4,000-nit TVs alike.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/hdr-pq-tone-mapping/hlg-broadcast/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="HLG: Display-Referred HDR">
+  <meta property="og:description"    content="Hybrid Log-Gamma is display-referred: a scene signal plus a display OOTF whose system gamma depends on panel peak. One broadcast signal adapts to 1,000- and 4,000-nit TVs alike.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/hdr-pq-tone-mapping/hlg-broadcast/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/hdr-pq-tone-mapping--hlg-broadcast.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: HLG: Display-Referred HDR.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="HLG: Display-Referred HDR">
+  <meta name="twitter:description"   content="Hybrid Log-Gamma is display-referred: a scene signal plus a display OOTF whose system gamma depends on panel peak. One broadcast signal adapts to 1,000- and 4,000-nit TVs alike.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/hdr-pq-tone-mapping--hlg-broadcast.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: HLG: Display-Referred HDR.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"HLG: Display-Referred HDR","alternateName":"hdr-pq-tone-mapping/hlg-broadcast","description":"Hybrid Log-Gamma is display-referred: a scene signal plus a display OOTF whose system gamma depends on panel peak. One broadcast signal adapts to 1,000- and 4,000-nit TVs alike.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"HLG, BT.2100, broadcast HDR, OOTF, system gamma","url":"https://encyclopedia-of-color.vercel.app/modules/hdr-pq-tone-mapping/hlg-broadcast/","image":"https://encyclopedia-of-color.vercel.app/og/hdr-pq-tone-mapping--hlg-broadcast.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="hdr-pq-tone-mapping/hlg-broadcast">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">HLG: Display-Referred HDR</h1>
+      <p class="module-subtitle">broadcast HDR cannot assume a fixed peak — hybrid log-gamma bends its output to whatever brightness the receiving display can manage</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          PQ encodes absolute nits; Hybrid Log-Gamma is relative. Its signal is scene-referred, and a display-side OOTF with a system gamma decides the final luminance. That gamma depends on the display's peak: γ<sub>s</sub> = 1.2 + 0.42·log₁₀(L<sub>W</sub>/1000). One broadcast signal therefore looks right on a 1,000-nit TV and a 4,000-nit one.
+        </p>
+        <div class="math-block" data-tex="L_D = L_W\,\big[\mathrm{OETF}^{-1}(V)\big]^{\gamma_s},\quad \gamma_s=1.2+0.42\log_{10}\!\tfrac{L_W}{1000}"></div>
+        <p class="zone-guide">
+          Slide the display's peak luminance and watch the whole transfer reshape — brighter panels get a steeper system gamma, not just a higher ceiling. Overlay the fixed PQ curve to see the difference between a display-referred and a display-independent standard.
+        </p>
+        <enc-slider id="lw" label="Display peak L_W" min="400" max="4000" step="50" value="1000" unit=" nits"></enc-slider>
+        <enc-toggle id="pq" label="Overlay PQ" options="off,on" labels="off,on" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="HLG hybrid log gamma transfer"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ITU-R BT.2100 (HLG); ARIB STD-B67"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

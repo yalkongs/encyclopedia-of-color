@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Night Shift: Warming the White — after sunset the phone slides its wh…</title>
+  <meta name="description" content="Night Shift and f.lux lower the display colour temperature, sliding the white point down the Planckian locus from cool 6500 K to warm 2700 K. Content is unchanged; only the reference white warms.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/blue-light-circadian/night-shift-intro/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Night Shift: Warming the White">
+  <meta property="og:description"    content="Night Shift and f.lux lower the display colour temperature, sliding the white point down the Planckian locus from cool 6500 K to warm 2700 K. Content is unchanged; only the reference white warms.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/blue-light-circadian/night-shift-intro/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/blue-light-circadian--night-shift-intro.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Night Shift: Warming the White.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Night Shift: Warming the White">
+  <meta name="twitter:description"   content="Night Shift and f.lux lower the display colour temperature, sliding the white point down the Planckian locus from cool 6500 K to warm 2700 K. Content is unchanged; only the reference white warms.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/blue-light-circadian--night-shift-intro.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Night Shift: Warming the White.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Night Shift: Warming the White","alternateName":"blue-light-circadian/night-shift-intro","description":"Night Shift and f.lux lower the display colour temperature, sliding the white point down the Planckian locus from cool 6500 K to warm 2700 K. Content is unchanged; only the reference white warms.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Night Shift, color temperature, f.lux, white point, blue light","url":"https://encyclopedia-of-color.vercel.app/modules/blue-light-circadian/night-shift-intro/","image":"https://encyclopedia-of-color.vercel.app/og/blue-light-circadian--night-shift-intro.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="blue-light-circadian/night-shift-intro">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Remember</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Night Shift: Warming the White</h1>
+      <p class="module-subtitle">after sunset the phone slides its white point toward amber — the same pixels, recoloured by a warmer reference white</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Night Shift, Night Light, and f.lux all do one thing: they lower the display's correlated colour temperature. The white point slides down the Planckian locus from a cool ~6500 K toward a warm ~2700 K, cutting the blue content of everything on screen.
+        </p>
+        <div class="math-block" data-tex="(x,y)=\text{Planckian}(T)\;\Rightarrow\;\text{white tint}\;(R,G,B)"></div>
+        <p class="zone-guide">
+          Drag the colour temperature from daylight down to candlelight and watch a mock interface warm. Nothing about the content changes — only the white the display renders against, which tints every colour toward amber.
+        </p>
+        <enc-slider id="cct" label="Colour temperature" min="2700" max="6500" step="50" value="6500" unit=" K"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Night Shift colour-temperature warming"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Apple Night Shift; Planckian locus"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

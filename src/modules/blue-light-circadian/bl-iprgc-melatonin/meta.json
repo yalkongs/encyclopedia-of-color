@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "blue-light-circadian/bl-iprgc-melatonin",
+  "title": {
+    "en": "Light to Melatonin Suppression",
+    "ko": "빛-멜라토닌 억제"
+  },
+  "subtitle": {
+    "en": "the ipRGC clock signal rises with melanopic light along an S-curve — modest at screen levels, saturating under daylight",
+    "ko": "ipRGC 시계 신호는 멜라놉 빛에 따라 S자 곡선으로 상승한다 — 화면 수준에선 작고 주광에서 포화"
+  },
+  "description": {
+    "en": "ipRGCs report melanopic light to the clock, suppressing night melatonin along a sigmoidal dose-response — modest at screen levels, saturating under daylight, with a threshold shifting by duration.",
+    "ko": "ipRGC는 멜라놉 빛을 생체시계에 전달해 야간 멜라토닌을 시그모이드 용량-반응으로 억제한다. 화면 수준에서는 효과가 작고 주광에서 포화한다 — 반억제 지점은 노출 시간에 따라 이동한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "blue-light-circadian",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Brainard et al. 2001",
+      "section": "Action spectrum"
+    }
+  ],
+  "standards": [
+    "CIE S 026"
+  ],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "melatonin",
+    "ipRGC",
+    "circadian",
+    "melanopic lux",
+    "Brainard"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
