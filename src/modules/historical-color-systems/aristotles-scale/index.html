@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Aristotle's Line of Colour — before the colour wheel there was a colo…</title>
+  <meta name="description" content="For two millennia colour was thought one-dimensional: a ladder from white to black, hues strung between as degrees of brightness. Hue as an independent axis arrived only with Newton's wheel.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/aristotles-scale/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Aristotle's Line of Colour">
+  <meta property="og:description"    content="For two millennia colour was thought one-dimensional: a ladder from white to black, hues strung between as degrees of brightness. Hue as an independent axis arrived only with Newton's wheel.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/aristotles-scale/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--aristotles-scale.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Aristotle's Line of Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Aristotle's Line of Colour">
+  <meta name="twitter:description"   content="For two millennia colour was thought one-dimensional: a ladder from white to black, hues strung between as degrees of brightness. Hue as an independent axis arrived only with Newton's wheel.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--aristotles-scale.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Aristotle's Line of Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Aristotle's Line of Colour","alternateName":"historical-color-systems/aristotles-scale","description":"For two millennia colour was thought one-dimensional: a ladder from white to black, hues strung between as degrees of brightness. Hue as an independent axis arrived only with Newton's wheel.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Aristotle, color scale, history of color, color order","url":"https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/aristotles-scale/","image":"https://encyclopedia-of-color.vercel.app/og/historical-color-systems--aristotles-scale.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="historical-color-systems/aristotles-scale">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Remember</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Aristotle's Line of Colour</h1>
+      <p class="module-subtitle">before the colour wheel there was a colour line — slide along Aristotle's single scale from white through to black</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          For two thousand years, following Aristotle, colour was thought to be one-dimensional: a single ladder running from white down to black, with all hues strung between as degrees of brightness. There was no circle, no separate "hue" — only lighter and darker.
+        </p>
+        <div class="math-block" data-tex="\text{white} \;\longrightarrow\; \text{hues} \;\longrightarrow\; \text{black}"></div>
+        <p class="zone-guide">
+          Slide along the line and read where each colour was placed. The idea that colour needs more than one axis — that hue is independent of brightness — did not arrive until Newton bent the line into a wheel.
+        </p>
+        <enc-slider id="pos" label="Position on the scale" min="0" max="100" step="1" value="42" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Aristotle's one-dimensional colour scale"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kuehni, Color Space and Its Divisions §2 (Aristotle's scale)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

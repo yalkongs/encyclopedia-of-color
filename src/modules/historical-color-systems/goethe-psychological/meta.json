@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "historical-color-systems/goethe-psychological",
+  "title": {
+    "en": "Goethe's Theory of Opposition",
+    "ko": "괴테의 대립 이론"
+  },
+  "subtitle": {
+    "en": "Goethe split colour into an active plus-side and a passive minus-side — a philosophy of polarity that opponent science later half-vindicated",
+    "ko": "괴테는 색을 능동적 플러스와 수동적 마이너스로 나눴다 — 훗날 대립 과학이 반쯤 입증한 극성의 철학"
+  },
+  "description": {
+    "en": "Goethe rejected Newton's physics for a psychological order — a triangle reading colour as polarity: warm active plus vs cool passive minus. A theory of feeling that foreshadowed opponent channels.",
+    "ko": "괴테는 뉴턴의 물리학을 거부하고 심리적 질서를 세웠다 — 따뜻한 능동 플러스극과 차가운 수동 마이너스극의 극성으로 색을 읽는 삼각형이다. 오버레이를 전환하라; 대립 채널을 어렴풋이 예견한 감정의 이론이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "historical-color-systems",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/newton-harmony"],
+  "leads_to": ["historical-color-systems/munsell-tree"],
+  "see_also": ["opponent-process/opponent-cancellation"],
+  "textbook_refs": [
+    { "source": "Goethe, Zur Farbenlehre (1810)", "section": "Didactic Part" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Goethe", "color theory", "polarity", "opponent", "Farbenlehre"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

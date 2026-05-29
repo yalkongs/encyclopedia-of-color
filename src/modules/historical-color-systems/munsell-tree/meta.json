@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "historical-color-systems/munsell-tree",
+  "title": {
+    "en": "Three Ways to Order Colour",
+    "ko": "색을 정렬하는 세 가지 방법"
+  },
+  "subtitle": {
+    "en": "Munsell, Ostwald, and NCS each answer one question differently — what makes two colours equally far apart?",
+    "ko": "먼셀·오스트발트·NCS는 한 질문에 다르게 답한다 — 무엇이 두 색을 똑같이 멀게 만드는가?"
+  },
+  "description": {
+    "en": "Munsell (1905) spaces colours by equal perceived steps, Ostwald (1916) by white-black-colour mixtures, NCS (1979) by resemblance to six elementaries. Select a system to read its philosophy.",
+    "ko": "먼셀(1905)은 균등한 지각 단계로, 오스트발트(1916)는 흰·검정·순색의 균등한 혼합으로, NCS(1979)는 여섯 기본 지각에 대한 닮음으로 색을 배치한다. 시스템을 골라 그 기하 뒤의 철학을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "historical-color-systems",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/goethe-psychological"],
+  "leads_to": ["historical-color-systems/bauhaus-geometry"],
+  "see_also": ["color-space-slicer/munsell-tree-3d", "color-space-slicer/ncs-natural-system", "color-space-slicer/ostwald-color-solid"],
+  "textbook_refs": [
+    { "source": "Kuehni, Color Space and Its Divisions", "section": "§7 (Munsell, Ostwald, NCS)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Munsell", "Ostwald", "NCS", "color order system", "color space"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

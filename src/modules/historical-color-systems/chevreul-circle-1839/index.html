@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Chevreul's Circle &amp; Contrast — the 1839 seventy-two-part circle, and…</title>
+  <meta name="description" content="At the Gobelins dye-works Chevreul found every colour pushes its neighbour toward its complement — the law of simultaneous contrast. Both centre greys are identical, yet the colour field tints one.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/chevreul-circle-1839/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Chevreul's Circle &amp; Contrast">
+  <meta property="og:description"    content="At the Gobelins dye-works Chevreul found every colour pushes its neighbour toward its complement — the law of simultaneous contrast. Both centre greys are identical, yet the colour field tints one.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/chevreul-circle-1839/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--chevreul-circle-1839.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Chevreul's Circle &amp; Contrast.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Chevreul's Circle &amp; Contrast">
+  <meta name="twitter:description"   content="At the Gobelins dye-works Chevreul found every colour pushes its neighbour toward its complement — the law of simultaneous contrast. Both centre greys are identical, yet the colour field tints one.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--chevreul-circle-1839.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Chevreul's Circle &amp; Contrast.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Chevreul's Circle & Contrast","alternateName":"historical-color-systems/chevreul-circle-1839","description":"At the Gobelins dye-works Chevreul found every colour pushes its neighbour toward its complement — the law of simultaneous contrast. Both centre greys are identical, yet the colour field tints one.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Chevreul, simultaneous contrast, color wheel, complementary","url":"https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/chevreul-circle-1839/","image":"https://encyclopedia-of-color.vercel.app/og/historical-color-systems--chevreul-circle-1839.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="historical-color-systems/chevreul-circle-1839">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Chevreul's Circle & Contrast</h1>
+      <p class="module-subtitle">the 1839 seventy-two-part circle, and the law it was built to teach — a colour casts its complement onto its neighbour</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Chevreul, directing the Gobelins tapestry dye-works, found weavers' complaints about "weak" dyes were really a perceptual effect: every colour pushes its neighbour toward the complement. His 1839 circle of 72 hues was the tool for predicting it — the law of simultaneous contrast.
+        </p>
+        <div class="math-block" data-tex="\text{surround } H \;\Rightarrow\; \text{centre shifts toward } H + 180^\circ"></div>
+        <p class="zone-guide">
+          Pick a surround hue on the circle. The two centre squares are the <em>same physical grey</em> — yet on the coloured field your eye tints it toward the complement (marked opposite on the circle). That induced shift is Chevreul's law.
+        </p>
+        <enc-slider id="hue" label="Surround hue" min="0" max="359" step="1" value="0" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Chevreul's 72-part circle and simultaneous contrast"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Chevreul, De la loi du contraste simultané des couleurs (1839)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

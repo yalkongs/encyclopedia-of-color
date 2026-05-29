@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Seurat's Optical Mixing — step back from a field of blue and yellow d…</title>
+  <meta name="description" content="Pointillists let the eye blend pure dots: optical mixing averages light, palette mixing subtracts. Slide the distance — blue and yellow dots fuse to a luminous grey, not the dull green of mixed paint.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/optical-mixing-pointillism/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Seurat's Optical Mixing">
+  <meta property="og:description"    content="Pointillists let the eye blend pure dots: optical mixing averages light, palette mixing subtracts. Slide the distance — blue and yellow dots fuse to a luminous grey, not the dull green of mixed paint.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/optical-mixing-pointillism/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--optical-mixing-pointillism.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Seurat's Optical Mixing.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Seurat's Optical Mixing">
+  <meta name="twitter:description"   content="Pointillists let the eye blend pure dots: optical mixing averages light, palette mixing subtracts. Slide the distance — blue and yellow dots fuse to a luminous grey, not the dull green of mixed paint.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--optical-mixing-pointillism.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Seurat's Optical Mixing.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Seurat's Optical Mixing","alternateName":"historical-color-systems/optical-mixing-pointillism","description":"Pointillists let the eye blend pure dots: optical mixing averages light, palette mixing subtracts. Slide the distance — blue and yellow dots fuse to a luminous grey, not the dull green of mixed paint.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"pointillism, Seurat, optical mixing, divisionism, additive","url":"https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/optical-mixing-pointillism/","image":"https://encyclopedia-of-color.vercel.app/og/historical-color-systems--optical-mixing-pointillism.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="historical-color-systems/optical-mixing-pointillism">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Seurat's Optical Mixing</h1>
+      <p class="module-subtitle">step back from a field of blue and yellow dots and watch them fuse — into a pale grey, not the green a painter's palette would give</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Pointillists placed pure dots side by side and let the eye blend them. But optical mixing averages the dots' light — closer to additive — while mixing the same pigments on a palette subtracts. Blue and yellow dots fuse to a luminous grey; blue and yellow paint makes a dull green.
+        </p>
+        <div class="math-block" data-tex="\text{optical} \approx \tfrac{c_1 + c_2}{2}, \qquad \text{pigment} \approx c_1 \cdot c_2"></div>
+        <p class="zone-guide">
+          Slide the viewing distance. Up close the dots stay separate; from far the eye can no longer resolve them and they merge. Compare the optical result you see against the pigment mix of the same two colours.
+        </p>
+        <enc-slider id="dist" label="Viewing distance" min="0" max="100" step="1" value="0" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Pointillist optical mixing of blue and yellow dots"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Albers, Interaction of Color (1963); Seurat, divisionist technique"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

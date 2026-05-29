@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Why RYB Isn't Science — mix the school-art primaries red-yellow-blue…</title>
+  <meta name="description" content="Red-yellow-blue is a studio tradition, not colour science — subtractive mixing is governed by cyan, magenta, yellow. Reveal the paint mixes: RYB secondaries come out muddy, CMY stays clean.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/ryb-vs-rgb-debunk/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Why RYB Isn't Science">
+  <meta property="og:description"    content="Red-yellow-blue is a studio tradition, not colour science — subtractive mixing is governed by cyan, magenta, yellow. Reveal the paint mixes: RYB secondaries come out muddy, CMY stays clean.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/ryb-vs-rgb-debunk/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--ryb-vs-rgb-debunk.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Why RYB Isn't Science.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Why RYB Isn't Science">
+  <meta name="twitter:description"   content="Red-yellow-blue is a studio tradition, not colour science — subtractive mixing is governed by cyan, magenta, yellow. Reveal the paint mixes: RYB secondaries come out muddy, CMY stays clean.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--ryb-vs-rgb-debunk.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Why RYB Isn't Science.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Why RYB Isn't Science","alternateName":"historical-color-systems/ryb-vs-rgb-debunk","description":"Red-yellow-blue is a studio tradition, not colour science — subtractive mixing is governed by cyan, magenta, yellow. Reveal the paint mixes: RYB secondaries come out muddy, CMY stays clean.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"RYB, CMY, subtractive mixing, primary colors, color myth","url":"https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/ryb-vs-rgb-debunk/","image":"https://encyclopedia-of-color.vercel.app/og/historical-color-systems--ryb-vs-rgb-debunk.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="historical-color-systems/ryb-vs-rgb-debunk">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Why RYB Isn't Science</h1>
+      <p class="module-subtitle">mix the school-art primaries red-yellow-blue and the printer's cyan-magenta-yellow side by side — and watch which one muddies</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          "Red, yellow, blue are the primaries" is a studio tradition, not colour science. Subtractive mixing — paint absorbing light — is governed by cyan, magenta, yellow. Mix RYB and the secondaries come out dark and muddy, especially blue + yellow; mix CMY and they stay clean and bright.
+        </p>
+        <div class="math-block" data-tex="\text{mix} \approx c_1 \cdot c_2 \quad (\text{subtractive, per channel})"></div>
+        <p class="zone-guide">
+          Reveal the mixes. Each triangle's corners are its primaries; the edges are pairwise paint mixes and the centre is all three. Compare the green and purple each set produces — RYB cannot reach the vivid secondaries CMY gives.
+        </p>
+        <enc-toggle id="reveal" label="Show" options="mixes,primaries" labels="with mixes,primaries only" value="mixes"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="RYB versus CMY subtractive mixing"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki & Stiles, Color Science 2e (subtractive mixing)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "historical-color-systems/newton-harmony",
+  "title": {
+    "en": "Newton's Musical Wheel",
+    "ko": "뉴턴의 음계 색상환"
+  },
+  "subtitle": {
+    "en": "Newton bent the spectrum into a circle and sized each colour by a note of the scale — so the sectors are deliberately unequal",
+    "ko": "뉴턴은 스펙트럼을 원으로 굽혀 각 색을 음계의 음으로 크기 지었다 — 그래서 부채꼴은 일부러 고르지 않다"
+  },
+  "description": {
+    "en": "Newton's 1704 colour circle sized its seven sectors by the Dorian-scale intervals, so the semitone steps make orange and indigo narrower. Toggle between an equal split and the musical division.",
+    "ko": "뉴턴의 1704 색환은 일곱 부채꼴을 도리아 음계 D-E-F-G-A-B-C 간격으로 크기 지어, 반음 단계가 주황과 남색을 좁게 만든다. 균등 분할과 음악적 분할을 전환해 그 불균등을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 5,
+  "category": "historical-color-systems",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/aristotles-scale"],
+  "leads_to": ["historical-color-systems/goethe-psychological"],
+  "see_also": ["colorimetry-intro/spectral-locus-shape"],
+  "textbook_refs": [
+    { "source": "Newton, Opticks (1704)", "section": "Book I, Part II, Plate III" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path", "foundations"],
+  "seo_keywords": ["Newton", "color wheel", "color music", "Opticks", "spectrum"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

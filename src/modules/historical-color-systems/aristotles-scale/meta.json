@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "historical-color-systems/aristotles-scale",
+  "title": {
+    "en": "Aristotle's Line of Colour",
+    "ko": "아리스토텔레스의 색 직선"
+  },
+  "subtitle": {
+    "en": "before the colour wheel there was a colour line — slide along Aristotle's single scale from white through to black",
+    "ko": "색상환 이전엔 색 직선이 있었다 — 흰색에서 검정까지 아리스토텔레스의 단일 척도를 따라간다"
+  },
+  "description": {
+    "en": "For two millennia colour was thought one-dimensional: a ladder from white to black, hues strung between as degrees of brightness. Hue as an independent axis arrived only with Newton's wheel.",
+    "ko": "이천 년간 색은 1차원으로 여겨졌다 — 흰색에서 검정까지의 한 사다리에 색상이 밝기의 정도로 꿰어졌다. 직선을 따라가 보라; 색상이 독립 축이 된 것은 뉴턴의 원환에서였다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 5,
+  "category": "historical-color-systems",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["historical-color-systems/newton-harmony"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Kuehni, Color Space and Its Divisions", "section": "§2 (Early colour order)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path", "foundations"],
+  "seo_keywords": ["Aristotle", "color scale", "history of color", "color order"],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

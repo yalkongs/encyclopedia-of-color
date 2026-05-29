@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Three Ways to Order Colour — Munsell, Ostwald, and NCS each answer on…</title>
+  <meta name="description" content="Munsell (1905) spaces colours by equal perceived steps, Ostwald (1916) by white-black-colour mixtures, NCS (1979) by resemblance to six elementaries. Select a system to read its philosophy.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/munsell-tree/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Three Ways to Order Colour">
+  <meta property="og:description"    content="Munsell (1905) spaces colours by equal perceived steps, Ostwald (1916) by white-black-colour mixtures, NCS (1979) by resemblance to six elementaries. Select a system to read its philosophy.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/munsell-tree/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--munsell-tree.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Three Ways to Order Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Three Ways to Order Colour">
+  <meta name="twitter:description"   content="Munsell (1905) spaces colours by equal perceived steps, Ostwald (1916) by white-black-colour mixtures, NCS (1979) by resemblance to six elementaries. Select a system to read its philosophy.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--munsell-tree.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Three Ways to Order Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Three Ways to Order Colour","alternateName":"historical-color-systems/munsell-tree","description":"Munsell (1905) spaces colours by equal perceived steps, Ostwald (1916) by white-black-colour mixtures, NCS (1979) by resemblance to six elementaries. Select a system to read its philosophy.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Munsell, Ostwald, NCS, color order system, color space","url":"https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/munsell-tree/","image":"https://encyclopedia-of-color.vercel.app/og/historical-color-systems--munsell-tree.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="historical-color-systems/munsell-tree">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Three Ways to Order Colour</h1>
+      <p class="module-subtitle">Munsell, Ostwald, and NCS each answer one question differently — what makes two colours equally far apart?</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Three great colour-order systems disagree on the most basic question. Munsell (1905) spaces colours by equal <em>perceived</em> steps. Ostwald (1916) spaces them by equal <em>mixtures</em> of white, black, and full colour. NCS (1979) spaces them by <em>resemblance</em> to six elementary percepts. The geometry of each follows from its answer.
+        </p>
+        <div class="math-block" data-tex="\text{perception} \;\;|\;\; \text{mixture} \;\;|\;\; \text{resemblance}"></div>
+        <p class="zone-guide">
+          Select a system to read its logic. For the 3-D solids these systems build, see the colour-space slicer modules; here the point is the competing <em>philosophy</em> behind each.
+        </p>
+        <enc-toggle id="sys" label="System" options="munsell,ostwald,ncs" labels="Munsell 1905,Ostwald 1916,NCS 1979" value="munsell"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Munsell, Ostwald, and NCS ordering philosophies"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Munsell 1905; Ostwald 1916; NCS (Hård & Sivik) 1979"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

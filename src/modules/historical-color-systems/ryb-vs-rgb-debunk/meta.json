@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "historical-color-systems/ryb-vs-rgb-debunk",
+  "title": {
+    "en": "Why RYB Isn't Science",
+    "ko": "RYB가 과학이 아닌 이유"
+  },
+  "subtitle": {
+    "en": "mix the school-art primaries red-yellow-blue and the printer's cyan-magenta-yellow side by side — and watch which one muddies",
+    "ko": "학교 미술의 빨강-노랑-파랑과 인쇄의 시안-마젠타-노랑을 나란히 섞어 — 어느 쪽이 탁해지는지 본다"
+  },
+  "description": {
+    "en": "Red-yellow-blue is a studio tradition, not colour science — subtractive mixing is governed by cyan, magenta, yellow. Reveal the paint mixes: RYB secondaries come out muddy, CMY stays clean.",
+    "ko": "빨강-노랑-파랑은 작업실 전통이지 색 과학이 아니다 — 감산 혼합은 시안·마젠타·노랑이 지배한다. 쌍별 물감 혼합을 펼쳐 보라; RYB 2차색은 어둡고 탁하지만 CMY는 맑고 선명하다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 5,
+  "category": "historical-color-systems",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/chevreul-circle-1839"],
+  "leads_to": ["colorimetry-intro/why-rgb-only-3"],
+  "see_also": ["colorimetry-intro/metamerism-intro"],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "Subtractive colour mixing" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path", "foundations"],
+  "seo_keywords": ["RYB", "CMY", "subtractive mixing", "primary colors", "color myth"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

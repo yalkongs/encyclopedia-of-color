@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "historical-color-systems/chevreul-circle-1839",
+  "title": {
+    "en": "Chevreul's Circle & Contrast",
+    "ko": "슈브뢸 색환과 대비"
+  },
+  "subtitle": {
+    "en": "the 1839 seventy-two-part circle, and the law it was built to teach — a colour casts its complement onto its neighbour",
+    "ko": "1839년 72분할 색환과 그것이 가르치려던 법칙 — 색은 이웃에 자기 보색을 드리운다"
+  },
+  "description": {
+    "en": "At the Gobelins dye-works Chevreul found every colour pushes its neighbour toward its complement — the law of simultaneous contrast. Both centre greys are identical, yet the colour field tints one.",
+    "ko": "고블랭 염색소를 이끌던 슈브뢸은 모든 색이 이웃을 보색 쪽으로 민다는 것을 발견했다 — 동시대비의 법칙이다. 둘러싼 색상을 골라라; 가운데 두 회색은 같지만, 색 바탕이 하나를 보색 쪽으로 물들인다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "historical-color-systems",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/optical-mixing-pointillism"],
+  "leads_to": ["historical-color-systems/ryb-vs-rgb-debunk"],
+  "see_also": ["opponent-process/albers-relativity"],
+  "textbook_refs": [
+    { "source": "Chevreul (1839)", "section": "De la loi du contraste simultané des couleurs" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Chevreul", "simultaneous contrast", "color wheel", "complementary"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

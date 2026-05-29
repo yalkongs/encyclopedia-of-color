@@ -65,6 +65,14 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'hdr-color-spaces':             { title: 'HDR Colour Spaces',       sub: 'Domain 4 · BT.2020, ICtCp/ITP, and Jzazbz for high dynamic range' },
   'icc-color-management':         { title: 'ICC Colour Management',   sub: 'Domain 4 · the profile connection space and rendering intents' },
   'color-appearance-models':      { title: 'Colour Appearance Models', sub: 'Domain 4 · CIECAM02 — predicting colour under viewing conditions' },
+  // Domain 5
+  'historical-color-systems':     { title: 'Historical Colour Systems', sub: 'Domain 5 · Aristotle to Chevreul — how colour order was imagined' },
+  'ittens-contrasts':             { title: "Itten's Contrasts",       sub: 'Domain 5 · the seven contrasts of colour design' },
+  'spatial-balance-ui':           { title: 'Spatial Balance',         sub: 'Domain 5 · area equilibrium, 60-30-10, figure-ground' },
+  'apca-contrast-matcher':        { title: 'APCA Contrast',           sub: 'Domain 5 · perceptual contrast and WCAG accessibility' },
+  'color-harmony-generator':      { title: 'Harmony Generator',       sub: 'Domain 5 · OKLCH harmonies, Material 3, Radix, code export' },
+  'data-viz-palettes':            { title: 'Data-Viz Palettes',       sub: 'Domain 5 · ColorBrewer, Viridis, Turbo, CVD-safe scales' },
+  'typography-color-interaction': { title: 'Type & Colour',           sub: 'Domain 5 · contrast, fringing, dark mode, readability' },
 };
 
 const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
@@ -196,11 +204,17 @@ async function main() {
     'receptive-fields', 'opponent-process', 'color-constancy',
     'nonlinear-visual-shifts', 'macadam-jnd', 'color-vision-deficiency',
   ];
-  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER];
+  const D5_ORDER = [
+    'historical-color-systems', 'ittens-contrasts', 'spatial-balance-ui',
+    'apca-contrast-matcher', 'color-harmony-generator', 'data-viz-palettes',
+    'typography-color-interaction',
+  ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
     ...D4_ORDER.filter((c) => byCategory.has(c)),
+    ...D5_ORDER.filter((c) => byCategory.has(c)),
     ...[...byCategory.keys()].filter((c) => !known.includes(c)).sort(),
   ];
 

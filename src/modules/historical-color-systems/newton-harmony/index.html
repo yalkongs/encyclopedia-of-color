@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Newton's Musical Wheel — Newton bent the spectrum into a circle and s…</title>
+  <meta name="description" content="Newton's 1704 colour circle sized its seven sectors by the Dorian-scale intervals, so the semitone steps make orange and indigo narrower. Toggle between an equal split and the musical division.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/newton-harmony/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Newton's Musical Wheel">
+  <meta property="og:description"    content="Newton's 1704 colour circle sized its seven sectors by the Dorian-scale intervals, so the semitone steps make orange and indigo narrower. Toggle between an equal split and the musical division.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/newton-harmony/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--newton-harmony.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Newton's Musical Wheel.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Newton's Musical Wheel">
+  <meta name="twitter:description"   content="Newton's 1704 colour circle sized its seven sectors by the Dorian-scale intervals, so the semitone steps make orange and indigo narrower. Toggle between an equal split and the musical division.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/historical-color-systems--newton-harmony.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Newton's Musical Wheel.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Newton's Musical Wheel","alternateName":"historical-color-systems/newton-harmony","description":"Newton's 1704 colour circle sized its seven sectors by the Dorian-scale intervals, so the semitone steps make orange and indigo narrower. Toggle between an equal split and the musical division.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Newton, color wheel, color music, Opticks, spectrum","url":"https://encyclopedia-of-color.vercel.app/modules/historical-color-systems/newton-harmony/","image":"https://encyclopedia-of-color.vercel.app/og/historical-color-systems--newton-harmony.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="historical-color-systems/newton-harmony">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Newton's Musical Wheel</h1>
+      <p class="module-subtitle">Newton bent the spectrum into a circle and sized each colour by a note of the scale — so the sectors are deliberately unequal</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Newton's 1704 colour circle was the first. He believed colour and music shared a harmony, so he sized the seven sectors by the intervals of the Dorian scale (D-E-F-G-A-B-C). The two semitone steps — E→F and B→C — make the orange and indigo sectors visibly narrower.
+        </p>
+        <div class="math-block" data-tex="\text{tone}=2u,\ \text{semitone}=1u,\quad \textstyle\sum u = 12 \to 360^\circ"></div>
+        <p class="zone-guide">
+          Switch between an equal seven-way split and Newton's musical division. In musical mode each sector carries its note; the narrow orange and indigo arcs are the semitones. The unevenness is the whole point — colour was tuned, not measured.
+        </p>
+        <enc-toggle id="div" label="Division" options="musical,equal" labels="musical (Newton),equal sevenths" value="musical"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Newton's musical colour wheel"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Newton, Opticks (1704) Book I, Part II, Plate III"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

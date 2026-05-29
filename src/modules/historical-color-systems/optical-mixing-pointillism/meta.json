@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "historical-color-systems/optical-mixing-pointillism",
+  "title": {
+    "en": "Seurat's Optical Mixing",
+    "ko": "쇠라의 광학 혼합"
+  },
+  "subtitle": {
+    "en": "step back from a field of blue and yellow dots and watch them fuse — into a pale grey, not the green a painter's palette would give",
+    "ko": "파랑·노랑 점밭에서 물러서 그들이 융합하는 것을 본다 — 팔레트의 초록이 아니라 옅은 회색으로"
+  },
+  "description": {
+    "en": "Pointillists let the eye blend pure dots: optical mixing averages light, palette mixing subtracts. Slide the distance — blue and yellow dots fuse to a luminous grey, not the dull green of mixed paint.",
+    "ko": "점묘파는 눈이 순수한 점을 섞게 했지만, 광학 혼합은 빛을 평균하고 팔레트 혼합은 뺀다. 시야 거리를 움직여라 — 가까이선 점이 분리돼 보이고, 멀리선 섞인 안료의 칙칙한 초록과 달리 빛나는 회색으로 융합한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "historical-color-systems",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/bauhaus-geometry"],
+  "leads_to": ["historical-color-systems/chevreul-circle-1839"],
+  "see_also": ["opponent-process/bezold-assimilation"],
+  "textbook_refs": [
+    { "source": "Albers, Interaction of Color (1963)", "section": "Optical mixture" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["pointillism", "Seurat", "optical mixing", "divisionism", "additive"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}
