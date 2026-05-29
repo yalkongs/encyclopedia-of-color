@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "gamut-mapping-3d/scaling-vs-clipping",
+  "title": {
+    "en": "Scale the Whole, or Clip Each?",
+    "ko": "전체 스케일 vs 개별 클립"
+  },
+  "subtitle": {
+    "en": "take a full ring of saturated hues and watch global scaling keep its circular shape while per-colour clipping warps it to the gamut",
+    "ko": "포화 색상환을 두고, 전역 스케일이 원형을 유지하는 동안 개별 클립이 색역에 맞춰 일그러지는 것을 본다"
+  },
+  "description": {
+    "en": "Clip each out-of-gamut colour to its edge, or scale all by one factor so the most saturated fits. Clipping keeps in-gamut colours but warps relationships; scaling preserves them but desaturates all.",
+    "ko": "색역 밖 색을 각각 가장 가까운 가장자리로 클립하거나, 가장 포화된 색이 딱 들어가도록 모든 색을 한 계수로 스케일한다. 클립은 색역 내 색을 보존하나 관계를 왜곡하고, 스케일은 관계를 보존하나 전부 탈채도한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "gamut-mapping-3d",
+  "layout": "A",
+  "prerequisites": ["gamut-mapping-3d/lch-gamut-clip"],
+  "leads_to": [],
+  "see_also": ["icc-color-management/rendering-intents"],
+  "textbook_refs": [
+    { "source": "Morovič, Color Gamut Mapping (2008)", "section": "§5 (Gamut compression)" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["gamut scaling", "clipping", "gamut compression", "chroma"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

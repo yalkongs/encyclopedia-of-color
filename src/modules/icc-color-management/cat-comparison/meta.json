@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "icc-color-management/cat-comparison",
+  "title": {
+    "en": "Four Adaptation Transforms",
+    "ko": "네 가지 색순응 변환"
+  },
+  "subtitle": {
+    "en": "adapt one colour across illuminants through Bradford, CAT02, Sharp, and Von Kries — and measure how far they disagree",
+    "ko": "한 색을 Bradford·CAT02·Sharp·Von Kries로 광원 사이에 순응시키고 서로 얼마나 다른지 잰다"
+  },
+  "description": {
+    "en": "A chromatic adaptation transform predicts how a colour shifts when light changes; each CAT uses a different cone matrix. Pick a hue and two illuminants, and read each result's ΔE2000 from Bradford.",
+    "ko": "색순응 변환은 빛이 바뀔 때 색이 어떻게 이동하는지 예측하며, 각 CAT은 다른 원추 행렬을 쓴다. 색상과 출발·도착 광원을 골라 각 결과의 Bradford 대비 ΔE2000을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "icc-color-management",
+  "layout": "A",
+  "prerequisites": ["icc-color-management/icc-profile-chain"],
+  "leads_to": ["color-appearance-models/ciecam02"],
+  "see_also": ["color-constancy/von-kries-adaptation"],
+  "textbook_refs": [
+    { "source": "Fairchild, Color Appearance Models 3e", "section": "§9 (Chromatic adaptation)" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["chromatic adaptation", "Bradford", "CAT02", "Von Kries", "white point"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

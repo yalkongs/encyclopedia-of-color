@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Scale the Whole, or Clip Each? — take a full ring of saturated hues a…</title>
+  <meta name="description" content="Clip each out-of-gamut colour to its edge, or scale all by one factor so the most saturated fits. Clipping keeps in-gamut colours but warps relationships; scaling preserves them but desaturates all.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/scaling-vs-clipping/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Scale the Whole, or Clip Each?">
+  <meta property="og:description"    content="Clip each out-of-gamut colour to its edge, or scale all by one factor so the most saturated fits. Clipping keeps in-gamut colours but warps relationships; scaling preserves them but desaturates all.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/scaling-vs-clipping/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--scaling-vs-clipping.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Scale the Whole, or Clip Each?.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Scale the Whole, or Clip Each?">
+  <meta name="twitter:description"   content="Clip each out-of-gamut colour to its edge, or scale all by one factor so the most saturated fits. Clipping keeps in-gamut colours but warps relationships; scaling preserves them but desaturates all.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--scaling-vs-clipping.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Scale the Whole, or Clip Each?.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Scale the Whole, or Clip Each?","alternateName":"gamut-mapping-3d/scaling-vs-clipping","description":"Clip each out-of-gamut colour to its edge, or scale all by one factor so the most saturated fits. Clipping keeps in-gamut colours but warps relationships; scaling preserves them but desaturates all.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"gamut scaling, clipping, gamut compression, chroma","url":"https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/scaling-vs-clipping/","image":"https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--scaling-vs-clipping.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="gamut-mapping-3d/scaling-vs-clipping">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Scale the Whole, or Clip Each?</h1>
+      <p class="module-subtitle">take a full ring of saturated hues and watch global scaling keep its circular shape while per-colour clipping warps it to the gamut</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Faced with out-of-gamut colours you can clip each one independently to the nearest edge, or scale every colour by one shared factor so the most saturated just fits. Clipping preserves in-gamut colours but distorts relationships; scaling preserves relationships but desaturates everything.
+        </p>
+        <div class="math-block" data-tex="\text{scale}:\; C \to k\,C,\; k=\min_h \tfrac{C_b(h)}{C} \qquad \text{clip}:\; C \to \min(C, C_b(h))"></div>
+        <p class="zone-guide">
+          A ring of hues sits at one chroma (faint = source). Switch between clip and scale. Clipping snaps the ring onto the lumpy gamut boundary; scaling shrinks it to a smaller, still-circular ring that fits entirely inside.
+        </p>
+        <enc-slider id="L" label="Lightness L*" min="30" max="85" step="1" value="60"></enc-slider>
+        <enc-slider id="C" label="Source chroma" min="30" max="140" step="1" value="100"></enc-slider>
+        <enc-toggle id="mode" label="Strategy" options="clip,scale" labels="per-colour clip,global scale" value="scale"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Gamut scaling versus clipping of a hue ring"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Morovič, Color Gamut Mapping (2008) §5"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

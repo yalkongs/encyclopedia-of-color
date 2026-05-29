@@ -55,6 +55,7 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'color-constancy':              { title: 'Color Constancy',       sub: 'Domain 2 · Von Kries, the Dress, retinex' },
   'color-vision-deficiency':      { title: 'Color Vision Deficiency', sub: 'Domain 2 · dichromacy and anomalous trichromacy' },
   // Domain 4
+  'colorimetry-intro':            { title: 'Colorimetry Intro',       sub: 'Domain 4 · trichromacy, metamerism, and the spectral locus' },
   'cie-1931-matching':            { title: 'CIE 1931 Matching',       sub: 'Domain 4 · colour-matching functions and the standard observer' },
   'xyz-transformation':           { title: 'XYZ Transformation',      sub: 'Domain 4 · linear maps, projection, and sRGB encoding' },
   'color-space-slicer':           { title: 'Colour-Space Slicer',     sub: 'Domain 4 · slicing the colour solids — Lab, Luv, HSV, Munsell, NCS, Ostwald' },
@@ -66,7 +67,7 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'color-appearance-models':      { title: 'Colour Appearance Models', sub: 'Domain 4 · CIECAM02 — predicting colour under viewing conditions' },
 };
 
-const D4_ORDER = ['cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
+const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
 
 interface ModuleEntry { meta: MetaV2; href: string }
 

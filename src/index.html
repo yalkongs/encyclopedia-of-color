@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 185 modules across 40 categories -->
+    <!-- 194 modules across 41 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>185 modules</strong> are published across 40 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>194 modules</strong> are published across 41 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -913,6 +913,27 @@
       </div>
     </div>
     <div class="domain-cluster">
+      <h2 class="section-title">Colorimetry Intro</h2>
+      <div class="sub">Domain 4 · trichromacy, metamerism, and the spectral locus</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/colorimetry-intro/why-rgb-only-3/">
+        <div class="card-meta">L1 · Atom · Colorimetry Intro</div>
+        <div class="card-title">Why Only Three?</div>
+        <div class="card-sub">match any target with just three knobs — because the eye reports colour through only three cone types</div>
+      </a>
+      <a class="module-card" href="./modules/colorimetry-intro/metamerism-intro/">
+        <div class="card-meta">L2 · Atom · Colorimetry Intro</div>
+        <div class="card-title">Two Spectra, One Colour</div>
+        <div class="card-sub">tune three narrow bands until their colour matches a smooth spectrum — proof that wildly different light can look identical</div>
+      </a>
+      <a class="module-card" href="./modules/colorimetry-intro/spectral-locus-shape/">
+        <div class="card-meta">L2 · Atom · Colorimetry Intro</div>
+        <div class="card-title">Tracing the Horseshoe</div>
+        <div class="card-sub">sweep one pure wavelength across the spectrum and watch its chromaticity draw out the famous horseshoe boundary</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
       <h2 class="section-title">CIE 1931 Matching</h2>
       <div class="sub">Domain 4 · colour-matching functions and the standard observer</div>
       <div class="module-grid">
@@ -1071,6 +1092,16 @@
         <div class="card-title">Clip or Compress?</div>
         <div class="card-sub">push a colour past the sRGB boundary and compare a hard clip to the edge against a soft compression that pulls the whole range inward</div>
       </a>
+      <a class="module-card" href="./modules/gamut-mapping-3d/lch-gamut-clip/">
+        <div class="card-meta">L5 · Reference · Gamut Mapping 3d</div>
+        <div class="card-title">Lightness-Preserving Clip</div>
+        <div class="card-sub">compare a naive per-channel RGB clamp against an LCh clip that keeps lightness and hue fixed while only chroma gives way</div>
+      </a>
+      <a class="module-card" href="./modules/gamut-mapping-3d/scaling-vs-clipping/">
+        <div class="card-meta">L5 · Reference · Gamut Mapping 3d</div>
+        <div class="card-title">Scale the Whole, or Clip Each?</div>
+        <div class="card-sub">take a full ring of saturated hues and watch global scaling keep its circular shape while per-colour clipping warps it to the gamut</div>
+      </a>
       </div>
     </div>
     <div class="domain-cluster">
@@ -1082,6 +1113,11 @@
         <div class="card-title">BT.2020 vs Rec.709</div>
         <div class="card-sub">overlay the UHD gamut on the HD one and shade the wide-gamut bonus — the colours HDR can show that SDR never could</div>
       </a>
+      <a class="module-card" href="./modules/hdr-color-spaces/aces-acescg/">
+        <div class="card-meta">L5 · Reference · Hdr Color Spaces</div>
+        <div class="card-title">ACES Working Spaces</div>
+        <div class="card-sub">see how AP1 and AP0 push their primaries to — and beyond — the spectral locus so the renderer never runs out of colour</div>
+      </a>
       <a class="module-card" href="./modules/hdr-color-spaces/ictcp-itp/">
         <div class="card-meta">L5 · Reference · Hdr Color Spaces</div>
         <div class="card-title">ICtCp — Encoding HDR Light</div>
@@ -1092,12 +1128,22 @@
         <div class="card-title">Jz vs L* Across HDR</div>
         <div class="card-sub">trace lightness from 0.1 to 10000 cd/m² and watch CIELAB's L* flatten at the top while Jzazbz keeps spreading</div>
       </a>
+      <a class="module-card" href="./modules/hdr-color-spaces/rec2100-pq-hlg/">
+        <div class="card-meta">L5 · Reference · Hdr Color Spaces</div>
+        <div class="card-title">PQ vs HLG</div>
+        <div class="card-sub">overlay Rec.2100's two HDR transfer curves and see why one is absolute and display-referred while the other stays relative and SDR-compatible</div>
+      </a>
       </div>
     </div>
     <div class="domain-cluster">
       <h2 class="section-title">ICC Colour Management</h2>
       <div class="sub">Domain 4 · the profile connection space and rendering intents</div>
       <div class="module-grid">
+      <a class="module-card" href="./modules/icc-color-management/cat-comparison/">
+        <div class="card-meta">L5 · Reference · Icc Color Management</div>
+        <div class="card-title">Four Adaptation Transforms</div>
+        <div class="card-sub">adapt one colour across illuminants through Bradford, CAT02, Sharp, and Von Kries — and measure how far they disagree</div>
+      </a>
       <a class="module-card" href="./modules/icc-color-management/icc-profile-chain/">
         <div class="card-meta">L5 · Reference · Icc Color Management</div>
         <div class="card-title">The ICC Profile Chain</div>
@@ -1118,6 +1164,11 @@
         <div class="card-meta">L6 · Reference · Color Appearance Models</div>
         <div class="card-title">CIECAM02 — Colour in Context</div>
         <div class="card-sub">hold the stimulus fixed and change the room: watch lightness, chroma, and colourfulness shift as adaptation and surround change</div>
+      </a>
+      <a class="module-card" href="./modules/color-appearance-models/ciecam16/">
+        <div class="card-meta">L6 · Reference · Color Appearance Models</div>
+        <div class="card-title">CIECAM16 vs CIECAM02</div>
+        <div class="card-sub">the 2016 update folds the adaptation into a single matrix — drive the conditions and watch how little the correlates actually move</div>
       </a>
       </div>
     </div>

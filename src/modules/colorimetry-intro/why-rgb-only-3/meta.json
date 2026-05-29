@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "colorimetry-intro/why-rgb-only-3",
+  "title": {
+    "en": "Why Only Three?",
+    "ko": "왜 삼원색만으로 충분한가"
+  },
+  "subtitle": {
+    "en": "match any target with just three knobs — because the eye reports colour through only three cone types",
+    "ko": "단 세 개의 손잡이로 어떤 표적이든 맞춘다 — 눈이 세 종류의 원추세포로만 색을 보고하기 때문"
+  },
+  "description": {
+    "en": "The retina has three cone classes, so the brain sees any spectrum as three numbers — and three primaries match any colour. Tune red, green, and blue until the seam between target and mix vanishes.",
+    "ko": "망막에는 원추세포가 세 종류뿐이라 뇌는 어떤 스펙트럼도 세 숫자로 본다 — 그래서 세 원색으로 어떤 색이든 맞출 수 있다. 빨강·초록·파랑을 조정해 표적과 혼합의 경계를 지운다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 4,
+  "category": "colorimetry-intro",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["colorimetry-intro/metamerism-intro", "cie-1931-matching/colorimetry-matching"],
+  "see_also": ["cones-sensitivity/lms-spectra"],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5.1 (Trichromacy)" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["foundations"],
+  "seo_keywords": ["trichromacy", "three primaries", "RGB", "color matching", "cones"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

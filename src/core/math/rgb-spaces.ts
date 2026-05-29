@@ -64,6 +64,9 @@ export const SRGB = makeSpace('sRGB / Rec.709', [0.64, 0.33], [0.30, 0.60], [0.1
 export const DISPLAY_P3 = makeSpace('Display P3', [0.680, 0.320], [0.265, 0.690], [0.150, 0.060]);
 export const ADOBE_RGB = makeSpace('Adobe RGB (1998)', [0.64, 0.33], [0.21, 0.71], [0.15, 0.06]);
 export const BT2020 = makeSpace('BT.2020', [0.708, 0.292], [0.170, 0.797], [0.131, 0.046]);
+// ACEScg (AP1 primaries, ACES white ~D60). Linear working space for rendering.
+const ACES_WHITE: WhitePoint = { X: 0.32168 / 0.33767, Y: 1, Z: (1 - 0.32168 - 0.33767) / 0.33767 };
+export const ACES_CG = makeSpace('ACEScg (AP1)', [0.713, 0.293], [0.165, 0.830], [0.128, 0.044], ACES_WHITE);
 
 /** Shoelace area of the chromaticity triangle — a proxy for 2D gamut size. */
 export function gamutTriangleArea(s: RgbSpace): number {

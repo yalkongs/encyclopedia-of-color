@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Lightness-Preserving Clip — compare a naive per-channel RGB clamp aga…</title>
+  <meta name="description" content="Clamping each RGB channel to [0,1] drags lightness and hue off target. The LCh clip holds L* and hue, pulling chroma only to the gamut edge. Set an out-of-gamut colour and compare the drift of each.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/lch-gamut-clip/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Lightness-Preserving Clip">
+  <meta property="og:description"    content="Clamping each RGB channel to [0,1] drags lightness and hue off target. The LCh clip holds L* and hue, pulling chroma only to the gamut edge. Set an out-of-gamut colour and compare the drift of each.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/lch-gamut-clip/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--lch-gamut-clip.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Lightness-Preserving Clip.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Lightness-Preserving Clip">
+  <meta name="twitter:description"   content="Clamping each RGB channel to [0,1] drags lightness and hue off target. The LCh clip holds L* and hue, pulling chroma only to the gamut edge. Set an out-of-gamut colour and compare the drift of each.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--lch-gamut-clip.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Lightness-Preserving Clip.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Lightness-Preserving Clip","alternateName":"gamut-mapping-3d/lch-gamut-clip","description":"Clamping each RGB channel to [0,1] drags lightness and hue off target. The LCh clip holds L* and hue, pulling chroma only to the gamut edge. Set an out-of-gamut colour and compare the drift of each.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"LCh clip, gamut clipping, lightness preserving, RGB clamp","url":"https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/lch-gamut-clip/","image":"https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--lch-gamut-clip.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="gamut-mapping-3d/lch-gamut-clip">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Lightness-Preserving Clip</h1>
+      <p class="module-subtitle">compare a naive per-channel RGB clamp against an LCh clip that keeps lightness and hue fixed while only chroma gives way</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Clamping each RGB channel to [0,1] is the lazy fix — but it drags lightness and hue off target. The colour-managed answer works in LCh: hold L* and hue, and pull chroma inward only as far as the gamut boundary. Same hue, same lightness, just less vivid.
+        </p>
+        <div class="math-block" data-tex="\text{LCh clip}:\; (L^*, h)\ \text{fixed},\; C \to C_b(L^*, h)"></div>
+        <p class="zone-guide">
+          Set an out-of-gamut colour. The L*–C plane at this hue shows the gamut boundary; the LCh clip drops straight down in chroma (lightness held), while the RGB clamp drifts off in both lightness and hue. Compare the two patches.
+        </p>
+        <enc-slider id="L" label="Lightness L*" min="20" max="90" step="1" value="55"></enc-slider>
+        <enc-slider id="hue" label="Hue angle" min="0" max="360" step="1" value="265" unit="°"></enc-slider>
+        <enc-slider id="C" label="Source chroma" min="20" max="150" step="1" value="115"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="LCh clip versus RGB clamp"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Morovič, Color Gamut Mapping (2008) §6"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

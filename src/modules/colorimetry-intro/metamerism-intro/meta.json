@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "colorimetry-intro/metamerism-intro",
+  "title": {
+    "en": "Two Spectra, One Colour",
+    "ko": "메타메리즘 입문"
+  },
+  "subtitle": {
+    "en": "tune three narrow bands until their colour matches a smooth spectrum — proof that wildly different light can look identical",
+    "ko": "세 좁은 대역을 조정해 매끄러운 스펙트럼과 색을 맞춘다 — 전혀 다른 빛이 똑같아 보일 수 있다는 증거"
+  },
+  "description": {
+    "en": "Because the eye collapses every spectrum to three cone signals, different spectra can produce the same colour — a metameric match. Tune three narrow bands until the swatch matches a smooth spectrum.",
+    "ko": "눈은 모든 스펙트럼을 세 원추 신호로 압축하므로, 다른 분광 분포가 같은 색을 낼 수 있다 — 메타메릭 매치다. 세 좁은 대역을 조정해 매끄러운 스펙트럼과 스워치를 맞춘다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 4,
+  "category": "colorimetry-intro",
+  "layout": "A",
+  "prerequisites": ["colorimetry-intro/why-rgb-only-3"],
+  "leads_to": ["colorimetry-intro/spectral-locus-shape", "cie-1931-matching/illuminant-spd-comparison"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5.7 (Metamerism)" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["foundations"],
+  "seo_keywords": ["metamerism", "spectral power distribution", "color match", "metamers"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

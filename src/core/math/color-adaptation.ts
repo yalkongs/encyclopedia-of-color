@@ -33,6 +33,51 @@ function mul(m: M3, v: V3): V3 {
   ];
 }
 
+/** Cone-response matrices for chromatic adaptation transforms (rows: XYZ → cone space). */
+export const CAT_MATRICES: Record<string, M3> = {
+  bradford: M_BRADFORD,
+  cat02: [
+    [0.7328, 0.4296, -0.1624],
+    [-0.7036, 1.6975, 0.0061],
+    [0.0030, 0.0136, 0.9834],
+  ],
+  cat16: [
+    [0.401288, 0.650173, -0.051461],
+    [-0.250268, 1.204414, 0.045854],
+    [-0.002079, 0.048952, 0.953127],
+  ],
+  sharp: [
+    [1.2694, -0.0988, -0.1706],
+    [-0.8364, 1.8006, 0.0357],
+    [0.0297, -0.0315, 1.0018],
+  ],
+  vonKries: [
+    [0.4002400, 0.7076000, -0.0808100],
+    [-0.2263000, 1.1653200, 0.0457000],
+    [0.0000000, 0.0000000, 0.9182200],
+  ],
+};
+
+function inv3(m: M3): M3 {
+  const [a, b, c] = m[0], [d, e, f] = m[1], [g, h, i] = m[2];
+  const A = e * i - f * h, B = -(d * i - f * g), C = d * h - e * g;
+  const det = a * A + b * B + c * C;
+  return [
+    [A / det, -(b * i - c * h) / det, (b * f - c * e) / det],
+    [B / det, (a * i - c * g) / det, -(a * f - c * d) / det],
+    [C / det, -(a * h - b * g) / det, (a * e - b * d) / det],
+  ];
+}
+
+/** Generic von-Kries-style chromatic adaptation through an arbitrary cone matrix M. */
+export function catAdapt(xyz: V3, srcWhite: WhitePoint, dstWhite: WhitePoint, M: M3): V3 {
+  const s = mul(M, [srcWhite.X, srcWhite.Y, srcWhite.Z]);
+  const d = mul(M, [dstWhite.X, dstWhite.Y, dstWhite.Z]);
+  const cone = mul(M, xyz);
+  const adapted: V3 = [(cone[0] * d[0]) / s[0], (cone[1] * d[1]) / s[1], (cone[2] * d[2]) / s[2]];
+  return mul(inv3(M), adapted);
+}
+
 /** Adapt an XYZ colour from a source white point to a destination white point. */
 export function bradfordAdapt(xyz: V3, srcWhite: WhitePoint, dstWhite: WhitePoint): V3 {
   const s = mul(M_BRADFORD, [srcWhite.X, srcWhite.Y, srcWhite.Z]);

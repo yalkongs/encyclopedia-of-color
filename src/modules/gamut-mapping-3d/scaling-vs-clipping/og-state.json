@@ -1,0 +1,4 @@
+{
+  "hero": { "L": 60, "C": 100, "mode": "scale" },
+  "comment": "Global scale of an over-saturated hue ring — a smaller circle nested inside the gamut."
+}

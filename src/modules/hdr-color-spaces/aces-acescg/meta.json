@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-color-spaces/aces-acescg",
+  "title": {
+    "en": "ACES Working Spaces",
+    "ko": "ACES 작업 공간"
+  },
+  "subtitle": {
+    "en": "see how AP1 and AP0 push their primaries to — and beyond — the spectral locus so the renderer never runs out of colour",
+    "ko": "AP1과 AP0이 원색을 스펙트럼 궤적까지 — 그 너머까지 — 밀어 렌더러가 색이 모자라지 않게 하는 것을 본다"
+  },
+  "description": {
+    "en": "ACES renders in AP1 (ACEScg), wider than BT.2020 with a green primary just outside the locus, and archives in AP0 whose imaginary primaries enclose all visible colour. Toggle each over the locus.",
+    "ko": "ACES는 BT.2020보다 약간 넓고 녹색 원색이 스펙트럼 궤적 바로 밖에 있는 AP1(ACEScg)에서 렌더링하고, 가상 원색이 모든 가시색을 감싸는 AP0으로 보관한다. 궤적 위에서 sRGB와 함께 전환해 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "hdr-color-spaces",
+  "layout": "A",
+  "prerequisites": ["hdr-color-spaces/bt2020-vs-rec709"],
+  "leads_to": [],
+  "see_also": ["gamut-mapping-3d/gamut-overlapping-3d"],
+  "textbook_refs": [
+    { "source": "AMPAS", "section": "ACES 1.3 (SMPTE ST 2065-1)" }
+  ],
+  "standards": ["SMPTE ST 2065-1"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["ACES", "ACEScg", "AP1", "AP0", "imaginary primaries"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

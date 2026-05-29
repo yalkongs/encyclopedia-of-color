@@ -1,0 +1,4 @@
+{
+  "hero": { "hue": 40, "src": "d65", "dst": "a" },
+  "comment": "D65→A is a large warm shift — the four CATs visibly spread apart."
+}

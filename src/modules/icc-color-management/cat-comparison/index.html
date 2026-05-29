@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Four Adaptation Transforms — adapt one colour across illuminants thro…</title>
+  <meta name="description" content="A chromatic adaptation transform predicts how a colour shifts when light changes; each CAT uses a different cone matrix. Pick a hue and two illuminants, and read each result's ΔE2000 from Bradford.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/icc-color-management/cat-comparison/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Four Adaptation Transforms">
+  <meta property="og:description"    content="A chromatic adaptation transform predicts how a colour shifts when light changes; each CAT uses a different cone matrix. Pick a hue and two illuminants, and read each result's ΔE2000 from Bradford.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/icc-color-management/cat-comparison/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/icc-color-management--cat-comparison.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Four Adaptation Transforms.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Four Adaptation Transforms">
+  <meta name="twitter:description"   content="A chromatic adaptation transform predicts how a colour shifts when light changes; each CAT uses a different cone matrix. Pick a hue and two illuminants, and read each result's ΔE2000 from Bradford.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/icc-color-management--cat-comparison.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Four Adaptation Transforms.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Four Adaptation Transforms","alternateName":"icc-color-management/cat-comparison","description":"A chromatic adaptation transform predicts how a colour shifts when light changes; each CAT uses a different cone matrix. Pick a hue and two illuminants, and read each result's ΔE2000 from Bradford.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"chromatic adaptation, Bradford, CAT02, Von Kries, white point","url":"https://encyclopedia-of-color.vercel.app/modules/icc-color-management/cat-comparison/","image":"https://encyclopedia-of-color.vercel.app/og/icc-color-management--cat-comparison.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="icc-color-management/cat-comparison">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Four Adaptation Transforms</h1>
+      <p class="module-subtitle">adapt one colour across illuminants through Bradford, CAT02, Sharp, and Von Kries — and measure how far they disagree</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A chromatic adaptation transform predicts how a colour shifts when the light changes. Each CAT uses a different cone-response matrix: Von Kries is the 1902 original, Bradford and CAT02 are the modern workhorses, and Sharp uses the most spectrally narrow primaries. They mostly agree — but not exactly.
+        </p>
+        <div class="math-block" data-tex="XYZ_2 = M^{-1}\,\mathrm{diag}\!\left(\tfrac{\rho_d}{\rho_s},\tfrac{\gamma_d}{\gamma_s},\tfrac{\beta_d}{\beta_s}\right) M\, XYZ_1"></div>
+        <p class="zone-guide">
+          Choose a hue and the source and destination illuminants. Each patch is the colour adapted by one CAT; the number is its ΔE from the Bradford result. The disagreement grows with the size of the white-point shift.
+        </p>
+        <enc-slider id="hue" label="Source hue" min="0" max="360" step="1" value="40" unit="°"></enc-slider>
+        <enc-toggle id="src" label="From" options="d65,d50,a" labels="D65,D50,A" value="d65"></enc-toggle>
+        <enc-toggle id="dst" label="To" options="a,d50,d65" labels="A,D50,D65" value="a"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Chromatic adaptation transform comparison"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fairchild, Color Appearance Models 3e §9 (Chromatic adaptation)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

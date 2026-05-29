@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ACES Working Spaces — see how AP1 and AP0 push their primaries to — a…</title>
+  <meta name="description" content="ACES renders in AP1 (ACEScg), wider than BT.2020 with a green primary just outside the locus, and archives in AP0 whose imaginary primaries enclose all visible colour. Toggle each over the locus.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/aces-acescg/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ACES Working Spaces">
+  <meta property="og:description"    content="ACES renders in AP1 (ACEScg), wider than BT.2020 with a green primary just outside the locus, and archives in AP0 whose imaginary primaries enclose all visible colour. Toggle each over the locus.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/aces-acescg/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--aces-acescg.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ACES Working Spaces.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ACES Working Spaces">
+  <meta name="twitter:description"   content="ACES renders in AP1 (ACEScg), wider than BT.2020 with a green primary just outside the locus, and archives in AP0 whose imaginary primaries enclose all visible colour. Toggle each over the locus.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--aces-acescg.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ACES Working Spaces.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ACES Working Spaces","alternateName":"hdr-color-spaces/aces-acescg","description":"ACES renders in AP1 (ACEScg), wider than BT.2020 with a green primary just outside the locus, and archives in AP0 whose imaginary primaries enclose all visible colour. Toggle each over the locus.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ACES, ACEScg, AP1, AP0, imaginary primaries","url":"https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/aces-acescg/","image":"https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--aces-acescg.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="hdr-color-spaces/aces-acescg">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ACES Working Spaces</h1>
+      <p class="module-subtitle">see how AP1 and AP0 push their primaries to — and beyond — the spectral locus so the renderer never runs out of colour</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Film and CG pipelines render in ACES. AP1 (ACEScg) is the working space — slightly wider than BT.2020, with a green primary that sits just outside the spectral locus. AP0 is the archival space, with imaginary primaries so large the triangle swallows the entire horseshoe of visible colour.
+        </p>
+        <div class="math-block" data-tex="\text{AP0} \supset \text{visible locus} \supset \text{AP1} \approx \text{BT.2020}^+"></div>
+        <p class="zone-guide">
+          Toggle between AP1 and AP0 over the spectral locus, with sRGB and BT.2020 drawn for scale. Notice the ACES primaries reaching outside the curve — imaginary primaries that guarantee every real colour is representable with positive coordinates.
+        </p>
+        <enc-toggle id="space" label="ACES space" options="ap1,ap0" labels="AP1 (ACEScg),AP0 (archival)" value="ap1"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ACES AP1 and AP0 gamut over the spectral locus"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="AMPAS, ACES 1.3 (SMPTE ST 2065-1)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

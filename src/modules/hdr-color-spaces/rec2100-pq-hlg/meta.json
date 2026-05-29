@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-color-spaces/rec2100-pq-hlg",
+  "title": {
+    "en": "PQ vs HLG",
+    "ko": "PQ 대 HLG"
+  },
+  "subtitle": {
+    "en": "overlay Rec.2100's two HDR transfer curves and see why one is absolute and display-referred while the other stays relative and SDR-compatible",
+    "ko": "Rec.2100의 두 HDR 전달 곡선을 겹쳐, 왜 하나는 절대·디스플레이 기준이고 다른 하나는 상대·SDR 호환인지 본다"
+  },
+  "description": {
+    "en": "Rec.2100 has two HDR transfer functions. PQ is absolute — a code maps to an exact cd/m², most codes on shadows. HLG is relative, with a square-root toe matching legacy gamma for SDR compatibility.",
+    "ko": "Rec.2100은 두 HDR 전달 함수를 제공한다. PQ는 절대적이라 부호가 정확한 cd/m²로 매핑되며 부호 대부분을 그림자에 쓴다. HLG는 상대적이고, 레거시 감마와 같은 제곱근 토로 SDR과 호환된다. 광량을 움직여 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "hdr-color-spaces",
+  "layout": "A",
+  "prerequisites": ["hdr-color-spaces/ictcp-itp"],
+  "leads_to": [],
+  "see_also": ["planckian-radiation/photopic-scotopic"],
+  "textbook_refs": [
+    { "source": "ITU-R BT.2100", "section": "Table 4 (PQ and HLG reference)" }
+  ],
+  "standards": ["ITU-R BT.2100"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["PQ", "HLG", "Rec.2100", "HDR transfer function", "ST 2084"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

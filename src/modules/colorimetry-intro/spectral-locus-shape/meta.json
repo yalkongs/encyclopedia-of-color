@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "colorimetry-intro/spectral-locus-shape",
+  "title": {
+    "en": "Tracing the Horseshoe",
+    "ko": "말발굽 그리기"
+  },
+  "subtitle": {
+    "en": "sweep one pure wavelength across the spectrum and watch its chromaticity draw out the famous horseshoe boundary",
+    "ko": "순수 파장 하나를 스펙트럼에 걸쳐 쓸어 그 색도가 유명한 말발굽 경계를 그리는 것을 본다"
+  },
+  "description": {
+    "en": "Every monochromatic wavelength is one point on the xy diagram. Sweep violet to red and the points trace the spectral locus; the line back is the line of purples, which no single wavelength can make.",
+    "ko": "단색 파장은 각각 xy 도표의 한 점이 된다. 보라에서 빨강으로 쓸면 점들이 스펙트럼 궤적을 그리고, 돌아오는 직선은 어떤 단일 파장도 못 만드는 자주선이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 4,
+  "category": "colorimetry-intro",
+  "layout": "A",
+  "prerequisites": ["colorimetry-intro/metamerism-intro"],
+  "leads_to": ["cie-1931-matching/observer-integral", "xyz-transformation/xyz-projective-locus"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Wyszecki & Stiles, Color Science 2e", "section": "§5 (Spectral locus)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["foundations"],
+  "seo_keywords": ["spectral locus", "horseshoe", "chromaticity diagram", "monochromatic"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

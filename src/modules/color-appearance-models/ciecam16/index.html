@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CIECAM16 vs CIECAM02 — the 2016 update folds the adaptation into a si…</title>
+  <meta name="description" content="CIECAM16 replaces CIECAM02's CAT02 matrix and HPE step with one CAT16 matrix, fixing numerical quirks while keeping the correlate maths. Set the conditions and read the gap between the models.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-appearance-models/ciecam16/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CIECAM16 vs CIECAM02">
+  <meta property="og:description"    content="CIECAM16 replaces CIECAM02's CAT02 matrix and HPE step with one CAT16 matrix, fixing numerical quirks while keeping the correlate maths. Set the conditions and read the gap between the models.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-appearance-models/ciecam16/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-appearance-models--ciecam16.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CIECAM16 vs CIECAM02.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CIECAM16 vs CIECAM02">
+  <meta name="twitter:description"   content="CIECAM16 replaces CIECAM02's CAT02 matrix and HPE step with one CAT16 matrix, fixing numerical quirks while keeping the correlate maths. Set the conditions and read the gap between the models.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-appearance-models--ciecam16.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CIECAM16 vs CIECAM02.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CIECAM16 vs CIECAM02","alternateName":"color-appearance-models/ciecam16","description":"CIECAM16 replaces CIECAM02's CAT02 matrix and HPE step with one CAT16 matrix, fixing numerical quirks while keeping the correlate maths. Set the conditions and read the gap between the models.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CIECAM16, CAT16, color appearance, CIECAM02","url":"https://encyclopedia-of-color.vercel.app/modules/color-appearance-models/ciecam16/","image":"https://encyclopedia-of-color.vercel.app/og/color-appearance-models--ciecam16.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-appearance-models/ciecam16">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CIECAM16 vs CIECAM02</h1>
+      <p class="module-subtitle">the 2016 update folds the adaptation into a single matrix — drive the conditions and watch how little the correlates actually move</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          CIECAM16 (CIE 248:2022) repairs CIECAM02's numerical quirks by replacing the CAT02 matrix and the separate Hunt-Pointer-Estévez step with one CAT16 matrix. The correlate maths is otherwise identical — so the two models track each other closely across normal viewing conditions.
+        </p>
+        <div class="math-block" data-tex="\text{CAT16 replaces } M_{CAT02} \to M_{HPE}\ \text{with one matrix}"></div>
+        <p class="zone-guide">
+          Set the stimulus hue and viewing conditions. The dial plots CIECAM16 (solid) against CIECAM02 (faint); the bars give the CIECAM16 correlates. The readout reports the lightness and chroma gap between the two models.
+        </p>
+        <enc-slider id="hue" label="Stimulus hue" min="0" max="360" step="1" value="30" unit="°"></enc-slider>
+        <enc-slider id="la" label="Adapting luminance L_A" min="5" max="500" step="1" value="80" unit=" cd/m²"></enc-slider>
+        <enc-toggle id="sur" label="Surround" options="average,dim,dark" labels="average,dim,dark" value="average"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIECAM16 versus CIECAM02 correlates"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CIE 248:2022 (CIECAM16); Li et al. 2017"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

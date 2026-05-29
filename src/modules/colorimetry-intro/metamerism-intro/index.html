@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Two Spectra, One Colour — tune three narrow bands until their colour…</title>
+  <meta name="description" content="Because the eye collapses every spectrum to three cone signals, different spectra can produce the same colour — a metameric match. Tune three narrow bands until the swatch matches a smooth spectrum.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/colorimetry-intro/metamerism-intro/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Two Spectra, One Colour">
+  <meta property="og:description"    content="Because the eye collapses every spectrum to three cone signals, different spectra can produce the same colour — a metameric match. Tune three narrow bands until the swatch matches a smooth spectrum.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/colorimetry-intro/metamerism-intro/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/colorimetry-intro--metamerism-intro.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Two Spectra, One Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Two Spectra, One Colour">
+  <meta name="twitter:description"   content="Because the eye collapses every spectrum to three cone signals, different spectra can produce the same colour — a metameric match. Tune three narrow bands until the swatch matches a smooth spectrum.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/colorimetry-intro--metamerism-intro.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Two Spectra, One Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Two Spectra, One Colour","alternateName":"colorimetry-intro/metamerism-intro","description":"Because the eye collapses every spectrum to three cone signals, different spectra can produce the same colour — a metameric match. Tune three narrow bands until the swatch matches a smooth spectrum.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"metamerism, spectral power distribution, color match, metamers","url":"https://encyclopedia-of-color.vercel.app/modules/colorimetry-intro/metamerism-intro/","image":"https://encyclopedia-of-color.vercel.app/og/colorimetry-intro--metamerism-intro.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="colorimetry-intro/metamerism-intro">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Two Spectra, One Colour</h1>
+      <p class="module-subtitle">tune three narrow bands until their colour matches a smooth spectrum — proof that wildly different light can look identical</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Because the eye collapses every spectrum to three cone signals, completely different spectral power distributions can produce the very same colour. Such a pair is called a metameric match — the heart of why displays and prints work at all.
+        </p>
+        <div class="math-block" data-tex="\int S_1\bar{x}\,d\lambda = \int S_2\bar{x}\,d\lambda \;\Rightarrow\; \text{same colour}"></div>
+        <p class="zone-guide">
+          The smooth curve is fixed. Adjust the three narrow bands until your swatch matches it — ΔE under 2 is a metameric match. The spectra look nothing alike, yet the colour is the same.
+        </p>
+        <enc-slider id="b1" label="Band 450 nm" min="0" max="200" step="1" value="62"></enc-slider>
+        <enc-slider id="b2" label="Band 540 nm" min="0" max="200" step="1" value="136"></enc-slider>
+        <enc-slider id="b3" label="Band 610 nm" min="0" max="200" step="1" value="80"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Metameric spectra comparison"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki & Stiles, Color Science 2e §5.7 (Metamerism)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

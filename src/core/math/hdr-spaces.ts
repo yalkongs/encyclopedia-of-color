@@ -46,6 +46,21 @@ export function rgb2020ToICtCp(rgb: V3, Lp = 10000): V3 {
   return mul3(M_ICTCP, enc);
 }
 
+// ---- BT.2100 Hybrid Log-Gamma OETF ----
+const HLG_A = 0.17883277, HLG_B = 0.28466892, HLG_C = 0.55991073;
+
+/** HLG OETF: scene-linear light (0..1) → signal (0..1). Continuous at E=1/12 → 0.5. */
+export function hlgEncode(e: number): number {
+  const x = Math.max(e, 0);
+  return x <= 1 / 12 ? Math.sqrt(3 * x) : HLG_A * Math.log(12 * x - HLG_B) + HLG_C;
+}
+
+/** HLG inverse OETF: signal (0..1) → scene-linear light (0..1). */
+export function hlgDecode(v: number): number {
+  const x = Math.max(v, 0);
+  return x <= 0.5 ? (x * x) / 3 : (Math.exp((x - HLG_C) / HLG_A) + HLG_B) / 12;
+}
+
 // ---- Jzazbz (Safdar 2017) ----
 const JZ_B = 1.15, JZ_G = 0.66, JZ_D = -0.56, JZ_D0 = 1.6295499532821566e-11;
 const JZ_N = 2610 / 16384;

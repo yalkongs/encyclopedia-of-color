@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-appearance-models/ciecam16",
+  "title": {
+    "en": "CIECAM16 vs CIECAM02",
+    "ko": "CIECAM16 대 CIECAM02"
+  },
+  "subtitle": {
+    "en": "the 2016 update folds the adaptation into a single matrix — drive the conditions and watch how little the correlates actually move",
+    "ko": "2016 개정은 순응을 단일 행렬로 접는다 — 조건을 움직여 보임새 상관량이 실제로 거의 변하지 않음을 본다"
+  },
+  "description": {
+    "en": "CIECAM16 replaces CIECAM02's CAT02 matrix and HPE step with one CAT16 matrix, fixing numerical quirks while keeping the correlate maths. Set the conditions and read the gap between the models.",
+    "ko": "CIECAM16은 CIECAM02의 CAT02 행렬과 Hunt-Pointer-Estévez 단계를 하나의 CAT16 행렬로 대체해, 보임새 수식은 유지하면서 수치 문제를 고친다. 색상과 시야 조건을 정해 두 모델의 차이를 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 4,
+  "category": "color-appearance-models",
+  "layout": "A",
+  "prerequisites": ["color-appearance-models/ciecam02"],
+  "leads_to": [],
+  "see_also": ["icc-color-management/cat-comparison"],
+  "textbook_refs": [
+    { "source": "CIE 248:2022", "section": "CIECAM16 colour appearance model" }
+  ],
+  "standards": ["CIE 248:2022"],
+  "interaction_count": 3,
+  "learning_paths": ["vision-and-perception", "designers-path"],
+  "seo_keywords": ["CIECAM16", "CAT16", "color appearance", "CIECAM02"],
+  "estimated_hours": 15,
+  "status": "shipped"
+}
