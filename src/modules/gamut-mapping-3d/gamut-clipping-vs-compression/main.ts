@@ -6,7 +6,8 @@ import { CanvasStage } from '@core/components/canvas-stage';
 import { EncSlider } from '@core/components/slider';
 import { theme, axisStyle } from '@core/render/theme';
 import { Lab, labToXyz, labToCss, srgbInGamut } from '@core/math/colorimetry';
-import { linearSrgbFromXyz } from '@core/math/color-adaptation';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateNumber } from '@core/state/url-state';
 
 const DEG = Math.PI / 180;
@@ -69,17 +70,13 @@ class ClipCompress {
     const px = (a: number) => x0 + ((a + M) / (2 * M)) * plotW;
     const py = (b: number) => plotY + (1 - (b + M) / (2 * M)) * plotH;
 
-    // in-gamut region fill (sample)
-    const step = 4;
-    for (let sy = 0; sy < plotH; sy += step) {
-      for (let sx = 0; sx < plotW; sx += step) {
-        const a = (sx / plotW) * 2 * M - M;
-        const b = (1 - sy / plotH) * 2 * M - M;
-        if (!inGamut(this.L, a, b)) continue;
-        ctx.fillStyle = labToCss([this.L, a, b]);
-        ctx.fillRect(x0 + sx, plotY + sy, step, step);
-      }
-    }
+    // in-gamut region fill (subsample anti-aliased boundary)
+    fillRegionAA(ctx, x0, plotY, x0 + plotW, plotY + plotH, (screenX, screenY) => {
+      const a = ((screenX - x0) / plotW) * 2 * M - M;
+      const b = (1 - (screenY - plotY) / plotH) * 2 * M - M;
+      const lin = linearSrgbFromXyz(labToXyz([this.L, a, b] as Lab));
+      return srgbInGamut(lin) ? srgb8(lin) : null;
+    });
     ctx.strokeStyle = axisStyle.baseline; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(px(-M), py(0)); ctx.lineTo(px(M), py(0)); ctx.moveTo(px(0), py(-M)); ctx.lineTo(px(0), py(M)); ctx.stroke();
     ctx.fillStyle = axisStyle.label; ctx.font = '11px Inter, sans-serif';

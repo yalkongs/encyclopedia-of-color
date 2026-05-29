@@ -5,9 +5,18 @@ import '@core/components/citation-footer';
 import { CanvasStage } from '@core/components/canvas-stage';
 import { EncToggle } from '@core/components/toggle';
 import { theme, axisStyle } from '@core/render/theme';
-import { SPECTRAL_LOCUS, xyToCss } from '@core/math/colorimetry';
+import { SPECTRAL_LOCUS } from '@core/math/colorimetry';
 import { SRGB, BT2020, gamutTriangleArea, xyInGamut } from '@core/math/rgb-spaces';
+import { linearSrgbFromXyz, srgb8 } from '@core/math/color-adaptation';
+import { fillRegionAA } from '@core/render/raster';
 import { registerStateParam, notifyStateChange, hydrateFromUrl } from '@core/state/url-state';
+
+function xyTuple(x: number, y: number): [number, number, number] {
+  if (y <= 1e-4) return [0, 0, 0];
+  const lin = linearSrgbFromXyz([x / y, 1, (1 - x - y) / y]);
+  const m = Math.max(lin[0], lin[1], lin[2], 1e-6);
+  return srgb8([lin[0] / m, lin[1] / m, lin[2] / m]);
+}
 
 const AREA_709 = gamutTriangleArea(SRGB), AREA_2020 = gamutTriangleArea(BT2020);
 
@@ -47,20 +56,17 @@ class Bt2020Vs709 {
     const s = Math.min(plotW / AMAX, plotH / BMAX);
     const px = (x: number) => plotX + x * s, py = (y: number) => plotY + plotH - y * s;
 
-    const step = 3;
-    for (let sy = 0; sy < plotH; sy += step) {
-      for (let sx = 0; sx < plotW; sx += step) {
-        const x = sx / s, y = (plotH - sy) / s;
-        if (!insideLocus(x, y)) continue;
-        const in709 = xyInGamut(x, y, SRGB), in2020 = xyInGamut(x, y, BT2020);
-        let lit = false;
-        if (this.fill === 'rec709') lit = in709;
-        else if (this.fill === 'bt2020') lit = in2020;
-        else lit = in2020 && !in709;
-        ctx.fillStyle = lit ? xyToCss(x, y) : theme.inkAlpha(0.05);
-        ctx.fillRect(plotX + sx, plotY + (plotH - sy) - step, step, step);
-      }
-    }
+    // filled locus (subsample anti-aliased boundary); lit region in colour, rest faint
+    fillRegionAA(ctx, plotX, plotY, plotX + plotW, plotY + plotH, (sxp, syp) => {
+      const x = (sxp - plotX) / s, y = (plotY + plotH - syp) / s;
+      if (!insideLocus(x, y)) return null;
+      const in709 = xyInGamut(x, y, SRGB), in2020 = xyInGamut(x, y, BT2020);
+      let lit = false;
+      if (this.fill === 'rec709') lit = in709;
+      else if (this.fill === 'bt2020') lit = in2020;
+      else lit = in2020 && !in709;
+      return lit ? xyTuple(x, y) : [232, 229, 222];
+    });
     ctx.strokeStyle = theme.inkAlpha(0.4); ctx.lineWidth = 1;
     ctx.beginPath(); SPECTRAL_LOCUS.forEach(([x, y], i) => { i === 0 ? ctx.moveTo(px(x), py(y)) : ctx.lineTo(px(x), py(y)); }); ctx.closePath(); ctx.stroke();
 
