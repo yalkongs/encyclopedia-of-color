@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "halftoning-am-fm/stochastic-vs-clustered",
+  "title": {
+    "en": "Stochastic vs Clustered Dots",
+    "ko": "스토캐스틱 vs 클러스터 점"
+  },
+  "subtitle": {
+    "en": "scattering many tiny dots resolves finer detail and dodges moiré — but all that extra dot edge drinks up more ink on press",
+    "ko": "작은 점을 많이 흩뿌리면 디테일이 살고 모아레를 피하지만 — 늘어난 점 가장자리가 인쇄에서 잉크를 더 머금는다"
+  },
+  "description": {
+    "en": "Clustered AM grows a few big dots; stochastic FM scatters many tiny ones. FM has far more dot edge per tint, so it gains more tone when ink spreads — finer and moire-free, but harder to hold.",
+    "ko": "클러스터 AM은 큰 점 몇 개를 키우고, 스토캐스틱 FM은 작은 점을 많이 흩뿌린다. 같은 농도라도 FM은 점 가장자리가 훨씬 많아, 인쇄에서 잉크가 번지면 톤이 더 짙어진다 — 세밀하고 모아레가 없지만 관리가 어렵다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "halftoning-am-fm",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Ulichney",
+      "section": "Digital Halftoning"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "stochastic screening",
+    "FM",
+    "clustered dot",
+    "dot gain",
+    "halftone"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

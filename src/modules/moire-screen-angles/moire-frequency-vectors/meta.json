@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "moire-screen-angles/moire-frequency-vectors",
+  "title": {
+    "en": "Moiré as Vector Subtraction",
+    "ko": "벡터 차이로 보는 모아레"
+  },
+  "subtitle": {
+    "en": "overlay two gratings and a third, much coarser pattern appears — its frequency is simply the difference of the two frequency vectors",
+    "ko": "두 격자를 겹치면 훨씬 성긴 세 번째 패턴이 나타난다 — 그 주파수는 두 주파수 벡터의 차이일 뿐이다"
+  },
+  "description": {
+    "en": "Each grating is a frequency vector; overlay two and the eye beats at their difference k1-k2. A small angle or frequency mismatch shortens that vector, so the moire period 1/|k1-k2| grows huge.",
+    "ko": "각 격자는 주파수 벡터다. 둘을 겹치면 눈은 그 차이 k1-k2에서 맥놀이를 본다. 각도나 주파수가 조금만 어긋나도 그 벡터가 짧아져 모아레 주기 1/|k1-k2|가 거대해진다. 벡터 다이어그램을 보라."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "moire-screen-angles",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Field",
+      "section": "§9"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "moire",
+    "frequency vector",
+    "grating",
+    "beat",
+    "screen angle"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

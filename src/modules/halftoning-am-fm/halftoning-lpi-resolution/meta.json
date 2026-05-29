@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "halftoning-am-fm/halftoning-lpi-resolution",
+  "title": {
+    "en": "LPI vs Tone Levels",
+    "ko": "LPI vs 계조 수"
+  },
+  "subtitle": {
+    "en": "a finer screen ruling resolves more detail, but at a fixed device resolution it buys that detail by throwing away grey levels",
+    "ko": "더 고운 스크린 선수는 디테일을 더 살리지만, 고정 장치 해상도에서는 회색 계조를 버려 그 디테일을 산다"
+  },
+  "description": {
+    "en": "A halftone dot is a cluster of device pixels, so a cell spans DPI/LPI dots and gives (DPI/LPI)^2+1 grey levels. A finer screen ruling resolves more detail but, at fixed resolution, keeps fewer tones.",
+    "ko": "각 망점은 장치 픽셀의 덩어리라, 한 셀은 DPI/LPI 도트만큼 차지하고 (DPI/LPI)^2+1개의 계조를 낸다. 더 고운 선수는 디테일을 살리지만 고정 해상도에선 계조가 줄어든다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "halftoning-am-fm",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§1.3"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "LPI",
+    "DPI",
+    "tone levels",
+    "screen ruling",
+    "halftone"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

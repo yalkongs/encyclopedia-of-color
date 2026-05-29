@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Screen Angles &amp; the Rosette — offset the four process screens by 30°…</title>
+  <meta name="description" content="Four halftone screens at one angle clash. Spacing strong inks 30 apart (C15, K45, M75, Y90) makes the overlap a small rosette; misalign one and a broad moire blooms. Inks mix subtractively.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/moire-screen-angles/moire-screen-angles/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Screen Angles &amp; the Rosette">
+  <meta property="og:description"    content="Four halftone screens at one angle clash. Spacing strong inks 30 apart (C15, K45, M75, Y90) makes the overlap a small rosette; misalign one and a broad moire blooms. Inks mix subtractively.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/moire-screen-angles/moire-screen-angles/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/moire-screen-angles--moire-screen-angles.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Screen Angles &amp; the Rosette.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Screen Angles &amp; the Rosette">
+  <meta name="twitter:description"   content="Four halftone screens at one angle clash. Spacing strong inks 30 apart (C15, K45, M75, Y90) makes the overlap a small rosette; misalign one and a broad moire blooms. Inks mix subtractively.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/moire-screen-angles--moire-screen-angles.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Screen Angles &amp; the Rosette.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Screen Angles & the Rosette","alternateName":"moire-screen-angles/moire-screen-angles","description":"Four halftone screens at one angle clash. Spacing strong inks 30 apart (C15, K45, M75, Y90) makes the overlap a small rosette; misalign one and a broad moire blooms. Inks mix subtractively.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"screen angles, moire, rosette, CMYK, halftone","url":"https://encyclopedia-of-color.vercel.app/modules/moire-screen-angles/moire-screen-angles/","image":"https://encyclopedia-of-color.vercel.app/og/moire-screen-angles--moire-screen-angles.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="moire-screen-angles/moire-screen-angles">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Screen Angles & the Rosette</h1>
+      <p class="module-subtitle">offset the four process screens by 30° and they weave a tight rosette — line them up and an ugly moiré blooms across the page</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Four overlaid halftone screens would clash badly if printed at the same angle. The standard fix spaces the strong inks 30° apart — cyan 15°, black 45°, magenta 75° — with weak yellow at 90°. That offset turns the overlap into a small, stable rosette instead of a large low-frequency moiré. Inks stack subtractively (multiply), not by addition.
+        </p>
+        <div class="math-block" data-tex="C\,15^\circ,\; K\,45^\circ,\; M\,75^\circ,\; Y\,90^\circ"></div>
+        <p class="zone-guide">
+          Drag the cyan screen off its 15° angle and toward black (45°) or magenta (75°). As the gap to a neighbour shrinks, the rosette dissolves into broad moiré bands. Hide yellow to see the three structural inks more clearly.
+        </p>
+        <enc-slider id="cangle" label="Cyan screen angle" min="0" max="90" step="1" value="15" unit="°"></enc-slider>
+        <enc-toggle id="showy" label="Yellow plate" options="on,off" labels="show,hide" value="on"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CMYK screen angles and moiré rosette"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §1.3.4; screen angles"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>LPI vs Tone Levels — a finer screen ruling resolves more detail, but…</title>
+  <meta name="description" content="A halftone dot is a cluster of device pixels, so a cell spans DPI/LPI dots and gives (DPI/LPI)^2+1 grey levels. A finer screen ruling resolves more detail but, at fixed resolution, keeps fewer tones.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/halftoning-lpi-resolution/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="LPI vs Tone Levels">
+  <meta property="og:description"    content="A halftone dot is a cluster of device pixels, so a cell spans DPI/LPI dots and gives (DPI/LPI)^2+1 grey levels. A finer screen ruling resolves more detail but, at fixed resolution, keeps fewer tones.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/halftoning-lpi-resolution/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--halftoning-lpi-resolution.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: LPI vs Tone Levels.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="LPI vs Tone Levels">
+  <meta name="twitter:description"   content="A halftone dot is a cluster of device pixels, so a cell spans DPI/LPI dots and gives (DPI/LPI)^2+1 grey levels. A finer screen ruling resolves more detail but, at fixed resolution, keeps fewer tones.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--halftoning-lpi-resolution.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: LPI vs Tone Levels.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"LPI vs Tone Levels","alternateName":"halftoning-am-fm/halftoning-lpi-resolution","description":"A halftone dot is a cluster of device pixels, so a cell spans DPI/LPI dots and gives (DPI/LPI)^2+1 grey levels. A finer screen ruling resolves more detail but, at fixed resolution, keeps fewer tones.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"LPI, DPI, tone levels, screen ruling, halftone","url":"https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/halftoning-lpi-resolution/","image":"https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--halftoning-lpi-resolution.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="halftoning-am-fm/halftoning-lpi-resolution">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">LPI vs Tone Levels</h1>
+      <p class="module-subtitle">a finer screen ruling resolves more detail, but at a fixed device resolution it buys that detail by throwing away grey levels</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Each halftone dot is built from a cluster of tiny device pixels. A dot cell spans DPI/LPI device dots on a side, so the number of grey levels it can render is (DPI/LPI)² + 1. Raise the screen ruling (LPI) and the dots get finer — but each cell now holds fewer device pixels, so fewer tones survive.
+        </p>
+        <div class="math-block" data-tex="\text{levels} = \left(\frac{\text{DPI}}{\text{LPI}}\right)^2 + 1"></div>
+        <p class="zone-guide">
+          Slide the screen ruling and switch the device resolution. The readout tracks the available grey levels; the ramp above shows that quantisation, and the screened ramp below shows the matching dot grid.
+        </p>
+        <enc-slider id="lpi" label="Screen ruling" min="50" max="300" step="5" value="150" unit=" LPI"></enc-slider>
+        <enc-toggle id="dpi" label="Device resolution" options="600,1200,2400" labels="600 dpi,1200 dpi,2400 dpi" value="600"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="LPI versus tone levels"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §1.3; screen ruling and resolution"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

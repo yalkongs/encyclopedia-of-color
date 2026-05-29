@@ -83,6 +83,17 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'emerging-display-tech':        { title: 'Emerging Displays',       sub: 'Domain 6 · E-Ink, Mini-LED, microLED, projection, VR' },
   'os-color-management':          { title: 'OS Colour Management',    sub: 'Domain 6 · ColorSync, ICM, browser and web colour' },
   'display-measurement':          { title: 'Display Measurement',     sub: 'Domain 6 · ColorChecker, greyscale tracking, coverage' },
+  // Domain 7
+  'print-basics':                 { title: 'Print Basics',            sub: 'Domain 7 · reflective vs emissive, why K, paper substrates' },
+  'halftoning-am-fm':             { title: 'Halftoning AM / FM',      sub: 'Domain 7 · newsprint dots, AM size vs FM density, LPI, stochastic' },
+  'moire-screen-angles':          { title: 'Moiré & Screen Angles',   sub: 'Domain 7 · C15/M75/Y90/K45 rosette and frequency-vector moiré' },
+  'four-color-separation':        { title: 'Four-Colour Separation',  sub: 'Domain 7 · CMYK plate overlay and registration' },
+  'dot-gain-absorbance':          { title: 'Dot Gain & Absorbance',   sub: 'Domain 7 · capillary bleeding, Murray-Davies, Yule-Nielsen' },
+  'security-ink-tilter':          { title: 'Security Inks',           sub: 'Domain 7 · OVI banknote tilt, goniochromic Bragg stacks' },
+  'extended-gamut-print':         { title: 'Extended-Gamut Print',    sub: 'Domain 7 · inkjet droplets and CMYKOGV wide gamut' },
+  'specialty-print':              { title: 'Specialty Print',         sub: 'Domain 7 · Hexachrome, metallic, foil, UV-curing inks' },
+  'print-3d-color':               { title: '3D-Print Colour',         sub: 'Domain 7 · MultiJet Fusion, full-colour resin, FDM blends' },
+  'print-color-management':       { title: 'Print Colour Management', sub: 'Domain 7 · G7, ISO 12647 / Fogra, proofing, spectrophotometry' },
 };
 
 const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
@@ -224,13 +235,19 @@ async function main() {
     'gamma-eotf-calibration', 'hdr-pq-tone-mapping', 'blue-light-circadian',
     'emerging-display-tech', 'os-color-management', 'display-measurement',
   ];
-  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER];
+  const D7_ORDER = [
+    'print-basics', 'halftoning-am-fm', 'moire-screen-angles',
+    'four-color-separation', 'dot-gain-absorbance', 'security-ink-tilter',
+    'extended-gamut-print', 'specialty-print', 'print-3d-color', 'print-color-management',
+  ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
     ...D4_ORDER.filter((c) => byCategory.has(c)),
     ...D5_ORDER.filter((c) => byCategory.has(c)),
     ...D6_ORDER.filter((c) => byCategory.has(c)),
+    ...D7_ORDER.filter((c) => byCategory.has(c)),
     ...[...byCategory.keys()].filter((c) => !known.includes(c)).sort(),
   ];
 

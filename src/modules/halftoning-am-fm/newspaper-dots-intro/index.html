@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Newsprint Under the Loupe — a printed photo is not grey ink — it is s…</title>
+  <meta name="description" content="A press cannot print grey — it breaks the image into solid black dots whose size grows in the shadows and shrinks in the highlights. Up close you see the dots; from a distance they fuse into tone.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/newspaper-dots-intro/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Newsprint Under the Loupe">
+  <meta property="og:description"    content="A press cannot print grey — it breaks the image into solid black dots whose size grows in the shadows and shrinks in the highlights. Up close you see the dots; from a distance they fuse into tone.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/newspaper-dots-intro/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--newspaper-dots-intro.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Newsprint Under the Loupe.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Newsprint Under the Loupe">
+  <meta name="twitter:description"   content="A press cannot print grey — it breaks the image into solid black dots whose size grows in the shadows and shrinks in the highlights. Up close you see the dots; from a distance they fuse into tone.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--newspaper-dots-intro.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Newsprint Under the Loupe.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Newsprint Under the Loupe","alternateName":"halftoning-am-fm/newspaper-dots-intro","description":"A press cannot print grey — it breaks the image into solid black dots whose size grows in the shadows and shrinks in the highlights. Up close you see the dots; from a distance they fuse into tone.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"halftone, newsprint, dots, AM screening, print","url":"https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/newspaper-dots-intro/","image":"https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--newspaper-dots-intro.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="halftoning-am-fm/newspaper-dots-intro">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Newsprint Under the Loupe</h1>
+      <p class="module-subtitle">a printed photo is not grey ink — it is solid black dots of varying size that the eye blends into tone at arm's length</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A press lays down one ink at full strength — it cannot print "40% grey". Instead it breaks the image into a fine grid of black dots whose size grows in the shadows and shrinks in the highlights. Up close you see the dots; from a normal viewing distance they fuse into continuous tone.
+        </p>
+        <div class="math-block" data-tex="r = s\,\sqrt{c/\pi}\quad(\text{dot radius} \propto \sqrt{\text{tone}})"></div>
+        <p class="zone-guide">
+          Slide the screen ruling from coarse newsprint to fine magazine stock. Coarse dots are obvious; fine ones almost vanish. Either way the dots are pure black — only their area carries the greyscale.
+        </p>
+        <enc-slider id="pitch" label="Dot pitch" min="5" max="26" step="1" value="14" unit=" px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Magnified newsprint halftone dots"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §1.3; halftone screening"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

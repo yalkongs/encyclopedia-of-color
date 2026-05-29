@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Moiré as Vector Subtraction — overlay two gratings and a third, much…</title>
+  <meta name="description" content="Each grating is a frequency vector; overlay two and the eye beats at their difference k1-k2. A small angle or frequency mismatch shortens that vector, so the moire period 1/|k1-k2| grows huge.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/moire-screen-angles/moire-frequency-vectors/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Moiré as Vector Subtraction">
+  <meta property="og:description"    content="Each grating is a frequency vector; overlay two and the eye beats at their difference k1-k2. A small angle or frequency mismatch shortens that vector, so the moire period 1/|k1-k2| grows huge.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/moire-screen-angles/moire-frequency-vectors/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/moire-screen-angles--moire-frequency-vectors.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Moiré as Vector Subtraction.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Moiré as Vector Subtraction">
+  <meta name="twitter:description"   content="Each grating is a frequency vector; overlay two and the eye beats at their difference k1-k2. A small angle or frequency mismatch shortens that vector, so the moire period 1/|k1-k2| grows huge.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/moire-screen-angles--moire-frequency-vectors.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Moiré as Vector Subtraction.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Moiré as Vector Subtraction","alternateName":"moire-screen-angles/moire-frequency-vectors","description":"Each grating is a frequency vector; overlay two and the eye beats at their difference k1-k2. A small angle or frequency mismatch shortens that vector, so the moire period 1/|k1-k2| grows huge.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"moire, frequency vector, grating, beat, screen angle","url":"https://encyclopedia-of-color.vercel.app/modules/moire-screen-angles/moire-frequency-vectors/","image":"https://encyclopedia-of-color.vercel.app/og/moire-screen-angles--moire-frequency-vectors.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="moire-screen-angles/moire-frequency-vectors">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Moiré as Vector Subtraction</h1>
+      <p class="module-subtitle">overlay two gratings and a third, much coarser pattern appears — its frequency is simply the difference of the two frequency vectors</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Each grating is a frequency vector k — its length is the spatial frequency, its direction the line orientation. Overlaying two gratings multiplies them, and the eye picks out the beat at the difference vector k₁ − k₂. A small angle or frequency mismatch makes that difference vector short, so the moiré period 1/|k₁−k₂| grows huge.
+        </p>
+        <div class="math-block" data-tex="|\vec{k}_m| = |\vec{k}_1 - \vec{k}_2| = 2f\sin(\Delta\theta/2)"></div>
+        <p class="zone-guide">
+          Rotate the second grating and change its frequency. As the two vectors converge, the moiré coarsens dramatically; pull them apart and it tightens away. The diagram tracks k₁, k₂, and their difference.
+        </p>
+        <enc-slider id="dtheta" label="Angle between gratings" min="1" max="40" step="1" value="8" unit="°"></enc-slider>
+        <enc-slider id="freq" label="Grating frequency" min="6" max="22" step="1" value="12" unit=" /100px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Moiré as frequency vector subtraction"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Field, Color and Its Reproduction §9; moiré vectors"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

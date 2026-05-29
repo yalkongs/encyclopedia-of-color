@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>AM vs FM Screening — two ways to fake grey with one ink: grow the dot…</title>
+  <meta name="description" content="AM screening keeps halftone dots on a fixed grid and varies their size; FM (stochastic) keeps one tiny dot size and varies how many it scatters. Compare both across one dark-to-light ramp.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/halftoning-am-fm-rendering/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="AM vs FM Screening">
+  <meta property="og:description"    content="AM screening keeps halftone dots on a fixed grid and varies their size; FM (stochastic) keeps one tiny dot size and varies how many it scatters. Compare both across one dark-to-light ramp.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/halftoning-am-fm-rendering/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--halftoning-am-fm-rendering.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: AM vs FM Screening.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="AM vs FM Screening">
+  <meta name="twitter:description"   content="AM screening keeps halftone dots on a fixed grid and varies their size; FM (stochastic) keeps one tiny dot size and varies how many it scatters. Compare both across one dark-to-light ramp.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--halftoning-am-fm-rendering.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: AM vs FM Screening.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"AM vs FM Screening","alternateName":"halftoning-am-fm/halftoning-am-fm-rendering","description":"AM screening keeps halftone dots on a fixed grid and varies their size; FM (stochastic) keeps one tiny dot size and varies how many it scatters. Compare both across one dark-to-light ramp.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"AM screening, FM screening, stochastic, halftone, dither","url":"https://encyclopedia-of-color.vercel.app/modules/halftoning-am-fm/halftoning-am-fm-rendering/","image":"https://encyclopedia-of-color.vercel.app/og/halftoning-am-fm--halftoning-am-fm-rendering.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="halftoning-am-fm/halftoning-am-fm-rendering">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">AM vs FM Screening</h1>
+      <p class="module-subtitle">two ways to fake grey with one ink: grow the dots on a fixed grid (AM), or scatter equal micro-dots more densely (FM)</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Amplitude-modulated (AM) screening keeps dots on a regular grid and varies their size with tone. Frequency-modulated (FM, or stochastic) screening keeps every dot the same tiny size and varies how many are placed. AM is stable on press and prone to moiré; FM resolves finer detail and avoids moiré but gains tone more readily.
+        </p>
+        <div class="math-block" data-tex="\text{AM: size}\propto c \qquad \text{FM: density}\propto c"></div>
+        <p class="zone-guide">
+          Switch screening and slide the pitch over the same dark-to-light ramp. Watch AM dots swell toward the shadows on their grid, while FM keeps one dot size and simply crowds them together.
+        </p>
+        <enc-toggle id="mode" label="Screening" options="am,fm" labels="AM (clustered),FM (stochastic)" value="am"></enc-toggle>
+        <enc-slider id="pitch" label="Screen pitch" min="4" max="18" step="1" value="10" unit=" px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="AM versus FM halftone screening"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §1.3; AM/FM screening"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
