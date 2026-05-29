@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>HDR Colour on the Web — CSS color() opens P3 and Rec. 2020 to the pag…</title>
+  <meta name="description" content="HDR on the web has two axes: color() can address sRGB, P3, or Rec. 2020 for a wider gamut, and an HDR display has brightness headroom above SDR white so highlights glow instead of clipping at 1.0.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/os-color-management/hdr-on-the-web/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="HDR Colour on the Web">
+  <meta property="og:description"    content="HDR on the web has two axes: color() can address sRGB, P3, or Rec. 2020 for a wider gamut, and an HDR display has brightness headroom above SDR white so highlights glow instead of clipping at 1.0.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/os-color-management/hdr-on-the-web/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/os-color-management--hdr-on-the-web.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: HDR Colour on the Web.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="HDR Colour on the Web">
+  <meta name="twitter:description"   content="HDR on the web has two axes: color() can address sRGB, P3, or Rec. 2020 for a wider gamut, and an HDR display has brightness headroom above SDR white so highlights glow instead of clipping at 1.0.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/os-color-management--hdr-on-the-web.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: HDR Colour on the Web.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"HDR Colour on the Web","alternateName":"os-color-management/hdr-on-the-web","description":"HDR on the web has two axes: color() can address sRGB, P3, or Rec. 2020 for a wider gamut, and an HDR display has brightness headroom above SDR white so highlights glow instead of clipping at 1.0.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"HDR web, CSS color(), Rec. 2020, P3, headroom","url":"https://encyclopedia-of-color.vercel.app/modules/os-color-management/hdr-on-the-web/","image":"https://encyclopedia-of-color.vercel.app/og/os-color-management--hdr-on-the-web.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="os-color-management/hdr-on-the-web">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">HDR Colour on the Web</h1>
+      <p class="module-subtitle">CSS color() opens P3 and Rec. 2020 to the page, while a brightness headroom above SDR white lets highlights truly glow</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          HDR on the web has two axes. Gamut: color() can address sRGB, display-p3, or rec2020, each a wider triangle of chromaticities. Brightness: an HDR display has headroom above the SDR reference white (~203 nits), so highlights can be set far brighter than diffuse white instead of clipping at 1.0.
+        </p>
+        <div class="math-block" data-tex="\texttt{color(rec2020 ...)} \;+\; L_{peak} = 203 \cdot 2^{\text{stops}}\ \text{nits}"></div>
+        <p class="zone-guide">
+          Switch the colour space to grow the gamut triangle, and raise the HDR headroom to lift the peak above SDR white. Together they are what "HDR content" means: more colours, and more light at the top end.
+        </p>
+        <enc-toggle id="space" label="Colour space" options="srgb,p3,rec2020" labels="sRGB,Display P3,Rec. 2020" value="p3"></enc-toggle>
+        <enc-slider id="headroom" label="HDR headroom" min="0" max="4" step="0.1" value="2" unit=" stops"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="HDR colour and gamut on the web"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CSS Color 4 / HDR; ITU-R BT.2100"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

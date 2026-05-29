@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "os-color-management/hdr-on-the-web",
+  "title": {
+    "en": "HDR Colour on the Web",
+    "ko": "웹의 HDR 색"
+  },
+  "subtitle": {
+    "en": "CSS color() opens P3 and Rec. 2020 to the page, while a brightness headroom above SDR white lets highlights truly glow",
+    "ko": "CSS color()는 페이지에 P3와 Rec. 2020을 열고, SDR 백색 위의 밝기 헤드룸은 하이라이트를 진짜로 빛나게 한다"
+  },
+  "description": {
+    "en": "HDR on the web has two axes: color() can address sRGB, P3, or Rec. 2020 for a wider gamut, and an HDR display has brightness headroom above SDR white so highlights glow instead of clipping at 1.0.",
+    "ko": "웹의 HDR엔 두 축이 있다: color()는 sRGB·P3·Rec. 2020을 다뤄 색역을 넓히고, HDR 디스플레이는 SDR 백색 위의 밝기 헤드룸을 가져 하이라이트가 1.0에서 잘리지 않고 빛난다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "os-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "CSS Color 4",
+      "section": "HDR"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "HDR web",
+    "CSS color()",
+    "Rec. 2020",
+    "P3",
+    "headroom"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

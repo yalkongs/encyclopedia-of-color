@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "os-color-management/web-browser-color-handling",
+  "title": {
+    "en": "How Browsers Tag Colour",
+    "ko": "브라우저의 색 태깅"
+  },
+  "subtitle": {
+    "en": "a browser only converts an asset if it carries a colour profile — untagged, it assumes sRGB, and a wide-gamut image drifts off its intended colour",
+    "ko": "브라우저는 자산에 색 프로파일이 있을 때만 변환한다 — 태그가 없으면 sRGB로 가정해, 광색역 이미지가 의도한 색에서 벗어난다"
+  },
+  "description": {
+    "en": "A browser converts an asset only if it carries a colour profile; untagged content is assumed sRGB. So an untagged wide-gamut image is shown as sRGB, drifting further the wider its true gamut.",
+    "ko": "브라우저는 색 프로파일이 있는 자산만 변환하고, 태그 없는 콘텐츠는 sRGB로 가정한다. 그래서 태그 없는 광색역 이미지는 원시 숫자가 sRGB로 표시되며, 실제 색역이 넓을수록 더 크게 어긋난다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "os-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Poynton",
+      "section": "§22"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "browser color",
+    "ICC tag",
+    "sRGB",
+    "color management",
+    "web"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

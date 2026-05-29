@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 261 modules across 55 categories -->
+    <!-- 269 modules across 57 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>261 modules</strong> are published across 55 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>269 modules</strong> are published across 57 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -1588,6 +1588,58 @@
         <div class="card-meta">L6 · Reference · Emerging Display Tech</div>
         <div class="card-title">Foveated Rendering for VR</div>
         <div class="card-sub">the eye only sees sharply at its centre — so render full detail at the gaze point and let the periphery go coarse, unnoticed</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">OS Colour Management</h2>
+      <div class="sub">Domain 6 · ColorSync, ICM, browser and web colour</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/os-color-management/srgb-vs-display-p3-web/">
+        <div class="card-meta">L4 · Reference · Os Color Management</div>
+        <div class="card-title">sRGB vs Display-P3 on the Web</div>
+        <div class="card-sub">color(display-p3 1 0 0) reaches a red that #ff0000 simply cannot describe — CSS Color 4 lets the web address the wider gamut</div>
+      </a>
+      <a class="module-card" href="./modules/os-color-management/web-browser-color-handling/">
+        <div class="card-meta">L4 · Reference · Os Color Management</div>
+        <div class="card-title">How Browsers Tag Colour</div>
+        <div class="card-sub">a browser only converts an asset if it carries a colour profile — untagged, it assumes sRGB, and a wide-gamut image drifts off its intended colour</div>
+      </a>
+      <a class="module-card" href="./modules/os-color-management/hdr-on-the-web/">
+        <div class="card-meta">L5 · Reference · Os Color Management</div>
+        <div class="card-title">HDR Colour on the Web</div>
+        <div class="card-sub">CSS color() opens P3 and Rec. 2020 to the page, while a brightness headroom above SDR white lets highlights truly glow</div>
+      </a>
+      <a class="module-card" href="./modules/os-color-management/macos-color-sync/">
+        <div class="card-meta">L5 · Reference · Os Color Management</div>
+        <div class="card-title">ColorSync: Managed vs Not</div>
+        <div class="card-sub">a tagged image only looks right if something converts its numbers from the source profile to the display's — that something is the OS colour engine</div>
+      </a>
+      <a class="module-card" href="./modules/os-color-management/windows-icc-pipeline/">
+        <div class="card-meta">L5 · Reference · Os Color Management</div>
+        <div class="card-title">ICC &amp; the Profile Connection Space</div>
+        <div class="card-sub">connect every camera, screen, and printer to one neutral hub and you need N profiles — not the N-squared direct conversions a hubless world demands</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Display Measurement</h2>
+      <div class="sub">Domain 6 · ColorChecker, greyscale tracking, coverage</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/display-measurement/colorchecker-classic/">
+        <div class="card-meta">L3 · Atom · Display Measurement</div>
+        <div class="card-title">The ColorChecker Classic</div>
+        <div class="card-sub">twenty-four named patches — skin tones, primaries, and a neutral ramp — the reference chart every camera and display is judged against</div>
+      </a>
+      <a class="module-card" href="./modules/display-measurement/gamut-coverage-percentages/">
+        <div class="card-meta">L4 · Reference · Display Measurement</div>
+        <div class="card-title">Gamut Coverage Percentages</div>
+        <div class="card-sub">95% DCI-P3 means the display's triangle overlaps that fraction of the standard's area — coverage, not the display's own size</div>
+      </a>
+      <a class="module-card" href="./modules/display-measurement/grayscale-tracking/">
+        <div class="card-meta">L4 · Reference · Display Measurement</div>
+        <div class="card-title">21-Step Grayscale Tracking</div>
+        <div class="card-sub">a calibrator walks the grey ramp in 5% steps, measuring how far each step's tint strays from neutral — the ΔE that should stay under three</div>
       </a>
       </div>
     </div>

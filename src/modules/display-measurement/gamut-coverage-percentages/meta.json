@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "display-measurement/gamut-coverage-percentages",
+  "title": {
+    "en": "Gamut Coverage Percentages",
+    "ko": "색역 커버리지 퍼센트"
+  },
+  "subtitle": {
+    "en": "95% DCI-P3 means the display's triangle overlaps that fraction of the standard's area — coverage, not the display's own size",
+    "ko": "95% DCI-P3은 디스플레이 삼각형이 표준 면적의 그만큼과 겹친다는 뜻이다 — 디스플레이 자체 크기가 아니라 커버리지"
+  },
+  "description": {
+    "en": "A spec like 95% P3 reports coverage: the display triangle overlap with the reference, divided by the reference area, capped at 100%. A display can exceed a gamut in size yet still miss a corner.",
+    "ko": "95% P3 같은 스펙은 커버리지를 보고한다: 디스플레이 삼각형과 기준의 겹침을 기준 면적으로 나눈 값(최대 100%). 디스플레이는 면적으로는 색역을 넘어서도 한 모서리를 놓칠 수 있다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "display-measurement",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Display measurement",
+      "section": "Gamut coverage"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "gamut coverage",
+    "DCI-P3",
+    "sRGB",
+    "Adobe RGB",
+    "Rec. 2020"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "os-color-management/macos-color-sync",
+  "title": {
+    "en": "ColorSync: Managed vs Not",
+    "ko": "ColorSync: 관리 vs 비관리"
+  },
+  "subtitle": {
+    "en": "a tagged image only looks right if something converts its numbers from the source profile to the display's — that something is the OS colour engine",
+    "ko": "태그된 이미지는 그 숫자를 출발 프로파일에서 디스플레이로 변환하는 무언가가 있어야 제대로 보인다 — 그것이 OS 색 엔진이다"
+  },
+  "description": {
+    "en": "An image stores numbers plus an ICC profile. ColorSync converts them from the source profile through a connection space to the display. Skip it and a wide-gamut image is misread as sRGB and shifts.",
+    "ko": "이미지는 숫자와 ICC 프로파일을 함께 담는다. ColorSync는 그 숫자를 출발 프로파일에서 연결 공간을 거쳐 디스플레이로 변환한다. 건너뛰면 광색역 이미지가 sRGB로 오독되어 색이 어긋난다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "os-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Apple ColorSync",
+      "section": "Workflow"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "ColorSync",
+    "color management",
+    "ICC profile",
+    "macOS",
+    "PCS"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "display-measurement/colorchecker-classic",
+  "title": {
+    "en": "The ColorChecker Classic",
+    "ko": "컬러체커 클래식"
+  },
+  "subtitle": {
+    "en": "twenty-four named patches — skin tones, primaries, and a neutral ramp — the reference chart every camera and display is judged against",
+    "ko": "스물네 개의 이름 붙은 패치 — 피부톤, 원색, 중립 램프 — 모든 카메라·디스플레이를 평가하는 기준 차트"
+  },
+  "description": {
+    "en": "The X-Rite ColorChecker is 24 matte patches — skin, foliage, primaries, and a six-step grey ramp — with standard values, the reference for camera profiling, white balance, and display accuracy.",
+    "ko": "X-Rite 컬러체커는 24개의 무광 패치다 — 피부·잎·원색과 6단계 회색 램프 — 표준화된 값을 가진다. 카메라 프로파일링·화이트밸런스·디스플레이 정확도의 공통 기준이다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 6,
+  "category": "display-measurement",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "X-Rite",
+      "section": "ColorChecker spec"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "ColorChecker",
+    "X-Rite",
+    "Macbeth",
+    "24 patch",
+    "reference chart"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

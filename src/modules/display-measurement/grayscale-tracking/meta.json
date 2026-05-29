@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "display-measurement/grayscale-tracking",
+  "title": {
+    "en": "21-Step Grayscale Tracking",
+    "ko": "21단계 그레이스케일 추적"
+  },
+  "subtitle": {
+    "en": "a calibrator walks the grey ramp in 5% steps, measuring how far each step's tint strays from neutral — the ΔE that should stay under three",
+    "ko": "캘리브레이터가 회색 램프를 5% 단계로 걸으며 각 단계의 색조가 중립에서 얼마나 벗어나는지 측정한다 — 3 미만이어야 할 ΔE"
+  },
+  "description": {
+    "en": "Grayscale tracking walks the grey ramp in 21 steps, measuring each step ΔE from the target white. Under ~3 is invisible; a single RGB-gain error tilts the ramp so shadows or highlights pick up a tint.",
+    "ko": "그레이스케일 추적은 회색 램프를 21단계로 걸으며 각 단계의 목표 백색 대비 ΔE를 측정한다. 약 3 미만은 안 보인다 — 하나의 RGB 게인 오차가 램프를 기울여 그림자나 하이라이트에 색조를 입힌다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "display-measurement",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "CalMAN",
+      "section": "Grayscale tracking"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "grayscale tracking",
+    "delta E",
+    "calibration",
+    "white balance",
+    "CalMAN"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

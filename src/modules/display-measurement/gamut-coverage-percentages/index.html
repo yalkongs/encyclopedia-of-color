@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Gamut Coverage Percentages — 95% DCI-P3 means the display's triangle…</title>
+  <meta name="description" content="A spec like 95% P3 reports coverage: the display triangle overlap with the reference, divided by the reference area, capped at 100%. A display can exceed a gamut in size yet still miss a corner.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-measurement/gamut-coverage-percentages/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Gamut Coverage Percentages">
+  <meta property="og:description"    content="A spec like 95% P3 reports coverage: the display triangle overlap with the reference, divided by the reference area, capped at 100%. A display can exceed a gamut in size yet still miss a corner.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-measurement/gamut-coverage-percentages/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-measurement--gamut-coverage-percentages.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Gamut Coverage Percentages.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Gamut Coverage Percentages">
+  <meta name="twitter:description"   content="A spec like 95% P3 reports coverage: the display triangle overlap with the reference, divided by the reference area, capped at 100%. A display can exceed a gamut in size yet still miss a corner.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-measurement--gamut-coverage-percentages.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Gamut Coverage Percentages.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gamut Coverage Percentages","alternateName":"display-measurement/gamut-coverage-percentages","description":"A spec like 95% P3 reports coverage: the display triangle overlap with the reference, divided by the reference area, capped at 100%. A display can exceed a gamut in size yet still miss a corner.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"gamut coverage, DCI-P3, sRGB, Adobe RGB, Rec. 2020","url":"https://encyclopedia-of-color.vercel.app/modules/display-measurement/gamut-coverage-percentages/","image":"https://encyclopedia-of-color.vercel.app/og/display-measurement--gamut-coverage-percentages.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-measurement/gamut-coverage-percentages">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Gamut Coverage Percentages</h1>
+      <p class="module-subtitle">"95% DCI-P3" means the display's triangle overlaps that fraction of the standard's area — coverage, not the display's own size</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A spec like "99% sRGB, 90% P3" reports coverage: how much of each reference gamut the display's triangle actually contains. It is the overlap area divided by the reference area, capped at 100%. A display can exceed sRGB in area yet still miss a corner — so coverage, not raw size, is what gets quoted.
+        </p>
+        <div class="math-block" data-tex="\text{coverage} = \frac{\text{area}(\,\text{display}\cap\text{reference}\,)}{\text{area}(\text{reference})}"></div>
+        <p class="zone-guide">
+          Grow the display gamut from sRGB toward Rec. 2020 and watch each reference's coverage climb. Highlight a reference to see exactly which triangle is being measured against on the chromaticity chart.
+        </p>
+        <enc-slider id="width" label="Display gamut" min="0" max="100" step="1" value="55" unit="%"></enc-slider>
+        <enc-toggle id="ref" label="Reference" options="srgb,adobe,p3,rec2020" labels="sRGB,Adobe,P3,Rec.2020" value="p3"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Gamut coverage percentages"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Gamut coverage metrics; display reviews"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

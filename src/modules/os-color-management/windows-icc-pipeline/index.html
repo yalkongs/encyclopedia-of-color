@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ICC &amp; the Profile Connection Space — connect every camera, screen, an…</title>
+  <meta name="description" content="ICC systems route colour through a device-independent connection space (XYZ or Lab). Each device needs one profile to the hub, so N devices need N profiles, not N-squared direct transforms.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/os-color-management/windows-icc-pipeline/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ICC &amp; the Profile Connection Space">
+  <meta property="og:description"    content="ICC systems route colour through a device-independent connection space (XYZ or Lab). Each device needs one profile to the hub, so N devices need N profiles, not N-squared direct transforms.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/os-color-management/windows-icc-pipeline/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/os-color-management--windows-icc-pipeline.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ICC &amp; the Profile Connection Space.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ICC &amp; the Profile Connection Space">
+  <meta name="twitter:description"   content="ICC systems route colour through a device-independent connection space (XYZ or Lab). Each device needs one profile to the hub, so N devices need N profiles, not N-squared direct transforms.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/os-color-management--windows-icc-pipeline.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ICC &amp; the Profile Connection Space.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ICC & the Profile Connection Space","alternateName":"os-color-management/windows-icc-pipeline","description":"ICC systems route colour through a device-independent connection space (XYZ or Lab). Each device needs one profile to the hub, so N devices need N profiles, not N-squared direct transforms.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ICC, ICM, profile connection space, Windows, color management","url":"https://encyclopedia-of-color.vercel.app/modules/os-color-management/windows-icc-pipeline/","image":"https://encyclopedia-of-color.vercel.app/og/os-color-management--windows-icc-pipeline.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="os-color-management/windows-icc-pipeline">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ICC & the Profile Connection Space</h1>
+      <p class="module-subtitle">connect every camera, screen, and printer to one neutral hub and you need N profiles — not the N² direct conversions a hubless world demands</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Windows ICM and every ICC system route colour through a device-independent Profile Connection Space (CIE XYZ or Lab). Each device needs just one profile mapping it to and from the PCS. Without that hub, converting between any two devices would need a bespoke transform for every pair — and the count explodes as devices multiply.
+        </p>
+        <div class="math-block" data-tex="\text{with PCS: } N \quad\text{vs}\quad \text{direct pairs: } \tfrac{N(N-1)}{2}"></div>
+        <p class="zone-guide">
+          Add devices and toggle the PCS hub. With it, the profile count grows in a straight line; without it, the tangle of direct conversions grows as the square. That linear scaling is why the PCS exists.
+        </p>
+        <enc-slider id="devices" label="Devices" min="3" max="9" step="1" value="5" unit=""></enc-slider>
+        <enc-toggle id="pcs" label="Profile Connection Space" options="on,off" labels="with PCS,direct pairs" value="on"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ICC profile connection space hub"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Microsoft ICM / WCS; ICC.1 profile connection space"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

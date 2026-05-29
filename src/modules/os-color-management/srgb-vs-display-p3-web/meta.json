@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "os-color-management/srgb-vs-display-p3-web",
+  "title": {
+    "en": "sRGB vs Display-P3 on the Web",
+    "ko": "웹에서 sRGB vs Display-P3"
+  },
+  "subtitle": {
+    "en": "color(display-p3 1 0 0) reaches a red that #ff0000 simply cannot describe — CSS Color 4 lets the web address the wider gamut",
+    "ko": "color(display-p3 1 0 0)은 #ff0000이 표현할 수 없는 빨강에 닿는다 — CSS Color 4가 웹에 더 넓은 색역을 열어준다"
+  },
+  "description": {
+    "en": "CSS Color 4 adds color(display-p3 ...), addressing the wider P3 gamut most screens now cover. P3 red and green sit outside sRGB, so a P3 primary is purer than any hex colour can name.",
+    "ko": "CSS Color 4는 color(display-p3 ...)을 더해 대부분 화면이 이제 덮는 더 넓은 P3 색역을 다룬다. P3 빨강·초록은 sRGB 밖에 있어, 표시 가능한 디스플레이에선 P3 원색이 어떤 hex 색보다 순수하다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "os-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "CSS Color 4",
+      "section": "color()"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Display P3",
+    "CSS Color 4",
+    "wide gamut",
+    "sRGB",
+    "web color"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

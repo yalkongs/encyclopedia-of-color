@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>How Browsers Tag Colour — a browser only converts an asset if it carr…</title>
+  <meta name="description" content="A browser converts an asset only if it carries a colour profile; untagged content is assumed sRGB. So an untagged wide-gamut image is shown as sRGB, drifting further the wider its true gamut.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/os-color-management/web-browser-color-handling/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="How Browsers Tag Colour">
+  <meta property="og:description"    content="A browser converts an asset only if it carries a colour profile; untagged content is assumed sRGB. So an untagged wide-gamut image is shown as sRGB, drifting further the wider its true gamut.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/os-color-management/web-browser-color-handling/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/os-color-management--web-browser-color-handling.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: How Browsers Tag Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="How Browsers Tag Colour">
+  <meta name="twitter:description"   content="A browser converts an asset only if it carries a colour profile; untagged content is assumed sRGB. So an untagged wide-gamut image is shown as sRGB, drifting further the wider its true gamut.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/os-color-management--web-browser-color-handling.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: How Browsers Tag Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"How Browsers Tag Colour","alternateName":"os-color-management/web-browser-color-handling","description":"A browser converts an asset only if it carries a colour profile; untagged content is assumed sRGB. So an untagged wide-gamut image is shown as sRGB, drifting further the wider its true gamut.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"browser color, ICC tag, sRGB, color management, web","url":"https://encyclopedia-of-color.vercel.app/modules/os-color-management/web-browser-color-handling/","image":"https://encyclopedia-of-color.vercel.app/og/os-color-management--web-browser-color-handling.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="os-color-management/web-browser-color-handling">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">How Browsers Tag Colour</h1>
+      <p class="module-subtitle">a browser only converts an asset if it carries a colour profile — untagged, it assumes sRGB, and a wide-gamut image drifts off its intended colour</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          When a browser paints an image or CSS colour, it asks: is there a colour profile? If yes, it converts the numbers from that profile to the display. If no, it assumes sRGB. An untagged wide-gamut photo is therefore shown with its raw numbers read as sRGB — and the wider the asset's true gamut, the further the colour shifts from what was intended.
+        </p>
+        <div class="math-block" data-tex="\text{tagged} \to \text{convert}\quad|\quad \text{untagged} \to \text{assume sRGB}"></div>
+        <p class="zone-guide">
+          Toggle the colour tag and widen the asset's gamut. Tagged, the swatch holds its intended colour; untagged, it drifts as the source saturation grows. CSS color() and tagged images are handled; bare numbers default to sRGB.
+        </p>
+        <enc-toggle id="tagged" label="Asset colour tag" options="yes,no" labels="tagged,untagged" value="yes"></enc-toggle>
+        <enc-slider id="sat" label="Source gamut width" min="0" max="100" step="1" value="70" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Browser colour tagging behaviour"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton §22; CSS Color 4 tagging"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

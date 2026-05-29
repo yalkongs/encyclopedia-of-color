@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The ColorChecker Classic — twenty-four named patches — skin tones, pr…</title>
+  <meta name="description" content="The X-Rite ColorChecker is 24 matte patches — skin, foliage, primaries, and a six-step grey ramp — with standard values, the reference for camera profiling, white balance, and display accuracy.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-measurement/colorchecker-classic/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The ColorChecker Classic">
+  <meta property="og:description"    content="The X-Rite ColorChecker is 24 matte patches — skin, foliage, primaries, and a six-step grey ramp — with standard values, the reference for camera profiling, white balance, and display accuracy.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-measurement/colorchecker-classic/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-measurement--colorchecker-classic.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The ColorChecker Classic.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The ColorChecker Classic">
+  <meta name="twitter:description"   content="The X-Rite ColorChecker is 24 matte patches — skin, foliage, primaries, and a six-step grey ramp — with standard values, the reference for camera profiling, white balance, and display accuracy.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-measurement--colorchecker-classic.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The ColorChecker Classic.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The ColorChecker Classic","alternateName":"display-measurement/colorchecker-classic","description":"The X-Rite ColorChecker is 24 matte patches — skin, foliage, primaries, and a six-step grey ramp — with standard values, the reference for camera profiling, white balance, and display accuracy.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ColorChecker, X-Rite, Macbeth, 24 patch, reference chart","url":"https://encyclopedia-of-color.vercel.app/modules/display-measurement/colorchecker-classic/","image":"https://encyclopedia-of-color.vercel.app/og/display-measurement--colorchecker-classic.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-measurement/colorchecker-classic">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">The ColorChecker Classic</h1>
+      <p class="module-subtitle">twenty-four named patches — skin tones, primaries, and a neutral ramp — the reference chart every camera and display is judged against</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The X-Rite (Macbeth) ColorChecker is twenty-four matte patches in a 6×4 grid: natural colours like skin and foliage, additive and subtractive primaries, and a six-step neutral grey ramp. Because their values are standardised, the chart is the common yardstick for camera profiling, white balance, and display accuracy.
+        </p>
+        <div class="math-block" data-tex="24 \text{ patches} = 18 \text{ colours} + 6 \text{ neutrals}"></div>
+        <p class="zone-guide">
+          Step the selector to inspect each patch by name and its standard sRGB value. The bottom row is the neutral ramp used to check grey balance; the colour patches probe hue and saturation accuracy across the gamut.
+        </p>
+        <enc-slider id="sel" label="Inspect patch" min="1" max="24" step="1" value="1" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="X-Rite ColorChecker Classic 24 patches"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="X-Rite ColorChecker; BabelColor reference data"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

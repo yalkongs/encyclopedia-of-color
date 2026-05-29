@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "os-color-management/windows-icc-pipeline",
+  "title": {
+    "en": "ICC & the Profile Connection Space",
+    "ko": "ICC와 프로파일 연결 공간"
+  },
+  "subtitle": {
+    "en": "connect every camera, screen, and printer to one neutral hub and you need N profiles — not the N-squared direct conversions a hubless world demands",
+    "ko": "모든 카메라·화면·프린터를 하나의 중립 허브에 연결하면 N개의 프로파일이면 된다 — 허브 없는 세상이 요구하는 N제곱의 직접 변환이 아니라"
+  },
+  "description": {
+    "en": "ICC systems route colour through a device-independent connection space (XYZ or Lab). Each device needs one profile to the hub, so N devices need N profiles, not N-squared direct transforms.",
+    "ko": "ICC 시스템은 색을 장치 독립적 연결 공간(XYZ 또는 Lab)으로 라우팅한다. 각 장치는 허브로 가는 프로파일 하나면 되므로 N개 장치엔 N개 프로파일 — 허브 없는 세상의 N제곱 변환이 아니다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "os-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Microsoft ICM",
+      "section": "Profile connection space"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "ICC",
+    "ICM",
+    "profile connection space",
+    "Windows",
+    "color management"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
