@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The 60-30-10 Rule — a dominant ground, a supporting secondary, a smal…</title>
+  <meta name="description" content="A UI heuristic splits colour into ~60% dominant, 30% secondary, 10% accent — the accent reads as emphasis because it is rare. Push it past a quarter and the hierarchy collapses.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/ui-60-30-10/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The 60-30-10 Rule">
+  <meta property="og:description"    content="A UI heuristic splits colour into ~60% dominant, 30% secondary, 10% accent — the accent reads as emphasis because it is rare. Push it past a quarter and the hierarchy collapses.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/ui-60-30-10/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--ui-60-30-10.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The 60-30-10 Rule.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The 60-30-10 Rule">
+  <meta name="twitter:description"   content="A UI heuristic splits colour into ~60% dominant, 30% secondary, 10% accent — the accent reads as emphasis because it is rare. Push it past a quarter and the hierarchy collapses.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--ui-60-30-10.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The 60-30-10 Rule.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The 60-30-10 Rule","alternateName":"spatial-balance-ui/ui-60-30-10","description":"A UI heuristic splits colour into ~60% dominant, 30% secondary, 10% accent — the accent reads as emphasis because it is rare. Push it past a quarter and the hierarchy collapses.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"60-30-10, UI color, palette proportion, accent","url":"https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/ui-60-30-10/","image":"https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--ui-60-30-10.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="spatial-balance-ui/ui-60-30-10">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The 60-30-10 Rule</h1>
+      <p class="module-subtitle">a dominant ground, a supporting secondary, a small accent — the interface proportion that keeps a palette calm</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A common UI heuristic splits colour use into roughly 60% dominant (background and large surfaces), 30% secondary (panels, cards), and 10% accent (buttons, highlights). The accent reads as emphasis precisely because it is rare; flood the screen with it and the hierarchy collapses.
+        </p>
+        <div class="math-block" data-tex="60\%\ \text{dominant} \;+\; 30\%\ \text{secondary} \;+\; 10\%\ \text{accent}"></div>
+        <p class="zone-guide">
+          Adjust the three shares (they renormalise to 100%). The mock interface and the proportion bar update live. Near 60-30-10 the accent pops; push it past 25% and it stops feeling like an accent at all.
+        </p>
+        <enc-slider id="p1" label="Dominant" min="10" max="90" step="1" value="60" unit="%"></enc-slider>
+        <enc-slider id="p2" label="Secondary" min="5" max="70" step="1" value="30" unit="%"></enc-slider>
+        <enc-slider id="p3" label="Accent" min="2" max="50" step="1" value="10" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="60-30-10 UI proportion"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Interior/UI design convention (60-30-10 proportion)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

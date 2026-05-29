@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "apca-contrast-matcher/apca-lc-contrast",
+  "title": {
+    "en": "APCA Lc Contrast",
+    "ko": "APCA Lc 대비"
+  },
+  "subtitle": {
+    "en": "the WCAG 3 contrast method — read the signed lightness contrast between text and background and what size it can carry",
+    "ko": "WCAG 3 대비 방식 — 텍스트와 배경의 부호 있는 명도 대비와 그것이 감당할 크기를 읽는다"
+  },
+  "description": {
+    "en": "APCA replaces the ratio with Lc, a polarity-aware lightness contrast to about ±108; larger magnitudes carry smaller text. Set text and background lightness, read the signed Lc and a Bronze verdict.",
+    "ko": "APCA는 옛 비율을 Lc로 대체한다 — 극성을 존중하는 지각적 명도 대비다. 약 ±108까지 가며, 클수록 더 작고 얇은 텍스트를 지탱한다. 텍스트·배경 명도를 정해 부호 있는 Lc와 Bronze 등급 판정을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "apca-contrast-matcher",
+  "layout": "A",
+  "prerequisites": ["ittens-contrasts/contrast-light-dark"],
+  "leads_to": ["apca-contrast-matcher/apca-font-matrix"],
+  "see_also": ["ittens-contrasts/contrast-tension-score"],
+  "textbook_refs": [
+    { "source": "Somers, APCA (WCAG 3 draft)", "section": "SAPC contrast method" }
+  ],
+  "standards": ["WCAG 3 (draft)"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["APCA", "Lc", "WCAG 3", "contrast", "accessibility"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

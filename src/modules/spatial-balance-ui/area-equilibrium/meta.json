@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "spatial-balance-ui/area-equilibrium",
+  "title": {
+    "en": "Goethe's Area Balance",
+    "ko": "괴테의 면적 균형"
+  },
+  "subtitle": {
+    "en": "a little yellow outweighs a lot of violet — balance complementary colours by area, using Goethe's light-weights",
+    "ko": "적은 노랑이 많은 보라를 이긴다 — 괴테의 광량비로 보색을 면적으로 균형 잡는다"
+  },
+  "description": {
+    "en": "Goethe gave each hue a light-weight (yellow 9, violet 3…); to balance a pair, areas should be inverse to the weights — a sliver of yellow against a field of violet. Slide to the balanced tick.",
+    "ko": "괴테는 각 색상에 광량(노랑 9, 보라 3…)을 매겼다 — 보색 쌍을 균형 잡으려면 면적이 광량의 역수여야 한다, 넓은 보라에 가는 노랑. 쌍을 골라 균형 눈금으로 밀어본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "spatial-balance-ui",
+  "layout": "A",
+  "prerequisites": ["historical-color-systems/goethe-psychological"],
+  "leads_to": ["spatial-balance-ui/ui-60-30-10"],
+  "see_also": ["ittens-contrasts/contrast-complementary"],
+  "textbook_refs": [
+    { "source": "Goethe, Zur Farbenlehre (1810)", "section": "Light-weights of colours" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Goethe", "area balance", "color proportion", "complementary"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

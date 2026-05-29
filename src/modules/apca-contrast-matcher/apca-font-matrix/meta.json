@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "apca-contrast-matcher/apca-font-matrix",
+  "title": {
+    "en": "APCA Font Matrix",
+    "ko": "APCA 폰트 행렬"
+  },
+  "subtitle": {
+    "en": "Lc alone is not pass or fail — it sets a minimum font size and weight; find your pair on the Bronze lookup table",
+    "ko": "Lc만으로는 합격/불합격이 아니다 — 최소 폰트 크기와 굵기를 정한다; 자신의 쌍을 Bronze 표에서 찾는다"
+  },
+  "description": {
+    "en": "APCA has no single threshold — Lc maps to a minimum font size per weight. Set lightness and weight; the Lc highlights the smallest usable size, with empty cells below Bronze.",
+    "ko": "APCA에는 단일 기준이 없다 — 대비 Lc가 굵기별 최소 폰트 크기로 매핑돼, 대비가 클수록 텍스트가 작아질 수 있다. 명도와 굵기를 정하면 계산된 Lc가 쓸 수 있는 최소 크기를 강조한다. 빈 칸은 Bronze 미만이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 5,
+  "category": "apca-contrast-matcher",
+  "layout": "A",
+  "prerequisites": ["apca-contrast-matcher/apca-lc-contrast"],
+  "leads_to": ["apca-contrast-matcher/wcag-21-vs-22"],
+  "see_also": ["typography-color-interaction/font-weight-vs-contrast"],
+  "textbook_refs": [
+    { "source": "APCA Bronze conformance matrix", "section": "WCAG 3 draft" }
+  ],
+  "standards": ["WCAG 3 (draft)"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["APCA", "font size", "Bronze", "accessibility", "WCAG 3"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

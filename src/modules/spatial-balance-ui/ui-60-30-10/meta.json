@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "spatial-balance-ui/ui-60-30-10",
+  "title": {
+    "en": "The 60-30-10 Rule",
+    "ko": "60-30-10 규칙"
+  },
+  "subtitle": {
+    "en": "a dominant ground, a supporting secondary, a small accent — the interface proportion that keeps a palette calm",
+    "ko": "지배적 바탕, 보조 색, 작은 강조 — 팔레트를 차분하게 유지하는 인터페이스 비율"
+  },
+  "description": {
+    "en": "A UI heuristic splits colour into ~60% dominant, 30% secondary, 10% accent — the accent reads as emphasis because it is rare. Push it past a quarter and the hierarchy collapses.",
+    "ko": "UI 휴리스틱은 색을 대략 60% 지배색, 30% 보조색, 10% 강조색으로 나눈다. 강조색은 드물기에 강조로 읽힌다. 세 비율을 조정해 목업을 보라 — 강조색이 1/4를 넘으면 위계가 무너진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "spatial-balance-ui",
+  "layout": "A",
+  "prerequisites": ["spatial-balance-ui/area-equilibrium"],
+  "leads_to": ["spatial-balance-ui/figure-ground-rubin"],
+  "see_also": ["color-harmony-generator/harmony-wheel"],
+  "textbook_refs": [
+    { "source": "UI/interior design convention", "section": "60-30-10 proportion" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["60-30-10", "UI color", "palette proportion", "accent"],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

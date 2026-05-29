@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>WCAG Ratio vs APCA — the old contrast ratio ignores which colour is o…</title>
+  <meta name="description" content="WCAG 2.x uses a symmetric ratio (4.5:1 body) — swap text and bg, nothing changes. APCA's Lc is signed and polarity-aware. For text contrast 2.1 and 2.2 are identical; 2.2 only added focus rules.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/apca-contrast-matcher/wcag-21-vs-22/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="WCAG Ratio vs APCA">
+  <meta property="og:description"    content="WCAG 2.x uses a symmetric ratio (4.5:1 body) — swap text and bg, nothing changes. APCA's Lc is signed and polarity-aware. For text contrast 2.1 and 2.2 are identical; 2.2 only added focus rules.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/apca-contrast-matcher/wcag-21-vs-22/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/apca-contrast-matcher--wcag-21-vs-22.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: WCAG Ratio vs APCA.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="WCAG Ratio vs APCA">
+  <meta name="twitter:description"   content="WCAG 2.x uses a symmetric ratio (4.5:1 body) — swap text and bg, nothing changes. APCA's Lc is signed and polarity-aware. For text contrast 2.1 and 2.2 are identical; 2.2 only added focus rules.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/apca-contrast-matcher--wcag-21-vs-22.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: WCAG Ratio vs APCA.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"WCAG Ratio vs APCA","alternateName":"apca-contrast-matcher/wcag-21-vs-22","description":"WCAG 2.x uses a symmetric ratio (4.5:1 body) — swap text and bg, nothing changes. APCA's Lc is signed and polarity-aware. For text contrast 2.1 and 2.2 are identical; 2.2 only added focus rules.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"WCAG, APCA, contrast ratio, accessibility, polarity","url":"https://encyclopedia-of-color.vercel.app/modules/apca-contrast-matcher/wcag-21-vs-22/","image":"https://encyclopedia-of-color.vercel.app/og/apca-contrast-matcher--wcag-21-vs-22.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="apca-contrast-matcher/wcag-21-vs-22">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">WCAG Ratio vs APCA</h1>
+      <p class="module-subtitle">the old contrast ratio ignores which colour is on top — swap text and background and watch only APCA notice</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          WCAG 2.x scores a pair by a luminance ratio from 1:1 to 21:1, with 4.5:1 the body-text threshold. It is symmetric — swap text and background and nothing changes. APCA's Lc is signed: dark-on-light and light-on-dark score differently, matching how the eye actually reads. For text contrast, WCAG 2.1 and 2.2 are identical; 2.2 only added focus-indicator rules.
+        </p>
+        <div class="math-block" data-tex="\text{ratio}=\dfrac{L_1+0.05}{L_2+0.05}\ \text{(symmetric)}\quad vs\quad L_c\ \text{(signed)}"></div>
+        <p class="zone-guide">
+          Set the two lightnesses, then hit swap. The WCAG ratio is unmoved; the APCA Lc flips and changes magnitude. That asymmetry is the gap WCAG 3 means to close.
+        </p>
+        <enc-slider id="aL" label="Colour A lightness" min="0" max="100" step="1" value="40"></enc-slider>
+        <enc-slider id="bL" label="Colour B lightness" min="0" max="100" step="1" value="92"></enc-slider>
+        <enc-toggle id="swap" label="Roles" options="ab,ba" labels="A text / B bg,B text / A bg" value="ab"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="WCAG ratio versus APCA Lc"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="WCAG 2.2 (W3C); APCA / WCAG 3 draft"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

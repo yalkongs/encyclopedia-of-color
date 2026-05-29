@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "spatial-balance-ui/figure-ground-rubin",
+  "title": {
+    "en": "Rubin's Vase",
+    "ko": "루빈의 컵"
+  },
+  "subtitle": {
+    "en": "a vase, or two faces? when figure and ground are equally light the brain can't decide — and keeps flipping",
+    "ko": "컵인가 두 얼굴인가? 도형과 바탕의 밝기가 같으면 뇌는 결정하지 못하고 계속 뒤집는다"
+  },
+  "description": {
+    "en": "Vision splits a scene into figure and ground. Rubin's vase shares a contour between a vase and two faces, so either can be figure — strongest when both are equally light. Slide the centre lightness.",
+    "ko": "시각은 장면을 도형과 바탕으로 나눠야 한다. 루빈의 1915 컵은 컵과 두 옆얼굴이 하나의 윤곽을 공유해 어느 쪽도 도형이 될 수 있다 — 두 영역의 밝기가 같을 때 가장 불안정하다. 중심 밝기를 바탕 쪽으로 밀어 뒤집힘을 일으킨다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 5,
+  "category": "spatial-balance-ui",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": ["spatial-balance-ui/visual-weight-isobar"],
+  "see_also": ["visual-illusions-library/kanizsa-triangle"],
+  "textbook_refs": [
+    { "source": "Rubin (1915)", "section": "Synsoplevede Figurer (figure-ground)" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path", "vision-and-perception"],
+  "seo_keywords": ["Rubin vase", "figure-ground", "bistable", "gestalt"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

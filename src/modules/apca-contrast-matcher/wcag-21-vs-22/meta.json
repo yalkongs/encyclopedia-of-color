@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "apca-contrast-matcher/wcag-21-vs-22",
+  "title": {
+    "en": "WCAG Ratio vs APCA",
+    "ko": "WCAG 비율 대 APCA"
+  },
+  "subtitle": {
+    "en": "the old contrast ratio ignores which colour is on top — swap text and background and watch only APCA notice",
+    "ko": "옛 대비 비율은 어느 색이 위인지 무시한다 — 텍스트와 배경을 바꾸면 APCA만 알아챈다"
+  },
+  "description": {
+    "en": "WCAG 2.x uses a symmetric ratio (4.5:1 body) — swap text and bg, nothing changes. APCA's Lc is signed and polarity-aware. For text contrast 2.1 and 2.2 are identical; 2.2 only added focus rules.",
+    "ko": "WCAG 2.x는 대칭 휘도 비율(본문 4.5:1)로 채점해 텍스트·배경을 바꿔도 그대로다. APCA의 Lc는 부호가 있고 극성을 안다. 텍스트 대비는 2.1과 2.2가 동일하며, 2.2는 포커스 규칙만 더했다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "apca-contrast-matcher",
+  "layout": "A",
+  "prerequisites": ["apca-contrast-matcher/apca-lc-contrast"],
+  "leads_to": [],
+  "see_also": ["apca-contrast-matcher/apca-font-matrix"],
+  "textbook_refs": [
+    { "source": "WCAG 2.2 (W3C)", "section": "Contrast (Minimum) 1.4.3" }
+  ],
+  "standards": ["WCAG 2.2", "WCAG 3 (draft)"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["WCAG", "APCA", "contrast ratio", "accessibility", "polarity"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

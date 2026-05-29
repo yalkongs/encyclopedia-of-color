@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Goethe's Area Balance — a little yellow outweighs a lot of violet — b…</title>
+  <meta name="description" content="Goethe gave each hue a light-weight (yellow 9, violet 3…); to balance a pair, areas should be inverse to the weights — a sliver of yellow against a field of violet. Slide to the balanced tick.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/area-equilibrium/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Goethe's Area Balance">
+  <meta property="og:description"    content="Goethe gave each hue a light-weight (yellow 9, violet 3…); to balance a pair, areas should be inverse to the weights — a sliver of yellow against a field of violet. Slide to the balanced tick.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/area-equilibrium/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--area-equilibrium.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Goethe's Area Balance.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Goethe's Area Balance">
+  <meta name="twitter:description"   content="Goethe gave each hue a light-weight (yellow 9, violet 3…); to balance a pair, areas should be inverse to the weights — a sliver of yellow against a field of violet. Slide to the balanced tick.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--area-equilibrium.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Goethe's Area Balance.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Goethe's Area Balance","alternateName":"spatial-balance-ui/area-equilibrium","description":"Goethe gave each hue a light-weight (yellow 9, violet 3…); to balance a pair, areas should be inverse to the weights — a sliver of yellow against a field of violet. Slide to the balanced tick.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Goethe, area balance, color proportion, complementary","url":"https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/area-equilibrium/","image":"https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--area-equilibrium.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="spatial-balance-ui/area-equilibrium">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Goethe's Area Balance</h1>
+      <p class="module-subtitle">a little yellow outweighs a lot of violet — balance complementary colours by area, using Goethe's light-weights</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Goethe assigned each hue a "light weight": yellow 9, orange 8, red 6, green 6, blue 4, violet 3. A bright hue carries more visual force, so to balance a pair their areas should be the inverse of their weights — a sliver of yellow against a broad field of violet.
+        </p>
+        <div class="math-block" data-tex="\dfrac{\text{area}_A}{\text{area}_B} = \dfrac{w_B}{w_A}\quad(\text{yellow}:\text{violet}=3:9)"></div>
+        <p class="zone-guide">
+          Pick a complementary pair and slide the split. The gold tick marks Goethe's balanced ratio; equal halves (50:50) let the brighter hue shout. Land on the tick and the two feel evenly matched.
+        </p>
+        <enc-slider id="split" label="First colour area" min="5" max="95" step="1" value="25" unit="%"></enc-slider>
+        <enc-toggle id="pair" label="Pair" options="yv,ob,rg" labels="yellow·violet,orange·blue,red·green" value="yv"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Goethe area equilibrium of complementary pairs"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Goethe, Zur Farbenlehre (1810) — light-weights of colours"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

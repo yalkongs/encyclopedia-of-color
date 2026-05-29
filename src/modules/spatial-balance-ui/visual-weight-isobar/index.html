@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Visual Weight &amp; Balance — Arnheim's heuristic — size, contrast, and p…</title>
+  <meta name="description" content="Arnheim: balance follows visual weight, not geometry. Weight grows with size and contrast, amplified by position — top over bottom, right over left. Move an element; the centroid leaves the midpoint.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/visual-weight-isobar/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Visual Weight &amp; Balance">
+  <meta property="og:description"    content="Arnheim: balance follows visual weight, not geometry. Weight grows with size and contrast, amplified by position — top over bottom, right over left. Move an element; the centroid leaves the midpoint.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/visual-weight-isobar/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--visual-weight-isobar.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Visual Weight &amp; Balance.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Visual Weight &amp; Balance">
+  <meta name="twitter:description"   content="Arnheim: balance follows visual weight, not geometry. Weight grows with size and contrast, amplified by position — top over bottom, right over left. Move an element; the centroid leaves the midpoint.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--visual-weight-isobar.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Visual Weight &amp; Balance.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Visual Weight & Balance","alternateName":"spatial-balance-ui/visual-weight-isobar","description":"Arnheim: balance follows visual weight, not geometry. Weight grows with size and contrast, amplified by position — top over bottom, right over left. Move an element; the centroid leaves the midpoint.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Arnheim, visual weight, balance, composition, isobar","url":"https://encyclopedia-of-color.vercel.app/modules/spatial-balance-ui/visual-weight-isobar/","image":"https://encyclopedia-of-color.vercel.app/og/spatial-balance-ui--visual-weight-isobar.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="spatial-balance-ui/visual-weight-isobar">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Visual Weight & Balance</h1>
+      <p class="module-subtitle">Arnheim's heuristic — size, contrast, and position give an element pull; find where a composition's weight actually centres</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Arnheim argued a composition balances around visual weight, not geometry. Weight grows with an element's size and its contrast against the ground, and it is amplified by position: the top of a frame feels heavier than the bottom, and the right heavier than the left. The balance point is the weight centroid, not the geometric centre.
+        </p>
+        <div class="math-block" data-tex="w = \text{size}^2 \cdot \text{contrast} \cdot f_{\text{pos}}(x,y)"></div>
+        <p class="zone-guide">
+          Move and resize the upper element; a second sits lower-left. Faint isobars show each one's field of pull. The gold mark is the weight centroid; the grey mark is the plain geometric midpoint — watch them separate as position and size shift the weight.
+        </p>
+        <enc-slider id="ax" label="Element A position" min="8" max="92" step="1" value="70" unit="%"></enc-slider>
+        <enc-slider id="ar" label="Element A size" min="14" max="60" step="1" value="34"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Visual weight isobars and centroid"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Arnheim, Art and Visual Perception (1974) — balance"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

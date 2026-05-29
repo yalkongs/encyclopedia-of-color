@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "spatial-balance-ui/visual-weight-isobar",
+  "title": {
+    "en": "Visual Weight & Balance",
+    "ko": "시각 무게와 균형"
+  },
+  "subtitle": {
+    "en": "Arnheim's heuristic — size, contrast, and position give an element pull; find where a composition's weight actually centres",
+    "ko": "아른하임의 휴리스틱 — 크기·대비·위치가 요소에 무게를 준다; 구성의 무게가 실제로 어디에 모이는지 찾는다"
+  },
+  "description": {
+    "en": "Arnheim: balance follows visual weight, not geometry. Weight grows with size and contrast, amplified by position — top over bottom, right over left. Move an element; the centroid leaves the midpoint.",
+    "ko": "아른하임은 구성이 기하가 아닌 시각 무게로 균형 잡힌다고 보았다 — 무게는 크기·대비로 커지고 위치로 증폭된다(위가 아래보다, 오른쪽이 왼쪽보다 무겁다). 요소를 옮기고 키워 무게 중심이 기하 중점에서 갈라지는 것을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "spatial-balance-ui",
+  "layout": "A",
+  "prerequisites": ["spatial-balance-ui/figure-ground-rubin"],
+  "leads_to": [],
+  "see_also": ["spatial-balance-ui/area-equilibrium"],
+  "textbook_refs": [
+    { "source": "Arnheim, Art and Visual Perception (1974)", "section": "Balance" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Arnheim", "visual weight", "balance", "composition", "isobar"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

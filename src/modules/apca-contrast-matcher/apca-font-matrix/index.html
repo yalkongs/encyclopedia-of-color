@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>APCA Font Matrix — Lc alone is not pass or fail — it sets a minimum f…</title>
+  <meta name="description" content="APCA has no single threshold — Lc maps to a minimum font size per weight. Set lightness and weight; the Lc highlights the smallest usable size, with empty cells below Bronze.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/apca-contrast-matcher/apca-font-matrix/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="APCA Font Matrix">
+  <meta property="og:description"    content="APCA has no single threshold — Lc maps to a minimum font size per weight. Set lightness and weight; the Lc highlights the smallest usable size, with empty cells below Bronze.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/apca-contrast-matcher/apca-font-matrix/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/apca-contrast-matcher--apca-font-matrix.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: APCA Font Matrix.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="APCA Font Matrix">
+  <meta name="twitter:description"   content="APCA has no single threshold — Lc maps to a minimum font size per weight. Set lightness and weight; the Lc highlights the smallest usable size, with empty cells below Bronze.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/apca-contrast-matcher--apca-font-matrix.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: APCA Font Matrix.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"APCA Font Matrix","alternateName":"apca-contrast-matcher/apca-font-matrix","description":"APCA has no single threshold — Lc maps to a minimum font size per weight. Set lightness and weight; the Lc highlights the smallest usable size, with empty cells below Bronze.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"APCA, font size, Bronze, accessibility, WCAG 3","url":"https://encyclopedia-of-color.vercel.app/modules/apca-contrast-matcher/apca-font-matrix/","image":"https://encyclopedia-of-color.vercel.app/og/apca-contrast-matcher--apca-font-matrix.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="apca-contrast-matcher/apca-font-matrix">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">APCA Font Matrix</h1>
+      <p class="module-subtitle">Lc alone is not pass or fail — it sets a minimum font size and weight; find your pair on the Bronze lookup table</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          APCA has no single threshold. Instead a contrast level Lc maps to a minimum font size for each weight: more contrast lets text be smaller and thinner. The Bronze conformance table is a lookup, not a formula — read it like a chart.
+        </p>
+        <div class="math-block" data-tex="L_c \times \text{weight} \;\rightarrow\; \text{min size}"></div>
+        <p class="zone-guide">
+          Set the text and background lightness and the weight. The computed Lc lands in a column; the highlighted cell is the smallest size that pair may safely use. Empty cells fall below Bronze — that pairing should not carry body text.
+        </p>
+        <enc-slider id="txtL" label="Text lightness" min="0" max="100" step="1" value="35"></enc-slider>
+        <enc-slider id="bgL" label="Background lightness" min="0" max="100" step="1" value="97"></enc-slider>
+        <enc-toggle id="wt" label="Weight" options="400,700" labels="400 regular,700 bold" value="400"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="APCA Bronze font-size matrix"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="APCA Bronze conformance matrix (WCAG 3 draft); Myndex"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
