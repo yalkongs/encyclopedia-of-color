@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "display-panel-physics/panel-crt-lcd",
+  "title": {
+    "en": "CRT vs LCD: Light in Time",
+    "ko": "CRT 대 LCD: 시간 속의 빛"
+  },
+  "subtitle": {
+    "en": "a CRT flashes each phosphor and lets it fade; an LCD holds its light steady — two opposite ways to paint a frame",
+    "ko": "CRT는 형광체를 번쩍이고 식게 두며, LCD는 빛을 일정하게 유지한다 — 프레임을 그리는 정반대 방식"
+  },
+  "description": {
+    "en": "A CRT flashes phosphors that decay in under a millisecond — an impulse display, flickery but crisp in motion. An LCD holds a steady backlight: flicker-free but blur-prone. Watch one pixel over time.",
+    "ko": "CRT는 1밀리초 안에 번쩍였다 식는 형광체 위로 빔을 훑는다 — 깜빡이나 움직임이 또렷한 임펄스 방식. LCD는 일정한 백라이트를 유지한다 — 표본유지, 무깜빡임이나 잔상이 생긴다. 한 픽셀의 시간별 빛을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "display-panel-physics",
+  "layout": "A",
+  "prerequisites": [
+    "display-physics-intro/refresh-rate-flicker"
+  ],
+  "leads_to": [
+    "display-panel-physics/panel-oled"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Poynton, Digital Video and HD 2e",
+      "section": "§24 (impulse vs sample-and-hold)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "CRT",
+    "LCD",
+    "phosphor",
+    "sample and hold",
+    "motion blur"
+  ],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

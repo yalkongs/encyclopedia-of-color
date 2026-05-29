@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "display-panel-physics/panel-response-time-overdrive",
+  "title": {
+    "en": "Response Time & Overdrive",
+    "ko": "응답 시간과 오버드라이브"
+  },
+  "subtitle": {
+    "en": "slow pixels smear a moving edge into a ghost; overdrive cures it — but push too far and the cure overshoots",
+    "ko": "느린 픽셀은 움직이는 가장자리를 잔상으로 번지게 한다; 오버드라이브가 고치지만 과하면 넘어선다"
+  },
+  "description": {
+    "en": "An LC cell is slow to twist, so a fast edge leaves a fading ghost. Overdrive drives it past target to flip faster; too much overshoots into an inverse-ghost. Raise response time, then add overdrive.",
+    "ko": "액정 셀은 비트는 데 시간이 걸려 빠른 가장자리에 잔상이 남는다. 오버드라이브는 셀을 목표 너머로 몰아 빨리 뒤집지만, 부족하면 잔상이 남고 과하면 밝거나 어두운 역잔상으로 넘어선다. 응답 시간을 올리고 오버드라이브를 더한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "display-panel-physics",
+  "layout": "A",
+  "prerequisites": [
+    "display-panel-physics/panel-backlight-edge-vs-array"
+  ],
+  "leads_to": [],
+  "see_also": [
+    "display-physics-intro/refresh-rate-flicker"
+  ],
+  "textbook_refs": [
+    {
+      "source": "LCD pixel response",
+      "section": "Overdrive / RTC"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "response time",
+    "overdrive",
+    "ghosting",
+    "overshoot",
+    "LCD"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

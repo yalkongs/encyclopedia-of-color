@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Response Time &amp; Overdrive — slow pixels smear a moving edge into a gh…</title>
+  <meta name="description" content="An LC cell is slow to twist, so a fast edge leaves a fading ghost. Overdrive drives it past target to flip faster; too much overshoots into an inverse-ghost. Raise response time, then add overdrive.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-response-time-overdrive/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Response Time &amp; Overdrive">
+  <meta property="og:description"    content="An LC cell is slow to twist, so a fast edge leaves a fading ghost. Overdrive drives it past target to flip faster; too much overshoots into an inverse-ghost. Raise response time, then add overdrive.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-response-time-overdrive/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-response-time-overdrive.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Response Time &amp; Overdrive.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Response Time &amp; Overdrive">
+  <meta name="twitter:description"   content="An LC cell is slow to twist, so a fast edge leaves a fading ghost. Overdrive drives it past target to flip faster; too much overshoots into an inverse-ghost. Raise response time, then add overdrive.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-response-time-overdrive.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Response Time &amp; Overdrive.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Response Time & Overdrive","alternateName":"display-panel-physics/panel-response-time-overdrive","description":"An LC cell is slow to twist, so a fast edge leaves a fading ghost. Overdrive drives it past target to flip faster; too much overshoots into an inverse-ghost. Raise response time, then add overdrive.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"response time, overdrive, ghosting, overshoot, LCD","url":"https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-response-time-overdrive/","image":"https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-response-time-overdrive.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-panel-physics/panel-response-time-overdrive">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Response Time & Overdrive</h1>
+      <p class="module-subtitle">slow pixels smear a moving edge into a ghost; overdrive cures it — but push too far and the cure overshoots</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A liquid-crystal cell takes time to twist, so a fast-moving edge leaves a fading trail — ghosting. Overdrive fights it by briefly driving the cell past its target voltage to flip it faster. Too little and the ghost remains; too much and the pixel overshoots, leaving a bright or dark inverse-ghost behind the edge.
+        </p>
+        <div class="math-block" data-tex="\text{display} \to \text{target with lag } \tau,\ \text{overdrive overshoots}"></div>
+        <p class="zone-guide">
+          A bar sweeps across. Raise the response time to lengthen the ghost trail, then add overdrive to sharpen it. Push overdrive past the sweet spot and an inverse-ghost (a bright/dark overshoot) appears at the trailing edge.
+        </p>
+        <enc-slider id="rt" label="Response time" min="1" max="30" step="1" value="16" unit=" ms"></enc-slider>
+        <enc-slider id="od" label="Overdrive" min="0" max="100" step="1" value="0" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Pixel response time and overdrive ghosting"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="LCD pixel response and overdrive; Poynton §24"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

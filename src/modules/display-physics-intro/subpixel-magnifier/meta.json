@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "display-physics-intro/subpixel-magnifier",
+  "title": {
+    "en": "The Subpixel Loupe",
+    "ko": "서브픽셀 돋보기"
+  },
+  "subtitle": {
+    "en": "zoom into the screen until each pixel splits into its three coloured lamps — red, green, blue",
+    "ko": "화면을 확대해 각 픽셀이 세 색 램프(빨강·초록·파랑)로 갈라질 때까지 본다"
+  },
+  "description": {
+    "en": "Every screen colour is proximity trickery: each pixel is a red, green, blue stripe too small to see. White lights all three; yellow leaves blue dark. Zoom in and the bars split into stripes.",
+    "ko": "모든 화면 색은 근접의 속임수다 — 각 픽셀은 분해되지 않는 빨강·초록·파랑 줄무늬다. 흰색은 셋 다 켜고 노랑은 파랑을 끈다. 확대하면 색 막대가 켜짐·꺼짐 줄무늬로 갈라진다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 6,
+  "category": "display-physics-intro",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [
+    "display-physics-intro/pixel-density-ppi"
+  ],
+  "see_also": [
+    "subpixel-rendering/subpixel-layout-zoom"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Poynton, Digital Video and HD 2e",
+      "section": "§24 (subpixels)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "foundations"
+  ],
+  "seo_keywords": [
+    "subpixel",
+    "RGB stripes",
+    "pixel",
+    "display",
+    "magnifier"
+  ],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "display-panel-physics/panel-backlight-edge-vs-array",
+  "title": {
+    "en": "Backlight: Edge vs Array",
+    "ko": "백라이트: 엣지 대 어레이"
+  },
+  "subtitle": {
+    "en": "an edge-lit LCD can't make a true black; a full-array zoned backlight can — but it blooms a halo around bright objects",
+    "ko": "엣지형 LCD는 진정한 검정을 못 낸다; 풀어레이 분할 백라이트는 가능하지만 밝은 물체 둘레에 후광이 번진다"
+  },
+  "description": {
+    "en": "An LCD blocks a backlight, never off. Edge-lit shares one light so darks glow grey; array dimming uses zones for deeper blacks, but a bright object blooms its zone. Raise the zones to shrink the halo.",
+    "ko": "LCD는 백라이트를 막을 뿐 끄지 못한다. 엣지형은 한 광원을 공유해 어두운 곳이 회색으로 빛나고, 풀어레이 로컬 디밍은 구역을 나눠 검정이 깊지만 작은 밝은 물체가 구역 전체를 켜 후광이 진다. 구역 수를 올려 후광을 줄인다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "display-panel-physics",
+  "layout": "A",
+  "prerequisites": [
+    "display-panel-physics/panel-ips-vs-tn-vs-va"
+  ],
+  "leads_to": [
+    "display-panel-physics/panel-response-time-overdrive"
+  ],
+  "see_also": [
+    "emerging-display-tech/miniled-local-dimming"
+  ],
+  "textbook_refs": [
+    {
+      "source": "FALD local dimming",
+      "section": "Mini-LED backlights"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "backlight",
+    "FALD",
+    "local dimming",
+    "blooming",
+    "Mini-LED"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

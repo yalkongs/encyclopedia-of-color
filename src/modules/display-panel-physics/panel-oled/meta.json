@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "display-panel-physics/panel-oled",
+  "title": {
+    "en": "OLED Emission Spectrum",
+    "ko": "OLED 발광 스펙트럼"
+  },
+  "subtitle": {
+    "en": "three organic emitters glow in broad bands — their sum is the white, and per-pixel emission means true blacks",
+    "ko": "세 유기 발광체가 넓은 대역으로 빛난다 — 합이 백색이며, 픽셀별 발광이라 진정한 검정이 된다"
+  },
+  "description": {
+    "en": "An OLED emits at the pixel, so a black pixel is simply off — near-infinite contrast. Each colour is a broad organic band; the three sum to white. Slide blue to warm or cool the white.",
+    "ko": "OLED는 픽셀에서 직접 발광해 검정 픽셀은 그냥 꺼짐이다 — 거의 무한 명암비. 각 색은 꽤 넓은 유기 대역이고, 셋의 합이 백색이며 균형이 색온도를 정한다. 파랑을 움직여 백색을 덥히거나 식힌다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 6,
+  "category": "display-panel-physics",
+  "layout": "A",
+  "prerequisites": [
+    "display-panel-physics/panel-crt-lcd"
+  ],
+  "leads_to": [
+    "display-panel-physics/panel-quantum-dot"
+  ],
+  "see_also": [
+    "planckian-radiation/photopic-scotopic"
+  ],
+  "textbook_refs": [
+    {
+      "source": "OLED emission spectra",
+      "section": "Display physics"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "OLED",
+    "emission spectrum",
+    "true black",
+    "display",
+    "white balance"
+  ],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

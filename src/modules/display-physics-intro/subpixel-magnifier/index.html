@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Subpixel Loupe — zoom into the screen until each pixel splits int…</title>
+  <meta name="description" content="Every screen colour is proximity trickery: each pixel is a red, green, blue stripe too small to see. White lights all three; yellow leaves blue dark. Zoom in and the bars split into stripes.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-physics-intro/subpixel-magnifier/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Subpixel Loupe">
+  <meta property="og:description"    content="Every screen colour is proximity trickery: each pixel is a red, green, blue stripe too small to see. White lights all three; yellow leaves blue dark. Zoom in and the bars split into stripes.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-physics-intro/subpixel-magnifier/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-physics-intro--subpixel-magnifier.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Subpixel Loupe.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Subpixel Loupe">
+  <meta name="twitter:description"   content="Every screen colour is proximity trickery: each pixel is a red, green, blue stripe too small to see. White lights all three; yellow leaves blue dark. Zoom in and the bars split into stripes.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-physics-intro--subpixel-magnifier.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Subpixel Loupe.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Subpixel Loupe","alternateName":"display-physics-intro/subpixel-magnifier","description":"Every screen colour is proximity trickery: each pixel is a red, green, blue stripe too small to see. White lights all three; yellow leaves blue dark. Zoom in and the bars split into stripes.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"subpixel, RGB stripes, pixel, display, magnifier","url":"https://encyclopedia-of-color.vercel.app/modules/display-physics-intro/subpixel-magnifier/","image":"https://encyclopedia-of-color.vercel.app/og/display-physics-intro--subpixel-magnifier.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-physics-intro/subpixel-magnifier">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Remember</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">The Subpixel Loupe</h1>
+      <p class="module-subtitle">zoom into the screen until each pixel splits into its three coloured lamps — red, green, blue</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Every colour on a screen is a lie of proximity: each pixel is really three tiny lamps — a red, a green, and a blue stripe — too small to resolve. White is all three at full; yellow is red and green lit with blue dark. Magnify enough and the illusion comes apart into stripes.
+        </p>
+        <div class="math-block" data-tex="\text{pixel} = (R\ \text{stripe},\ G\ \text{stripe},\ B\ \text{stripe})"></div>
+        <p class="zone-guide">
+          Raise the zoom. At life size the colour bars look solid; enlarged, each resolves into its lit and dark subpixel stripes. Notice white needs all three, while pure red leaves two stripes black.
+        </p>
+        <enc-slider id="zoom" label="Magnification" min="6" max="56" step="1" value="34" unit="px/px"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Subpixel magnifier"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton, Digital Video and HD §24 (subpixels)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

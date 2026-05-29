@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "display-panel-physics/panel-quantum-dot",
+  "title": {
+    "en": "Quantum Dot Emission",
+    "ko": "퀀텀닷 발광"
+  },
+  "subtitle": {
+    "en": "shrink the nanocrystal and its glow shifts blue — confinement tunes a razor-thin emission band that paints a wide gamut",
+    "ko": "나노결정을 줄이면 빛이 파랑으로 이동한다 — 가둠이 광색역을 칠하는 가느다란 발광 대역을 조율한다"
+  },
+  "description": {
+    "en": "A quantum dot is a tiny nanocrystal. Confining the electron in a smaller box raises its energy, so smaller dots emit bluer. The narrow band gives QD wide-gamut primaries. Slide the diameter.",
+    "ko": "퀀텀닷은 수 나노미터 반도체 결정이다. 전자를 더 작은 상자에 가두면 에너지가 올라 작은 점일수록 더 파랗게 발광한다. 대역이 매우 좁아 QD 디스플레이가 포화 광색역 원색을 낸다. 지름을 움직여 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 6,
+  "category": "display-panel-physics",
+  "layout": "A",
+  "prerequisites": [
+    "display-panel-physics/panel-oled"
+  ],
+  "leads_to": [
+    "display-panel-physics/panel-ips-vs-tn-vs-va"
+  ],
+  "see_also": [
+    "band-gap-materials"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Quantum confinement",
+      "section": "QD-LED display physics"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "quantum dot",
+    "QLED",
+    "confinement",
+    "emission",
+    "wide gamut"
+  ],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

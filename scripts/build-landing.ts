@@ -73,6 +73,16 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'color-harmony-generator':      { title: 'Harmony Generator',       sub: 'Domain 5 · OKLCH harmonies, Material 3, Radix, code export' },
   'data-viz-palettes':            { title: 'Data-Viz Palettes',       sub: 'Domain 5 · ColorBrewer, Viridis, Turbo, CVD-safe scales' },
   'typography-color-interaction': { title: 'Type & Colour',           sub: 'Domain 5 · contrast, fringing, dark mode, readability' },
+  // Domain 6
+  'display-physics-intro':        { title: 'Display Physics Intro',   sub: 'Domain 6 · subpixels, pixel density, refresh rate' },
+  'display-panel-physics':        { title: 'Display Panel Physics',   sub: 'Domain 6 · CRT, LCD, OLED, quantum dot, backlights' },
+  'subpixel-rendering':           { title: 'Subpixel Rendering',      sub: 'Domain 6 · stripe/PenTile layouts, ClearType' },
+  'gamma-eotf-calibration':       { title: 'Gamma & EOTF',            sub: 'Domain 6 · gamma curves, white-point, calibration' },
+  'hdr-pq-tone-mapping':          { title: 'HDR & Tone Mapping',      sub: 'Domain 6 · PQ, HLG, Reinhard/ACES/Hable operators' },
+  'blue-light-circadian':         { title: 'Blue Light & Circadian',  sub: 'Domain 6 · night shift, ipRGC, melatonin, the myth' },
+  'emerging-display-tech':        { title: 'Emerging Displays',       sub: 'Domain 6 · E-Ink, Mini-LED, microLED, projection, VR' },
+  'os-color-management':          { title: 'OS Colour Management',    sub: 'Domain 6 · ColorSync, ICM, browser and web colour' },
+  'display-measurement':          { title: 'Display Measurement',     sub: 'Domain 6 · ColorChecker, greyscale tracking, coverage' },
 };
 
 const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
@@ -209,12 +219,18 @@ async function main() {
     'apca-contrast-matcher', 'color-harmony-generator', 'data-viz-palettes',
     'typography-color-interaction',
   ];
-  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER];
+  const D6_ORDER = [
+    'display-physics-intro', 'display-panel-physics', 'subpixel-rendering',
+    'gamma-eotf-calibration', 'hdr-pq-tone-mapping', 'blue-light-circadian',
+    'emerging-display-tech', 'os-color-management', 'display-measurement',
+  ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
     ...D4_ORDER.filter((c) => byCategory.has(c)),
     ...D5_ORDER.filter((c) => byCategory.has(c)),
+    ...D6_ORDER.filter((c) => byCategory.has(c)),
     ...[...byCategory.keys()].filter((c) => !known.includes(c)).sort(),
   ];
 

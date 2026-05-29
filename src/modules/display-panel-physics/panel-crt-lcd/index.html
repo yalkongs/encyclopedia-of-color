@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CRT vs LCD: Light in Time — a CRT flashes each phosphor and lets it f…</title>
+  <meta name="description" content="A CRT flashes phosphors that decay in under a millisecond — an impulse display, flickery but crisp in motion. An LCD holds a steady backlight: flicker-free but blur-prone. Watch one pixel over time.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-crt-lcd/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CRT vs LCD: Light in Time">
+  <meta property="og:description"    content="A CRT flashes phosphors that decay in under a millisecond — an impulse display, flickery but crisp in motion. An LCD holds a steady backlight: flicker-free but blur-prone. Watch one pixel over time.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-crt-lcd/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-crt-lcd.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CRT vs LCD: Light in Time.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CRT vs LCD: Light in Time">
+  <meta name="twitter:description"   content="A CRT flashes phosphors that decay in under a millisecond — an impulse display, flickery but crisp in motion. An LCD holds a steady backlight: flicker-free but blur-prone. Watch one pixel over time.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-crt-lcd.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CRT vs LCD: Light in Time.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CRT vs LCD: Light in Time","alternateName":"display-panel-physics/panel-crt-lcd","description":"A CRT flashes phosphors that decay in under a millisecond — an impulse display, flickery but crisp in motion. An LCD holds a steady backlight: flicker-free but blur-prone. Watch one pixel over time.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CRT, LCD, phosphor, sample and hold, motion blur","url":"https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-crt-lcd/","image":"https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-crt-lcd.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-panel-physics/panel-crt-lcd">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CRT vs LCD: Light in Time</h1>
+      <p class="module-subtitle">a CRT flashes each phosphor and lets it fade; an LCD holds its light steady — two opposite ways to paint a frame</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A CRT scans an electron beam across phosphors that flash bright then decay in under a millisecond, so each point is dark most of the frame — an impulse display that flickers but has crisp motion. An LCD holds a steady backlight behind liquid-crystal shutters: a sample-and-hold display, flicker-free but prone to motion blur.
+        </p>
+        <div class="math-block" data-tex="\text{CRT}: \text{impulse} + e^{-t/\tau} \qquad \text{LCD}: \text{constant}"></div>
+        <p class="zone-guide">
+          Watch the light output of one pixel over time. The CRT spikes once per refresh and decays to black; the LCD sits at a flat level the whole frame. Toggle between them to compare the temporal profiles.
+        </p>
+        <enc-toggle id="type" label="Panel" options="crt,lcd" labels="CRT (impulse),LCD (hold)" value="crt"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CRT versus LCD temporal light output"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton, Digital Video and HD §24 (impulse vs sample-and-hold)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

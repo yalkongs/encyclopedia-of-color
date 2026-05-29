@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "display-panel-physics/panel-ips-vs-tn-vs-va",
+  "title": {
+    "en": "IPS · TN · VA Off-Axis",
+    "ko": "IPS·TN·VA 시야각"
+  },
+  "subtitle": {
+    "en": "tilt the screen and watch the panel type decide what survives — IPS holds, VA washes, TN inverts",
+    "ko": "화면을 기울이면 패널 종류가 무엇이 살아남는지 정한다 — IPS는 유지, VA는 바램, TN은 반전"
+  },
+  "description": {
+    "en": "LCD panels twist light differently off-axis. IPS holds colour and contrast; VA has deep blacks but washes off-axis; TN is fast but casts colour and inverts past ~50°. Pick a panel and tilt.",
+    "ko": "LCD 패널은 비스듬히 빛을 다르게 비튼다. IPS는 넓은 각도에서 색·명암을 유지하고, VA는 검정이 깊지만 비스듬히 감마가 바래며, TN은 빠르나 색이 끼고 ~50° 너머에서 반전한다. 패널을 골라 각도를 기울인다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 6,
+  "category": "display-panel-physics",
+  "layout": "A",
+  "prerequisites": [
+    "display-panel-physics/panel-quantum-dot"
+  ],
+  "leads_to": [
+    "display-panel-physics/panel-backlight-edge-vs-array"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "LCD panel technologies",
+      "section": "IPS / TN / VA"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "IPS",
+    "TN",
+    "VA",
+    "viewing angle",
+    "LCD"
+  ],
+  "estimated_hours": 9,
+  "status": "shipped"
+}

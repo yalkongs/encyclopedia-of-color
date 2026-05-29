@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Refresh Rate &amp; Motion — a moving object is only redrawn so often — hi…</title>
+  <meta name="description" content="A display shows motion as still frames. At 60 Hz a fast object jumps far between frames — judder. At 120 or 240 Hz it is sampled more finely. Switch the rate; the ghost trail tightens.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-physics-intro/refresh-rate-flicker/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Refresh Rate &amp; Motion">
+  <meta property="og:description"    content="A display shows motion as still frames. At 60 Hz a fast object jumps far between frames — judder. At 120 or 240 Hz it is sampled more finely. Switch the rate; the ghost trail tightens.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-physics-intro/refresh-rate-flicker/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-physics-intro--refresh-rate-flicker.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Refresh Rate &amp; Motion.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Refresh Rate &amp; Motion">
+  <meta name="twitter:description"   content="A display shows motion as still frames. At 60 Hz a fast object jumps far between frames — judder. At 120 or 240 Hz it is sampled more finely. Switch the rate; the ghost trail tightens.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-physics-intro--refresh-rate-flicker.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Refresh Rate &amp; Motion.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Refresh Rate & Motion","alternateName":"display-physics-intro/refresh-rate-flicker","description":"A display shows motion as still frames. At 60 Hz a fast object jumps far between frames — judder. At 120 or 240 Hz it is sampled more finely. Switch the rate; the ghost trail tightens.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"refresh rate, 120Hz, 240Hz, judder, motion","url":"https://encyclopedia-of-color.vercel.app/modules/display-physics-intro/refresh-rate-flicker/","image":"https://encyclopedia-of-color.vercel.app/og/display-physics-intro--refresh-rate-flicker.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-physics-intro/refresh-rate-flicker">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Refresh Rate & Motion</h1>
+      <p class="module-subtitle">a moving object is only redrawn so often — higher refresh rates leave tighter steps and smoother motion</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A display shows motion as a series of still frames. At 60 Hz a fast object jumps a long way between frames, so the eye tracks a smear of widely-spaced positions — judder. Double the rate to 120 or 240 Hz and the same motion is sampled more finely, closing the gaps.
+        </p>
+        <div class="math-block" data-tex="\Delta x = v / f_{\text{refresh}}"></div>
+        <p class="zone-guide">
+          The ghost trail marks where the object was on recent frames at the chosen rate. At 60 Hz the ghosts are far apart and steppy; at 240 Hz they crowd into a smooth streak. Switch the rate and watch the spacing tighten.
+        </p>
+        <enc-toggle id="hz" label="Refresh" options="60,120,240" labels="60 Hz,120 Hz,240 Hz" value="60"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Refresh rate and motion sampling"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton, Digital Video and HD §24 (temporal sampling)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

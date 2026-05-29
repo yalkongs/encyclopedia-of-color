@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "display-physics-intro/pixel-density-ppi",
+  "title": {
+    "en": "Pixels per Inch",
+    "ko": "인치당 픽셀"
+  },
+  "subtitle": {
+    "en": "the jaggies vanish as density rises — from a chunky old monitor to a phone where the grid disappears",
+    "ko": "밀도가 오르면 계단이 사라진다 — 투박한 옛 모니터에서 격자가 안 보이는 폰까지"
+  },
+  "description": {
+    "en": "Pixel density sets the grid's fineness. At 72 PPI a curve breaks into staircases; by 220 the eye cannot resolve pixels and a screen looks continuous. Slide the density to smooth the circle.",
+    "ko": "픽셀 밀도는 격자의 고움을 정한다. 72 PPI에선 곡선이 계단이 되고, 220쯤이면 눈이 단일 픽셀을 분해하지 못해 레티나는 연속처럼 보인다. 밀도를 움직여 같은 원과 획이 매끄러워지는 것을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 6,
+  "category": "display-physics-intro",
+  "layout": "A",
+  "prerequisites": [
+    "display-physics-intro/subpixel-magnifier"
+  ],
+  "leads_to": [
+    "display-physics-intro/refresh-rate-flicker"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Poynton, Digital Video and HD 2e",
+      "section": "§24 (resolution)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "foundations"
+  ],
+  "seo_keywords": [
+    "PPI",
+    "pixel density",
+    "retina",
+    "resolution",
+    "display"
+  ],
+  "estimated_hours": 7,
+  "status": "shipped"
+}

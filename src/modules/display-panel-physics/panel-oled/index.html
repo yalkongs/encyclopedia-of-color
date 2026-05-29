@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>OLED Emission Spectrum — three organic emitters glow in broad bands —…</title>
+  <meta name="description" content="An OLED emits at the pixel, so a black pixel is simply off — near-infinite contrast. Each colour is a broad organic band; the three sum to white. Slide blue to warm or cool the white.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-oled/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="OLED Emission Spectrum">
+  <meta property="og:description"    content="An OLED emits at the pixel, so a black pixel is simply off — near-infinite contrast. Each colour is a broad organic band; the three sum to white. Slide blue to warm or cool the white.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-oled/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-oled.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: OLED Emission Spectrum.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="OLED Emission Spectrum">
+  <meta name="twitter:description"   content="An OLED emits at the pixel, so a black pixel is simply off — near-infinite contrast. Each colour is a broad organic band; the three sum to white. Slide blue to warm or cool the white.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-oled.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: OLED Emission Spectrum.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"OLED Emission Spectrum","alternateName":"display-panel-physics/panel-oled","description":"An OLED emits at the pixel, so a black pixel is simply off — near-infinite contrast. Each colour is a broad organic band; the three sum to white. Slide blue to warm or cool the white.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"OLED, emission spectrum, true black, display, white balance","url":"https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-oled/","image":"https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-oled.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-panel-physics/panel-oled">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">OLED Emission Spectrum</h1>
+      <p class="module-subtitle">three organic emitters glow in broad bands — their sum is the white, and per-pixel emission means true blacks</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          An OLED makes light at the pixel — no backlight — so a black pixel is simply off, giving near-infinite contrast. Each colour comes from an organic emitter with a fairly broad band (tens of nanometres wide). The three bands add to white; their balance sets the colour temperature.
+        </p>
+        <div class="math-block" data-tex="S(\lambda) = R(\lambda) + G(\lambda) + b\cdot B(\lambda)"></div>
+        <p class="zone-guide">
+          The red, green, and blue emission bands are plotted with their sum. Slide the blue level to warm or cool the white. The bands are wide compared with quantum dots — which is why OLED gamut, though good, trails QD-LED.
+        </p>
+        <enc-slider id="blue" label="Blue emitter" min="40" max="160" step="1" value="100" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="OLED emission spectrum"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="OLED emission spectra; Poynton §24"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

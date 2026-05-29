@@ -1,0 +1,48 @@
+{
+  "schema_version": "v2",
+  "id": "display-physics-intro/refresh-rate-flicker",
+  "title": {
+    "en": "Refresh Rate & Motion",
+    "ko": "재생률과 움직임"
+  },
+  "subtitle": {
+    "en": "a moving object is only redrawn so often — higher refresh rates leave tighter steps and smoother motion",
+    "ko": "움직이는 물체는 정해진 횟수만큼만 다시 그려진다 — 재생률이 높을수록 단계가 촘촘하고 매끄럽다"
+  },
+  "description": {
+    "en": "A display shows motion as still frames. At 60 Hz a fast object jumps far between frames — judder. At 120 or 240 Hz it is sampled more finely. Switch the rate; the ghost trail tightens.",
+    "ko": "디스플레이는 움직임을 정지 프레임으로 보여준다. 60 Hz에선 빠른 물체가 프레임마다 멀리 뛰어 눈이 띄엄띄엄한 위치를 본다 — 저더. 120·240 Hz에선 더 촘촘히 표본화된다. 재생률을 바꿔 잔상 간격이 좁아지는 것을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 6,
+  "category": "display-physics-intro",
+  "layout": "A",
+  "prerequisites": [
+    "display-physics-intro/pixel-density-ppi"
+  ],
+  "leads_to": [],
+  "see_also": [
+    "display-panel-physics/panel-response-time-overdrive"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Poynton, Digital Video and HD 2e",
+      "section": "§24 (temporal sampling)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "foundations"
+  ],
+  "seo_keywords": [
+    "refresh rate",
+    "120Hz",
+    "240Hz",
+    "judder",
+    "motion"
+  ],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

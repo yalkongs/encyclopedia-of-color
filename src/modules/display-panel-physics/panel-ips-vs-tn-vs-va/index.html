@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>IPS · TN · VA Off-Axis — tilt the screen and watch the panel type dec…</title>
+  <meta name="description" content="LCD panels twist light differently off-axis. IPS holds colour and contrast; VA has deep blacks but washes off-axis; TN is fast but casts colour and inverts past ~50°. Pick a panel and tilt.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-ips-vs-tn-vs-va/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="IPS · TN · VA Off-Axis">
+  <meta property="og:description"    content="LCD panels twist light differently off-axis. IPS holds colour and contrast; VA has deep blacks but washes off-axis; TN is fast but casts colour and inverts past ~50°. Pick a panel and tilt.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-ips-vs-tn-vs-va/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-ips-vs-tn-vs-va.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: IPS · TN · VA Off-Axis.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="IPS · TN · VA Off-Axis">
+  <meta name="twitter:description"   content="LCD panels twist light differently off-axis. IPS holds colour and contrast; VA has deep blacks but washes off-axis; TN is fast but casts colour and inverts past ~50°. Pick a panel and tilt.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-ips-vs-tn-vs-va.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: IPS · TN · VA Off-Axis.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"IPS · TN · VA Off-Axis","alternateName":"display-panel-physics/panel-ips-vs-tn-vs-va","description":"LCD panels twist light differently off-axis. IPS holds colour and contrast; VA has deep blacks but washes off-axis; TN is fast but casts colour and inverts past ~50°. Pick a panel and tilt.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"IPS, TN, VA, viewing angle, LCD","url":"https://encyclopedia-of-color.vercel.app/modules/display-panel-physics/panel-ips-vs-tn-vs-va/","image":"https://encyclopedia-of-color.vercel.app/og/display-panel-physics--panel-ips-vs-tn-vs-va.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="display-panel-physics/panel-ips-vs-tn-vs-va">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.6">D6 Display</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">IPS · TN · VA Off-Axis</h1>
+      <p class="module-subtitle">tilt the screen and watch the panel type decide what survives — IPS holds, VA washes, TN inverts</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Liquid-crystal panels twist light differently off-axis. IPS rotates crystals in-plane, so colour and contrast stay stable at wide angles — at the cost of slower response and "IPS glow". TN is fast and cheap but shifts colour badly and even inverts lightness when viewed from below. VA has the deepest blacks but its gamma shifts off-axis, washing shadows.
+        </p>
+        <div class="math-block" data-tex="\text{IPS: stable} \;|\; \text{VA: gamma shift} \;|\; \text{TN: colour shift + inversion}"></div>
+        <p class="zone-guide">
+          Choose a panel and tilt the viewing angle. The test patches degrade by the panel's signature: IPS barely moves, VA's shadows lift and wash, TN casts colour and finally inverts. The same content, three different off-axis fates.
+        </p>
+        <enc-slider id="ang" label="Viewing angle" min="0" max="80" step="1" value="55" unit="°"></enc-slider>
+        <enc-toggle id="panel" label="Panel" options="ips,va,tn" labels="IPS,VA,TN" value="tn"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="IPS, TN, VA viewing angle behaviour"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton §24; LCD panel technologies"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
