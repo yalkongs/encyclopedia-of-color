@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>The Yule-Nielsen n-Factor — add one exponent for light scattering in…</title>
+  <meta name="description" content="Yule-Nielsen adds an exponent n for light spreading under the ink. n = 1 is Murray-Davies; tuned to the paper true scatter, larger n strips the optical gain and recovers the real mechanical dot area.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/yule-nielsen-n/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="The Yule-Nielsen n-Factor">
+  <meta property="og:description"    content="Yule-Nielsen adds an exponent n for light spreading under the ink. n = 1 is Murray-Davies; tuned to the paper true scatter, larger n strips the optical gain and recovers the real mechanical dot area.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/yule-nielsen-n/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--yule-nielsen-n.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: The Yule-Nielsen n-Factor.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="The Yule-Nielsen n-Factor">
+  <meta name="twitter:description"   content="Yule-Nielsen adds an exponent n for light spreading under the ink. n = 1 is Murray-Davies; tuned to the paper true scatter, larger n strips the optical gain and recovers the real mechanical dot area.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--yule-nielsen-n.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: The Yule-Nielsen n-Factor.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"The Yule-Nielsen n-Factor","alternateName":"dot-gain-absorbance/yule-nielsen-n","description":"Yule-Nielsen adds an exponent n for light spreading under the ink. n = 1 is Murray-Davies; tuned to the paper true scatter, larger n strips the optical gain and recovers the real mechanical dot area.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Yule-Nielsen, n-factor, dot gain, optical gain, reflectance","url":"https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/yule-nielsen-n/","image":"https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--yule-nielsen-n.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dot-gain-absorbance/yule-nielsen-n">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">The Yule-Nielsen n-Factor</h1>
+      <p class="module-subtitle">add one exponent for light scattering in the paper and the measured dot area swings back from optical illusion to mechanical truth</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Yule and Nielsen patched Murray-Davies with an empirical exponent n that models how far light spreads under the ink before it leaves the paper. n = 1 is Murray-Davies (no spread); larger n removes more optical gain. Tuned to the paper's true scatter, it recovers the real mechanical dot area.
+        </p>
+        <div class="math-block" data-tex="a = \dfrac{1 - (R_t/R_p)^{1/n}}{1 - (R_s/R_p)^{1/n}}"></div>
+        <p class="zone-guide">
+          The grey curve is the mechanical truth; the faint red is Murray-Davies (n = 1), overreading. Slide n upward and the gold Yule-Nielsen curve drops onto the truth — exactly when n matches the paper's scatter factor.
+        </p>
+        <enc-slider id="n" label="Yule-Nielsen n" min="1" max="5" step="0.1" value="1.6" unit=""></enc-slider>
+        <enc-slider id="ntrue" label="Paper scatter (true n)" min="1" max="4" step="0.1" value="2.6" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Yule-Nielsen n-factor correction"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Yule & Nielsen 1951; Field §6"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

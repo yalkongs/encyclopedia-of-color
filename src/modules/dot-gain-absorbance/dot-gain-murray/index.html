@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Murray-Davies Dot Area — measure a tint's reflectance and the Murray-…</title>
+  <meta name="description" content="Murray-Davies converts a tint reflectance to dot area against paper and solid. But it assumes no light scatter, so it counts the paper optical gain as ink and overreads the true mechanical area.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/dot-gain-murray/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Murray-Davies Dot Area">
+  <meta property="og:description"    content="Murray-Davies converts a tint reflectance to dot area against paper and solid. But it assumes no light scatter, so it counts the paper optical gain as ink and overreads the true mechanical area.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/dot-gain-murray/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--dot-gain-murray.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Murray-Davies Dot Area.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Murray-Davies Dot Area">
+  <meta name="twitter:description"   content="Murray-Davies converts a tint reflectance to dot area against paper and solid. But it assumes no light scatter, so it counts the paper optical gain as ink and overreads the true mechanical area.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--dot-gain-murray.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Murray-Davies Dot Area.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Murray-Davies Dot Area","alternateName":"dot-gain-absorbance/dot-gain-murray","description":"Murray-Davies converts a tint reflectance to dot area against paper and solid. But it assumes no light scatter, so it counts the paper optical gain as ink and overreads the true mechanical area.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Murray-Davies, dot area, densitometer, optical gain, halftone","url":"https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/dot-gain-murray/","image":"https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--dot-gain-murray.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dot-gain-absorbance/dot-gain-murray">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Murray-Davies Dot Area</h1>
+      <p class="module-subtitle">measure a tint's reflectance and the Murray-Davies formula returns its dot area — but it blames ink for darkening the paper itself does</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A densitometer reads a tint's reflectance and Murray-Davies converts it to a fractional dot area against paper and solid. But part of a halftone's darkness is optical: light enters the paper, scatters under an ink dot, and is absorbed on the way out. Murray-Davies (which assumes no scatter) counts that optical gain as extra ink — so it overreads the real mechanical dot area.
+        </p>
+        <div class="math-block" data-tex="a_{MD} = \dfrac{1 - R_t/R_p}{1 - R_s/R_p}"></div>
+        <p class="zone-guide">
+          The grey curve is the true mechanical dot area; the red curve is what Murray-Davies measures. Raise the paper's light scatter or the solid ink density and the gap widens — pure optical gain that the formula mistakes for fatter dots.
+        </p>
+        <enc-slider id="scatter" label="Paper light scatter" min="1" max="35" step="1" value="20" unit=""></enc-slider>
+        <enc-slider id="dens" label="Solid ink density" min="90" max="180" step="5" value="140" unit=" cD"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Murray-Davies dot area measurement"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Field §6; Murray-Davies"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

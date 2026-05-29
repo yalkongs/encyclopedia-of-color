@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "dot-gain-absorbance/yule-nielsen-n",
+  "title": {
+    "en": "The Yule-Nielsen n-Factor",
+    "ko": "율-닐슨 n 인자"
+  },
+  "subtitle": {
+    "en": "add one exponent for light scattering in the paper and the measured dot area swings back from optical illusion to mechanical truth",
+    "ko": "종이 속 빛 산란을 나타내는 지수 하나를 더하면 측정 도트 면적이 광학적 착시에서 기계적 진실로 돌아온다"
+  },
+  "description": {
+    "en": "Yule-Nielsen adds an exponent n for light spreading under the ink. n = 1 is Murray-Davies; tuned to the paper true scatter, larger n strips the optical gain and recovers the real mechanical dot area.",
+    "ko": "율-닐슨은 잉크 아래 빛 번짐을 나타내는 지수 n을 더한다. n = 1은 머레이-데이비스이며, 종이의 실제 산란에 맞추면 큰 n이 광학적 게인을 걷어내 실제 기계적 도트 면적을 복원한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "dot-gain-absorbance",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Yule & Nielsen 1951",
+      "section": "n-factor"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Yule-Nielsen",
+    "n-factor",
+    "dot gain",
+    "optical gain",
+    "reflectance"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

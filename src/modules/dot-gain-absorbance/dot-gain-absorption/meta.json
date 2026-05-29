@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "dot-gain-absorbance/dot-gain-absorption",
+  "title": {
+    "en": "Dot Gain: Ink Into Paper",
+    "ko": "도트 게인: 종이로 스며드는 잉크"
+  },
+  "subtitle": {
+    "en": "a halftone dot prints bigger than it was sent — ink wicks into the fibres by capillary action, most of all at the midtones",
+    "ko": "망점은 보낸 것보다 크게 인쇄된다 — 잉크가 모세관 작용으로 섬유에 스며들며, 중간톤에서 가장 심하다"
+  },
+  "description": {
+    "en": "Ink wicks sideways into paper fibres by capillary action, so every halftone dot prints larger than sent. The tone-value increase peaks near the midtones and grows with how absorbent the stock is.",
+    "ko": "잉크가 모세관 작용으로 종이 섬유에 옆으로 번져, 모든 망점이 보낸 것보다 크게 인쇄된다. 톤값 증가는 중간톤에서 정점을 이루고, 종이가 흡수성일수록 커진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "dot-gain-absorbance",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§7.2"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "dot gain",
+    "TVI",
+    "capillary",
+    "paper",
+    "halftone"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

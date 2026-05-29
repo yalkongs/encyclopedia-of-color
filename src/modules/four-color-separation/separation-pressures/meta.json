@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "four-color-separation/separation-pressures",
+  "title": {
+    "en": "Registration & Trapping",
+    "ko": "정합과 트래핑"
+  },
+  "subtitle": {
+    "en": "when one plate prints a hair off-register, white slivers open between colours — trapping deliberately overlaps them to hide the gap",
+    "ko": "한 도판이 머리카락만큼 어긋나면 색 사이에 흰 틈이 벌어진다 — 트래핑은 일부러 겹쳐 그 틈을 숨긴다"
+  },
+  "description": {
+    "en": "Each ink prints on a separate pass and must register precisely. When a plate drifts, a white sliver opens between colours; trapping spreads one colour under its neighbour to hide a small misregister.",
+    "ko": "각 잉크는 따로 인쇄되어 정밀히 정합돼야 한다. 한 도판이 어긋나면 색 사이에 흰 틈이 벌어진다. 트래핑은 한 색을 이웃 아래로 펼쳐, 작은 정합 오차를 숨긴다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "four-color-separation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§5"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "registration",
+    "trapping",
+    "misregister",
+    "CMYK",
+    "prepress"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

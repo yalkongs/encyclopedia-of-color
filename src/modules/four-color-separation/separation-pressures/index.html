@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Registration &amp; Trapping — when one plate prints a hair off-register,…</title>
+  <meta name="description" content="Each ink prints on a separate pass and must register precisely. When a plate drifts, a white sliver opens between colours; trapping spreads one colour under its neighbour to hide a small misregister.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/four-color-separation/separation-pressures/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Registration &amp; Trapping">
+  <meta property="og:description"    content="Each ink prints on a separate pass and must register precisely. When a plate drifts, a white sliver opens between colours; trapping spreads one colour under its neighbour to hide a small misregister.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/four-color-separation/separation-pressures/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/four-color-separation--separation-pressures.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Registration &amp; Trapping.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Registration &amp; Trapping">
+  <meta name="twitter:description"   content="Each ink prints on a separate pass and must register precisely. When a plate drifts, a white sliver opens between colours; trapping spreads one colour under its neighbour to hide a small misregister.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/four-color-separation--separation-pressures.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Registration &amp; Trapping.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Registration & Trapping","alternateName":"four-color-separation/separation-pressures","description":"Each ink prints on a separate pass and must register precisely. When a plate drifts, a white sliver opens between colours; trapping spreads one colour under its neighbour to hide a small misregister.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"registration, trapping, misregister, CMYK, prepress","url":"https://encyclopedia-of-color.vercel.app/modules/four-color-separation/separation-pressures/","image":"https://encyclopedia-of-color.vercel.app/og/four-color-separation--separation-pressures.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="four-color-separation/separation-pressures">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Registration & Trapping</h1>
+      <p class="module-subtitle">when one plate prints a hair off-register, white slivers open between colours — trapping deliberately overlaps them to hide the gap</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Each ink prints on a separate pass, and the plates must register to a fraction of a millimetre. When one drifts, the boundary between two colours either opens a white sliver or darkens into an overlap. Trapping is the prepress fix: one colour is spread slightly under its neighbour so a small misregister never exposes the paper.
+        </p>
+        <div class="math-block" data-tex="\text{trap width} \gtrsim \text{expected misregister}"></div>
+        <p class="zone-guide">
+          Push the cyan plate off-register and watch a white gap crack open along the seam and a black keyline drift off its fill. Switch trapping on — the colours now overlap just enough that the same shift no longer shows white.
+        </p>
+        <enc-slider id="offset" label="Misregistration" min="0" max="9" step="1" value="4" unit=" px"></enc-slider>
+        <enc-toggle id="trap" label="Trapping" options="off,on" labels="off,on" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Plate registration and trapping"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §5; registration and trapping"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

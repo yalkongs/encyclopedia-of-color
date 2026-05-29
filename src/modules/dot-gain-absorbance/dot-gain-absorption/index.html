@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Dot Gain: Ink Into Paper — a halftone dot prints bigger than it was s…</title>
+  <meta name="description" content="Ink wicks sideways into paper fibres by capillary action, so every halftone dot prints larger than sent. The tone-value increase peaks near the midtones and grows with how absorbent the stock is.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/dot-gain-absorption/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Dot Gain: Ink Into Paper">
+  <meta property="og:description"    content="Ink wicks sideways into paper fibres by capillary action, so every halftone dot prints larger than sent. The tone-value increase peaks near the midtones and grows with how absorbent the stock is.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/dot-gain-absorption/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--dot-gain-absorption.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Dot Gain: Ink Into Paper.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Dot Gain: Ink Into Paper">
+  <meta name="twitter:description"   content="Ink wicks sideways into paper fibres by capillary action, so every halftone dot prints larger than sent. The tone-value increase peaks near the midtones and grows with how absorbent the stock is.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--dot-gain-absorption.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Dot Gain: Ink Into Paper.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Dot Gain: Ink Into Paper","alternateName":"dot-gain-absorbance/dot-gain-absorption","description":"Ink wicks sideways into paper fibres by capillary action, so every halftone dot prints larger than sent. The tone-value increase peaks near the midtones and grows with how absorbent the stock is.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"dot gain, TVI, capillary, paper, halftone","url":"https://encyclopedia-of-color.vercel.app/modules/dot-gain-absorbance/dot-gain-absorption/","image":"https://encyclopedia-of-color.vercel.app/og/dot-gain-absorbance--dot-gain-absorption.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dot-gain-absorbance/dot-gain-absorption">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Dot Gain: Ink Into Paper</h1>
+      <p class="module-subtitle">a halftone dot prints bigger than it was sent — ink wicks into the fibres by capillary action, most of all at the midtones</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          As ink meets paper it spreads: capillary action pulls it sideways into the fibres, so every dot grows beyond its nominal size. The extra area is largest where dots have the most perimeter — around the midtones — and grows with how absorbent the stock is. Coated paper holds the ink; newsprint drinks it.
+        </p>
+        <div class="math-block" data-tex="a_{phys} = a_{nom} + g\cdot 4\,a_{nom}(1-a_{nom})"></div>
+        <p class="zone-guide">
+          Pick a paper and a nominal tint. The dashed ring is the dot you sent; the filled disc is what actually prints. The curve on the right is the tone-value-increase: zero at the ends, peaking near 50%, taller on thirstier paper.
+        </p>
+        <enc-slider id="paper" label="Paper absorbency" min="0" max="100" step="1" value="45" unit="%"></enc-slider>
+        <enc-slider id="tint" label="Nominal tint" min="5" max="95" step="1" value="50" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Mechanical dot gain from ink absorption"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §7.2; mechanical dot gain"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

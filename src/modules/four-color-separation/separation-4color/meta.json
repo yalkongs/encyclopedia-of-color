@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "four-color-separation/separation-4color",
+  "title": {
+    "en": "Four-Colour Separation",
+    "ko": "4도 분판"
+  },
+  "subtitle": {
+    "en": "a full-colour image is printed from four single-ink plates — cyan, magenta, yellow, and black — each a halftone on its own screen angle",
+    "ko": "풀컬러 이미지는 네 단색 도판 — 사이언·마젠타·옐로·블랙 — 으로 인쇄되며, 각각 자기 스크린 각도의 망점이다"
+  },
+  "description": {
+    "en": "A full-colour image prints from four single-ink plates — cyan, magenta, yellow, black — each a halftone on its own screen angle. Isolate any plate to see which inks carry which colours.",
+    "ko": "풀컬러 이미지는 네 단색 도판 — 사이언·마젠타·옐로·블랙 — 으로 인쇄되며 각각 자기 스크린 각도의 망점이다. 도판을 분리해 어떤 잉크가 어떤 색을 담는지 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 7,
+  "category": "four-color-separation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Field",
+      "section": "§5"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "CMYK",
+    "separation",
+    "halftone",
+    "plates",
+    "prepress"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

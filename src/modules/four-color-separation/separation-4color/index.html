@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Four-Colour Separation — a full-colour image is printed from four sin…</title>
+  <meta name="description" content="A full-colour image prints from four single-ink plates — cyan, magenta, yellow, black — each a halftone on its own screen angle. Isolate any plate to see which inks carry which colours.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/four-color-separation/separation-4color/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Four-Colour Separation">
+  <meta property="og:description"    content="A full-colour image prints from four single-ink plates — cyan, magenta, yellow, black — each a halftone on its own screen angle. Isolate any plate to see which inks carry which colours.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/four-color-separation/separation-4color/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/four-color-separation--separation-4color.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Four-Colour Separation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Four-Colour Separation">
+  <meta name="twitter:description"   content="A full-colour image prints from four single-ink plates — cyan, magenta, yellow, black — each a halftone on its own screen angle. Isolate any plate to see which inks carry which colours.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/four-color-separation--separation-4color.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Four-Colour Separation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Four-Colour Separation","alternateName":"four-color-separation/separation-4color","description":"A full-colour image prints from four single-ink plates — cyan, magenta, yellow, black — each a halftone on its own screen angle. Isolate any plate to see which inks carry which colours.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CMYK, separation, halftone, plates, prepress","url":"https://encyclopedia-of-color.vercel.app/modules/four-color-separation/separation-4color/","image":"https://encyclopedia-of-color.vercel.app/og/four-color-separation--separation-4color.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="four-color-separation/separation-4color">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Four-Colour Separation</h1>
+      <p class="module-subtitle">a full-colour image is printed from four single-ink plates — cyan, magenta, yellow, and black — each a halftone on its own screen angle</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          To print colour, the image is separated into four ink channels. Cyan, magenta, and yellow subtract red, green, and blue; black (K) deepens shadows and sharpens text. Each plate prints as a halftone on its own angle (C 15°, K 45°, M 75°, Y 90°) so the four overlay into a rosette rather than a moiré.
+        </p>
+        <div class="math-block" data-tex="\text{RGB} \to (C,M,Y) \to K=\min(C,M,Y)\;\text{[GCR]}"></div>
+        <p class="zone-guide">
+          Isolate each plate to see which inks carry which colours — magenta and yellow build the reds, cyan and yellow the greens — then return to the composite. This is a simple GCR; production prepress uses tuned black-generation curves and ink limits.
+        </p>
+        <enc-toggle id="view" label="Plate" options="composite,c,m,y,k" labels="composite,cyan,magenta,yellow,black" value="composite"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CMYK four-colour separation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Field §5; CMYK separation"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

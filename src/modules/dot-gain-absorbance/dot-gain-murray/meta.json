@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "dot-gain-absorbance/dot-gain-murray",
+  "title": {
+    "en": "Murray-Davies Dot Area",
+    "ko": "머레이-데이비스 도트 면적"
+  },
+  "subtitle": {
+    "en": "measure a tint's reflectance and the Murray-Davies formula returns its dot area — but it blames ink for darkening the paper itself does",
+    "ko": "농담의 반사율을 재면 머레이-데이비스 공식이 도트 면적을 돌려준다 — 그러나 종이가 만든 어두움을 잉크 탓으로 돌린다"
+  },
+  "description": {
+    "en": "Murray-Davies converts a tint reflectance to dot area against paper and solid. But it assumes no light scatter, so it counts the paper optical gain as ink and overreads the true mechanical area.",
+    "ko": "머레이-데이비스는 농담의 반사율을 종이·솔리드 기준 도트 면적으로 바꾼다. 그러나 빛 산란이 없다고 가정해, 종이의 광학적 게인을 잉크로 세어 실제 기계적 도트 면적을 과대평가한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "dot-gain-absorbance",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Field",
+      "section": "§6"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Murray-Davies",
+    "dot area",
+    "densitometer",
+    "optical gain",
+    "halftone"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
