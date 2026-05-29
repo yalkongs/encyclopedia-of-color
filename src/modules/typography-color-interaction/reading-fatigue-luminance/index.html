@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Background Luminance &amp; Fatigue — comfortable reading isn't maximum co…</title>
+  <meta name="description" content="Eye strain comes less from contrast than luminance mismatch — a bright page in a dim room glares, a dim page in a bright room forces re-adaptation. Set luminance and room; comfort peaks near ambient.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/reading-fatigue-luminance/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Background Luminance &amp; Fatigue">
+  <meta property="og:description"    content="Eye strain comes less from contrast than luminance mismatch — a bright page in a dim room glares, a dim page in a bright room forces re-adaptation. Set luminance and room; comfort peaks near ambient.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/reading-fatigue-luminance/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--reading-fatigue-luminance.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Background Luminance &amp; Fatigue.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Background Luminance &amp; Fatigue">
+  <meta name="twitter:description"   content="Eye strain comes less from contrast than luminance mismatch — a bright page in a dim room glares, a dim page in a bright room forces re-adaptation. Set luminance and room; comfort peaks near ambient.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--reading-fatigue-luminance.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Background Luminance &amp; Fatigue.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Background Luminance & Fatigue","alternateName":"typography-color-interaction/reading-fatigue-luminance","description":"Eye strain comes less from contrast than luminance mismatch — a bright page in a dim room glares, a dim page in a bright room forces re-adaptation. Set luminance and room; comfort peaks near ambient.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"reading fatigue, luminance, glare, eye strain, ambient","url":"https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/reading-fatigue-luminance/","image":"https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--reading-fatigue-luminance.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="typography-color-interaction/reading-fatigue-luminance">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Background Luminance & Fatigue</h1>
+      <p class="module-subtitle">comfortable reading isn't maximum contrast — the page should roughly match the room, or the eye keeps re-adapting</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Eye strain comes less from contrast than from luminance mismatch. A blazing-white page in a dim room glares; a dim page in a bright room forces the pupil to keep re-adapting between screen and surroundings. The restful target is a background luminance near the ambient level, with contrast kept adequate.
+        </p>
+        <div class="math-block" data-tex="\text{comfort} \approx |L_{bg} - L_{ambient}| \to 0"></div>
+        <p class="zone-guide">
+          Set the page background luminance and the room. The passage stays readable (text tracks the background), but the comfort gauge peaks only when the page sits near the ambient level — glare at one extreme, adaptation strain at the other.
+        </p>
+        <enc-slider id="bg" label="Page luminance" min="3" max="100" step="1" value="96" unit="%"></enc-slider>
+        <enc-toggle id="amb" label="Room" options="bright,dim" labels="bright room,dim room" value="bright"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Background luminance and reading fatigue"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Reading ergonomics; ambient-matched display luminance"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

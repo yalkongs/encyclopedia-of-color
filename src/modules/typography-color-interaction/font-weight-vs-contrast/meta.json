@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "typography-color-interaction/font-weight-vs-contrast",
+  "title": {
+    "en": "Weight Buys Contrast",
+    "ko": "굵기가 대비를 산다"
+  },
+  "subtitle": {
+    "en": "thin type needs strong contrast; heavy type can read at a fraction of it — the stroke width does some of the work",
+    "ko": "얇은 글자는 강한 대비가 필요하고 굵은 글자는 그 일부로도 읽힌다 — 획 두께가 일을 거든다"
+  },
+  "description": {
+    "en": "Legibility is contrast and stroke width together. A hairline needs high APCA Lc; a bold reads at far less. Lower the contrast — thin weights fail first, heavy ones hold.",
+    "ko": "가독성은 대비와 획 두께가 함께 정한다. 가는 굵기는 높은 APCA Lc가 필요하지만 볼드는 훨씬 낮아도 읽힌다 — 잉크가 더 닿기 때문. 대비를 낮추면 얇은 굵기부터 실패한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "typography-color-interaction",
+  "layout": "A",
+  "prerequisites": [
+    "apca-contrast-matcher/apca-font-matrix"
+  ],
+  "leads_to": [
+    "typography-color-interaction/anti-alias-fringing"
+  ],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "APCA (WCAG 3 draft)",
+      "section": "Weight, size, contrast"
+    }
+  ],
+  "standards": [
+    "WCAG 3 (draft)"
+  ],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "font weight",
+    "contrast",
+    "APCA",
+    "legibility",
+    "typography"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

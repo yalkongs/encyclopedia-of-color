@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Weight Buys Contrast — thin type needs strong contrast; heavy type ca…</title>
+  <meta name="description" content="Legibility is contrast and stroke width together. A hairline needs high APCA Lc; a bold reads at far less. Lower the contrast — thin weights fail first, heavy ones hold.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/font-weight-vs-contrast/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Weight Buys Contrast">
+  <meta property="og:description"    content="Legibility is contrast and stroke width together. A hairline needs high APCA Lc; a bold reads at far less. Lower the contrast — thin weights fail first, heavy ones hold.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/font-weight-vs-contrast/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--font-weight-vs-contrast.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Weight Buys Contrast.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Weight Buys Contrast">
+  <meta name="twitter:description"   content="Legibility is contrast and stroke width together. A hairline needs high APCA Lc; a bold reads at far less. Lower the contrast — thin weights fail first, heavy ones hold.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--font-weight-vs-contrast.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Weight Buys Contrast.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Weight Buys Contrast","alternateName":"typography-color-interaction/font-weight-vs-contrast","description":"Legibility is contrast and stroke width together. A hairline needs high APCA Lc; a bold reads at far less. Lower the contrast — thin weights fail first, heavy ones hold.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"font weight, contrast, APCA, legibility, typography","url":"https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/font-weight-vs-contrast/","image":"https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--font-weight-vs-contrast.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="typography-color-interaction/font-weight-vs-contrast">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Weight Buys Contrast</h1>
+      <p class="module-subtitle">thin type needs strong contrast; heavy type can read at a fraction of it — the stroke width does some of the work</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Contrast is not the whole story of legibility — stroke width matters too. A hairline weight needs high APCA Lc to survive; a bold weight stays readable at far lower contrast because more ink reaches the eye. APCA encodes this: the same Lc clears a smaller minimum size as weight rises.
+        </p>
+        <div class="math-block" data-tex="\text{legible} = f(L_c,\ \text{weight},\ \text{size})"></div>
+        <p class="zone-guide">
+          Set the text-vs-background contrast. Each weight is shown live with a pass/fail badge at a fixed body size — watch the thin weights fail first as you lower the contrast, while the heavy ones hold on.
+        </p>
+        <enc-slider id="lc" label="Text lightness" min="0" max="100" step="1" value="55"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Font weight versus contrast"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="APCA (WCAG 3 draft); font weight and contrast"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

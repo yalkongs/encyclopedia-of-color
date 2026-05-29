@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Dyslexia-Friendly Tints — stark black on pure white can shimmer for s…</title>
+  <meta name="description" content="For dyslexia and visual stress, stark black-on-white can make text shimmer. BDA guidance: avoid pure white and black — a cream or pastel tint with dark-grey ink eases it. Preference is individual.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/dyslexia-friendly-tints/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Dyslexia-Friendly Tints">
+  <meta property="og:description"    content="For dyslexia and visual stress, stark black-on-white can make text shimmer. BDA guidance: avoid pure white and black — a cream or pastel tint with dark-grey ink eases it. Preference is individual.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/dyslexia-friendly-tints/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--dyslexia-friendly-tints.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Dyslexia-Friendly Tints.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Dyslexia-Friendly Tints">
+  <meta name="twitter:description"   content="For dyslexia and visual stress, stark black-on-white can make text shimmer. BDA guidance: avoid pure white and black — a cream or pastel tint with dark-grey ink eases it. Preference is individual.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--dyslexia-friendly-tints.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Dyslexia-Friendly Tints.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Dyslexia-Friendly Tints","alternateName":"typography-color-interaction/dyslexia-friendly-tints","description":"For dyslexia and visual stress, stark black-on-white can make text shimmer. BDA guidance: avoid pure white and black — a cream or pastel tint with dark-grey ink eases it. Preference is individual.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"dyslexia, visual stress, tinted background, readability, Irlen","url":"https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/dyslexia-friendly-tints/","image":"https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--dyslexia-friendly-tints.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="typography-color-interaction/dyslexia-friendly-tints">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Dyslexia-Friendly Tints</h1>
+      <p class="module-subtitle">stark black on pure white can shimmer for some readers — a soft cream or pastel tint and dark-grey ink calm the page</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          For readers with dyslexia or visual stress (Meares-Irlen), maximum black-on-white contrast can make text appear to shimmer, swirl, or crowd. Guidance from the British Dyslexia Association is to avoid pure white backgrounds and pure black text: a low-saturation cream or pastel tint with dark-grey ink reduces the glare without losing legibility.
+        </p>
+        <div class="math-block" data-tex="\text{pure \#000 on \#fff} \to \text{dark-grey on soft tint}"></div>
+        <p class="zone-guide">
+          Step through the tints. The passage stays the same dark-grey ink; only the page colour changes. There is no single best tint — preference is individual — but moving off stark white is the common first step.
+        </p>
+        <enc-slider id="tint" label="Page tint" min="0" max="6" step="1" value="1"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Dyslexia-friendly background tints"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="British Dyslexia Association — Dyslexia Style Guide"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

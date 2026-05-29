@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Subpixel Colour Fringing — ClearType sharpens text by lighting indivi…</title>
+  <meta name="description" content="An LCD pixel is three R, G, B stripes. ClearType samples each to triple resolution, but an edge mid-pixel gives the stripes different coverage, tinting the boundary red and blue. Compare greyscale AA.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/anti-alias-fringing/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Subpixel Colour Fringing">
+  <meta property="og:description"    content="An LCD pixel is three R, G, B stripes. ClearType samples each to triple resolution, but an edge mid-pixel gives the stripes different coverage, tinting the boundary red and blue. Compare greyscale AA.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/anti-alias-fringing/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--anti-alias-fringing.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Subpixel Colour Fringing.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Subpixel Colour Fringing">
+  <meta name="twitter:description"   content="An LCD pixel is three R, G, B stripes. ClearType samples each to triple resolution, but an edge mid-pixel gives the stripes different coverage, tinting the boundary red and blue. Compare greyscale AA.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--anti-alias-fringing.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Subpixel Colour Fringing.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Subpixel Colour Fringing","alternateName":"typography-color-interaction/anti-alias-fringing","description":"An LCD pixel is three R, G, B stripes. ClearType samples each to triple resolution, but an edge mid-pixel gives the stripes different coverage, tinting the boundary red and blue. Compare greyscale AA.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ClearType, subpixel, anti-aliasing, color fringe, LCD","url":"https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/anti-alias-fringing/","image":"https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--anti-alias-fringing.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="typography-color-interaction/anti-alias-fringing">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Subpixel Colour Fringing</h1>
+      <p class="module-subtitle">ClearType sharpens text by lighting individual R, G, B subpixels — and pays for it with faint coloured edges</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          An LCD pixel is three vertical stripes — red, green, blue. Subpixel anti-aliasing (ClearType) treats each stripe as its own sample, tripling horizontal resolution for sharper stems. But where an edge lands mid-pixel, the three stripes get different coverage, so the boundary tints: red on one side, blue on the other.
+        </p>
+        <div class="math-block" data-tex="\text{R, G, B coverage differ} \Rightarrow \text{coloured fringe}"></div>
+        <p class="zone-guide">
+          Nudge the black stem across the subpixel grid and switch between plain greyscale anti-aliasing and subpixel. Greyscale stays neutral but softer; subpixel is crisper but its edges shimmer red and blue as it moves.
+        </p>
+        <enc-slider id="pos" label="Edge position" min="0" max="100" step="1" value="50" unit="%"></enc-slider>
+        <enc-toggle id="mode" label="Anti-alias" options="subpixel,greyscale" labels="subpixel,greyscale" value="subpixel"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Subpixel anti-aliasing colour fringes"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Poynton, Digital Video and HD §24 (subpixel rendering)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

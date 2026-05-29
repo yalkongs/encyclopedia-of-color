@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "typography-color-interaction/anti-alias-fringing",
+  "title": {
+    "en": "Subpixel Colour Fringing",
+    "ko": "서브픽셀 색 번짐"
+  },
+  "subtitle": {
+    "en": "ClearType sharpens text by lighting individual R, G, B subpixels — and pays for it with faint coloured edges",
+    "ko": "ClearType는 R·G·B 서브픽셀을 개별 점등해 글자를 또렷하게 한다 — 대가로 옅은 색 가장자리가 생긴다"
+  },
+  "description": {
+    "en": "An LCD pixel is three R, G, B stripes. ClearType samples each to triple resolution, but an edge mid-pixel gives the stripes different coverage, tinting the boundary red and blue. Compare greyscale AA.",
+    "ko": "LCD 픽셀은 R·G·B 세로 줄무늬 셋이다. ClearType는 각 줄을 표본화해 가로 해상도를 세 배로 하지만, 가장자리가 픽셀 중간에 걸리면 줄마다 커버리지가 달라 경계가 빨강·파랑으로 물든다. 획을 움직여 그레이스케일 AA와 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "typography-color-interaction",
+  "layout": "A",
+  "prerequisites": [
+    "typography-color-interaction/font-weight-vs-contrast"
+  ],
+  "leads_to": [
+    "typography-color-interaction/reading-fatigue-luminance"
+  ],
+  "see_also": [
+    "subpixel-rendering/subpixel-cleartype"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Poynton, Digital Video and HD 2e",
+      "section": "§24 (subpixel rendering)"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "ClearType",
+    "subpixel",
+    "anti-aliasing",
+    "color fringe",
+    "LCD"
+  ],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

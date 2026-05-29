@@ -1,0 +1,46 @@
+{
+  "schema_version": "v2",
+  "id": "typography-color-interaction/dyslexia-friendly-tints",
+  "title": {
+    "en": "Dyslexia-Friendly Tints",
+    "ko": "난독증 친화 색조"
+  },
+  "subtitle": {
+    "en": "stark black on pure white can shimmer for some readers — a soft cream or pastel tint and dark-grey ink calm the page",
+    "ko": "순백 위 순흑은 일부 독자에게 어른거린다 — 부드러운 크림·파스텔 색조와 진회색 잉크가 페이지를 가라앉힌다"
+  },
+  "description": {
+    "en": "For dyslexia and visual stress, stark black-on-white can make text shimmer. BDA guidance: avoid pure white and black — a cream or pastel tint with dark-grey ink eases it. Preference is individual.",
+    "ko": "난독증·시각 스트레스에선 최대 흑백 대비가 글자를 어른거리게 한다. BDA 지침: 순백·순흑을 피하고 저채도 크림·파스텔에 진회색 잉크가 눈부심을 던다. 색조를 넘겨보라 — 선호는 개인차가 있다."
+  },
+  "tier": "atom",
+  "bloom_level": "L3",
+  "domain": 5,
+  "category": "typography-color-interaction",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [
+    "typography-color-interaction/reading-fatigue-luminance"
+  ],
+  "textbook_refs": [
+    {
+      "source": "British Dyslexia Association",
+      "section": "Dyslexia Style Guide"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "dyslexia",
+    "visual stress",
+    "tinted background",
+    "readability",
+    "Irlen"
+  ],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "typography-color-interaction/reading-fatigue-luminance",
+  "title": {
+    "en": "Background Luminance & Fatigue",
+    "ko": "배경 휘도와 피로"
+  },
+  "subtitle": {
+    "en": "comfortable reading isn't maximum contrast — the page should roughly match the room, or the eye keeps re-adapting",
+    "ko": "편한 독서는 최대 대비가 아니다 — 페이지가 방과 비슷해야 눈이 계속 재적응하지 않는다"
+  },
+  "description": {
+    "en": "Eye strain comes less from contrast than luminance mismatch — a bright page in a dim room glares, a dim page in a bright room forces re-adaptation. Set luminance and room; comfort peaks near ambient.",
+    "ko": "눈의 피로는 대비보다 휘도 불일치에서 온다. 어두운 방의 밝은 페이지는 눈부시고, 밝은 방의 어두운 페이지는 동공을 계속 재적응시킨다. 페이지 휘도와 방을 정하면 페이지가 주변광에 가까울 때 편안함이 최대다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "typography-color-interaction",
+  "layout": "A",
+  "prerequisites": [
+    "typography-color-interaction/anti-alias-fringing"
+  ],
+  "leads_to": [
+    "typography-color-interaction/dark-mode-trade-offs"
+  ],
+  "see_also": [
+    "rods-adaptation/dark-adaptation-curve"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Reading ergonomics",
+      "section": "Ambient-matched display luminance"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "reading fatigue",
+    "luminance",
+    "glare",
+    "eye strain",
+    "ambient"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

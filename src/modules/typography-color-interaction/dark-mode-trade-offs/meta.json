@@ -1,0 +1,50 @@
+{
+  "schema_version": "v2",
+  "id": "typography-color-interaction/dark-mode-trade-offs",
+  "title": {
+    "en": "Dark Mode Trade-offs",
+    "ko": "다크 모드 장단점"
+  },
+  "subtitle": {
+    "en": "light-on-dark saves light at night and OLED power — but blurry-eyed readers see the text halate and bloom",
+    "ko": "어두운 바탕의 밝은 글자는 야간 빛과 OLED 전력을 아낀다 — 그러나 흐린 눈엔 글자가 번져 보인다"
+  },
+  "description": {
+    "en": "Dark mode emits less light and saves OLED power, but for an astigmatic eye bright text on black blooms. Raise the blur — dark-on-light degrades gracefully, light-on-dark haloes badly.",
+    "ko": "다크 모드는 빛을 덜 내고 OLED 전력을 아끼지만, 약한 난시·근시 눈엔 검정 위 밝은 글자가 번진다. 모드를 전환하고 초점 블러를 올려보라 — 밝은 바탕은 우아하게 흐려지나 어두운 바탕은 후광이 지고 속공간이 메워진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 5,
+  "category": "typography-color-interaction",
+  "layout": "A",
+  "prerequisites": [
+    "typography-color-interaction/reading-fatigue-luminance"
+  ],
+  "leads_to": [
+    "typography-color-interaction/dyslexia-friendly-tints"
+  ],
+  "see_also": [
+    "blue-light-circadian/night-shift-intro"
+  ],
+  "textbook_refs": [
+    {
+      "source": "Buchner & Baumgartner 2007",
+      "section": "Polarity and legibility"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "dark mode",
+    "halation",
+    "polarity",
+    "legibility",
+    "OLED"
+  ],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

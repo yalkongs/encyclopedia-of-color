@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Dark Mode Trade-offs — light-on-dark saves light at night and OLED po…</title>
+  <meta name="description" content="Dark mode emits less light and saves OLED power, but for an astigmatic eye bright text on black blooms. Raise the blur — dark-on-light degrades gracefully, light-on-dark haloes badly.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/dark-mode-trade-offs/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Dark Mode Trade-offs">
+  <meta property="og:description"    content="Dark mode emits less light and saves OLED power, but for an astigmatic eye bright text on black blooms. Raise the blur — dark-on-light degrades gracefully, light-on-dark haloes badly.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/dark-mode-trade-offs/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--dark-mode-trade-offs.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Dark Mode Trade-offs.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Dark Mode Trade-offs">
+  <meta name="twitter:description"   content="Dark mode emits less light and saves OLED power, but for an astigmatic eye bright text on black blooms. Raise the blur — dark-on-light degrades gracefully, light-on-dark haloes badly.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--dark-mode-trade-offs.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Dark Mode Trade-offs.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Dark Mode Trade-offs","alternateName":"typography-color-interaction/dark-mode-trade-offs","description":"Dark mode emits less light and saves OLED power, but for an astigmatic eye bright text on black blooms. Raise the blur — dark-on-light degrades gracefully, light-on-dark haloes badly.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"dark mode, halation, polarity, legibility, OLED","url":"https://encyclopedia-of-color.vercel.app/modules/typography-color-interaction/dark-mode-trade-offs/","image":"https://encyclopedia-of-color.vercel.app/og/typography-color-interaction--dark-mode-trade-offs.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="typography-color-interaction/dark-mode-trade-offs">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.5">D5 Design</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Dark Mode Trade-offs</h1>
+      <p class="module-subtitle">light-on-dark saves light at night and OLED power — but blurry-eyed readers see the text halate and bloom</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Dark mode emits less light (easier at night, and cheaper on OLED where black pixels are off). But for the very common slightly-astigmatic or myopic eye, bright text on a dark field blooms: the wide-open pupil and imperfect focus smear each stroke into a halo, so paragraphs can actually read worse than dark-on-light.
+        </p>
+        <div class="math-block" data-tex="\text{dark}: -\text{light}, -\text{power} \;|\; +\text{halation for many eyes}"></div>
+        <p class="zone-guide">
+          Toggle the mode and raise the focus blur to stand in for an uncorrected eye. Dark-on-light stays legible as it blurs; light-on-dark haloes and the counters fill in. Dark mode is a preference, not a universal improvement.
+        </p>
+        <enc-slider id="blur" label="Eye focus blur" min="0" max="100" step="1" value="40" unit="%"></enc-slider>
+        <enc-toggle id="mode" label="Mode" options="dark,light" labels="dark,light" value="dark"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Dark mode halation trade-offs"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Buchner & Baumgartner 2007; halation in dark UI"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
