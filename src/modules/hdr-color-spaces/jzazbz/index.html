@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Jz vs L* Across HDR — trace lightness from 0.1 to 10000 cd/m² and wat…</title>
+  <meta name="description" content="CIELAB's L* was fit for prints near 100 cd/m²; at HDR luminances its cube root compresses the bright end. Jzazbz, built on the PQ curve, keeps Jz even. Slide a grey across four decades to compare.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/jzazbz/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Jz vs L* Across HDR">
+  <meta property="og:description"    content="CIELAB's L* was fit for prints near 100 cd/m²; at HDR luminances its cube root compresses the bright end. Jzazbz, built on the PQ curve, keeps Jz even. Slide a grey across four decades to compare.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/jzazbz/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--jzazbz.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Jz vs L* Across HDR.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Jz vs L* Across HDR">
+  <meta name="twitter:description"   content="CIELAB's L* was fit for prints near 100 cd/m²; at HDR luminances its cube root compresses the bright end. Jzazbz, built on the PQ curve, keeps Jz even. Slide a grey across four decades to compare.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--jzazbz.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Jz vs L* Across HDR.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Jz vs L* Across HDR","alternateName":"hdr-color-spaces/jzazbz","description":"CIELAB's L* was fit for prints near 100 cd/m²; at HDR luminances its cube root compresses the bright end. Jzazbz, built on the PQ curve, keeps Jz even. Slide a grey across four decades to compare.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Jzazbz, HDR, perceptual uniformity, lightness, PQ","url":"https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/jzazbz/","image":"https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--jzazbz.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="hdr-color-spaces/jzazbz">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Jz vs L* Across HDR</h1>
+      <p class="module-subtitle">trace lightness from 0.1 to 10000 cd/m² and watch CIELAB's L* flatten at the top while Jzazbz keeps spreading</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          CIELAB's L* was fit for reflective prints near 100 cd/m². Push to HDR luminances and its cube root compresses the bright end into almost no difference. Jzazbz is built on the PQ curve, so its lightness Jz stays perceptually even across the full HDR range.
+        </p>
+        <div class="math-block" data-tex="L^* = 116\,f(Y/Y_n) - 16 \qquad J_z = \dfrac{(1+d)I_z}{1 + d\,I_z} - d_0"></div>
+        <p class="zone-guide">
+          Slide the luminance of a neutral grey across four orders of magnitude. Both lightness curves are normalised to 1.0 at 10000 cd/m². Watch how little L* moves between 1000 and 10000 cd/m² compared with Jz.
+        </p>
+        <enc-slider id="lum" label="Luminance" min="1" max="10000" step="1" value="600" unit=" cd/m²"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Jz versus CIELAB L* across HDR luminance"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Safdar et al. 2017, Perceptually uniform color space for image signals including high dynamic range and wide gamut"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

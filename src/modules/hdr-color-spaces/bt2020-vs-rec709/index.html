@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>BT.2020 vs Rec.709 — overlay the UHD gamut on the HD one and shade th…</title>
+  <meta name="description" content="Rec.709 defines HD/SDR colour; BT.2020 defines UHD/HDR with far wider primaries. Shade the Rec.709 region, the BT.2020 region, or just the gap, and read Rec.709's coverage of BT.2020.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/bt2020-vs-rec709/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="BT.2020 vs Rec.709">
+  <meta property="og:description"    content="Rec.709 defines HD/SDR colour; BT.2020 defines UHD/HDR with far wider primaries. Shade the Rec.709 region, the BT.2020 region, or just the gap, and read Rec.709's coverage of BT.2020.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/bt2020-vs-rec709/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--bt2020-vs-rec709.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: BT.2020 vs Rec.709.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="BT.2020 vs Rec.709">
+  <meta name="twitter:description"   content="Rec.709 defines HD/SDR colour; BT.2020 defines UHD/HDR with far wider primaries. Shade the Rec.709 region, the BT.2020 region, or just the gap, and read Rec.709's coverage of BT.2020.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--bt2020-vs-rec709.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: BT.2020 vs Rec.709.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"BT.2020 vs Rec.709","alternateName":"hdr-color-spaces/bt2020-vs-rec709","description":"Rec.709 defines HD/SDR colour; BT.2020 defines UHD/HDR with far wider primaries. Shade the Rec.709 region, the BT.2020 region, or just the gap, and read Rec.709's coverage of BT.2020.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"BT.2020, Rec.709, wide gamut, HDR, UHD","url":"https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/bt2020-vs-rec709/","image":"https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--bt2020-vs-rec709.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="hdr-color-spaces/bt2020-vs-rec709">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">BT.2020 vs Rec.709</h1>
+      <p class="module-subtitle">overlay the UHD gamut on the HD one and shade the wide-gamut bonus — the colours HDR can show that SDR never could</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Rec.709 defines HD/SDR colour; BT.2020 defines UHD/HDR. BT.2020's primaries sit far closer to the spectral locus, so it reaches deep greens and reds that Rec.709 simply cannot encode.
+        </p>
+        <div class="math-block" data-tex="\text{Rec.709 area} \approx 0.36 \times \text{BT.2020 area}"></div>
+        <p class="zone-guide">
+          Switch what the diagram shades: the Rec.709 region, the full BT.2020 region, or just the gap between them — the wide-gamut colours BT.2020 adds. The readout reports each gamut's chromaticity area and Rec.709's coverage of BT.2020.
+        </p>
+        <enc-toggle id="fill" label="Shade" options="rec709,bt2020,gap" labels="Rec.709,BT.2020,the gap" value="gap"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="BT.2020 versus Rec.709 coverage overlay"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ITU-R BT.2020; ITU-R BT.709"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ICtCp — Encoding HDR Light — slide a colour up the PQ curve and watch…</title>
+  <meta name="description" content="BT.2100 ICtCp passes cone responses through the PQ curve, then splits into intensity I and chroma axes Ct, Cp. Set luminance, hue, and peak L_p, and read I, Ct, Cp and the ITP T=Ct/2.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/ictcp-itp/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ICtCp — Encoding HDR Light">
+  <meta property="og:description"    content="BT.2100 ICtCp passes cone responses through the PQ curve, then splits into intensity I and chroma axes Ct, Cp. Set luminance, hue, and peak L_p, and read I, Ct, Cp and the ITP T=Ct/2.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/ictcp-itp/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--ictcp-itp.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ICtCp — Encoding HDR Light.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ICtCp — Encoding HDR Light">
+  <meta name="twitter:description"   content="BT.2100 ICtCp passes cone responses through the PQ curve, then splits into intensity I and chroma axes Ct, Cp. Set luminance, hue, and peak L_p, and read I, Ct, Cp and the ITP T=Ct/2.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--ictcp-itp.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ICtCp — Encoding HDR Light.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ICtCp — Encoding HDR Light","alternateName":"hdr-color-spaces/ictcp-itp","description":"BT.2100 ICtCp passes cone responses through the PQ curve, then splits into intensity I and chroma axes Ct, Cp. Set luminance, hue, and peak L_p, and read I, Ct, Cp and the ITP T=Ct/2.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ICtCp, ITP, PQ, HDR, BT.2100","url":"https://encyclopedia-of-color.vercel.app/modules/hdr-color-spaces/ictcp-itp/","image":"https://encyclopedia-of-color.vercel.app/og/hdr-color-spaces--ictcp-itp.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="hdr-color-spaces/ictcp-itp">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ICtCp — Encoding HDR Light</h1>
+      <p class="module-subtitle">slide a colour up the PQ curve and watch the intensity channel rise non-linearly while Ct and Cp carry the chroma</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          BT.2100 ICtCp encodes HDR by passing the cone responses through the PQ curve, then splitting into intensity (I) and two chroma axes (Ct, Cp). PQ spends most of its code values on the dark end, where vision is most sensitive — so I climbs steeply at low luminance.
+        </p>
+        <div class="math-block" data-tex="I = \tfrac{1}{2}(L' + M'), \quad T = C_t/2 \ \text{(ITP)}"></div>
+        <p class="zone-guide">
+          Set the luminance and hue of a Rec.2020 colour and the display's peak L_p. The top panel marks where the colour sits on the PQ curve; the lower plot places it on the Ct–Cp chroma plane. ITP simply halves Ct so ΔE distances are uniform.
+        </p>
+        <enc-slider id="lum" label="Luminance" min="1" max="10000" step="1" value="200" unit=" cd/m²"></enc-slider>
+        <enc-slider id="hue" label="Hue" min="0" max="360" step="1" value="30" unit="°"></enc-slider>
+        <enc-toggle id="lp" label="Peak L_p" options="1000,4000,10000" labels="1000,4000,10000" value="10000"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ICtCp PQ encoding and Ct-Cp plane"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ITU-R BT.2100; Dolby ICtCp white paper"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

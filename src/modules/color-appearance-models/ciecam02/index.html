@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CIECAM02 — Colour in Context — hold the stimulus fixed and change the…</title>
+  <meta name="description" content="XYZ fixes the light, not the look — appearance depends on viewing conditions. CIECAM02 predicts J, C, h, M, Q, s from the adapting luminance and surround. Hold the stimulus fixed and change the room.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-appearance-models/ciecam02/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CIECAM02 — Colour in Context">
+  <meta property="og:description"    content="XYZ fixes the light, not the look — appearance depends on viewing conditions. CIECAM02 predicts J, C, h, M, Q, s from the adapting luminance and surround. Hold the stimulus fixed and change the room.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-appearance-models/ciecam02/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-appearance-models--ciecam02.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CIECAM02 — Colour in Context.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CIECAM02 — Colour in Context">
+  <meta name="twitter:description"   content="XYZ fixes the light, not the look — appearance depends on viewing conditions. CIECAM02 predicts J, C, h, M, Q, s from the adapting luminance and surround. Hold the stimulus fixed and change the room.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-appearance-models--ciecam02.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CIECAM02 — Colour in Context.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CIECAM02 — Colour in Context","alternateName":"color-appearance-models/ciecam02","description":"XYZ fixes the light, not the look — appearance depends on viewing conditions. CIECAM02 predicts J, C, h, M, Q, s from the adapting luminance and surround. Hold the stimulus fixed and change the room.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CIECAM02, color appearance, adaptation, surround, lightness","url":"https://encyclopedia-of-color.vercel.app/modules/color-appearance-models/ciecam02/","image":"https://encyclopedia-of-color.vercel.app/og/color-appearance-models--ciecam02.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-appearance-models/ciecam02">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">CIECAM02 — Colour in Context</h1>
+      <p class="module-subtitle">hold the stimulus fixed and change the room: watch lightness, chroma, and colourfulness shift as adaptation and surround change</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          XYZ fixes the light entering the eye, but not how the colour looks — that depends on the viewing conditions. CIECAM02 takes the adapting luminance and surround and predicts the appearance correlates: J (lightness), C (chroma), h (hue), M (colourfulness), Q (brightness), s (saturation).
+        </p>
+        <div class="math-block" data-tex="J = 100\,(A/A_w)^{cz}, \quad M = C\,F_L^{0.25}"></div>
+        <p class="zone-guide">
+          Keep the stimulus colour fixed and change the room. Lower the adapting luminance and the colour dims and dulls; a dark surround drops lightness and colourfulness further. The dial plots (h, C); the bars track J, M, Q, s.
+        </p>
+        <enc-slider id="hue" label="Stimulus hue" min="0" max="360" step="1" value="30" unit="°"></enc-slider>
+        <enc-slider id="la" label="Adapting luminance L_A" min="5" max="500" step="1" value="80" unit=" cd/m²"></enc-slider>
+        <enc-toggle id="sur" label="Surround" options="average,dim,dark" labels="average,dim,dark" value="average"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CIECAM02 appearance correlates"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Fairchild, Color Appearance Models 3e §16; CIE 159:2004"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

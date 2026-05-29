@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Clip or Compress? — push a colour past the sRGB boundary and compare…</title>
+  <meta name="description" content="Out-of-gamut colours must move inward. Relative clipping snaps to the nearest in-gamut chroma; perceptual compression squeezes the whole chroma axis. Drive the source past the boundary to compare.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/gamut-clipping-vs-compression/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Clip or Compress?">
+  <meta property="og:description"    content="Out-of-gamut colours must move inward. Relative clipping snaps to the nearest in-gamut chroma; perceptual compression squeezes the whole chroma axis. Drive the source past the boundary to compare.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/gamut-clipping-vs-compression/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--gamut-clipping-vs-compression.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Clip or Compress?.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Clip or Compress?">
+  <meta name="twitter:description"   content="Out-of-gamut colours must move inward. Relative clipping snaps to the nearest in-gamut chroma; perceptual compression squeezes the whole chroma axis. Drive the source past the boundary to compare.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--gamut-clipping-vs-compression.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Clip or Compress?.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Clip or Compress?","alternateName":"gamut-mapping-3d/gamut-clipping-vs-compression","description":"Out-of-gamut colours must move inward. Relative clipping snaps to the nearest in-gamut chroma; perceptual compression squeezes the whole chroma axis. Drive the source past the boundary to compare.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"gamut mapping, clipping, compression, rendering intent","url":"https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/gamut-clipping-vs-compression/","image":"https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--gamut-clipping-vs-compression.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="gamut-mapping-3d/gamut-clipping-vs-compression">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Clip or Compress?</h1>
+      <p class="module-subtitle">push a colour past the sRGB boundary and compare a hard clip to the edge against a soft compression that pulls the whole range inward</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          When a colour falls outside the destination gamut it must be moved in. Relative-colorimetric clipping snaps it to the nearest in-gamut chroma, leaving everything else untouched. Perceptual compression squeezes the whole chroma axis so relationships survive — at the cost of slightly desaturating in-gamut colours.
+        </p>
+        <div class="math-block" data-tex="C_{\text{clip}} = \min(C, C_b) \qquad C_{\text{comp}} = \text{knee}(C \,;\, C_b)"></div>
+        <p class="zone-guide">
+          Set the lightness and hue, then drive the source chroma past the gamut boundary C_b. The plot marks the source, the clipped point (on the edge), and the compressed point (pulled in along the same hue). Two patches show the resulting colours.
+        </p>
+        <enc-slider id="L" label="Lightness L*" min="20" max="90" step="1" value="60"></enc-slider>
+        <enc-slider id="hue" label="Hue angle" min="0" max="360" step="1" value="320" unit="°"></enc-slider>
+        <enc-slider id="C" label="Source chroma" min="10" max="150" step="1" value="120"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Gamut clipping versus compression in the a*b* plane"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Morovič, Color Gamut Mapping (2008); ICC.1:2010"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

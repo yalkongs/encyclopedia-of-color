@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-color-spaces/ictcp-itp",
+  "title": {
+    "en": "ICtCp — Encoding HDR Light",
+    "ko": "ICtCp — HDR 빛의 부호화"
+  },
+  "subtitle": {
+    "en": "slide a colour up the PQ curve and watch the intensity channel rise non-linearly while Ct and Cp carry the chroma",
+    "ko": "PQ 곡선 위로 색을 올려 강도 채널이 비선형으로 오르는 동안 Ct·Cp가 채도를 운반하는 것을 본다"
+  },
+  "description": {
+    "en": "BT.2100 ICtCp passes cone responses through the PQ curve, then splits into intensity I and chroma axes Ct, Cp. Set luminance, hue, and peak L_p, and read I, Ct, Cp and the ITP T=Ct/2.",
+    "ko": "BT.2100 ICtCp는 원추 응답을 PQ 곡선에 통과시킨 뒤 강도 I와 채도축 Ct·Cp로 나눈다. PQ는 부호값 대부분을 어두운 쪽에 쓴다. 휘도·색상·피크 L_p를 정하고 I·Ct·Cp와 ITP의 T=Ct/2를 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "hdr-color-spaces",
+  "layout": "A",
+  "prerequisites": ["hdr-color-spaces/bt2020-vs-rec709"],
+  "leads_to": ["hdr-color-spaces/jzazbz"],
+  "see_also": ["planckian-radiation/photopic-scotopic"],
+  "textbook_refs": [
+    { "source": "ITU-R BT.2100", "section": "Table 6 (ICtCp)" }
+  ],
+  "standards": ["ITU-R BT.2100"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["ICtCp", "ITP", "PQ", "HDR", "BT.2100"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

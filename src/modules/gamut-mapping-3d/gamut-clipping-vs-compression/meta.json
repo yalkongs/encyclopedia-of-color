@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "gamut-mapping-3d/gamut-clipping-vs-compression",
+  "title": {
+    "en": "Clip or Compress?",
+    "ko": "클리핑 vs 압축"
+  },
+  "subtitle": {
+    "en": "push a colour past the sRGB boundary and compare a hard clip to the edge against a soft compression that pulls the whole range inward",
+    "ko": "sRGB 경계 밖으로 색을 밀어, 가장자리로의 하드 클립과 전 범위를 안으로 당기는 소프트 압축을 비교한다"
+  },
+  "description": {
+    "en": "Out-of-gamut colours must move inward. Relative clipping snaps to the nearest in-gamut chroma; perceptual compression squeezes the whole chroma axis. Drive the source past the boundary to compare.",
+    "ko": "색역 밖 색은 안으로 옮겨야 한다. 상대 측색 클리핑은 가장 가까운 색역 내 채도로 스냅하고, 지각 압축은 채도 축 전체를 눌러 관계를 보존한다. 소스를 경계 밖으로 밀어 둘을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "gamut-mapping-3d",
+  "layout": "A",
+  "prerequisites": ["gamut-mapping-3d/gamut-overlapping-3d"],
+  "leads_to": ["icc-color-management/rendering-intents"],
+  "see_also": ["color-space-slicer/lab-slicing"],
+  "textbook_refs": [
+    { "source": "Morovič, Color Gamut Mapping (2008)", "section": "§5 (Gamut mapping algorithms)" }
+  ],
+  "standards": ["ICC.1:2010"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["gamut mapping", "clipping", "compression", "rendering intent"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

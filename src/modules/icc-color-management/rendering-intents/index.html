@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Four Rendering Intents — send the same chroma ramp through each ICC i…</title>
+  <meta name="description" content="An ICC intent decides the fate of unreachable colours: perceptual compresses everything, relative clips the out-of-gamut end, saturation favours vividness, absolute skips white adaptation.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/icc-color-management/rendering-intents/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Four Rendering Intents">
+  <meta property="og:description"    content="An ICC intent decides the fate of unreachable colours: perceptual compresses everything, relative clips the out-of-gamut end, saturation favours vividness, absolute skips white adaptation.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/icc-color-management/rendering-intents/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/icc-color-management--rendering-intents.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Four Rendering Intents.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Four Rendering Intents">
+  <meta name="twitter:description"   content="An ICC intent decides the fate of unreachable colours: perceptual compresses everything, relative clips the out-of-gamut end, saturation favours vividness, absolute skips white adaptation.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/icc-color-management--rendering-intents.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Four Rendering Intents.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Four Rendering Intents","alternateName":"icc-color-management/rendering-intents","description":"An ICC intent decides the fate of unreachable colours: perceptual compresses everything, relative clips the out-of-gamut end, saturation favours vividness, absolute skips white adaptation.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"rendering intent, perceptual, relative colorimetric, ICC, gamut","url":"https://encyclopedia-of-color.vercel.app/modules/icc-color-management/rendering-intents/","image":"https://encyclopedia-of-color.vercel.app/og/icc-color-management--rendering-intents.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="icc-color-management/rendering-intents">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Four Rendering Intents</h1>
+      <p class="module-subtitle">send the same chroma ramp through each ICC intent and see who clips, who compresses, and who posterises the out-of-gamut end</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          An ICC intent decides what happens to colours the destination cannot reach. Perceptual compresses the whole range to keep gradients smooth. Relative colorimetric leaves in-gamut colours untouched and clips the rest — risking posterisation. Saturation favours vividness. Absolute also skips white-point adaptation.
+        </p>
+        <div class="math-block" data-tex="C_{out} = f_{\text{intent}}(C_{in}\,;\, C_b)"></div>
+        <p class="zone-guide">
+          Pick the intent and the hue. The top row is the source chroma ramp (out-of-gamut steps marked); the middle row is the mapped output; the curve plots source chroma against output chroma, with the gamut boundary C_b dashed.
+        </p>
+        <enc-toggle id="intent" label="Intent" options="perceptual,relative,absolute,saturation" labels="Perceptual,Relative,Absolute,Saturation" value="relative"></enc-toggle>
+        <enc-slider id="hue" label="Hue angle" min="0" max="360" step="1" value="270" unit="°"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ICC rendering intents on a chroma ramp"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ICC.1:2010 §A (Rendering intents)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-appearance-models/ciecam02",
+  "title": {
+    "en": "CIECAM02 — Colour in Context",
+    "ko": "CIECAM02 — 맥락 속의 색"
+  },
+  "subtitle": {
+    "en": "hold the stimulus fixed and change the room: watch lightness, chroma, and colourfulness shift as adaptation and surround change",
+    "ko": "자극을 고정하고 환경을 바꾼다 — 적응과 서라운드에 따라 명도·채도·색풍부함이 이동하는 것을 본다"
+  },
+  "description": {
+    "en": "XYZ fixes the light, not the look — appearance depends on viewing conditions. CIECAM02 predicts J, C, h, M, Q, s from the adapting luminance and surround. Hold the stimulus fixed and change the room.",
+    "ko": "XYZ는 빛을 고정할 뿐 보임새는 고정하지 못한다 — 보임새는 시야 조건에 달렸다. CIECAM02는 적응 휘도와 서라운드로 J·C·h·M·Q·s를 예측한다. 자극을 고정하고 환경을 바꿔 색의 이동을 본다."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 4,
+  "category": "color-appearance-models",
+  "layout": "A",
+  "prerequisites": ["color-constancy/von-kries-adaptation"],
+  "leads_to": [],
+  "see_also": ["icc-color-management/icc-profile-chain"],
+  "textbook_refs": [
+    { "source": "Fairchild, Color Appearance Models 3e", "section": "§16 (CIECAM02)" }
+  ],
+  "standards": ["CIE 159:2004"],
+  "interaction_count": 3,
+  "learning_paths": ["vision-and-perception", "designers-path"],
+  "seo_keywords": ["CIECAM02", "color appearance", "adaptation", "surround", "lightness"],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

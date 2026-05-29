@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-color-spaces/bt2020-vs-rec709",
+  "title": {
+    "en": "BT.2020 vs Rec.709",
+    "ko": "BT.2020 대 Rec.709"
+  },
+  "subtitle": {
+    "en": "overlay the UHD gamut on the HD one and shade the wide-gamut bonus — the colours HDR can show that SDR never could",
+    "ko": "UHD 색역을 HD 위에 겹쳐 광색역 보너스를 음영 처리 — SDR이 결코 못 보여준 HDR의 색"
+  },
+  "description": {
+    "en": "Rec.709 defines HD/SDR colour; BT.2020 defines UHD/HDR with far wider primaries. Shade the Rec.709 region, the BT.2020 region, or just the gap, and read Rec.709's coverage of BT.2020.",
+    "ko": "Rec.709은 HD/SDR 색을, BT.2020은 스펙트럼 궤적에 훨씬 가까운 원색으로 UHD/HDR 색을 정의한다. Rec.709 영역, BT.2020 영역, 또는 그 차이만 음영 처리하고 BT.2020 대비 커버리지를 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "hdr-color-spaces",
+  "layout": "A",
+  "prerequisites": ["gamut-mapping-3d/gamut-overlapping-3d"],
+  "leads_to": ["hdr-color-spaces/ictcp-itp"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "ITU-R BT.2020", "section": "Table 3 (Primary chromaticities)" }
+  ],
+  "standards": ["ITU-R BT.2020", "ITU-R BT.709"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["BT.2020", "Rec.709", "wide gamut", "HDR", "UHD"],
+  "estimated_hours": 11,
+  "status": "shipped"
+}

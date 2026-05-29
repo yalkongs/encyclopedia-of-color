@@ -60,9 +60,13 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'color-space-slicer':           { title: 'Colour-Space Slicer',     sub: 'Domain 4 · slicing the colour solids — Lab, Luv, HSV, Munsell, NCS, Ostwald' },
   'oklch-harmony-explorer':       { title: 'OKLCH Harmony Explorer',  sub: 'Domain 4 · OKLab hue linearity and perceptually uniform palettes' },
   'color-difference-delta-e':     { title: 'Colour Difference ΔE',    sub: 'Domain 4 · ΔE76, CIEDE2000, CIE94, and the CMC tolerance ellipse' },
+  'gamut-mapping-3d':             { title: 'Gamut Mapping',           sub: 'Domain 4 · overlapping device gamuts, clipping versus compression' },
+  'hdr-color-spaces':             { title: 'HDR Colour Spaces',       sub: 'Domain 4 · BT.2020, ICtCp/ITP, and Jzazbz for high dynamic range' },
+  'icc-color-management':         { title: 'ICC Colour Management',   sub: 'Domain 4 · the profile connection space and rendering intents' },
+  'color-appearance-models':      { title: 'Colour Appearance Models', sub: 'Domain 4 · CIECAM02 — predicting colour under viewing conditions' },
 };
 
-const D4_ORDER = ['cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e'];
+const D4_ORDER = ['cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
 
 interface ModuleEntry { meta: MetaV2; href: string }
 

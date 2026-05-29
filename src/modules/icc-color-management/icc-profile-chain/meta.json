@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "icc-color-management/icc-profile-chain",
+  "title": {
+    "en": "The ICC Profile Chain",
+    "ko": "ICC 프로파일 사슬"
+  },
+  "subtitle": {
+    "en": "follow one colour from a source device through the D50 connection space and out to a destination device, value by value",
+    "ko": "한 색을 소스 장치에서 D50 연결 공간을 거쳐 목적지 장치까지 값 하나하나 따라간다"
+  },
+  "description": {
+    "en": "Colour management never converts device to device directly. The source profile maps RGB into the D50 PCS; the destination maps it back out. Pick the spaces and hue and follow the values.",
+    "ko": "색 관리는 장치 간 직접 변환하지 않는다. 소스 프로파일은 RGB를 D50 연결 공간으로, 목적지 프로파일은 다시 밖으로 매핑한다. 공간과 색상을 골라 XYZ·적응된 PCS·출력 RGB를 따라간다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "icc-color-management",
+  "layout": "A",
+  "prerequisites": ["xyz-transformation/lindbloom-matrices"],
+  "leads_to": ["icc-color-management/rendering-intents"],
+  "see_also": ["color-constancy/von-kries-adaptation"],
+  "textbook_refs": [
+    { "source": "ICC.1:2010", "section": "§6 (Profile connection space)" }
+  ],
+  "standards": ["ICC.1:2010"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["ICC profile", "PCS", "color management", "D50", "chromatic adaptation"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

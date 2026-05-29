@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "gamut-mapping-3d/gamut-overlapping-3d",
+  "title": {
+    "en": "Gamuts, Overlaid",
+    "ko": "겹쳐 보는 색역"
+  },
+  "subtitle": {
+    "en": "stack the sRGB, Adobe RGB, Display P3, and BT.2020 triangles on the horseshoe and see how much of visible colour each can actually reach",
+    "ko": "sRGB·Adobe·P3·BT.2020 삼각형을 말발굽 위에 겹쳐, 각 색역이 실제로 닿는 가시색 범위를 본다"
+  },
+  "description": {
+    "en": "A working space reproduces only colours inside its primary triangle. Highlight sRGB, Adobe RGB, P3, or BT.2020 over the spectral locus and read its chromaticity area relative to BT.2020.",
+    "ko": "작업 색공간은 자신의 원색이 고정한 삼각형 안의 색만 재현한다. sRGB·Adobe·P3·BT.2020을 스펙트럼 궤적 위에 강조하고 BT.2020 대비 색도 삼각형 면적을 읽는다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 4,
+  "category": "gamut-mapping-3d",
+  "layout": "A",
+  "prerequisites": ["xyz-transformation/xyz-projective-locus"],
+  "leads_to": ["gamut-mapping-3d/gamut-clipping-vs-compression", "hdr-color-spaces/bt2020-vs-rec709"],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hunt, The Reproduction of Colour 6e", "section": "§7 (Colour gamuts)" }
+  ],
+  "standards": ["ITU-R BT.2020"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["gamut", "sRGB", "Display P3", "BT.2020", "color space"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

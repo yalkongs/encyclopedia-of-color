@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 177 modules across 36 categories -->
+    <!-- 185 modules across 40 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>177 modules</strong> are published across 36 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>185 modules</strong> are published across 40 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -1054,6 +1054,70 @@
         <div class="card-meta">L5 · Reference · Color Difference Delta E</div>
         <div class="card-title">CIE94 — Chroma Loosens the Tolerance</div>
         <div class="card-sub">push the reference chroma up and watch the same colour shift count for less, because SC grows with C₁</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Gamut Mapping</h2>
+      <div class="sub">Domain 4 · overlapping device gamuts, clipping versus compression</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/gamut-mapping-3d/gamut-overlapping-3d/">
+        <div class="card-meta">L4 · Reference · Gamut Mapping 3d</div>
+        <div class="card-title">Gamuts, Overlaid</div>
+        <div class="card-sub">stack the sRGB, Adobe RGB, Display P3, and BT.2020 triangles on the horseshoe and see how much of visible colour each can actually reach</div>
+      </a>
+      <a class="module-card" href="./modules/gamut-mapping-3d/gamut-clipping-vs-compression/">
+        <div class="card-meta">L5 · Reference · Gamut Mapping 3d</div>
+        <div class="card-title">Clip or Compress?</div>
+        <div class="card-sub">push a colour past the sRGB boundary and compare a hard clip to the edge against a soft compression that pulls the whole range inward</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">HDR Colour Spaces</h2>
+      <div class="sub">Domain 4 · BT.2020, ICtCp/ITP, and Jzazbz for high dynamic range</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/hdr-color-spaces/bt2020-vs-rec709/">
+        <div class="card-meta">L4 · Reference · Hdr Color Spaces</div>
+        <div class="card-title">BT.2020 vs Rec.709</div>
+        <div class="card-sub">overlay the UHD gamut on the HD one and shade the wide-gamut bonus — the colours HDR can show that SDR never could</div>
+      </a>
+      <a class="module-card" href="./modules/hdr-color-spaces/ictcp-itp/">
+        <div class="card-meta">L5 · Reference · Hdr Color Spaces</div>
+        <div class="card-title">ICtCp — Encoding HDR Light</div>
+        <div class="card-sub">slide a colour up the PQ curve and watch the intensity channel rise non-linearly while Ct and Cp carry the chroma</div>
+      </a>
+      <a class="module-card" href="./modules/hdr-color-spaces/jzazbz/">
+        <div class="card-meta">L5 · Reference · Hdr Color Spaces</div>
+        <div class="card-title">Jz vs L* Across HDR</div>
+        <div class="card-sub">trace lightness from 0.1 to 10000 cd/m² and watch CIELAB's L* flatten at the top while Jzazbz keeps spreading</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">ICC Colour Management</h2>
+      <div class="sub">Domain 4 · the profile connection space and rendering intents</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/icc-color-management/icc-profile-chain/">
+        <div class="card-meta">L5 · Reference · Icc Color Management</div>
+        <div class="card-title">The ICC Profile Chain</div>
+        <div class="card-sub">follow one colour from a source device through the D50 connection space and out to a destination device, value by value</div>
+      </a>
+      <a class="module-card" href="./modules/icc-color-management/rendering-intents/">
+        <div class="card-meta">L5 · Reference · Icc Color Management</div>
+        <div class="card-title">Four Rendering Intents</div>
+        <div class="card-sub">send the same chroma ramp through each ICC intent and see who clips, who compresses, and who posterises the out-of-gamut end</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Colour Appearance Models</h2>
+      <div class="sub">Domain 4 · CIECAM02 — predicting colour under viewing conditions</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/color-appearance-models/ciecam02/">
+        <div class="card-meta">L6 · Reference · Color Appearance Models</div>
+        <div class="card-title">CIECAM02 — Colour in Context</div>
+        <div class="card-sub">hold the stimulus fixed and change the room: watch lightness, chroma, and colourfulness shift as adaptation and surround change</div>
       </a>
       </div>
     </div>

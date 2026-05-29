@@ -1,0 +1,4 @@
+{
+  "hero": { "hue": 150, "src": "adobe", "dst": "srgb" },
+  "comment": "An Adobe RGB green into sRGB — a classic out-of-gamut case that clips on output."
+}

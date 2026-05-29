@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Gamuts, Overlaid — stack the sRGB, Adobe RGB, Display P3, and BT.2020…</title>
+  <meta name="description" content="A working space reproduces only colours inside its primary triangle. Highlight sRGB, Adobe RGB, P3, or BT.2020 over the spectral locus and read its chromaticity area relative to BT.2020.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/gamut-overlapping-3d/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Gamuts, Overlaid">
+  <meta property="og:description"    content="A working space reproduces only colours inside its primary triangle. Highlight sRGB, Adobe RGB, P3, or BT.2020 over the spectral locus and read its chromaticity area relative to BT.2020.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/gamut-overlapping-3d/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--gamut-overlapping-3d.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Gamuts, Overlaid.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Gamuts, Overlaid">
+  <meta name="twitter:description"   content="A working space reproduces only colours inside its primary triangle. Highlight sRGB, Adobe RGB, P3, or BT.2020 over the spectral locus and read its chromaticity area relative to BT.2020.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--gamut-overlapping-3d.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Gamuts, Overlaid.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gamuts, Overlaid","alternateName":"gamut-mapping-3d/gamut-overlapping-3d","description":"A working space reproduces only colours inside its primary triangle. Highlight sRGB, Adobe RGB, P3, or BT.2020 over the spectral locus and read its chromaticity area relative to BT.2020.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"gamut, sRGB, Display P3, BT.2020, color space","url":"https://encyclopedia-of-color.vercel.app/modules/gamut-mapping-3d/gamut-overlapping-3d/","image":"https://encyclopedia-of-color.vercel.app/og/gamut-mapping-3d--gamut-overlapping-3d.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="gamut-mapping-3d/gamut-overlapping-3d">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.4">D4 Colorimetry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Gamuts, Overlaid</h1>
+      <p class="module-subtitle">stack the sRGB, Adobe RGB, Display P3, and BT.2020 triangles on the horseshoe and see how much of visible colour each can actually reach</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A working space can only reproduce colours inside the triangle pinned by its three primaries. Larger triangles reach more saturated colour — but every device gamut is dwarfed by the full horseshoe of visible light.
+        </p>
+        <div class="math-block" data-tex="\text{coverage} = \dfrac{\text{area}_{\text{space}}}{\text{area}_{\text{BT.2020}}}"></div>
+        <p class="zone-guide">
+          Pick the space to highlight. Its triangle fills and its primaries are marked; the others stay as thin outlines. The readout gives its chromaticity-triangle area relative to BT.2020, the widest of the four.
+        </p>
+        <enc-toggle id="space" label="Highlight" options="srgb,adobe,p3,bt2020" labels="sRGB,Adobe,P3,BT.2020" value="srgb"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Overlaid RGB gamut triangles on the CIE xy diagram"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hunt, The Reproduction of Colour 6e §7; ITU-R BT.2020"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

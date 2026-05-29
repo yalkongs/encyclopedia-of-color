@@ -1,0 +1,4 @@
+{
+  "hero": { "L": 60, "hue": 320, "C": 120 },
+  "comment": "A magenta pushed well past the sRGB boundary — clip lands on the edge, compress sits just inside."
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "hdr-color-spaces/jzazbz",
+  "title": {
+    "en": "Jz vs L* Across HDR",
+    "ko": "HDR 전역의 Jz 대 L*"
+  },
+  "subtitle": {
+    "en": "trace lightness from 0.1 to 10000 cd/m² and watch CIELAB's L* flatten at the top while Jzazbz keeps spreading",
+    "ko": "0.1에서 10000 cd/m²까지 명도를 따라가며, CIELAB L*은 위쪽이 평평해지고 Jzazbz는 계속 펼쳐지는 것을 본다"
+  },
+  "description": {
+    "en": "CIELAB's L* was fit for prints near 100 cd/m²; at HDR luminances its cube root compresses the bright end. Jzazbz, built on the PQ curve, keeps Jz even. Slide a grey across four decades to compare.",
+    "ko": "CIELAB L*은 100 cd/m² 부근 인쇄용으로 맞춰져 HDR 휘도에서 밝은 끝을 압축한다. Jzazbz는 PQ 곡선 기반이라 Jz가 지각적으로 고르다. 회색을 네 자릿수에 걸쳐 움직여 둘을 비교한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "hdr-color-spaces",
+  "layout": "A",
+  "prerequisites": ["hdr-color-spaces/ictcp-itp"],
+  "leads_to": [],
+  "see_also": ["color-space-slicer/lab-slicing"],
+  "textbook_refs": [
+    { "source": "Safdar et al. 2017", "section": "Perceptually uniform color space (Jzazbz)" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Jzazbz", "HDR", "perceptual uniformity", "lightness", "PQ"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}

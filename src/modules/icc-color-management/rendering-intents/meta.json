@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "icc-color-management/rendering-intents",
+  "title": {
+    "en": "Four Rendering Intents",
+    "ko": "네 가지 렌더링 인텐트"
+  },
+  "subtitle": {
+    "en": "send the same chroma ramp through each ICC intent and see who clips, who compresses, and who posterises the out-of-gamut end",
+    "ko": "같은 채도 램프를 각 ICC 인텐트에 통과시켜, 누가 클립하고 압축하고 색역 밖 끝을 포스터화하는지 본다"
+  },
+  "description": {
+    "en": "An ICC intent decides the fate of unreachable colours: perceptual compresses everything, relative clips the out-of-gamut end, saturation favours vividness, absolute skips white adaptation.",
+    "ko": "ICC 인텐트는 목적지가 못 닿는 색의 처리를 결정한다. 지각은 전 범위를 압축하고, 상대는 색역 밖을 클립하고, 채도는 선명함을 우선하며, 절대는 백색 적응을 건너뛴다. 채도 램프를 각각에 통과시킨다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 4,
+  "category": "icc-color-management",
+  "layout": "A",
+  "prerequisites": ["icc-color-management/icc-profile-chain", "gamut-mapping-3d/gamut-clipping-vs-compression"],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "ICC.1:2010", "section": "Annex A (Rendering intents)" }
+  ],
+  "standards": ["ICC.1:2010"],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["rendering intent", "perceptual", "relative colorimetric", "ICC", "gamut"],
+  "estimated_hours": 13,
+  "status": "shipped"
+}
