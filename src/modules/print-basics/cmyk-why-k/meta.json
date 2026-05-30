@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-basics/cmyk-why-k",
+  "title": {
+    "en": "Why Add Black?",
+    "ko": "왜 검정이 필요한가?"
+  },
+  "subtitle": {
+    "en": "cyan, magenta and yellow inks stacked at full coverage still come out muddy brown — a fourth black plate gives the rich black and saves the other inks",
+    "ko": "사이언·마젠타·옐로를 100% 겹쳐도 탁한 갈색이 된다 — 네 번째 검정 도판이 진한 검정과 잉크 절약을 가져온다"
+  },
+  "description": {
+    "en": "CMY at 100% should subtract all light but real inks come out a muddy brown around L* 40. A K plate gives clean shadows in one hit and lets GCR cut equal CMY under neutrals — less ink, same look.",
+    "ko": "CMY 100%는 이론상 모든 빛을 빼야 하지만 실제 잉크는 L* 40 부근의 탁한 갈색이 된다. K 도판은 한 번에 깨끗한 그림자를 주고 중성에서 CMY를 동일하게 줄이는 GCR을 가능하게 한다 — 적은 잉크로 같은 모습."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 7,
+  "category": "print-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hunt",
+      "section": "§19 CMYK"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "CMYK",
+    "black plate",
+    "K",
+    "GCR",
+    "UCR"
+  ],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

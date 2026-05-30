@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-basics/print-vs-screen",
+  "title": {
+    "en": "Print vs Screen",
+    "ko": "인쇄 vs 화면"
+  },
+  "subtitle": {
+    "en": "paper reflects whatever light falls on it; a screen makes its own — the two react to a darkening room in opposite ways",
+    "ko": "종이는 떨어지는 빛을 반사하고 화면은 스스로 빛을 만든다 — 어두워지는 방에서 둘은 반대로 반응한다"
+  },
+  "description": {
+    "en": "A printed page is reflective — it only shows the ambient light bouncing back. A screen is emissive and makes its own light. Drop the room lights and the page vanishes while the screen still glows.",
+    "ko": "인쇄된 페이지는 반사적이라 주변 빛이 되돌아 오는 만큼만 보인다. 화면은 스스로 빛을 낸다. 방을 어둡게 하면 페이지는 사라지지만 화면은 여전히 빛난다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 7,
+  "category": "print-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hunt",
+      "section": "§1 reflective vs emissive"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "reflective",
+    "emissive",
+    "print vs screen",
+    "ambient light",
+    "paper"
+  ],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

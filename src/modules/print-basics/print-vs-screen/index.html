@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Print vs Screen — paper reflects whatever light falls on it; a screen…</title>
+  <meta name="description" content="A printed page is reflective — it only shows the ambient light bouncing back. A screen is emissive and makes its own light. Drop the room lights and the page vanishes while the screen still glows.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-basics/print-vs-screen/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Print vs Screen">
+  <meta property="og:description"    content="A printed page is reflective — it only shows the ambient light bouncing back. A screen is emissive and makes its own light. Drop the room lights and the page vanishes while the screen still glows.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-basics/print-vs-screen/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-basics--print-vs-screen.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Print vs Screen.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Print vs Screen">
+  <meta name="twitter:description"   content="A printed page is reflective — it only shows the ambient light bouncing back. A screen is emissive and makes its own light. Drop the room lights and the page vanishes while the screen still glows.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-basics--print-vs-screen.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Print vs Screen.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Print vs Screen","alternateName":"print-basics/print-vs-screen","description":"A printed page is reflective — it only shows the ambient light bouncing back. A screen is emissive and makes its own light. Drop the room lights and the page vanishes while the screen still glows.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"reflective, emissive, print vs screen, ambient light, paper","url":"https://encyclopedia-of-color.vercel.app/modules/print-basics/print-vs-screen/","image":"https://encyclopedia-of-color.vercel.app/og/print-basics--print-vs-screen.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-basics/print-vs-screen">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Print vs Screen</h1>
+      <p class="module-subtitle">paper reflects whatever light falls on it; a screen makes its own — the two react to a darkening room in opposite ways</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A printed page is a reflective object: it has no light of its own, only ink absorbing some of the ambient light bouncing back to your eye. A screen is emissive: it generates the light it sends you. Turn the room lights down and the page disappears while the screen still glows; brighten them up and the page jumps to life while the screen washes out.
+        </p>
+        <div class="math-block" data-tex="L_{paper} \;=\; R \cdot E_{ambient}\quad|\quad L_{screen} \;=\; L_{emit}"></div>
+        <p class="zone-guide">
+          Drag the room light up and down and watch the two panels move opposite to one another. This is why colour management on print is anchored to a standard viewing booth, while screen colour is anchored to a fixed emission curve.
+        </p>
+        <enc-slider id="ambient" label="Ambient light" min="0" max="100" step="1" value="60" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Reflective print vs emissive screen"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hunt §1; reflective vs emissive media"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

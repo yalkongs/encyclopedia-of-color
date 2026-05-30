@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Why Add Black? — cyan, magenta and yellow inks stacked at full covera…</title>
+  <meta name="description" content="CMY at 100% should subtract all light but real inks come out a muddy brown around L* 40. A K plate gives clean shadows in one hit and lets GCR cut equal CMY under neutrals — less ink, same look.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-basics/cmyk-why-k/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Why Add Black?">
+  <meta property="og:description"    content="CMY at 100% should subtract all light but real inks come out a muddy brown around L* 40. A K plate gives clean shadows in one hit and lets GCR cut equal CMY under neutrals — less ink, same look.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-basics/cmyk-why-k/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-basics--cmyk-why-k.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Why Add Black?.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Why Add Black?">
+  <meta name="twitter:description"   content="CMY at 100% should subtract all light but real inks come out a muddy brown around L* 40. A K plate gives clean shadows in one hit and lets GCR cut equal CMY under neutrals — less ink, same look.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-basics--cmyk-why-k.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Why Add Black?.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Why Add Black?","alternateName":"print-basics/cmyk-why-k","description":"CMY at 100% should subtract all light but real inks come out a muddy brown around L* 40. A K plate gives clean shadows in one hit and lets GCR cut equal CMY under neutrals — less ink, same look.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CMYK, black plate, K, GCR, UCR","url":"https://encyclopedia-of-color.vercel.app/modules/print-basics/cmyk-why-k/","image":"https://encyclopedia-of-color.vercel.app/og/print-basics--cmyk-why-k.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-basics/cmyk-why-k">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Why Add Black?</h1>
+      <p class="module-subtitle">cyan, magenta and yellow inks stacked at full coverage still come out muddy brown — a fourth black plate gives the rich black and saves the other inks</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          In theory CMY at 100% should subtract all light and print black. In practice the inks have small reflectances that never combine to zero, so 100/100/100 comes out a dirty brown around L* 40. Adding a fourth black ink (K) gets clean shadows in a single hit, and lets you remove equal portions of CMY for the same look at less ink — grey component replacement and undercolour removal.
+        </p>
+        <div class="math-block" data-tex="\text{CMY full ≈ muddy brown}\quad+\;K\;\Rightarrow\;\text{rich black + GCR/UCR savings}"></div>
+        <p class="zone-guide">
+          Switch K on and watch the centre of the Venn change from brown to deep black, and the ink-load tally drop as black replaces the CMY in neutrals.
+        </p>
+        <enc-toggle id="kink" label="Black plate" options="off,on" labels="off,on" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CMYK why K — Venn comparison"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hunt §19; CMYK separation"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

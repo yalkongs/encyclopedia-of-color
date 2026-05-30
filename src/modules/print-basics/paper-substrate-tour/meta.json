@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-basics/paper-substrate-tour",
+  "title": {
+    "en": "Paper Stock Tour",
+    "ko": "종이 종류 투어"
+  },
+  "subtitle": {
+    "en": "coated stock holds ink and snaps the colours; uncoated drinks a little; newsprint drinks a lot and lends its own warm tint to everything",
+    "ko": "코팅지는 잉크를 잡아두고 색이 또렷하다; 무코팅지는 조금 흡수한다; 신문지는 많이 흡수하며 따뜻한 색조를 모든 것에 입힌다"
+  },
+  "description": {
+    "en": "Paper is half of the print. Coated stocks hold ink on top for deep blacks and saturated colour; uncoated absorbs and softens; newsprint absorbs a lot, gains dots, and adds its yellow tint.",
+    "ko": "종이는 인쇄의 절반이다. 코팅지는 잉크를 위에 잡아 깊은 검정과 진한 색을 낸다; 무코팅지는 흡수해 부드러워진다; 신문지는 많이 흡수해 점이 커지고 모든 하이라이트에 노란 색조를 더한다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 7,
+  "category": "print-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§7 paper substrates"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "paper",
+    "coated",
+    "uncoated",
+    "newsprint",
+    "dot gain"
+  ],
+  "estimated_hours": 8,
+  "status": "shipped"
+}
