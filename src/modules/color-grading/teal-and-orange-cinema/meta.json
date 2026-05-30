@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-grading/teal-and-orange-cinema",
+  "title": {
+    "en": "Teal & Orange — Complementary Cinema Look",
+    "ko": "Teal & Orange — 보색 시네마 룩"
+  },
+  "subtitle": {
+    "en": "push the highlights toward orange (skin tones) and the shadows toward teal — opposite hues sit across the colour wheel and visually separate subject from background",
+    "ko": "하이라이트는 오렌지(피부톤) 쪽으로, 그림자는 teal 쪽으로 — 보색 관계가 피사체와 배경을 시각적으로 분리한다"
+  },
+  "description": {
+    "en": "Highlights push to orange (~30°), shadows to teal (~190°) — near-complementary on the colour wheel, skin lands on warm. Frame thumbnails before/after plus a lum-vs-(R−B) scatter show the movement.",
+    "ko": "하이라이트는 오렌지(30°), 그림자는 teal(190°) — 색조 휠에서 거의 보색이고 피부는 따뜻한 쪽에 떨어진다. 프레임 썸네일과 lum vs (R-B) 산점도가 이동을 보여준다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "color-grading",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hullfish 2008", "section": "Complementary grading" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["teal orange", "color grading", "cinema look", "complementary"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

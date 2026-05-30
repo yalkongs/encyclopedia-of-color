@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Teal &amp; Orange — Complementary Cinema Look — push the highlights towar…</title>
+  <meta name="description" content="Highlights push to orange (~30°), shadows to teal (~190°) — near-complementary on the colour wheel, skin lands on warm. Frame thumbnails before/after plus a lum-vs-(R−B) scatter show the movement.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-grading/teal-and-orange-cinema/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Teal &amp; Orange — Complementary Cinema Look">
+  <meta property="og:description"    content="Highlights push to orange (~30°), shadows to teal (~190°) — near-complementary on the colour wheel, skin lands on warm. Frame thumbnails before/after plus a lum-vs-(R−B) scatter show the movement.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-grading/teal-and-orange-cinema/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-grading--teal-and-orange-cinema.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Teal &amp; Orange — Complementary Cinema Look.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Teal &amp; Orange — Complementary Cinema Look">
+  <meta name="twitter:description"   content="Highlights push to orange (~30°), shadows to teal (~190°) — near-complementary on the colour wheel, skin lands on warm. Frame thumbnails before/after plus a lum-vs-(R−B) scatter show the movement.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-grading--teal-and-orange-cinema.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Teal &amp; Orange — Complementary Cinema Look.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Teal & Orange — Complementary Cinema Look","alternateName":"color-grading/teal-and-orange-cinema","description":"Highlights push to orange (~30°), shadows to teal (~190°) — near-complementary on the colour wheel, skin lands on warm. Frame thumbnails before/after plus a lum-vs-(R−B) scatter show the movement.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"teal orange, color grading, cinema look, complementary","url":"https://encyclopedia-of-color.vercel.app/modules/color-grading/teal-and-orange-cinema/","image":"https://encyclopedia-of-color.vercel.app/og/color-grading--teal-and-orange-cinema.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-grading/teal-and-orange-cinema">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Teal &amp; Orange — Complementary Cinema Look</h1>
+      <p class="module-subtitle">push the highlights toward orange (skin tones) and the shadows toward teal — opposite hues sit across the colour wheel and visually separate subject from background</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The teal-orange look has dominated commercial cinema since the 2000s. The recipe is simple: shadows and shadows-only acquire a cyan/teal cast (~190°), highlights and skin tones a warm orange (~30°). Because 190° and 30° are nearly complementary on the colour wheel, the contrast is perceptually maximised — and skin happens to fall on the warm side.
+        </p>
+        <p class="zone-guide">
+          The before/after panels show a frame-graph thumbnail re-rendered. Slide the strength up — at 0 the grade is neutral; at 100 it is extreme. The chromaticity plot on the right shows how the patch population moves toward the teal-orange axis.
+        </p>
+        <enc-slider id="strength" label="Look strength" min="0" max="100" step="2" value="60" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Teal and orange cinema look"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Cinematography practice; reverse-engineered DI examples (Bay/Fincher/MCU)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

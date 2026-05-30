@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-grading/lift-gamma-gain-wheel",
+  "title": {
+    "en": "Lift · Gamma · Gain",
+    "ko": "Lift · Gamma · Gain"
+  },
+  "subtitle": {
+    "en": "three colour wheels each target a tonal zone — lift in shadows, gamma in midtones, gain in highlights; their hue offsets are non-orthogonal and overlapping",
+    "ko": "세 컬러 휠이 각 톤 존을 타깃 — lift는 그림자, gamma는 미드톤, gain은 하이라이트; 그 색조 오프셋은 직교적이지 않고 겹친다"
+  },
+  "description": {
+    "en": "Lift weights shadows (1-x), gamma midtones (4x(1-x)), gain highlights (x). Per-channel tone curves and a Macbeth grid show how each wheel reshapes the tonal zones.",
+    "ko": "Lift는 그림자(1-x), gamma는 미드톤(4x(1-x)), gain은 하이라이트(x)에 가중치. 채널별 톤 곡선과 Macbeth 그리드가 톤 존 변화를 보여준다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "color-grading",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "DaVinci Resolve Reference", "section": "Color Wheels" }
+  ],
+  "standards": ["ASC CDL v1.2"],
+  "interaction_count": 6,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["lift", "gamma", "gain", "color grading", "ASC CDL"],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

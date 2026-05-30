@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-grading/3d-lut-application",
+  "title": {
+    "en": "3D LUT — Cube Sampling & Trilinear Interpolation",
+    "ko": "3D LUT — 큐브 샘플링 & 삼선형 보간"
+  },
+  "subtitle": {
+    "en": "a 3D LUT is a tiny cube of pre-computed colours; trilinear interpolation between the 8 corner cells maps every input RGB to its output",
+    "ko": "3D LUT은 사전 계산된 색의 작은 큐브 — 8개 꼭짓점 사이의 삼선형 보간이 모든 입력 RGB를 출력으로 매핑한다"
+  },
+  "description": {
+    "en": "An N3 LUT samples the warm-cinema recipe on a grid; trilinear interpolation between 8 corner cells produces the output. Drop resolution to see banding; the cube view shows the enclosing voxel.",
+    "ko": "N3 LUT은 warm-cinema 레시피를 그리드에 샘플링; 8개 꼭짓점 삼선형 보간으로 출력 생성. 해상도 낮추면 banding 보임; 큐브 뷰가 enclosing voxel 표시."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "color-grading",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Reinhard et al. 2008", "section": "Color Imaging — LUTs" }
+  ],
+  "standards": ["ICC.1:2010"],
+  "interaction_count": 4,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["3D LUT", "trilinear interpolation", "ICC profile", "look-up table"],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

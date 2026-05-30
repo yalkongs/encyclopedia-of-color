@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Lift · Gamma · Gain — three colour wheels each target a tonal zone —…</title>
+  <meta name="description" content="Lift weights shadows (1-x), gamma midtones (4x(1-x)), gain highlights (x). Per-channel tone curves and a Macbeth grid show how each wheel reshapes the tonal zones.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-grading/lift-gamma-gain-wheel/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Lift · Gamma · Gain">
+  <meta property="og:description"    content="Lift weights shadows (1-x), gamma midtones (4x(1-x)), gain highlights (x). Per-channel tone curves and a Macbeth grid show how each wheel reshapes the tonal zones.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-grading/lift-gamma-gain-wheel/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-grading--lift-gamma-gain-wheel.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Lift · Gamma · Gain.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Lift · Gamma · Gain">
+  <meta name="twitter:description"   content="Lift weights shadows (1-x), gamma midtones (4x(1-x)), gain highlights (x). Per-channel tone curves and a Macbeth grid show how each wheel reshapes the tonal zones.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-grading--lift-gamma-gain-wheel.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Lift · Gamma · Gain.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Lift · Gamma · Gain","alternateName":"color-grading/lift-gamma-gain-wheel","description":"Lift weights shadows (1-x), gamma midtones (4x(1-x)), gain highlights (x). Per-channel tone curves and a Macbeth grid show how each wheel reshapes the tonal zones.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"lift, gamma, gain, color grading, ASC CDL","url":"https://encyclopedia-of-color.vercel.app/modules/color-grading/lift-gamma-gain-wheel/","image":"https://encyclopedia-of-color.vercel.app/og/color-grading--lift-gamma-gain-wheel.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-grading/lift-gamma-gain-wheel">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Lift · Gamma · Gain</h1>
+      <p class="module-subtitle">three colour wheels each target a tonal zone — lift in shadows, gamma in midtones, gain in highlights; their hue offsets are non-orthogonal and overlapping</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The grading primaries: <b>lift</b> adds a chroma offset weighted toward shadows (1 - x), <b>gamma</b> weighted toward midtones (4x(1−x)), <b>gain</b> weighted toward highlights (x). Push each wheel by a hue and amount and the curves modify each tonal zone differently — but the weight functions overlap, so any wheel touches every zone a little.
+        </p>
+        <p class="zone-guide">
+          Drag the three hue sliders and amount sliders. The tone curve plot at right shows how each channel (R, G, B) gets reshaped. The graded patch grid below shows the result on a Macbeth chart.
+        </p>
+        <enc-slider id="liftH" label="Lift hue (°)" min="0" max="360" step="5" value="210" unit="°"></enc-slider>
+        <enc-slider id="liftA" label="Lift amount" min="0" max="50" step="1" value="20" unit=""></enc-slider>
+        <enc-slider id="gammaH" label="Gamma hue (°)" min="0" max="360" step="5" value="90" unit="°"></enc-slider>
+        <enc-slider id="gammaA" label="Gamma amount" min="0" max="50" step="1" value="0" unit=""></enc-slider>
+        <enc-slider id="gainH" label="Gain hue (°)" min="0" max="360" step="5" value="30" unit="°"></enc-slider>
+        <enc-slider id="gainA" label="Gain amount" min="0" max="50" step="1" value="15" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Lift Gamma Gain wheels"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="DaVinci Resolve Color Wheels reference; ASC CDL operator definitions"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

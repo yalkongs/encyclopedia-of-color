@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "color-grading/skin-tone-line",
+  "title": {
+    "en": "Skin-Tone Line on the Vectorscope",
+    "ko": "벡터스코프의 살색 라인"
+  },
+  "subtitle": {
+    "en": "human skin of every ethnicity clusters along a single line in I-Q space at ~123°; the vectorscope's I axis is built around this empirical fact",
+    "ko": "모든 인종의 피부톤이 I-Q 공간에서 ~123°의 한 줄에 모인다 — 벡터스코프의 I축은 이 경험적 사실 위에 만들어졌다"
+  },
+  "description": {
+    "en": "Four skin samples (light/medium/olive/dark) plotted on a vectorscope cluster on the 123° I axis. A WB cast pushes the active sample off-line and the readout flags the drift.",
+    "ko": "네 가지 피부 샘플(light/medium/olive/dark)이 벡터스코프에서 123° I축에 모인다. WB cast가 활성 샘플을 라인에서 밀어내고 readout이 드리프트를 표시한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "color-grading",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Poynton 2012 §30", "section": "Skin-tone line" }
+  ],
+  "standards": ["NTSC 1953 I/Q"],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["vectorscope", "skin tone", "I axis", "NTSC", "color grading"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}
