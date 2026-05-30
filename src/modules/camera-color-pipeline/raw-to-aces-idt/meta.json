@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "camera-color-pipeline/raw-to-aces-idt",
+  "title": {
+    "en": "RAW → IDT → ACEScg",
+    "ko": "RAW → IDT → ACEScg"
+  },
+  "subtitle": {
+    "en": "two different cameras shoot the same scene; each Input Device Transform maps native RGB into a single shared ACES 2065-1 space",
+    "ko": "다른 카메라가 같은 장면을 찍는다 — 각자의 IDT가 native RGB를 공통의 ACES 2065-1로 매핑한다"
+  },
+  "description": {
+    "en": "ACES fixes one neutral working space; each camera's IDT is the per-camera 3x3 that brings native RGB into ACES 2065-1. AP0 to AP1 is a fixed matrix into ACEScg.",
+    "ko": "ACES는 하나의 중립 작업 공간을 고정한다. 각 카메라의 IDT는 native RGB를 ACES 2065-1로 가져오는 3x3이고 AP0→AP1은 ACEScg로의 고정 행렬이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "camera-color-pipeline",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "ACES 1.3", "section": "IDT specification" }
+  ],
+  "standards": ["SMPTE ST 2065-1"],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["ACES", "IDT", "AP0", "AP1", "ACEScg"],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

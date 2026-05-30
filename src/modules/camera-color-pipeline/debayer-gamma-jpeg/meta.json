@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "camera-color-pipeline/debayer-gamma-jpeg",
+  "title": {
+    "en": "Pipeline Order — WB · Demosaic · Matrix · Gamma · 8-bit",
+    "ko": "파이프라인 순서 — WB · 디모자이크 · 행렬 · 감마 · 8-bit"
+  },
+  "subtitle": {
+    "en": "the same five pipeline stages, in two different orders, produce visibly different JPEGs from the same RAW",
+    "ko": "같은 다섯 단계를 다른 순서로 적용하면 같은 RAW에서 눈에 보이게 다른 JPEG가 나온다"
+  },
+  "description": {
+    "en": "Five stages of camera ISP — WB, demosaic, color matrix, gamma, quantize. Two orderings traced side-by-side; gamma and matrix do not commute, so the final 8-bit pixels diverge.",
+    "ko": "카메라 ISP의 다섯 단계 — WB, 디모자이크, 색 행렬, 감마, 양자화. 두 순서를 나란히 추적; 감마와 행렬이 교환되지 않아 최종 8-bit가 갈라진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "camera-color-pipeline",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Ramanath et al. 2005", "section": "Pipeline order" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["camera pipeline", "ISP", "JPEG", "color matrix", "gamma"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 314 modules across 71 categories -->
+    <!-- 318 modules across 72 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>314 modules</strong> are published across 71 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>318 modules</strong> are published across 72 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -1949,6 +1949,32 @@
         <div class="card-meta">L5 · Reference · White Balance Algorithms</div>
         <div class="card-title">Dual-Illuminant DCP Interpolation</div>
         <div class="card-sub">a DNG profile stores two ColorMatrices (A &amp; D65); the converter linearly blends them in mired space at runtime</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Camera Colour Pipeline</h2>
+      <div class="sub">Domain 10 · RAW → IDT → ACEScg, DNG matrices</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/camera-color-pipeline/debayer-gamma-jpeg/">
+        <div class="card-meta">L4 · Reference · Camera Color Pipeline</div>
+        <div class="card-title">Pipeline Order — WB · Demosaic · Matrix · Gamma · 8-bit</div>
+        <div class="card-sub">the same five pipeline stages, in two different orders, produce visibly different JPEGs from the same RAW</div>
+      </a>
+      <a class="module-card" href="./modules/camera-color-pipeline/cinema-log-encoding/">
+        <div class="card-meta">L5 · Reference · Camera Color Pipeline</div>
+        <div class="card-title">Cinema Log — Log C · S-Log3 · V-Log</div>
+        <div class="card-sub">three log encodings give 18% mid-grey at three different code values — that one number is the curve's signature</div>
+      </a>
+      <a class="module-card" href="./modules/camera-color-pipeline/dng-camera-matrices/">
+        <div class="card-meta">L5 · Reference · Camera Color Pipeline</div>
+        <div class="card-title">ColorMatrix vs ForwardMatrix</div>
+        <div class="card-sub">DNG ships two matrices per illuminant — ColorMatrix goes XYZ→camera (white-balance fitting); ForwardMatrix goes camera→XYZ (rendering). They are not inverses.</div>
+      </a>
+      <a class="module-card" href="./modules/camera-color-pipeline/raw-to-aces-idt/">
+        <div class="card-meta">L5 · Reference · Camera Color Pipeline</div>
+        <div class="card-title">RAW → IDT → ACEScg</div>
+        <div class="card-sub">two different cameras shoot the same scene; each Input Device Transform maps native RGB into a single shared ACES 2065-1 space</div>
       </a>
       </div>
     </div>

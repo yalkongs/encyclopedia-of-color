@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "camera-color-pipeline/dng-camera-matrices",
+  "title": {
+    "en": "ColorMatrix vs ForwardMatrix",
+    "ko": "ColorMatrix vs ForwardMatrix"
+  },
+  "subtitle": {
+    "en": "DNG ships two matrices per illuminant — ColorMatrix goes XYZ→camera (white-balance fitting); ForwardMatrix goes camera→XYZ (rendering). They are not inverses.",
+    "ko": "DNG는 일루미넌트당 두 행렬을 담는다 — ColorMatrix는 XYZ→camera(WB 추정용), ForwardMatrix는 camera→XYZ(렌더용). 둘은 서로 역행렬이 아니다."
+  },
+  "description": {
+    "en": "ColorMatrix and ForwardMatrix answer different questions. Inverting ColorMatrix gives one XYZ; ForwardMatrix gives another. DNG stores both because each is fit under its own constraint.",
+    "ko": "ColorMatrix와 ForwardMatrix는 다른 질문에 답한다. ColorMatrix 역행렬과 ForwardMatrix 적용은 다른 XYZ를 낸다. DNG는 둘 다 저장한다 — 각각 다른 제약 하에 fit되기 때문이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "camera-color-pipeline",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Adobe DNG Specification 1.6.0.0", "section": "ColorMatrix vs ForwardMatrix" }
+  ],
+  "standards": ["DNG 1.6.0.0"],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["DNG", "ColorMatrix", "ForwardMatrix", "PCS", "camera profile"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

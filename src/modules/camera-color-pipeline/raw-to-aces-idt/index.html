@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>RAW → IDT → ACEScg — two different cameras shoot the same scene; each…</title>
+  <meta name="description" content="ACES fixes one neutral working space; each camera's IDT is the per-camera 3x3 that brings native RGB into ACES 2065-1. AP0 to AP1 is a fixed matrix into ACEScg.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/raw-to-aces-idt/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="RAW → IDT → ACEScg">
+  <meta property="og:description"    content="ACES fixes one neutral working space; each camera's IDT is the per-camera 3x3 that brings native RGB into ACES 2065-1. AP0 to AP1 is a fixed matrix into ACEScg.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/raw-to-aces-idt/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--raw-to-aces-idt.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: RAW → IDT → ACEScg.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="RAW → IDT → ACEScg">
+  <meta name="twitter:description"   content="ACES fixes one neutral working space; each camera's IDT is the per-camera 3x3 that brings native RGB into ACES 2065-1. AP0 to AP1 is a fixed matrix into ACEScg.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--raw-to-aces-idt.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: RAW → IDT → ACEScg.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"RAW → IDT → ACEScg","alternateName":"camera-color-pipeline/raw-to-aces-idt","description":"ACES fixes one neutral working space; each camera's IDT is the per-camera 3x3 that brings native RGB into ACES 2065-1. AP0 to AP1 is a fixed matrix into ACEScg.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ACES, IDT, AP0, AP1, ACEScg","url":"https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/raw-to-aces-idt/","image":"https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--raw-to-aces-idt.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="camera-color-pipeline/raw-to-aces-idt">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">RAW → IDT → ACEScg</h1>
+      <p class="module-subtitle">two different cameras shoot the same scene; each Input Device Transform maps native RGB into a single shared ACES 2065-1 space</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Academy Colour Encoding System fixes one neutral working space (ACES 2065-1, AP0 primaries, D60) so VFX, grading, and delivery can share assets. The IDT is the <em>camera-specific</em> 3×3 matrix that converts that camera's native RGB into ACES 2065-1. A second fixed matrix (AP0 → AP1) takes ACES 2065-1 into ACEScg for working.
+        </p>
+        <div class="math-block" data-tex="\mathrm{ACES} = \mathbf{IDT}_{\text{cam}} \cdot \mathrm{RAW}_{\text{cam}}"></div>
+        <p class="zone-guide">
+          Three RGB patches stand in for a tiny scene. Toggle the camera — its IDT changes, the native RGB displayed changes, but the resulting ACES 2065-1 and ACEScg should be the <em>same</em>. That's what an IDT buys you.
+        </p>
+        <enc-toggle id="cam" label="Camera (IDT changes)" options="alexa,red,sony" value="alexa"></enc-toggle>
+        <enc-slider id="scene" label="Scene mid-grey (linear ACES)" min="5" max="95" step="1" value="18" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="RAW to ACES IDT pipeline"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ACES 1.3 (AMPAS); IDT specification; AP0 ↔ AP1 matrices"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

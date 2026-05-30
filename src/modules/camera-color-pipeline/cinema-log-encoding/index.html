@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Cinema Log — Log C · S-Log3 · V-Log — three log encodings give 18% mi…</title>
+  <meta name="description" content="Log curves assign code value per stop. Log C (39.1%), S-Log3 (41%), V-Log (42%) — three vendor-defined piecewise formulae plotted in stops; mid-grey markers identify each curve.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/cinema-log-encoding/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Cinema Log — Log C · S-Log3 · V-Log">
+  <meta property="og:description"    content="Log curves assign code value per stop. Log C (39.1%), S-Log3 (41%), V-Log (42%) — three vendor-defined piecewise formulae plotted in stops; mid-grey markers identify each curve.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/cinema-log-encoding/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--cinema-log-encoding.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Cinema Log — Log C · S-Log3 · V-Log.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Cinema Log — Log C · S-Log3 · V-Log">
+  <meta name="twitter:description"   content="Log curves assign code value per stop. Log C (39.1%), S-Log3 (41%), V-Log (42%) — three vendor-defined piecewise formulae plotted in stops; mid-grey markers identify each curve.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--cinema-log-encoding.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Cinema Log — Log C · S-Log3 · V-Log.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Cinema Log — Log C · S-Log3 · V-Log","alternateName":"camera-color-pipeline/cinema-log-encoding","description":"Log curves assign code value per stop. Log C (39.1%), S-Log3 (41%), V-Log (42%) — three vendor-defined piecewise formulae plotted in stops; mid-grey markers identify each curve.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Log C, S-Log3, V-Log, log encoding, cinema","url":"https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/cinema-log-encoding/","image":"https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--cinema-log-encoding.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="camera-color-pipeline/cinema-log-encoding">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Cinema Log Curves — Log C · S-Log3 · V-Log</h1>
+      <p class="module-subtitle">three log encodings give 18% mid-grey at three different code values — that one number is the curve's signature</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A log curve assigns code value per <em>stop</em> of light rather than per linear step, fitting 14&ndash;18 stops of sensor dynamic range into a 10-bit container. Each vendor pins their curve at its own middle-grey: <b>Log C (Alexa EI 800)</b> at 39.1%, <b>S-Log3</b> at 41.0%, <b>V-Log</b> at 42.3%. Knowing the middle-grey code value uniquely identifies the curve.
+        </p>
+        <div class="math-block" data-tex="cv = c \cdot \log_{10}(a \cdot t + b) + d"></div>
+        <p class="zone-guide">
+          The plot shows code value vs scene-linear exposure (stops, with 18% = 0). Crosshairs mark the slider position. Watch where the three curves cross the 18% line — the vertical-difference between them at that point is what cinematographers tune for when matching cameras.
+        </p>
+        <enc-slider id="stops" label="Scene exposure (stops from mid-grey)" min="-6" max="6" step="1" value="0" unit=" stop"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Cinema log encodings"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ARRI ALEXA Log C v3; Sony S-Log3 white paper; Panasonic V-Log spec"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

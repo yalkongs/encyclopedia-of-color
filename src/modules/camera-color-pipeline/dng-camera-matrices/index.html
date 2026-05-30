@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ColorMatrix vs ForwardMatrix — DNG ships two matrices per illuminant…</title>
+  <meta name="description" content="ColorMatrix and ForwardMatrix answer different questions. Inverting ColorMatrix gives one XYZ; ForwardMatrix gives another. DNG stores both because each is fit under its own constraint.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/dng-camera-matrices/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ColorMatrix vs ForwardMatrix">
+  <meta property="og:description"    content="ColorMatrix and ForwardMatrix answer different questions. Inverting ColorMatrix gives one XYZ; ForwardMatrix gives another. DNG stores both because each is fit under its own constraint.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/dng-camera-matrices/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--dng-camera-matrices.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ColorMatrix vs ForwardMatrix.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ColorMatrix vs ForwardMatrix">
+  <meta name="twitter:description"   content="ColorMatrix and ForwardMatrix answer different questions. Inverting ColorMatrix gives one XYZ; ForwardMatrix gives another. DNG stores both because each is fit under its own constraint.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--dng-camera-matrices.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ColorMatrix vs ForwardMatrix.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ColorMatrix vs ForwardMatrix","alternateName":"camera-color-pipeline/dng-camera-matrices","description":"ColorMatrix and ForwardMatrix answer different questions. Inverting ColorMatrix gives one XYZ; ForwardMatrix gives another. DNG stores both because each is fit under its own constraint.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"DNG, ColorMatrix, ForwardMatrix, PCS, camera profile","url":"https://encyclopedia-of-color.vercel.app/modules/camera-color-pipeline/dng-camera-matrices/","image":"https://encyclopedia-of-color.vercel.app/og/camera-color-pipeline--dng-camera-matrices.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="camera-color-pipeline/dng-camera-matrices">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ColorMatrix vs ForwardMatrix</h1>
+      <p class="module-subtitle">DNG ships two matrices per illuminant — ColorMatrix goes XYZ→camera (white-balance fitting); ForwardMatrix goes camera→XYZ (rendering). They are not inverses.</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A DNG profile stores both a <code>ColorMatrix</code> (XYZ→camera, used to <em>find</em> the illuminant by fitting the as-shot neutral) and a <code>ForwardMatrix</code> (camera→XYZ-D50, used to <em>render</em> the image to the PCS). They are fit under different constraints and are <b>not</b> inverses of each other — they are stored together precisely because they answer different questions.
+        </p>
+        <p class="zone-guide">
+          Pick a camera-native RGB. Path A: invert ColorMatrix to get XYZ; Path B: apply ForwardMatrix to get XYZ. Both targets should describe the same physical colour — but the matrices were fit to different data, so the two estimates do not agree exactly.
+        </p>
+        <enc-slider id="cR" label="Camera R" min="0" max="100" step="1" value="50" unit="%"></enc-slider>
+        <enc-slider id="cG" label="Camera G" min="0" max="100" step="1" value="60" unit="%"></enc-slider>
+        <enc-slider id="cB" label="Camera B" min="0" max="100" step="1" value="35" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ColorMatrix vs ForwardMatrix"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Adobe DNG Specification 1.6.0.0 §6.4.1; ForwardMatrix vs ColorMatrix"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

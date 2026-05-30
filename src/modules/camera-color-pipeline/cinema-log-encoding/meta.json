@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "camera-color-pipeline/cinema-log-encoding",
+  "title": {
+    "en": "Cinema Log — Log C · S-Log3 · V-Log",
+    "ko": "Cinema Log — Log C · S-Log3 · V-Log"
+  },
+  "subtitle": {
+    "en": "three log encodings give 18% mid-grey at three different code values — that one number is the curve's signature",
+    "ko": "세 로그 인코딩이 18% 미드그레이를 세 다른 코드값에 놓는다 — 그 값이 곡선의 정체성"
+  },
+  "description": {
+    "en": "Log curves assign code value per stop. Log C (39.1%), S-Log3 (41%), V-Log (42%) — three vendor-defined piecewise formulae plotted in stops; mid-grey markers identify each curve.",
+    "ko": "Log 곡선은 stop당 코드값을 할당한다. Log C(39.1%), S-Log3(41%), V-Log(42%) — 세 제조사 공식이 stops 축에 표시되고 mid-grey 마커가 각 곡선을 식별한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "camera-color-pipeline",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "ARRI ALEXA Log C v3", "section": "Encoding equation" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Log C", "S-Log3", "V-Log", "log encoding", "cinema"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}
