@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-ml/cnn-colorization-shell",
+  "title": {"en": "CNN Colorisation — Zhang 2016 Architecture", "ko": "CNN 컬러라이제이션 — Zhang 2016 아키텍처"},
+  "subtitle": {"en": "U-Net regresses Lab a*b* from grayscale L*; trained on ImageNet to learn colour priors; temperature controls boldness vs muted-grey conservatism", "ko": "U-Net이 L*에서 Lab a*b* 회귀; ImageNet 학습으로 색 사전 — 온도가 대담함과 회색 보수 사이 조절"},
+  "description": {"en": "Temperature slider drives ab-chroma boldness with grayscale input / prediction / ground-truth strip and 10-stage architecture box diagram.", "ko": "온도 슬라이더로 ab 채도를 조절하며 회색조 입력·예측·정답 3장과 10단계 아키텍처 박스 도식을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 11, "category": "color-and-ml",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Zhang 2016", "section": "Colorization"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["CNN colorization", "Zhang 2016", "U-Net"],
+  "estimated_hours": 8, "status": "shipped"
+}

@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 464 modules across 104 categories -->
+    <!-- 468 modules across 105 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>464 modules</strong> are published across 104 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>468 modules</strong> are published across 105 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -2897,6 +2897,32 @@
         <div class="card-meta">L3 · Reference · Color Compression</div>
         <div class="card-title">YCoCg Decorrelation — Reversible RGB Transform</div>
         <div class="card-sub">Y = (R+2G+B)/4, Co = (R-B)/2, Cg = G-(R+B)/2; integer-reversible, decorrelates better than YCbCr — used in HEVC/AV1 internally</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Colour &amp; ML</h2>
+      <div class="sub">Domain 11 · CNN colourisation, style transfer</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/color-and-ml/clip-color-embeddings/">
+        <div class="card-meta">L2 · Reference · Color And Ml</div>
+        <div class="card-title">CLIP Colour Embeddings — Text↔Image Alignment</div>
+        <div class="card-sub">CLIP learns joint text-image embedding from 400M pairs; 'crimson sunset' sits near vermilion images, powering DALL-E and Stable Diffusion</div>
+      </a>
+      <a class="module-card" href="./modules/color-and-ml/cnn-colorization-shell/">
+        <div class="card-meta">L2 · Reference · Color And Ml</div>
+        <div class="card-title">CNN Colorisation — Zhang 2016 Architecture</div>
+        <div class="card-sub">U-Net regresses Lab a*b* from grayscale L*; trained on ImageNet to learn colour priors; temperature controls boldness vs muted-grey conservatism</div>
+      </a>
+      <a class="module-card" href="./modules/color-and-ml/neural-style-transfer-loss/">
+        <div class="card-meta">L2 · Reference · Color And Ml</div>
+        <div class="card-title">Neural Style Transfer — Gatys 2015 Loss Composition</div>
+        <div class="card-sub">Optimise pixels to match content (deep-feature L2) + style (Gram-matrix); slider trades content fidelity vs stylistic look</div>
+      </a>
+      <a class="module-card" href="./modules/color-and-ml/palette-extraction-attention/">
+        <div class="card-meta">L2 · Reference · Color And Ml</div>
+        <div class="card-title">Palette Extraction — Attention-Weighted k-Means</div>
+        <div class="card-sub">Pro palette tools weight pixels by saliency before clustering — subject (face, object) dominates over background, fixing naive k-means bias</div>
       </a>
       </div>
     </div>

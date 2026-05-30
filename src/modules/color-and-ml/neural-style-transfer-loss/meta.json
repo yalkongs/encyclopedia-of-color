@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-ml/neural-style-transfer-loss",
+  "title": {"en": "Neural Style Transfer — Gatys 2015 Loss Composition", "ko": "신경 스타일 전이 — Gatys 2015 손실 구성"},
+  "subtitle": {"en": "Optimise pixels to match content (deep-feature L2) + style (Gram-matrix); slider trades content fidelity vs stylistic look", "ko": "픽셀을 최적화해 내용(딥 피처 L2) + 스타일(Gram 행렬)을 맞추기; 슬라이더가 내용·스타일 트레이드오프"},
+  "description": {"en": "Style-weight slider blends content + style with 3-image strip and loss-equation panel explaining VGG features and Gram matrices.", "ko": "스타일 가중치 슬라이더로 내용+스타일을 혼합하며 3장 비교와 VGG 피처·Gram 행렬을 설명하는 손실 수식 패널을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 11, "category": "color-and-ml",
+  "layout": "A", "prerequisites": ["color-and-ml/cnn-colorization-shell"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Gatys 2015", "section": "Neural style"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["neural style transfer", "VGG", "Gram matrix"],
+  "estimated_hours": 8, "status": "shipped"
+}

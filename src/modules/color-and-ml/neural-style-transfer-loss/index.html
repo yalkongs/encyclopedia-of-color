@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Neural Style Transfer — Gatys 2015 Loss Composition — Optimise pixels…</title>
+  <meta name="description" content="Style-weight slider blends content + style with 3-image strip and loss-equation panel explaining VGG features and Gram matrices.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-and-ml/neural-style-transfer-loss/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Neural Style Transfer — Gatys 2015 Loss Composition">
+  <meta property="og:description"    content="Style-weight slider blends content + style with 3-image strip and loss-equation panel explaining VGG features and Gram matrices.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-and-ml/neural-style-transfer-loss/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-and-ml--neural-style-transfer-loss.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Neural Style Transfer — Gatys 2015 Loss Composition.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Neural Style Transfer — Gatys 2015 Loss Composition">
+  <meta name="twitter:description"   content="Style-weight slider blends content + style with 3-image strip and loss-equation panel explaining VGG features and Gram matrices.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-and-ml--neural-style-transfer-loss.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Neural Style Transfer — Gatys 2015 Loss Composition.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Neural Style Transfer — Gatys 2015 Loss Composition","alternateName":"color-and-ml/neural-style-transfer-loss","description":"Style-weight slider blends content + style with 3-image strip and loss-equation panel explaining VGG features and Gram matrices.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"neural style transfer, VGG, Gram matrix","url":"https://encyclopedia-of-color.vercel.app/modules/color-and-ml/neural-style-transfer-loss/","image":"https://encyclopedia-of-color.vercel.app/og/color-and-ml--neural-style-transfer-loss.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-and-ml/neural-style-transfer-loss">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L2">L2 Understand</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Neural Style Transfer — Gatys 2015 Loss Composition</h1>
+    <p class="module-subtitle">Optimise input image to match content (deep-feature L2) + style (Gram-matrix of features); slider trades off content fidelity vs stylistic look</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Gatys et al. (2015) found that VGG19 feature responses split into "content" (mid layers) and "style" (Gram correlations across layers). Optimising pixels to satisfy both gives the famous "photo painted by Van Gogh" effect. Modern fast NST uses a feed-forward network distilled from this optimisation.</p>
+      <p class="zone-guide">Slide α/(α+β): pure content (left) ↔ pure style (right).</p>
+      <enc-slider id="w" label="style weight" min="0" max="1" step="0.01" value="0.5" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Neural style"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Gatys 2015 Neural Style; Johnson 2016 Fast Style"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

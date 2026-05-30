@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>CLIP Colour Embeddings — Text↔Image Alignment — CLIP learns joint tex…</title>
+  <meta name="description" content="Colour-word selector shows 8 named colours with large swatch and a*/b* embedding scatter showing semantic-perceptual proximity.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-and-ml/clip-color-embeddings/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="CLIP Colour Embeddings — Text↔Image Alignment">
+  <meta property="og:description"    content="Colour-word selector shows 8 named colours with large swatch and a*/b* embedding scatter showing semantic-perceptual proximity.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-and-ml/clip-color-embeddings/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-and-ml--clip-color-embeddings.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: CLIP Colour Embeddings — Text↔Image Alignment.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="CLIP Colour Embeddings — Text↔Image Alignment">
+  <meta name="twitter:description"   content="Colour-word selector shows 8 named colours with large swatch and a*/b* embedding scatter showing semantic-perceptual proximity.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-and-ml--clip-color-embeddings.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: CLIP Colour Embeddings — Text↔Image Alignment.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"CLIP Colour Embeddings — Text↔Image Alignment","alternateName":"color-and-ml/clip-color-embeddings","description":"Colour-word selector shows 8 named colours with large swatch and a*/b* embedding scatter showing semantic-perceptual proximity.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"CLIP, embeddings, colour terms","url":"https://encyclopedia-of-color.vercel.app/modules/color-and-ml/clip-color-embeddings/","image":"https://encyclopedia-of-color.vercel.app/og/color-and-ml--clip-color-embeddings.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-and-ml/clip-color-embeddings">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L2">L2 Understand</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">CLIP Colour Embeddings — Text↔Image Alignment</h1>
+    <p class="module-subtitle">CLIP (Radford 2021) learns a joint text-image embedding where "a vermilion sunset" and a vermilion-coloured image sit near each other; foundation of DALL-E, Stable Diffusion, Midjourney</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">CLIP trains image and text encoders to maximise cosine similarity for matching pairs from 400 M caption-image pairs. The resulting embedding encodes both semantic content AND colour vocabulary — "crimson" embeds near saturated reds, "muted teal" near desaturated cyan-greens. Used as the conditioning signal in diffusion models.</p>
+      <p class="zone-guide">Pick a colour word; the matched RGB approximation appears.</p>
+      <enc-slider id="i" label="word (1=crimson · 8=vermilion)" min="1" max="8" step="1" value="1" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="CLIP colour"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Radford 2021 CLIP; Ramesh 2022 unCLIP DALL-E 2"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

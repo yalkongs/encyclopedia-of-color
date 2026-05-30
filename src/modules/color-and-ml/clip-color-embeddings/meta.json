@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-ml/clip-color-embeddings",
+  "title": {"en": "CLIP Colour Embeddings — Text↔Image Alignment", "ko": "CLIP 색상 임베딩 — 텍스트-이미지 정렬"},
+  "subtitle": {"en": "CLIP learns joint text-image embedding from 400M pairs; 'crimson sunset' sits near vermilion images, powering DALL-E and Stable Diffusion", "ko": "CLIP이 4억 쌍에서 텍스트-이미지 임베딩 학습; '진홍 노을'이 버밀리언 이미지 근처 — DALL-E·Stable Diffusion 동력"},
+  "description": {"en": "Colour-word selector shows 8 named colours with large swatch and a*/b* embedding scatter showing semantic-perceptual proximity.", "ko": "색명 선택으로 8개 색을 큰 스와치와 a*/b* 임베딩 산점도로 의미-지각 근접성을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 11, "category": "color-and-ml",
+  "layout": "A", "prerequisites": ["language-color-evolution/berlin-kay-split"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Radford 2021", "section": "CLIP"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["CLIP", "embeddings", "colour terms"],
+  "estimated_hours": 8, "status": "shipped"
+}

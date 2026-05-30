@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-ml/palette-extraction-attention",
+  "title": {"en": "Palette Extraction — Attention-Weighted k-Means", "ko": "팔레트 추출 — 어텐션 가중 k-평균"},
+  "subtitle": {"en": "Pro palette tools weight pixels by saliency before clustering — subject (face, object) dominates over background, fixing naive k-means bias", "ko": "전문 팔레트 도구는 클러스터링 전 픽셀에 현저도 가중 — 주체가 배경보다 우선해 단순 k-평균 편향 보정"},
+  "description": {"en": "Attention-strength slider drives weighted k-means with portrait input, centre-bias saliency mask, and extracted 6-swatch palette comparison.", "ko": "어텐션 강도 슬라이더로 가중 k-평균을 보이며 인물 입력, 중심 편향 현저도, 6 스와치 팔레트를 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 11, "category": "color-and-ml",
+  "layout": "A", "prerequisites": ["color-quantization/kmeans-lab-clustering"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Lin Hanrahan 2013", "section": "Palette"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["palette extraction", "saliency", "attention"],
+  "estimated_hours": 8, "status": "shipped"
+}
