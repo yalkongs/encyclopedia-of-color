@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Benzene → Naphthalene → Anthracene → Tetracene — linearly fusing arom…</title>
+  <meta name="description" content="Acene series 1→4 rings. Structure grows, absorption marker slides red-ward on the spectrum, colour swatch transitions from colourless (UV) through pale yellow to orange (tetracene).">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/benzene-to-anthracene/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Benzene → Naphthalene → Anthracene → Tetracene">
+  <meta property="og:description"    content="Acene series 1→4 rings. Structure grows, absorption marker slides red-ward on the spectrum, colour swatch transitions from colourless (UV) through pale yellow to orange (tetracene).">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/benzene-to-anthracene/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--benzene-to-anthracene.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Benzene → Naphthalene → Anthracene → Tetracene.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Benzene → Naphthalene → Anthracene → Tetracene">
+  <meta name="twitter:description"   content="Acene series 1→4 rings. Structure grows, absorption marker slides red-ward on the spectrum, colour swatch transitions from colourless (UV) through pale yellow to orange (tetracene).">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--benzene-to-anthracene.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Benzene → Naphthalene → Anthracene → Tetracene.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Benzene → Naphthalene → Anthracene → Tetracene","alternateName":"molecular-orbitals/benzene-to-anthracene","description":"Acene series 1→4 rings. Structure grows, absorption marker slides red-ward on the spectrum, colour swatch transitions from colourless (UV) through pale yellow to orange (tetracene).","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"acene, benzene, anthracene, tetracene, fused rings","url":"https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/benzene-to-anthracene/","image":"https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--benzene-to-anthracene.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="molecular-orbitals/benzene-to-anthracene">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Benzene → Naphthalene → Anthracene → Tetracene</h1>
+      <p class="module-subtitle">linearly fusing aromatic rings extends the π system one ring at a time; each fusion red-shifts the lowest UV-Vis absorption by ~50–100 nm</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Benzene, naphthalene, anthracene, tetracene are the first four members of the linear-acene series. Each added ring extends the conjugated π system, lowers the LUMO, and red-shifts the lowest absorption (the &alpha; band). At tetracene the absorption falls firmly into the visible — the crystal is orange. Pentacene (5 rings) is deep blue.
+        </p>
+        <p class="zone-guide">
+          Toggle the number of fused rings. The structure on the left grows; the absorption marker on the spectrum on the right slides into the red; the swatch shows the resulting (complementary) crystal colour.
+        </p>
+        <enc-toggle id="n" label="Number of fused rings" options="1,2,3,4" value="3"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Benzene to anthracene"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Zollinger §2.4 — Acene series; Clar's rule of polycyclic aromatics"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

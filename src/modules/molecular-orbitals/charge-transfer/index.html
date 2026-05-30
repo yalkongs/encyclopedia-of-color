@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Charge-Transfer Bands — MLCT vs LMCT — an electron leaps between meta…</title>
+  <meta name="description" content="MO diagram with M and L levels. Toggle LMCT/MLCT to flip the arrow direction; example compounds (KMnO₄, [CrO₄]²⁻ for LMCT; Ru(bipy)₃ for MLCT) with measured λ_max and complement colour swatches.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/charge-transfer/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Charge-Transfer Bands — MLCT vs LMCT">
+  <meta property="og:description"    content="MO diagram with M and L levels. Toggle LMCT/MLCT to flip the arrow direction; example compounds (KMnO₄, [CrO₄]²⁻ for LMCT; Ru(bipy)₃ for MLCT) with measured λ_max and complement colour swatches.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/charge-transfer/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--charge-transfer.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Charge-Transfer Bands — MLCT vs LMCT.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Charge-Transfer Bands — MLCT vs LMCT">
+  <meta name="twitter:description"   content="MO diagram with M and L levels. Toggle LMCT/MLCT to flip the arrow direction; example compounds (KMnO₄, [CrO₄]²⁻ for LMCT; Ru(bipy)₃ for MLCT) with measured λ_max and complement colour swatches.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--charge-transfer.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Charge-Transfer Bands — MLCT vs LMCT.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Charge-Transfer Bands — MLCT vs LMCT","alternateName":"molecular-orbitals/charge-transfer","description":"MO diagram with M and L levels. Toggle LMCT/MLCT to flip the arrow direction; example compounds (KMnO₄, [CrO₄]²⁻ for LMCT; Ru(bipy)₃ for MLCT) with measured λ_max and complement colour swatches.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"charge transfer, MLCT, LMCT, permanganate, Ru bipyridyl","url":"https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/charge-transfer/","image":"https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--charge-transfer.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="molecular-orbitals/charge-transfer">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Charge-Transfer Bands — MLCT vs LMCT</h1>
+      <p class="module-subtitle">an electron leaps between metal and ligand orbitals — direction depends on which side has the lower-energy LUMO; the intense colours of permanganate, Prussian blue, and Ru-bipyridyl all come from CT</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A <b>charge-transfer (CT)</b> transition moves an electron between metal-centred and ligand-centred orbitals. <b>LMCT</b> (ligand → metal) is favoured when the metal is in a high oxidation state (low-energy d orbitals): KMnO₄ Mn(VII), [CrO₄]²⁻ Cr(VI). <b>MLCT</b> (metal → ligand) is favoured by low-oxidation metals with π-acceptor ligands: [Ru(bipy)₃]²⁺, [Fe(bipy)₃]²⁺. CT bands are typically 100&times; more intense than d-d bands — hence the deep colour.
+        </p>
+        <p class="zone-guide">
+          Toggle the direction. The arrow flips between metal-derived and ligand-derived orbital levels; example compounds + their measured λ_max are listed. The colour swatch is the complement of the absorption band.
+        </p>
+        <enc-toggle id="dir" label="CT direction" options="LMCT,MLCT" value="LMCT"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Charge transfer"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §7 — Charge-Transfer Colour (cause #5); Demas &amp; DeGraff 2001"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

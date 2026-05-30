@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Ligand Field — Strong vs Weak, High vs Low Spin — when Δ₀ exceeds the…</title>
+  <meta name="description" content="Spectrochemical series strip + side-by-side high/low spin diagrams. Drag Δ₀ along the series; active config highlighted, unpaired count and μ_eff readout track the spin state change.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/ligand-field-theory/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Ligand Field — Strong vs Weak, High vs Low Spin">
+  <meta property="og:description"    content="Spectrochemical series strip + side-by-side high/low spin diagrams. Drag Δ₀ along the series; active config highlighted, unpaired count and μ_eff readout track the spin state change.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/ligand-field-theory/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--ligand-field-theory.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Ligand Field — Strong vs Weak, High vs Low Spin.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Ligand Field — Strong vs Weak, High vs Low Spin">
+  <meta name="twitter:description"   content="Spectrochemical series strip + side-by-side high/low spin diagrams. Drag Δ₀ along the series; active config highlighted, unpaired count and μ_eff readout track the spin state change.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--ligand-field-theory.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Ligand Field — Strong vs Weak, High vs Low Spin.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Ligand Field — Strong vs Weak, High vs Low Spin","alternateName":"molecular-orbitals/ligand-field-theory","description":"Spectrochemical series strip + side-by-side high/low spin diagrams. Drag Δ₀ along the series; active config highlighted, unpaired count and μ_eff readout track the spin state change.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ligand field, high spin, low spin, spectrochemical series, pairing energy","url":"https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/ligand-field-theory/","image":"https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--ligand-field-theory.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="molecular-orbitals/ligand-field-theory">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Ligand Field — Strong vs Weak, High vs Low Spin</h1>
+      <p class="module-subtitle">when Δ₀ exceeds the pairing energy P, electrons prefer to pair up in t₂g (low spin) — Δ₀ &lt; P keeps them spread across all five orbitals (high spin)</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The ligand-field gap Δ₀ competes with the electron pairing energy P. <b>Strong-field</b> ligands (CN⁻, CO, NH₃) give large Δ₀ — electrons pair up first in t₂g (low-spin, fewer unpaired electrons). <b>Weak-field</b> ligands (I⁻, Br⁻, Cl⁻, H₂O, F⁻) give small Δ₀ — Hund's rule wins, electrons spread across all five orbitals (high-spin).
+        </p>
+        <div class="math-block" data-tex="\Delta_o > P \;\Rightarrow\; \text{low spin},\quad \Delta_o < P \;\Rightarrow\; \text{high spin}"></div>
+        <p class="zone-guide">
+          Drag the ligand from weak (left) to strong (right) along the spectrochemical series. Watch the electron distribution in the d⁶ Co(III) example flip — high-spin (4 unpaired) becomes low-spin (0 unpaired). Magnetic moment μ ≈ √(n(n+2)) Bohr magnetons tracks the change.
+        </p>
+        <enc-slider id="dq" label="Δ₀ (cm⁻¹ × 10³)" min="8" max="35" step="1" value="22" unit=""></enc-slider>
+        <enc-toggle id="dcount" label="d-electron count" options="d4,d5,d6,d7" value="d6"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Ligand field theory"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §5; Cotton & Wilkinson Advanced Inorganic Chemistry §17"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

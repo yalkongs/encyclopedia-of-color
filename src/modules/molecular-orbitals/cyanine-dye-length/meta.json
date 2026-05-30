@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "molecular-orbitals/cyanine-dye-length",
+  "title": {
+    "en": "Cyanine Dye Length — Particle-in-a-Box",
+    "ko": "시아닌 염료 길이 — 1차원 박스 모델"
+  },
+  "subtitle": {
+    "en": "a symmetric cyanine has 2k+1 methine carbons between the two nitrogens; the free-electron-in-a-box gap shrinks like 1/N², and the measured λ_max jumps ~100 nm per extra methine",
+    "ko": "대칭 시아닌은 두 질소 사이에 2k+1개 메틴 — 1차원 박스 모델 갭이 1/N²로 줄고 측정 λ_max는 메틴마다 ~100 nm 적색 이동"
+  },
+  "description": {
+    "en": "Cyanine N-(CH=CH)_k-N homologue series. Slider k=1..6 picks the methine count; the measured λ_max table from Förster & Brode 1934 anchors the visible-spectrum band and observed-colour swatch.",
+    "ko": "시아닌 N-(CH=CH)_k-N 동족체. k=1..6 슬라이더로 메틴 수 선택; Förster & Brode 1934 측정 λ_max 표가 가시광 밴드와 색 swatch를 앵커."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 3,
+  "category": "molecular-orbitals",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Kuhn 1949", "section": "Free-electron box" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["cyanine", "particle in a box", "polymethine", "Kuhn", "photographic dye"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

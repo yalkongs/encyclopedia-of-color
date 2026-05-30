@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Transition Metals — d-d Splitting Sets the Colour — an octahedral lig…</title>
+  <meta name="description" content="Octahedron + energy-level diagram + absorption band + observed colour swatch. Drag Δ₀; the absorption band shifts; complement swatch follows. P toggle reveals high vs low spin.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/transition-metals/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Transition Metals — d-d Splitting Sets the Colour">
+  <meta property="og:description"    content="Octahedron + energy-level diagram + absorption band + observed colour swatch. Drag Δ₀; the absorption band shifts; complement swatch follows. P toggle reveals high vs low spin.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/transition-metals/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--transition-metals.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Transition Metals — d-d Splitting Sets the Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Transition Metals — d-d Splitting Sets the Colour">
+  <meta name="twitter:description"   content="Octahedron + energy-level diagram + absorption band + observed colour swatch. Drag Δ₀; the absorption band shifts; complement swatch follows. P toggle reveals high vs low spin.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--transition-metals.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Transition Metals — d-d Splitting Sets the Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Transition Metals — d-d Splitting Sets the Colour","alternateName":"molecular-orbitals/transition-metals","description":"Octahedron + energy-level diagram + absorption band + observed colour swatch. Drag Δ₀; the absorption band shifts; complement swatch follows. P toggle reveals high vs low spin.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"transition metal, d-d splitting, ligand field, Delta_o, color","url":"https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/transition-metals/","image":"https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--transition-metals.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="molecular-orbitals/transition-metals">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Transition Metals — d-d Splitting Sets the Colour</h1>
+      <p class="module-subtitle">an octahedral ligand field splits the five d orbitals into t₂g and eg; the gap Δ₀ is the photon energy of the d→d absorption — and the colour you see is its complement</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A transition-metal cation in an octahedral field of six ligands no longer has five degenerate d orbitals. The three pointing between ligands (t₂g) drop in energy; the two pointing at ligands (eg) rise. The energy gap Δ₀ between them sets a single absorption band. The light we <em>see</em> is everything that wasn't absorbed — the complementary colour.
+        </p>
+        <div class="math-block" data-tex="\lambda_{\text{abs}} = \dfrac{hc}{\Delta_o},\quad E_{\text{photon}} = \Delta_o"></div>
+        <p class="zone-guide">
+          Drag Δ₀. The octahedron shows M and six ligands; the energy-level diagram beside it shows t₂g (lower) and eg (upper) with the gap; the absorption band on the spectrum follows λ = hc/Δ₀; the swatch on the right shows the perceived complement.
+        </p>
+        <enc-slider id="dq" label="Δ₀ (cm⁻¹ × 10³)" min="10" max="35" step="1" value="20" unit=""></enc-slider>
+        <enc-toggle id="d" label="d-electron count" options="d3,d6,d9" value="d6"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="d-d splitting"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §5 — Ligand Field Theory; cause #4 of colour"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

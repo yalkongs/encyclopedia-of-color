@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Conjugated π Chain — Longer = Redder — in a chain of alternating sing…</title>
+  <meta name="description" content="Zig-zag chain with N double bonds. λ_max grows with N; the absorption band enters the visible around N=10. Markers for retinal, β-carotene, crocetin anchor the empirical curve.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/conjugated-organic/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Conjugated π Chain — Longer = Redder">
+  <meta property="og:description"    content="Zig-zag chain with N double bonds. λ_max grows with N; the absorption band enters the visible around N=10. Markers for retinal, β-carotene, crocetin anchor the empirical curve.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/conjugated-organic/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--conjugated-organic.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Conjugated π Chain — Longer = Redder.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Conjugated π Chain — Longer = Redder">
+  <meta name="twitter:description"   content="Zig-zag chain with N double bonds. λ_max grows with N; the absorption band enters the visible around N=10. Markers for retinal, β-carotene, crocetin anchor the empirical curve.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--conjugated-organic.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Conjugated π Chain — Longer = Redder.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Conjugated π Chain — Longer = Redder","alternateName":"molecular-orbitals/conjugated-organic","description":"Zig-zag chain with N double bonds. λ_max grows with N; the absorption band enters the visible around N=10. Markers for retinal, β-carotene, crocetin anchor the empirical curve.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"conjugation, polyene, HOMO LUMO, beta carotene, Zollinger","url":"https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/conjugated-organic/","image":"https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--conjugated-organic.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="molecular-orbitals/conjugated-organic">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Conjugated π Chain — Longer = Redder</h1>
+      <p class="module-subtitle">in a chain of alternating single and double bonds, the HOMO-LUMO gap shrinks as the chain grows; at ~11 conjugated double bonds the absorption falls into the visible — β-carotene is orange</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A π-conjugated chain is a one-dimensional box for the bonding electrons. As the chain gets longer the allowed orbital energies pack closer; the HOMO-LUMO gap shrinks; the absorption wavelength shifts toward the red. Around N=10&ndash;11 conjugated double bonds the absorption enters the visible — this is why carotenoids are orange/red.
+        </p>
+        <div class="math-block" data-tex="E_{\text{gap}} \;\propto\; \dfrac{1}{N+1},\quad \lambda_{\text{max}} \approx 224 + 71(N-1)\ \text{nm (cyanine-like)}"></div>
+        <p class="zone-guide">
+          Drag N (number of conjugated double bonds). The chain length grows; the predicted λ_max moves; absorption band overlays the visible spectrum. Anchor markers: β-carotene N=11, lycopene N=11, retinal N=5.
+        </p>
+        <enc-slider id="N" label="Number of conjugated double bonds N" min="2" max="14" step="1" value="11" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Conjugated chain"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Zollinger §2 — Colour and Constitution; β-carotene UV-Vis spectrum"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

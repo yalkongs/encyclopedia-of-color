@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "molecular-orbitals/charge-transfer",
+  "title": {
+    "en": "Charge-Transfer Bands — MLCT vs LMCT",
+    "ko": "전하이동 밴드 — MLCT vs LMCT"
+  },
+  "subtitle": {
+    "en": "an electron leaps between metal and ligand orbitals — direction depends on which side has the lower-energy LUMO; the intense colours of permanganate, Prussian blue, and Ru-bipyridyl all come from CT",
+    "ko": "전자가 금속과 리간드 오비탈 사이를 점프 — 방향은 어느 쪽 LUMO가 더 낮은가에 따라; KMnO₄, 프러시안 블루, [Ru(bipy)₃]²⁺ 모두 CT 색"
+  },
+  "description": {
+    "en": "MO diagram with M and L levels. Toggle LMCT/MLCT to flip the arrow direction; example compounds (KMnO₄, [CrO₄]²⁻ for LMCT; Ru(bipy)₃ for MLCT) with measured λ_max and complement colour swatches.",
+    "ko": "M과 L 레벨이 있는 MO 다이어그램. LMCT/MLCT 토글로 화살표 방향 전환; 예시 화합물(KMnO₄, [CrO₄]²⁻; Ru(bipy)₃) 측정 λ_max + 보색 swatch."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 3,
+  "category": "molecular-orbitals",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [5],
+  "textbook_refs": [
+    { "source": "Nassau 2001 §7", "section": "Charge-transfer" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["charge transfer", "MLCT", "LMCT", "permanganate", "Ru bipyridyl"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Semiconductor Bandgap — Eg Sets the Absorption Edge — a pure semicond…</title>
+  <meta name="description" content="Band diagram + absorption edge on the visible spectrum + observed-colour swatch as the transmitted band average. Anchor markers: Si, CdSe, CdS, ZnS, TiO₂ pin the canonical bandgap values.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/band-theory-semiconductors/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Semiconductor Bandgap — Eg Sets the Absorption Edge">
+  <meta property="og:description"    content="Band diagram + absorption edge on the visible spectrum + observed-colour swatch as the transmitted band average. Anchor markers: Si, CdSe, CdS, ZnS, TiO₂ pin the canonical bandgap values.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/band-theory-semiconductors/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--band-theory-semiconductors.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Semiconductor Bandgap — Eg Sets the Absorption Edge.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Semiconductor Bandgap — Eg Sets the Absorption Edge">
+  <meta name="twitter:description"   content="Band diagram + absorption edge on the visible spectrum + observed-colour swatch as the transmitted band average. Anchor markers: Si, CdSe, CdS, ZnS, TiO₂ pin the canonical bandgap values.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--band-theory-semiconductors.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Semiconductor Bandgap — Eg Sets the Absorption Edge.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Semiconductor Bandgap — Eg Sets the Absorption Edge","alternateName":"molecular-orbitals/band-theory-semiconductors","description":"Band diagram + absorption edge on the visible spectrum + observed-colour swatch as the transmitted band average. Anchor markers: Si, CdSe, CdS, ZnS, TiO₂ pin the canonical bandgap values.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"bandgap, semiconductor, CdS, CdSe, absorption edge","url":"https://encyclopedia-of-color.vercel.app/modules/molecular-orbitals/band-theory-semiconductors/","image":"https://encyclopedia-of-color.vercel.app/og/molecular-orbitals--band-theory-semiconductors.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="molecular-orbitals/band-theory-semiconductors">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Semiconductor Bandgap — Eg Sets the Absorption Edge</h1>
+      <p class="module-subtitle">a pure semiconductor absorbs everything above its bandgap and transmits everything below; CdS Eg=2.4 eV gives yellow, CdSe Eg=1.7 eV gives red</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A semiconductor's filled valence band is separated from its empty conduction band by a gap Eg. Photons with energy &gt; Eg are absorbed (electron promoted across the gap); photons with energy &lt; Eg pass through. The absorption edge is at λ = 1240/Eg nm. The crystal's colour is everything <em>below</em> the edge that makes it through.
+        </p>
+        <div class="math-block" data-tex="\lambda_{\text{edge}} = \dfrac{1240}{E_g\ [\text{eV}]}\ \text{nm}"></div>
+        <p class="zone-guide">
+          Drag Eg. The band diagram changes; the absorption edge moves on the visible spectrum; the swatch shows transmitted (= observed) colour. Anchor markers for Si (1.1 eV, opaque), CdSe (1.7 eV, dark red), CdS (2.4 eV, yellow), ZnS (3.7 eV, colourless).
+        </p>
+        <enc-slider id="eg" label="Bandgap Eg (eV)" min="50" max="400" step="5" value="240" unit=" (×10⁻² eV)"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Semiconductor bandgap"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §8 — Band-gap colour (cause #7); Kittel Introduction to Solid State Physics"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

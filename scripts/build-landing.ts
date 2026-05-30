@@ -104,6 +104,16 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'color-grading':                { title: 'Colour Grading',          sub: 'Domain 10 · Lift / Gamma / Gain wheels, 3D LUTs' },
   'exposure-photometry':          { title: 'Exposure & Photometry',   sub: 'Domain 10 · Zone System, sunny-16, metering' },
   'computational-photography':    { title: 'Computational Photography', sub: 'Domain 10 · HDR bracket, panorama, stack focus' },
+  // Domain 3
+  'causes-of-color-intro':        { title: 'Causes of Colour',        sub: 'Domain 3 · Nassau 15 causes overview' },
+  'molecular-orbitals':           { title: 'Molecular Orbitals',      sub: 'Domain 3 · d-d, π-conjugation, ligand field, band theory' },
+  'dyes-chemistry':               { title: 'Dyes Chemistry',          sub: 'Domain 3 · natural, mordant, azo, reactive, vat, disperse' },
+  'wetting-effect':               { title: 'Wetting Effect',          sub: 'Domain 3 · hiding power, denim BRDF, binder yellowing' },
+  'kubelka-munk-mixer':           { title: 'Kubelka-Munk',            sub: 'Domain 3 · K & S spectral mixing of pigments' },
+  'pigment-degradation':          { title: 'Pigment Degradation',     sub: 'Domain 3 · UV photolysis, lightfastness, incompatibility' },
+  'luminescence-chemistry':       { title: 'Luminescence Chemistry',  sub: 'Domain 3 · fluorescence, photo/thermo/solvato-chromism' },
+  'color-centers':                { title: 'Color Centers',           sub: 'Domain 3 · F-centers, smoky quartz, amethyst, NV diamond' },
+  'band-gap-materials':           { title: 'Band-gap Materials',      sub: 'Domain 3 · CdS yellow, CdSe red, gold nanoparticle plasmon' },
 };
 
 const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
@@ -255,10 +265,16 @@ async function main() {
     'camera-color-pipeline', 'film-emulation', 'color-grading',
     'exposure-photometry', 'computational-photography',
   ];
-  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER, ...D10_ORDER];
+  const D3_ORDER = [
+    'causes-of-color-intro', 'molecular-orbitals', 'dyes-chemistry',
+    'wetting-effect', 'kubelka-munk-mixer', 'pigment-degradation',
+    'luminescence-chemistry', 'color-centers', 'band-gap-materials',
+  ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D3_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER, ...D10_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
+    ...D3_ORDER.filter((c) => byCategory.has(c)),
     ...D4_ORDER.filter((c) => byCategory.has(c)),
     ...D5_ORDER.filter((c) => byCategory.has(c)),
     ...D6_ORDER.filter((c) => byCategory.has(c)),
