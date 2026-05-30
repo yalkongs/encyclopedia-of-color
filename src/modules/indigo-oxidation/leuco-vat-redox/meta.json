@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "indigo-oxidation/leuco-vat-redox",
+  "title": {"en": "Indigo Leuco Vat — Reduction-Oxidation Cycle", "ko": "인디고 류코 배스 — 환원-산화 사이클"},
+  "subtitle": {"en": "Indigotin is insoluble; reduce to soluble yellow-green leuco, soak fibre, air-oxidise back to blue trapped inside the yarn", "ko": "비수용성 인디고틴을 수용성 노란-녹색 류코로 환원 → 천 침지 → 공기 산화로 섬유 안에 청색 고정"},
+  "description": {"en": "Redox slider drives leuco-indigotin equilibrium with vat illustration and reduction-oxidation arrows showing the dyeing mechanism.", "ko": "산화환원 슬라이더로 류코-인디고틴 평형을 보이며 배스 도식과 반응 화살표로 염색 메커니즘을 표현합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "indigo-oxidation",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Balfour-Paul 1998", "section": "Vat dyeing"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["indigo", "leuco", "vat dyeing"],
+  "estimated_hours": 8, "status": "shipped"
+}

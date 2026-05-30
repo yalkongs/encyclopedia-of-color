@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "indigo-oxidation/air-oxidation-timeline",
+  "title": {"en": "Indigo Air-Oxidation Timeline — Yellow to Blue", "ko": "인디고 공기 산화 타임라인 — 노랑에서 파랑"},
+  "subtitle": {"en": "Cloth pulled from leuco vat starts yellow-green; first-order oxidation kinetics with τ≈12 s turn it blue as air converts dye on the fibre", "ko": "류코 배스에서 꺼낸 천이 노란-녹색에서 시작해 τ≈12 s 1차 산화 동역학으로 청색으로 변함"},
+  "description": {"en": "Time slider scrubs cloth from leuco yellow to indigotin blue with snapshot strip and exponential oxidation curve showing the 'indigo moment'.", "ko": "시간 슬라이더로 천이 류코 노랑에서 인디고틴 청색으로 변하며 스냅샷 띠와 지수 곡선을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "indigo-oxidation",
+  "layout": "A", "prerequisites": ["indigo-oxidation/leuco-vat-redox"], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Balfour-Paul 1998", "section": "Air oxidation"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["indigo oxidation", "ai-zome", "vat dye"],
+  "estimated_hours": 8, "status": "shipped"
+}
