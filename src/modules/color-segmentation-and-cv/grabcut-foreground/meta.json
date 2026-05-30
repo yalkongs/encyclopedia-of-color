@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-segmentation-and-cv/grabcut-foreground",
+  "title": {"en": "GrabCut — Interactive Foreground Extraction", "ko": "그랩컷 — 대화형 전경 추출"},
+  "subtitle": {"en": "Bounding-box prior + RGB GMM models + min-cut graph optimisation; Rother 2004 precursor to Photoshop's 'Select Subject'", "ko": "바운딩 박스 + RGB GMM + 최소 컷 그래프 최적화; Rother 2004 — Photoshop '주제 선택'의 전신"},
+  "description": {"en": "Bbox-padding slider drives FG/BG mean segmentation with input+bbox, mask, and cutout three-panel showing the GrabCut pipeline.", "ko": "박스 패딩 슬라이더로 FG/BG 평균 분할을 보이며 입력+박스·마스크·컷아웃 3분할로 GrabCut 파이프라인을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-segmentation-and-cv",
+  "layout": "A", "prerequisites": ["color-segmentation-and-cv/chroma-key-greenscreen"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Rother 2004", "section": "GrabCut"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["GrabCut", "graph cut", "foreground"],
+  "estimated_hours": 8, "status": "shipped"
+}

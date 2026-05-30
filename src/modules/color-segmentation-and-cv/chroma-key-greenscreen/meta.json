@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-segmentation-and-cv/chroma-key-greenscreen",
+  "title": {"en": "Chroma Key — Green-Screen Compositing", "ko": "크로마 키 — 그린스크린 합성"},
+  "subtitle": {"en": "Threshold green-dominance to mask background; Vlahos 1971 colour-difference matte (Oscar 1995) powers broadcast news, weather, and VFX", "ko": "녹색 우세도로 배경 마스크; Vlahos 1971 색차 매트(1995 오스카)가 뉴스·기상·VFX를 구동"},
+  "description": {"en": "ε green-tolerance slider drives alpha matte with foreground/background/matte/composite four-panel showing classic chroma-key pipeline.", "ko": "ε 녹색 허용도 슬라이더로 알파 매트를 보이며 전경/배경/매트/합성 4분할로 크로마 키 파이프라인을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-segmentation-and-cv",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Smith Blinn 1996", "section": "Chroma key"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["chroma key", "green screen", "compositing"],
+  "estimated_hours": 8, "status": "shipped"
+}

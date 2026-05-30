@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Chroma Key — Green-Screen Compositing — Threshold green-dominance to…</title>
+  <meta name="description" content="ε green-tolerance slider drives alpha matte with foreground/background/matte/composite four-panel showing classic chroma-key pipeline.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-segmentation-and-cv/chroma-key-greenscreen/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Chroma Key — Green-Screen Compositing">
+  <meta property="og:description"    content="ε green-tolerance slider drives alpha matte with foreground/background/matte/composite four-panel showing classic chroma-key pipeline.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-segmentation-and-cv/chroma-key-greenscreen/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-segmentation-and-cv--chroma-key-greenscreen.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Chroma Key — Green-Screen Compositing.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Chroma Key — Green-Screen Compositing">
+  <meta name="twitter:description"   content="ε green-tolerance slider drives alpha matte with foreground/background/matte/composite four-panel showing classic chroma-key pipeline.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-segmentation-and-cv--chroma-key-greenscreen.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Chroma Key — Green-Screen Compositing.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Chroma Key — Green-Screen Compositing","alternateName":"color-segmentation-and-cv/chroma-key-greenscreen","description":"ε green-tolerance slider drives alpha matte with foreground/background/matte/composite four-panel showing classic chroma-key pipeline.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"chroma key, green screen, compositing","url":"https://encyclopedia-of-color.vercel.app/modules/color-segmentation-and-cv/chroma-key-greenscreen/","image":"https://encyclopedia-of-color.vercel.app/og/color-segmentation-and-cv--chroma-key-greenscreen.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-segmentation-and-cv/chroma-key-greenscreen">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Chroma Key — Green-Screen Compositing</h1>
+    <p class="module-subtitle">Threshold the green channel (or saturated-hue distance) to mask out background; broadcast news, weather, and VFX since the 1950s Larry Butler Travelling Matte system</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Green is chosen because human skin lacks green and modern Bayer cameras have 2× green pixels (more SNR). Threshold ε measures how green-saturated a pixel must be to count as background. Edge spill (green light bouncing onto subject) is handled by edge despill — a separate post-processing step.</p>
+      <p class="zone-guide">Slide ε (smaller ε = stricter mask).</p>
+      <enc-slider id="eps" label="ε green-tolerance" min="0.02" max="0.4" step="0.01" value="0.15" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Chroma key"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Smith Blinn 1996 Alpha Compositing; Vlahos 1971 Color Difference"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

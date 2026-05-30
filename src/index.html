@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 457 modules across 102 categories -->
+    <!-- 460 modules across 103 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>457 modules</strong> are published across 102 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>460 modules</strong> are published across 103 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -2850,6 +2850,27 @@
         <div class="card-meta">L3 · Reference · Dithering</div>
         <div class="card-title">Floyd–Steinberg Dither — Error Diffusion</div>
         <div class="card-sub">Round each pixel, spread quantisation error to 4 neighbours (7/16, 3/16, 5/16, 1/16); default since 1976 in PDP-11 graphics through modern GIFs</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Colour Segmentation &amp; CV</h2>
+      <div class="sub">Domain 11 · GrabCut, SLIC, chroma key</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/color-segmentation-and-cv/chroma-key-greenscreen/">
+        <div class="card-meta">L3 · Reference · Color Segmentation And Cv</div>
+        <div class="card-title">Chroma Key — Green-Screen Compositing</div>
+        <div class="card-sub">Threshold green-dominance to mask background; Vlahos 1971 colour-difference matte (Oscar 1995) powers broadcast news, weather, and VFX</div>
+      </a>
+      <a class="module-card" href="./modules/color-segmentation-and-cv/grabcut-foreground/">
+        <div class="card-meta">L3 · Reference · Color Segmentation And Cv</div>
+        <div class="card-title">GrabCut — Interactive Foreground Extraction</div>
+        <div class="card-sub">Bounding-box prior + RGB GMM models + min-cut graph optimisation; Rother 2004 precursor to Photoshop's 'Select Subject'</div>
+      </a>
+      <a class="module-card" href="./modules/color-segmentation-and-cv/slic-superpixels/">
+        <div class="card-meta">L3 · Reference · Color Segmentation And Cv</div>
+        <div class="card-title">SLIC Superpixels — k-Means in Lab + xy</div>
+        <div class="card-sub">Simple Linear Iterative Clustering (Achanta 2010): k-means in 5D Lab+xy produces compact edge-aware regions for CV preprocessing</div>
       </a>
       </div>
     </div>

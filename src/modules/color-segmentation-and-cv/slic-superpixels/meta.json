@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-segmentation-and-cv/slic-superpixels",
+  "title": {"en": "SLIC Superpixels — k-Means in Lab + xy", "ko": "SLIC 슈퍼픽셀 — Lab + xy k-평균"},
+  "subtitle": {"en": "Simple Linear Iterative Clustering (Achanta 2010): k-means in 5D Lab+xy produces compact edge-aware regions for CV preprocessing", "ko": "SLIC (Achanta 2010): 5D Lab+xy k-평균으로 콤팩트한 에지 인식 영역 — CV 전처리에 사용"},
+  "description": {"en": "Target-superpixel-count slider runs SLIC with mean-colour result + boundary overlay showing compact, near-Voronoi region partition.", "ko": "목표 슈퍼픽셀 수 슬라이더로 SLIC을 실행해 평균색과 경계 오버레이로 콤팩트한 보로노이 유사 분할을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-segmentation-and-cv",
+  "layout": "A", "prerequisites": ["color-quantization/kmeans-lab-clustering"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Achanta 2010", "section": "SLIC"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["SLIC", "superpixel", "Lab clustering"],
+  "estimated_hours": 8, "status": "shipped"
+}
