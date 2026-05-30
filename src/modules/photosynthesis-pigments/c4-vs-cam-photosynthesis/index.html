@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>C3 vs C4 vs CAM — Same Light, Different Geometry — three CO₂-fixing s…</title>
+  <meta name="description" content="Leaf cross-section, stomata state, and water-use efficiency bar update per strategy. C4 doubles WUE vs C3; CAM nearly quadruples it.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/c4-vs-cam-photosynthesis/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="C3 vs C4 vs CAM — Same Light, Different Geometry">
+  <meta property="og:description"    content="Leaf cross-section, stomata state, and water-use efficiency bar update per strategy. C4 doubles WUE vs C3; CAM nearly quadruples it.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/c4-vs-cam-photosynthesis/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--c4-vs-cam-photosynthesis.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: C3 vs C4 vs CAM — Same Light, Different Geometry.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="C3 vs C4 vs CAM — Same Light, Different Geometry">
+  <meta name="twitter:description"   content="Leaf cross-section, stomata state, and water-use efficiency bar update per strategy. C4 doubles WUE vs C3; CAM nearly quadruples it.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--c4-vs-cam-photosynthesis.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: C3 vs C4 vs CAM — Same Light, Different Geometry.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"C3 vs C4 vs CAM — Same Light, Different Geometry","alternateName":"photosynthesis-pigments/c4-vs-cam-photosynthesis","description":"Leaf cross-section, stomata state, and water-use efficiency bar update per strategy. C4 doubles WUE vs C3; CAM nearly quadruples it.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"C3 C4 CAM, photosynthesis, RuBisCO, Kranz anatomy","url":"https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/c4-vs-cam-photosynthesis/","image":"https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--c4-vs-cam-photosynthesis.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="photosynthesis-pigments/c4-vs-cam-photosynthesis">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">C3 vs C4 vs CAM — Same Light, Different Geometry</h1>
+      <p class="module-subtitle">three CO₂-fixing strategies — C3 (default), C4 (Kranz anatomy + spatial separation), CAM (succulent temporal separation) — same chlorophyll, drastically different water economy</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          C3 (most plants): RuBisCO fixes CO₂ in the mesophyll, but suffers photorespiration in hot conditions. C4 (corn, sugarcane): CO₂ first concentrated by PEP carboxylase in mesophyll cells, then released to RuBisCO in bundle-sheath cells (Kranz anatomy). CAM (cactus, pineapple): CO₂ fixed at night, stored as malate, released by day with stomata closed — saves water in deserts.
+        </p>
+        <p class="zone-guide">
+          Toggle strategy. The leaf cross-section schematic + the per-stomata water-use bar + CO₂ flux pathway change.
+        </p>
+        <enc-toggle id="strat" label="Strategy" options="C3,C4,CAM" value="C3"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="C4 vs CAM"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Sage 2004 — Evolution of C4 photosynthesis; Borland 2009 — CAM"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

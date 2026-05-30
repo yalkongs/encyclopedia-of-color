@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "photosynthesis-pigments/phycoerythrin-red-algae",
+  "title": {
+    "en": "Phycoerythrin — Red Algae's Green-Light Strategy",
+    "ko": "피코에리트린 — 홍조류의 녹색광 전략"
+  },
+  "subtitle": {
+    "en": "deep red seaweed absorbs green-yellow light (~565 nm) that penetrates further than blue — chlorophyll alone can't, so phycoerythrin antennas extend the depth range",
+    "ko": "심해 홍조류는 ~565 nm 녹황색을 흡수 — 엽록소 단독은 못함, 피코에리트린이 심도 범위 확장"
+  },
+  "description": {
+    "en": "Depth slider attenuates the underwater spectrum (red gone first). Bars show chl-only vs chl+PE captured photons — phycoerythrin tilts the niche to red algae.",
+    "ko": "심도 슬라이더가 수중 스펙트럼 감쇠. 막대로 chl 단독 vs chl+PE 포획 광자 — PE가 niche를 홍조류로 기울인다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "photosynthesis-pigments",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "MacColl 1998", "section": "Phycobilisomes" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["phycoerythrin", "red algae", "deep ocean pigment"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

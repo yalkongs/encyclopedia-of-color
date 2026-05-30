@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Phycoerythrin — Red Algae's Green-Light Strategy — deep red seaweed a…</title>
+  <meta name="description" content="Depth slider attenuates the underwater spectrum (red gone first). Bars show chl-only vs chl+PE captured photons — phycoerythrin tilts the niche to red algae.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/phycoerythrin-red-algae/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Phycoerythrin — Red Algae's Green-Light Strategy">
+  <meta property="og:description"    content="Depth slider attenuates the underwater spectrum (red gone first). Bars show chl-only vs chl+PE captured photons — phycoerythrin tilts the niche to red algae.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/phycoerythrin-red-algae/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--phycoerythrin-red-algae.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Phycoerythrin — Red Algae's Green-Light Strategy.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Phycoerythrin — Red Algae's Green-Light Strategy">
+  <meta name="twitter:description"   content="Depth slider attenuates the underwater spectrum (red gone first). Bars show chl-only vs chl+PE captured photons — phycoerythrin tilts the niche to red algae.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--phycoerythrin-red-algae.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Phycoerythrin — Red Algae's Green-Light Strategy.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Phycoerythrin — Red Algae's Green-Light Strategy","alternateName":"photosynthesis-pigments/phycoerythrin-red-algae","description":"Depth slider attenuates the underwater spectrum (red gone first). Bars show chl-only vs chl+PE captured photons — phycoerythrin tilts the niche to red algae.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"phycoerythrin, red algae, deep ocean pigment","url":"https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/phycoerythrin-red-algae/","image":"https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--phycoerythrin-red-algae.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="photosynthesis-pigments/phycoerythrin-red-algae">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Phycoerythrin — Red Algae's Green-Light Strategy</h1>
+      <p class="module-subtitle">deep red seaweed absorbs green-yellow light (~565 nm) that penetrates further than blue — chlorophyll alone can't, so phycoerythrin antennas extend the depth range</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Seawater filters red light first (gone by 10 m) and blue penetrates further; green sits in the middle, still abundant at 30-50 m. Chlorophyll absorbs poorly there. Red algae carry phycoerythrin — a blue protein-bound bilin pigment with absorption peak ~565 nm — that catches green light and Förster-transfers to chlorophyll. The pigment's red colour (complement of green) is what gives "red" algae their name.
+        </p>
+        <p class="zone-guide">
+          Drag depth from surface to 50 m. The incident light spectrum red-shifts to blue-green; chlorophyll-only absorption stays poor; phycoerythrin captures the middle band.
+        </p>
+        <enc-slider id="depth" label="Depth (m)" min="0" max="50" step="1" value="20" unit=" m"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Phycoerythrin"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Johnsen §7; MacColl 1998 — Cryptomonad Biliproteins"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Bacteriorhodopsin — Salt Lake Purple — Halobacterium uses a retinal-p…</title>
+  <meta name="description" content="Halobacterium cell coloured by BR. Toggle 'soluble retinal' (440 nm, yellow) vs 'protein-bound' (570 nm, purple) to show how the opsin pocket tunes λ_max.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/bacteriorhodopsin-purple/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Bacteriorhodopsin — Salt Lake Purple">
+  <meta property="og:description"    content="Halobacterium cell coloured by BR. Toggle 'soluble retinal' (440 nm, yellow) vs 'protein-bound' (570 nm, purple) to show how the opsin pocket tunes λ_max.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/bacteriorhodopsin-purple/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--bacteriorhodopsin-purple.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Bacteriorhodopsin — Salt Lake Purple.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Bacteriorhodopsin — Salt Lake Purple">
+  <meta name="twitter:description"   content="Halobacterium cell coloured by BR. Toggle 'soluble retinal' (440 nm, yellow) vs 'protein-bound' (570 nm, purple) to show how the opsin pocket tunes λ_max.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--bacteriorhodopsin-purple.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Bacteriorhodopsin — Salt Lake Purple.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Bacteriorhodopsin — Salt Lake Purple","alternateName":"photosynthesis-pigments/bacteriorhodopsin-purple","description":"Halobacterium cell coloured by BR. Toggle 'soluble retinal' (440 nm, yellow) vs 'protein-bound' (570 nm, purple) to show how the opsin pocket tunes λ_max.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"bacteriorhodopsin, Halobacterium, retinal, Schiff base","url":"https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/bacteriorhodopsin-purple/","image":"https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--bacteriorhodopsin-purple.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="photosynthesis-pigments/bacteriorhodopsin-purple">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Bacteriorhodopsin — Salt Lake Purple</h1>
+      <p class="module-subtitle">Halobacterium uses a retinal-protein pump (BR) instead of chlorophyll; the protein-bound retinal absorbs 570 nm green-yellow → reflects purple — same kind of pigment as in your eye, very different host</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Halobacterium salinarum (now Halobacterium NRC-1) lives in salt-saturated brine. It runs an ATP-generating proton pump driven by light, not the electron transport of chlorophyll. The chromophore is <em>retinal</em> (the same molecule in your rhodopsin), covalently bound to lysine via a Schiff base. The protein cavity shifts retinal's λ_max to 570 nm — the famous Halobacterium purple.
+        </p>
+        <p class="zone-guide">
+          Toggle "soluble vs membrane-embedded" retinal to see the Schiff-base + protein environment shift λ_max from ~440 nm yellow to 570 nm green-absorbing.
+        </p>
+        <enc-toggle id="env" label="Retinal environment" options="soluble,protein-bound" value="protein-bound"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Bacteriorhodopsin"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Lanyi 2004 — Bacteriorhodopsin review"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

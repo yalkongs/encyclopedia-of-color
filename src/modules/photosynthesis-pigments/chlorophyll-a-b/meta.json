@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "photosynthesis-pigments/chlorophyll-a-b",
+  "title": {
+    "en": "Chlorophyll a vs b — Two Absorption Windows",
+    "ko": "엽록소 a vs b — 두 흡수 창"
+  },
+  "subtitle": {
+    "en": "chlorophyll a peaks at 430 + 662 nm; chlorophyll b at 453 + 642 nm — together they catch slightly different blue and red bands, and leave green to reflect",
+    "ko": "엽록소 a는 430·662 nm, b는 453·642 nm — 함께 청·적색을 흡수하고 녹색은 반사"
+  },
+  "description": {
+    "en": "Spectrum strip + Gaussian-fit chlorophyll a and b curves. Toggle a / b / both to overlay; combined absorbance darkens the blue and red ends and leaves the green window open.",
+    "ko": "스펙트럼 스트립 + 가우시안 엽록소 a/b 곡선. a/b/both 토글; 결합 흡수가 청·적 어둡게, 녹 창 열림."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "photosynthesis-pigments",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Johnsen 2012 §7", "section": "Pigment optics" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["chlorophyll", "absorption spectrum", "photosynthesis", "Soret"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

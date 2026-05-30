@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "photosynthesis-pigments/why-leaves-are-green",
+  "title": {
+    "en": "Why Are Leaves Green — The Green Paradox",
+    "ko": "잎은 왜 녹색일까 — 녹색 역설"
+  },
+  "subtitle": {
+    "en": "the sun peaks at green-yellow yet plants reflect those wavelengths; the puzzle isn't why green but why don't plants absorb the brightest band",
+    "ko": "태양은 녹-황색이 가장 강한데 식물은 반사 — 진짜 질문은 '왜 녹색'이 아니라 '왜 가장 밝은 띠를 피하나'"
+  },
+  "description": {
+    "en": "Toggle naive (absorb solar peak) vs real plant (skip peak) absorption. Capture efficiency drops but the strategy avoids reaction-centre damage under peak flux.",
+    "ko": "Naive(solar peak 흡수) vs 실 식물(peak 회피) 토글. 효율은 떨어지나 피크 flux에서 RC 손상 회피."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 9,
+  "category": "photosynthesis-pigments",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Marosvölgyi & van Gorkom 2010", "section": "Green window" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["why green", "photosynthesis paradox", "green window"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

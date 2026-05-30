@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Autumn Colour — Chlorophyll Withdraws, Anthocyanins Bloom — in autumn…</title>
+  <meta name="description" content="Day slider drives three pigment concentrations: chl decays, carotenoid steady, anthocyanin rises sigmoidally. Leaf swatch shows the blended colour transition green→yellow→red.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/autumn-color-anthocyanin/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Autumn Colour — Chlorophyll Withdraws, Anthocyanins Bloom">
+  <meta property="og:description"    content="Day slider drives three pigment concentrations: chl decays, carotenoid steady, anthocyanin rises sigmoidally. Leaf swatch shows the blended colour transition green→yellow→red.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/autumn-color-anthocyanin/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--autumn-color-anthocyanin.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Autumn Colour — Chlorophyll Withdraws, Anthocyanins Bloom.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Autumn Colour — Chlorophyll Withdraws, Anthocyanins Bloom">
+  <meta name="twitter:description"   content="Day slider drives three pigment concentrations: chl decays, carotenoid steady, anthocyanin rises sigmoidally. Leaf swatch shows the blended colour transition green→yellow→red.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--autumn-color-anthocyanin.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Autumn Colour — Chlorophyll Withdraws, Anthocyanins Bloom.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Autumn Colour — Chlorophyll Withdraws, Anthocyanins Bloom","alternateName":"photosynthesis-pigments/autumn-color-anthocyanin","description":"Day slider drives three pigment concentrations: chl decays, carotenoid steady, anthocyanin rises sigmoidally. Leaf swatch shows the blended colour transition green→yellow→red.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"autumn, anthocyanin, leaf colour, carotenoid","url":"https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/autumn-color-anthocyanin/","image":"https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--autumn-color-anthocyanin.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="photosynthesis-pigments/autumn-color-anthocyanin">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Autumn Colour — Chlorophyll Withdraws, Anthocyanins Bloom</h1>
+      <p class="module-subtitle">in autumn the leaf reabsorbs chlorophyll to recover N; carotenoids that were there all summer suddenly become visible; and new anthocyanins are *actively* synthesised to colour the leaf red</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The standard story (chlorophyll fades and the underlying yellow shows through) is half right. Yellow comes from carotenoids that <em>were already in the leaf</em>. But red comes from anthocyanins <em>synthesised fresh in autumn</em> — the tree spends energy to make them. Archetti (2009) argues this is a signal to leaf-mining aphids: a healthy red leaf advertises a tree well-defended.
+        </p>
+        <p class="zone-guide">
+          Drag day of autumn. Chlorophyll decays; carotenoid stays; anthocyanin grows. The leaf swatch transitions green → yellow → red.
+        </p>
+        <enc-slider id="day" label="Day of autumn" min="0" max="60" step="1" value="30" unit=" d"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Autumn colour"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Archetti 2009 — Why are some leaves red in autumn"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

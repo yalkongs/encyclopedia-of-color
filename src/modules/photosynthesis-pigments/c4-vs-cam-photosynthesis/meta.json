@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "photosynthesis-pigments/c4-vs-cam-photosynthesis",
+  "title": {
+    "en": "C3 vs C4 vs CAM — Same Light, Different Geometry",
+    "ko": "C3 vs C4 vs CAM — 같은 빛, 다른 기하"
+  },
+  "subtitle": {
+    "en": "three CO₂-fixing strategies — C3 (default), C4 (Kranz anatomy + spatial separation), CAM (succulent temporal separation) — same chlorophyll, drastically different water economy",
+    "ko": "세 CO₂ 고정 전략 — C3, C4(Kranz, 공간 분리), CAM(다육, 시간 분리) — 같은 엽록소, 다른 물 경제"
+  },
+  "description": {
+    "en": "Leaf cross-section, stomata state, and water-use efficiency bar update per strategy. C4 doubles WUE vs C3; CAM nearly quadruples it.",
+    "ko": "전략별 leaf 단면·stomata 상태·물 이용 효율 막대. C4는 C3의 2배 WUE, CAM은 거의 4배."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 9,
+  "category": "photosynthesis-pigments",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [
+    { "source": "Sage 2004", "section": "C4 evolution" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["C3 C4 CAM", "photosynthesis", "RuBisCO", "Kranz anatomy"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -114,6 +114,15 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'luminescence-chemistry':       { title: 'Luminescence Chemistry',  sub: 'Domain 3 · fluorescence, photo/thermo/solvato-chromism' },
   'color-centers':                { title: 'Color Centers',           sub: 'Domain 3 · F-centers, smoky quartz, amethyst, NV diamond' },
   'band-gap-materials':           { title: 'Band-gap Materials',      sub: 'Domain 3 · CdS yellow, CdSe red, gold nanoparticle plasmon' },
+  // Domain 9
+  'photosynthesis-pigments':      { title: 'Photosynthesis Pigments', sub: 'Domain 9 · chlorophyll a/b, carotenoids, phycoerythrin' },
+  'bioluminescence':              { title: 'Bioluminescence',         sub: 'Domain 9 · firefly, dinoflagellate, anglerfish, fungal foxfire' },
+  'fluorescent-proteins':         { title: 'Fluorescent Proteins',    sub: 'Domain 9 · GFP β-barrel, mCherry, reef fluorescence' },
+  'non-human-vision':             { title: 'Non-Human Vision',        sub: 'Domain 9 · mantis-shrimp 12-channel, bee UV, dog dichromat' },
+  'chromatophores':               { title: 'Chromatophores',          sub: 'Domain 9 · cuttlefish, chameleon guanine crystals' },
+  'structural-color-bio':         { title: 'Structural Colour (Bio)', sub: 'Domain 9 · morpho, peacock, beetle cholesteric, opal, nacre' },
+  'human-skin-melanin':           { title: 'Human Skin Melanin',      sub: 'Domain 9 · eu/pheo melanin, Fitzpatrick, age yellowing' },
+  'plant-colors':                 { title: 'Plant Colours',           sub: 'Domain 9 · anthocyanin pH, betacyanin, flavonoid UV' },
 };
 
 const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
@@ -270,7 +279,12 @@ async function main() {
     'wetting-effect', 'kubelka-munk-mixer', 'pigment-degradation',
     'luminescence-chemistry', 'color-centers', 'band-gap-materials',
   ];
-  const known = [...D1_ORDER, ...D2_ORDER, ...D3_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER, ...D10_ORDER];
+  const D9_ORDER = [
+    'photosynthesis-pigments', 'bioluminescence', 'fluorescent-proteins',
+    'non-human-vision', 'chromatophores', 'structural-color-bio',
+    'human-skin-melanin', 'plant-colors',
+  ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D3_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER, ...D9_ORDER, ...D10_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
@@ -279,6 +293,7 @@ async function main() {
     ...D5_ORDER.filter((c) => byCategory.has(c)),
     ...D6_ORDER.filter((c) => byCategory.has(c)),
     ...D7_ORDER.filter((c) => byCategory.has(c)),
+    ...D9_ORDER.filter((c) => byCategory.has(c)),
     ...D10_ORDER.filter((c) => byCategory.has(c)),
     ...[...byCategory.keys()].filter((c) => !known.includes(c)).sort(),
   ];

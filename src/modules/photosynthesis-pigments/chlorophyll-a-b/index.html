@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Chlorophyll a vs b — Two Absorption Windows — chlorophyll a peaks at…</title>
+  <meta name="description" content="Spectrum strip + Gaussian-fit chlorophyll a and b curves. Toggle a / b / both to overlay; combined absorbance darkens the blue and red ends and leaves the green window open.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/chlorophyll-a-b/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Chlorophyll a vs b — Two Absorption Windows">
+  <meta property="og:description"    content="Spectrum strip + Gaussian-fit chlorophyll a and b curves. Toggle a / b / both to overlay; combined absorbance darkens the blue and red ends and leaves the green window open.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/chlorophyll-a-b/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--chlorophyll-a-b.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Chlorophyll a vs b — Two Absorption Windows.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Chlorophyll a vs b — Two Absorption Windows">
+  <meta name="twitter:description"   content="Spectrum strip + Gaussian-fit chlorophyll a and b curves. Toggle a / b / both to overlay; combined absorbance darkens the blue and red ends and leaves the green window open.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--chlorophyll-a-b.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Chlorophyll a vs b — Two Absorption Windows.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Chlorophyll a vs b — Two Absorption Windows","alternateName":"photosynthesis-pigments/chlorophyll-a-b","description":"Spectrum strip + Gaussian-fit chlorophyll a and b curves. Toggle a / b / both to overlay; combined absorbance darkens the blue and red ends and leaves the green window open.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"chlorophyll, absorption spectrum, photosynthesis, Soret","url":"https://encyclopedia-of-color.vercel.app/modules/photosynthesis-pigments/chlorophyll-a-b/","image":"https://encyclopedia-of-color.vercel.app/og/photosynthesis-pigments--chlorophyll-a-b.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="photosynthesis-pigments/chlorophyll-a-b">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Chlorophyll a vs b — Two Absorption Windows</h1>
+      <p class="module-subtitle">chlorophyll a peaks at 430 + 662 nm; chlorophyll b at 453 + 642 nm — together they catch slightly different blue and red bands, and leave green to reflect</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Green plants run two chlorophylls in parallel. Chlorophyll <b>a</b> is the reaction-centre pigment doing the actual electron-transfer; chlorophyll <b>b</b> is an accessory that catches photons in a slightly different band and funnels them to a. Their combined absorption covers the blue and red ends of the visible spectrum — the unaffected green light is what reflects back to your eye.
+        </p>
+        <p class="zone-guide">
+          Toggle pigment to overlay each Soret + Q-band spectrum on the visible band. Both shown together produces the &ldquo;green window&rdquo; that leaves leaves green.
+        </p>
+        <enc-toggle id="pig" label="Show" options="a,b,both" value="both"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Chlorophyll a b"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Johnsen §7 — pigment optics; Frank &amp; Cogdell 1996"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

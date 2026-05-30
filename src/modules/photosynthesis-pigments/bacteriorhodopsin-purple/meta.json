@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "photosynthesis-pigments/bacteriorhodopsin-purple",
+  "title": {
+    "en": "Bacteriorhodopsin — Salt Lake Purple",
+    "ko": "박테리오로돕신 — 호염 자색"
+  },
+  "subtitle": {
+    "en": "Halobacterium uses a retinal-protein pump (BR) instead of chlorophyll; the protein-bound retinal absorbs 570 nm green-yellow → reflects purple — same kind of pigment as in your eye, very different host",
+    "ko": "Halobacterium은 엽록소 대신 BR retinal-단백질 펌프 사용 — 단백질 결합 retinal이 570 nm 흡수, 자색 반사"
+  },
+  "description": {
+    "en": "Halobacterium cell coloured by BR. Toggle 'soluble retinal' (440 nm, yellow) vs 'protein-bound' (570 nm, purple) to show how the opsin pocket tunes λ_max.",
+    "ko": "BR로 색칠된 Halobacterium. soluble retinal(440 nm 황) vs protein-bound(570 nm 자) 토글 — opsin pocket이 λ_max 조정."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 9,
+  "category": "photosynthesis-pigments",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Lanyi 2004", "section": "Bacteriorhodopsin" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["bacteriorhodopsin", "Halobacterium", "retinal", "Schiff base"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

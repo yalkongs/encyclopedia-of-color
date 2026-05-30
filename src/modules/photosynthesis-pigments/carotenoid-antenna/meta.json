@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "photosynthesis-pigments/carotenoid-antenna",
+  "title": {
+    "en": "Carotenoid Antenna — Fill the Green Gap",
+    "ko": "카로테노이드 안테나 — 녹색 공백 채움"
+  },
+  "subtitle": {
+    "en": "carotenoids absorb 400-500 nm (the blue-green band chlorophyll misses) and transfer energy to chlorophyll a — they're an antenna and a sunscreen against triplet oxygen damage",
+    "ko": "카로테노이드가 400-500 nm를 흡수해 chl a로 에너지 전달 — 안테나이자 산소 라디칼 차단제"
+  },
+  "description": {
+    "en": "Toggle chl-only vs chl+carotenoid. β-carotene's triple-peak 425/450/477 plugs the green gap; combined absorbance covers far more of the visible.",
+    "ko": "chl 단독 vs chl+카로테노이드 토글. β-카로틴 3중 피크 425/450/477이 녹 공백 메움; 결합 흡수가 가시광 거의 전체."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "photosynthesis-pigments",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Polivka & Sundström 2004", "section": "Carotenoid dynamics" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["carotenoid", "antenna", "LH2", "beta carotene"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
