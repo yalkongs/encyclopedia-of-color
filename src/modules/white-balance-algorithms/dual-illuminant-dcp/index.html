@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Dual-Illuminant DCP Interpolation — a DNG profile stores two ColorMat…</title>
+  <meta name="description" content="DNG profiles ship ColorMatrix1 (A 2856K) and ColorMatrix2 (D65 6504K). Scene CCT determines an interpolation weight in mired space; live 3x3 matrix is the weighted blend, clamped at the anchors.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/dual-illuminant-dcp/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Dual-Illuminant DCP Interpolation">
+  <meta property="og:description"    content="DNG profiles ship ColorMatrix1 (A 2856K) and ColorMatrix2 (D65 6504K). Scene CCT determines an interpolation weight in mired space; live 3x3 matrix is the weighted blend, clamped at the anchors.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/dual-illuminant-dcp/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--dual-illuminant-dcp.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Dual-Illuminant DCP Interpolation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Dual-Illuminant DCP Interpolation">
+  <meta name="twitter:description"   content="DNG profiles ship ColorMatrix1 (A 2856K) and ColorMatrix2 (D65 6504K). Scene CCT determines an interpolation weight in mired space; live 3x3 matrix is the weighted blend, clamped at the anchors.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--dual-illuminant-dcp.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Dual-Illuminant DCP Interpolation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Dual-Illuminant DCP Interpolation","alternateName":"white-balance-algorithms/dual-illuminant-dcp","description":"DNG profiles ship ColorMatrix1 (A 2856K) and ColorMatrix2 (D65 6504K). Scene CCT determines an interpolation weight in mired space; live 3x3 matrix is the weighted blend, clamped at the anchors.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"DNG, DCP, ColorMatrix, dual illuminant, mired","url":"https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/dual-illuminant-dcp/","image":"https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--dual-illuminant-dcp.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="white-balance-algorithms/dual-illuminant-dcp">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Dual-Illuminant DCP Interpolation</h1>
+      <p class="module-subtitle">a DNG profile stores two ColorMatrices (A &amp; D65); the converter linearly blends them in mired space at runtime</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A DNG Camera Profile stores a <code>ColorMatrix1</code> (calibration illuminant 1, e.g. tungsten A at 2856 K) and a <code>ColorMatrix2</code> (D65 at 6504 K) — both are 3×3 matrices mapping XYZ → camera RGB. At runtime the converter picks an interpolation weight from the scene's chromaticity, then linearly blends the two matrices <em>in mired space</em>.
+        </p>
+        <div class="math-block" data-tex="w = \dfrac{m_{\text{scene}} - m_{D65}}{m_A - m_{D65}},\quad m = \dfrac{10^6}{T}"></div>
+        <p class="zone-guide">
+          Drag the scene CCT slider. Mired = 1 000 000 / K — A is at 350 mired, D65 at 154 mired. The displayed live matrix is <code>w·M_A + (1−w)·M_D65</code>. Below 2856 K the weight clamps to 1 (pure M_A); above 6504 K it clamps to 0 (pure M_D65).
+        </p>
+        <enc-slider id="cct" label="Scene CCT (K)" min="2000" max="10000" step="50" value="5000" unit=" K"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Dual-illuminant DCP interpolation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Adobe DNG Specification 1.6.0.0 (2023), §6.4.1 Camera Profile"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

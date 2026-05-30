@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "white-balance-algorithms/auto-wb-failure-modes",
+  "title": {
+    "en": "Auto WB Mixed-Light Failure",
+    "ko": "Auto WB 혼합광 실패"
+  },
+  "subtitle": {
+    "en": "a single global gain can't make daylight and tungsten patches both neutral at once — AWB always picks a compromise that leaves one half wrong",
+    "ko": "하나의 전역 gain으로는 일광과 텅스텐 영역을 동시에 중립으로 만들 수 없다 — AWB는 한쪽을 포기하는 타협을 한다"
+  },
+  "description": {
+    "en": "Mixed-light scene split: daylight left, tungsten right. Gray-world picks one gain for the whole frame; the unmatched side keeps its cast. Per-half residuals quantify the trade-off.",
+    "ko": "일광과 텅스텐이 섞인 장면. Gray-world는 전체에 단일 gain을 적용하므로 맞지 않는 쪽에 cast가 남는다. 반쪽별 잔차로 실패가 정량화된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "white-balance-algorithms",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hsu et al. 2008",
+      "section": "Mixed-illuminant WB"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "AWB",
+    "mixed light",
+    "tungsten",
+    "daylight",
+    "white balance failure"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

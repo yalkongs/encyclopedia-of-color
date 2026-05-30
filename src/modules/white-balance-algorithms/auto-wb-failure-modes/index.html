@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Auto WB Mixed-Light Failure — a single global gain can't make dayligh…</title>
+  <meta name="description" content="Mixed-light scene split: daylight left, tungsten right. Gray-world picks one gain for the whole frame; the unmatched side keeps its cast. Per-half residuals quantify the trade-off.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/auto-wb-failure-modes/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Auto WB Mixed-Light Failure">
+  <meta property="og:description"    content="Mixed-light scene split: daylight left, tungsten right. Gray-world picks one gain for the whole frame; the unmatched side keeps its cast. Per-half residuals quantify the trade-off.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/auto-wb-failure-modes/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--auto-wb-failure-modes.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Auto WB Mixed-Light Failure.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Auto WB Mixed-Light Failure">
+  <meta name="twitter:description"   content="Mixed-light scene split: daylight left, tungsten right. Gray-world picks one gain for the whole frame; the unmatched side keeps its cast. Per-half residuals quantify the trade-off.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--auto-wb-failure-modes.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Auto WB Mixed-Light Failure.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Auto WB Mixed-Light Failure","alternateName":"white-balance-algorithms/auto-wb-failure-modes","description":"Mixed-light scene split: daylight left, tungsten right. Gray-world picks one gain for the whole frame; the unmatched side keeps its cast. Per-half residuals quantify the trade-off.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"AWB, mixed light, tungsten, daylight, white balance failure","url":"https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/auto-wb-failure-modes/","image":"https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--auto-wb-failure-modes.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="white-balance-algorithms/auto-wb-failure-modes">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Auto WB Mixed-Light Failure</h1>
+      <p class="module-subtitle">a single global gain can't make daylight and tungsten patches both neutral at once — AWB always picks a compromise that leaves one half wrong</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Automatic WB estimates one gain triple for the whole frame. In mixed light — daylight from a window plus tungsten table lamp — that single gain cannot make the daylight side <em>and</em> the tungsten side both neutral. Whichever side AWB locks onto, the other side keeps its cast.
+        </p>
+        <p class="zone-guide">
+          The scene is split: left half lit by 5500 K daylight, right half lit by 3000 K tungsten. Drag the area slider to change which side dominates the gray-world estimate. The picked gain is applied uniformly — watch the &ldquo;wrong&rdquo; side stay cast while the &ldquo;chosen&rdquo; side becomes neutral.
+        </p>
+        <enc-slider id="mix" label="Daylight area fraction" min="10" max="90" step="2" value="50" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Mixed-light AWB failure"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Practical AWB literature; mixed-illuminant white-balance failure"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

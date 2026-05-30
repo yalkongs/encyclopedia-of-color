@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Manual Kelvin + Tint — the two-knob model: temperature slides along t…</title>
+  <meta name="description" content="Temperature (K) slides white along the Planckian locus, tint slides perpendicular along Duv. Plot shows axes are orthogonal; swatches show the gain applied to the chart.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/manual-kelvin-tint/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Manual Kelvin + Tint">
+  <meta property="og:description"    content="Temperature (K) slides white along the Planckian locus, tint slides perpendicular along Duv. Plot shows axes are orthogonal; swatches show the gain applied to the chart.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/manual-kelvin-tint/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--manual-kelvin-tint.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Manual Kelvin + Tint.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Manual Kelvin + Tint">
+  <meta name="twitter:description"   content="Temperature (K) slides white along the Planckian locus, tint slides perpendicular along Duv. Plot shows axes are orthogonal; swatches show the gain applied to the chart.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--manual-kelvin-tint.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Manual Kelvin + Tint.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Manual Kelvin + Tint","alternateName":"white-balance-algorithms/manual-kelvin-tint","description":"Temperature (K) slides white along the Planckian locus, tint slides perpendicular along Duv. Plot shows axes are orthogonal; swatches show the gain applied to the chart.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Kelvin, tint, Duv, Planckian, white balance","url":"https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/manual-kelvin-tint/","image":"https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--manual-kelvin-tint.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="white-balance-algorithms/manual-kelvin-tint">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Manual Kelvin + Tint</h1>
+      <p class="module-subtitle">the two-knob model: temperature slides along the Planckian locus, tint slides perpendicular along the Duv axis</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Raw converters expose white balance as two orthogonal axes. <b>Temperature</b> (K) moves the assumed illuminant along the Planckian locus — low K means warm cast (camera applies blue gain), high K means cool cast (camera applies red gain). <b>Tint</b> moves perpendicular to the locus along the Duv axis — positive tint means magenta cast (camera applies green gain), negative tint means green cast.
+        </p>
+        <div class="math-block" data-tex="\text{Duv} = (u',v')_{\text{scene}} \;-\; (u',v')_{\text{Planck}}(T)"></div>
+        <p class="zone-guide">
+          The chromaticity plot shows where the camera is currently placing its &ldquo;white&rdquo;. Drag the K slider and the marker slides along the curved Planckian locus; drag tint and it slides off-axis. The scene patches at right show the corresponding gain applied.
+        </p>
+        <enc-slider id="kelvin" label="Temperature (K)" min="2500" max="10000" step="50" value="5500" unit=" K"></enc-slider>
+        <enc-slider id="tint" label="Tint (magenta+ / green−)" min="-50" max="50" step="1" value="0" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Kelvin and tint axes on chromaticity"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Adobe Camera Raw / Lightroom convention; Ohno 2014 Duv"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

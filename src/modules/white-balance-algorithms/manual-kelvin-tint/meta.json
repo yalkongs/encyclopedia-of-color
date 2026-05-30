@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "white-balance-algorithms/manual-kelvin-tint",
+  "title": {
+    "en": "Manual Kelvin + Tint",
+    "ko": "수동 Kelvin + Tint"
+  },
+  "subtitle": {
+    "en": "the two-knob model: temperature slides along the Planckian locus, tint slides perpendicular along the Duv axis",
+    "ko": "두 손잡이 모델: 온도는 Planckian locus를 따라, tint는 Duv 축에 수직으로 움직인다"
+  },
+  "description": {
+    "en": "Temperature (K) slides white along the Planckian locus, tint slides perpendicular along Duv. Plot shows axes are orthogonal; swatches show the gain applied to the chart.",
+    "ko": "온도(K)는 가정된 white를 Planckian locus를 따라 움직이고 tint는 Duv 축을 따라 직교 방향으로 움직인다. 색도 좌표가 두 축의 직교성을 보여주고 패치 그리드가 적용된 gain을 보여준다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 10,
+  "category": "white-balance-algorithms",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Ohno 2014",
+      "section": "Duv"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Kelvin",
+    "tint",
+    "Duv",
+    "Planckian",
+    "white balance"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

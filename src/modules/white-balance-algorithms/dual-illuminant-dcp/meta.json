@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "white-balance-algorithms/dual-illuminant-dcp",
+  "title": {
+    "en": "Dual-Illuminant DCP Interpolation",
+    "ko": "듀얼 일루미넌트 DCP 보간"
+  },
+  "subtitle": {
+    "en": "a DNG profile stores two ColorMatrices (A & D65); the converter linearly blends them in mired space at runtime",
+    "ko": "DNG 프로파일은 두 개의 ColorMatrix(A · D65)를 담고, 변환기는 mired 공간에서 선형 블렌딩한다"
+  },
+  "description": {
+    "en": "DNG profiles ship ColorMatrix1 (A 2856K) and ColorMatrix2 (D65 6504K). Scene CCT determines an interpolation weight in mired space; live 3x3 matrix is the weighted blend, clamped at the anchors.",
+    "ko": "DNG 프로파일은 ColorMatrix1(A 2856K)과 ColorMatrix2(D65 6504K)를 담는다. 장면 CCT가 mired 공간에서 보간 가중치를 결정하고 라이브 3x3 행렬이 가중 블렌드로 표시된다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "white-balance-algorithms",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Adobe DNG Specification 1.6.0.0", "section": "Camera Profile" }
+  ],
+  "standards": ["DNG 1.6.0.0"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["DNG", "DCP", "ColorMatrix", "dual illuminant", "mired"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

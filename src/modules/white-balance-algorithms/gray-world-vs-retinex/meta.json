@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "white-balance-algorithms/gray-world-vs-retinex",
+  "title": {
+    "en": "Gray World vs Retinex vs MaxRGB",
+    "ko": "Gray World vs Retinex vs MaxRGB"
+  },
+  "subtitle": {
+    "en": "three automatic white-balance algorithms agree on neutral scenes and disagree as soon as a single colour dominates the frame",
+    "ko": "세 자동 화이트밸런스 알고리즘은 중립 장면에서 일치하고 한 가지 색이 화면을 지배하는 순간 갈라진다"
+  },
+  "description": {
+    "en": "Gray World assumes scene average is gray. MaxRGB takes the brightest pixel. Retinex takes the per-channel robust max. Identical answers on a balanced scene, divergent when one colour dominates.",
+    "ko": "Gray World는 장면 평균이 회색이라 가정한다. MaxRGB는 가장 밝은 픽셀이 조명을 드러낸다고 본다. Retinex는 채널별 robust max를 쓴다. 중립 장면에선 답이 일치하고 한 색이 지배하면 갈라진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "white-balance-algorithms",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Buchsbaum 1980",
+      "section": "Gray-world"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "white balance",
+    "gray world",
+    "MaxRGB",
+    "Retinex",
+    "color constancy"
+  ],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

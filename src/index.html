@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 310 modules across 70 categories -->
+    <!-- 314 modules across 71 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>310 modules</strong> are published across 70 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>314 modules</strong> are published across 71 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -1923,6 +1923,32 @@
         <div class="card-meta">L5 · Reference · Sensor Physics</div>
         <div class="card-title">Sensor vs Eye: The Luther Mismatch</div>
         <div class="card-sub">a camera sensor's red, green, blue are not a linear combination of the eye's — so two spectra the eye calls identical can record as different RGB</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">White Balance</h2>
+      <div class="sub">Domain 10 · Gray World, MaxRGB, Retinex</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/white-balance-algorithms/manual-kelvin-tint/">
+        <div class="card-meta">L3 · Reference · White Balance Algorithms</div>
+        <div class="card-title">Manual Kelvin + Tint</div>
+        <div class="card-sub">the two-knob model: temperature slides along the Planckian locus, tint slides perpendicular along the Duv axis</div>
+      </a>
+      <a class="module-card" href="./modules/white-balance-algorithms/auto-wb-failure-modes/">
+        <div class="card-meta">L4 · Reference · White Balance Algorithms</div>
+        <div class="card-title">Auto WB Mixed-Light Failure</div>
+        <div class="card-sub">a single global gain can't make daylight and tungsten patches both neutral at once — AWB always picks a compromise that leaves one half wrong</div>
+      </a>
+      <a class="module-card" href="./modules/white-balance-algorithms/gray-world-vs-retinex/">
+        <div class="card-meta">L4 · Reference · White Balance Algorithms</div>
+        <div class="card-title">Gray World vs Retinex vs MaxRGB</div>
+        <div class="card-sub">three automatic white-balance algorithms agree on neutral scenes and disagree as soon as a single colour dominates the frame</div>
+      </a>
+      <a class="module-card" href="./modules/white-balance-algorithms/dual-illuminant-dcp/">
+        <div class="card-meta">L5 · Reference · White Balance Algorithms</div>
+        <div class="card-title">Dual-Illuminant DCP Interpolation</div>
+        <div class="card-sub">a DNG profile stores two ColorMatrices (A &amp; D65); the converter linearly blends them in mired space at runtime</div>
       </a>
       </div>
     </div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Gray World vs Retinex vs MaxRGB — three automatic white-balance algor…</title>
+  <meta name="description" content="Gray World assumes scene average is gray. MaxRGB takes the brightest pixel. Retinex takes the per-channel robust max. Identical answers on a balanced scene, divergent when one colour dominates.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/gray-world-vs-retinex/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Gray World vs Retinex vs MaxRGB">
+  <meta property="og:description"    content="Gray World assumes scene average is gray. MaxRGB takes the brightest pixel. Retinex takes the per-channel robust max. Identical answers on a balanced scene, divergent when one colour dominates.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/gray-world-vs-retinex/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--gray-world-vs-retinex.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Gray World vs Retinex vs MaxRGB.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Gray World vs Retinex vs MaxRGB">
+  <meta name="twitter:description"   content="Gray World assumes scene average is gray. MaxRGB takes the brightest pixel. Retinex takes the per-channel robust max. Identical answers on a balanced scene, divergent when one colour dominates.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--gray-world-vs-retinex.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Gray World vs Retinex vs MaxRGB.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gray World vs Retinex vs MaxRGB","alternateName":"white-balance-algorithms/gray-world-vs-retinex","description":"Gray World assumes scene average is gray. MaxRGB takes the brightest pixel. Retinex takes the per-channel robust max. Identical answers on a balanced scene, divergent when one colour dominates.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"white balance, gray world, MaxRGB, Retinex, color constancy","url":"https://encyclopedia-of-color.vercel.app/modules/white-balance-algorithms/gray-world-vs-retinex/","image":"https://encyclopedia-of-color.vercel.app/og/white-balance-algorithms--gray-world-vs-retinex.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="white-balance-algorithms/gray-world-vs-retinex">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Gray World vs Retinex vs MaxRGB</h1>
+      <p class="module-subtitle">three automatic white-balance algorithms agree on neutral scenes and disagree as soon as a single colour dominates the frame</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Automatic white balance estimates a scene gain (r,g,b) so that the corrected image looks neutral under canonical light. Three classic estimators: <b>Gray World</b> assumes the average of all pixels is gray; <b>MaxRGB</b> assumes the brightest pixel is the illuminant; <b>Retinex</b> assumes each channel's robust maximum is the illuminant. They give the same answer on a balanced scene — and very different answers when one colour dominates.
+        </p>
+        <div class="math-block" data-tex="g_c = \dfrac{\langle I_c \rangle_{\mathrm{ref}}}{\langle I_c \rangle_{\mathrm{scene}}}"></div>
+        <p class="zone-guide">
+          The scene is a Macbeth chart under a warm cast. Drag the dominant-colour slider to add a coloured cloth that floods the frame. Switch algorithm and watch the corrected chart: Gray World fails first (its mean shifts with the cloth), MaxRGB drifts as a saturated swatch saturates the maximum, Retinex is more robust but still biases.
+        </p>
+        <enc-slider id="cloth" label="Dominant cloth size (%)" min="0" max="80" step="2" value="0" unit="%"></enc-slider>
+        <enc-slider id="hue" label="Cloth hue (°)" min="0" max="360" step="5" value="20" unit="°"></enc-slider>
+        <enc-toggle id="algo" label="Algorithm" options="gray-world,max-rgb,retinex" value="gray-world"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="White balance algorithm comparison"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Buchsbaum 1980; Land Retinex 1977; Funt &amp; Shi 2010"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
