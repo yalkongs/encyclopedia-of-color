@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "marketing-and-branding/packaging-shelf-impact",
+  "title": {"en": "Packaging Shelf Impact — Standout in Category", "ko": "패키징 진열 효과 — 카테고리 내 차별화"},
+  "subtitle": {"en": "Eye-tracking 2-2-2 rule: 2 s, 2 fixations, 2 categories; brand-colour distance from category mean drives first-fixation share", "ko": "시선 추적 2-2-2: 2초, 2회 응시, 2개 카테고리; 카테고리 평균에서 색 거리가 첫 응시 점유율 견인"},
+  "description": {"en": "Brand-hue slider places product on coffee-category shelf with 8 brown/red competitors; bar chart shows fixation share lift with colour distance.", "ko": "브랜드 색조 슬라이더로 갈색/적색 8 경쟁 제품의 커피 진열대에 제품 배치; 응시 점유율 막대로 색 거리 효과 표시."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "marketing-and-branding",
+  "layout": "A", "prerequisites": ["marketing-and-branding/cta-button-ab-test"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Pieters 2010", "section": "Packaging"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["packaging", "shelf impact", "eye tracking"],
+  "estimated_hours": 8, "status": "shipped"
+}

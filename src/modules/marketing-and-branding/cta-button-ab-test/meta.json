@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "marketing-and-branding/cta-button-ab-test",
+  "title": {"en": "CTA Button A/B — Contrast, Not Red", "ko": "CTA 버튼 A/B — 대비가 핵심"},
+  "subtitle": {"en": "HubSpot 2011: red CTA +21% over green — but the page was green; the lesson is isolation (von Restorff), not red as universal converter", "ko": "HubSpot 2011: 적색 CTA가 녹색보다 +21% — 단 페이지가 녹색이었음; 교훈은 적색이 아닌 isolation (von Restorff)"},
+  "description": {"en": "Button-hue slider drives mockup-page CTA contrast and modelled conversion-rate curve showing colour-distance-from-page effect.", "ko": "버튼 색조 슬라이더로 페이지-CTA 대비와 전환율 곡선을 모델링하여 페이지로부터의 색 거리 효과를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 12, "category": "marketing-and-branding",
+  "layout": "A", "prerequisites": ["marketing-and-branding/brand-recall-color-match"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "vonRestorff 1933", "section": "Isolation effect"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["CTA", "A/B test", "isolation effect"],
+  "estimated_hours": 8, "status": "shipped"
+}
