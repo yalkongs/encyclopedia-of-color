@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Panorama Stitch &amp; Blend — Geometry Is Not Enough — two frames perfect…</title>
+  <meta name="description" content="Two source frames at different exposures. Cycle paste / gain / multi-band: hard seam → faint seam → invisible. Overlap region marked with golden dashes.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/computational-photography/panorama-stitch-blend/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Panorama Stitch &amp; Blend — Geometry Is Not Enough">
+  <meta property="og:description"    content="Two source frames at different exposures. Cycle paste / gain / multi-band: hard seam → faint seam → invisible. Overlap region marked with golden dashes.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/computational-photography/panorama-stitch-blend/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/computational-photography--panorama-stitch-blend.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Panorama Stitch &amp; Blend — Geometry Is Not Enough.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Panorama Stitch &amp; Blend — Geometry Is Not Enough">
+  <meta name="twitter:description"   content="Two source frames at different exposures. Cycle paste / gain / multi-band: hard seam → faint seam → invisible. Overlap region marked with golden dashes.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/computational-photography--panorama-stitch-blend.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Panorama Stitch &amp; Blend — Geometry Is Not Enough.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Panorama Stitch & Blend — Geometry Is Not Enough","alternateName":"computational-photography/panorama-stitch-blend","description":"Two source frames at different exposures. Cycle paste / gain / multi-band: hard seam → faint seam → invisible. Overlap region marked with golden dashes.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"panorama, stitching, multi-band blend, gain compensation","url":"https://encyclopedia-of-color.vercel.app/modules/computational-photography/panorama-stitch-blend/","image":"https://encyclopedia-of-color.vercel.app/og/computational-photography--panorama-stitch-blend.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="computational-photography/panorama-stitch-blend">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Panorama Stitch &amp; Blend — Geometry Is Not Enough</h1>
+      <p class="module-subtitle">two frames perfectly registered in geometry still show a visible seam because their exposures differ; gain compensation + multi-band blend hide it</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A panorama is built in two passes: <b>register</b> (find the homography that aligns overlapping frames) then <b>blend</b> (combine pixels in the overlap region). Even with perfect geometry, frames at slightly different exposures show a visible seam at the boundary. Brown &amp; Lowe 2007 popularized <em>gain compensation</em> + <em>multi-band blend</em> to make the join invisible.
+        </p>
+        <p class="zone-guide">
+          Two frames captured at slightly different exposures cover the same panorama. Cycle the blend mode: <b>paste</b> shows a hard seam, <b>gain</b> matches exposures globally, <b>multi-band</b> additionally hides residual seam by smoothing low-frequency mismatches in the overlap.
+        </p>
+        <enc-toggle id="mode" label="Blend mode" options="paste,gain,multi-band" value="paste"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Panorama stitch"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Brown &amp; Lowe 2007; Burt &amp; Adelson 1983 Laplacian pyramid"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

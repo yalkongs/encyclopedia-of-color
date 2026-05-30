@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "computational-photography/night-mode-burst",
+  "title": {
+    "en": "Night Mode — Burst Averaging Reduces Noise by √N",
+    "ko": "Night Mode — 버스트 평균이 노이즈를 √N로 줄인다"
+  },
+  "subtitle": {
+    "en": "capture N short-exposure frames and average them per pixel; both Poisson shot noise and Gaussian read noise drop by √N — that's how phones photograph the dark",
+    "ko": "N장 단노출 프레임을 픽셀별 평균 — Poisson 산탄잡음과 Gaussian read 잡음 모두 √N로 감소"
+  },
+  "description": {
+    "en": "Single noisy capture vs N-frame average. Drag N from 1 to 16 — σ drops as 1/√N, SNR rises as √N. Per-region readouts at background, midtone, and bright dot signal levels.",
+    "ko": "단일 노이지 캡처 vs N 프레임 평균. N을 1에서 16까지 — σ가 1/√N, SNR이 √N로 증가. 배경/중간톤/밝은 점 영역별 readout."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 10,
+  "category": "computational-photography",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hasinoff et al. 2016", "section": "Burst photography" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["night mode", "burst", "Hasinoff", "HDR+", "Pixel Night Sight"],
+  "estimated_hours": 16,
+  "status": "shipped"
+}

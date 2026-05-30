@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "exposure-photometry/spot-vs-evaluative-metering",
+  "title": {
+    "en": "Spot · Center-Weighted · Evaluative Metering",
+    "ko": "Spot · 중앙 중점 · 평가 측광"
+  },
+  "subtitle": {
+    "en": "three metering modes on the same backlit scene produce three different exposure decisions — the same camera, same shutter button, three different photos",
+    "ko": "역광 장면에서 세 측광 모드가 세 다른 노출 결정 — 같은 카메라, 같은 버튼, 세 다른 사진"
+  },
+  "description": {
+    "en": "Same backlit portrait, three meter modes side-by-side. Spot on face: figure mid-grey, window blown. Centre-weighted: compromise. Evaluative: window dominates, figure silhouetted.",
+    "ko": "같은 역광 인물, 세 측광 모드 나란히. Spot: 인물 mid-grey, 창 blown. Centre-weighted: 절충. Evaluative: 창이 지배, 인물 실루엣."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 10,
+  "category": "exposure-photometry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Canon EOS Manual", "section": "Metering modes" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["spot meter", "evaluative", "matrix metering", "center weighted"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

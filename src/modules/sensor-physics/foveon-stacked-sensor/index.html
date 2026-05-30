@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Foveon — Silicon Absorption Depth Separates Colour — no colour filter…</title>
+  <meta name="description" content="Silicon absorption α(λ) places short wavelengths shallow, long deep. Three photodiodes at 0.2/1/3 µm read each band. Cross-section + 1/e depth marker move with wavelength.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/foveon-stacked-sensor/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Foveon — Silicon Absorption Depth Separates Colour">
+  <meta property="og:description"    content="Silicon absorption α(λ) places short wavelengths shallow, long deep. Three photodiodes at 0.2/1/3 µm read each band. Cross-section + 1/e depth marker move with wavelength.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/foveon-stacked-sensor/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--foveon-stacked-sensor.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Foveon — Silicon Absorption Depth Separates Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Foveon — Silicon Absorption Depth Separates Colour">
+  <meta name="twitter:description"   content="Silicon absorption α(λ) places short wavelengths shallow, long deep. Three photodiodes at 0.2/1/3 µm read each band. Cross-section + 1/e depth marker move with wavelength.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--foveon-stacked-sensor.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Foveon — Silicon Absorption Depth Separates Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Foveon — Silicon Absorption Depth Separates Colour","alternateName":"sensor-physics/foveon-stacked-sensor","description":"Silicon absorption α(λ) places short wavelengths shallow, long deep. Three photodiodes at 0.2/1/3 µm read each band. Cross-section + 1/e depth marker move with wavelength.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Foveon, silicon, absorption, stacked sensor, X3","url":"https://encyclopedia-of-color.vercel.app/modules/sensor-physics/foveon-stacked-sensor/","image":"https://encyclopedia-of-color.vercel.app/og/sensor-physics--foveon-stacked-sensor.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="sensor-physics/foveon-stacked-sensor">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Foveon — Silicon Absorption Depth Separates Colour</h1>
+      <p class="module-subtitle">no colour filter array — short-wavelength light is absorbed near the surface, long-wavelength light penetrates deeper; three stacked photodiodes read each layer</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Foveon X3 sensor exploits a physical fact: silicon's absorption coefficient α(λ) depends on wavelength. Blue (~450 nm) is absorbed within ~0.2&ndash;0.3 μm of the surface; green within ~1 μm; red penetrates ~3 μm before absorption. Stacking three photodiodes at those depths reads each band <em>without a colour filter array</em> — every pixel measures all three.
+        </p>
+        <div class="math-block" data-tex="I(z, \lambda) = I_0(\lambda)\, e^{-\alpha(\lambda)\, z}"></div>
+        <p class="zone-guide">
+          Drag the incident wavelength. The cross-section shows the intensity profile down the silicon; the three photodiode markers register their per-layer signal. Compare with the Bayer alternative — Foveon has no demosaic but suffers more dark noise per channel because each photodiode is small.
+        </p>
+        <enc-slider id="lambda" label="Incident wavelength (nm)" min="400" max="700" step="5" value="450" unit=" nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Foveon stacked sensor"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Merrill 2003 (Foveon X3 patent); Silicon optical absorption tables"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 329 modules across 76 categories -->
+    <!-- 335 modules across 76 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>329 modules</strong> are published across 76 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>335 modules</strong> are published across 76 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -1919,6 +1919,16 @@
         <div class="card-title">Sensor Quantum Efficiency</div>
         <div class="card-sub">silicon sees light through its 1.1 eV bandgap — past 1127 nm photons don't have enough energy to free an electron, and the sensor goes blind</div>
       </a>
+      <a class="module-card" href="./modules/sensor-physics/foveon-stacked-sensor/">
+        <div class="card-meta">L5 · Reference · Sensor Physics</div>
+        <div class="card-title">Foveon — Silicon Absorption Depth Separates Colour</div>
+        <div class="card-sub">no colour filter array — short-wavelength light is absorbed near the surface, long-wavelength light penetrates deeper; three stacked photodiodes read each layer</div>
+      </a>
+      <a class="module-card" href="./modules/sensor-physics/iso-invariance/">
+        <div class="card-meta">L5 · Reference · Sensor Physics</div>
+        <div class="card-title">ISO Invariance — Push in RAW vs Crank the ISO</div>
+        <div class="card-sub">on an ISO-invariant sensor, shooting underexposed at ISO 100 and pushing the RAW +5 stops is as good as shooting at ISO 3200; on a non-invariant sensor, the push wins or loses depending on where read noise enters</div>
+      </a>
       <a class="module-card" href="./modules/sensor-physics/spectral-sensitivity-mismatch/">
         <div class="card-meta">L5 · Reference · Sensor Physics</div>
         <div class="card-title">Sensor vs Eye: The Luther Mismatch</div>
@@ -2034,6 +2044,16 @@
         <div class="card-title">Sunny 16 Rule</div>
         <div class="card-sub">on a sunny day, set aperture to f/16 and shutter to 1/ISO — every other condition is a stop adjustment from there</div>
       </a>
+      <a class="module-card" href="./modules/exposure-photometry/exposure-triangle/">
+        <div class="card-meta">L3 · Reference · Exposure Photometry</div>
+        <div class="card-title">Exposure Triangle — Aperture · Shutter · ISO</div>
+        <div class="card-sub">three knobs that all change exposure by stops; pick any two and the third is fixed by the EV target — each axis brings its own side-effect</div>
+      </a>
+      <a class="module-card" href="./modules/exposure-photometry/spot-vs-evaluative-metering/">
+        <div class="card-meta">L3 · Reference · Exposure Photometry</div>
+        <div class="card-title">Spot · Center-Weighted · Evaluative Metering</div>
+        <div class="card-sub">three metering modes on the same backlit scene produce three different exposure decisions — the same camera, same shutter button, three different photos</div>
+      </a>
       <a class="module-card" href="./modules/exposure-photometry/zone-system/">
         <div class="card-meta">L4 · Reference · Exposure Photometry</div>
         <div class="card-title">Adams Zone System — I to X</div>
@@ -2054,6 +2074,16 @@
         <div class="card-meta">L5 · Reference · Computational Photography</div>
         <div class="card-title">HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result</div>
         <div class="card-sub">capture −2 EV / 0 EV / +2 EV; the merge weights each pixel by its well-exposedness, the tone-map compresses the merged radiance back into 8-bit</div>
+      </a>
+      <a class="module-card" href="./modules/computational-photography/panorama-stitch-blend/">
+        <div class="card-meta">L5 · Reference · Computational Photography</div>
+        <div class="card-title">Panorama Stitch &amp; Blend — Geometry Is Not Enough</div>
+        <div class="card-sub">two frames perfectly registered in geometry still show a visible seam because their exposures differ; gain compensation + multi-band blend hide it</div>
+      </a>
+      <a class="module-card" href="./modules/computational-photography/night-mode-burst/">
+        <div class="card-meta">L6 · Reference · Computational Photography</div>
+        <div class="card-title">Night Mode — Burst Averaging Reduces Noise by √N</div>
+        <div class="card-sub">capture N short-exposure frames and average them per pixel; both Poisson shot noise and Gaussian read noise drop by √N — that's how phones photograph the dark</div>
       </a>
       </div>
     </div>

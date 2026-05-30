@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "sensor-physics/iso-invariance",
+  "title": {
+    "en": "ISO Invariance — Push in RAW vs Crank the ISO",
+    "ko": "ISO 무변성 — RAW push vs ISO 올리기"
+  },
+  "subtitle": {
+    "en": "on an ISO-invariant sensor, shooting underexposed at ISO 100 and pushing the RAW +5 stops is as good as shooting at ISO 3200; on a non-invariant sensor, the push wins or loses depending on where read noise enters",
+    "ko": "ISO-invariant 센서: ISO 100에서 −5 EV + RAW push +5 = ISO 3200 정상 노출. Non-invariant 센서: 결과 다름"
+  },
+  "description": {
+    "en": "Two paths: ISO 100 underexposed + RAW push vs ISO 3200 correct exposure. Invariant sensor: identical noise. Non-invariant sensor: post-gain read noise pushed by the digital boost, Path A loses.",
+    "ko": "두 경로: ISO 100 노출부족 + RAW push vs ISO 3200 정상. Invariant: 같은 노이즈. Non-invariant: 후단 read noise가 디지털 push로 증폭, Path A 불리."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "sensor-physics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Photons-to-Photos", "section": "ISO invariance" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["ISO invariance", "read noise", "RAW push", "Sony A7R", "Canon 5D"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

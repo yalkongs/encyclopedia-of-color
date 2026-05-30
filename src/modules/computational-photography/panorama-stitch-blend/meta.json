@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "computational-photography/panorama-stitch-blend",
+  "title": {
+    "en": "Panorama Stitch & Blend — Geometry Is Not Enough",
+    "ko": "파노라마 합성 — 기하만으론 부족하다"
+  },
+  "subtitle": {
+    "en": "two frames perfectly registered in geometry still show a visible seam because their exposures differ; gain compensation + multi-band blend hide it",
+    "ko": "기하적으로 완벽히 정합된 두 프레임도 노출 차이로 솔기가 보인다 — gain 보정 + multi-band blend로 봉합"
+  },
+  "description": {
+    "en": "Two source frames at different exposures. Cycle paste / gain / multi-band: hard seam → faint seam → invisible. Overlap region marked with golden dashes.",
+    "ko": "다른 노출의 두 소스 프레임. paste / gain / multi-band 순환: 강한 솔기 → 약한 솔기 → 보이지 않음. 오버랩 영역은 금색 대시로 표시."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "computational-photography",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Brown & Lowe 2007", "section": "Panorama stitching" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["panorama", "stitching", "multi-band blend", "gain compensation"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

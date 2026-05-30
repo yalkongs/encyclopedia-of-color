@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "exposure-photometry/exposure-triangle",
+  "title": {
+    "en": "Exposure Triangle — Aperture · Shutter · ISO",
+    "ko": "노출 삼각형 — 조리개 · 셔터 · ISO"
+  },
+  "subtitle": {
+    "en": "three knobs that all change exposure by stops; pick any two and the third is fixed by the EV target — each axis brings its own side-effect",
+    "ko": "세 손잡이가 모두 stop 단위로 노출을 바꾼다 — 두 개 정하면 EV 목표가 셋째를 정함, 각 축마다 다른 부작용"
+  },
+  "description": {
+    "en": "Three independent stops produce the same EV. Mini-panels isolate each side-effect: aperture sets DoF blur, shutter sets motion blur, ISO sets noise. Big preview combines all three at chosen settings.",
+    "ko": "세 독립 stop이 같은 EV를 만든다. 미니 패널이 각 부작용 분리: 조리개=DoF, 셔터=모션블러, ISO=노이즈. 큰 미리보기가 모두 결합."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 10,
+  "category": "exposure-photometry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Adams 1981 The Negative", "section": "Exposure equivalence" }
+  ],
+  "standards": [],
+  "interaction_count": 3,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["exposure triangle", "aperture", "shutter", "ISO", "EV"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ISO Invariance — Push in RAW vs Crank the ISO — on an ISO-invariant s…</title>
+  <meta name="description" content="Two paths: ISO 100 underexposed + RAW push vs ISO 3200 correct exposure. Invariant sensor: identical noise. Non-invariant sensor: post-gain read noise pushed by the digital boost, Path A loses.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/iso-invariance/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ISO Invariance — Push in RAW vs Crank the ISO">
+  <meta property="og:description"    content="Two paths: ISO 100 underexposed + RAW push vs ISO 3200 correct exposure. Invariant sensor: identical noise. Non-invariant sensor: post-gain read noise pushed by the digital boost, Path A loses.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/iso-invariance/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--iso-invariance.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ISO Invariance — Push in RAW vs Crank the ISO.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ISO Invariance — Push in RAW vs Crank the ISO">
+  <meta name="twitter:description"   content="Two paths: ISO 100 underexposed + RAW push vs ISO 3200 correct exposure. Invariant sensor: identical noise. Non-invariant sensor: post-gain read noise pushed by the digital boost, Path A loses.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--iso-invariance.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ISO Invariance — Push in RAW vs Crank the ISO.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ISO Invariance — Push in RAW vs Crank the ISO","alternateName":"sensor-physics/iso-invariance","description":"Two paths: ISO 100 underexposed + RAW push vs ISO 3200 correct exposure. Invariant sensor: identical noise. Non-invariant sensor: post-gain read noise pushed by the digital boost, Path A loses.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ISO invariance, read noise, RAW push, Sony A7R, Canon 5D","url":"https://encyclopedia-of-color.vercel.app/modules/sensor-physics/iso-invariance/","image":"https://encyclopedia-of-color.vercel.app/og/sensor-physics--iso-invariance.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="sensor-physics/iso-invariance">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ISO Invariance — Push in RAW vs Crank the ISO</h1>
+      <p class="module-subtitle">on an ISO-invariant sensor, shooting underexposed at ISO 100 and pushing the RAW +5 stops is as good as shooting at ISO 3200; on a non-invariant sensor, the push wins or loses depending on where read noise enters</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          ISO is digital gain. An <b>invariant</b> sensor (Sony A7R-class) applies read-noise <em>before</em> the ISO multiplier &mdash; so pushing a RAW from ISO 100 by +5 stops is equivalent to shooting ISO 3200 in-camera. A <b>non-invariant</b> sensor (Canon 5D Mark III) applies meaningful read-noise <em>after</em> the gain stage &mdash; pushing RAW shows more noise than cranking ISO.
+        </p>
+        <p class="zone-guide">
+          Two parallel paths: left = shot at ISO 100 with −5 EV exposure, then RAW push +5 stops. Right = shot at ISO 3200, correct exposure. Toggle invariant vs non-invariant sensor &mdash; the noise readouts diverge on the non-invariant model.
+        </p>
+        <enc-toggle id="sensor" label="Sensor model" options="invariant,non-invariant" value="invariant"></enc-toggle>
+        <enc-slider id="signal" label="Scene mean signal" min="10" max="200" step="5" value="80" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ISO invariance"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Photons-to-Photos charts; DPReview ISO invariance studies"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
