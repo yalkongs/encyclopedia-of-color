@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Disperse Dyes — Polyester Needs Heat — non-ionic micro-particles diss…</title>
+  <meta name="description" content="PET fibre cross-section + dye particles. Drag T from 40 to 160 °C; particles penetrate inward as polymer softens. Sigmoid uptake curve marks Tg=80°C and commercial T=130°C.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/disperse-dye-polyester/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Disperse Dyes — Polyester Needs Heat">
+  <meta property="og:description"    content="PET fibre cross-section + dye particles. Drag T from 40 to 160 °C; particles penetrate inward as polymer softens. Sigmoid uptake curve marks Tg=80°C and commercial T=130°C.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/disperse-dye-polyester/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--disperse-dye-polyester.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Disperse Dyes — Polyester Needs Heat.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Disperse Dyes — Polyester Needs Heat">
+  <meta name="twitter:description"   content="PET fibre cross-section + dye particles. Drag T from 40 to 160 °C; particles penetrate inward as polymer softens. Sigmoid uptake curve marks Tg=80°C and commercial T=130°C.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--disperse-dye-polyester.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Disperse Dyes — Polyester Needs Heat.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Disperse Dyes — Polyester Needs Heat","alternateName":"dyes-chemistry/disperse-dye-polyester","description":"PET fibre cross-section + dye particles. Drag T from 40 to 160 °C; particles penetrate inward as polymer softens. Sigmoid uptake curve marks Tg=80°C and commercial T=130°C.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"disperse dye, polyester, PET, glass transition, high temperature","url":"https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/disperse-dye-polyester/","image":"https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--disperse-dye-polyester.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dyes-chemistry/disperse-dye-polyester">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Disperse Dyes — Polyester Needs Heat</h1>
+      <p class="module-subtitle">non-ionic micro-particles dissolve into polyester chains only above ~130 °C; below the glass-transition the dye sits on the surface and rinses away</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Polyester (PET) is hydrophobic and has no –OH groups for water-soluble dyes to grab. Disperse dyes are tiny non-ionic crystals dispersed in the bath. Above the polyester glass-transition (~80 °C — but commercially 130 °C high-pressure for good penetration) the polymer chains gain mobility, and the dye crystals dissolve into the bulk plastic. Cool the fibre and the dye is trapped.
+        </p>
+        <p class="zone-guide">
+          Drag the bath temperature. Below ~80 °C the dye sits on the surface; near 130 °C the particles penetrate and the fibre colours deeply. The cross-section animation shows dye crystals diffusing inward.
+        </p>
+        <enc-slider id="T" label="Bath temperature (°C)" min="40" max="160" step="2" value="80" unit=" °C"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Disperse dye"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Zollinger §7.4 — disperse dyes; PET dyeing high-temperature/pressure"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

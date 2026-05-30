@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "dyes-chemistry/mordant-ligands",
+  "title": {
+    "en": "Mordant Chelation — Metal Bridge Sets the Colour",
+    "ko": "매염제 킬레이트 — 금속 다리가 색을 결정"
+  },
+  "subtitle": {
+    "en": "a metal ion bridges fibre and dye in a five-membered chelate ring; the same madder root extract becomes pink with Al³⁺, purple with Fe³⁺, brown with Cr³⁺",
+    "ko": "금속 이온이 섬유와 염료를 5각 킬레이트 ring으로 연결 — 같은 매더가 Al에선 분홍, Fe에선 자주, Cr에선 갈색"
+  },
+  "description": {
+    "en": "Five-membered chelate ring schematic (M, two O atoms, two C). Toggle mordant (none/Al/Fe/Cu/Cr); swatch shows historical madder colour, lightfastness bar follows; all five compared in a strip.",
+    "ko": "5원자 킬레이트 ring (M, 두 O, 두 C). 매염제 토글; 매더의 역사적 색 + 내광성 막대 + 5개 비교 strip."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 3,
+  "category": "dyes-chemistry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [4, 6],
+  "textbook_refs": [
+    { "source": "Berns 2019 §5", "section": "Mordant chelation" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["mordant", "chelation", "alizarin", "madder", "Turkey red"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Indigo Vat — Reduce, Apply, Oxidise — indigo is insoluble blue; reduc…</title>
+  <meta name="description" content="Three-stage cycle: oxidised blue → reduced yellow leuco → re-oxidised blue inside fabric. Vat colour and fabric colour update with each stage; sequence diagram shows the full process.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/vat-dye-reduction/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Indigo Vat — Reduce, Apply, Oxidise">
+  <meta property="og:description"    content="Three-stage cycle: oxidised blue → reduced yellow leuco → re-oxidised blue inside fabric. Vat colour and fabric colour update with each stage; sequence diagram shows the full process.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/vat-dye-reduction/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--vat-dye-reduction.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Indigo Vat — Reduce, Apply, Oxidise.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Indigo Vat — Reduce, Apply, Oxidise">
+  <meta name="twitter:description"   content="Three-stage cycle: oxidised blue → reduced yellow leuco → re-oxidised blue inside fabric. Vat colour and fabric colour update with each stage; sequence diagram shows the full process.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--vat-dye-reduction.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Indigo Vat — Reduce, Apply, Oxidise.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Indigo Vat — Reduce, Apply, Oxidise","alternateName":"dyes-chemistry/vat-dye-reduction","description":"Three-stage cycle: oxidised blue → reduced yellow leuco → re-oxidised blue inside fabric. Vat colour and fabric colour update with each stage; sequence diagram shows the full process.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"indigo, vat dye, leuco, denim, redox","url":"https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/vat-dye-reduction/","image":"https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--vat-dye-reduction.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dyes-chemistry/vat-dye-reduction">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Indigo Vat — Reduce, Apply, Oxidise</h1>
+      <p class="module-subtitle">indigo is insoluble blue; reduce it to soluble yellow leuco-indigo, soak the fibre, then air-oxidise back to blue — locked inside the fabric forever</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Indigo (the molecule that makes blue jeans) is insoluble in water as the oxidised quinone form. Vat dyeing uses chemistry to fix it: <b>reduce</b> with sodium dithionite to the soluble yellow <em>leuco</em> form, <b>soak</b> the cotton, and <b>oxidise</b> back in air. The reformed indigo crystals are now physically trapped inside the fibre.
+        </p>
+        <p class="zone-guide">
+          Cycle through the three states. Each step shows the form, its λ_max, and the colour of the dye vat / dyed fabric. The historical method (woad fermentation) achieved the same redox cycle biochemically.
+        </p>
+        <enc-toggle id="vstage" label="Vat stage" options="oxidised,reduced,re-oxidised" value="reduced"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Indigo vat"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Zollinger §7.2 — vat dye chemistry; indigo redox spectroscopy"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

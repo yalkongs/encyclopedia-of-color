@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>pH Indicators — Two Colours Through One pKa — an acid-base indicator…</title>
+  <meta name="description" content="Henderson-Hasselbalch sigmoid drives an interpolated swatch between acid and base colours. Three classic indicators (methyl orange 3.7, BTB 7.1, phenolphthalein 9.4) with mini swatches.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/ph-color-change/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="pH Indicators — Two Colours Through One pKa">
+  <meta property="og:description"    content="Henderson-Hasselbalch sigmoid drives an interpolated swatch between acid and base colours. Three classic indicators (methyl orange 3.7, BTB 7.1, phenolphthalein 9.4) with mini swatches.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/ph-color-change/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--ph-color-change.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: pH Indicators — Two Colours Through One pKa.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="pH Indicators — Two Colours Through One pKa">
+  <meta name="twitter:description"   content="Henderson-Hasselbalch sigmoid drives an interpolated swatch between acid and base colours. Three classic indicators (methyl orange 3.7, BTB 7.1, phenolphthalein 9.4) with mini swatches.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--ph-color-change.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: pH Indicators — Two Colours Through One pKa.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"pH Indicators — Two Colours Through One pKa","alternateName":"dyes-chemistry/ph-color-change","description":"Henderson-Hasselbalch sigmoid drives an interpolated swatch between acid and base colours. Three classic indicators (methyl orange 3.7, BTB 7.1, phenolphthalein 9.4) with mini swatches.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"pH indicator, Henderson-Hasselbalch, pKa, BTB, phenolphthalein","url":"https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/ph-color-change/","image":"https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--ph-color-change.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dyes-chemistry/ph-color-change">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">pH Indicators — Two Colours Through One pKa</h1>
+      <p class="module-subtitle">an acid-base indicator is a weak acid whose protonated and deprotonated forms have different chromophores; at pH = pKa they coexist 1:1 and the colour is the mixture</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A pH indicator HIn ⇌ H⁺ + In⁻ has two forms with different absorption spectra. The Henderson-Hasselbalch equation pH = pKa + log([In⁻]/[HIn]) tells how the equilibrium responds. Below pKa-1 the colour is solidly the acid form; above pKa+1 the base form; in between, a transition through the mixed colour.
+        </p>
+        <div class="math-block" data-tex="\dfrac{[\text{In}^-]}{[\text{HIn}]} = 10^{pH - pK_a}"></div>
+        <p class="zone-guide">
+          Pick the indicator and drag the pH. The swatch interpolates between acid and base colours; the table on the right shows the three classic indicators with their pKa values.
+        </p>
+        <enc-slider id="pH" label="pH" min="0" max="140" step="2" value="70" unit=" (×10⁻¹)"></enc-slider>
+        <enc-toggle id="ind" label="Indicator" options="methyl-orange,btb,phenolphthalein" value="btb"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="pH indicator"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Skoog Analytical Chemistry §15 — acid-base indicators"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

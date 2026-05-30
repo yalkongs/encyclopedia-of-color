@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Natural Dyeing — Physical Adsorption onto Fibre — a hot bath of plant…</title>
+  <meta name="description" content="Dye bath fades as fibre absorbs (Langmuir kinetics). Cotton, wool, silk reach different saturation. Side plot shows uptake curve; the bath jar and fibre swatch both update with time.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/natural-dyeing/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Natural Dyeing — Physical Adsorption onto Fibre">
+  <meta property="og:description"    content="Dye bath fades as fibre absorbs (Langmuir kinetics). Cotton, wool, silk reach different saturation. Side plot shows uptake curve; the bath jar and fibre swatch both update with time.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/natural-dyeing/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--natural-dyeing.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Natural Dyeing — Physical Adsorption onto Fibre.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Natural Dyeing — Physical Adsorption onto Fibre">
+  <meta name="twitter:description"   content="Dye bath fades as fibre absorbs (Langmuir kinetics). Cotton, wool, silk reach different saturation. Side plot shows uptake curve; the bath jar and fibre swatch both update with time.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--natural-dyeing.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Natural Dyeing — Physical Adsorption onto Fibre.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Natural Dyeing — Physical Adsorption onto Fibre","alternateName":"dyes-chemistry/natural-dyeing","description":"Dye bath fades as fibre absorbs (Langmuir kinetics). Cotton, wool, silk reach different saturation. Side plot shows uptake curve; the bath jar and fibre swatch both update with time.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"natural dye, Langmuir, physical adsorption, cotton wool silk","url":"https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/natural-dyeing/","image":"https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--natural-dyeing.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dyes-chemistry/natural-dyeing">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Natural Dyeing — Plant Extract Adsorbs onto Fibre</h1>
+      <p class="module-subtitle">a hot bath of plant extract physically adsorbs onto the fibre — no covalent bond, but cotton, wool, and silk each grab differently and reach different colour depths</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The simplest dyeing chemistry: dissolve plant pigment in a hot bath, soak the fibre, watch the bath go pale as the fibre goes deep. The interaction is <em>physical adsorption</em> (van der Waals + hydrogen bonds) — no new covalent bonds. Different fibres have different adsorption capacities; protein fibres (wool, silk) take dye more readily than cellulose (cotton).
+        </p>
+        <p class="zone-guide">
+          Drag the dye time; the bath colour fades and the fabric darkens following a Langmuir-isotherm-shaped curve. Toggle fibre type to see relative capacity — wool and silk fill faster than cotton at the same time.
+        </p>
+        <enc-slider id="t" label="Dye time (relative)" min="0" max="100" step="2" value="60" unit="%"></enc-slider>
+        <enc-toggle id="fibre" label="Fibre" options="cotton,wool,silk" value="wool"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Natural dyeing"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Zollinger §7 — natural dyes; Berns Billmeyer &amp; Saltzman §5"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

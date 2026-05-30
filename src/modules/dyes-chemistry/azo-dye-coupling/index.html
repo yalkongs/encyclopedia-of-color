@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Azo Coupling — Diazonium + Coupler → Vivid Colour — a diazonium salt…</title>
+  <meta name="description" content="Before/after toggle shows two separate reactants becoming the azo product. Three famous dyes (methyl orange 464nm, congo red 497nm, Sudan I 480nm) anchor the principle with measured λ_max.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/azo-dye-coupling/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Azo Coupling — Diazonium + Coupler → Vivid Colour">
+  <meta property="og:description"    content="Before/after toggle shows two separate reactants becoming the azo product. Three famous dyes (methyl orange 464nm, congo red 497nm, Sudan I 480nm) anchor the principle with measured λ_max.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/azo-dye-coupling/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--azo-dye-coupling.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Azo Coupling — Diazonium + Coupler → Vivid Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Azo Coupling — Diazonium + Coupler → Vivid Colour">
+  <meta name="twitter:description"   content="Before/after toggle shows two separate reactants becoming the azo product. Three famous dyes (methyl orange 464nm, congo red 497nm, Sudan I 480nm) anchor the principle with measured λ_max.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--azo-dye-coupling.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Azo Coupling — Diazonium + Coupler → Vivid Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Azo Coupling — Diazonium + Coupler → Vivid Colour","alternateName":"dyes-chemistry/azo-dye-coupling","description":"Before/after toggle shows two separate reactants becoming the azo product. Three famous dyes (methyl orange 464nm, congo red 497nm, Sudan I 480nm) anchor the principle with measured λ_max.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"azo dye, diazonium, coupling, methyl orange, Sudan I","url":"https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/azo-dye-coupling/","image":"https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--azo-dye-coupling.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dyes-chemistry/azo-dye-coupling">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Azo Coupling — Diazonium + Coupler → Vivid Colour</h1>
+      <p class="module-subtitle">a diazonium salt Ar-N₂⁺ attacks an electron-rich aromatic at the para position to form the Ar-N=N-Ar' bridge — extending conjugation across both rings gives the deep colour of every azo dye</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          More than half of all synthetic dyes contain an azo (-N=N-) group. The synthesis is a one-step electrophilic aromatic substitution: the diazonium ion Ar-N₂⁺ (made by diazotising an aromatic amine with NaNO₂/HCl) is electrophilic enough to attack a phenol or aromatic amine at the para position. The new N=N bond extends the conjugated π system across both rings, dragging the absorption deep into the visible.
+        </p>
+        <p class="zone-guide">
+          Toggle &ldquo;before&rdquo; vs &ldquo;after coupling&rdquo; — the two reactants on the left become the azo product, with measured λ_max and colour swatch. Cycle the famous example to compare methyl orange (basic conditions), congo red (cotton substantive), Sudan I (lipid-soluble).
+        </p>
+        <enc-toggle id="phase" label="Reaction phase" options="before,after" value="after"></enc-toggle>
+        <enc-toggle id="dye" label="Famous dye" options="methyl-orange,congo-red,sudan-I" value="methyl-orange"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Azo coupling"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Zollinger §5 — azo dyes; Hunger Industrial Dyes (2003)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Mordant Chelation — Metal Bridge Sets the Colour — a metal ion bridge…</title>
+  <meta name="description" content="Five-membered chelate ring schematic (M, two O atoms, two C). Toggle mordant (none/Al/Fe/Cu/Cr); swatch shows historical madder colour, lightfastness bar follows; all five compared in a strip.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/mordant-ligands/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Mordant Chelation — Metal Bridge Sets the Colour">
+  <meta property="og:description"    content="Five-membered chelate ring schematic (M, two O atoms, two C). Toggle mordant (none/Al/Fe/Cu/Cr); swatch shows historical madder colour, lightfastness bar follows; all five compared in a strip.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/mordant-ligands/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--mordant-ligands.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Mordant Chelation — Metal Bridge Sets the Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Mordant Chelation — Metal Bridge Sets the Colour">
+  <meta name="twitter:description"   content="Five-membered chelate ring schematic (M, two O atoms, two C). Toggle mordant (none/Al/Fe/Cu/Cr); swatch shows historical madder colour, lightfastness bar follows; all five compared in a strip.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--mordant-ligands.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Mordant Chelation — Metal Bridge Sets the Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Mordant Chelation — Metal Bridge Sets the Colour","alternateName":"dyes-chemistry/mordant-ligands","description":"Five-membered chelate ring schematic (M, two O atoms, two C). Toggle mordant (none/Al/Fe/Cu/Cr); swatch shows historical madder colour, lightfastness bar follows; all five compared in a strip.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"mordant, chelation, alizarin, madder, Turkey red","url":"https://encyclopedia-of-color.vercel.app/modules/dyes-chemistry/mordant-ligands/","image":"https://encyclopedia-of-color.vercel.app/og/dyes-chemistry--mordant-ligands.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="dyes-chemistry/mordant-ligands">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Mordant Chelation — Same Dye, Different Metal, Different Colour</h1>
+      <p class="module-subtitle">a metal ion bridges fibre and dye in a five-membered chelate ring; the same madder root extract becomes pink with Al³⁺, purple with Fe³⁺, brown with Cr³⁺</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A <em>mordant</em> is a metal salt — alum, ferrous sulphate, copper sulphate, potassium dichromate — pre-bonded to the fibre. The metal ion M^n+ then forms a five-membered chelate ring with the dye (two oxygen donor atoms from adjacent –OH or =O groups). This locks the dye <em>and</em> shifts its colour through ligand-field effects on the metal.
+        </p>
+        <p class="zone-guide">
+          Toggle the mordant. The chelate-ring schematic redraws with the chosen metal; the swatch on the right shows the historical madder-root colour for that mordant; the lightfastness bar predicts how the dyed cloth survives sunlight.
+        </p>
+        <enc-toggle id="m" label="Mordant" options="none,Al,Fe,Cu,Cr" value="Al"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Mordant chelation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Berns 2019 §5 — mordant chelation; Cardon Natural Dyes (2007)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
