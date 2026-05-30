@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Chromesthesia — Sound-to-Colour Mapping — Scriabin's 'Clavier à lumiè…</title>
+  <meta name="description" content="Note slider 0-11 shows Scriabin colour-piano keyboard with white/black keys coloured per chromesthesia map.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/synesthesia-and-cross-modal/chromesthesia-music-pitch/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Chromesthesia — Sound-to-Colour Mapping">
+  <meta property="og:description"    content="Note slider 0-11 shows Scriabin colour-piano keyboard with white/black keys coloured per chromesthesia map.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/synesthesia-and-cross-modal/chromesthesia-music-pitch/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/synesthesia-and-cross-modal--chromesthesia-music-pitch.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Chromesthesia — Sound-to-Colour Mapping.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Chromesthesia — Sound-to-Colour Mapping">
+  <meta name="twitter:description"   content="Note slider 0-11 shows Scriabin colour-piano keyboard with white/black keys coloured per chromesthesia map.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/synesthesia-and-cross-modal--chromesthesia-music-pitch.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Chromesthesia — Sound-to-Colour Mapping.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Chromesthesia — Sound-to-Colour Mapping","alternateName":"synesthesia-and-cross-modal/chromesthesia-music-pitch","description":"Note slider 0-11 shows Scriabin colour-piano keyboard with white/black keys coloured per chromesthesia map.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"chromesthesia, Scriabin, synesthesia","url":"https://encyclopedia-of-color.vercel.app/modules/synesthesia-and-cross-modal/chromesthesia-music-pitch/","image":"https://encyclopedia-of-color.vercel.app/og/synesthesia-and-cross-modal--chromesthesia-music-pitch.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="synesthesia-and-cross-modal/chromesthesia-music-pitch">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.12">D12 Psychology</span><span class="chip" data-i18n="bloom.L2">L2 Understand</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Chromesthesia — Sound-to-Colour Mapping</h1>
+    <p class="module-subtitle">Scriabin's "Clavier à lumières" gave each note a colour; modern chromesthetes report similar pitch-hue maps (often high pitch = bright, low pitch = dark)</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Chromesthesia (~0.2% prevalence) maps pitch + timbre to colour. Scriabin used C=red, D=yellow, E=sky blue in Prometheus (1910). Music-colour mappings often correlate with letter-name (C = first note = red, like A = first letter = red).</p>
+      <p class="zone-guide">Slide pitch on chromatic scale C–B.</p>
+      <enc-slider id="n" label="note (0=C · 11=B)" min="0" max="11" step="1" value="0" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Chromesthesia"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Scriabin Prometheus 1910; Eagleman 2009 Sounds Colors"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

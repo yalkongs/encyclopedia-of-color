@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "synesthesia-and-cross-modal/bouba-kiki-cross-modal",
+  "title": {"en": "Bouba/Kiki — Cross-Modal Sound-Shape Mapping", "ko": "부바/키키 — 음-형태 교차 매핑"},
+  "subtitle": {"en": "~95% pair round blob with 'bouba' and spiky shape with 'kiki'; universal cross-cultural mapping replicates with pre-literate children", "ko": "~95%가 둥근 모양을 '부바', 뾰족한 모양을 '키키'로 짝지음; 문자 학습 전 어린이까지 보편적 교차문화 매핑"},
+  "description": {"en": "Name toggle highlights either the round blob or the spiky shape with 95/5% attribution percentages from the classic Ramachandran study.", "ko": "이름 토글로 둥근 모양 또는 뾰족한 모양을 강조하며 Ramachandran 95/5% 귀속 비율을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "synesthesia-and-cross-modal",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Ramachandran 2001", "section": "Bouba-kiki"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["bouba kiki", "sound symbolism", "Köhler"],
+  "estimated_hours": 8, "status": "shipped"
+}

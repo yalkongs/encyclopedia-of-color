@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "synesthesia-and-cross-modal/grapheme-color-letter-table",
+  "title": {"en": "Grapheme-Colour Synesthesia — A Is Red", "ko": "자소-색 공감각 — A는 적색"},
+  "subtitle": {"en": "~1% of people automatically perceive letters/numbers as colours; A trends red, O white/yellow — Witthoft 2013 traced to childhood Fisher-Price magnets", "ko": "~1% 인구가 자모/숫자를 자동으로 색으로 지각; A는 적색, O는 흰색/노랑 — Witthoft 2013 어린 시절 Fisher-Price 자석 추적"},
+  "description": {"en": "Letter-index slider shows large focus glyph and 5×6 letter-colour table mapping typical grapheme-colour synesthete responses.", "ko": "자소 인덱스 슬라이더로 큰 포커스 글리프와 5×6 자소-색 표로 전형적 공감각 응답을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "synesthesia-and-cross-modal",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Witthoft 2013", "section": "Fisher-Price"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["grapheme-color", "synesthesia", "Witthoft"],
+  "estimated_hours": 8, "status": "shipped"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "synesthesia-and-cross-modal/synesthesia-prevalence",
+  "title": {"en": "Synesthesia Prevalence — Type Breakdown", "ko": "공감각 유병률 — 유형 분류"},
+  "subtitle": {"en": "Simner 2006: 4.4% have ≥1 type; grapheme-colour 1.4%, mirror-touch 1.6%, weekday-colour 0.9%; ~50% heritable", "ko": "Simner 2006: 인구의 4.4%가 ≥1 유형; 자소-색 1.4%, 거울 촉각 1.6%, 요일-색 0.9%; ~50% 유전"},
+  "description": {"en": "Type selector highlights one of 7 synesthesia categories with prevalence bar chart and total ≥1-type dashed line.", "ko": "유형 선택으로 7개 공감각 범주 중 하나를 강조하고 유병률 막대 차트와 ≥1 유형 합계 점선을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "synesthesia-and-cross-modal",
+  "layout": "A", "prerequisites": ["synesthesia-and-cross-modal/grapheme-color-letter-table"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Simner 2006", "section": "Prevalence"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["synesthesia prevalence", "Simner 2006", "heritability"],
+  "estimated_hours": 8, "status": "shipped"
+}

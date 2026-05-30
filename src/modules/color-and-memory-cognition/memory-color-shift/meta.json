@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-memory-cognition/memory-color-shift",
+  "title": {"en": "Memory Colour Shift — Remembered Bananas Are Yellower", "ko": "기억 색 이동 — 기억 속 바나나는 더 노랑"},
+  "subtitle": {"en": "Hansen 2006: ambiguous grey banana is remembered as slightly yellow; top-down object knowledge biases ambiguous percepts toward stored colour", "ko": "Hansen 2006: 모호한 회색 바나나가 약간 노랗게 기억됨; 상향식 객체 지식이 모호한 지각을 저장 색으로 편향"},
+  "description": {"en": "Actual-grey slider drives 'shown vs remembered' colour swatches for 4 familiar objects (banana, strawberry, sky, tomato) showing memory-prior shifts.", "ko": "실제 회색 슬라이더로 4개 친숙한 객체(바나나·딸기·하늘·토마토)의 '표시 vs 기억' 색을 보여 기억 사전 편향을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "color-and-memory-cognition",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Hansen 2006", "section": "Memory colour"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["memory colour", "Hansen 2006", "top-down"],
+  "estimated_hours": 8, "status": "shipped"
+}

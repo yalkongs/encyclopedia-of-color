@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-memory-cognition/password-color-grid",
+  "title": {"en": "Graphical Passwords — Coloured-Grid Mnemonics", "ko": "그래픽 비밀번호 — 색 격자 기억법"},
+  "subtitle": {"en": "PassPoints / PassFaces: 5-click sequence on coloured grid; 1-yr recall ~75-90% vs ~30% for 8-char strings, but lower entropy", "ko": "PassPoints/PassFaces: 색 격자 5번 클릭 시퀀스; 1년 기억 ~75-90% vs 8문자 ~30%, 단 엔트로피 낮음"},
+  "description": {"en": "Grid-size slider drives N×N coloured cells with 5-click sample password and entropy/recall comparison vs alphanumeric and PassFaces.", "ko": "격자 크기 슬라이더로 N×N 색 셀과 5-클릭 샘플 비밀번호, 영숫자·PassFaces 대비 엔트로피·기억 비교를 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "color-and-memory-cognition",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Wiedenbeck 2005", "section": "PassPoints"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["graphical password", "PassPoints", "PassFaces"],
+  "estimated_hours": 8, "status": "shipped"
+}

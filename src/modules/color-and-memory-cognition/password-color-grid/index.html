@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Graphical Passwords — Coloured-Grid Mnemonics — PassPoints / PassFace…</title>
+  <meta name="description" content="Grid-size slider drives N×N coloured cells with 5-click sample password and entropy/recall comparison vs alphanumeric and PassFaces.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-and-memory-cognition/password-color-grid/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Graphical Passwords — Coloured-Grid Mnemonics">
+  <meta property="og:description"    content="Grid-size slider drives N×N coloured cells with 5-click sample password and entropy/recall comparison vs alphanumeric and PassFaces.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-and-memory-cognition/password-color-grid/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-and-memory-cognition--password-color-grid.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Graphical Passwords — Coloured-Grid Mnemonics.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Graphical Passwords — Coloured-Grid Mnemonics">
+  <meta name="twitter:description"   content="Grid-size slider drives N×N coloured cells with 5-click sample password and entropy/recall comparison vs alphanumeric and PassFaces.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-and-memory-cognition--password-color-grid.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Graphical Passwords — Coloured-Grid Mnemonics.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Graphical Passwords — Coloured-Grid Mnemonics","alternateName":"color-and-memory-cognition/password-color-grid","description":"Grid-size slider drives N×N coloured cells with 5-click sample password and entropy/recall comparison vs alphanumeric and PassFaces.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"graphical password, PassPoints, PassFaces","url":"https://encyclopedia-of-color.vercel.app/modules/color-and-memory-cognition/password-color-grid/","image":"https://encyclopedia-of-color.vercel.app/og/color-and-memory-cognition--password-color-grid.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-and-memory-cognition/password-color-grid">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.12">D12 Psychology</span><span class="chip" data-i18n="bloom.L2">L2 Understand</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Graphical Passwords — Coloured-Grid Mnemonics</h1>
+    <p class="module-subtitle">PassPoints / Story / PassFaces: instead of alphanumeric strings, users remember a sequence of clicks on a coloured picture grid; recall ~80% at 1 year vs ~30% for 8-char strings</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Wiedenbeck (2005) PassPoints used 5 clicks on a picture as the secret. Studies show 1-year recall accuracy ~80% vs ~30% for memorised strings. Colour acts as a strong contextual cue that survives the spacing-effect decay better than abstract characters.</p>
+      <p class="zone-guide">Slide grid size — security ~ N⁵ for 5-click password.</p>
+      <enc-slider id="n" label="grid N×N (cells per side)" min="3" max="10" step="1" value="6" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Password grid"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Wiedenbeck 2005 PassPoints; Brostoff 2000 PassFaces"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>
