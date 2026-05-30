@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "exposure-photometry/sunny-16-rule",
+  "title": {
+    "en": "Sunny 16 Rule",
+    "ko": "Sunny 16 법칙"
+  },
+  "subtitle": {
+    "en": "on a sunny day, set aperture to f/16 and shutter to 1/ISO — every other condition is a stop adjustment from there",
+    "ko": "맑은 날 — 조리개 f/16, 셔터 1/ISO. 다른 조건은 모두 stop 보정"
+  },
+  "description": {
+    "en": "Sunny 16: f/16 at 1/ISO in bright direct sun. Each lighting drop opens the aperture one stop. Recipe table with shutter pairs at the chosen ISO; all conditions land on the same Zone V brightness.",
+    "ko": "Sunny 16: 맑은 직사광에서 f/16 · 1/ISO. 광량 감소마다 조리개 한 stop씩 개방. ISO에 따른 셔터 페어 테이블; 모든 조건이 Zone V 같은 밝기로 떨어진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L2",
+  "domain": 10,
+  "category": "exposure-photometry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "London et al. 2002", "section": "Sunny 16" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["sunny 16", "exposure", "aperture", "shutter", "ISO"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

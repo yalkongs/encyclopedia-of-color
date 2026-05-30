@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "exposure-photometry/zone-system",
+  "title": {
+    "en": "Adams Zone System — I to X",
+    "ko": "Adams 존 시스템 — I에서 X"
+  },
+  "subtitle": {
+    "en": "Ansel Adams divided the tonal scale into 11 zones, each one stop apart; zone V is mid-grey (18% reflectance), the anchor for every metering decision",
+    "ko": "Ansel Adams는 톤 스케일을 11존으로 나눴다 — 각 존은 한 stop 차이, Zone V가 18% 미드그레이로 모든 측광의 기준이다"
+  },
+  "description": {
+    "en": "Adams ladder: 11 zones one stop apart, Zone V = 18% mid-grey. Drag EV — five sample subjects slide up and down the ladder; clip warnings flag lost shadow/highlight texture.",
+    "ko": "Adams 사다리: 11존이 한 stop씩, Zone V는 18% 미드그레이. EV 드래그 — 5개 피사체가 사다리에 따라 움직이고 clip 경고가 shadow/highlight 텍스처 손실 표시."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "exposure-photometry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Adams 1981 The Negative", "section": "Zone System" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["zone system", "Ansel Adams", "mid grey", "exposure", "metering"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

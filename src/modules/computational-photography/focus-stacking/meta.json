@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "computational-photography/focus-stacking",
+  "title": {
+    "en": "Focus Stacking — Local Sharpness Selects Per Pixel",
+    "ko": "포커스 스태킹 — 로컬 선명도가 픽셀별 선택"
+  },
+  "subtitle": {
+    "en": "five frames at different focus distances; each output pixel takes the value from whichever frame is locally sharpest at that point",
+    "ko": "다른 초점 거리의 5장 프레임 — 출력 픽셀은 그 지점에서 가장 선명한 프레임에서 값을 가져온다"
+  },
+  "description": {
+    "en": "Three subjects at three depths captured at five focus distances. Sharpness table picks the best frame per subject; the stacked output renders every subject sharp — extending depth of field.",
+    "ko": "세 깊이의 세 피사체를 다섯 초점 거리에서 캡처. 선명도 표가 피사체별 최적 프레임을 선택; 스태킹 결과는 모든 피사체를 선명하게 — DOF 확장."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "computational-photography",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Pertuz et al. 2013", "section": "Focus measures" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["focus stacking", "depth of field", "sharpness", "computational photography"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

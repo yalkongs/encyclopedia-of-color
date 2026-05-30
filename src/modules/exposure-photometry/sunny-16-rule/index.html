@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Sunny 16 Rule — on a sunny day, set aperture to f/16 and shutter to 1…</title>
+  <meta name="description" content="Sunny 16: f/16 at 1/ISO in bright direct sun. Each lighting drop opens the aperture one stop. Recipe table with shutter pairs at the chosen ISO; all conditions land on the same Zone V brightness.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/exposure-photometry/sunny-16-rule/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Sunny 16 Rule">
+  <meta property="og:description"    content="Sunny 16: f/16 at 1/ISO in bright direct sun. Each lighting drop opens the aperture one stop. Recipe table with shutter pairs at the chosen ISO; all conditions land on the same Zone V brightness.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/exposure-photometry/sunny-16-rule/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/exposure-photometry--sunny-16-rule.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Sunny 16 Rule.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Sunny 16 Rule">
+  <meta name="twitter:description"   content="Sunny 16: f/16 at 1/ISO in bright direct sun. Each lighting drop opens the aperture one stop. Recipe table with shutter pairs at the chosen ISO; all conditions land on the same Zone V brightness.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/exposure-photometry--sunny-16-rule.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Sunny 16 Rule.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Sunny 16 Rule","alternateName":"exposure-photometry/sunny-16-rule","description":"Sunny 16: f/16 at 1/ISO in bright direct sun. Each lighting drop opens the aperture one stop. Recipe table with shutter pairs at the chosen ISO; all conditions land on the same Zone V brightness.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"sunny 16, exposure, aperture, shutter, ISO","url":"https://encyclopedia-of-color.vercel.app/modules/exposure-photometry/sunny-16-rule/","image":"https://encyclopedia-of-color.vercel.app/og/exposure-photometry--sunny-16-rule.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="exposure-photometry/sunny-16-rule">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Sunny 16 Rule</h1>
+      <p class="module-subtitle">on a sunny day, set aperture to f/16 and shutter to 1/ISO — every other condition is a stop adjustment from there</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The mnemonic: in bright direct sunlight, exposure is correct at <b>aperture f/16</b> and <b>shutter 1/ISO seconds</b>. At ISO 100 that's f/16 · 1/100; at ISO 400 that's f/16 · 1/400. Every other condition is a relative stop adjustment — open one stop (f/11) for "slight overcast", two for "overcast", three for "heavy overcast", four for "open shade".
+        </p>
+        <p class="zone-guide">
+          Cycle the lighting condition and ISO. The recipe panel shows the implied aperture / shutter pair. The exposure preview shows the same scene at correct exposure across all conditions — same brightness, different settings.
+        </p>
+        <enc-toggle id="cond" label="Condition" options="sun,overcast-light,overcast,heavy,shade" value="sun"></enc-toggle>
+        <enc-slider id="iso" label="ISO" min="100" max="3200" step="100" value="100" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Sunny 16 rule"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Sunny 16 mnemonic — Kodak film boxes, photographic tradition"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

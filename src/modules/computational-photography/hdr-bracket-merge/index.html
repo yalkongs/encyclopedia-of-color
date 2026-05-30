@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result — capture −2 E…</title>
+  <meta name="description" content="Three bracketed captures of an interior + bright window. Each pixel weighted by exposure quality; merged radiance tone-mapped (Reinhard global) preserves both highlights and shadow detail.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/computational-photography/hdr-bracket-merge/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result">
+  <meta property="og:description"    content="Three bracketed captures of an interior + bright window. Each pixel weighted by exposure quality; merged radiance tone-mapped (Reinhard global) preserves both highlights and shadow detail.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/computational-photography/hdr-bracket-merge/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/computational-photography--hdr-bracket-merge.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result">
+  <meta name="twitter:description"   content="Three bracketed captures of an interior + bright window. Each pixel weighted by exposure quality; merged radiance tone-mapped (Reinhard global) preserves both highlights and shadow detail.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/computational-photography--hdr-bracket-merge.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result","alternateName":"computational-photography/hdr-bracket-merge","description":"Three bracketed captures of an interior + bright window. Each pixel weighted by exposure quality; merged radiance tone-mapped (Reinhard global) preserves both highlights and shadow detail.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"HDR, bracket, tone mapping, Reinhard, exposure fusion","url":"https://encyclopedia-of-color.vercel.app/modules/computational-photography/hdr-bracket-merge/","image":"https://encyclopedia-of-color.vercel.app/og/computational-photography--hdr-bracket-merge.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="computational-photography/hdr-bracket-merge">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">HDR Bracket Merge — Three Exposures → One Tone-Mapped Result</h1>
+      <p class="module-subtitle">capture −2 EV / 0 EV / +2 EV; the merge weights each pixel by its &ldquo;well-exposedness&rdquo;, the tone-map compresses the merged radiance back into 8-bit</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A bracketed HDR sequence captures the same scene at multiple exposures. The merge step combines them in linear radiance, weighting each pixel by how well-exposed it is in that frame (Debevec-Malik 1997 / Mertens 2007 style). The merged result has more dynamic range than 8-bit allows — a tone-mapping operator compresses it back, preserving local contrast.
+        </p>
+        <div class="math-block" data-tex="L = \dfrac{\sum_i w(p_i)\, p_i / t_i}{\sum_i w(p_i)}"></div>
+        <p class="zone-guide">
+          The synthetic scene has a dark interior and a blown-out window. Each bracket shows one exposure; the merged + tone-mapped result on the right preserves both. Drag the tone-map strength to compare a flat compression vs an aggressive one.
+        </p>
+        <enc-slider id="tm" label="Tone-map strength" min="0" max="100" step="5" value="60" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="HDR bracket merge"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Debevec &amp; Malik 1997; Mertens et al. 2007 Exposure Fusion; Reinhard §4"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

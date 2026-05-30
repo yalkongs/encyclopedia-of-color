@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Adams Zone System — I to X — Ansel Adams divided the tonal scale into…</title>
+  <meta name="description" content="Adams ladder: 11 zones one stop apart, Zone V = 18% mid-grey. Drag EV — five sample subjects slide up and down the ladder; clip warnings flag lost shadow/highlight texture.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/exposure-photometry/zone-system/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Adams Zone System — I to X">
+  <meta property="og:description"    content="Adams ladder: 11 zones one stop apart, Zone V = 18% mid-grey. Drag EV — five sample subjects slide up and down the ladder; clip warnings flag lost shadow/highlight texture.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/exposure-photometry/zone-system/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/exposure-photometry--zone-system.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Adams Zone System — I to X.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Adams Zone System — I to X">
+  <meta name="twitter:description"   content="Adams ladder: 11 zones one stop apart, Zone V = 18% mid-grey. Drag EV — five sample subjects slide up and down the ladder; clip warnings flag lost shadow/highlight texture.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/exposure-photometry--zone-system.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Adams Zone System — I to X.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Adams Zone System — I to X","alternateName":"exposure-photometry/zone-system","description":"Adams ladder: 11 zones one stop apart, Zone V = 18% mid-grey. Drag EV — five sample subjects slide up and down the ladder; clip warnings flag lost shadow/highlight texture.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"zone system, Ansel Adams, mid grey, exposure, metering","url":"https://encyclopedia-of-color.vercel.app/modules/exposure-photometry/zone-system/","image":"https://encyclopedia-of-color.vercel.app/og/exposure-photometry--zone-system.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="exposure-photometry/zone-system">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Adams Zone System — I to X</h1>
+      <p class="module-subtitle">Ansel Adams divided the tonal scale into 11 zones, each one stop apart; zone V is mid-grey (18% reflectance), the anchor for every metering decision</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Zone System places every brightness in a scene on an 11-step ladder. Each zone is one stop (factor of 2) brighter than the previous. Zone V is the 18% mid-grey that a reflective meter assumes — &ldquo;place&rdquo; a subject on a zone by metering it, then exposing relative to mid-grey. Zone 0 is paper black, Zone X is paper white with no texture.
+        </p>
+        <p class="zone-guide">
+          The strip below shows all 11 zones with their canonical descriptions. Drag the exposure slider — the scene moves up and down the zone scale, and the shadow/highlight clip indicators flag whether texture is preserved or lost.
+        </p>
+        <enc-slider id="ev" label="Exposure compensation (stops)" min="-4" max="4" step="1" value="0" unit=" EV"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Zone System"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Adams, The Negative (1981) — Zone System chapters"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

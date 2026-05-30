@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Focus Stacking — Local Sharpness Selects Per Pixel — five frames at d…</title>
+  <meta name="description" content="Three subjects at three depths captured at five focus distances. Sharpness table picks the best frame per subject; the stacked output renders every subject sharp — extending depth of field.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/computational-photography/focus-stacking/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Focus Stacking — Local Sharpness Selects Per Pixel">
+  <meta property="og:description"    content="Three subjects at three depths captured at five focus distances. Sharpness table picks the best frame per subject; the stacked output renders every subject sharp — extending depth of field.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/computational-photography/focus-stacking/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/computational-photography--focus-stacking.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Focus Stacking — Local Sharpness Selects Per Pixel.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Focus Stacking — Local Sharpness Selects Per Pixel">
+  <meta name="twitter:description"   content="Three subjects at three depths captured at five focus distances. Sharpness table picks the best frame per subject; the stacked output renders every subject sharp — extending depth of field.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/computational-photography--focus-stacking.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Focus Stacking — Local Sharpness Selects Per Pixel.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Focus Stacking — Local Sharpness Selects Per Pixel","alternateName":"computational-photography/focus-stacking","description":"Three subjects at three depths captured at five focus distances. Sharpness table picks the best frame per subject; the stacked output renders every subject sharp — extending depth of field.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"focus stacking, depth of field, sharpness, computational photography","url":"https://encyclopedia-of-color.vercel.app/modules/computational-photography/focus-stacking/","image":"https://encyclopedia-of-color.vercel.app/og/computational-photography--focus-stacking.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="computational-photography/focus-stacking">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Focus Stacking — Local Sharpness Selects Per Pixel</h1>
+      <p class="module-subtitle">five frames at different focus distances; each output pixel takes the value from whichever frame is locally sharpest at that point</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A single lens at large aperture can only focus on one depth at a time. Focus stacking takes multiple frames, each focused at a different distance, and assembles a single image with depth of field as wide as the total stack. A local-sharpness metric (high-frequency energy in a small window) decides which frame to sample at each pixel.
+        </p>
+        <p class="zone-guide">
+          A scene with three subjects at three depths (foreground bottle, middle book, background lamp) is shown across five focus frames. Use the slider to pick which frame is &ldquo;visible&rdquo;; the right panel shows the assembled stack — every subject sharp.
+        </p>
+        <enc-slider id="frame" label="Active frame" min="1" max="5" step="1" value="3" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Focus stacking"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Helicon Focus / Zerene Stacker documentation; Pertuz et al. 2013 sharpness measures"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

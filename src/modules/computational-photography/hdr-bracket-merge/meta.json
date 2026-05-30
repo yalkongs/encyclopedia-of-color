@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "computational-photography/hdr-bracket-merge",
+  "title": {
+    "en": "HDR Bracket Merge — 3 Exposures → 1 Tone-Mapped Result",
+    "ko": "HDR 브래킷 합성 — 3 노출 → 1 톤매핑 결과"
+  },
+  "subtitle": {
+    "en": "capture −2 EV / 0 EV / +2 EV; the merge weights each pixel by its well-exposedness, the tone-map compresses the merged radiance back into 8-bit",
+    "ko": "−2 EV / 0 EV / +2 EV 캡처; 픽셀별 well-exposedness 가중 합성, 톤매핑이 8-bit로 압축"
+  },
+  "description": {
+    "en": "Three bracketed captures of an interior + bright window. Each pixel weighted by exposure quality; merged radiance tone-mapped (Reinhard global) preserves both highlights and shadow detail.",
+    "ko": "내부와 밝은 창이 있는 장면의 3장 브래킷. 픽셀별 노출 품질로 가중 합성; 합성된 radiance에 Reinhard 글로벌 톤매핑 적용해 하이라이트와 그림자 디테일을 모두 보존."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "computational-photography",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Debevec & Malik 1997", "section": "HDR merge" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["HDR", "bracket", "tone mapping", "Reinhard", "exposure fusion"],
+  "estimated_hours": 16,
+  "status": "shipped"
+}
