@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "chromatophores/octopus-iridophore",
+  "title": {"en": "Octopus Iridophore + Leucophore Layers", "ko": "문어 iridophore + leucophore 층"},
+  "subtitle": {"en": "octopus skin stacks three cell types — chromatophores (pigment), iridophores (tunable Bragg reflectors), leucophores (white scatterers) — giving structural blue/green plus broadband background", "ko": "문어 피부 3층 — chromatophore(색소)·iridophore(Bragg)·leucophore(scatter)"},
+  "description": {"en": "Three-layer schematic with toggle. Combining pigmentary + structural + white scatter underlies cephalopod camouflage.", "ko": "3층 schematic + 토글. 색소+구조+백색 산란 조합이 두족류 위장 기반."},
+  "tier": "reference", "bloom_level": "L5", "domain": 9, "category": "chromatophores",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [13, 14],
+  "textbook_refs": [{"source": "Mäthger 2009", "section": "Iridophore"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["iridophore", "leucophore", "octopus skin"],
+  "estimated_hours": 12, "status": "shipped"
+}

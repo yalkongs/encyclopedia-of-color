@@ -1,0 +1,14 @@
+{
+  "schema_version": "v2",
+  "id": "fluorescent-proteins/gfp-chromophore",
+  "title": {"en": "GFP Chromophore — β-Barrel Encapsulation", "ko": "GFP 발색단 — β-barrel 캡슐화"},
+  "subtitle": {"en": "GFP chromophore (p-HBDI) forms spontaneously from three amino acids inside a rigid 11-strand β-barrel; the barrel suppresses non-radiative decay → bright 509 nm fluorescence", "ko": "GFP의 p-HBDI 발색단이 3 amino acid에서 자가 형성, 11-strand β-barrel이 비방사 감쇠 억제 → 509 nm 형광"},
+  "description": {"en": "β-barrel cage with central chromophore. Toggle barrel on/off to show fluorescence on/off. Foundation of genetically encoded fluorescent tags.", "ko": "β-barrel 케이지 + 중심 발색단. 토글로 fluorescence on/off. 유전자 부호화 형광 태그 기반."},
+  "tier": "reference", "bloom_level": "L5", "domain": 9, "category": "fluorescent-proteins",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [{"source": "Tsien 1998", "section": "GFP review"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["GFP", "fluorescent protein", "Tsien"],
+  "estimated_hours": 12, "status": "shipped"
+}

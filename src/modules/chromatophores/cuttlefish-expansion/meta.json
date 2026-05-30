@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "chromatophores/cuttlefish-expansion",
+  "title": {"en": "Cuttlefish Chromatophore — Neural Expansion", "ko": "갑오징어 색소포 — 신경 제어"},
+  "subtitle": {"en": "cuttlefish skin holds millions of muscular sacs (chromatophores) — each one expanded by radial muscle pulls pigment from a small dot into a wide disc, painting the skin in milliseconds", "ko": "갑오징어 피부의 수백만 색소포 — 방사 근육이 작은 점에서 넓은 원반으로 색소 확장, 밀리초 단위"},
+  "description": {"en": "Chromatophore grid expands/contracts with muscle activation slider. Fastest body-pattern change in animal kingdom (<200 ms).", "ko": "근육 활성 슬라이더로 색소포 격자 확장/수축. 동물계 최고속 패턴 변화."},
+  "tier": "reference", "bloom_level": "L4", "domain": 9, "category": "chromatophores",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [{"source": "Hanlon & Messenger 1996", "section": "Chromatophores"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["cuttlefish", "chromatophore", "cephalopod"],
+  "estimated_hours": 10, "status": "shipped"
+}

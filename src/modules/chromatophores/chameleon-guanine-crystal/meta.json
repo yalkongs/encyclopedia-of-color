@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "chromatophores/chameleon-guanine-crystal",
+  "title": {"en": "Chameleon — Guanine Crystal Lattice Tuning", "ko": "카멜레온 — 구아닌 결정 격자 튜닝"},
+  "subtitle": {"en": "panther chameleons change colour by adjusting the spacing of guanine nanocrystals in their iridophores — Teyssier 2015 showed the lattice constant tunes from blue (relaxed) to red (excited)", "ko": "팬더 카멜레온이 iridophore의 구아닌 격자를 늘려 색 변화 — 청(이완)→적(흥분)"},
+  "description": {"en": "Chameleon silhouette colour follows guanine lattice expansion. No pigment movement — pure structural tuning.", "ko": "카멜레온 silhouette 색이 구아닌 격자 확장 따라 변화. 색소 이동 없이 구조 튜닝."},
+  "tier": "reference", "bloom_level": "L5", "domain": 9, "category": "chromatophores",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [14],
+  "textbook_refs": [{"source": "Teyssier 2015", "section": "Chameleon photonic"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["chameleon", "guanine crystal", "iridophore"],
+  "estimated_hours": 12, "status": "shipped"
+}

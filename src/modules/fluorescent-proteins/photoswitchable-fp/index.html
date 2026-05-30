@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Photoswitchable FPs — Toggle Fluorescence with Light — PA-GFP and Dro…</title>
+  <meta name="description" content="Toggle Dronpa state dark/bright. Single-molecule on/off switching is the basis of PALM super-resolution.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/fluorescent-proteins/photoswitchable-fp/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Photoswitchable FPs — Toggle Fluorescence with Light">
+  <meta property="og:description"    content="Toggle Dronpa state dark/bright. Single-molecule on/off switching is the basis of PALM super-resolution.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/fluorescent-proteins/photoswitchable-fp/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/fluorescent-proteins--photoswitchable-fp.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Photoswitchable FPs — Toggle Fluorescence with Light.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Photoswitchable FPs — Toggle Fluorescence with Light">
+  <meta name="twitter:description"   content="Toggle Dronpa state dark/bright. Single-molecule on/off switching is the basis of PALM super-resolution.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/fluorescent-proteins--photoswitchable-fp.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Photoswitchable FPs — Toggle Fluorescence with Light.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Photoswitchable FPs — Toggle Fluorescence with Light","alternateName":"fluorescent-proteins/photoswitchable-fp","description":"Toggle Dronpa state dark/bright. Single-molecule on/off switching is the basis of PALM super-resolution.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"PA-GFP, Dronpa, PALM, photoswitchable","url":"https://encyclopedia-of-color.vercel.app/modules/fluorescent-proteins/photoswitchable-fp/","image":"https://encyclopedia-of-color.vercel.app/og/fluorescent-proteins--photoswitchable-fp.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="fluorescent-proteins/photoswitchable-fp">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.9">D9 Biology</span><span class="chip" data-i18n="bloom.L6">L6 Create</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Photoswitchable FPs — Toggle Fluorescence with Light</h1>
+    <p class="module-subtitle">PA-GFP and Dronpa toggle between dark and bright states with specific wavelengths — used for super-resolution PALM and pulse-chase live-cell imaging</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">PA-GFP (photo-activatable): dark by default; 405 nm pulse cis→trans isomerises the chromophore and unleashes bright 488 nm-excitable green. Dronpa: switches both ways (488 nm dims, 405 nm restores). PALM single-molecule localisation needs this on/off switching to reconstruct super-resolution images below the diffraction limit.</p>
+      <p class="zone-guide">Toggle laser to activate or quench.</p>
+      <enc-toggle id="state" label="State" options="dark,bright" value="bright"></enc-toggle>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Photoswitchable"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Patterson &amp; Lippincott-Schwartz 2002 — PA-GFP"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

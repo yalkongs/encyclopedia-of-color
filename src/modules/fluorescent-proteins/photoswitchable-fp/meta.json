@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "fluorescent-proteins/photoswitchable-fp",
+  "title": {"en": "Photoswitchable FPs — Toggle Fluorescence with Light", "ko": "광전환 형광단백질 — 빛으로 형광 토글"},
+  "subtitle": {"en": "PA-GFP and Dronpa toggle between dark and bright states with specific wavelengths — used for super-resolution PALM and pulse-chase live-cell imaging", "ko": "PA-GFP·Dronpa가 특정 파장으로 dark↔bright 토글 — PALM 초해상도와 live-cell 펄스-체이스"},
+  "description": {"en": "Toggle Dronpa state dark/bright. Single-molecule on/off switching is the basis of PALM super-resolution.", "ko": "Dronpa 상태 토글. 단일분자 on/off가 PALM 초해상도 기반."},
+  "tier": "reference", "bloom_level": "L6", "domain": 9, "category": "fluorescent-proteins",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [{"source": "Patterson 2002", "section": "PA-GFP"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["PA-GFP", "Dronpa", "PALM", "photoswitchable"],
+  "estimated_hours": 12, "status": "shipped"
+}

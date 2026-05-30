@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "fluorescent-proteins/rfp-monomer-evolution",
+  "title": {"en": "DsRed → mCherry — Engineering a Monomer", "ko": "DsRed → mCherry — 단량체 엔지니어링"},
+  "subtitle": {"en": "native DsRed is a tetramer; Shaner 2004 directed-evolved it through dimers to monomeric mCherry — a single-spot labelling protein", "ko": "DsRed는 4합체 — Shaner(2004)가 directed evolution으로 단량체 mCherry 달성"},
+  "description": {"en": "DsRed / mRFP / mCherry comparison: oligomer state and brightness. mCherry is monomeric + bright — modern standard RFP.", "ko": "DsRed/mRFP/mCherry 비교 — 올리고머 상태와 밝기. mCherry가 단량체 + 밝음."},
+  "tier": "reference", "bloom_level": "L6", "domain": 9, "category": "fluorescent-proteins",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [{"source": "Shaner 2004", "section": "mFruit"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["mCherry", "DsRed", "RFP", "monomer", "Shaner"],
+  "estimated_hours": 12, "status": "shipped"
+}

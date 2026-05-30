@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "chromatophores/zebrafish-pattern-formation",
+  "title": {"en": "Zebrafish Stripes — Turing Pattern in Vivo", "ko": "얼룩말물고기 줄무늬 — in vivo 튜링 패턴"},
+  "subtitle": {"en": "zebrafish stripes emerge from local interactions between two pigment cell types — a real-world Turing reaction-diffusion system", "ko": "얼룩말물고기 줄무늬는 두 색소세포의 국소 상호작용 — 실세계 Turing 반응-확산"},
+  "description": {"en": "Zebrafish body with adjustable stripe wavelength. Turing reaction-diffusion regenerates pattern after disruption (Kondo 2010).", "ko": "조정 가능 줄무늬 파장의 얼룩말물고기. Turing 반응-확산이 disruption 후 패턴 재생."},
+  "tier": "reference", "bloom_level": "L5", "domain": 9, "category": "chromatophores",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [{"source": "Kondo & Miura 2010", "section": "Turing pattern"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["zebrafish", "Turing pattern", "reaction diffusion"],
+  "estimated_hours": 12, "status": "shipped"
+}

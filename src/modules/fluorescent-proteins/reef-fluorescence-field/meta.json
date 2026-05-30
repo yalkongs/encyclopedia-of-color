@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "fluorescent-proteins/reef-fluorescence-field",
+  "title": {"en": "Coral Reef Fluorescence — UV-Blue → Green/Red Glow", "ko": "산호 형광 — UV-청 → 녹/적 발광"},
+  "subtitle": {"en": "corals express GFP-like proteins that absorb the abundant blue-violet light and fluoresce green/orange/red", "ko": "산호가 GFP-family 단백질로 청보라 흡수 → 녹/주/적 형광"},
+  "description": {"en": "Reef scene under white vs UV-blue light. Many corals carry GFP-family proteins; ~30% of species express them.", "ko": "백색·UV-blue 산호 장면. ~30% 산호 종이 GFP 패밀리 발현."},
+  "tier": "reference", "bloom_level": "L3", "domain": 9, "category": "fluorescent-proteins",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [{"source": "Mazel 2003", "section": "Coral fluorescence"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["coral", "fluorescence", "reef"],
+  "estimated_hours": 8, "status": "shipped"
+}

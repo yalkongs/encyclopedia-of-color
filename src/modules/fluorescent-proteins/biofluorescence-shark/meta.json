@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "fluorescent-proteins/biofluorescence-shark",
+  "title": {"en": "Catshark Fluorescence — Skin Glows Green at Depth", "ko": "캣샤크 형광 — 심해서 녹색 발광"},
+  "subtitle": {"en": "chain catshark skin absorbs blue and emits green via novel small-molecule fluorophores — visible only to other catsharks below 200 m depth", "ko": "체인 캣샤크 피부가 청색 흡수 → 녹색 방출, 다른 캣샤크만 볼 수 있는 사적 신호"},
+  "description": {"en": "Catshark silhouette under surface white vs deep-blue light. Fluorescent green skin pattern emerges only under blue illumination.", "ko": "캣샤크 silhouette + 표면 vs 심해 청색. 청색에서만 녹색 형광 패턴 등장."},
+  "tier": "reference", "bloom_level": "L4", "domain": 9, "category": "fluorescent-proteins",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [{"source": "Park et al. 2019", "section": "Shark fluorophores"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["catshark", "biofluorescence", "deep sea"],
+  "estimated_hours": 10, "status": "shipped"
+}

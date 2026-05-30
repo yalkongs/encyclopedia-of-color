@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>DsRed → mCherry — Engineering a Monomer — native DsRed is a tetramer;…</title>
+  <meta name="description" content="DsRed / mRFP / mCherry comparison: oligomer state and brightness. mCherry is monomeric + bright — modern standard RFP.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/fluorescent-proteins/rfp-monomer-evolution/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="DsRed → mCherry — Engineering a Monomer">
+  <meta property="og:description"    content="DsRed / mRFP / mCherry comparison: oligomer state and brightness. mCherry is monomeric + bright — modern standard RFP.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/fluorescent-proteins/rfp-monomer-evolution/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/fluorescent-proteins--rfp-monomer-evolution.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: DsRed → mCherry — Engineering a Monomer.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="DsRed → mCherry — Engineering a Monomer">
+  <meta name="twitter:description"   content="DsRed / mRFP / mCherry comparison: oligomer state and brightness. mCherry is monomeric + bright — modern standard RFP.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/fluorescent-proteins--rfp-monomer-evolution.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: DsRed → mCherry — Engineering a Monomer.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"DsRed → mCherry — Engineering a Monomer","alternateName":"fluorescent-proteins/rfp-monomer-evolution","description":"DsRed / mRFP / mCherry comparison: oligomer state and brightness. mCherry is monomeric + bright — modern standard RFP.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"mCherry, DsRed, RFP, monomer, Shaner","url":"https://encyclopedia-of-color.vercel.app/modules/fluorescent-proteins/rfp-monomer-evolution/","image":"https://encyclopedia-of-color.vercel.app/og/fluorescent-proteins--rfp-monomer-evolution.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="fluorescent-proteins/rfp-monomer-evolution">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.9">D9 Biology</span><span class="chip" data-i18n="bloom.L6">L6 Create</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">DsRed → mCherry — Engineering a Monomer</h1>
+    <p class="module-subtitle">native DsRed is a tetramer (bad for fluorescent fusions); Shaner 2004 directed-evolved it through dimers to monomeric mCherry — a single-spot labelling protein</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">DsRed (from Discosoma coral) was the first cloned RFP — but it's an obligate tetramer, making fluorescent-fusion experiments unreliable. Shaner et al. 2004 used directed evolution: mutate interface residues, screen for monomers that retain folding, iterate. Result: mCherry, monomeric and brighter, the standard RFP today.</p>
+      <p class="zone-guide">Toggle DsRed/mFruit forms; brightness and oligomeric state change.</p>
+      <enc-toggle id="form" label="RFP variant" options="DsRed,mRFP,mCherry" value="mCherry"></enc-toggle>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="RFP"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Shaner et al. 2004 — Improved monomeric red fluorescent proteins"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>
