@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "pigment-degradation/uv-photodegradation",
+  "title": {
+    "en": "UV Photodegradation — Bond Cleavage Kinetics",
+    "ko": "UV 광분해 — 결합 파괴 동역학"
+  },
+  "subtitle": {
+    "en": "a UV photon delivers enough energy to break a covalent bond; chromophore lifetime follows τ = 1/(σ·φ·I) — the same equation predicts how long a watercolour lasts in a sunlit hallway",
+    "ko": "UV 광자는 공유결합 파괴 에너지 — 발색단 수명 τ = 1/(σ·φ·I), 햇볕에 노출된 수채화 수명을 같은 식이 예측"
+  },
+  "description": {
+    "en": "Three pigments (alizarin, Prussian blue, sap green) age in parallel under variable UV. Retained-fraction bars + side-by-side decay curves quantify the lifetime difference.",
+    "ko": "세 안료(alizarin, Prussian blue, sap green)가 UV 변화 하에 동시 노화. 보유 비율 막대 + 감쇠 곡선으로 수명 차이 정량화."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 3,
+  "category": "pigment-degradation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Nassau 2001 §9", "section": "Photodegradation" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["UV", "photodegradation", "fading", "alizarin", "lightfastness"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Lightfastness Ratings — ASTM I to V — ASTM D4302 classes a pigment I…</title>
+  <meta name="description" content="Five ASTM classes side-by-side; pick a class to see typical pigments, expected museum lifetime, and a 50-year before/after fade comparison.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/lightfastness-labels/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Lightfastness Ratings — ASTM I to V">
+  <meta property="og:description"    content="Five ASTM classes side-by-side; pick a class to see typical pigments, expected museum lifetime, and a 50-year before/after fade comparison.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/lightfastness-labels/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/pigment-degradation--lightfastness-labels.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Lightfastness Ratings — ASTM I to V.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Lightfastness Ratings — ASTM I to V">
+  <meta name="twitter:description"   content="Five ASTM classes side-by-side; pick a class to see typical pigments, expected museum lifetime, and a 50-year before/after fade comparison.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/pigment-degradation--lightfastness-labels.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Lightfastness Ratings — ASTM I to V.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Lightfastness Ratings — ASTM I to V","alternateName":"pigment-degradation/lightfastness-labels","description":"Five ASTM classes side-by-side; pick a class to see typical pigments, expected museum lifetime, and a 50-year before/after fade comparison.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"lightfastness, ASTM D4302, pigment ratings, fugitive","url":"https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/lightfastness-labels/","image":"https://encyclopedia-of-color.vercel.app/og/pigment-degradation--lightfastness-labels.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="pigment-degradation/lightfastness-labels">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Lightfastness Ratings — ASTM I to V</h1>
+      <p class="module-subtitle">ASTM D4302 classes a pigment I (excellent, lasts &gt;100 y) through V (fugitive, gone in &lt;2 y); the label on the paint tube tells you the expected life</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          ASTM D4302 (artist oil paint) and D5398 (acrylic) classify pigments by accelerated-aging fading: <b>I</b> excellent (&gt;100 y of museum display), <b>II</b> very good (50&ndash;100 y), <b>III</b> fair, <b>IV</b> poor, <b>V</b> fugitive. Manufacturers print a Roman numeral on the tube — the difference between &ldquo;cadmium red ASTM I&rdquo; and &ldquo;Indian yellow ASTM V&rdquo; is centuries of art.
+        </p>
+        <p class="zone-guide">
+          Pick the ASTM class to see typical pigments at that rating, the expected lifetime under museum lighting, and a sample fade comparison after 50 years.
+        </p>
+        <enc-toggle id="cls" label="ASTM lightfastness class" options="I,II,III,IV,V" value="I"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Lightfastness classes"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ASTM D4302 — artist oil paints; D5398 — acrylic dispersions"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

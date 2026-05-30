@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "pigment-degradation/lightfastness-labels",
+  "title": {
+    "en": "Lightfastness Ratings — ASTM I to V",
+    "ko": "내광성 등급 — ASTM I~V"
+  },
+  "subtitle": {
+    "en": "ASTM D4302 classes a pigment I (excellent, lasts >100 y) through V (fugitive, gone in <2 y); the label on the paint tube tells you the expected life",
+    "ko": "ASTM D4302가 안료를 I(우수, >100년)부터 V(fugitive, <2년)로 분류 — 튜브 라벨이 수명 표시"
+  },
+  "description": {
+    "en": "Five ASTM classes side-by-side; pick a class to see typical pigments, expected museum lifetime, and a 50-year before/after fade comparison.",
+    "ko": "ASTM 5 클래스 나란히; 클래스 선택으로 대표 안료, 박물관 수명, 50년 before/after 비교."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 3,
+  "category": "pigment-degradation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "ASTM D4302", "section": "Lightfastness" }
+  ],
+  "standards": ["ASTM D4302", "ASTM D5398"],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["lightfastness", "ASTM D4302", "pigment ratings", "fugitive"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

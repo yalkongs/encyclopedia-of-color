@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Pigment Incompatibility — Lead + Sulphur Goes Black — historic combin…</title>
+  <meta name="description" content="Toggle four famous pigment pairs; each shows the boundary darkening band, the reaction product, and a severity score. Last option (Zn+Fe₂O₃) is compatible — control case.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/pigment-incompatibility/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Pigment Incompatibility — Lead + Sulphur Goes Black">
+  <meta property="og:description"    content="Toggle four famous pigment pairs; each shows the boundary darkening band, the reaction product, and a severity score. Last option (Zn+Fe₂O₃) is compatible — control case.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/pigment-incompatibility/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/pigment-degradation--pigment-incompatibility.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Pigment Incompatibility — Lead + Sulphur Goes Black.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Pigment Incompatibility — Lead + Sulphur Goes Black">
+  <meta name="twitter:description"   content="Toggle four famous pigment pairs; each shows the boundary darkening band, the reaction product, and a severity score. Last option (Zn+Fe₂O₃) is compatible — control case.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/pigment-degradation--pigment-incompatibility.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Pigment Incompatibility — Lead + Sulphur Goes Black.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Pigment Incompatibility — Lead + Sulphur Goes Black","alternateName":"pigment-degradation/pigment-incompatibility","description":"Toggle four famous pigment pairs; each shows the boundary darkening band, the reaction product, and a severity score. Last option (Zn+Fe₂O₃) is compatible — control case.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"pigment incompatibility, lead white, PbS, conservation","url":"https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/pigment-incompatibility/","image":"https://encyclopedia-of-color.vercel.app/og/pigment-degradation--pigment-incompatibility.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="pigment-degradation/pigment-incompatibility">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Pigment Incompatibility — Lead + Sulfur Goes Black</h1>
+      <p class="module-subtitle">historic combinations spell trouble: white lead next to ultramarine darkens at the boundary because PbS forms; cadmium yellow + copper green also degrade slowly</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Some pigment pairs are chemically incompatible. Lead carbonate (white lead) reacts with atmospheric H₂S or sulphide pigments (vermilion, ultramarine) to form black lead sulphide. Copper-based greens darken with sulphur. Cadmium yellow next to copper green slowly forms cadmium-copper double salts. Old-master conservators watch these interfaces.
+        </p>
+        <p class="zone-guide">
+          Pick a famous pairing. The simulated 50-year boundary darkening shows the affected interface as a black band; the diagnostic text identifies the reaction product.
+        </p>
+        <enc-toggle id="pair" label="Pigment pair" options="lead-ultramarine,lead-vermilion,cadmium-copper-green,zinc-iron-oxide" value="lead-ultramarine"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Pigment incompatibility"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Conservation literature; Gettens &amp; Stout Painting Materials (1942)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>UV Photodegradation — Bond Cleavage Kinetics — a UV photon delivers e…</title>
+  <meta name="description" content="Three pigments (alizarin, Prussian blue, sap green) age in parallel under variable UV. Retained-fraction bars + side-by-side decay curves quantify the lifetime difference.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/uv-photodegradation/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="UV Photodegradation — Bond Cleavage Kinetics">
+  <meta property="og:description"    content="Three pigments (alizarin, Prussian blue, sap green) age in parallel under variable UV. Retained-fraction bars + side-by-side decay curves quantify the lifetime difference.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/uv-photodegradation/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/pigment-degradation--uv-photodegradation.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: UV Photodegradation — Bond Cleavage Kinetics.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="UV Photodegradation — Bond Cleavage Kinetics">
+  <meta name="twitter:description"   content="Three pigments (alizarin, Prussian blue, sap green) age in parallel under variable UV. Retained-fraction bars + side-by-side decay curves quantify the lifetime difference.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/pigment-degradation--uv-photodegradation.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: UV Photodegradation — Bond Cleavage Kinetics.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"UV Photodegradation — Bond Cleavage Kinetics","alternateName":"pigment-degradation/uv-photodegradation","description":"Three pigments (alizarin, Prussian blue, sap green) age in parallel under variable UV. Retained-fraction bars + side-by-side decay curves quantify the lifetime difference.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"UV, photodegradation, fading, alizarin, lightfastness","url":"https://encyclopedia-of-color.vercel.app/modules/pigment-degradation/uv-photodegradation/","image":"https://encyclopedia-of-color.vercel.app/og/pigment-degradation--uv-photodegradation.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="pigment-degradation/uv-photodegradation">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">UV Photodegradation — Bond Cleavage Kinetics</h1>
+      <p class="module-subtitle">a UV photon delivers enough energy to break a covalent bond; chromophore lifetime follows τ = 1/(σ·φ·I) — the same equation predicts how long a watercolour lasts in a sunlit hallway</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          UV at 350 nm carries ~3.5 eV per photon — enough to homolytically cleave a typical C-C bond (~3.6 eV). The rate at which an organic pigment fades depends on the absorption cross-section σ at UV wavelengths, the quantum yield φ of bond breaking, and the photon flux I. The product σ·φ·I is the inverse lifetime: stronger UV absorber = faster fade.
+        </p>
+        <div class="math-block" data-tex="\dfrac{d[\text{P}]}{dt} = -\sigma\,\phi\,I\,[\text{P}],\quad \tau = \dfrac{1}{\sigma\,\phi\,I}"></div>
+        <p class="zone-guide">
+          Drag UV intensity. Three pigments age in parallel — alizarin (low UV abs, slow), Prussian blue (medium), Sap green (high UV abs, fast). After N years the swatches show retained colour fraction.
+        </p>
+        <enc-slider id="UV" label="UV exposure (sunlight equivalent ×)" min="0" max="20" step="1" value="5" unit="×"></enc-slider>
+        <enc-slider id="years" label="Years exposed" min="0" max="200" step="2" value="50" unit=" yr"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="UV photodegradation"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §9 — photodegradation; Feller Accelerated Aging (1994)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
