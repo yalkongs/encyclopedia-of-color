@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "aberrations/spherical-aberration",
+  "title": {"en": "Spherical Aberration — Marginal vs Paraxial Focus", "ko": "구면 수차 — 가장자리 vs 근축 초점"},
+  "subtitle": {"en": "Spherical surfaces focus marginal rays closer than paraxial; LSA ∝ h². Fixed by aspheric/aplanatic shapes or by stopping down (h² scaling)", "ko": "구면이 가장자리를 근축보다 가깝게 초점; LSA ∝ h². 비구면/아플라나틱이나 조리개를 좁혀 보정"},
+  "description": {"en": "Aperture-height slider shows multi-ray converging at multiple foci with paraxial vs marginal markers and LSA bracket measurement.", "ko": "조리개 높이 슬라이더로 여러 광선이 다른 초점에 모이는 모습과 근축·가장자리 마커, LSA 측정 브래킷을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "aberrations",
+  "layout": "A", "prerequisites": ["geometric-optics/thin-lens-basic"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Hecht 2017", "section": "Aberrations"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["spherical aberration", "aplanatic", "aspheric"],
+  "estimated_hours": 8, "status": "shipped"
+}

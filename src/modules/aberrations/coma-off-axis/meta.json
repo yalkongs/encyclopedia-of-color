@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "aberrations/coma-off-axis",
+  "title": {"en": "Coma — Off-Axis Comet-Tail PSF", "ko": "코마 — 비축 혜성 꼬리 PSF"},
+  "subtitle": {"en": "Off-axis ray zones land at different positions; PSF becomes comet-shaped, tail length ∝ field angle; zeroed by Abbe sine condition", "ko": "비축 광선이 다른 위치에 모임; PSF가 혜성형, 꼬리 길이 ∝ 시야각; 아베 사인 조건으로 보정"},
+  "description": {"en": "Field-angle slider drives comet PSF mockup with off-axis bundle ray-trace showing different zones converging at different points.", "ko": "시야각 슬라이더로 혜성 PSF 목업과 비축 광선 다발이 다른 지점에 모이는 광선 추적을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "aberrations",
+  "layout": "A", "prerequisites": ["aberrations/spherical-aberration"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Mahajan 1998", "section": "Coma"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["coma", "Abbe sine condition", "aplanatic"],
+  "estimated_hours": 8, "status": "shipped"
+}

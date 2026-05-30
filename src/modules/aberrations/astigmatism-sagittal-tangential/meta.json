@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "aberrations/astigmatism-sagittal-tangential",
+  "title": {"en": "Astigmatism — Sagittal vs Tangential Focal Lines", "ko": "비점수차 — 사지탈 vs 탄젠셜 초점선"},
+  "subtitle": {"en": "Off-axis bundles focus differently in meridional and sagittal planes; two perpendicular focal lines with 'circle of least confusion' between", "ko": "비축 다발이 자오면과 사지탈면에서 다르게 초점; 두 수직 초점선과 가운데 '최소 혼란 원'"},
+  "description": {"en": "Image-plane position slider scrubs through tangential focus → LCC → sagittal focus with PSF ellipse and side-view bundle.", "ko": "이미지 평면 위치 슬라이더로 탄젠셜 초점 → LCC → 사지탈 초점을 PSF 타원과 측면 다발로 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "aberrations",
+  "layout": "A", "prerequisites": ["aberrations/coma-off-axis"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Atchison Smith 2000", "section": "Astigmatism"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["astigmatism", "anastigmat", "focal line"],
+  "estimated_hours": 8, "status": "shipped"
+}
