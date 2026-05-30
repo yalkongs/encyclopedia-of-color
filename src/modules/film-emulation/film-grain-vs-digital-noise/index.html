@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Film Grain vs Digital Noise — grain is silver crystals — clumped, sce…</title>
+  <meta name="description" content="Side-by-side: developed silver crystals (irregular, clumped, size scales with ISO) vs per-pixel Gaussian noise (grid-aligned, independent). One ISO slider scales both for direct comparison.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/film-emulation/film-grain-vs-digital-noise/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Film Grain vs Digital Noise">
+  <meta property="og:description"    content="Side-by-side: developed silver crystals (irregular, clumped, size scales with ISO) vs per-pixel Gaussian noise (grid-aligned, independent). One ISO slider scales both for direct comparison.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/film-emulation/film-grain-vs-digital-noise/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/film-emulation--film-grain-vs-digital-noise.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Film Grain vs Digital Noise.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Film Grain vs Digital Noise">
+  <meta name="twitter:description"   content="Side-by-side: developed silver crystals (irregular, clumped, size scales with ISO) vs per-pixel Gaussian noise (grid-aligned, independent). One ISO slider scales both for direct comparison.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/film-emulation--film-grain-vs-digital-noise.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Film Grain vs Digital Noise.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Film Grain vs Digital Noise","alternateName":"film-emulation/film-grain-vs-digital-noise","description":"Side-by-side: developed silver crystals (irregular, clumped, size scales with ISO) vs per-pixel Gaussian noise (grid-aligned, independent). One ISO slider scales both for direct comparison.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"film grain, digital noise, ISO, silver halide, granularity","url":"https://encyclopedia-of-color.vercel.app/modules/film-emulation/film-grain-vs-digital-noise/","image":"https://encyclopedia-of-color.vercel.app/og/film-emulation--film-grain-vs-digital-noise.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="film-emulation/film-grain-vs-digital-noise">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Film Grain vs Digital Noise</h1>
+      <p class="module-subtitle">grain is silver crystals — clumped, scene-dependent, size scales with sensitivity; noise is per-pixel and grid-aligned, independent of neighbours</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Film grain is the visual footprint of <em>silver halide crystals</em> developed into opaque silver — crystals are irregular in size, clump in dense regions, and a high-ISO film uses physically larger crystals. Digital noise is added per <em>pixel</em> on a regular grid — Gaussian or Poisson, independent across neighbours, no spatial clumping.
+        </p>
+        <p class="zone-guide">
+          Two equal-exposure patches: left is rendered with random-position silver crystals (sizes drawn from the chosen film stock), right with per-pixel Gaussian noise. Drag ISO/sensitivity to scale both. Notice that grain has a chunky organic texture and noise has a salt-and-pepper grid look.
+        </p>
+        <enc-slider id="iso" label="Sensitivity (ISO equivalent)" min="100" max="3200" step="100" value="800" unit=" ISO"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Film grain vs digital noise"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Eastman Kodak Technical Pub H-1; Mees &amp; James — Theory of Photographic Process"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

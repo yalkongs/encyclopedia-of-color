@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Hurter &amp; Driffield: D-logE Curve — colour negative film draws a non-l…</title>
+  <meta name="description" content="H&amp;D plots density vs log exposure. Slope γ on the straight portion sets contrast; long toe + soft shoulder is negative latitude; steep γ + short toe is slide latitude.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/film-emulation/color-negative-curves/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Hurter &amp; Driffield: D-logE Curve">
+  <meta property="og:description"    content="H&amp;D plots density vs log exposure. Slope γ on the straight portion sets contrast; long toe + soft shoulder is negative latitude; steep γ + short toe is slide latitude.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/film-emulation/color-negative-curves/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/film-emulation--color-negative-curves.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Hurter &amp; Driffield: D-logE Curve.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Hurter &amp; Driffield: D-logE Curve">
+  <meta name="twitter:description"   content="H&amp;D plots density vs log exposure. Slope γ on the straight portion sets contrast; long toe + soft shoulder is negative latitude; steep γ + short toe is slide latitude.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/film-emulation--color-negative-curves.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Hurter &amp; Driffield: D-logE Curve.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Hurter & Driffield: D-logE Curve","alternateName":"film-emulation/color-negative-curves","description":"H&D plots density vs log exposure. Slope γ on the straight portion sets contrast; long toe + soft shoulder is negative latitude; steep γ + short toe is slide latitude.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"H&D curve, D-logE, gamma, film density, color negative","url":"https://encyclopedia-of-color.vercel.app/modules/film-emulation/color-negative-curves/","image":"https://encyclopedia-of-color.vercel.app/og/film-emulation--color-negative-curves.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="film-emulation/color-negative-curves">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Hurter & Driffield: Density vs Log-Exposure</h1>
+      <p class="module-subtitle">colour negative film draws a non-linear D-logE curve per layer; toe, straight portion (γ), and shoulder produce the film "look"</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Hurter & Driffield (1890) curve plots developed density (D = log₁₀ opacity) against log exposure. The toe rolls underexposure into deep shadows; the straight portion has slope γ (gamma) — the working dynamic range; the shoulder rolls highlights into the maximum density. Colour negative film has three such curves, one per dye layer.
+        </p>
+        <div class="math-block" data-tex="D = D_{\min} + \gamma \cdot (\log E - \log E_{\text{toe}})"></div>
+        <p class="zone-guide">
+          Drag γ to tilt the straight-portion slope — high γ is hard contrasty; low γ is soft. Compare colour negative (long toe, soft shoulder — preserves highlights) with positive slide film (steep γ, short toe — limited latitude but vivid).
+        </p>
+        <enc-slider id="gamma" label="Slope γ" min="40" max="180" step="2" value="65" unit="·1e-2"></enc-slider>
+        <enc-toggle id="stock" label="Stock" options="negative,positive" value="negative"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="H&amp;D film curve"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hurter &amp; Driffield 1890; Hunt §6 — Photographic Reproduction of Colour"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

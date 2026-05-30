@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "film-emulation/color-negative-curves",
+  "title": {
+    "en": "Hurter & Driffield: D-logE Curve",
+    "ko": "Hurter & Driffield: D-logE 곡선"
+  },
+  "subtitle": {
+    "en": "colour negative film draws a non-linear D-logE curve per layer; toe, straight portion (γ), and shoulder produce the film look",
+    "ko": "컬러 네거티브는 층마다 비선형 D-logE 곡선을 그린다 — toe·직선부(γ)·shoulder가 필름 룩을 만든다"
+  },
+  "description": {
+    "en": "H&D plots density vs log exposure. Slope γ on the straight portion sets contrast; long toe + soft shoulder is negative latitude; steep γ + short toe is slide latitude.",
+    "ko": "H&D는 density vs log exposure. 직선부 기울기 γ가 콘트라스트, 긴 toe + 부드러운 shoulder가 네거티브 관용도, 가파른 γ + 짧은 toe가 슬라이드 관용도다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "film-emulation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Hunt 2004 §6", "section": "Film curves" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["H&D curve", "D-logE", "gamma", "film density", "color negative"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

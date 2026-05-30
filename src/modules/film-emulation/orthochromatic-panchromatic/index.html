@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Blue → Orthochromatic → Panchromatic — three eras of B&amp;W film: each s…</title>
+  <meta name="description" content="Blue-only silver halide rendered red and green nearly black. Vogel 1873 extended response into green (ortho); Wratten 1906 added red (pan). Toggle era to compare patch grey values.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/film-emulation/orthochromatic-panchromatic/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Blue → Orthochromatic → Panchromatic">
+  <meta property="og:description"    content="Blue-only silver halide rendered red and green nearly black. Vogel 1873 extended response into green (ortho); Wratten 1906 added red (pan). Toggle era to compare patch grey values.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/film-emulation/orthochromatic-panchromatic/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/film-emulation--orthochromatic-panchromatic.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Blue → Orthochromatic → Panchromatic.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Blue → Orthochromatic → Panchromatic">
+  <meta name="twitter:description"   content="Blue-only silver halide rendered red and green nearly black. Vogel 1873 extended response into green (ortho); Wratten 1906 added red (pan). Toggle era to compare patch grey values.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/film-emulation--orthochromatic-panchromatic.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Blue → Orthochromatic → Panchromatic.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Blue → Orthochromatic → Panchromatic","alternateName":"film-emulation/orthochromatic-panchromatic","description":"Blue-only silver halide rendered red and green nearly black. Vogel 1873 extended response into green (ortho); Wratten 1906 added red (pan). Toggle era to compare patch grey values.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"panchromatic, orthochromatic, B&W film, spectral sensitivity","url":"https://encyclopedia-of-color.vercel.app/modules/film-emulation/orthochromatic-panchromatic/","image":"https://encyclopedia-of-color.vercel.app/og/film-emulation--orthochromatic-panchromatic.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="film-emulation/orthochromatic-panchromatic">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Blue → Orthochromatic → Panchromatic</h1>
+      <p class="module-subtitle">three eras of B&amp;W film: each step extended spectral sensitivity into a longer range — and changed how red, green, blue scenes render as grey</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Pre-1873 silver halide was only sensitive to blue and UV — red and green objects rendered black or dark grey. Vogel's 1873 dye-sensitization extended response into green (orthochromatic); 1906 Wratten introduced red sensitization (panchromatic). A panchromatic emulsion is what every modern B&amp;W film is.
+        </p>
+        <p class="zone-guide">
+          A colour scene is rendered three ways. Toggle the era and watch the same patches change grey value — reds turn black under blue-sensitive, mid-grey under panchromatic; greens dark under blue-sensitive, mid-grey under ortho/pan.
+        </p>
+        <enc-toggle id="era" label="Film era" options="blue,ortho,pan" value="blue"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="B&amp;W film spectral evolution"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Vogel 1873; Adams, The Negative (1981); Wratten panchromatic emulsions"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

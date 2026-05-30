@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "film-emulation/orthochromatic-panchromatic",
+  "title": {
+    "en": "Blue → Orthochromatic → Panchromatic",
+    "ko": "Blue → 오쏘크로마틱 → 판크로마틱"
+  },
+  "subtitle": {
+    "en": "three eras of B&W film: each step extended spectral sensitivity into a longer range — and changed how red, green, blue scenes render as grey",
+    "ko": "흑백 필름의 세 시대 — 각 단계가 분광 감도를 더 긴 파장으로 확장하면서 빨강·초록·파랑 장면이 회색으로 어떻게 표현되는지 바꿨다"
+  },
+  "description": {
+    "en": "Blue-only silver halide rendered red and green nearly black. Vogel 1873 extended response into green (ortho); Wratten 1906 added red (pan). Toggle era to compare patch grey values.",
+    "ko": "Blue-only 할로겐화은은 빨강·초록을 거의 검정으로 표현했다. Vogel(1873)이 초록까지 확장(ortho), Wratten(1906)이 빨강 추가(pan). 시대 토글로 패치 회색 비교."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 10,
+  "category": "film-emulation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Adams 1981 The Negative", "section": "Film sensitivity" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["panchromatic", "orthochromatic", "B&W film", "spectral sensitivity"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

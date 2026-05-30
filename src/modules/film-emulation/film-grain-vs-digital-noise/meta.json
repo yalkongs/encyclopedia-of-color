@@ -1,0 +1,33 @@
+{
+  "schema_version": "v2",
+  "id": "film-emulation/film-grain-vs-digital-noise",
+  "title": {
+    "en": "Film Grain vs Digital Noise",
+    "ko": "필름 입자 vs 디지털 잡음"
+  },
+  "subtitle": {
+    "en": "grain is silver crystals — clumped, scene-dependent; noise is per-pixel and grid-aligned, independent of neighbours",
+    "ko": "필름 입자는 은 결정이다 — 뭉치고 장면 의존적; 잡음은 픽셀별 격자 정렬, 이웃과 독립"
+  },
+  "description": {
+    "en": "Side-by-side: developed silver crystals (irregular, clumped, size scales with ISO) vs per-pixel Gaussian noise (grid-aligned, independent). One ISO slider scales both for direct comparison.",
+    "ko": "나란히: 현상된 은 결정(불규칙, 뭉침, ISO에 따라 크기) vs 픽셀별 가우시안 잡음(격자 정렬, 독립). ISO 슬라이더 하나가 둘 다 스케일."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "film-emulation",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    { "source": "Mees & James 1977", "section": "Granularity" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["film grain", "digital noise", "ISO", "silver halide", "granularity"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
