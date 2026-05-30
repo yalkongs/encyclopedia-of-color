@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 453 modules across 101 categories -->
+    <!-- 457 modules across 102 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>453 modules</strong> are published across 101 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>457 modules</strong> are published across 102 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -2824,6 +2824,32 @@
         <div class="card-meta">L3 · Reference · Color Quantization</div>
         <div class="card-title">Uniform Grid Quantization — n³ Palette</div>
         <div class="card-sub">Divide each RGB channel into n levels; 216-colour 6³ web-safe palette is the canonical example used by 8-bit indexed colour</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Dithering</h2>
+      <div class="sub">Domain 11 · Floyd-Steinberg, Atkinson, Bayer, blue noise</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/dithering/atkinson-mac-classic/">
+        <div class="card-meta">L3 · Reference · Dithering</div>
+        <div class="card-title">Atkinson Dither — Mac System 1 Classic (1984)</div>
+        <div class="card-sub">Bill Atkinson's 6-cell pattern diffuses only 6/8 of error; gives the crisp 1-bit Mac display look at the cost of darker midtones</div>
+      </a>
+      <a class="module-card" href="./modules/dithering/bayer-ordered-dither/">
+        <div class="card-meta">L3 · Reference · Dithering</div>
+        <div class="card-title">Bayer Ordered Dither — Threshold Matrix</div>
+        <div class="card-sub">Tile a threshold matrix and add to pixel before rounding; deterministic, parallelisable — 16-colour VGA, GameBoy LCDs, pixel-art aesthetic</div>
+      </a>
+      <a class="module-card" href="./modules/dithering/blue-noise-stippling/">
+        <div class="card-meta">L3 · Reference · Dithering</div>
+        <div class="card-title">Blue-Noise Dither — Stippling Mask</div>
+        <div class="card-sub">Void-and-cluster mask with high-frequency, low-correlation pattern; visually quieter than Bayer because eyes suppress high spatial frequencies</div>
+      </a>
+      <a class="module-card" href="./modules/dithering/floyd-steinberg-classic/">
+        <div class="card-meta">L3 · Reference · Dithering</div>
+        <div class="card-title">Floyd–Steinberg Dither — Error Diffusion</div>
+        <div class="card-sub">Round each pixel, spread quantisation error to 4 neighbours (7/16, 3/16, 5/16, 1/16); default since 1976 in PDP-11 graphics through modern GIFs</div>
       </a>
       </div>
     </div>

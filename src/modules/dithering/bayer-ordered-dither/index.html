@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Bayer Ordered Dither — Threshold Matrix — Tile a threshold matrix and…</title>
+  <meta name="description" content="Matrix-size and levels sliders show 4×4 or 8×8 Bayer matrix with greyscale-coded thresholds and ordered crosshatch pattern result.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dithering/bayer-ordered-dither/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Bayer Ordered Dither — Threshold Matrix">
+  <meta property="og:description"    content="Matrix-size and levels sliders show 4×4 or 8×8 Bayer matrix with greyscale-coded thresholds and ordered crosshatch pattern result.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dithering/bayer-ordered-dither/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dithering--bayer-ordered-dither.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Bayer Ordered Dither — Threshold Matrix.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Bayer Ordered Dither — Threshold Matrix">
+  <meta name="twitter:description"   content="Matrix-size and levels sliders show 4×4 or 8×8 Bayer matrix with greyscale-coded thresholds and ordered crosshatch pattern result.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dithering--bayer-ordered-dither.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Bayer Ordered Dither — Threshold Matrix.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Bayer Ordered Dither — Threshold Matrix","alternateName":"dithering/bayer-ordered-dither","description":"Matrix-size and levels sliders show 4×4 or 8×8 Bayer matrix with greyscale-coded thresholds and ordered crosshatch pattern result.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Bayer dither, ordered dither, threshold matrix","url":"https://encyclopedia-of-color.vercel.app/modules/dithering/bayer-ordered-dither/","image":"https://encyclopedia-of-color.vercel.app/og/dithering--bayer-ordered-dither.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="dithering/bayer-ordered-dither">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Bayer Ordered Dither — Threshold Matrix</h1>
+    <p class="module-subtitle">Add a tiled threshold matrix before rounding; deterministic, parallelisable, no error propagation — used in 16-colour VGA, GameBoy LCDs, and pixel-art aesthetics</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Bayer matrices are designed to maximise high-frequency separation between threshold values. 4×4 has 16 unique thresholds; 8×8 has 64. Result: regular crosshatch pattern, very different from FS noise. No state means trivial GPU shader implementation — and the classic look of 80s/90s computer graphics.</p>
+      <p class="zone-guide">Toggle matrix size + levels.</p>
+      <enc-slider id="s" label="matrix (1=4×4 · 2=8×8)" min="1" max="2" step="1" value="1" unit=""></enc-slider>
+      <enc-slider id="l" label="levels" min="2" max="8" step="1" value="2" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Bayer"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Bayer 1973 Ordered Dither; Ulichney 1987 Halftoning"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

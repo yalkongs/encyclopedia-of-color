@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "dithering/floyd-steinberg-classic",
+  "title": {"en": "Floyd–Steinberg Dither — Error Diffusion", "ko": "플로이드-스타인버그 디더 — 오차 확산"},
+  "subtitle": {"en": "Round each pixel, spread quantisation error to 4 neighbours (7/16, 3/16, 5/16, 1/16); default since 1976 in PDP-11 graphics through modern GIFs", "ko": "픽셀 반올림 후 오차를 4 이웃(7/16, 3/16, 5/16, 1/16)에 확산; 1976년 PDP-11부터 현대 GIF까지 기본 디더"},
+  "description": {"en": "Levels slider compares naive quantize vs Floyd-Steinberg with three-image strip and 4-cell error-diffusion kernel diagram.", "ko": "레벨 슬라이더로 단순 양자화와 플로이드-스타인버그를 3장 비교하며 4셀 오차 확산 커널 도식을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "dithering",
+  "layout": "A", "prerequisites": ["color-quantization/uniform-grid-quantizer"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Floyd Steinberg 1976", "section": "Error diffusion"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Floyd-Steinberg", "dithering", "error diffusion"],
+  "estimated_hours": 8, "status": "shipped"
+}

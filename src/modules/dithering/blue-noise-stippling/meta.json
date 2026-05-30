@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "dithering/blue-noise-stippling",
+  "title": {"en": "Blue-Noise Dither — Stippling Mask", "ko": "블루 노이즈 디더 — 점묘 마스크"},
+  "subtitle": {"en": "Void-and-cluster mask with high-frequency, low-correlation pattern; visually quieter than Bayer because eyes suppress high spatial frequencies", "ko": "고주파·저상관 보이드앤클러스터 마스크; 눈이 고주파를 억제해 베이어보다 시각적으로 조용함"},
+  "description": {"en": "Levels slider compares Bayer vs blue-noise dither output with mask preview showing the 32×32 tile-able high-frequency pattern.", "ko": "레벨 슬라이더로 베이어와 블루 노이즈 디더를 비교하며 32×32 타일링 가능 고주파 마스크 미리보기를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "dithering",
+  "layout": "A", "prerequisites": ["dithering/bayer-ordered-dither"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Mitchell 1991", "section": "Blue noise"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["blue noise", "void-and-cluster", "stippling"],
+  "estimated_hours": 8, "status": "shipped"
+}

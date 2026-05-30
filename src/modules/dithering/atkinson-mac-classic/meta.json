@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "dithering/atkinson-mac-classic",
+  "title": {"en": "Atkinson Dither — Mac System 1 Classic (1984)", "ko": "앳킨슨 디더 — 맥 System 1 클래식 (1984)"},
+  "subtitle": {"en": "Bill Atkinson's 6-cell pattern diffuses only 6/8 of error; gives the crisp 1-bit Mac display look at the cost of darker midtones", "ko": "빌 앳킨슨의 6셀 패턴이 오차의 6/8만 확산; 중간 톤은 어두워지지만 1비트 맥의 선명한 외관"},
+  "description": {"en": "Levels slider compares Atkinson vs Floyd-Steinberg with 3-image strip and 6-cell × 1/8 kernel diagram showing the dropped 2/8 trick.", "ko": "레벨 슬라이더로 앳킨슨과 플로이드-스타인버그를 비교하며 6셀 × 1/8 커널과 버려진 2/8 트릭을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "dithering",
+  "layout": "A", "prerequisites": ["dithering/floyd-steinberg-classic"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Ulichney 1987", "section": "Atkinson"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Atkinson", "dithering", "Mac"],
+  "estimated_hours": 8, "status": "shipped"
+}

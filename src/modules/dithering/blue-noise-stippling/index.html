@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Blue-Noise Dither — Stippling Mask — Void-and-cluster mask with high-…</title>
+  <meta name="description" content="Levels slider compares Bayer vs blue-noise dither output with mask preview showing the 32×32 tile-able high-frequency pattern.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dithering/blue-noise-stippling/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Blue-Noise Dither — Stippling Mask">
+  <meta property="og:description"    content="Levels slider compares Bayer vs blue-noise dither output with mask preview showing the 32×32 tile-able high-frequency pattern.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dithering/blue-noise-stippling/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dithering--blue-noise-stippling.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Blue-Noise Dither — Stippling Mask.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Blue-Noise Dither — Stippling Mask">
+  <meta name="twitter:description"   content="Levels slider compares Bayer vs blue-noise dither output with mask preview showing the 32×32 tile-able high-frequency pattern.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dithering--blue-noise-stippling.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Blue-Noise Dither — Stippling Mask.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Blue-Noise Dither — Stippling Mask","alternateName":"dithering/blue-noise-stippling","description":"Levels slider compares Bayer vs blue-noise dither output with mask preview showing the 32×32 tile-able high-frequency pattern.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"blue noise, void-and-cluster, stippling","url":"https://encyclopedia-of-color.vercel.app/modules/dithering/blue-noise-stippling/","image":"https://encyclopedia-of-color.vercel.app/og/dithering--blue-noise-stippling.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="dithering/blue-noise-stippling">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Blue-Noise Dither — Stipple-Like Patterning</h1>
+    <p class="module-subtitle">Blue noise = high-frequency, low-correlation pattern; visually pleasing because the human visual system suppresses high frequencies more than low</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Mitchell void-and-cluster (1991) generates a precomputed mask whose energy concentrates at high spatial frequencies. The result looks like stippling (Seurat-style) rather than crosshatching. Used in real-time global illumination, light-attenuating projections, and high-end print halftones.</p>
+      <p class="zone-guide">Slide levels.</p>
+      <enc-slider id="l" label="levels" min="2" max="8" step="1" value="2" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Blue noise"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Mitchell 1991 Void-and-Cluster; Ulichney 1987 Halftoning"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

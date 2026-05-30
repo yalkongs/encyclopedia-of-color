@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "dithering/bayer-ordered-dither",
+  "title": {"en": "Bayer Ordered Dither — Threshold Matrix", "ko": "베이어 정렬 디더 — 임계 행렬"},
+  "subtitle": {"en": "Tile a threshold matrix and add to pixel before rounding; deterministic, parallelisable — 16-colour VGA, GameBoy LCDs, pixel-art aesthetic", "ko": "임계 행렬을 타일링해 픽셀에 더한 후 반올림; 결정론적·병렬 가능 — 16색 VGA, 게임보이 LCD, 픽셀아트 미학"},
+  "description": {"en": "Matrix-size and levels sliders show 4×4 or 8×8 Bayer matrix with greyscale-coded thresholds and ordered crosshatch pattern result.", "ko": "행렬 크기와 레벨 슬라이더로 4×4 또는 8×8 베이어 행렬과 회색조 임계값, 정렬된 크로스해치 패턴을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "dithering",
+  "layout": "A", "prerequisites": ["color-quantization/uniform-grid-quantizer"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Bayer 1973", "section": "Ordered dither"}],
+  "standards": [], "interaction_count": 2, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Bayer dither", "ordered dither", "threshold matrix"],
+  "estimated_hours": 8, "status": "shipped"
+}

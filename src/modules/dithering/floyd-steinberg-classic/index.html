@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Floyd–Steinberg Dither — Error Diffusion — Round each pixel, spread q…</title>
+  <meta name="description" content="Levels slider compares naive quantize vs Floyd-Steinberg with three-image strip and 4-cell error-diffusion kernel diagram.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/dithering/floyd-steinberg-classic/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Floyd–Steinberg Dither — Error Diffusion">
+  <meta property="og:description"    content="Levels slider compares naive quantize vs Floyd-Steinberg with three-image strip and 4-cell error-diffusion kernel diagram.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/dithering/floyd-steinberg-classic/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/dithering--floyd-steinberg-classic.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Floyd–Steinberg Dither — Error Diffusion.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Floyd–Steinberg Dither — Error Diffusion">
+  <meta name="twitter:description"   content="Levels slider compares naive quantize vs Floyd-Steinberg with three-image strip and 4-cell error-diffusion kernel diagram.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/dithering--floyd-steinberg-classic.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Floyd–Steinberg Dither — Error Diffusion.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Floyd–Steinberg Dither — Error Diffusion","alternateName":"dithering/floyd-steinberg-classic","description":"Levels slider compares naive quantize vs Floyd-Steinberg with three-image strip and 4-cell error-diffusion kernel diagram.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Floyd-Steinberg, dithering, error diffusion","url":"https://encyclopedia-of-color.vercel.app/modules/dithering/floyd-steinberg-classic/","image":"https://encyclopedia-of-color.vercel.app/og/dithering--floyd-steinberg-classic.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="dithering/floyd-steinberg-classic">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Floyd–Steinberg Dither — Error Diffusion</h1>
+    <p class="module-subtitle">Round each pixel to the nearest level, then spread the quantisation error to neighbours in a 4-cell pattern (7/16, 3/16, 5/16, 1/16) — the default dither in 1976 PDP-11 graphics</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Floyd-Steinberg averages the quantisation error spatially, so smooth gradients survive even with a 1-bit palette. The "wormy" texture is characteristic — high-frequency noise that approximates the original intensity locally. Used by every GIF encoder, the GameBoy Camera, and Apple Mac System 1.</p>
+      <p class="zone-guide">Slide levels (2 = pure black/white, 8 = subtle).</p>
+      <enc-slider id="l" label="levels per channel" min="2" max="8" step="1" value="2" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Floyd-Steinberg"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Floyd Steinberg 1976 Dither; Ulichney 1987 Digital Halftoning"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>
