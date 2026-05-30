@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "sensor-physics/quantum-efficiency",
+  "title": {
+    "en": "Sensor Quantum Efficiency",
+    "ko": "센서 양자효율"
+  },
+  "subtitle": {
+    "en": "silicon sees light through its 1.1 eV bandgap — past 1127 nm photons don't have enough energy to free an electron, and the sensor goes blind",
+    "ko": "실리콘은 1.1 eV 밴드갭으로 빛을 본다 — 1127 nm를 넘으면 광자가 전자를 자유롭게 할 에너지가 부족해 센서가 멀어진다"
+  },
+  "description": {
+    "en": "QE is the fraction of incident photons that free an electron. Silicon bandgap (1.12 eV ≈ 1127 nm) sets a hard cutoff: longer wavelengths cannot be detected. Visible peak is 50–70% (FSI) or 85% (BSI).",
+    "ko": "QE는 입사 광자 중 전자를 자유화하는 비율이다. 실리콘 밴드갭(1.12 eV ≈ 1127 nm)이 단단한 경계 — 더 긴 파장은 감지 불가. 가시 피크는 50–70%(FSI) 또는 85%(BSI)."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "sensor-physics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Janesick",
+      "section": "Scientific CCDs"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "quantum efficiency",
+    "silicon",
+    "bandgap",
+    "BSI",
+    "sensor"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

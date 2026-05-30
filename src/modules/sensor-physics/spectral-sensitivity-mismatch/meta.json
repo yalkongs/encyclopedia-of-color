@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "sensor-physics/spectral-sensitivity-mismatch",
+  "title": {
+    "en": "Sensor vs Eye: The Luther Mismatch",
+    "ko": "센서 vs 눈: 루더 불일치"
+  },
+  "subtitle": {
+    "en": "a camera sensor's red, green, blue are not a linear combination of the eye's — so two spectra the eye calls identical can record as different RGB",
+    "ko": "카메라 센서의 R·G·B는 눈의 일차 결합이 아니다 — 그래서 눈이 같다고 보는 두 스펙트럼이 다른 RGB로 기록될 수 있다"
+  },
+  "description": {
+    "en": "The Luther condition: sensor sensitivities must be a linear combination of CMFs for exact colour. Real silicon is not, so two spectra with the same XYZ can give different sensor RGB.",
+    "ko": "루더 조건: 센서 감도가 CMF의 일차 결합이어야 색이 정확히 재현된다. 실제 실리콘은 그렇지 않아, XYZ가 같은 두 스펙트럼이 다른 센서 RGB를 만든다 — 3x3 CCM은 평균만 보정한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 10,
+  "category": "sensor-physics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Wyszecki & Stiles",
+      "section": "§5.7 Luther condition"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Luther condition",
+    "CMF",
+    "sensor",
+    "metamer",
+    "camera matrix"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

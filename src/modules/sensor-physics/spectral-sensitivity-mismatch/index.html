@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Sensor vs Eye: The Luther Mismatch — a camera sensor's red, green, bl…</title>
+  <meta name="description" content="The Luther condition: sensor sensitivities must be a linear combination of CMFs for exact colour. Real silicon is not, so two spectra with the same XYZ can give different sensor RGB.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/spectral-sensitivity-mismatch/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Sensor vs Eye: The Luther Mismatch">
+  <meta property="og:description"    content="The Luther condition: sensor sensitivities must be a linear combination of CMFs for exact colour. Real silicon is not, so two spectra with the same XYZ can give different sensor RGB.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/spectral-sensitivity-mismatch/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--spectral-sensitivity-mismatch.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Sensor vs Eye: The Luther Mismatch.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Sensor vs Eye: The Luther Mismatch">
+  <meta name="twitter:description"   content="The Luther condition: sensor sensitivities must be a linear combination of CMFs for exact colour. Real silicon is not, so two spectra with the same XYZ can give different sensor RGB.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--spectral-sensitivity-mismatch.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Sensor vs Eye: The Luther Mismatch.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Sensor vs Eye: The Luther Mismatch","alternateName":"sensor-physics/spectral-sensitivity-mismatch","description":"The Luther condition: sensor sensitivities must be a linear combination of CMFs for exact colour. Real silicon is not, so two spectra with the same XYZ can give different sensor RGB.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Luther condition, CMF, sensor, metamer, camera matrix","url":"https://encyclopedia-of-color.vercel.app/modules/sensor-physics/spectral-sensitivity-mismatch/","image":"https://encyclopedia-of-color.vercel.app/og/sensor-physics--spectral-sensitivity-mismatch.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="sensor-physics/spectral-sensitivity-mismatch">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Sensor vs Eye: The Luther Mismatch</h1>
+      <p class="module-subtitle">a camera sensor's red, green, blue are not a linear combination of the eye's — so two spectra the eye calls identical can record as different RGB</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Luther condition says a sensor reproduces colour exactly only when its R, G, B sensitivities are a linear combination of the human colour-matching functions. Real silicon sensors are not — their R, G, B curves are similar in shape but not exactly that. The consequence: two spectra that integrate to identical XYZ (look the same to the eye) can give different sensor RGB. A 3×3 colour-correction matrix patches the average case, never the corner cases.
+        </p>
+        <div class="math-block" data-tex="\text{Luther: }\mathbf{S}_{cam}=\mathbf{M}\cdot\mathbf{S}_{cmf}\;\Rightarrow\;\text{no metamer failure}"></div>
+        <p class="zone-guide">
+          Slide the second spectrum's secondary peak. Both spectra are kept eye-matched (close XYZ); watch the sensor RGB drift apart for the real sensor and stay locked together for a Luther-ideal one.
+        </p>
+        <enc-slider id="peak" label="SPD-B secondary peak" min="460" max="620" step="5" value="580" unit=" nm"></enc-slider>
+        <enc-toggle id="sensor" label="Sensor model" options="real,ideal" labels="real Si,Luther-ideal" value="real"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Sensor versus eye spectral sensitivity mismatch"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Wyszecki & Stiles §5.7; Luther condition"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

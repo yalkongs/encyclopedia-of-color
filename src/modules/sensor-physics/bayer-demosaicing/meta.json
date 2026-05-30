@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "sensor-physics/bayer-demosaicing",
+  "title": {
+    "en": "Bayer Demosaicing",
+    "ko": "Bayer 디모자이크"
+  },
+  "subtitle": {
+    "en": "a camera sensor sees only one colour per pixel — the rest is guessed, and the guess shows on every diagonal edge",
+    "ko": "카메라 센서는 픽셀당 한 색만 본다 — 나머지는 추정이며 그 추정은 모든 대각 에지에서 드러난다"
+  },
+  "description": {
+    "en": "A colour sensor is monochrome under a Bayer RGGB filter. Demosaicing interpolates the missing channels per pixel — nearest gives blocky patches, bilinear smooths but adds zipper colour fringes.",
+    "ko": "컬러 센서는 Bayer RGGB 필터 배열 아래 흑백 격자다. 디모자이크는 픽셀마다 누락 채널을 보간한다 — nearest는 색 블록을 만들고 bilinear는 부드럽게 하지만 가장자리에 지퍼 색 띠를 더한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "sensor-physics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Bayer 1976",
+      "section": "CFA"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Bayer",
+    "CFA",
+    "demosaic",
+    "nearest",
+    "bilinear"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

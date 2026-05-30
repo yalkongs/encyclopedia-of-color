@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Sensor Quantum Efficiency — silicon sees light through its 1.1 eV ban…</title>
+  <meta name="description" content="QE is the fraction of incident photons that free an electron. Silicon bandgap (1.12 eV ≈ 1127 nm) sets a hard cutoff: longer wavelengths cannot be detected. Visible peak is 50–70% (FSI) or 85% (BSI).">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/quantum-efficiency/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Sensor Quantum Efficiency">
+  <meta property="og:description"    content="QE is the fraction of incident photons that free an electron. Silicon bandgap (1.12 eV ≈ 1127 nm) sets a hard cutoff: longer wavelengths cannot be detected. Visible peak is 50–70% (FSI) or 85% (BSI).">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/quantum-efficiency/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--quantum-efficiency.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Sensor Quantum Efficiency.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Sensor Quantum Efficiency">
+  <meta name="twitter:description"   content="QE is the fraction of incident photons that free an electron. Silicon bandgap (1.12 eV ≈ 1127 nm) sets a hard cutoff: longer wavelengths cannot be detected. Visible peak is 50–70% (FSI) or 85% (BSI).">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--quantum-efficiency.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Sensor Quantum Efficiency.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Sensor Quantum Efficiency","alternateName":"sensor-physics/quantum-efficiency","description":"QE is the fraction of incident photons that free an electron. Silicon bandgap (1.12 eV ≈ 1127 nm) sets a hard cutoff: longer wavelengths cannot be detected. Visible peak is 50–70% (FSI) or 85% (BSI).","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"quantum efficiency, silicon, bandgap, BSI, sensor","url":"https://encyclopedia-of-color.vercel.app/modules/sensor-physics/quantum-efficiency/","image":"https://encyclopedia-of-color.vercel.app/og/sensor-physics--quantum-efficiency.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="sensor-physics/quantum-efficiency">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Sensor Quantum Efficiency</h1>
+      <p class="module-subtitle">silicon sees light through its 1.1 eV bandgap — past 1127 nm photons simply don't have enough energy to free an electron, and the sensor goes blind</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Quantum efficiency is the fraction of incident photons that liberate an electron in the photosite. Silicon's bandgap is about 1.1 eV, corresponding to λ ≈ 1127 nm — photons longer than that don't have enough energy to cross the gap and the sensor cannot detect them at all. In the visible, modern CMOS reaches 50–70% (front-side) or 85%+ (back-side illuminated).
+        </p>
+        <div class="math-block" data-tex="\lambda_{cut} = \dfrac{hc}{E_{gap}} \approx 1127\ \text{nm}\quad(E_{gap}^{Si}=1.12\ \text{eV})"></div>
+        <p class="zone-guide">
+          Switch front-side vs back-side illumination. The peak rises by about 20 points; the bandgap wall does not move — Si is Si. The UV side drops because silicon dioxide and lens glass absorb shorter wavelengths.
+        </p>
+        <enc-toggle id="bsi" label="Illumination" options="fsi,bsi" labels="front-side,back-side" value="fsi"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Silicon sensor quantum efficiency"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Janesick, Scientific CCDs; CMOS sensor physics"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

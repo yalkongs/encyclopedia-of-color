@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "sensor-physics/photon-shot-noise",
+  "title": {
+    "en": "Photon Shot Noise",
+    "ko": "광자 산탄 잡음"
+  },
+  "subtitle": {
+    "en": "light arrives as Poisson photons — collect N and you get √N noise, so signal-to-noise improves only with the square root of exposure",
+    "ko": "빛은 푸아송 광자로 도착한다 — N개를 모으면 √N 잡음이 생겨, 신호 대 잡음은 노출의 제곱근만큼만 나아진다"
+  },
+  "description": {
+    "en": "Photons arrive as a Poisson process: variance = mean. Collecting N photons gives noise σ = √N; relative noise 1/√N, so quadrupling exposure only halves the noise floor.",
+    "ko": "광자는 푸아송 과정으로 도착한다: 분산 = 평균. 픽셀당 N개를 모으면 잡음 σ = √N. 상대 잡음은 1/√N이라 노출을 네 배로 해야 잡음이 절반 — 카메라가 맞서는 근본 잡음 바닥이다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "sensor-physics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Janesick 2007",
+      "section": "photon noise"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "photon noise",
+    "shot noise",
+    "Poisson",
+    "SNR",
+    "exposure"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

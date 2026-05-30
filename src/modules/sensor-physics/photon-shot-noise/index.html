@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Photon Shot Noise — light arrives as Poisson photons — collect N and…</title>
+  <meta name="description" content="Photons arrive as a Poisson process: variance = mean. Collecting N photons gives noise σ = √N; relative noise 1/√N, so quadrupling exposure only halves the noise floor.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/photon-shot-noise/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Photon Shot Noise">
+  <meta property="og:description"    content="Photons arrive as a Poisson process: variance = mean. Collecting N photons gives noise σ = √N; relative noise 1/√N, so quadrupling exposure only halves the noise floor.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/sensor-physics/photon-shot-noise/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--photon-shot-noise.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Photon Shot Noise.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Photon Shot Noise">
+  <meta name="twitter:description"   content="Photons arrive as a Poisson process: variance = mean. Collecting N photons gives noise σ = √N; relative noise 1/√N, so quadrupling exposure only halves the noise floor.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/sensor-physics--photon-shot-noise.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Photon Shot Noise.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Photon Shot Noise","alternateName":"sensor-physics/photon-shot-noise","description":"Photons arrive as a Poisson process: variance = mean. Collecting N photons gives noise σ = √N; relative noise 1/√N, so quadrupling exposure only halves the noise floor.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"photon noise, shot noise, Poisson, SNR, exposure","url":"https://encyclopedia-of-color.vercel.app/modules/sensor-physics/photon-shot-noise/","image":"https://encyclopedia-of-color.vercel.app/og/sensor-physics--photon-shot-noise.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="sensor-physics/photon-shot-noise">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Photon Shot Noise</h1>
+      <p class="module-subtitle">light arrives as Poisson photons — collect N and you get √N noise, so signal-to-noise improves only with the square root of exposure</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Photons arrive as a Poisson process: the variance equals the mean. Collect N photons on average per pixel and the noise on each measurement has standard deviation √N. Relative noise is √N / N = 1/√N — so quadrupling the photons only halves the noise. This is the fundamental noise floor every camera fights, no matter how good its electronics.
+        </p>
+        <div class="math-block" data-tex="\sigma = \sqrt{N},\quad \text{SNR} = \dfrac{N}{\sqrt{N}} = \sqrt{N}"></div>
+        <p class="zone-guide">
+          Drag the photon count from a starlit handful to bright daylight. At the low end the patch is visibly grainy; at the high end it is smooth, and the SNR readout doubles every time you quadruple the photons.
+        </p>
+        <enc-slider id="logN" label="Photons per pixel (log)" min="0" max="100" step="1" value="40" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Photon shot noise and SNR"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Janesick 2007; Poisson photon noise"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
