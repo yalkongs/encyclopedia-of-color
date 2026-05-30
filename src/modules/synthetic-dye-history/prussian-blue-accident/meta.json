@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "synthetic-dye-history/prussian-blue-accident",
+  "title": {"en": "Prussian Blue — Accidental 1706 Discovery", "ko": "프러시안 블루 — 1706년 우연한 발견"},
+  "subtitle": {"en": "Berlin colour-maker Diesbach's potash contamination produced ferric ferrocyanide — first stable modern synthetic blue, used by Hokusai and Picasso", "ko": "베를린 염료공 디스바흐의 칼리 오염으로 페릭 페로시안화물이 생성 — 호쿠사이·피카소가 쓴 최초의 안정 합성 청색"},
+  "description": {"en": "Pigment loading slider darkens Hokusai-wave fill via Beer-Lambert with intervalence Fe²⁺/Fe³⁺ charge-transfer schematic explaining the colour origin.", "ko": "안료량 슬라이더로 호쿠사이 파도가 베어-램버트로 어두워지며 Fe²⁺/Fe³⁺ 전하이동 도식이 색 기원을 설명합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "synthetic-dye-history",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [{"source": "Ball 2001", "section": "Prussian blue"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Prussian blue", "Hokusai", "charge transfer"],
+  "estimated_hours": 8, "status": "shipped"
+}

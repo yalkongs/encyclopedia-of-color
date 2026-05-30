@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "synthetic-dye-history/perkin-mauveine",
+  "title": {"en": "Perkin's Mauveine — First Synthetic Dye (1856)", "ko": "퍼킨의 모브 — 최초의 합성 염료 (1856)"},
+  "subtitle": {"en": "18-year-old William Perkin's failed quinine synthesis produced mauveine — coal-tar dyes built BASF, Bayer, Hoechst and modern chemistry", "ko": "18세 윌리엄 퍼킨의 키니네 합성 실패가 모브로 이어져 콜타르 염료가 BASF·바이어·헤히스트와 현대 화학을 낳음"},
+  "description": {"en": "Year slider scrubs 1856–1900 to expand the synthetic-dye palette from mauveine alone to 11 coal-tar discoveries with swatches and timeline cursor.", "ko": "1856–1900 슬라이드로 합성 염료 팔레트가 모브 하나에서 11개 콜타르 발견으로 확장하며 스와치와 타임라인 표시."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "synthetic-dye-history",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Garfield 2000", "section": "Mauveine"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Perkin", "mauveine", "coal-tar dye"],
+  "estimated_hours": 8, "status": "shipped"
+}

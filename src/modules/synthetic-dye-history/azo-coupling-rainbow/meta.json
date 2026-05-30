@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "synthetic-dye-history/azo-coupling-rainbow",
+  "title": {"en": "Azo Coupling — One Reaction, All the Colours", "ko": "아조 커플링 — 한 반응으로 모든 색"},
+  "subtitle": {"en": "Ar–N=N–Ar' bond between diazonium and aromatic gives 70% of industrial dyes; substituents tune λmax from yellow (410 nm) to violet (580 nm)", "ko": "아조 결합 Ar–N=N–Ar'이 산업 염료의 70%; 치환기 선택으로 노랑(410 nm)에서 보라(580 nm)까지 λmax 조정"},
+  "description": {"en": "Pair selector picks six azo dyes; cloth swatch, structure with donor-acceptor labels, and visible-spectrum λmax marker show donor-acceptor → wavelength tuning.", "ko": "6쌍 아조 염료 선택으로 천 색, 도너-억셉터 라벨 구조, 가시광 스펙트럼 λmax 마커가 색 조절 원리를 표현."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "synthetic-dye-history",
+  "layout": "A", "prerequisites": ["synthetic-dye-history/perkin-mauveine"], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Zollinger 2003", "section": "Azo dyes"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["azo dye", "diazonium", "industrial dye"],
+  "estimated_hours": 8, "status": "shipped"
+}
