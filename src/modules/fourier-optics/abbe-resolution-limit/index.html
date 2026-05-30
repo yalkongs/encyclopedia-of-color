@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Abbe Resolution Limit — d = λ / (2 NA) — Abbe 1873: smallest resolvab…</title>
+  <meta name="description" content="NA slider drives objective-cone geometry with oil-immersion overlay and resolution-vs-NA curve marker showing 196 nm @ NA 1.4 limit.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/fourier-optics/abbe-resolution-limit/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Abbe Resolution Limit — d = λ / (2 NA)">
+  <meta property="og:description"    content="NA slider drives objective-cone geometry with oil-immersion overlay and resolution-vs-NA curve marker showing 196 nm @ NA 1.4 limit.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/fourier-optics/abbe-resolution-limit/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/fourier-optics--abbe-resolution-limit.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Abbe Resolution Limit — d = λ / (2 NA).">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Abbe Resolution Limit — d = λ / (2 NA)">
+  <meta name="twitter:description"   content="NA slider drives objective-cone geometry with oil-immersion overlay and resolution-vs-NA curve marker showing 196 nm @ NA 1.4 limit.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/fourier-optics--abbe-resolution-limit.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Abbe Resolution Limit — d = λ / (2 NA).">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Abbe Resolution Limit — d = λ / (2 NA)","alternateName":"fourier-optics/abbe-resolution-limit","description":"NA slider drives objective-cone geometry with oil-immersion overlay and resolution-vs-NA curve marker showing 196 nm @ NA 1.4 limit.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Abbe limit, NA, STED","url":"https://encyclopedia-of-color.vercel.app/modules/fourier-optics/abbe-resolution-limit/","image":"https://encyclopedia-of-color.vercel.app/og/fourier-optics--abbe-resolution-limit.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="fourier-optics/abbe-resolution-limit">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Abbe Resolution Limit — d = λ / (2 NA)</h1>
+    <p class="module-subtitle">Smallest resolvable period for a microscope: d = λ/(2·n·sin α) where NA = n sin α is numerical aperture; immersion oil (n ≈ 1.5) shrinks d by ~33%</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Ernst Abbe (1873) showed: a microscope objective must collect at least the 0th + ±1st diffraction orders to reconstruct a periodic structure. At 550 nm with NA 1.4 (oil immersion), d ≈ 196 nm. STED, PALM, STORM "super-resolution" methods circumvent this — Nobel 2014.</p>
+      <p class="zone-guide">Slide NA to see resolution limit; immersion required above NA 1.0.</p>
+      <enc-slider id="na" label="NA (numerical aperture)" min="0.1" max="1.4" step="0.01" value="0.95" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Abbe"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Abbe 1873 Mikroskop; Hell 2007 STED"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

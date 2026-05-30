@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>4f Imaging System — Lens as Fourier Transformer — Two lenses spaced 4…</title>
+  <meta name="description" content="Filter selector toggles open/low-pass/high-pass/band-pass with full 4f optical bench schematic and corresponding output pattern.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/fourier-optics/4f-imaging-system/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="4f Imaging System — Lens as Fourier Transformer">
+  <meta property="og:description"    content="Filter selector toggles open/low-pass/high-pass/band-pass with full 4f optical bench schematic and corresponding output pattern.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/fourier-optics/4f-imaging-system/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/fourier-optics--4f-imaging-system.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: 4f Imaging System — Lens as Fourier Transformer.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="4f Imaging System — Lens as Fourier Transformer">
+  <meta name="twitter:description"   content="Filter selector toggles open/low-pass/high-pass/band-pass with full 4f optical bench schematic and corresponding output pattern.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/fourier-optics--4f-imaging-system.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: 4f Imaging System — Lens as Fourier Transformer.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"4f Imaging System — Lens as Fourier Transformer","alternateName":"fourier-optics/4f-imaging-system","description":"Filter selector toggles open/low-pass/high-pass/band-pass with full 4f optical bench schematic and corresponding output pattern.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"4f system, Fourier optics, phase contrast","url":"https://encyclopedia-of-color.vercel.app/modules/fourier-optics/4f-imaging-system/","image":"https://encyclopedia-of-color.vercel.app/og/fourier-optics--4f-imaging-system.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="fourier-optics/4f-imaging-system">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">4f Imaging System — Lens as Fourier Transformer</h1>
+    <p class="module-subtitle">Two lenses spaced 4f apart: input plane → Lens1 (FFT) → Fourier plane → Lens2 (inverse FFT) → image plane. Place a filter in the Fourier plane to manipulate spatial frequencies optically</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">The 4f system is the foundation of optical signal processing, holography, and phase-contrast microscopy. Block low frequencies (centre stop) → high-pass / edge enhancement. Block high frequencies (aperture stop) → low-pass / blur. Same operation as digital FFT — but optical and at light speed.</p>
+      <p class="zone-guide">Toggle Fourier-plane filter.</p>
+      <enc-slider id="f" label="filter (1=open · 2=lowpass · 3=highpass · 4=bandpass)" min="1" max="4" step="1" value="1" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="4f"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Goodman Fourier Optics 2005; Saleh Teich Photonics 2007"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

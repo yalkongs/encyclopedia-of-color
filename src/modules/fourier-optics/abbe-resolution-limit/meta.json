@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "fourier-optics/abbe-resolution-limit",
+  "title": {"en": "Abbe Resolution Limit — d = λ / (2 NA)", "ko": "아베 분해능 한계 — d = λ / (2 NA)"},
+  "subtitle": {"en": "Abbe 1873: smallest resolvable period d = λ/(2 NA); oil immersion (n≈1.5) shrinks d by ~33%; STED/PALM circumvent this — Nobel 2014", "ko": "아베 1873: 분해 가능한 최소 주기 d = λ/(2 NA); 오일 침수(n≈1.5)가 d를 ~33% 축소; STED/PALM이 이를 우회 — 2014 노벨"},
+  "description": {"en": "NA slider drives objective-cone geometry with oil-immersion overlay and resolution-vs-NA curve marker showing 196 nm @ NA 1.4 limit.", "ko": "NA 슬라이더로 대물렌즈 원뿔과 오일 침수 오버레이, 분해능 vs NA 곡선과 NA 1.4 @ 196 nm 한계를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "fourier-optics",
+  "layout": "A", "prerequisites": ["fourier-optics/point-spread-function-airy"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Abbe 1873", "section": "Microscope theory"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Abbe limit", "NA", "STED"],
+  "estimated_hours": 8, "status": "shipped"
+}

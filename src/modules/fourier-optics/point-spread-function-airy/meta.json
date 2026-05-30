@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "fourier-optics/point-spread-function-airy",
+  "title": {"en": "Airy Disk — Point Spread Function of Circular Aperture", "ko": "에어리 디스크 — 원형 조리개의 PSF"},
+  "subtitle": {"en": "Circular-aperture diffraction gives I(r) = [2 J₁(πr)/πr]² with first zero at sin θ = 1.22 λ/D; the canonical PSF of an unaberrated imaging system", "ko": "원형 조리개 회절이 I(r) = [2 J₁(πr)/πr]², 첫 영점 sin θ = 1.22 λ/D; 무수차 영상 시스템의 표준 PSF"},
+  "description": {"en": "D/λ slider drives 2D Airy disk render (log-stretched) and 1D radial profile with first-three-zero markers at 1.22/2.23/3.24 units.", "ko": "D/λ 슬라이더로 2D 에어리 디스크(로그 스트레치)와 1D 방사 프로파일, 처음 3개 영점 마커(1.22/2.23/3.24)를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "fourier-optics",
+  "layout": "A", "prerequisites": ["fourier-optics/spatial-frequency"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Born Wolf 1999", "section": "Airy pattern"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Airy disk", "PSF", "Rayleigh criterion"],
+  "estimated_hours": 8, "status": "shipped"
+}

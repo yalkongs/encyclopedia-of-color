@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "fourier-optics/4f-imaging-system",
+  "title": {"en": "4f Imaging System — Lens as Fourier Transformer", "ko": "4f 영상 시스템 — 푸리에 변환기로서의 렌즈"},
+  "subtitle": {"en": "Two lenses spaced 4f apart give input → FT → Fourier-plane filter → inv-FT → output; foundation of optical signal processing and phase-contrast microscopy", "ko": "4f 떨어진 두 렌즈 = 입력 → FT → 푸리에 평면 필터 → 역 FT → 출력; 광학 신호 처리·위상차 현미경 기반"},
+  "description": {"en": "Filter selector toggles open/low-pass/high-pass/band-pass with full 4f optical bench schematic and corresponding output pattern.", "ko": "필터 선택으로 개방/저역/고역/대역 통과를 토글하며 전체 4f 광학 벤치 도식과 대응 출력 패턴을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "fourier-optics",
+  "layout": "A", "prerequisites": ["fourier-optics/spatial-frequency"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Goodman 2005", "section": "4f systems"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["4f system", "Fourier optics", "phase contrast"],
+  "estimated_hours": 8, "status": "shipped"
+}

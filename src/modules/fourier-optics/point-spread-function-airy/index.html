@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Airy Disk — Point Spread Function of Circular Aperture — Circular-ape…</title>
+  <meta name="description" content="D/λ slider drives 2D Airy disk render (log-stretched) and 1D radial profile with first-three-zero markers at 1.22/2.23/3.24 units.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/fourier-optics/point-spread-function-airy/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Airy Disk — Point Spread Function of Circular Aperture">
+  <meta property="og:description"    content="D/λ slider drives 2D Airy disk render (log-stretched) and 1D radial profile with first-three-zero markers at 1.22/2.23/3.24 units.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/fourier-optics/point-spread-function-airy/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/fourier-optics--point-spread-function-airy.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Airy Disk — Point Spread Function of Circular Aperture.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Airy Disk — Point Spread Function of Circular Aperture">
+  <meta name="twitter:description"   content="D/λ slider drives 2D Airy disk render (log-stretched) and 1D radial profile with first-three-zero markers at 1.22/2.23/3.24 units.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/fourier-optics--point-spread-function-airy.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Airy Disk — Point Spread Function of Circular Aperture.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Airy Disk — Point Spread Function of Circular Aperture","alternateName":"fourier-optics/point-spread-function-airy","description":"D/λ slider drives 2D Airy disk render (log-stretched) and 1D radial profile with first-three-zero markers at 1.22/2.23/3.24 units.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Airy disk, PSF, Rayleigh criterion","url":"https://encyclopedia-of-color.vercel.app/modules/fourier-optics/point-spread-function-airy/","image":"https://encyclopedia-of-color.vercel.app/og/fourier-optics--point-spread-function-airy.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="fourier-optics/point-spread-function-airy">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Airy Disk — Point Spread Function of Circular Aperture</h1>
+    <p class="module-subtitle">Diffraction by a circular aperture produces I(r) = [2 J₁(x)/x]² with first zero at sin θ = 1.22 λ/D; this Airy pattern is the PSF of any unaberrated imaging system</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">The Airy disk's central bright spot contains 84% of the energy; the remaining 16% spreads into concentric rings (1.7%, 0.4%, …). Resolution limit (Rayleigh): two point sources are just resolved when one's centre coincides with the other's first zero.</p>
+      <p class="zone-guide">Slide aperture diameter D / wavelength λ ratio.</p>
+      <enc-slider id="d" label="D / λ ratio" min="20" max="400" step="2" value="100" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Airy"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Airy 1835; Born Wolf 1999"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

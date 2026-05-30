@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "fourier-optics/sine-grating-mtf",
+  "title": {"en": "Sine-Grating MTF — Modulation Transfer Function", "ko": "사인 그레이팅 MTF — 변조 전달 함수"},
+  "subtitle": {"en": "MTF(f) = output modulation / input modulation; declines from 1 at DC to 0 at cutoff f_c = 2 NA/λ; lens reviews quote MTF50", "ko": "MTF(f) = 출력 변조 / 입력 변조; DC에서 1, 차단 f_c=2 NA/λ에서 0; 렌즈 리뷰는 MTF50 인용"},
+  "description": {"en": "Frequency slider shows input vs output grating contrast and circular-aperture MTF curve with MTF50 vertical marker.", "ko": "주파수 슬라이더로 입력 vs 출력 그레이팅 대비와 원형 조리개 MTF 곡선, MTF50 수직 마커를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "fourier-optics",
+  "layout": "A", "prerequisites": ["fourier-optics/point-spread-function-airy"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Boreman 2001", "section": "MTF"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["MTF", "modulation transfer", "lens sharpness"],
+  "estimated_hours": 8, "status": "shipped"
+}
