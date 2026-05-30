@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Curved Mirror Foci — Concave vs Convex — Mirror equation 1/d_o+1/d_i=…</title>
+  <meta name="description" content="Object-distance slider drives 3-principal-ray construction with real/virtual image marker and magnification readout.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/geometric-optics/curved-mirror-foci/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Curved Mirror Foci — Concave vs Convex">
+  <meta property="og:description"    content="Object-distance slider drives 3-principal-ray construction with real/virtual image marker and magnification readout.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/geometric-optics/curved-mirror-foci/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/geometric-optics--curved-mirror-foci.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Curved Mirror Foci — Concave vs Convex.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Curved Mirror Foci — Concave vs Convex">
+  <meta name="twitter:description"   content="Object-distance slider drives 3-principal-ray construction with real/virtual image marker and magnification readout.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/geometric-optics--curved-mirror-foci.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Curved Mirror Foci — Concave vs Convex.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Curved Mirror Foci — Concave vs Convex","alternateName":"geometric-optics/curved-mirror-foci","description":"Object-distance slider drives 3-principal-ray construction with real/virtual image marker and magnification readout.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"curved mirror, concave, focal length","url":"https://encyclopedia-of-color.vercel.app/modules/geometric-optics/curved-mirror-foci/","image":"https://encyclopedia-of-color.vercel.app/og/geometric-optics--curved-mirror-foci.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="geometric-optics/curved-mirror-foci">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Curved Mirror Foci — Concave vs Convex</h1>
+    <p class="module-subtitle">For spherical mirror of radius R, focal length f = R/2; concave (R&gt;0) focuses parallel rays to a real focal point; convex (R&lt;0) diverges them from a virtual focal point</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Mirror equation: 1/d_o + 1/d_i = 2/R = 1/f. Magnification m = −d_i/d_o. Concave: object beyond f gives inverted real image; inside f gives upright virtual image (shaving mirror). Convex: always upright virtual diminished image (passenger-side car mirror, security mirror).</p>
+      <p class="zone-guide">Slide object distance d_o; mirror is concave R=+150 px by default.</p>
+      <enc-slider id="d" label="object distance d_o (px)" min="40" max="400" step="2" value="200" unit=" px"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Curved mirror"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Hecht Optics 2017; Jenkins White FoO 1976"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

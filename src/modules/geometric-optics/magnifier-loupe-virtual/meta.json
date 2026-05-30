@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "geometric-optics/magnifier-loupe-virtual",
+  "title": {"en": "Magnifier / Loupe — Virtual Image Formation", "ko": "확대경 / 루페 — 허상 형성"},
+  "subtitle": {"en": "Object inside focal length of converging lens; eye sees upright virtual magnified image — angular M = 1 + 25 cm/f", "ko": "수렴 렌즈 초점 안에 물체; 눈은 정립 허상으로 확대 — 각배율 M = 1 + 25 cm/f"},
+  "description": {"en": "Object-distance slider drives loupe ray-trace with virtual vs real image distinction; warns when d_o > f breaks loupe behaviour.", "ko": "물체 거리 슬라이더로 루페 광선 추적, 허상 vs 실상 구분, d_o > f일 때 루페 작동 안 됨 경고를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "geometric-optics",
+  "layout": "A", "prerequisites": ["geometric-optics/thin-lens-basic"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Hecht 2017", "section": "Magnifier"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["loupe", "magnifier", "virtual image"],
+  "estimated_hours": 8, "status": "shipped"
+}

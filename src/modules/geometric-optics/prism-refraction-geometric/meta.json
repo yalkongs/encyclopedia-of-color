@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "geometric-optics/prism-refraction-geometric",
+  "title": {"en": "Prism Refraction — Geometric Deviation", "ko": "프리즘 굴절 — 기하학적 편향"},
+  "subtitle": {"en": "Deviation δ = θᵢ + arcsin[n sin(A − arcsin(sin θᵢ/n))] − A; minimum δmin at symmetric passage — used in spectrometer n-measurements", "ko": "편향 δ 공식; 대칭 통과에서 δmin — 분광계의 n 측정에 사용"},
+  "description": {"en": "Apex-angle and entry-angle sliders trace ray through prism with δ vs θᵢ curve and δmin asymptote marker.", "ko": "정점각·입사각 슬라이더로 프리즘 광선 경로와 δ vs θᵢ 곡선, δmin 점근선 마커를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "geometric-optics",
+  "layout": "A", "prerequisites": ["refraction-snell/snells-law-interactive"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Hecht 2017", "section": "Prisms"}],
+  "standards": [], "interaction_count": 2, "learning_paths": ["designers-path"],
+  "seo_keywords": ["prism", "min deviation", "spectrometer"],
+  "estimated_hours": 8, "status": "shipped"
+}

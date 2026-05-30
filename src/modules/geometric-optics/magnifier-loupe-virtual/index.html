@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Magnifier / Loupe — Virtual Image Formation — Object inside focal len…</title>
+  <meta name="description" content="Object-distance slider drives loupe ray-trace with virtual vs real image distinction; warns when d_o &gt; f breaks loupe behaviour.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/geometric-optics/magnifier-loupe-virtual/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Magnifier / Loupe — Virtual Image Formation">
+  <meta property="og:description"    content="Object-distance slider drives loupe ray-trace with virtual vs real image distinction; warns when d_o &gt; f breaks loupe behaviour.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/geometric-optics/magnifier-loupe-virtual/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/geometric-optics--magnifier-loupe-virtual.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Magnifier / Loupe — Virtual Image Formation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Magnifier / Loupe — Virtual Image Formation">
+  <meta name="twitter:description"   content="Object-distance slider drives loupe ray-trace with virtual vs real image distinction; warns when d_o &gt; f breaks loupe behaviour.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/geometric-optics--magnifier-loupe-virtual.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Magnifier / Loupe — Virtual Image Formation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Magnifier / Loupe — Virtual Image Formation","alternateName":"geometric-optics/magnifier-loupe-virtual","description":"Object-distance slider drives loupe ray-trace with virtual vs real image distinction; warns when d_o > f breaks loupe behaviour.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"loupe, magnifier, virtual image","url":"https://encyclopedia-of-color.vercel.app/modules/geometric-optics/magnifier-loupe-virtual/","image":"https://encyclopedia-of-color.vercel.app/og/geometric-optics--magnifier-loupe-virtual.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="geometric-optics/magnifier-loupe-virtual">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Magnifier / Loupe — Virtual Image Formation</h1>
+    <p class="module-subtitle">Object placed inside focal length of a converging lens; eye sees an upright virtual image at the near point — angular magnification M = 1 + 25 cm / f</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Jeweller&apos;s loupe: f = 25 mm → M ≈ 11×. Reading magnifier f = 100 mm → M ≈ 3.5×. The "magnifying" trick: image is virtual (formed on same side as object), upright, larger, located near the eye's near point so detail can be resolved.</p>
+      <p class="zone-guide">Slide object distance — keep it inside f for true magnifier behaviour.</p>
+      <enc-slider id="d" label="object distance d_o (px)" min="20" max="170" step="2" value="80" unit=" px"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Loupe"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Hecht Optics 2017; Born Wolf Principles 1999"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

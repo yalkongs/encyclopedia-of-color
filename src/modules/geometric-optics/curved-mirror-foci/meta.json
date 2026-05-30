@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "geometric-optics/curved-mirror-foci",
+  "title": {"en": "Curved Mirror Foci — Concave vs Convex", "ko": "곡면 거울 초점 — 오목과 볼록"},
+  "subtitle": {"en": "Mirror equation 1/d_o+1/d_i=2/R; concave focuses parallel rays at f=R/2 (real focal point), convex diverges (virtual focal point)", "ko": "거울 방정식 1/d_o+1/d_i=2/R; 오목은 평행광을 f=R/2에 모음(실초점), 볼록은 발산(허초점)"},
+  "description": {"en": "Object-distance slider drives 3-principal-ray construction with real/virtual image marker and magnification readout.", "ko": "물체 거리 슬라이더로 3 주요 광선 작도와 실/허 이미지 마커, 배율 표시를 구성합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "geometric-optics",
+  "layout": "A", "prerequisites": ["geometric-optics/thin-lens-basic"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Hecht 2017", "section": "Mirrors"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["curved mirror", "concave", "focal length"],
+  "estimated_hours": 8, "status": "shipped"
+}
