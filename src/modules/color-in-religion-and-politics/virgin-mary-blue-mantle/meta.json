@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-in-religion-and-politics/virgin-mary-blue-mantle",
+  "title": {"en": "Virgin's Blue — Ultramarine in the Mantle", "ko": "성모의 청색 — 망토의 울트라마린"},
+  "subtitle": {"en": "Medieval contracts required Mary's mantle in ultramarine, more expensive than gold leaf; substitution was a contractual breach with penalty clauses", "ko": "중세 계약이 성모 망토를 울트라마린으로 규정 — 금박보다 비쌌고 대체는 위약금 조항으로 처벌"},
+  "description": {"en": "Pigment-grade selector shows azurite-to-ultramarine choices for the Virgin's mantle with candlelit chapel scene and patron-piety annotations.", "ko": "성모 망토 안료 등급 선택으로 람동광에서 울트라마린까지 비교, 촛불 예배당 장면과 후원자 경건 주석을 제공."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "color-in-religion-and-politics",
+  "layout": "A", "prerequisites": ["ancient-mineral-pigments/lapis-ultramarine-refining"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Baxandall 1972", "section": "Renaissance contracts"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Virgin Mary", "ultramarine", "Renaissance contract"],
+  "estimated_hours": 8, "status": "shipped"
+}

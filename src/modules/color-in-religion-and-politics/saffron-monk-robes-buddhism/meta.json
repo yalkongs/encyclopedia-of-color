@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-in-religion-and-politics/saffron-monk-robes-buddhism",
+  "title": {"en": "Saffron Robes — Buddhist Sangha Colour Across Asia", "ko": "사프란 가사 — 아시아 불교 승단 색"},
+  "subtitle": {"en": "Same Buddhist vow, three local dye economies: turmeric-yellow in Theravada, madder-maroon in Vajrayana, iron-grey in Japanese Zen", "ko": "같은 불교 서약, 세 가지 지역 염료 경제: 테라와다 강황 황색, 바즈라야나 매더 적갈, 일본 선 철 회색"},
+  "description": {"en": "Tradition selector shows three Buddhist robe colours with monk figures explaining how local dye-stuff availability shaped sangha identity.", "ko": "전통 선택으로 세 불교 가사 색을 승려 도상과 함께 표시하며 지역 염료 공급이 승단 정체성을 형성한 과정을 설명."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "color-in-religion-and-politics",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Kieschnick 2003", "section": "Buddhist material culture"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["saffron robe", "Buddhist monk", "kāṣāya"],
+  "estimated_hours": 8, "status": "shipped"
+}

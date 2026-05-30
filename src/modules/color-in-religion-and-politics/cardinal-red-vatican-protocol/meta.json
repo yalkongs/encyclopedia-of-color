@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-in-religion-and-politics/cardinal-red-vatican-protocol",
+  "title": {"en": "Cardinal Red — Vatican Vesture Protocol", "ko": "추기경 적색 — 바티칸 복장 규약"},
+  "subtitle": {"en": "Pope Paul II swapped cardinals from purple to crimson in 1464 after Murex supply collapsed; symbolism became 'willingness to shed blood for Christ'", "ko": "1464년 교황 바오로 2세가 추기경을 보라에서 진홍으로 바꿈; '그리스도를 위해 피 흘릴 각오'의 상징"},
+  "description": {"en": "Rank selector shows priest-bishop-cardinal-pope cassock colours with liturgical-season palette legend showing the white/red/green/violet/rose code.", "ko": "사제·주교·추기경·교황 카속 색상과 백·적·녹·자·장미 전례 색 팔레트를 보여줍니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "color-in-religion-and-politics",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Noonan 1996", "section": "Vesture"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["cardinal red", "Vatican", "liturgical colour"],
+  "estimated_hours": 8, "status": "shipped"
+}

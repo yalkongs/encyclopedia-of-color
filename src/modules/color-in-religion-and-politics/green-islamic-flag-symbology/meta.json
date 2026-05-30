@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-in-religion-and-politics/green-islamic-flag-symbology",
+  "title": {"en": "Islamic Green — National Flags & Sacred Symbol", "ko": "이슬람 녹색 — 국기와 신성한 상징"},
+  "subtitle": {"en": "Green linked to the Prophet's cloak and Qur'an 76:21 paradise; Saudi Arabia, Pakistan, Iran, Bangladesh, Mauritania carry it as confessional marker", "ko": "예언자의 망토와 꾸란 76:21 낙원에 연결된 녹색; 사우디·파키스탄·이란·방글라데시·모리타니가 신앙 표지로 사용"},
+  "description": {"en": "Flag selector renders five Muslim-majority national flags with green-shade comparison and Qur'anic-cloak symbolism explained.", "ko": "국기 선택으로 다섯 무슬림 국가 깃발을 녹색 비교와 꾸란·망토 상징과 함께 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "color-in-religion-and-politics",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Pastoureau 2014", "section": "Islamic green"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Islamic green", "national flag", "Qur'an"],
+  "estimated_hours": 8, "status": "shipped"
+}
