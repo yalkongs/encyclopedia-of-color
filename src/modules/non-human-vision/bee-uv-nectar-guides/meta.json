@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "non-human-vision/bee-uv-nectar-guides",
+  "title": {
+    "en": "Bee UV Vision — Hidden Nectar Guides",
+    "ko": "벌의 UV 시각 — 숨겨진 꿀 안내"
+  },
+  "subtitle": {
+    "en": "honeybees see UV; many flowers display UV-absorbing centre patches invisible to us — landing strips that funnel pollinators straight to the nectar",
+    "ko": "벌은 UV를 본다 — 많은 꽃이 UV 흡수 중심부, 사람에겐 보이지 않는 착륙 표시"
+  },
+  "description": {
+    "en": "Dandelion appears uniform yellow to humans but a sharp UV bullseye to bees. Toggle view switches the centre colour from yellow to dark UV-absorbing.",
+    "ko": "민들레는 사람에겐 균일 황색, 벌에겐 선명한 UV 표적. 시점 토글로 중심 색 전환."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "non-human-vision",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [
+    { "source": "Chittka 1992", "section": "Bee colour space" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["bee UV", "nectar guide", "pollinator"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

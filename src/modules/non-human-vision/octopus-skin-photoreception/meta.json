@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "non-human-vision/octopus-skin-photoreception",
+  "title": {
+    "en": "Octopus Skin — Distributed Photoreception",
+    "ko": "문어 피부 — 분산 광수용"
+  },
+  "subtitle": {
+    "en": "octopus and cuttlefish skin expresses opsin proteins all over the body — the chromatophore array can sample the ambient spectrum independently of the eye",
+    "ko": "문어·갑오징어 피부 전체에 opsin 발현 — chromatophore 배열이 눈과 독립적으로 주변 분광 샘플링"
+  },
+  "description": {
+    "en": "Octopus body changes colour to match ambient (sandy/reef/seagrass) despite being monochromat. Distributed skin photoreception is the leading hypothesis.",
+    "ko": "단색각 문어가 주변(모래/산호/해초)에 따라 피부색 변화. 분산 피부 광수용이 유력 가설."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 9,
+  "category": "non-human-vision",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [
+    { "source": "Ramirez & Oakley 2015", "section": "Cephalopod skin opsins" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["octopus", "skin photoreception", "cephalopod"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

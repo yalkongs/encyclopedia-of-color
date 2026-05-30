@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "non-human-vision/mantis-shrimp-12-channel",
+  "title": {
+    "en": "Mantis Shrimp — 12 Photoreceptor Channels",
+    "ko": "갯가재 — 12 광수용 채널"
+  },
+  "subtitle": {
+    "en": "stomatopod eyes carry up to 12 spectral photoreceptor classes plus 4 polarisation types — yet behavioural tests show they don't outperform 3-cone humans at colour discrimination",
+    "ko": "Stomatopod는 12 광수용체 + 4 편광 — 그러나 행동 실험에선 인간보다 색 식별 *나쁨*"
+  },
+  "description": {
+    "en": "12 narrow-band Gaussian sensitivities from 310 nm UV to 690 nm red. Highlight slider picks a channel. Counter-intuitive Thoen 2014 result framed as the punchline.",
+    "ko": "310-690 nm 12 narrow Gaussian 감도. 슬라이더로 채널 강조. Thoen 2014 반직관 결과를 포인트로."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 9,
+  "category": "non-human-vision",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [
+    { "source": "Thoen et al. 2014", "section": "Mantis shrimp colour" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["mantis shrimp", "stomatopod", "12 channel vision"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

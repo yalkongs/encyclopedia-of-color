@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "non-human-vision/snake-thermal-pit",
+  "title": {
+    "en": "Snake Thermal Pit — Infrared Eye",
+    "ko": "뱀 적외선 감각기"
+  },
+  "subtitle": {
+    "en": "pit vipers, boas, and pythons have a heat-sensitive pit between eye and nostril — TRPA1 ion channels in the membrane fire at 5 mK above ambient, building a thermal image of warm prey",
+    "ko": "Pit viper·boa·python의 눈-콧구멍 사이 열 감각기 — TRPA1이 주변 +5 mK에 발화, 따뜻한 먹이 열영상"
+  },
+  "description": {
+    "en": "Thermal-image radial glow around warm prey, brightness scales with ΔT. Demonstrates 5 mK threshold of snake IR sensing.",
+    "ko": "따뜻한 먹이 주위 thermal radial glow, ΔT에 비례. 뱀 IR 감지 5 mK 임계."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "non-human-vision",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [
+    { "source": "Gracheva 2010", "section": "TRPA1 snake IR" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["snake IR", "pit organ", "TRPA1", "infrared"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

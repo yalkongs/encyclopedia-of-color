@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "non-human-vision/dog-dichromacy",
+  "title": {
+    "en": "Dog Dichromacy — Yellow-Blue World",
+    "ko": "개의 이색각 — 황-청 세계"
+  },
+  "subtitle": {
+    "en": "dogs have only two cone classes — they see yellows and blues clearly, red and green merge",
+    "ko": "개는 두 cone만 — 황·청 잘 보이고 적·녹은 합쳐 보임"
+  },
+  "description": {
+    "en": "Red ball/blue toy/yellow toy on grass. Toggle dog view to project onto blue-yellow axis; red ball blends with grass while blue and yellow stand out.",
+    "ko": "잔디 위 빨간 공/파란 장난감/노란 장난감. 개 시점 토글로 청-황 축 투영; 빨간 공이 잔디와 합쳐짐."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 9,
+  "category": "non-human-vision",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [
+    { "source": "Jacobs 1993", "section": "Canine dichromacy" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["dog vision", "dichromacy", "yellow-blue", "color blind"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

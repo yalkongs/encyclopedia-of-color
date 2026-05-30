@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Mantis Shrimp — 12 Photoreceptor Channels — stomatopod eyes carry up…</title>
+  <meta name="description" content="12 narrow-band Gaussian sensitivities from 310 nm UV to 690 nm red. Highlight slider picks a channel. Counter-intuitive Thoen 2014 result framed as the punchline.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/non-human-vision/mantis-shrimp-12-channel/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Mantis Shrimp — 12 Photoreceptor Channels">
+  <meta property="og:description"    content="12 narrow-band Gaussian sensitivities from 310 nm UV to 690 nm red. Highlight slider picks a channel. Counter-intuitive Thoen 2014 result framed as the punchline.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/non-human-vision/mantis-shrimp-12-channel/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/non-human-vision--mantis-shrimp-12-channel.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Mantis Shrimp — 12 Photoreceptor Channels.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Mantis Shrimp — 12 Photoreceptor Channels">
+  <meta name="twitter:description"   content="12 narrow-band Gaussian sensitivities from 310 nm UV to 690 nm red. Highlight slider picks a channel. Counter-intuitive Thoen 2014 result framed as the punchline.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/non-human-vision--mantis-shrimp-12-channel.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Mantis Shrimp — 12 Photoreceptor Channels.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Mantis Shrimp — 12 Photoreceptor Channels","alternateName":"non-human-vision/mantis-shrimp-12-channel","description":"12 narrow-band Gaussian sensitivities from 310 nm UV to 690 nm red. Highlight slider picks a channel. Counter-intuitive Thoen 2014 result framed as the punchline.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"mantis shrimp, stomatopod, 12 channel vision","url":"https://encyclopedia-of-color.vercel.app/modules/non-human-vision/mantis-shrimp-12-channel/","image":"https://encyclopedia-of-color.vercel.app/og/non-human-vision--mantis-shrimp-12-channel.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="non-human-vision/mantis-shrimp-12-channel">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Mantis Shrimp — 12 Photoreceptor Channels</h1>
+      <p class="module-subtitle">stomatopod eyes carry up to 12 spectral photoreceptor classes plus 4 polarisation types — yet behavioural tests show they don't outperform 3-cone humans at colour discrimination</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Caribbean mantis shrimp <em>Neogonodactylus oerstedii</em> has 12 narrow-band photoreceptors spanning 300-700 nm in its mid-band rows R1-R6. Naïve expectation: hyperspectral vision. But Thoen et al. 2014 showed actual colour discrimination is *worse* than human — the brain seems to use the channels as a fast spectral matched-filter rather than a full hyperspectral encoder.
+        </p>
+        <p class="zone-guide">
+          The bar plot shows the 12 channel sensitivities. Each spike at a different λ_max — narrow Gaussians instead of the broad human L/M/S.
+        </p>
+        <enc-slider id="hi" label="Highlight channel #" min="1" max="12" step="1" value="6" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Mantis shrimp"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Cronin 1989; Thoen et al. 2014 — mantis shrimp colour discrimination"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
