@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Laplacian of Gaussian — Mexican-Hat Filter — LoG = ∇²(G_σ ∗ I); zero-…</title>
+  <meta name="description" content="Sigma slider drives LoG kernel + response with Mexican-hat green/red kernel grid showing +centre/−ring and central radial profile.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/laplacian-of-gaussian/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Laplacian of Gaussian — Mexican-Hat Filter">
+  <meta property="og:description"    content="Sigma slider drives LoG kernel + response with Mexican-hat green/red kernel grid showing +centre/−ring and central radial profile.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/laplacian-of-gaussian/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--laplacian-of-gaussian.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Laplacian of Gaussian — Mexican-Hat Filter.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Laplacian of Gaussian — Mexican-Hat Filter">
+  <meta name="twitter:description"   content="Sigma slider drives LoG kernel + response with Mexican-hat green/red kernel grid showing +centre/−ring and central radial profile.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--laplacian-of-gaussian.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Laplacian of Gaussian — Mexican-Hat Filter.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Laplacian of Gaussian — Mexican-Hat Filter","alternateName":"convolutions-and-filters/laplacian-of-gaussian","description":"Sigma slider drives LoG kernel + response with Mexican-hat green/red kernel grid showing +centre/−ring and central radial profile.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"LoG, blob detection, Mexican hat","url":"https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/laplacian-of-gaussian/","image":"https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--laplacian-of-gaussian.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="convolutions-and-filters/laplacian-of-gaussian">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Laplacian of Gaussian — Mexican-Hat Edge / Blob</h1>
+    <p class="module-subtitle">LoG = ∇²(G_σ ∗ I) — second-derivative response after Gaussian smoothing; zero-crossings mark edges, peaks mark blobs of radius ≈ σ√2</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Marr-Hildreth (1980) showed that LoG zero-crossings are an early-vision-like edge representation. The Mexican-hat kernel approximates how retinal ganglion cells respond. Used in SIFT/SURF blob detection; modern CNN feature maps inherit this template.</p>
+      <p class="zone-guide">σ controls scale: small σ finds fine edges, large σ finds blobs.</p>
+      <enc-slider id="sigma" label="σ (pixels)" min="1" max="6" step="0.1" value="2" unit=" px"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="LoG"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Marr Hildreth 1980 Edge; Lindeberg Scale-Space 1994"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

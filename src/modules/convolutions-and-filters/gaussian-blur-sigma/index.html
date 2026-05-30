@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Gaussian Blur — σ Controls Spatial Smoothing — 2D Gaussian kernel con…</title>
+  <meta name="description" content="Sigma slider drives Gaussian kernel size with original/blurred image comparison, kernel grid visualisation, and central column profile.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/gaussian-blur-sigma/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Gaussian Blur — σ Controls Spatial Smoothing">
+  <meta property="og:description"    content="Sigma slider drives Gaussian kernel size with original/blurred image comparison, kernel grid visualisation, and central column profile.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/gaussian-blur-sigma/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--gaussian-blur-sigma.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Gaussian Blur — σ Controls Spatial Smoothing.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Gaussian Blur — σ Controls Spatial Smoothing">
+  <meta name="twitter:description"   content="Sigma slider drives Gaussian kernel size with original/blurred image comparison, kernel grid visualisation, and central column profile.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--gaussian-blur-sigma.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Gaussian Blur — σ Controls Spatial Smoothing.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gaussian Blur — σ Controls Spatial Smoothing","alternateName":"convolutions-and-filters/gaussian-blur-sigma","description":"Sigma slider drives Gaussian kernel size with original/blurred image comparison, kernel grid visualisation, and central column profile.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Gaussian blur, convolution, low-pass filter","url":"https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/gaussian-blur-sigma/","image":"https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--gaussian-blur-sigma.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="convolutions-and-filters/gaussian-blur-sigma">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Gaussian Blur — σ Controls Spatial Smoothing</h1>
+    <p class="module-subtitle">2D Gaussian kernel exp(−(x²+y²)/2σ²) convolved with the image; σ sets blur radius — separable, isotropic, the workhorse low-pass for vision pipelines</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Gaussian is the unique filter that simultaneously minimises space-frequency spread and is separable (1D × 1D), making it O(σ) rather than O(σ²). σ ≈ 1 px removes single-pixel noise; σ ≈ 3 px blurs textures; σ &gt; 6 destroys fine detail. Convolution preserves total energy.</p>
+      <p class="zone-guide">Slide σ to compare blur intensity on a synthetic test scene.</p>
+      <enc-slider id="sigma" label="σ (pixels)" min="0.5" max="6" step="0.1" value="1.5" unit=" px"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Gaussian"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Szeliski Computer Vision 2010; Gonzalez Digital Image Processing 2008"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

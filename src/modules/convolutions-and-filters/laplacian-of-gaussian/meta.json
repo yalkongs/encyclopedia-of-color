@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "convolutions-and-filters/laplacian-of-gaussian",
+  "title": {"en": "Laplacian of Gaussian — Mexican-Hat Filter", "ko": "라플라시안 오브 가우시안 — 멕시칸 햇 필터"},
+  "subtitle": {"en": "LoG = ∇²(G_σ ∗ I); zero-crossings mark edges, peaks mark blobs of radius ≈ σ√2 — foundation of SIFT/SURF blob detection", "ko": "LoG = ∇²(G_σ ∗ I); 영점 통과가 에지, 극값이 반지름 σ√2 블롭 — SIFT/SURF 블롭 검출 기반"},
+  "description": {"en": "Sigma slider drives LoG kernel + response with Mexican-hat green/red kernel grid showing +centre/−ring and central radial profile.", "ko": "σ 슬라이더로 LoG 커널과 응답을 보이며 +중심/−링 멕시칸 햇 격자와 중앙 방사 프로파일을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "convolutions-and-filters",
+  "layout": "A", "prerequisites": ["convolutions-and-filters/gaussian-blur-sigma"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Marr Hildreth 1980", "section": "LoG"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["LoG", "blob detection", "Mexican hat"],
+  "estimated_hours": 8, "status": "shipped"
+}

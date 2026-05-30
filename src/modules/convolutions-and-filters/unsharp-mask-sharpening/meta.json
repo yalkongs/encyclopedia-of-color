@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "convolutions-and-filters/unsharp-mask-sharpening",
+  "title": {"en": "Unsharp Mask — Sharpen by Adding High-Pass", "ko": "언샤프 마스크 — 고역 통과로 선명하게"},
+  "subtitle": {"en": "out = I + α(I − G_σ ∗ I); α controls strength, σ controls scale — named for 19-th-century darkroom blurred-mask technique", "ko": "out = I + α(I − G_σ ∗ I); α가 강도, σ가 스케일 — 19세기 암실 블러 마스크 기법에서 유래"},
+  "description": {"en": "Two-slider control over σ and α with original/sharpened images and horizontal step-edge profile showing characteristic overshoot 'halo' rings.", "ko": "σ와 α 두 슬라이더로 원본/샤픈 이미지와 수평 스텝 프로파일을 표시하며 특유의 오버슈트 '헤일로' 링을 보입니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "convolutions-and-filters",
+  "layout": "A", "prerequisites": ["convolutions-and-filters/gaussian-blur-sigma"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Gonzalez 2008", "section": "Unsharp masking"}],
+  "standards": [], "interaction_count": 2, "learning_paths": ["designers-path"],
+  "seo_keywords": ["unsharp mask", "sharpening", "halo"],
+  "estimated_hours": 8, "status": "shipped"
+}

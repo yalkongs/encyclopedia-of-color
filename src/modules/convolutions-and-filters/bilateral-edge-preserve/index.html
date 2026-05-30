@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Bilateral Filter — Smoothing That Preserves Edges — Spatial Gaussian…</title>
+  <meta name="description" content="Two-slider σ_s/σ_r control with three-image strip (original, Gaussian, bilateral) and step-edge profile showing edge preservation.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/bilateral-edge-preserve/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Bilateral Filter — Smoothing That Preserves Edges">
+  <meta property="og:description"    content="Two-slider σ_s/σ_r control with three-image strip (original, Gaussian, bilateral) and step-edge profile showing edge preservation.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/bilateral-edge-preserve/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--bilateral-edge-preserve.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Bilateral Filter — Smoothing That Preserves Edges.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Bilateral Filter — Smoothing That Preserves Edges">
+  <meta name="twitter:description"   content="Two-slider σ_s/σ_r control with three-image strip (original, Gaussian, bilateral) and step-edge profile showing edge preservation.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--bilateral-edge-preserve.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Bilateral Filter — Smoothing That Preserves Edges.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Bilateral Filter — Smoothing That Preserves Edges","alternateName":"convolutions-and-filters/bilateral-edge-preserve","description":"Two-slider σ_s/σ_r control with three-image strip (original, Gaussian, bilateral) and step-edge profile showing edge preservation.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"bilateral filter, edge-preserving, HDR","url":"https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/bilateral-edge-preserve/","image":"https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--bilateral-edge-preserve.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="convolutions-and-filters/bilateral-edge-preserve">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Bilateral Filter — Smoothing That Preserves Edges</h1>
+    <p class="module-subtitle">Spatial Gaussian × intensity Gaussian: average only over neighbours close in space AND in value; the foundation of HDR tone-mapping and skin-smoothing pipelines</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">A linear Gaussian blurs through edges; bilateral lets you blur within a region but stops at sharp transitions. σ_s = spatial radius (how far to look); σ_r = intensity tolerance (how different in value to still include). Edge-aware filters power Apple's deep-fusion sharpening and Lightroom's Clarity slider.</p>
+      <p class="zone-guide">σ_s controls spatial reach; σ_r controls "how big a value difference counts as an edge".</p>
+      <enc-slider id="ss" label="σ_s (spatial)" min="0.5" max="4" step="0.1" value="2" unit=" px"></enc-slider>
+      <enc-slider id="sr" label="σ_r (range / value)" min="0.02" max="0.5" step="0.01" value="0.1" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Bilateral"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Tomasi Manduchi 1998 Bilateral; Paris Durand 2009 Bilateral Survey"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

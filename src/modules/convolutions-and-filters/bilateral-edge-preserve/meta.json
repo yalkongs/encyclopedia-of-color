@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "convolutions-and-filters/bilateral-edge-preserve",
+  "title": {"en": "Bilateral Filter — Smoothing That Preserves Edges", "ko": "양방향 필터 — 에지를 보존하는 평활화"},
+  "subtitle": {"en": "Spatial Gaussian × intensity Gaussian; σ_s = reach, σ_r = value tolerance — foundation of HDR tone-mapping and skin-smoothing", "ko": "공간 가우시안 × 값 가우시안; σ_s가 반경, σ_r가 값 허용 — HDR 톤매핑·피부 보정 기반"},
+  "description": {"en": "Two-slider σ_s/σ_r control with three-image strip (original, Gaussian, bilateral) and step-edge profile showing edge preservation.", "ko": "σ_s/σ_r 두 슬라이더로 원본·가우시안·양방향 3장 비교와 스텝 에지 프로파일로 에지 보존을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "convolutions-and-filters",
+  "layout": "A", "prerequisites": ["convolutions-and-filters/gaussian-blur-sigma"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Tomasi Manduchi 1998", "section": "Bilateral filter"}],
+  "standards": [], "interaction_count": 2, "learning_paths": ["designers-path"],
+  "seo_keywords": ["bilateral filter", "edge-preserving", "HDR"],
+  "estimated_hours": 8, "status": "shipped"
+}

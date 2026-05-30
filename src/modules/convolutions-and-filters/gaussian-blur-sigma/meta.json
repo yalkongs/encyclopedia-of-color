@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "convolutions-and-filters/gaussian-blur-sigma",
+  "title": {"en": "Gaussian Blur — σ Controls Spatial Smoothing", "ko": "가우시안 블러 — σ로 공간 평활도 조절"},
+  "subtitle": {"en": "2D Gaussian kernel convolved with image; σ sets blur radius. Separable, isotropic — the standard low-pass filter for vision pipelines", "ko": "2D 가우시안 커널 콘볼루션; σ가 블러 반경 결정. 분리 가능·등방성 — 비전 파이프라인 표준 저역 통과"},
+  "description": {"en": "Sigma slider drives Gaussian kernel size with original/blurred image comparison, kernel grid visualisation, and central column profile.", "ko": "σ 슬라이더로 가우시안 커널 크기를 조절하며 원본/블러 비교, 커널 격자, 중앙 열 프로파일을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "convolutions-and-filters",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Szeliski 2010", "section": "Gaussian filter"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Gaussian blur", "convolution", "low-pass filter"],
+  "estimated_hours": 8, "status": "shipped"
+}

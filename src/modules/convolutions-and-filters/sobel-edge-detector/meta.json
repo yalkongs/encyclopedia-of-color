@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "convolutions-and-filters/sobel-edge-detector",
+  "title": {"en": "Sobel — Gradient-Magnitude Edge Detection", "ko": "소벨 — 그래디언트 크기 에지 검출"},
+  "subtitle": {"en": "3×3 Sobel kernels approximate ∂I/∂x and ∂I/∂y; |∇I|=√(Gx²+Gy²) gives orientation-invariant edge map used as Canny seed", "ko": "3×3 소벨 커널이 ∂I/∂x와 ∂I/∂y 근사; |∇I|=√(Gx²+Gy²)가 방향 무관 에지 맵 — Canny 시드"},
+  "description": {"en": "Display toggle picks Gx/Gy/magnitude with original + processed images and Sobel kernel grids showing +1/0/-1 with 1-2-1 smoothing weights.", "ko": "표시 토글로 Gx/Gy/크기를 선택하며 원본·처리 이미지와 +1/0/-1 및 1-2-1 가중치 소벨 커널 격자를 보입니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "convolutions-and-filters",
+  "layout": "A", "prerequisites": ["convolutions-and-filters/gaussian-blur-sigma"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Canny 1986", "section": "Edge detection"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Sobel", "edge detection", "gradient"],
+  "estimated_hours": 8, "status": "shipped"
+}

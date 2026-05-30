@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "convolutions-and-filters/box-filter-average",
+  "title": {"en": "Box Filter — Simple Averaging vs Gaussian", "ko": "박스 필터 — 단순 평균 vs 가우시안"},
+  "subtitle": {"en": "k × k box kernel replaces each pixel with local mean; O(1) per pixel via integral images but visible blocky ringing vs Gaussian's smooth response", "ko": "k × k 박스 커널이 픽셀을 국소 평균으로 대체; 적분 이미지로 픽셀당 O(1)이지만 가우시안 대비 블록 아티팩트"},
+  "description": {"en": "Kernel-size slider compares box and Gaussian at same kernel size with three-image strip showing the ringing difference and box kernel grid.", "ko": "커널 크기 슬라이더로 박스와 가우시안을 같은 커널 크기에서 비교하며 링잉 차이와 박스 커널 격자를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "convolutions-and-filters",
+  "layout": "A", "prerequisites": ["convolutions-and-filters/gaussian-blur-sigma"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Szeliski 2010", "section": "Box filter"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["box filter", "summed area table", "convolution"],
+  "estimated_hours": 8, "status": "shipped"
+}

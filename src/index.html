@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 443 modules across 99 categories -->
+    <!-- 449 modules across 100 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>443 modules</strong> are published across 99 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>449 modules</strong> are published across 100 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -2762,6 +2762,42 @@
         <div class="card-meta">L6 · Reference · Computational Photography</div>
         <div class="card-title">Night Mode — Burst Averaging Reduces Noise by √N</div>
         <div class="card-sub">capture N short-exposure frames and average them per pixel; both Poisson shot noise and Gaussian read noise drop by √N — that's how phones photograph the dark</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Convolutions &amp; Filters</h2>
+      <div class="sub">Domain 11 · Gaussian/box/Sobel/LoG/unsharp/bilateral</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/convolutions-and-filters/bilateral-edge-preserve/">
+        <div class="card-meta">L3 · Reference · Convolutions And Filters</div>
+        <div class="card-title">Bilateral Filter — Smoothing That Preserves Edges</div>
+        <div class="card-sub">Spatial Gaussian × intensity Gaussian; σ_s = reach, σ_r = value tolerance — foundation of HDR tone-mapping and skin-smoothing</div>
+      </a>
+      <a class="module-card" href="./modules/convolutions-and-filters/box-filter-average/">
+        <div class="card-meta">L3 · Reference · Convolutions And Filters</div>
+        <div class="card-title">Box Filter — Simple Averaging vs Gaussian</div>
+        <div class="card-sub">k × k box kernel replaces each pixel with local mean; O(1) per pixel via integral images but visible blocky ringing vs Gaussian's smooth response</div>
+      </a>
+      <a class="module-card" href="./modules/convolutions-and-filters/gaussian-blur-sigma/">
+        <div class="card-meta">L3 · Reference · Convolutions And Filters</div>
+        <div class="card-title">Gaussian Blur — σ Controls Spatial Smoothing</div>
+        <div class="card-sub">2D Gaussian kernel convolved with image; σ sets blur radius. Separable, isotropic — the standard low-pass filter for vision pipelines</div>
+      </a>
+      <a class="module-card" href="./modules/convolutions-and-filters/laplacian-of-gaussian/">
+        <div class="card-meta">L3 · Reference · Convolutions And Filters</div>
+        <div class="card-title">Laplacian of Gaussian — Mexican-Hat Filter</div>
+        <div class="card-sub">LoG = ∇²(G_σ ∗ I); zero-crossings mark edges, peaks mark blobs of radius ≈ σ√2 — foundation of SIFT/SURF blob detection</div>
+      </a>
+      <a class="module-card" href="./modules/convolutions-and-filters/sobel-edge-detector/">
+        <div class="card-meta">L3 · Reference · Convolutions And Filters</div>
+        <div class="card-title">Sobel — Gradient-Magnitude Edge Detection</div>
+        <div class="card-sub">3×3 Sobel kernels approximate ∂I/∂x and ∂I/∂y; |∇I|=√(Gx²+Gy²) gives orientation-invariant edge map used as Canny seed</div>
+      </a>
+      <a class="module-card" href="./modules/convolutions-and-filters/unsharp-mask-sharpening/">
+        <div class="card-meta">L3 · Reference · Convolutions And Filters</div>
+        <div class="card-title">Unsharp Mask — Sharpen by Adding High-Pass</div>
+        <div class="card-sub">out = I + α(I − G_σ ∗ I); α controls strength, σ controls scale — named for 19-th-century darkroom blurred-mask technique</div>
       </a>
       </div>
     </div>

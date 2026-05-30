@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Box Filter — Simple Averaging vs Gaussian — k × k box kernel replaces…</title>
+  <meta name="description" content="Kernel-size slider compares box and Gaussian at same kernel size with three-image strip showing the ringing difference and box kernel grid.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/box-filter-average/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Box Filter — Simple Averaging vs Gaussian">
+  <meta property="og:description"    content="Kernel-size slider compares box and Gaussian at same kernel size with three-image strip showing the ringing difference and box kernel grid.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/box-filter-average/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--box-filter-average.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Box Filter — Simple Averaging vs Gaussian.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Box Filter — Simple Averaging vs Gaussian">
+  <meta name="twitter:description"   content="Kernel-size slider compares box and Gaussian at same kernel size with three-image strip showing the ringing difference and box kernel grid.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--box-filter-average.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Box Filter — Simple Averaging vs Gaussian.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Box Filter — Simple Averaging vs Gaussian","alternateName":"convolutions-and-filters/box-filter-average","description":"Kernel-size slider compares box and Gaussian at same kernel size with three-image strip showing the ringing difference and box kernel grid.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"box filter, summed area table, convolution","url":"https://encyclopedia-of-color.vercel.app/modules/convolutions-and-filters/box-filter-average/","image":"https://encyclopedia-of-color.vercel.app/og/convolutions-and-filters--box-filter-average.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="convolutions-and-filters/box-filter-average">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Box Filter — Simple Averaging</h1>
+    <p class="module-subtitle">k × k box kernel replaces each pixel with the local mean; O(1) per pixel using integral images, but creates blocky artifacts vs Gaussian's smooth fall-off</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Box filter has a flat spectral response — passes some high frequencies that Gaussian suppresses. Result: visible "ringing" at sharp edges and a noticeably square-shaped blur. Used in real-time graphics for cheap blur, and as a building block for separable filters via repeated application.</p>
+      <p class="zone-guide">Slide kernel size k.</p>
+      <enc-slider id="k" label="kernel k (odd)" min="3" max="15" step="2" value="5" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Box filter"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Crow Summed Area Tables 1984; Szeliski Computer Vision 2010"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>
