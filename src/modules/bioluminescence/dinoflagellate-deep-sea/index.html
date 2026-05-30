@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Dinoflagellate Glow — Stress → Blue Flash — Noctiluca and Pyrocystis…</title>
+  <meta name="description" content="Shear-driven bright dot field with threshold (~25 mPa). Time-trace shows the brief ~100 ms pulse. Foundation of historical 'milky seas' phenomena.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/dinoflagellate-deep-sea/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Dinoflagellate Glow — Stress → Blue Flash">
+  <meta property="og:description"    content="Shear-driven bright dot field with threshold (~25 mPa). Time-trace shows the brief ~100 ms pulse. Foundation of historical 'milky seas' phenomena.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/dinoflagellate-deep-sea/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--dinoflagellate-deep-sea.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Dinoflagellate Glow — Stress → Blue Flash.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Dinoflagellate Glow — Stress → Blue Flash">
+  <meta name="twitter:description"   content="Shear-driven bright dot field with threshold (~25 mPa). Time-trace shows the brief ~100 ms pulse. Foundation of historical 'milky seas' phenomena.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--dinoflagellate-deep-sea.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Dinoflagellate Glow — Stress → Blue Flash.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Dinoflagellate Glow — Stress → Blue Flash","alternateName":"bioluminescence/dinoflagellate-deep-sea","description":"Shear-driven bright dot field with threshold (~25 mPa). Time-trace shows the brief ~100 ms pulse. Foundation of historical 'milky seas' phenomena.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"dinoflagellate, bioluminescence, milky sea","url":"https://encyclopedia-of-color.vercel.app/modules/bioluminescence/dinoflagellate-deep-sea/","image":"https://encyclopedia-of-color.vercel.app/og/bioluminescence--dinoflagellate-deep-sea.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="bioluminescence/dinoflagellate-deep-sea">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Dinoflagellate Glow — Mechanical Stress → Blue Flash</h1>
+      <p class="module-subtitle">Noctiluca and Pyrocystis dinoflagellates emit a single bright flash when sheared; the flash propagates along action-potential lines through the cell, fading in ~150 ms</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A swimming fish or breaking wave produces shear stress that opens scintillon membrane proton channels; protonation activates luciferin (a tetrapyrrole) and luciferase, emitting at 470 nm blue. The flash is so brief (~100 ms) and bright (10⁸ photons) that the ocean lights up <em>where it moves</em> — the "milky sea" effect.
+        </p>
+        <p class="zone-guide">
+          Drag mechanical stress. Below threshold no flash; above it the flash brightness saturates quickly. Time-trace shows the millisecond flash profile.
+        </p>
+        <enc-slider id="shear" label="Shear stress (mPa)" min="0" max="100" step="2" value="40" unit=" mPa"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Dinoflagellate"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Johnsen §11 — marine bioluminescence; Latz 2004 dinoflagellate"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

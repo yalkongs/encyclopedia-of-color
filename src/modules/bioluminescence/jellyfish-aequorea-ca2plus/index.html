@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green — aequori…</title>
+  <meta name="description" content="Jellyfish bell glow saturates with Ca²⁺. Toggle GFP coupling to switch emission 470→509 nm. Foundation of Shimomura's Nobel-winning aequorin/GFP discovery.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/jellyfish-aequorea-ca2plus/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green">
+  <meta property="og:description"    content="Jellyfish bell glow saturates with Ca²⁺. Toggle GFP coupling to switch emission 470→509 nm. Foundation of Shimomura's Nobel-winning aequorin/GFP discovery.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/jellyfish-aequorea-ca2plus/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--jellyfish-aequorea-ca2plus.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green">
+  <meta name="twitter:description"   content="Jellyfish bell glow saturates with Ca²⁺. Toggle GFP coupling to switch emission 470→509 nm. Foundation of Shimomura's Nobel-winning aequorin/GFP discovery.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--jellyfish-aequorea-ca2plus.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green","alternateName":"bioluminescence/jellyfish-aequorea-ca2plus","description":"Jellyfish bell glow saturates with Ca²⁺. Toggle GFP coupling to switch emission 470→509 nm. Foundation of Shimomura's Nobel-winning aequorin/GFP discovery.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"aequorin, GFP, jellyfish, Shimomura, calcium","url":"https://encyclopedia-of-color.vercel.app/modules/bioluminescence/jellyfish-aequorea-ca2plus/","image":"https://encyclopedia-of-color.vercel.app/og/bioluminescence--jellyfish-aequorea-ca2plus.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="bioluminescence/jellyfish-aequorea-ca2plus">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green</h1>
+      <p class="module-subtitle">aequorin emits 470 nm blue when Ca²⁺ binds; in the jellyfish, the photon resonance-transfers to the green-fluorescent-protein partner GFP and the animal emits 509 nm green instead</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Osamu Shimomura discovered aequorin (1962) and GFP from Aequorea victoria; Nobel 2008. Aequorin contains coelenterazine + Ca²⁺ binding sites. Free Ca²⁺ binds → conformational change → coelenterazine oxidises → 470 nm blue. In live jellyfish, aequorin and GFP are co-localised; resonance transfer shifts emission to 509 nm green.
+        </p>
+        <p class="zone-guide">
+          Drag [Ca²⁺]. Below threshold (~10⁻⁷ M) nothing; above, brightness saturates. Toggle GFP-coupling on to shift emission from blue to green.
+        </p>
+        <enc-slider id="Ca" label="log [Ca²⁺] (M, ×10⁻⁸)" min="0" max="100" step="2" value="50" unit=""></enc-slider>
+        <enc-toggle id="gfp" label="GFP coupling" options="off,on" value="on"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Aequorea jellyfish"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Shimomura 1962 — aequorin; Tsien 1998 GFP"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

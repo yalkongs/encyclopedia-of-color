@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "bioluminescence/anglerfish-symbiotic-bacteria",
+  "title": {
+    "en": "Anglerfish Lure — Photobacterium Symbiosis",
+    "ko": "아귀 발광 — Photobacterium 공생"
+  },
+  "subtitle": {
+    "en": "deep-sea anglerfish do not glow themselves — they house Photobacterium bacteria in a lure organ; the fish feeds them and the bacteria produce continuous blue light to lure prey",
+    "ko": "심해 아귀는 직접 빛나지 않음 — Photobacterium 세균을 esca에 키워 청색 발광"
+  },
+  "description": {
+    "en": "Anglerfish silhouette with esca lure. O₂ supply controls bacterial light production; fish can dim by restricting flow. Symbiotic mutualism, not self-bioluminescence.",
+    "ko": "Anglerfish silhouette + esca 미끼. O₂ 공급이 세균 발광 제어; 차단으로 dimming. 공생 mutualism."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "bioluminescence",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "Johnsen 2012 §11", "section": "Symbiotic light organs" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["anglerfish", "Photobacterium", "symbiosis", "deep sea"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

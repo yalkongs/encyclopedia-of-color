@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Quorum Sensing — Vibrio Counts Itself — Vibrio fischeri bacteria rele…</title>
+  <meta name="description" content="Flask with bacteria; density slider triggers Hill-switch activation at ~10⁶ cells/mL. Foundation of Bassler's quorum-sensing discovery.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/quorum-sensing-vibrio/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Quorum Sensing — Vibrio Counts Itself">
+  <meta property="og:description"    content="Flask with bacteria; density slider triggers Hill-switch activation at ~10⁶ cells/mL. Foundation of Bassler's quorum-sensing discovery.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/quorum-sensing-vibrio/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--quorum-sensing-vibrio.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Quorum Sensing — Vibrio Counts Itself.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Quorum Sensing — Vibrio Counts Itself">
+  <meta name="twitter:description"   content="Flask with bacteria; density slider triggers Hill-switch activation at ~10⁶ cells/mL. Foundation of Bassler's quorum-sensing discovery.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--quorum-sensing-vibrio.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Quorum Sensing — Vibrio Counts Itself.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Quorum Sensing — Vibrio Counts Itself","alternateName":"bioluminescence/quorum-sensing-vibrio","description":"Flask with bacteria; density slider triggers Hill-switch activation at ~10⁶ cells/mL. Foundation of Bassler's quorum-sensing discovery.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"quorum sensing, Vibrio fischeri, autoinducer, LuxR","url":"https://encyclopedia-of-color.vercel.app/modules/bioluminescence/quorum-sensing-vibrio/","image":"https://encyclopedia-of-color.vercel.app/og/bioluminescence--quorum-sensing-vibrio.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="bioluminescence/quorum-sensing-vibrio">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Quorum Sensing — Vibrio Counts Itself</h1>
+      <p class="module-subtitle">Vibrio fischeri bacteria release autoinducer molecules; only when density crosses a threshold does enough autoinducer bind back, switching luminescence genes on for the whole colony</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Each Vibrio fischeri continuously secretes a small molecule (autoinducer-1, a homoserine lactone). At low density it diffuses away; at high density it accumulates, binds back to the LuxR receptor, activates the lux operon (luciferase + accessory enzymes) — all cells suddenly light up together. Used by the bobtail squid Euprymna for counterillumination camouflage.
+        </p>
+        <p class="zone-guide">
+          Drag bacterial density. Below threshold (~10⁶ cells/mL) no light; above it the entire population switches on sharply.
+        </p>
+        <enc-slider id="den" label="Density (log cells/mL)" min="0" max="100" step="2" value="60" unit=" (×10⁻¹)"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Quorum sensing"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Bassler 1999 — quorum-sensing review"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "bioluminescence/jellyfish-aequorea-ca2plus",
+  "title": {
+    "en": "Aequorea Jellyfish — Ca²⁺-Triggered Blue, GFP-Shifted Green",
+    "ko": "Aequorea 해파리 — Ca²⁺ 청, GFP 녹 전환"
+  },
+  "subtitle": {
+    "en": "aequorin emits 470 nm blue when Ca²⁺ binds; in the jellyfish, the photon resonance-transfers to the green-fluorescent-protein partner GFP and the animal emits 509 nm green instead",
+    "ko": "Aequorin이 Ca²⁺에 결합하면 470 nm 청; GFP로 공명 전달되어 509 nm 녹"
+  },
+  "description": {
+    "en": "Jellyfish bell glow saturates with Ca²⁺. Toggle GFP coupling to switch emission 470→509 nm. Foundation of Shimomura's Nobel-winning aequorin/GFP discovery.",
+    "ko": "Ca²⁺에 따라 jellyfish bell glow 포화. GFP 토글로 470→509 nm 전환. Shimomura Nobel 발견의 기반."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 9,
+  "category": "bioluminescence",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "Shimomura 1962", "section": "Aequorin" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["aequorin", "GFP", "jellyfish", "Shimomura", "calcium"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

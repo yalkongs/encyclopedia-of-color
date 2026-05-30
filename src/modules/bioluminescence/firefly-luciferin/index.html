@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Firefly Luciferin — ATP-Driven Yellow-Green Flash — luciferase oxidis…</title>
+  <meta name="description" content="Firefly abdomen glow scales linearly with ATP. Linearity plot demonstrates how the same enzyme powers food-safety and cell-viability ATP assays.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/firefly-luciferin/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Firefly Luciferin — ATP-Driven Yellow-Green Flash">
+  <meta property="og:description"    content="Firefly abdomen glow scales linearly with ATP. Linearity plot demonstrates how the same enzyme powers food-safety and cell-viability ATP assays.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/bioluminescence/firefly-luciferin/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--firefly-luciferin.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Firefly Luciferin — ATP-Driven Yellow-Green Flash.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Firefly Luciferin — ATP-Driven Yellow-Green Flash">
+  <meta name="twitter:description"   content="Firefly abdomen glow scales linearly with ATP. Linearity plot demonstrates how the same enzyme powers food-safety and cell-viability ATP assays.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/bioluminescence--firefly-luciferin.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Firefly Luciferin — ATP-Driven Yellow-Green Flash.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Firefly Luciferin — ATP-Driven Yellow-Green Flash","alternateName":"bioluminescence/firefly-luciferin","description":"Firefly abdomen glow scales linearly with ATP. Linearity plot demonstrates how the same enzyme powers food-safety and cell-viability ATP assays.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"firefly, luciferin, luciferase, ATP assay","url":"https://encyclopedia-of-color.vercel.app/modules/bioluminescence/firefly-luciferin/","image":"https://encyclopedia-of-color.vercel.app/og/bioluminescence--firefly-luciferin.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="bioluminescence/firefly-luciferin">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.9">D9 Biology</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Firefly Luciferin — ATP-Driven Yellow-Green Flash</h1>
+      <p class="module-subtitle">luciferase oxidises luciferin in the presence of ATP, Mg²⁺, and O₂; the excited oxyluciferin product emits 560 nm; rate is so linear in ATP that fireflies make superb biological ATP meters</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The reaction: luciferin + ATP + O₂ → oxyluciferin* + AMP + PPi + CO₂; oxyluciferin* → oxyluciferin + photon (560 nm). Quantum yield is ~0.41 (very high). Light intensity is linear in [ATP], so the same enzyme is used in clinical assays (cell viability) and contamination tests (food safety, hospitals).
+        </p>
+        <p class="zone-guide">
+          Drag the ATP level. The firefly flash intensity scales linearly; the emission stays the same yellow-green colour throughout.
+        </p>
+        <enc-slider id="ATP" label="ATP concentration (×10⁻⁶ M)" min="0" max="100" step="2" value="50" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Firefly luciferin"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="McElroy 1947 — ATP-dependent firefly luminescence"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

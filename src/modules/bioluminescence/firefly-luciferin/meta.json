@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "bioluminescence/firefly-luciferin",
+  "title": {
+    "en": "Firefly Luciferin — ATP-Driven Yellow-Green Flash",
+    "ko": "반딧불 루시페린 — ATP 의존 황록 발광"
+  },
+  "subtitle": {
+    "en": "luciferase oxidises luciferin in the presence of ATP, Mg²⁺, and O₂; the excited oxyluciferin product emits 560 nm; rate is so linear in ATP that fireflies make superb biological ATP meters",
+    "ko": "Luciferase가 luciferin을 ATP·Mg²⁺·O₂로 산화 → oxyluciferin*이 560 nm 방출; ATP에 선형이라 생물학 ATP 미터"
+  },
+  "description": {
+    "en": "Firefly abdomen glow scales linearly with ATP. Linearity plot demonstrates how the same enzyme powers food-safety and cell-viability ATP assays.",
+    "ko": "반딧불 복부 glow가 ATP에 선형. 선형성 플롯이 식품 안전·세포 viability 분석의 원리 표시."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "bioluminescence",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "McElroy 1947", "section": "ATP requirement" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["firefly", "luciferin", "luciferase", "ATP assay"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
