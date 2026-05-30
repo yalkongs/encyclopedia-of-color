@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "language-color-evolution/sapir-whorf-quiz",
+  "title": {"en": "Sapir-Whorf: Russian Blues — Goluboy vs Siniy", "ko": "사피어-워프: 러시아 블루 — goluboy vs siniy"},
+  "subtitle": {"en": "Russian has two basic words for blue (siniy = dark, goluboy = light); Winawer 2007 showed Russian speakers discriminate cross-category pairs faster than within-category — language tweaks perception", "ko": "러시아어는 청색에 두 기본어(siniy/goluboy); Winawer 2007이 cross-cat 식별 빠름 — 언어가 지각 조정"},
+  "description": {"en": "Hue slider crosses the siniy/goluboy boundary at ~225°. Cross-category pairs are discriminated ~10% faster by Russian speakers.", "ko": "색조 슬라이더가 ~225° siniy/goluboy 경계 통과. 러시아 화자는 cross-cat 쌍 ~10% 빠름."},
+  "tier": "reference", "bloom_level": "L4", "domain": 8, "category": "language-color-evolution",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [{"source": "Winawer 2007", "section": "Russian blues"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Sapir-Whorf", "Russian blue", "linguistic relativity"],
+  "estimated_hours": 10, "status": "shipped"
+}

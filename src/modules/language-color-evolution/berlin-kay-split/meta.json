@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "language-color-evolution/berlin-kay-split",
+  "title": {"en": "Berlin-Kay 11-Step Colour Term Evolution", "ko": "베를린-케이 11단계 색명 진화"},
+  "subtitle": {"en": "Berlin & Kay (1969) showed colour terms enter a language in a near-universal order — black/white → red → green/yellow → blue → brown → purple/pink/orange/grey", "ko": "B&K(1969)는 색명이 언어에 거의 보편적 순서로 진입한다고 보였다"},
+  "description": {"en": "Stage slider expands the vocabulary; greyed terms are not yet present at the chosen stage. Universal ordering across 98 languages.", "ko": "단계 슬라이더가 어휘 확장; 회색 용어는 해당 단계에 없음. 98 언어 보편 순서."},
+  "tier": "reference", "bloom_level": "L4", "domain": 8, "category": "language-color-evolution",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [{"source": "Berlin & Kay 1969", "section": "Basic colour terms"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Berlin Kay", "color terms", "linguistics"],
+  "estimated_hours": 10, "status": "shipped"
+}

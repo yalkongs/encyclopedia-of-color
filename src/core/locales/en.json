@@ -24,8 +24,11 @@
   "domain.5": "D5 Design",
   "domain.6": "D6 Display",
   "domain.7": "D7 Print",
+  "domain.8": "D8 Anthropology",
   "domain.9": "D9 Biology",
   "domain.10": "D10 Imaging",
+  "domain.11": "D11 Computational",
+  "domain.12": "D12 Psychology",
 
   "bloom.L1": "L1 Identify",
   "bloom.L2": "L2 Understand",

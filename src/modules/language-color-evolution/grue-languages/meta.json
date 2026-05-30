@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "language-color-evolution/grue-languages",
+  "title": {"en": "Grue Languages — Blue and Green Share a Word", "ko": "그루 언어 — 청·녹 미분화"},
+  "subtitle": {"en": "many languages cover blue and green with one term — 'grue'; the split into separate words is the Berlin-Kay stage V transition", "ko": "많은 언어가 청·녹을 단일어로 — Welsh glas, Vietnamese xanh, Tarahumara siyóname"},
+  "description": {"en": "Welsh 'glas' applies to both grass and sky; English splits them. Toggle to compare.", "ko": "Welsh 'glas'는 grass와 sky 모두; English는 분리. 토글로 비교."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "language-color-evolution",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [],
+  "textbook_refs": [{"source": "Heider 1972", "section": "Grue"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["grue", "Welsh glas", "color terms"],
+  "estimated_hours": 8, "status": "shipped"
+}

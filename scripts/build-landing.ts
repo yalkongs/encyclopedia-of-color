@@ -123,6 +123,26 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'structural-color-bio':         { title: 'Structural Colour (Bio)', sub: 'Domain 9 · morpho, peacock, beetle cholesteric, opal, nacre' },
   'human-skin-melanin':           { title: 'Human Skin Melanin',      sub: 'Domain 9 · eu/pheo melanin, Fitzpatrick, age yellowing' },
   'plant-colors':                 { title: 'Plant Colours',           sub: 'Domain 9 · anthocyanin pH, betacyanin, flavonoid UV' },
+  // Domain 8
+  'language-color-evolution':     { title: 'Language & Colour',        sub: 'Domain 8 · Berlin-Kay, Sapir-Whorf, grue, Homer' },
+  'ancient-pigment-chemistry':    { title: 'Ancient Pigments',         sub: 'Domain 8 · Tyrian purple, madder, cochineal, sepia' },
+  'indigo-oxidation':             { title: 'Indigo Oxidation',         sub: 'Domain 8 · leuco beaker, oxidation timeline' },
+  'synthetic-dye-history':        { title: 'Synthetic Dye History',    sub: 'Domain 8 · Perkin mauveine, Prussian blue, IG Farben' },
+  'ancient-mineral-pigments':     { title: 'Ancient Mineral Pigments', sub: 'Domain 8 · Egyptian blue, lapis, vermilion, Maya blue' },
+  'color-in-religion-and-politics': { title: 'Colour in Religion & Politics', sub: 'Domain 8 · imperial purple, cardinals, Virgin blue' },
+  // Domain 11
+  'convolutions-and-filters':     { title: 'Convolutions & Filters',   sub: 'Domain 11 · Gaussian/box/Sobel/LoG/unsharp/bilateral' },
+  'color-quantization':           { title: 'Colour Quantization',      sub: 'Domain 11 · median cut, k-means Lab, octree' },
+  'dithering':                    { title: 'Dithering',                sub: 'Domain 11 · Floyd-Steinberg, Atkinson, Bayer, blue noise' },
+  'color-segmentation-and-cv':    { title: 'Colour Segmentation & CV', sub: 'Domain 11 · GrabCut, SLIC, chroma key' },
+  'color-compression':            { title: 'Colour Compression',       sub: 'Domain 11 · JPEG 4:2:0, DXT/BC, AVIF' },
+  'color-and-ml':                 { title: 'Colour & ML',              sub: 'Domain 11 · CNN colourisation, style transfer' },
+  // Domain 12
+  'attention-and-perception':     { title: 'Attention & Perception',   sub: 'Domain 12 · Stroop, pop-out search, inattentional blindness' },
+  'color-and-emotion':            { title: 'Colour & Emotion',         sub: 'Domain 12 · red arousal, blue calm, cross-culture, season' },
+  'marketing-and-branding':       { title: 'Marketing & Branding',     sub: 'Domain 12 · brand recall, CTA A/B, packaging, menu' },
+  'synesthesia-and-cross-modal':  { title: 'Synesthesia & Cross-modal', sub: 'Domain 12 · grapheme-colour, chromesthesia, bouba-kiki' },
+  'color-and-memory-cognition':   { title: 'Colour & Memory',          sub: 'Domain 12 · memory shift, landmarks, warnings, passwords' },
 };
 
 const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
@@ -284,7 +304,19 @@ async function main() {
     'non-human-vision', 'chromatophores', 'structural-color-bio',
     'human-skin-melanin', 'plant-colors',
   ];
-  const known = [...D1_ORDER, ...D2_ORDER, ...D3_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER, ...D9_ORDER, ...D10_ORDER];
+  const D8_ORDER = [
+    'language-color-evolution', 'ancient-pigment-chemistry', 'indigo-oxidation',
+    'synthetic-dye-history', 'ancient-mineral-pigments', 'color-in-religion-and-politics',
+  ];
+  const D11_ORDER = [
+    'convolutions-and-filters', 'color-quantization', 'dithering',
+    'color-segmentation-and-cv', 'color-compression', 'color-and-ml',
+  ];
+  const D12_ORDER = [
+    'attention-and-perception', 'color-and-emotion', 'marketing-and-branding',
+    'synesthesia-and-cross-modal', 'color-and-memory-cognition',
+  ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D3_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER, ...D8_ORDER, ...D9_ORDER, ...D10_ORDER, ...D11_ORDER, ...D12_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
@@ -293,8 +325,11 @@ async function main() {
     ...D5_ORDER.filter((c) => byCategory.has(c)),
     ...D6_ORDER.filter((c) => byCategory.has(c)),
     ...D7_ORDER.filter((c) => byCategory.has(c)),
+    ...D8_ORDER.filter((c) => byCategory.has(c)),
     ...D9_ORDER.filter((c) => byCategory.has(c)),
     ...D10_ORDER.filter((c) => byCategory.has(c)),
+    ...D11_ORDER.filter((c) => byCategory.has(c)),
+    ...D12_ORDER.filter((c) => byCategory.has(c)),
     ...[...byCategory.keys()].filter((c) => !known.includes(c)).sort(),
   ];
 
