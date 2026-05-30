@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-quantization/kmeans-lab-clustering",
+  "title": {"en": "K-Means in Lab — Perceptual Palette", "ko": "Lab K-평균 — 지각 팔레트"},
+  "subtitle": {"en": "Cluster image pixels in Lab where ΔE ≈ JND; centroids align with human perception better than RGB k-means", "ko": "Lab 공간에서 픽셀을 클러스터링 — ΔE가 JND에 근사해 RGB k-평균보다 지각 정렬 우수"},
+  "description": {"en": "Cluster-count slider runs 6-iter Lab k-means with image comparison and perceptual centroid palette display.", "ko": "클러스터 수 슬라이더로 6회 반복 Lab k-평균과 이미지 비교, 지각 중심 팔레트를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-quantization",
+  "layout": "A", "prerequisites": ["color-quantization/median-cut-palette"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Lloyd 1957", "section": "K-means"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["k-means", "Lab", "perceptual quantization"],
+  "estimated_hours": 8, "status": "shipped"
+}

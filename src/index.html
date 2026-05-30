@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 449 modules across 100 categories -->
+    <!-- 453 modules across 101 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>449 modules</strong> are published across 100 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>453 modules</strong> are published across 101 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -2798,6 +2798,32 @@
         <div class="card-meta">L3 · Reference · Convolutions And Filters</div>
         <div class="card-title">Unsharp Mask — Sharpen by Adding High-Pass</div>
         <div class="card-sub">out = I + α(I − G_σ ∗ I); α controls strength, σ controls scale — named for 19-th-century darkroom blurred-mask technique</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Colour Quantization</h2>
+      <div class="sub">Domain 11 · median cut, k-means Lab, octree</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/color-quantization/kmeans-lab-clustering/">
+        <div class="card-meta">L3 · Reference · Color Quantization</div>
+        <div class="card-title">K-Means in Lab — Perceptual Palette</div>
+        <div class="card-sub">Cluster image pixels in Lab where ΔE ≈ JND; centroids align with human perception better than RGB k-means</div>
+      </a>
+      <a class="module-card" href="./modules/color-quantization/median-cut-palette/">
+        <div class="card-meta">L3 · Reference · Color Quantization</div>
+        <div class="card-title">Median-Cut — Heckbert's Adaptive Palette (1982)</div>
+        <div class="card-sub">Recursively split colour-cube along longest axis at median pixel count; GIF's canonical quantizer adapts to image content</div>
+      </a>
+      <a class="module-card" href="./modules/color-quantization/octree-color-quant/">
+        <div class="card-meta">L3 · Reference · Color Quantization</div>
+        <div class="card-title">Octree — Tree-Structured Streamable Quantizer</div>
+        <div class="card-sub">Gervautz-Purgathofer 1988: insert each pixel into RGB octree, merge least-populated leaves bottom-up; O(N + log k) streamable</div>
+      </a>
+      <a class="module-card" href="./modules/color-quantization/uniform-grid-quantizer/">
+        <div class="card-meta">L3 · Reference · Color Quantization</div>
+        <div class="card-title">Uniform Grid Quantization — n³ Palette</div>
+        <div class="card-sub">Divide each RGB channel into n levels; 216-colour 6³ web-safe palette is the canonical example used by 8-bit indexed colour</div>
       </a>
       </div>
     </div>

@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-quantization/median-cut-palette",
+  "title": {"en": "Median-Cut — Heckbert's Adaptive Palette (1982)", "ko": "메디안 컷 — 헤커트의 적응형 팔레트 (1982)"},
+  "subtitle": {"en": "Recursively split colour-cube along longest axis at median pixel count; GIF's canonical quantizer adapts to image content", "ko": "색공간 박스를 가장 긴 축에서 중간 픽셀로 재귀 분할; GIF 표준 양자화기로 이미지에 적응"},
+  "description": {"en": "Palette size k slider drives median-cut output with adapted palette display and original/quantized image comparison.", "ko": "팔레트 k 슬라이더로 메디안 컷 출력과 적응 팔레트, 원본/양자화 이미지 비교를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-quantization",
+  "layout": "A", "prerequisites": ["color-quantization/uniform-grid-quantizer"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Heckbert 1982", "section": "Median cut"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["median cut", "GIF quantization", "Heckbert"],
+  "estimated_hours": 8, "status": "shipped"
+}

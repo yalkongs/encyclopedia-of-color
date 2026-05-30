@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Octree — Tree-Structured Streamable Quantizer — Gervautz-Purgathofer…</title>
+  <meta name="description" content="Depth slider drives bit-truncation visualisation with nested-grid cube levels showing 1/8/64/512 bins and palette display.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-quantization/octree-color-quant/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Octree — Tree-Structured Streamable Quantizer">
+  <meta property="og:description"    content="Depth slider drives bit-truncation visualisation with nested-grid cube levels showing 1/8/64/512 bins and palette display.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-quantization/octree-color-quant/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-quantization--octree-color-quant.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Octree — Tree-Structured Streamable Quantizer.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Octree — Tree-Structured Streamable Quantizer">
+  <meta name="twitter:description"   content="Depth slider drives bit-truncation visualisation with nested-grid cube levels showing 1/8/64/512 bins and palette display.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-quantization--octree-color-quant.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Octree — Tree-Structured Streamable Quantizer.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Octree — Tree-Structured Streamable Quantizer","alternateName":"color-quantization/octree-color-quant","description":"Depth slider drives bit-truncation visualisation with nested-grid cube levels showing 1/8/64/512 bins and palette display.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"octree, quantization, streamable","url":"https://encyclopedia-of-color.vercel.app/modules/color-quantization/octree-color-quant/","image":"https://encyclopedia-of-color.vercel.app/og/color-quantization--octree-color-quant.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-quantization/octree-color-quant">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Octree Quantization — Tree-Structured Palette</h1>
+    <p class="module-subtitle">Insert each pixel into an 8-child tree by bit-plane; merge leaves bottom-up until at most k leaves remain; O(N + log k) and streamable</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Gervautz-Purgathofer (1988) RGB octree: each level tests one bit of R, G, B → 8 children. After inserting all pixels, repeatedly merge the least-populated leaf into its parent until ≤ k leaves. Streamable: works on video frames in real time, used in early Java AWT and some DNG tools.</p>
+      <p class="zone-guide">Slide bit-depth (= tree depth). Shallow = blocky, deep = closer to truecolor.</p>
+      <enc-slider id="d" label="depth (bits per channel)" min="2" max="7" step="1" value="4" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Octree"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Gervautz Purgathofer 1988 Octree; Heckbert 1982 Quantization"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

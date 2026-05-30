@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-quantization/octree-color-quant",
+  "title": {"en": "Octree — Tree-Structured Streamable Quantizer", "ko": "옥트리 — 트리 구조 스트리밍 양자화기"},
+  "subtitle": {"en": "Gervautz-Purgathofer 1988: insert each pixel into RGB octree, merge least-populated leaves bottom-up; O(N + log k) streamable", "ko": "Gervautz-Purgathofer 1988: 픽셀을 RGB 옥트리에 삽입, 가장 적은 리프를 상향 병합; O(N + log k) 스트리밍 가능"},
+  "description": {"en": "Depth slider drives bit-truncation visualisation with nested-grid cube levels showing 1/8/64/512 bins and palette display.", "ko": "깊이 슬라이더로 비트 절단 시각화와 1/8/64/512 빈 중첩 격자 큐브 레벨, 팔레트를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-quantization",
+  "layout": "A", "prerequisites": ["color-quantization/uniform-grid-quantizer"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Gervautz Purgathofer 1988", "section": "Octree"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["octree", "quantization", "streamable"],
+  "estimated_hours": 8, "status": "shipped"
+}

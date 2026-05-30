@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Uniform Grid Quantization — n³ Palette — Divide each RGB channel into…</title>
+  <meta name="description" content="Levels-per-channel slider gives n³ palette and quantized image with original vs quantized comparison and used-palette display.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-quantization/uniform-grid-quantizer/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Uniform Grid Quantization — n³ Palette">
+  <meta property="og:description"    content="Levels-per-channel slider gives n³ palette and quantized image with original vs quantized comparison and used-palette display.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-quantization/uniform-grid-quantizer/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-quantization--uniform-grid-quantizer.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Uniform Grid Quantization — n³ Palette.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Uniform Grid Quantization — n³ Palette">
+  <meta name="twitter:description"   content="Levels-per-channel slider gives n³ palette and quantized image with original vs quantized comparison and used-palette display.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-quantization--uniform-grid-quantizer.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Uniform Grid Quantization — n³ Palette.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Uniform Grid Quantization — n³ Palette","alternateName":"color-quantization/uniform-grid-quantizer","description":"Levels-per-channel slider gives n³ palette and quantized image with original vs quantized comparison and used-palette display.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"uniform quantization, web-safe palette, 8-bit indexed","url":"https://encyclopedia-of-color.vercel.app/modules/color-quantization/uniform-grid-quantizer/","image":"https://encyclopedia-of-color.vercel.app/og/color-quantization--uniform-grid-quantizer.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-quantization/uniform-grid-quantizer">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Uniform Grid Quantization — n³ Palette</h1>
+    <p class="module-subtitle">Divide each RGB channel into n levels giving an n³ palette; simplest quantizer, used by 8-bit indexed colour (216-colour web-safe palette = 6³)</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Web-safe palette (1996 Netscape) = uniform 6×6×6 = 216 colours, leaving 40 system entries. Posterisation artifact is severe in gradients but fast and dictionary-free. Modern variants use perceptually weighted spacing in Lab to reduce visible banding.</p>
+      <p class="zone-guide">Slide levels-per-channel.</p>
+      <enc-slider id="n" label="levels per channel" min="2" max="8" step="1" value="4" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Uniform grid"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Heckbert 1982 Color Quantization; Gonzalez DIP 2008"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

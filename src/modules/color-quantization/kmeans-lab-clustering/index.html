@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>K-Means in Lab — Perceptual Palette — Cluster image pixels in Lab whe…</title>
+  <meta name="description" content="Cluster-count slider runs 6-iter Lab k-means with image comparison and perceptual centroid palette display.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-quantization/kmeans-lab-clustering/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="K-Means in Lab — Perceptual Palette">
+  <meta property="og:description"    content="Cluster-count slider runs 6-iter Lab k-means with image comparison and perceptual centroid palette display.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-quantization/kmeans-lab-clustering/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-quantization--kmeans-lab-clustering.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: K-Means in Lab — Perceptual Palette.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="K-Means in Lab — Perceptual Palette">
+  <meta name="twitter:description"   content="Cluster-count slider runs 6-iter Lab k-means with image comparison and perceptual centroid palette display.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-quantization--kmeans-lab-clustering.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: K-Means in Lab — Perceptual Palette.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"K-Means in Lab — Perceptual Palette","alternateName":"color-quantization/kmeans-lab-clustering","description":"Cluster-count slider runs 6-iter Lab k-means with image comparison and perceptual centroid palette display.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"k-means, Lab, perceptual quantization","url":"https://encyclopedia-of-color.vercel.app/modules/color-quantization/kmeans-lab-clustering/","image":"https://encyclopedia-of-color.vercel.app/og/color-quantization--kmeans-lab-clustering.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-quantization/kmeans-lab-clustering">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">K-Means in Lab — Perceptually Tuned Palette</h1>
+    <p class="module-subtitle">Run k-means on Lab coordinates; ΔE distances approximate perceived colour difference, so cluster centroids align better with what humans see</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">RGB Euclidean distance does not match perception — equally far RGB pairs can look very different. Lab is engineered so that ΔE ≈ JND. K-means converges to local minima of WCSS (within-cluster sum-of-squares); deterministic init (evenly-spaced pixels) keeps results stable across runs.</p>
+      <p class="zone-guide">Slide cluster count k.</p>
+      <enc-slider id="k" label="clusters k" min="2" max="32" step="1" value="8" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="K-means"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Lloyd 1957 K-means; CIE 15 2018 Lab"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

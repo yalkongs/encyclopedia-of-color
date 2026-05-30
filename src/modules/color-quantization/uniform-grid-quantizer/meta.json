@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-quantization/uniform-grid-quantizer",
+  "title": {"en": "Uniform Grid Quantization — n³ Palette", "ko": "균일 격자 양자화 — n³ 팔레트"},
+  "subtitle": {"en": "Divide each RGB channel into n levels; 216-colour 6³ web-safe palette is the canonical example used by 8-bit indexed colour", "ko": "각 RGB 채널을 n레벨로 분할; 216색 6³ 웹세이프 팔레트가 8비트 인덱스 컬러의 대표 예"},
+  "description": {"en": "Levels-per-channel slider gives n³ palette and quantized image with original vs quantized comparison and used-palette display.", "ko": "채널당 레벨 슬라이더로 n³ 팔레트와 양자화 이미지, 원본 비교, 사용된 팔레트를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-quantization",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Heckbert 1982", "section": "Uniform quantization"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["uniform quantization", "web-safe palette", "8-bit indexed"],
+  "estimated_hours": 8, "status": "shipped"
+}
