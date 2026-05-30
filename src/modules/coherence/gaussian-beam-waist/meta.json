@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "coherence/gaussian-beam-waist",
+  "title": {"en": "Gaussian Beam Waist — TEM₀₀ Mode Evolution", "ko": "가우시안 빔 허리 — TEM₀₀ 모드 진화"},
+  "subtitle": {"en": "TEM₀₀: waist w₀, Rayleigh range z_R = πw₀²/λ, w(z) = w₀√(1+(z/z_R)²), far-field θ = λ/(πw₀); tighter focus → faster divergence", "ko": "TEM₀₀: 허리 w₀, 레일리 범위 z_R = πw₀²/λ, w(z) = w₀√(1+(z/z_R)²); 좁은 초점 → 빠른 발산"},
+  "description": {"en": "Waist slider drives Gaussian beam envelope with intensity heat-map, ±z_R markers, and far-field divergence cone overlay.", "ko": "허리 슬라이더로 가우시안 빔 외피와 강도 히트맵, ±z_R 마커, 원거리장 발산 원뿔을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "coherence",
+  "layout": "A", "prerequisites": ["modern-optics/laser-cavity-gain"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Siegman 1986", "section": "Gaussian beams"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Gaussian beam", "Rayleigh range", "TEM00"],
+  "estimated_hours": 8, "status": "shipped"
+}

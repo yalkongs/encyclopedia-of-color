@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Michelson Stellar Interferometer — Star Diameter via Visibility — Two…</title>
+  <meta name="description" content="Baseline slider drives visibility curve for uniform-disk star with schematic two-mirror interferometer and live fringe pattern washing out at zero.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/coherence/michelson-stellar-interferometer/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Michelson Stellar Interferometer — Star Diameter via Visibility">
+  <meta property="og:description"    content="Baseline slider drives visibility curve for uniform-disk star with schematic two-mirror interferometer and live fringe pattern washing out at zero.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/coherence/michelson-stellar-interferometer/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/coherence--michelson-stellar-interferometer.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Michelson Stellar Interferometer — Star Diameter via Visibility.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Michelson Stellar Interferometer — Star Diameter via Visibility">
+  <meta name="twitter:description"   content="Baseline slider drives visibility curve for uniform-disk star with schematic two-mirror interferometer and live fringe pattern washing out at zero.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/coherence--michelson-stellar-interferometer.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Michelson Stellar Interferometer — Star Diameter via Visibility.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Michelson Stellar Interferometer — Star Diameter via Visibility","alternateName":"coherence/michelson-stellar-interferometer","description":"Baseline slider drives visibility curve for uniform-disk star with schematic two-mirror interferometer and live fringe pattern washing out at zero.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"stellar interferometer, Michelson, Betelgeuse","url":"https://encyclopedia-of-color.vercel.app/modules/coherence/michelson-stellar-interferometer/","image":"https://encyclopedia-of-color.vercel.app/og/coherence--michelson-stellar-interferometer.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="coherence/michelson-stellar-interferometer">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Michelson Stellar Interferometer — Star Diameter via Visibility</h1>
+    <p class="module-subtitle">Two mirrors separated by baseline B sample the star's spatial-coherence function; first visibility zero at B = 1.22 λ/θ gives the angular diameter directly</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Van Cittert-Zernike theorem: spatial coherence of starlight at the ground is the Fourier transform of the brightness distribution. Michelson (1920) measured Betelgeuse's diameter (47 mas) with a 6 m baseline at 575 nm. CHARA array reaches sub-mas resolution today.</p>
+      <p class="zone-guide">Slide baseline B; fringes wash out at first visibility zero.</p>
+      <enc-slider id="b" label="baseline B (m)" min="1" max="30" step="0.2" value="6" unit="m"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Stellar interferometer"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Michelson 1921 Betelgeuse; Born Wolf 1999"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

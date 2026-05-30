@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "coherence/michelson-stellar-interferometer",
+  "title": {"en": "Michelson Stellar Interferometer — Star Diameter via Visibility", "ko": "마이켈슨 항성 간섭계 — 가시도로 항성 직경"},
+  "subtitle": {"en": "Two mirrors at baseline B sample spatial coherence; first visibility zero at B = 1.22 λ/θ → angular diameter; Michelson Betelgeuse 47 mas 1921", "ko": "베이스라인 B 두 거울이 공간 가간섭 샘플; 첫 영점 B = 1.22 λ/θ → 각직경; 마이켈슨 베텔게우스 47 mas 1921"},
+  "description": {"en": "Baseline slider drives visibility curve for uniform-disk star with schematic two-mirror interferometer and live fringe pattern washing out at zero.", "ko": "베이스라인 슬라이더로 균일 원반 항성의 가시도 곡선, 두 거울 간섭계 도식, 영점에서 사라지는 간섭무늬를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "coherence",
+  "layout": "A", "prerequisites": ["coherence/spatial-coherence"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Michelson 1921", "section": "Stellar interferometry"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["stellar interferometer", "Michelson", "Betelgeuse"],
+  "estimated_hours": 8, "status": "shipped"
+}

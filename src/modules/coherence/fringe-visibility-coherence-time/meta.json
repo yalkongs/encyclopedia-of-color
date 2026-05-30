@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "coherence/fringe-visibility-coherence-time",
+  "title": {"en": "Fringe Visibility vs Coherence Time — Laser, LED, Sunlight", "ko": "간섭무늬 가시도 vs 가간섭 시간 — 레이저·LED·태양"},
+  "subtitle": {"en": "L_c = c·λ²/Δλ; HeNe laser ~36 cm, LED ~30 μm, sunlight ~1 μm; visibility V = |sinc(πΔ/L_c)| for rectangular spectrum", "ko": "L_c = c·λ²/Δλ; HeNe ~36 cm, LED ~30 μm, 태양 ~1 μm; 직사각 스펙트럼에서 V = |sinc(πΔ/L_c)|"},
+  "description": {"en": "Source-and-path-difference sliders drive live Michelson-fringe colour pattern with V(Δ) log-x curves comparing three sources spanning 6 orders of magnitude.", "ko": "소스와 경로차 슬라이더로 실시간 마이켈슨 간섭무늬와 6 자릿수 범위의 세 소스 V(Δ) 로그 곡선을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "coherence",
+  "layout": "A", "prerequisites": ["coherence/temporal-coherence"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Mandel Wolf 1995", "section": "Coherence time"}],
+  "standards": [], "interaction_count": 2, "learning_paths": ["designers-path"],
+  "seo_keywords": ["coherence time", "fringe visibility", "OCT"],
+  "estimated_hours": 8, "status": "shipped"
+}

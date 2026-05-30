@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Gaussian Beam Waist — TEM₀₀ Mode Evolution — TEM₀₀: waist w₀, Rayleig…</title>
+  <meta name="description" content="Waist slider drives Gaussian beam envelope with intensity heat-map, ±z_R markers, and far-field divergence cone overlay.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/coherence/gaussian-beam-waist/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Gaussian Beam Waist — TEM₀₀ Mode Evolution">
+  <meta property="og:description"    content="Waist slider drives Gaussian beam envelope with intensity heat-map, ±z_R markers, and far-field divergence cone overlay.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/coherence/gaussian-beam-waist/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/coherence--gaussian-beam-waist.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Gaussian Beam Waist — TEM₀₀ Mode Evolution.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Gaussian Beam Waist — TEM₀₀ Mode Evolution">
+  <meta name="twitter:description"   content="Waist slider drives Gaussian beam envelope with intensity heat-map, ±z_R markers, and far-field divergence cone overlay.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/coherence--gaussian-beam-waist.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Gaussian Beam Waist — TEM₀₀ Mode Evolution.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gaussian Beam Waist — TEM₀₀ Mode Evolution","alternateName":"coherence/gaussian-beam-waist","description":"Waist slider drives Gaussian beam envelope with intensity heat-map, ±z_R markers, and far-field divergence cone overlay.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Gaussian beam, Rayleigh range, TEM00","url":"https://encyclopedia-of-color.vercel.app/modules/coherence/gaussian-beam-waist/","image":"https://encyclopedia-of-color.vercel.app/og/coherence--gaussian-beam-waist.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="coherence/gaussian-beam-waist">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Gaussian Beam Waist — TEM₀₀ Mode Evolution</h1>
+    <p class="module-subtitle">Laser TEM₀₀ beam: waist w₀, Rayleigh range z_R = πw₀²/λ; beam expands as w(z) = w₀√(1+(z/z_R)²), far-field divergence θ = λ/(πw₀)</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">A tighter focus (smaller w₀) gives shorter Rayleigh range and faster divergence — the diffraction-limit trade-off. Used in laser cutting, optical tweezers, fibre coupling. Beam-parameter product M² ≥ 1 quantifies how close a real beam is to ideal TEM₀₀.</p>
+      <p class="zone-guide">Slide waist w₀ at 633 nm.</p>
+      <enc-slider id="w" label="waist w₀ (μm)" min="5" max="200" step="1" value="40" unit="μm"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Gaussian beam"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Siegman Lasers 1986; Saleh Teich Photonics 2007"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

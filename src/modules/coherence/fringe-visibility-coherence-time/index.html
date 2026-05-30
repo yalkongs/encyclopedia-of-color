@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Fringe Visibility vs Coherence Time — Laser, LED, Sunlight — L_c = c·…</title>
+  <meta name="description" content="Source-and-path-difference sliders drive live Michelson-fringe colour pattern with V(Δ) log-x curves comparing three sources spanning 6 orders of magnitude.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/coherence/fringe-visibility-coherence-time/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Fringe Visibility vs Coherence Time — Laser, LED, Sunlight">
+  <meta property="og:description"    content="Source-and-path-difference sliders drive live Michelson-fringe colour pattern with V(Δ) log-x curves comparing three sources spanning 6 orders of magnitude.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/coherence/fringe-visibility-coherence-time/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/coherence--fringe-visibility-coherence-time.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Fringe Visibility vs Coherence Time — Laser, LED, Sunlight.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Fringe Visibility vs Coherence Time — Laser, LED, Sunlight">
+  <meta name="twitter:description"   content="Source-and-path-difference sliders drive live Michelson-fringe colour pattern with V(Δ) log-x curves comparing three sources spanning 6 orders of magnitude.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/coherence--fringe-visibility-coherence-time.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Fringe Visibility vs Coherence Time — Laser, LED, Sunlight.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Fringe Visibility vs Coherence Time — Laser, LED, Sunlight","alternateName":"coherence/fringe-visibility-coherence-time","description":"Source-and-path-difference sliders drive live Michelson-fringe colour pattern with V(Δ) log-x curves comparing three sources spanning 6 orders of magnitude.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"coherence time, fringe visibility, OCT","url":"https://encyclopedia-of-color.vercel.app/modules/coherence/fringe-visibility-coherence-time/","image":"https://encyclopedia-of-color.vercel.app/og/coherence--fringe-visibility-coherence-time.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="coherence/fringe-visibility-coherence-time">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Fringe Visibility vs Coherence Time — Laser, LED, Sunlight</h1>
+    <p class="module-subtitle">Coherence length L_c = c·τ_c ≈ c·λ²/Δλ; HeNe laser ~30 cm, LED ~30 µm, sunlight ~1 µm — fringes disappear when arm imbalance exceeds L_c</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Three classic sources at 600 nm: HeNe laser Δλ ≈ 0.001 nm → L_c ~36 cm; red LED Δλ ≈ 12 nm → L_c ~30 µm; sunlight Δλ ≈ 350 nm → L_c ~1 µm. Visibility V = sinc(πΔ/L_c) for rectangular spectrum.</p>
+      <p class="zone-guide">Toggle source + slide path-difference Δ.</p>
+      <enc-slider id="src" label="source (1=laser · 2=LED · 3=sun)" min="1" max="3" step="1" value="2" unit=""></enc-slider>
+      <enc-slider id="d" label="path difference Δ (μm)" min="0" max="500" step="1" value="30" unit="μm"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Coherence time"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Mandel Wolf Optical Coherence 1995; Hecht 2017"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>
