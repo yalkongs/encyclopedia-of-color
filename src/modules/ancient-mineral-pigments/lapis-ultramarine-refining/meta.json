@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-mineral-pigments/lapis-ultramarine-refining",
+  "title": {"en": "Lapis Ultramarine — Cennini's Three Washes", "ko": "라피스 울트라마린 — 첸니니 3 세척"},
+  "subtitle": {"en": "Cennini's 1390 pasta-leaching recipe separates lapis dust into 3 grades; lazurite's S₃⁻ radical in a sodalite cage gives the colour", "ko": "첸니니 1390 파스타 침출법으로 라피스 가루를 3등급 분리; 라주라이트 S₃⁻ 라디칼이 발색"},
+  "description": {"en": "Wash selector picks 1-3 with pots, mantle swatch, and sodalite cage schematic showing the S₃⁻ radical anion colour centre.", "ko": "세척 선택으로 1-3 등급, 천 색, S₃⁻ 라디칼 색 중심 도식을 보여줍니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "ancient-mineral-pigments",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [8],
+  "textbook_refs": [{"source": "Plesters 1966", "section": "Ultramarine"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["ultramarine", "lazurite", "Cennini"],
+  "estimated_hours": 8, "status": "shipped"
+}

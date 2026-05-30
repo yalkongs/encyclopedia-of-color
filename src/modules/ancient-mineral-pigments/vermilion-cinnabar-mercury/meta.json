@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-mineral-pigments/vermilion-cinnabar-mercury",
+  "title": {"en": "Vermilion Cinnabar — Bandgap-Semiconductor Red", "ko": "버밀리언 진사 — 밴드갭 반도체 적색"},
+  "subtitle": {"en": "α-HgS bandgap ~2.0 eV absorbs blue-green, reflects red; Almadén Spain mined it 2,000 years at lethal cost to slave labour", "ko": "α-HgS 밴드갭 약 2.0 eV가 청록을 흡수해 적색 반사; 스페인 알마덴 노예 노동으로 2000년간 채굴"},
+  "description": {"en": "Grain-size slider drives swatch hue and particle visibility with α-HgS band diagram showing 2.0 eV gap absorbing wavelengths <620 nm.", "ko": "입자 크기 슬라이더로 색과 입자 가시성을 보이며 α-HgS 밴드 도식이 620 nm 이하 흡수를 표현."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "ancient-mineral-pigments",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [12],
+  "textbook_refs": [{"source": "Gettens 1972", "section": "Vermilion"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["vermilion", "cinnabar", "HgS"],
+  "estimated_hours": 8, "status": "shipped"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-mineral-pigments/maya-blue-clay-trap",
+  "title": {"en": "Maya Blue — Indigo Locked in Palygorskite", "ko": "마야 블루 — 팰리고스카이트에 갇힌 인디고"},
+  "subtitle": {"en": "Mayan painters trapped indigo in 0.7×0.4 nm palygorskite channels via 100-150 °C heating — the only known pre-modern organic-inorganic hybrid pigment", "ko": "마야 화공이 인디고를 0.7×0.4 nm 팰리고스카이트 채널에 100-150°C 가열로 가둠 — 전근대 유일한 유기-무기 하이브리드 안료"},
+  "description": {"en": "Years-exposed slider compares pure indigo vs Maya blue weathering with palygorskite channel schematic and exponential fade curves showing 50× stability.", "ko": "노출 기간 슬라이더로 순수 인디고와 마야 블루의 풍화를 비교하고 채널 도식과 지수 감쇠 곡선으로 50배 안정성을 표시."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "ancient-mineral-pigments",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Chianelli 2005", "section": "Maya Blue"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Maya blue", "palygorskite", "indigo"],
+  "estimated_hours": 8, "status": "shipped"
+}

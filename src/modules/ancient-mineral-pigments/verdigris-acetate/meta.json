@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-mineral-pigments/verdigris-acetate",
+  "title": {"en": "Verdigris — Copper + Vinegar Green", "ko": "베르디그리스 — 구리와 식초의 녹색"},
+  "subtitle": {"en": "Cu(CH₃COO)₂ scraped from corroded copper sheets; brilliant teal fresh but darkens in oil and erodes parchment over centuries", "ko": "Cu(CH₃COO)₂를 부식 구리판에서 긁어 만든 청록 녹색이 신선할 때 화려하지만 시간이 지나며 어두워지고 양피지 부식"},
+  "description": {"en": "Age slider ages verdigris from teal to olive and damages parchment underneath, with copper-acetate formation diagram showing the medieval recipe.", "ko": "에이지 슬라이더로 베르디그리스가 청록→올리브로 변하고 아래 양피지를 손상시키며 중세 레시피 도식을 표시."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "ancient-mineral-pigments",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [5],
+  "textbook_refs": [{"source": "Kühn 1993", "section": "Verdigris"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["verdigris", "copper acetate", "patina"],
+  "estimated_hours": 8, "status": "shipped"
+}

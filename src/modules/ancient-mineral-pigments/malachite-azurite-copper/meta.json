@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-mineral-pigments/malachite-azurite-copper",
+  "title": {"en": "Malachite & Azurite — Cu Carbonate Pair", "ko": "공작석과 람동광 — 구리 탄산염 쌍"},
+  "subtitle": {"en": "Cu₂CO₃(OH)₂ malachite green vs Cu₃(CO₃)₂(OH)₂ azurite blue; azurite slowly hydrolyses to malachite, fading Renaissance skies to leaf-green", "ko": "Cu₂CO₃(OH)₂ 공작석 녹색 vs Cu₃(CO₃)₂(OH)₂ 람동광 청색; 람동광이 공작석으로 가수분해되며 르네상스 하늘이 녹색으로 변색"},
+  "description": {"en": "Weathering slider blends azurite to malachite with Madonna-scene swatch and Cu:CO₃ stoichiometry showing why old skies turn green.", "ko": "풍화 슬라이더로 람동광→공작석을 마돈나 장면과 Cu:CO₃ 화학량으로 보여 옛 하늘이 녹색으로 변하는 이유를 설명."},
+  "tier": "reference", "bloom_level": "L3", "domain": 8, "category": "ancient-mineral-pigments",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [5],
+  "textbook_refs": [{"source": "Gettens 1966", "section": "Azurite"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["azurite", "malachite", "copper carbonate"],
+  "estimated_hours": 8, "status": "shipped"
+}

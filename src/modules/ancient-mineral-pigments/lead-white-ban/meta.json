@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-mineral-pigments/lead-white-ban",
+  "title": {"en": "Lead White — Vermeer's Glow to 2018 Ban", "ko": "납 백 — 베르메르의 빛에서 2018 금지까지"},
+  "subtitle": {"en": "2 PbCO₃·Pb(OH)₂ with RI 2.0 gave Vermeer's luminous flesh tones; lead poisoning drove EU ban in 2018 with TiO₂ as modern replacement", "ko": "RI 2.0 2 PbCO₃·Pb(OH)₂가 베르메르 살빛 광택을 만들었지만 납 중독으로 EU 2018 금지 — 현재 TiO₂ 대체"},
+  "description": {"en": "White-pigment selector compares lead, zinc, and titanium whites with Vermeer-style flesh-tone highlight and toxicity/era panel.", "ko": "백 안료 선택으로 납·아연·티타늄 비교, 베르메르 살빛 하이라이트와 독성·연대 패널을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "ancient-mineral-pigments",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [12],
+  "textbook_refs": [{"source": "Gettens 1967", "section": "Lead White"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["lead white", "Vermeer", "TiO2"],
+  "estimated_hours": 8, "status": "shipped"
+}
