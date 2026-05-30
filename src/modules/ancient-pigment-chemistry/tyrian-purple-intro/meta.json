@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-pigment-chemistry/tyrian-purple-intro",
+  "title": {"en": "Tyrian Purple — 12,000 Murex Snails per Gram", "ko": "티리안 퍼플 — 1g당 머렉스 12,000마리"},
+  "subtitle": {"en": "Phoenician dyers extracted 6,6'-dibromoindigo from Murex sea snails; 12,000 snails per gram of dye made imperial purple worth more than gold", "ko": "페니키아 염색공들이 머렉스 우렁이에서 6,6'-디브로모인디고 추출 — 1g당 12,000마리, 금보다 비쌌다"},
+  "description": {"en": "Snail-count slider drives dye yield and cloth intensity. Tyrian purple's economics drove Phoenician trade dominance.", "ko": "우렁이 수 슬라이더로 염료 산출과 천 색 강도. 티리안 퍼플 경제가 페니키아 무역을 견인."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "ancient-pigment-chemistry",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Finlay 2002", "section": "Tyrian purple"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Tyrian purple", "Murex", "Phoenicia"],
+  "estimated_hours": 8, "status": "shipped"
+}

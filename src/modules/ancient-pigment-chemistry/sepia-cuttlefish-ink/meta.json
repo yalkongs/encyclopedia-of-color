@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-pigment-chemistry/sepia-cuttlefish-ink",
+  "title": {"en": "Sepia Cuttlefish Ink — Eumelanin Drawing Medium", "ko": "세피아 갑오징어 먹물 — 유멜라닌 드로잉 매체"},
+  "subtitle": {"en": "Sepia officinalis ink is colloidal eumelanin; broadband absorption gives neutral warm-brown tone valued by scribes since Roman times", "ko": "갑오징어 먹은 콜로이드 유멜라닌으로 광역 흡수가 따뜻한 갈색을 만들어 로마부터 19세기까지 필기 잉크"},
+  "description": {"en": "Concentration slider drives Beer-Lambert darkening with brushstrokes, washes, and eumelanin polymer schematic showing fused indole units.", "ko": "농도 슬라이더로 베어-램버트 어두워짐을 보이며 붓 자국·워시·유멜라닌 폴리머 도식을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "ancient-pigment-chemistry",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Ball 2001", "section": "Sepia ink"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["sepia", "cuttlefish", "eumelanin"],
+  "estimated_hours": 8, "status": "shipped"
+}

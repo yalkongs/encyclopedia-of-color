@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-pigment-chemistry/cochineal-carminic-acid",
+  "title": {"en": "Cochineal Carminic Acid — pH-Shifting Insect Red", "ko": "코치닐 카르민산 — pH로 변하는 곤충 적색"},
+  "subtitle": {"en": "Aztec dye from Dactylopius coccus yields carminic acid (anthraquinone); pH shifts orange → red → violet", "ko": "닥틸로피우스 코쿠스에서 추출한 카르민산이 pH로 주황 → 적색 → 보라로 변함"},
+  "description": {"en": "pH slider drives carminic acid colour transition with vat and insect-count visualisation showing harvesting scale.", "ko": "pH 슬라이더로 카르민산 색 변화와 염료조·곤충 격자로 수확 규모를 보여줍니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "ancient-pigment-chemistry",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Greenfield 2005", "section": "Cochineal"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["cochineal", "carminic acid", "E120"],
+  "estimated_hours": 8, "status": "shipped"
+}

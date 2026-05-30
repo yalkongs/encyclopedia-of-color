@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2", "id": "ancient-pigment-chemistry/woad-vs-indigo",
+  "title": {"en": "Woad vs Indigo — 30× Yield Difference", "ko": "워드 vs 인디고 — 30배 산출 차이"},
+  "subtitle": {"en": "Same indigotin chromophore; Indigofera leaves yield ~6× more per kg of leaf and grow in tropics, ending Europe's woad monopoly post-1498", "ko": "같은 인디고틴 발색단이지만 인디고페라가 잎 무게당 약 6배 더 많고 열대에서 자라 1498년 이후 유럽 워드 독점 붕괴"},
+  "description": {"en": "Slider blends woad to indigo with comparative leaf size, dyed cloth swatch, and yield bar showing why East-Indies indigo displaced European woad.", "ko": "워드에서 인디고로 슬라이드하며 잎 크기·천 색·산출 막대로 인디고가 워드를 대체한 이유를 보여줍니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 8, "category": "ancient-pigment-chemistry",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [{"source": "Balfour-Paul 1998", "section": "Indigo"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["woad", "indigo", "indigotin"],
+  "estimated_hours": 8, "status": "shipped"
+}
