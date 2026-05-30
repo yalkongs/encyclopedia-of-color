@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "modern-optics/photonic-crystal-bandgap",
+  "title": {"en": "Photonic Crystal Bandgap — Periodic Dielectric Stop Band", "ko": "광결정 밴드갭 — 주기 유전체 정지대"},
+  "subtitle": {"en": "Yablonovitch 1987; 1D Bragg stack of nH/nL quarter-wave layers gives bandgap centred at λ₀; reflectance approaches 1 as N grows", "ko": "Yablonovitch 1987; nH/nL 사분파장 1D 브래그 스택이 λ₀ 중심 밴드갭; N 증가로 반사도 1에 수렴"},
+  "description": {"en": "Layer-pair-count slider shows TiO₂/SiO₂ Bragg-stack schematic with reflectance R(λ) developing a stop band as N grows.", "ko": "층 쌍 수 슬라이더로 TiO₂/SiO₂ 브래그 스택 도식과 N 증가에 따른 R(λ) 정지대 형성을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "modern-optics",
+  "layout": "A", "prerequisites": ["wave-interference/anti-reflective"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Joannopoulos 2008", "section": "1D PhC"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["photonic crystal", "Bragg mirror", "Yablonovitch"],
+  "estimated_hours": 8, "status": "shipped"
+}

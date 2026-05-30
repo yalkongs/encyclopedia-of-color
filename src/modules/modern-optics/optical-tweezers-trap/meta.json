@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "modern-optics/optical-tweezers-trap",
+  "title": {"en": "Optical Tweezers — Gradient Force on Dielectric Sphere", "ko": "광학 트위저 — 유전체 구체의 기울기 힘"},
+  "subtitle": {"en": "Tightly focused laser → gradient force ∝ ∇|E|² pulls high-index particle to focus; Ashkin 1986, Nobel 2018; manipulates cells, DNA, motors", "ko": "고집속 레이저 → 기울기 힘 ∝ ∇|E|²이 고굴절 입자를 초점으로 당김; Ashkin 1986, 2018 노벨; 세포·DNA·모터 조작"},
+  "description": {"en": "Displacement slider drives schematic of focused laser cone with bead and live restoring-force arrow + F(x) linear-saturating curve.", "ko": "변위 슬라이더로 집속 레이저 원뿔 도식과 비드, 실시간 복원력 화살표, F(x) 선형 포화 곡선을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "modern-optics",
+  "layout": "A", "prerequisites": ["coherence/gaussian-beam-waist"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Ashkin 1986", "section": "Tweezers"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["optical tweezers", "Ashkin", "gradient force"],
+  "estimated_hours": 8, "status": "shipped"
+}

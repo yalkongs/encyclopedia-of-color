@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Photonic Crystal Bandgap — Periodic Dielectric Stop Band — Yablonovit…</title>
+  <meta name="description" content="Layer-pair-count slider shows TiO₂/SiO₂ Bragg-stack schematic with reflectance R(λ) developing a stop band as N grows.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/modern-optics/photonic-crystal-bandgap/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Photonic Crystal Bandgap — Periodic Dielectric Stop Band">
+  <meta property="og:description"    content="Layer-pair-count slider shows TiO₂/SiO₂ Bragg-stack schematic with reflectance R(λ) developing a stop band as N grows.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/modern-optics/photonic-crystal-bandgap/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/modern-optics--photonic-crystal-bandgap.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Photonic Crystal Bandgap — Periodic Dielectric Stop Band.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Photonic Crystal Bandgap — Periodic Dielectric Stop Band">
+  <meta name="twitter:description"   content="Layer-pair-count slider shows TiO₂/SiO₂ Bragg-stack schematic with reflectance R(λ) developing a stop band as N grows.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/modern-optics--photonic-crystal-bandgap.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Photonic Crystal Bandgap — Periodic Dielectric Stop Band.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Photonic Crystal Bandgap — Periodic Dielectric Stop Band","alternateName":"modern-optics/photonic-crystal-bandgap","description":"Layer-pair-count slider shows TiO₂/SiO₂ Bragg-stack schematic with reflectance R(λ) developing a stop band as N grows.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"photonic crystal, Bragg mirror, Yablonovitch","url":"https://encyclopedia-of-color.vercel.app/modules/modern-optics/photonic-crystal-bandgap/","image":"https://encyclopedia-of-color.vercel.app/og/modern-optics--photonic-crystal-bandgap.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="modern-optics/photonic-crystal-bandgap">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Photonic Crystal Bandgap — Periodic Dielectric Stop Band</h1>
+    <p class="module-subtitle">A 1D quarter-wave stack reflects ~100% in a frequency band centred at λ/4 layer thickness; same physics as semiconductor bandgaps applied to light</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Yablonovitch (1987) coined "photonic crystal". A Bragg mirror (1D PhC) of alternating n_H/n_L layers each λ_0/(4n) thick gives bandgap width Δλ/λ₀ ≈ (4/π) arcsin((n_H − n_L)/(n_H + n_L)). 2D and 3D PhCs (opal, inverse opal) give omnidirectional gaps — basis of photonic-bandgap fibres.</p>
+      <p class="zone-guide">Slide layer-pair count to see gap deepen and edges sharpen.</p>
+      <enc-slider id="n" label="layer pairs N" min="2" max="40" step="1" value="10" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="PhC"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Yablonovitch 1987 PhC; Joannopoulos PhC 2008"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

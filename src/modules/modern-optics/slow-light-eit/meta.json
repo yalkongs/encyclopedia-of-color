@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "modern-optics/slow-light-eit",
+  "title": {"en": "Slow Light via EIT — Group Velocity in m/s", "ko": "EIT 슬로우 라이트 — m/s 단위 군속도"},
+  "subtitle": {"en": "EIT opens narrow transparency window with steep dn/dω; v_g = c/(n + ω dn/dω) drops to walking pace; Hau 1999 — 17 m/s in BEC", "ko": "EIT가 좁은 투과 창과 가파른 dn/dω 형성; v_g가 보행 속도로 감소; Hau 1999 — BEC에서 17 m/s"},
+  "description": {"en": "Coupling-power slider shows absorption-Lorentzian dip + steep dispersion slope panels with shaded EIT window and live v_g readout.", "ko": "결합 출력 슬라이더로 흡수 로렌치안 딥과 가파른 분산 슬로프 패널, EIT 창 음영, 실시간 v_g를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "modern-optics",
+  "layout": "A", "prerequisites": ["modern-optics/laser-cavity-gain"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Hau 1999", "section": "Slow light"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["slow light", "EIT", "Hau"],
+  "estimated_hours": 8, "status": "shipped"
+}

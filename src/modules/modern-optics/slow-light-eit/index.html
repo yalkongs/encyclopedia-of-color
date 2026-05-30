@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Slow Light via EIT — Group Velocity in m/s — EIT opens narrow transpa…</title>
+  <meta name="description" content="Coupling-power slider shows absorption-Lorentzian dip + steep dispersion slope panels with shaded EIT window and live v_g readout.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/modern-optics/slow-light-eit/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Slow Light via EIT — Group Velocity in m/s">
+  <meta property="og:description"    content="Coupling-power slider shows absorption-Lorentzian dip + steep dispersion slope panels with shaded EIT window and live v_g readout.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/modern-optics/slow-light-eit/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/modern-optics--slow-light-eit.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Slow Light via EIT — Group Velocity in m/s.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Slow Light via EIT — Group Velocity in m/s">
+  <meta name="twitter:description"   content="Coupling-power slider shows absorption-Lorentzian dip + steep dispersion slope panels with shaded EIT window and live v_g readout.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/modern-optics--slow-light-eit.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Slow Light via EIT — Group Velocity in m/s.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Slow Light via EIT — Group Velocity in m/s","alternateName":"modern-optics/slow-light-eit","description":"Coupling-power slider shows absorption-Lorentzian dip + steep dispersion slope panels with shaded EIT window and live v_g readout.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"slow light, EIT, Hau","url":"https://encyclopedia-of-color.vercel.app/modules/modern-optics/slow-light-eit/","image":"https://encyclopedia-of-color.vercel.app/og/modern-optics--slow-light-eit.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="modern-optics/slow-light-eit">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Slow Light via EIT — Light Speeds Below Walking Pace</h1>
+    <p class="module-subtitle">Electromagnetically Induced Transparency creates a steep dispersion slope dn/dω; group velocity v_g = c/(n + ω dn/dω) drops to m/s — Hau 1999: 17 m/s through Bose-Einstein condensate</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">A coupling laser opens a narrow transparency window in an otherwise absorbing atomic medium. The transparency is accompanied by a very steep dn/dω, which makes the group velocity tiny. Hau (1999) measured v_g = 17 m/s in ultracold sodium. Used in quantum memories and slow-light buffers.</p>
+      <p class="zone-guide">Slide coupling-laser power.</p>
+      <enc-slider id="p" label="coupling power (rel.)" min="0" max="1" step="0.01" value="0.5" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="EIT"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Harris EIT 1990; Hau 1999 17 m/s"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>
