@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Spectral Paint Mixing — Add K and S — two paints mix not by averaging…</title>
+  <meta name="description" content="Compare K-M-correct mix vs naive RGB average. Four swatches: pigment 1, K-M mix, naive avg, pigment 2. Reflectance spectra overlay shows where the two predictions diverge.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/kubelka-munk-mixer/km-paint-mixer/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Spectral Paint Mixing — Add K and S">
+  <meta property="og:description"    content="Compare K-M-correct mix vs naive RGB average. Four swatches: pigment 1, K-M mix, naive avg, pigment 2. Reflectance spectra overlay shows where the two predictions diverge.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/kubelka-munk-mixer/km-paint-mixer/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/kubelka-munk-mixer--km-paint-mixer.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Spectral Paint Mixing — Add K and S.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Spectral Paint Mixing — Add K and S">
+  <meta name="twitter:description"   content="Compare K-M-correct mix vs naive RGB average. Four swatches: pigment 1, K-M mix, naive avg, pigment 2. Reflectance spectra overlay shows where the two predictions diverge.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/kubelka-munk-mixer--km-paint-mixer.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Spectral Paint Mixing — Add K and S.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Spectral Paint Mixing — Add K and S","alternateName":"kubelka-munk-mixer/km-paint-mixer","description":"Compare K-M-correct mix vs naive RGB average. Four swatches: pigment 1, K-M mix, naive avg, pigment 2. Reflectance spectra overlay shows where the two predictions diverge.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Kubelka-Munk, paint mixing, spectral, subtractive","url":"https://encyclopedia-of-color.vercel.app/modules/kubelka-munk-mixer/km-paint-mixer/","image":"https://encyclopedia-of-color.vercel.app/og/kubelka-munk-mixer--km-paint-mixer.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="kubelka-munk-mixer/km-paint-mixer">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Spectral Paint Mixing — Add K and S, Not RGB</h1>
+      <p class="module-subtitle">two paints mix not by averaging RGB but by combining K(λ) and S(λ); the result respects spectral physics and reproduces real painter's surprises (mixing blue + yellow → grey, not green)</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          For two pigments at mass fractions x₁, x₂: K_mix(λ) = x₁K₁ + x₂K₂, S_mix(λ) = x₁S₁ + x₂S₂, R∞ from the K-M equation. Naive RGB averaging cannot reproduce this — it gives muddy interpolations that ignore where each pigment actually absorbs. Compare the two side by side.
+        </p>
+        <p class="zone-guide">
+          Drag the fraction. Two pigment swatches sit at the ends; the K-M prediction (left) and a naive RGB average (right) bracket the slider position. They diverge most for complementary or strongly-coloured pairs.
+        </p>
+        <enc-slider id="x" label="Fraction of pigment 2 (%)" min="0" max="100" step="2" value="50" unit="%"></enc-slider>
+        <enc-toggle id="pair" label="Pigment pair" options="red-blue,blue-yellow,white-black" value="red-blue"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="K-M paint mixer"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Berns 2019 §6.6 — K-M mixing; subtractive paint maths"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

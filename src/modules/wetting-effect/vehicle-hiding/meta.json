@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "wetting-effect/vehicle-hiding",
+  "title": {
+    "en": "Hiding Power — Pigment / Vehicle Index Mismatch",
+    "ko": "은폐력 — 안료·바인더 굴절률 불일치"
+  },
+  "subtitle": {
+    "en": "white paint hides because TiO₂ n≈2.7 scatters strongly against vehicle n≈1.5; the bigger the index mismatch (Δn), the more opaque the dry film",
+    "ko": "흰 페인트가 가리는 이유는 TiO₂ n≈2.7와 바인더 n≈1.5의 차이 — Δn 클수록 도막 불투명"
+  },
+  "description": {
+    "en": "Pigment-n slider drives scattering ∝ (Δn)² and the simulated black-substrate hiding film. Anchor markers: CaCO₃, glass-bead, ZnO, TiO₂ rutile.",
+    "ko": "안료 n 슬라이더로 산란 ∝ (Δn)² 구동, 검은 기판 위 도막 시뮬레이션. 앵커: CaCO₃, glass-bead, ZnO, TiO₂ rutile."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 3,
+  "category": "wetting-effect",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [11],
+  "textbook_refs": [
+    { "source": "Berns 2019 §6", "section": "Hiding power" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["hiding power", "TiO2", "refractive index", "Mie scattering"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

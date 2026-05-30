@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "kubelka-munk-mixer/km-coefficients",
+  "title": {
+    "en": "Kubelka-Munk Coefficients K and S",
+    "ko": "Kubelka-Munk 계수 K와 S"
+  },
+  "subtitle": {
+    "en": "two spectral coefficients describe a pigment film: K(λ) absorption per unit thickness, S(λ) scattering per unit thickness; reflectance follows R∞ = 1 + K/S − √((K/S)(K/S+2))",
+    "ko": "안료 도막을 두 분광 계수로 — K(λ) 흡수, S(λ) 산란; 반사율은 R∞ = 1 + K/S − √((K/S)(K/S+2))"
+  },
+  "description": {
+    "en": "Pick a pigment (TiO₂, cadmium red, phthalo blue, carbon black). Plot K(λ), S(λ), R∞(λ) curves and the integrated visible swatch. Foundation for paint-mixing formulas.",
+    "ko": "안료 선택(TiO₂, 카드뮴 적, 프탈로 청, 카본 흑). K(λ), S(λ), R∞(λ) 곡선 + 가시 swatch. 페인트 배합식의 기초."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 3,
+  "category": "kubelka-munk-mixer",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [11],
+  "textbook_refs": [
+    { "source": "Berns 2019 §6.6", "section": "Kubelka-Munk" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Kubelka-Munk", "K/S", "pigment", "reflectance", "paint matching"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

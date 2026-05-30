@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Hiding Power — Pigment / Vehicle Index Mismatch — white paint hides b…</title>
+  <meta name="description" content="Pigment-n slider drives scattering ∝ (Δn)² and the simulated black-substrate hiding film. Anchor markers: CaCO₃, glass-bead, ZnO, TiO₂ rutile.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wetting-effect/vehicle-hiding/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Hiding Power — Pigment / Vehicle Index Mismatch">
+  <meta property="og:description"    content="Pigment-n slider drives scattering ∝ (Δn)² and the simulated black-substrate hiding film. Anchor markers: CaCO₃, glass-bead, ZnO, TiO₂ rutile.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wetting-effect/vehicle-hiding/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wetting-effect--vehicle-hiding.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Hiding Power — Pigment / Vehicle Index Mismatch.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Hiding Power — Pigment / Vehicle Index Mismatch">
+  <meta name="twitter:description"   content="Pigment-n slider drives scattering ∝ (Δn)² and the simulated black-substrate hiding film. Anchor markers: CaCO₃, glass-bead, ZnO, TiO₂ rutile.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wetting-effect--vehicle-hiding.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Hiding Power — Pigment / Vehicle Index Mismatch.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Hiding Power — Pigment / Vehicle Index Mismatch","alternateName":"wetting-effect/vehicle-hiding","description":"Pigment-n slider drives scattering ∝ (Δn)² and the simulated black-substrate hiding film. Anchor markers: CaCO₃, glass-bead, ZnO, TiO₂ rutile.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"hiding power, TiO2, refractive index, Mie scattering","url":"https://encyclopedia-of-color.vercel.app/modules/wetting-effect/vehicle-hiding/","image":"https://encyclopedia-of-color.vercel.app/og/wetting-effect--vehicle-hiding.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wetting-effect/vehicle-hiding">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Hiding Power — Pigment/Vehicle Refractive Index Mismatch</h1>
+      <p class="module-subtitle">white paint hides because TiO₂ n≈2.7 scatters strongly against vehicle n≈1.5; the bigger the index mismatch (Δn), the more opaque the dry film</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A pigment particle scatters light when its refractive index differs from the surrounding vehicle (resin + solvent). Scattering cross-section ~ (n_p − n_v)². A high-Δn pigment like TiO₂ (n≈2.7) in alkyd or acrylic (n≈1.5) gives extreme scattering — that's why titanium-white hides like nothing else. Match indices and the pigment goes <em>invisible</em>: glass beads in water, sugar in water.
+        </p>
+        <p class="zone-guide">
+          Drag the pigment refractive index. Δn = n_p − n_v drives the scattering bar and the simulated film opacity. Markers: TiO₂ 2.70, ZnO 2.0, CaCO₃ 1.6, glass-bead 1.55 (in 1.50 vehicle).
+        </p>
+        <enc-slider id="np" label="Pigment n (×100)" min="120" max="290" step="2" value="270" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Hiding power"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Berns 2019 §6 — hiding power; Mie scattering of pigment particles"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

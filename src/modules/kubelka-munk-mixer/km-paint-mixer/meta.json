@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "kubelka-munk-mixer/km-paint-mixer",
+  "title": {
+    "en": "Spectral Paint Mixing — Add K and S",
+    "ko": "분광 페인트 배합 — K와 S 더하기"
+  },
+  "subtitle": {
+    "en": "two paints mix not by averaging RGB but by combining K(λ) and S(λ); the result respects spectral physics and reproduces real painter's surprises (mixing blue + yellow → grey, not green)",
+    "ko": "두 페인트는 RGB 평균이 아닌 K(λ)·S(λ) 결합으로 — 화가의 놀라움(파랑+노랑→회색)을 재현"
+  },
+  "description": {
+    "en": "Compare K-M-correct mix vs naive RGB average. Four swatches: pigment 1, K-M mix, naive avg, pigment 2. Reflectance spectra overlay shows where the two predictions diverge.",
+    "ko": "K-M 정확 mix vs naive RGB 평균. 4 swatch: 안료1, K-M, naive, 안료2. 반사 스펙트럼 overlay가 두 예측의 차이 표시."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 3,
+  "category": "kubelka-munk-mixer",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [11],
+  "textbook_refs": [
+    { "source": "Berns 2019 §6.6", "section": "K-M mixing" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Kubelka-Munk", "paint mixing", "spectral", "subtractive"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

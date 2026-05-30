@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Binder Yellowing — Auto-oxidation Carbonyls — linseed-oil binders aut…</title>
+  <meta name="description" content="Years slider drives first-order carbonyl build-up; absorption tail moves into the blue; the once-white swatch yellows. UV exposure accelerates the constant 5×.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/wetting-effect/binder-aging/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Binder Yellowing — Auto-oxidation Carbonyls">
+  <meta property="og:description"    content="Years slider drives first-order carbonyl build-up; absorption tail moves into the blue; the once-white swatch yellows. UV exposure accelerates the constant 5×.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/wetting-effect/binder-aging/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/wetting-effect--binder-aging.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Binder Yellowing — Auto-oxidation Carbonyls.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Binder Yellowing — Auto-oxidation Carbonyls">
+  <meta name="twitter:description"   content="Years slider drives first-order carbonyl build-up; absorption tail moves into the blue; the once-white swatch yellows. UV exposure accelerates the constant 5×.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/wetting-effect--binder-aging.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Binder Yellowing — Auto-oxidation Carbonyls.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Binder Yellowing — Auto-oxidation Carbonyls","alternateName":"wetting-effect/binder-aging","description":"Years slider drives first-order carbonyl build-up; absorption tail moves into the blue; the once-white swatch yellows. UV exposure accelerates the constant 5×.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"binder, yellowing, linseed oil, carbonyl, conservation","url":"https://encyclopedia-of-color.vercel.app/modules/wetting-effect/binder-aging/","image":"https://encyclopedia-of-color.vercel.app/og/wetting-effect--binder-aging.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="wetting-effect/binder-aging">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Binder Yellowing — Auto-oxidation Carbonyl Build-up</h1>
+      <p class="module-subtitle">linseed-oil binders auto-oxidise — over years the unsaturated C=C bonds form C=O groups whose blue-absorption tints the film yellow</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Drying oils (linseed, walnut, poppy) cure by auto-oxidative cross-linking — oxygen attacks the C=C bonds and forms peroxides, then carbonyls (C=O). Each carbonyl has a weak n→π* absorption around 350 nm. As they accumulate over years, the cumulative absorption tail reaches into the blue and the film yellows visibly. Storage in the dark slows the process; UV accelerates it.
+        </p>
+        <p class="zone-guide">
+          Drag elapsed years (0–200). Carbonyl concentration follows first-order kinetics; the swatch on the right shows a once-white film yellowing; the absorption curve shows the blue-edge tail building up.
+        </p>
+        <enc-slider id="yrs" label="Years stored (dark)" min="0" max="200" step="2" value="50" unit=" yr"></enc-slider>
+        <enc-toggle id="env" label="Environment" options="dark,uv-exposed" value="dark"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Binder aging"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Mills &amp; White Organic Chemistry of Museum Objects; linseed oil ageing"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "wetting-effect/wetting-denim",
+  "title": {
+    "en": "Wet Denim — Index Matching Hides Air Pockets",
+    "ko": "젖은 데님 — 인덱스 매칭이 공기 주머니를 가린다"
+  },
+  "subtitle": {
+    "en": "dry fabric is bright because air pockets (n=1) scatter light at every fibre; water (n=1.33) closes the index gap and the fabric goes dark — same fabric, different optics",
+    "ko": "건조 직물이 밝은 이유는 공기(n=1)와 섬유의 큰 Δn — 물(n=1.33)이 격차를 줄이면 어두워진다"
+  },
+  "description": {
+    "en": "Wetness slider replaces air with water in the fibre voids; Δn drops 0.50 → 0.17; scattering ∝ Δn²; the fabric swatch darkens and cross-section shows water rings around each fibre.",
+    "ko": "젖음 슬라이더로 섬유 공극의 공기가 물로 치환; Δn이 0.50에서 0.17로 감소; 산란 ∝ Δn²; 천 swatch 어두워짐, 단면에 섬유 둘레 물 ring."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 3,
+  "category": "wetting-effect",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [11],
+  "textbook_refs": [
+    { "source": "Lekner & Dorf 1988", "section": "Wet darkening" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["wetting", "denim", "index matching", "darker when wet"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}
