@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "specialty-print/uv-curing-ink",
+  "title": {
+    "en": "UV-Curing Acrylate Ink",
+    "ko": "UV 경화 아크릴레이트 잉크"
+  },
+  "subtitle": {
+    "en": "a UV photon kicks a photoinitiator into a radical, which yanks a neighbour into the chain — and a liquid film sets solid in milliseconds",
+    "ko": "UV 광자 하나가 광개시제를 라디칼로 차내고, 이 라디칼이 이웃을 사슬에 끌어들인다 — 액체 막이 수 밀리초 만에 고체로 변한다"
+  },
+  "description": {
+    "en": "UV ink is acrylate monomer with a photoinitiator. A UV photon turns the initiator into a radical, which bonds to a neighbour and propagates a chain — the liquid sets solid and halts with the lamp.",
+    "ko": "UV 잉크는 광개시제가 들어간 아크릴레이트 단량체다. UV 광자가 개시제를 라디칼로 바꾸면 이웃과 결합하며 사슬이 전파된다 — 액체가 고체로 굳고, 램프를 끄면 거의 즉시 멈춘다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "specialty-print",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§4.7 UV-curing"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "UV curing",
+    "acrylate",
+    "photoinitiator",
+    "polymerization",
+    "radical"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

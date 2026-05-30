@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "specialty-print/foil-stamping",
+  "title": {
+    "en": "Hot Foil Stamping",
+    "ko": "핫 호일 스탬핑"
+  },
+  "subtitle": {
+    "en": "a heated die transfers a metallic or holographic skin onto paper — holographic foil already shows many hues, and tilting slides them across the surface",
+    "ko": "가열된 금형이 종이에 금속·홀로그래픽 막을 옮긴다 — 홀로그래픽 호일은 이미 여러 색조를 보이고, 기울이면 그 색이 표면 위로 미끄러진다"
+  },
+  "description": {
+    "en": "Hot foil presses a heated die against a foil ribbon, releasing the layer onto paper. Gold foil reflects like metal — only a sheen slides. Holographic foil is a diffraction grating with many hues.",
+    "ko": "핫 호일은 가열된 금형을 호일 리본에 눌러 그 층을 종이에 풀어 옮긴다. 금색 호일은 단단한 금속처럼 반사해 광택만 움직인다. 홀로그래픽 호일은 회절격자라 여러 색조를 동시에 보여준다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "specialty-print",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§6 hot foil"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "hot foil",
+    "holographic",
+    "stamping",
+    "diffraction grating",
+    "gold foil"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

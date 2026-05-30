@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Pantone Spot Colours &amp; Hexachrome — Coca-Cola red, Tiffany blue, Refl…</title>
+  <meta name="description" content="A Pantone spot ink is a pre-mixed recipe with one fixed colour. Brands specify them because CMYK averages three inks and ends up slightly off; Reflex Blue is the classic miss. Hexachrome added O+G.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/specialty-print/spot-color-pantone-extension/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Pantone Spot Colours &amp; Hexachrome">
+  <meta property="og:description"    content="A Pantone spot ink is a pre-mixed recipe with one fixed colour. Brands specify them because CMYK averages three inks and ends up slightly off; Reflex Blue is the classic miss. Hexachrome added O+G.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/specialty-print/spot-color-pantone-extension/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/specialty-print--spot-color-pantone-extension.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Pantone Spot Colours &amp; Hexachrome.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Pantone Spot Colours &amp; Hexachrome">
+  <meta name="twitter:description"   content="A Pantone spot ink is a pre-mixed recipe with one fixed colour. Brands specify them because CMYK averages three inks and ends up slightly off; Reflex Blue is the classic miss. Hexachrome added O+G.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/specialty-print--spot-color-pantone-extension.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Pantone Spot Colours &amp; Hexachrome.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Pantone Spot Colours & Hexachrome","alternateName":"specialty-print/spot-color-pantone-extension","description":"A Pantone spot ink is a pre-mixed recipe with one fixed colour. Brands specify them because CMYK averages three inks and ends up slightly off; Reflex Blue is the classic miss. Hexachrome added O+G.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"Pantone, spot color, Hexachrome, brand color, Reflex Blue","url":"https://encyclopedia-of-color.vercel.app/modules/specialty-print/spot-color-pantone-extension/","image":"https://encyclopedia-of-color.vercel.app/og/specialty-print--spot-color-pantone-extension.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="specialty-print/spot-color-pantone-extension">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Pantone Spot Colours & Hexachrome</h1>
+      <p class="module-subtitle">Coca-Cola red, Tiffany blue, Reflex Blue — brand colours are spot inks because CMYK process simply cannot reach them</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A Pantone spot colour is a pre-mixed ink with a single fixed recipe. Brands specify them because four-colour process averages three inks to fake every tone and ends up slightly off, especially in deep blues and saturated greens. Pantone Hexachrome (CMYK + orange + green, retired 2008) was a six-ink process attempt to close that gap; today wider-gamut ICC-driven seven-colour processes do the same job.
+        </p>
+        <div class="math-block" data-tex="\Delta E_{spot \to CMYK} \;\gg\; 0 \text{ for vivid blues and greens}"></div>
+        <p class="zone-guide">
+          Switch how the swatches print. Spot reproduces the brand colour exactly; CMYK approximates it; Hexachrome closes part of the gap with extra orange and green. Reflex Blue is the textbook example — its deep violet shifts toward a duller mid-blue under CMYK.
+        </p>
+        <enc-toggle id="mode" label="Render as" options="spot,cmyk,hexa" labels="spot ink,CMYK,Hexachrome" value="spot"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Pantone brand colours under spot vs CMYK vs Hexachrome"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Pantone Color Bridge; Hexachrome legacy"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>HP MultiJet Fusion in Colour — spread a layer of nylon powder, jet bl…</title>
+  <meta name="description" content="MultiJet Fusion builds layers in three passes: spread nylon powder, jet a black fusing agent where the part is, jet CMYK colourant, sweep an IR lamp. The agent heat fuses only the marked powder.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-3d-color/multijet-fusion-color/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="HP MultiJet Fusion in Colour">
+  <meta property="og:description"    content="MultiJet Fusion builds layers in three passes: spread nylon powder, jet a black fusing agent where the part is, jet CMYK colourant, sweep an IR lamp. The agent heat fuses only the marked powder.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-3d-color/multijet-fusion-color/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-3d-color--multijet-fusion-color.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: HP MultiJet Fusion in Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="HP MultiJet Fusion in Colour">
+  <meta name="twitter:description"   content="MultiJet Fusion builds layers in three passes: spread nylon powder, jet a black fusing agent where the part is, jet CMYK colourant, sweep an IR lamp. The agent heat fuses only the marked powder.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-3d-color--multijet-fusion-color.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: HP MultiJet Fusion in Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"HP MultiJet Fusion in Colour","alternateName":"print-3d-color/multijet-fusion-color","description":"MultiJet Fusion builds layers in three passes: spread nylon powder, jet a black fusing agent where the part is, jet CMYK colourant, sweep an IR lamp. The agent heat fuses only the marked powder.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"MultiJet Fusion, HP MJF, powder, fusing agent, 3D printing","url":"https://encyclopedia-of-color.vercel.app/modules/print-3d-color/multijet-fusion-color/","image":"https://encyclopedia-of-color.vercel.app/og/print-3d-color--multijet-fusion-color.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-3d-color/multijet-fusion-color">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">HP MultiJet Fusion in Colour</h1>
+      <p class="module-subtitle">spread a layer of nylon powder, jet black fusing agent where the part is, jet CMYK colour on top, sweep an infrared lamp — that voxel is now fused and dyed</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          MultiJet Fusion builds each layer in three passes over a powder bed: a spreader bar lays a thin film of nylon powder; a carriage jets a dark fusing agent only where the part will be; CMYK colourant follows; then an infrared lamp sweeps and the agent's heat absorption fuses just the marked powder. Stack hundreds of these layers and a coloured solid emerges from the bed.
+        </p>
+        <div class="math-block" data-tex="\text{powder} \xrightarrow{\text{fusing agent} + \text{CMYK}} \xrightarrow{\text{IR lamp}} \text{fused colour voxel}"></div>
+        <p class="zone-guide">
+          Slide the build progress and watch the part rise from the powder bed, one coloured layer at a time. The process panel shows the carriage in the middle of its pass — spreader, fusing-agent jet, colour jet, infrared lamp — over the powder.
+        </p>
+        <enc-slider id="progress" label="Build progress" min="0" max="100" step="1" value="55" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="MultiJet Fusion colour 3D printing"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="HP MultiJet Fusion 3D printing"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

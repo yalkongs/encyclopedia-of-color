@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-3d-color/multijet-fusion-color",
+  "title": {
+    "en": "HP MultiJet Fusion in Colour",
+    "ko": "HP MultiJet Fusion 컬러"
+  },
+  "subtitle": {
+    "en": "spread a layer of nylon powder, jet black fusing agent where the part is, jet CMYK colour on top, sweep an infrared lamp — that voxel is now fused and dyed",
+    "ko": "나일론 파우더 한 층을 펴고, 부품이 들어갈 자리에 검정 융착제를 분사하고 위에 CMYK 컬러를 더해 적외선 램프를 쓸면 — 그 복셀이 융착·착색된다"
+  },
+  "description": {
+    "en": "MultiJet Fusion builds layers in three passes: spread nylon powder, jet a black fusing agent where the part is, jet CMYK colourant, sweep an IR lamp. The agent heat fuses only the marked powder.",
+    "ko": "MultiJet Fusion은 한 층을 세 번의 패스로 만든다: 나일론 파우더를 펴고, 부품 자리에 검정 융착제를 분사하고, CMYK 색재를 더한 뒤 IR 램프를 쓴다. 융착제가 흡수한 열이 표시된 파우더만 융착시킨다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "print-3d-color",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "HP MultiJet Fusion",
+      "section": "colour 3D printing"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "MultiJet Fusion",
+    "HP MJF",
+    "powder",
+    "fusing agent",
+    "3D printing"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

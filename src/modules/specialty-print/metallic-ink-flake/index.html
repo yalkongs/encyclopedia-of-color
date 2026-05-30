@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Metallic &amp; Pearlescent Flakes — a metallic ink is a sea of tiny tilte…</title>
+  <meta name="description" content="Metallic ink suspends thousands of micro mirrors; only flakes whose normal points near you flash bright. Aluminium gives neutral silver sparkle; mica throws a hue that shifts as the angle sweeps.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/specialty-print/metallic-ink-flake/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Metallic &amp; Pearlescent Flakes">
+  <meta property="og:description"    content="Metallic ink suspends thousands of micro mirrors; only flakes whose normal points near you flash bright. Aluminium gives neutral silver sparkle; mica throws a hue that shifts as the angle sweeps.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/specialty-print/metallic-ink-flake/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/specialty-print--metallic-ink-flake.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Metallic &amp; Pearlescent Flakes.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Metallic &amp; Pearlescent Flakes">
+  <meta name="twitter:description"   content="Metallic ink suspends thousands of micro mirrors; only flakes whose normal points near you flash bright. Aluminium gives neutral silver sparkle; mica throws a hue that shifts as the angle sweeps.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/specialty-print--metallic-ink-flake.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Metallic &amp; Pearlescent Flakes.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Metallic & Pearlescent Flakes","alternateName":"specialty-print/metallic-ink-flake","description":"Metallic ink suspends thousands of micro mirrors; only flakes whose normal points near you flash bright. Aluminium gives neutral silver sparkle; mica throws a hue that shifts as the angle sweeps.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"metallic ink, mica, aluminium flake, sparkle, pearlescent","url":"https://encyclopedia-of-color.vercel.app/modules/specialty-print/metallic-ink-flake/","image":"https://encyclopedia-of-color.vercel.app/og/specialty-print--metallic-ink-flake.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="specialty-print/metallic-ink-flake">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Metallic & Pearlescent Flakes</h1>
+      <p class="module-subtitle">a metallic ink is a sea of tiny tilted mirrors — at any angle only the few aligned with your eye flash, and the others stay dark</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Suspend tens of thousands of micro-flakes in a clear binder and you have metallic ink. Each flake reflects like a tiny mirror; only flakes whose normal happens to point near you flash bright. Aluminium flakes give a neutral silver sparkle; mica flakes are coated thin-film stacks that throw a hue at the lit angle and a different one elsewhere — pearlescent shimmer.
+        </p>
+        <div class="math-block" data-tex="I_{flake} \;\propto\; \max(0, \cos(\theta_{view} - \theta_{flake}))^{16}"></div>
+        <p class="zone-guide">
+          Drag the viewing angle and watch the sparkle pattern reshuffle — different flakes catch the light. Switch from aluminium to mica and the bright flakes carry a hue that travels across the spectrum as the angle changes.
+        </p>
+        <enc-slider id="angle" label="Viewing angle" min="0" max="180" step="1" value="60" unit="°"></enc-slider>
+        <enc-toggle id="ink" label="Flake type" options="aluminum,mica" labels="aluminium,mica" value="aluminum"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Metallic and pearlescent flake sparkle"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Metallic ink flake BRDF; Schlenk"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

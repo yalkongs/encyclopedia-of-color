@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "specialty-print/metallic-ink-flake",
+  "title": {
+    "en": "Metallic & Pearlescent Flakes",
+    "ko": "메탈릭·펄 플레이크"
+  },
+  "subtitle": {
+    "en": "a metallic ink is a sea of tiny tilted mirrors — at any angle only the few aligned with your eye flash, and the others stay dark",
+    "ko": "메탈릭 잉크는 수많은 작은 거울의 바다 — 어느 각도에서든 시선과 정렬된 일부만 반짝이고 나머지는 어둡다"
+  },
+  "description": {
+    "en": "Metallic ink suspends thousands of micro mirrors; only flakes whose normal points near you flash bright. Aluminium gives neutral silver sparkle; mica throws a hue that shifts as the angle sweeps.",
+    "ko": "메탈릭 잉크는 수많은 미세 거울을 매달아 둔 것이다 — 법선이 시선 가까이 향한 플레이크만 밝게 번쩍인다. 알루미늄은 중립적 은빛 스파클을, 운모는 각도가 휩쓸 때 색조가 이동하는 빛을 던진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "specialty-print",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Schlenk metallic pigments",
+      "section": "flake BRDF"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "metallic ink",
+    "mica",
+    "aluminium flake",
+    "sparkle",
+    "pearlescent"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-3d-color/full-color-resin-printing",
+  "title": {
+    "en": "PolyJet Full-Colour Resin",
+    "ko": "PolyJet 풀컬러 레진"
+  },
+  "subtitle": {
+    "en": "a sweeping print head spits picolitre droplets of cyan, magenta, yellow, white, and clear resin — a UV lamp on the same carriage cures each layer the instant it lands",
+    "ko": "쓸고 가는 프린트 헤드가 사이언·마젠타·옐로·화이트·클리어 레진의 피코리터 액적을 뱉고, 같은 캐리지의 UV 램프가 닿는 즉시 한 층씩 굳힌다"
+  },
+  "description": {
+    "en": "PolyJet sweeps a print head over the build, jetting picolitre droplets of CMYK plus white and clear UV-curable resin. A UV lamp on the same carriage cures each layer the instant it lands.",
+    "ko": "PolyJet은 빌드 위로 프린트 헤드를 휩쓸며 CMYK + 화이트 + 클리어 UV 경화 레진의 피코리터 액적을 분사한다. 같은 캐리지의 UV 램프가 닿는 즉시 각 층을 굳힌다. 파우더 없음, 후속 잉킹도 없음."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "print-3d-color",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Stratasys PolyJet",
+      "section": "colour resin printing"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "PolyJet",
+    "Stratasys",
+    "Mimaki",
+    "UV resin",
+    "3D printing"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

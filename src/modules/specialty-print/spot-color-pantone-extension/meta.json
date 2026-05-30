@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "specialty-print/spot-color-pantone-extension",
+  "title": {
+    "en": "Pantone Spot Colours & Hexachrome",
+    "ko": "Pantone 스팟 컬러와 헥사크롬"
+  },
+  "subtitle": {
+    "en": "Coca-Cola red, Tiffany blue, Reflex Blue — brand colours are spot inks because CMYK process simply cannot reach them",
+    "ko": "코카콜라 빨강·티파니 파랑·Reflex Blue — 브랜드 컬러는 CMYK 공정이 닿지 못해 스팟 잉크로 인쇄된다"
+  },
+  "description": {
+    "en": "A Pantone spot ink is a pre-mixed recipe with one fixed colour. Brands specify them because CMYK averages three inks and ends up slightly off; Reflex Blue is the classic miss. Hexachrome added O+G.",
+    "ko": "Pantone 스팟 잉크는 미리 배합된 단일 색상이다. 브랜드가 이를 지정하는 이유: CMYK 공정은 세 잉크를 평균해 약간씩 빗나가며 Reflex Blue가 대표적 실패다. Hexachrome은 오렌지·그린을 더한 6도 시도였다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "specialty-print",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Pantone Color Bridge",
+      "section": "PMS solid to process"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "Pantone",
+    "spot color",
+    "Hexachrome",
+    "brand color",
+    "Reflex Blue"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

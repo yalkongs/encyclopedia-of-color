@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-3d-color/color-fdm-blend",
+  "title": {
+    "en": "FDM Multi-Filament Gradient",
+    "ko": "FDM 다필라멘트 그라디언트"
+  },
+  "subtitle": {
+    "en": "FDM cannot really blend two colours in the nozzle — it swaps filaments between thin layers, and the eye reads the stripes as a gradient",
+    "ko": "FDM은 노즐에서 두 색을 진짜로 섞지 못한다 — 얇은 층 사이에서 필라멘트를 교체하고, 눈이 그 줄무늬를 그라디언트로 읽는다"
+  },
+  "description": {
+    "en": "Multi-material FDM does not blend in the nozzle. It swaps filaments between layers, purging the old one into a sacrificial tower. Alternating thin layers fakes a gradient via z-striping.",
+    "ko": "다중 재료 FDM은 노즐 안에서 색을 섞지 않는다. 층 사이에서 필라멘트를 교체하고 옛 잉크를 희생탑으로 토해낸다. 비율이 변하는 얇은 층의 교대(z 스트라이핑)가 그라디언트를 흉내낸다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "print-3d-color",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Prusa MMU",
+      "section": "multi-filament swap"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "FDM",
+    "Prusa MMU",
+    "Mosaic Palette",
+    "filament swap",
+    "z-striping"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
