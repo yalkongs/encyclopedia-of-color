@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-color-management/proofing-vs-press",
+  "title": {
+    "en": "Contract Proof vs Press",
+    "ko": "계약 프루프 vs 인쇄기"
+  },
+  "subtitle": {
+    "en": "a proof is an inkjet that pretends to be a press — its RIP bends its own tone curve until it lands on top of the press known curve",
+    "ko": "프루프는 인쇄기인 척하는 잉크젯이다 — 그 RIP가 자기 톤 곡선을 휘어, 알려진 인쇄기 곡선 위에 얹는다"
+  },
+  "description": {
+    "en": "A contract proof is an inkjet with a different native TVI from the press it simulates. The proof RIP precompensates so its measured TVI sits on the press TVI; any gap is the proof calibration error.",
+    "ko": "계약 프루프는 모사할 인쇄기와 다른 고유 TVI를 가진 잉크젯이다. 프루프 RIP는 사전 보정해 측정 TVI가 인쇄기 TVI 위에 앉도록 한다 — 차이가 프루프 캘리브레이션 오차다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "print-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Kipphan",
+      "section": "§9 proofing"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "proofing",
+    "TVI",
+    "contract proof",
+    "press match",
+    "calibration"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

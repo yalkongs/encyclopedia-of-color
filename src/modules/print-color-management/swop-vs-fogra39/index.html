@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>SWOP vs FOGRA39 — two coated-paper standards for offset look nearly i…</title>
+  <meta name="description" content="SWOP characterises US web/sheet-fed offset on coated stock; FOGRA39 the European equivalent. Paper white differs by a few b* units and CMYK solids land a few dE apart; ICC profiles encode the gap.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-color-management/swop-vs-fogra39/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="SWOP vs FOGRA39">
+  <meta property="og:description"    content="SWOP characterises US web/sheet-fed offset on coated stock; FOGRA39 the European equivalent. Paper white differs by a few b* units and CMYK solids land a few dE apart; ICC profiles encode the gap.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-color-management/swop-vs-fogra39/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-color-management--swop-vs-fogra39.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: SWOP vs FOGRA39.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="SWOP vs FOGRA39">
+  <meta name="twitter:description"   content="SWOP characterises US web/sheet-fed offset on coated stock; FOGRA39 the European equivalent. Paper white differs by a few b* units and CMYK solids land a few dE apart; ICC profiles encode the gap.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-color-management--swop-vs-fogra39.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: SWOP vs FOGRA39.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"SWOP vs FOGRA39","alternateName":"print-color-management/swop-vs-fogra39","description":"SWOP characterises US web/sheet-fed offset on coated stock; FOGRA39 the European equivalent. Paper white differs by a few b* units and CMYK solids land a few dE apart; ICC profiles encode the gap.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"SWOP, FOGRA39, ICC profile, offset, coated paper","url":"https://encyclopedia-of-color.vercel.app/modules/print-color-management/swop-vs-fogra39/","image":"https://encyclopedia-of-color.vercel.app/og/print-color-management--swop-vs-fogra39.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-color-management/swop-vs-fogra39">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">SWOP vs FOGRA39</h1>
+      <p class="module-subtitle">two coated-paper standards for offset look nearly identical at a glance — but ICC profiling chases the small paper-white shift and the few-ΔE drift in the solids</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          SWOP characterises US web/sheet-fed offset on coated stock; FOGRA39 (now FOGRA51) covers the European equivalent. Both target small ΔE on coated paper, but their reference paper white differs by a couple of b* units (FOGRA's stock is slightly cooler) and their CMYK solids land a few ΔE apart. ICC profiles encode those differences so the same image maps cleanly between the two presses.
+        </p>
+        <div class="math-block" data-tex="\Delta b^{*}_{paper} \approx 3,\quad \Delta E_{solids} \approx 3\text{–}6"></div>
+        <p class="zone-guide">
+          The two columns print the same swatches under each profile. At 1× the differences are real but subtle — exactly as you'd see on press. Increase the exaggeration to make the paper-white shift and the small CMY-solid offsets obvious without changing the underlying numbers.
+        </p>
+        <enc-slider id="exag" label="Exaggeration" min="1" max="5" step="1" value="3" unit="×"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="SWOP versus FOGRA39 ICC profile comparison"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="CGATS21 SWOP; FOGRA39 characterisation"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

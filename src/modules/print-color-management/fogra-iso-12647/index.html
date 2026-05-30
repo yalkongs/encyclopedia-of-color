@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ISO 12647 &amp; Fogra Tolerances — a print is to standard when every meas…</title>
+  <meta name="description" content="ISO 12647 sets reference Lab and dE tolerances for each CMYK solid; Fogra publishes the data. A run passes when every patch sits inside its ring; press drift breaks tight standards first.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-color-management/fogra-iso-12647/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ISO 12647 &amp; Fogra Tolerances">
+  <meta property="og:description"    content="ISO 12647 sets reference Lab and dE tolerances for each CMYK solid; Fogra publishes the data. A run passes when every patch sits inside its ring; press drift breaks tight standards first.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-color-management/fogra-iso-12647/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-color-management--fogra-iso-12647.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ISO 12647 &amp; Fogra Tolerances.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ISO 12647 &amp; Fogra Tolerances">
+  <meta name="twitter:description"   content="ISO 12647 sets reference Lab and dE tolerances for each CMYK solid; Fogra publishes the data. A run passes when every patch sits inside its ring; press drift breaks tight standards first.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-color-management--fogra-iso-12647.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ISO 12647 &amp; Fogra Tolerances.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ISO 12647 & Fogra Tolerances","alternateName":"print-color-management/fogra-iso-12647","description":"ISO 12647 sets reference Lab and dE tolerances for each CMYK solid; Fogra publishes the data. A run passes when every patch sits inside its ring; press drift breaks tight standards first.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ISO 12647, Fogra, tolerance, delta E, print standard","url":"https://encyclopedia-of-color.vercel.app/modules/print-color-management/fogra-iso-12647/","image":"https://encyclopedia-of-color.vercel.app/og/print-color-management--fogra-iso-12647.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-color-management/fogra-iso-12647">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ISO 12647 & Fogra Tolerances</h1>
+      <p class="module-subtitle">a print is "to standard" when every measured patch sits inside its reference tolerance — sheet-fed offset is tight, newsprint is loose</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          ISO 12647 defines reference Lab values for the CMYK solids and their overprints on each paper class, plus the ΔE tolerance each measured patch must stay within. Fogra publishes the characterisation data (FOGRA51, FOGRA39, FOGRA52) that supplies those reference values. Press variability scatters measured patches around the references; a print passes when every one is inside its ring.
+        </p>
+        <div class="math-block" data-tex="\Delta E_{ab}^{*} \;\le\; T_{ref}\quad\text{for every patch}"></div>
+        <p class="zone-guide">
+          Pick a standard's tolerance class and push press variability. Sheet-fed offset on coated stock (tight) breaks first; newsprint's looser tolerance forgives much more drift. The readout counts how many of the eight reference patches stay inside their rings.
+        </p>
+        <enc-slider id="var" label="Press variability" min="0" max="100" step="1" value="35" unit="%"></enc-slider>
+        <enc-toggle id="std" label="Standard" options="2,3" labels="ISO 12647-2 sheet-fed,ISO 12647-3 newsprint" value="2"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ISO 12647 tolerance ellipses and pass/fail"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="ISO 12647; Fogra characterisation data"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

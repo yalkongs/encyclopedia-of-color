@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-color-management/swop-vs-fogra39",
+  "title": {
+    "en": "SWOP vs FOGRA39",
+    "ko": "SWOP vs FOGRA39"
+  },
+  "subtitle": {
+    "en": "two coated-paper standards for offset look nearly identical at a glance — but ICC profiling chases the small paper-white shift and the few-ΔE drift in the solids",
+    "ko": "두 코팅지 오프셋 표준은 언뜻 같아 보이지만 — ICC 프로파일링은 작은 종이 흰색 이동과 솔리드의 몇 ΔE 차이를 쫓는다"
+  },
+  "description": {
+    "en": "SWOP characterises US web/sheet-fed offset on coated stock; FOGRA39 the European equivalent. Paper white differs by a few b* units and CMYK solids land a few dE apart; ICC profiles encode the gap.",
+    "ko": "SWOP은 미국 코팅지 웹/시트 오프셋을, FOGRA39은 유럽 동등물을 특성화한다. 종이 흰색은 b*가 몇 단위 다르고 CMYK 솔리드는 몇 ΔE 떨어진다 — ICC 프로파일이 그 차이를 인코딩한다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "print-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "CGATS21 SWOP",
+      "section": "profile"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "SWOP",
+    "FOGRA39",
+    "ICC profile",
+    "offset",
+    "coated paper"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>i1 Spectrophotometer Readout — a handheld probe shines on a patch, re…</title>
+  <meta name="description" content="An i1 measures reflectance from ~380 to 730 nm, integrates against CIE matching functions and the illuminant to get XYZ, then L*a*b*. Subtract a reference and you get the dE printers live by.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-color-management/spectrophotometer-i1/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="i1 Spectrophotometer Readout">
+  <meta property="og:description"    content="An i1 measures reflectance from ~380 to 730 nm, integrates against CIE matching functions and the illuminant to get XYZ, then L*a*b*. Subtract a reference and you get the dE printers live by.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-color-management/spectrophotometer-i1/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-color-management--spectrophotometer-i1.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: i1 Spectrophotometer Readout.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="i1 Spectrophotometer Readout">
+  <meta name="twitter:description"   content="An i1 measures reflectance from ~380 to 730 nm, integrates against CIE matching functions and the illuminant to get XYZ, then L*a*b*. Subtract a reference and you get the dE printers live by.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-color-management--spectrophotometer-i1.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: i1 Spectrophotometer Readout.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"i1 Spectrophotometer Readout","alternateName":"print-color-management/spectrophotometer-i1","description":"An i1 measures reflectance from ~380 to 730 nm, integrates against CIE matching functions and the illuminant to get XYZ, then L*a*b*. Subtract a reference and you get the dE printers live by.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"spectrophotometer, i1, X-Rite, Lab, delta E","url":"https://encyclopedia-of-color.vercel.app/modules/print-color-management/spectrophotometer-i1/","image":"https://encyclopedia-of-color.vercel.app/og/print-color-management--spectrophotometer-i1.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-color-management/spectrophotometer-i1">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">i1 Spectrophotometer Readout</h1>
+      <p class="module-subtitle">a handheld probe shines on a patch, reads its reflectance every few nanometres, integrates against the standard observer, and reports an L*a*b* — and a ΔE to target</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A spectrophotometer like the X-Rite i1 measures the reflectance spectrum of a printed patch from ~380 to 730 nm, then integrates against the CIE colour-matching functions and a chosen illuminant to produce X, Y, Z, and from there an L*a*b*. Subtract a reference patch's Lab and you get a ΔE — the number printers live and die by.
+        </p>
+        <div class="math-block" data-tex="\text{spectrum}(\lambda) \;\to\; (X,Y,Z) \;\to\; (L^*,a^*,b^*) \;\to\; \Delta E"></div>
+        <p class="zone-guide">
+          Step the probe across the test strip. For each patch the spectrum updates, the measured L*a*b* refreshes, and the ΔE to its ISO reference is compared against the standard's tolerance — easy to see which patches passed and which broke.
+        </p>
+        <enc-slider id="patch" label="Probe over patch" min="1" max="8" step="1" value="3" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="i1 spectrophotometer reading a print patch"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="X-Rite i1 spectrophotometer; ISO 13655"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-color-management/fogra-iso-12647",
+  "title": {
+    "en": "ISO 12647 & Fogra Tolerances",
+    "ko": "ISO 12647·Fogra 허용오차"
+  },
+  "subtitle": {
+    "en": "a print is to standard when every measured patch sits inside its reference tolerance — sheet-fed offset is tight, newsprint is loose",
+    "ko": "인쇄가 표준에 맞다는 것은 측정된 모든 패치가 기준 허용오차 안에 있다는 것 — 시트오프셋은 빡빡하고 신문지는 느슨하다"
+  },
+  "description": {
+    "en": "ISO 12647 sets reference Lab and dE tolerances for each CMYK solid; Fogra publishes the data. A run passes when every patch sits inside its ring; press drift breaks tight standards first.",
+    "ko": "ISO 12647은 각 CMYK 솔리드의 기준 Lab과 ΔE 허용오차를 정한다. Fogra는 특성화 데이터를 발행한다. 측정된 모든 패치가 자기 링 안에 있을 때 합격이며, 흐트러진 인쇄는 빡빡한 표준부터 깨진다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "print-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "ISO 12647",
+      "section": "part 2/3 tolerances"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "ISO 12647",
+    "Fogra",
+    "tolerance",
+    "delta E",
+    "print standard"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-color-management/spectrophotometer-i1",
+  "title": {
+    "en": "i1 Spectrophotometer Readout",
+    "ko": "i1 분광측색기 판독"
+  },
+  "subtitle": {
+    "en": "a handheld probe shines on a patch, reads its reflectance every few nanometres, integrates against the standard observer, and reports an L*a*b* — and a ΔE to target",
+    "ko": "휴대용 프로브가 패치에 빛을 비춰 수 nm마다 반사율을 읽고, 표준 관측자에 적분해 L*a*b*를 보고한다 — 그리고 목표 대비 ΔE를"
+  },
+  "description": {
+    "en": "An i1 measures reflectance from ~380 to 730 nm, integrates against CIE matching functions and the illuminant to get XYZ, then L*a*b*. Subtract a reference and you get the dE printers live by.",
+    "ko": "i1은 약 380–730 nm 반사율을 측정해 CIE 색대응함수와 광원에 적분해 XYZ를 얻고, L*a*b*로 변환한다. 기준 Lab을 빼면 인쇄가가 의지하는 ΔE가 나온다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 7,
+  "category": "print-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "X-Rite i1",
+      "section": "spectrophotometer"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "spectrophotometer",
+    "i1",
+    "X-Rite",
+    "Lab",
+    "delta E"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Contract Proof vs Press — a proof is an inkjet that pretends to be a…</title>
+  <meta name="description" content="A contract proof is an inkjet with a different native TVI from the press it simulates. The proof RIP precompensates so its measured TVI sits on the press TVI; any gap is the proof calibration error.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-color-management/proofing-vs-press/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Contract Proof vs Press">
+  <meta property="og:description"    content="A contract proof is an inkjet with a different native TVI from the press it simulates. The proof RIP precompensates so its measured TVI sits on the press TVI; any gap is the proof calibration error.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-color-management/proofing-vs-press/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-color-management--proofing-vs-press.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Contract Proof vs Press.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Contract Proof vs Press">
+  <meta name="twitter:description"   content="A contract proof is an inkjet with a different native TVI from the press it simulates. The proof RIP precompensates so its measured TVI sits on the press TVI; any gap is the proof calibration error.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-color-management--proofing-vs-press.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Contract Proof vs Press.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Contract Proof vs Press","alternateName":"print-color-management/proofing-vs-press","description":"A contract proof is an inkjet with a different native TVI from the press it simulates. The proof RIP precompensates so its measured TVI sits on the press TVI; any gap is the proof calibration error.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"proofing, TVI, contract proof, press match, calibration","url":"https://encyclopedia-of-color.vercel.app/modules/print-color-management/proofing-vs-press/","image":"https://encyclopedia-of-color.vercel.app/og/print-color-management--proofing-vs-press.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-color-management/proofing-vs-press">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Contract Proof vs Press</h1>
+      <p class="module-subtitle">a proof is an inkjet that pretends to be a press — its RIP bends its own tone curve until it lands on top of the press's known curve</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A contract proof is an inkjet printer with a different native tone-value increase from the offset press it is supposed to simulate. The proof's job is not to look like the proofer's natural output — it is to match the press's TVI curve. The proof RIP precompensates so the measured proof curve sits on the press curve; any mismatch is the proof's calibration error.
+        </p>
+        <div class="math-block" data-tex="\text{TVI}_{proof}(t) \;\to\; \text{TVI}_{press}(t)\quad\text{across all }t"></div>
+        <p class="zone-guide">
+          The dashed curve is the press's published TVI target. The solid curve is the proof's TVI at the chosen calibration level — start uncalibrated and it sits off; slide calibration up and it snaps onto the press. The strip below shows the matching tone ramps.
+        </p>
+        <enc-slider id="cal" label="Proof calibration" min="0" max="100" step="1" value="0" unit="%"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Proof TVI curve calibrated to press TVI"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Kipphan §9; proofing workflow"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

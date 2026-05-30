@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>G7 Calibration: Neutral Print Density — G7 calibrates a press to a de…</title>
+  <meta name="description" content="G7 targets the shape of the press neutral grey output. A CMY ramp must follow the NPDC and stay near a*=b*=0; if it drifts, calibration curves snap it back onto the spec.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/print-color-management/g7-calibration/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="G7 Calibration: Neutral Print Density">
+  <meta property="og:description"    content="G7 targets the shape of the press neutral grey output. A CMY ramp must follow the NPDC and stay near a*=b*=0; if it drifts, calibration curves snap it back onto the spec.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/print-color-management/g7-calibration/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/print-color-management--g7-calibration.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: G7 Calibration: Neutral Print Density.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="G7 Calibration: Neutral Print Density">
+  <meta name="twitter:description"   content="G7 targets the shape of the press neutral grey output. A CMY ramp must follow the NPDC and stay near a*=b*=0; if it drifts, calibration curves snap it back onto the spec.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/print-color-management--g7-calibration.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: G7 Calibration: Neutral Print Density.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"G7 Calibration: Neutral Print Density","alternateName":"print-color-management/g7-calibration","description":"G7 targets the shape of the press neutral grey output. A CMY ramp must follow the NPDC and stay near a*=b*=0; if it drifts, calibration curves snap it back onto the spec.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"G7, NPDC, gray balance, calibration, IDEAlliance","url":"https://encyclopedia-of-color.vercel.app/modules/print-color-management/g7-calibration/","image":"https://encyclopedia-of-color.vercel.app/og/print-color-management--g7-calibration.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="print-color-management/g7-calibration">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.7">D7 Print</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">G7 Calibration: Neutral Print Density</h1>
+      <p class="module-subtitle">G7 calibrates a press to a defined shape of neutral grey from paper white to maximum density — not just the midtone, the whole curve</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          IDEAlliance's G7 method does not target individual CMYK dot gains; it targets the *shape* of the press's neutral grey output. A printed CMY ramp must follow the NPDC (Neutral Print Density Curve) and stay near a* = b* = 0 from highlight to shadow. If the press drifts, the calibrator builds CMY balance curves that snap the measured grey ramp back onto the spec.
+        </p>
+        <div class="math-block" data-tex="\text{press CMY ramp} \;\to\; (a^*, b^*) \approx 0 \text{ at every step}"></div>
+        <p class="zone-guide">
+          Push the press off-neutral and the grey ramp drifts into a cast and bends off the NPDC. Switch G7 calibration on and the snap-back curves pull the measured ramp onto the spec — the cast clears and the density curve straightens.
+        </p>
+        <enc-slider id="drift" label="Press drift" min="0" max="100" step="1" value="60" unit="%"></enc-slider>
+        <enc-toggle id="cal" label="G7 calibration" options="off,on" labels="off,on" value="off"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="G7 calibration neutral print density"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="IDEAlliance G7; NPDC specification"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

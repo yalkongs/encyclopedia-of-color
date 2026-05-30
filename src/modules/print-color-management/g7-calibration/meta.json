@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "print-color-management/g7-calibration",
+  "title": {
+    "en": "G7 Calibration: Neutral Print Density",
+    "ko": "G7 캘리브레이션: 중성 인쇄 밀도"
+  },
+  "subtitle": {
+    "en": "G7 calibrates a press to a defined shape of neutral grey from paper white to maximum density — not just the midtone, the whole curve",
+    "ko": "G7은 인쇄기를 종이 흰색부터 최대 농도까지 정의된 중성 회색 곡선 모양에 맞춘다 — 중간톤만이 아니라 곡선 전체"
+  },
+  "description": {
+    "en": "G7 targets the shape of the press neutral grey output. A CMY ramp must follow the NPDC and stay near a*=b*=0; if it drifts, calibration curves snap it back onto the spec.",
+    "ko": "G7은 인쇄기의 중성 회색 출력 모양을 목표로 한다. CMY 램프가 NPDC를 따르고 a*=b*=0 근처에 머물러야 한다. 흐트러지면 캘리브레이션 곡선이 사양에 맞춰 다시 끌어당긴다."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 7,
+  "category": "print-color-management",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "IDEAlliance G7",
+      "section": "NPDC method"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "G7",
+    "NPDC",
+    "gray balance",
+    "calibration",
+    "IDEAlliance"
+  ],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
