@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>DXT / BC1 — 4×4 Block Texture Compression — 2 endpoint colours + 16 ×…</title>
+  <meta name="description" content="Palette-size slider drives 2/4/8/16-entry block quantization with original vs compressed images and BC1 layout diagram.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-compression/dxt-bc-block-compression/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="DXT / BC1 — 4×4 Block Texture Compression">
+  <meta property="og:description"    content="Palette-size slider drives 2/4/8/16-entry block quantization with original vs compressed images and BC1 layout diagram.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-compression/dxt-bc-block-compression/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-compression--dxt-bc-block-compression.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: DXT / BC1 — 4×4 Block Texture Compression.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="DXT / BC1 — 4×4 Block Texture Compression">
+  <meta name="twitter:description"   content="Palette-size slider drives 2/4/8/16-entry block quantization with original vs compressed images and BC1 layout diagram.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-compression--dxt-bc-block-compression.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: DXT / BC1 — 4×4 Block Texture Compression.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"DXT / BC1 — 4×4 Block Texture Compression","alternateName":"color-compression/dxt-bc-block-compression","description":"Palette-size slider drives 2/4/8/16-entry block quantization with original vs compressed images and BC1 layout diagram.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"DXT, BC1, texture compression","url":"https://encyclopedia-of-color.vercel.app/modules/color-compression/dxt-bc-block-compression/","image":"https://encyclopedia-of-color.vercel.app/og/color-compression--dxt-bc-block-compression.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-compression/dxt-bc-block-compression">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">DXT / BC1 — 4×4 Block Texture Compression</h1>
+    <p class="module-subtitle">Each 4×4 block stored as 2 endpoint colours (RGB565) + 16 two-bit indices into a 4-colour palette interpolated between them; 4:1 ratio, fixed-rate, GPU-native</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">DXT1 (now BC1) was the original 1999 S3 Texture Compression. Critical for real-time rendering because GPU samplers decode on-the-fly. The downside: blocky artifacts on smooth gradients within a block, especially the green channel (5 bits, smaller than R&apos;s 6).</p>
+      <p class="zone-guide">Slide block-rounding to see the artifact severity.</p>
+      <enc-slider id="bits" label="indices per block (1=harsher · 4=full)" min="1" max="4" step="1" value="2" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="DXT"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Iourcha 1999 S3TC; Microsoft BC Spec 2015"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

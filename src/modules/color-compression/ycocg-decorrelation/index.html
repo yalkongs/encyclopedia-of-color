@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>YCoCg Decorrelation — Reversible RGB Transform — Y = (R+2G+B)/4, Co =…</title>
+  <meta name="description" content="Channel selector shows Y/Co/Cg with std-dev bar chart comparing RGB vs YCoCg per-channel entropy, demonstrating decorrelation savings.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-compression/ycocg-decorrelation/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="YCoCg Decorrelation — Reversible RGB Transform">
+  <meta property="og:description"    content="Channel selector shows Y/Co/Cg with std-dev bar chart comparing RGB vs YCoCg per-channel entropy, demonstrating decorrelation savings.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-compression/ycocg-decorrelation/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-compression--ycocg-decorrelation.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: YCoCg Decorrelation — Reversible RGB Transform.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="YCoCg Decorrelation — Reversible RGB Transform">
+  <meta name="twitter:description"   content="Channel selector shows Y/Co/Cg with std-dev bar chart comparing RGB vs YCoCg per-channel entropy, demonstrating decorrelation savings.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-compression--ycocg-decorrelation.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: YCoCg Decorrelation — Reversible RGB Transform.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"YCoCg Decorrelation — Reversible RGB Transform","alternateName":"color-compression/ycocg-decorrelation","description":"Channel selector shows Y/Co/Cg with std-dev bar chart comparing RGB vs YCoCg per-channel entropy, demonstrating decorrelation savings.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"YCoCg, decorrelation, lifting","url":"https://encyclopedia-of-color.vercel.app/modules/color-compression/ycocg-decorrelation/","image":"https://encyclopedia-of-color.vercel.app/og/color-compression--ycocg-decorrelation.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-compression/ycocg-decorrelation">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">YCoCg Decorrelation — Reversible RGB Transform</h1>
+    <p class="module-subtitle">Y = (R + 2G + B)/4, Co = (R − B)/2, Cg = G − (R + B)/2; integer-reversible, decorrelates better than YCbCr — used in HEVC/AV1 internally</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">RGB channels are highly correlated (R and G have correlation ~0.7 on natural images), so coding them independently wastes bits. YCoCg-R is a reversible lift that reduces inter-channel correlation, packs energy into Y, and uses smaller bit ranges for Co/Cg in flat regions. Codecs run their entropy coder on YCoCg, not RGB.</p>
+      <p class="zone-guide">Toggle channel to visualise.</p>
+      <enc-slider id="c" label="channel (1=Y · 2=Co · 3=Cg)" min="1" max="3" step="1" value="1" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="YCoCg"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Malvar YCoCg-R 2008; H.264 SVC Profiles"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

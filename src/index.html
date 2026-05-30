@@ -40,9 +40,9 @@
     </header>
 
     <!-- AUTO-LANDING START · do not edit, run `npm run build:landing` -->
-    <!-- 460 modules across 103 categories -->
+    <!-- 464 modules across 104 categories -->
     <p class="intro">
-      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>460 modules</strong> are published across 103 categories — every one an independent, embeddable simulation.
+      The encyclopedia will eventually hold 518 interactive modules across 12 domains. As of this build, <strong>464 modules</strong> are published across 104 categories — every one an independent, embeddable simulation.
     </p>
     <div class="domain-cluster">
       <h2 class="section-title">Light Basics</h2>
@@ -2871,6 +2871,32 @@
         <div class="card-meta">L3 · Reference · Color Segmentation And Cv</div>
         <div class="card-title">SLIC Superpixels — k-Means in Lab + xy</div>
         <div class="card-sub">Simple Linear Iterative Clustering (Achanta 2010): k-means in 5D Lab+xy produces compact edge-aware regions for CV preprocessing</div>
+      </a>
+      </div>
+    </div>
+    <div class="domain-cluster">
+      <h2 class="section-title">Colour Compression</h2>
+      <div class="sub">Domain 11 · JPEG 4:2:0, DXT/BC, AVIF</div>
+      <div class="module-grid">
+      <a class="module-card" href="./modules/color-compression/avif-vs-jpeg-quality/">
+        <div class="card-meta">L2 · Reference · Color Compression</div>
+        <div class="card-title">AVIF vs JPEG — 30-Year Improvement</div>
+        <div class="card-sub">AVIF (2019) delivers JPEG-equivalent quality at 40-50% smaller file via better prediction, transforms, and entropy coding</div>
+      </a>
+      <a class="module-card" href="./modules/color-compression/dxt-bc-block-compression/">
+        <div class="card-meta">L3 · Reference · Color Compression</div>
+        <div class="card-title">DXT / BC1 — 4×4 Block Texture Compression</div>
+        <div class="card-sub">2 endpoint colours + 16 × 2-bit indices = 64 bits / 16 px = 4 bpp; GPU-native fixed-rate format for real-time rendering</div>
+      </a>
+      <a class="module-card" href="./modules/color-compression/jpeg-chroma-420-subsampling/">
+        <div class="card-meta">L3 · Reference · Color Compression</div>
+        <div class="card-title">JPEG 4:2:0 Chroma Subsampling</div>
+        <div class="card-sub">Store luma full-res but chroma at 1/2 in each dim; ~33% bit savings with little visible damage on natural images because eye is luma-sensitive</div>
+      </a>
+      <a class="module-card" href="./modules/color-compression/ycocg-decorrelation/">
+        <div class="card-meta">L3 · Reference · Color Compression</div>
+        <div class="card-title">YCoCg Decorrelation — Reversible RGB Transform</div>
+        <div class="card-sub">Y = (R+2G+B)/4, Co = (R-B)/2, Cg = G-(R+B)/2; integer-reversible, decorrelates better than YCbCr — used in HEVC/AV1 internally</div>
       </a>
       </div>
     </div>

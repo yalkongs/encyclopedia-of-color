@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-compression/ycocg-decorrelation",
+  "title": {"en": "YCoCg Decorrelation — Reversible RGB Transform", "ko": "YCoCg 무상관화 — 가역 RGB 변환"},
+  "subtitle": {"en": "Y = (R+2G+B)/4, Co = (R-B)/2, Cg = G-(R+B)/2; integer-reversible, decorrelates better than YCbCr — used in HEVC/AV1 internally", "ko": "Y, Co, Cg 정수 가역 변환이 RGB 채널을 무상관화 — HEVC/AV1 내부에 사용"},
+  "description": {"en": "Channel selector shows Y/Co/Cg with std-dev bar chart comparing RGB vs YCoCg per-channel entropy, demonstrating decorrelation savings.", "ko": "Y/Co/Cg 채널 선택과 RGB vs YCoCg 채널별 std-dev 막대 그래프로 무상관화 이득을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-compression",
+  "layout": "A", "prerequisites": ["color-compression/jpeg-chroma-420-subsampling"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Malvar 2008", "section": "YCoCg-R"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["YCoCg", "decorrelation", "lifting"],
+  "estimated_hours": 8, "status": "shipped"
+}

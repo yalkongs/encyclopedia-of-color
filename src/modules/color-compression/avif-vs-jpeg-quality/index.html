@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>AVIF vs JPEG — 30-Year Improvement — AVIF (2019) delivers JPEG-equiva…</title>
+  <meta name="description" content="Quality slider drives bits-per-pixel curves and PSNR-vs-bpp comparison showing AVIF's ~50% rate savings vs JPEG.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-compression/avif-vs-jpeg-quality/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="AVIF vs JPEG — 30-Year Improvement">
+  <meta property="og:description"    content="Quality slider drives bits-per-pixel curves and PSNR-vs-bpp comparison showing AVIF's ~50% rate savings vs JPEG.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-compression/avif-vs-jpeg-quality/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-compression--avif-vs-jpeg-quality.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: AVIF vs JPEG — 30-Year Improvement.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="AVIF vs JPEG — 30-Year Improvement">
+  <meta name="twitter:description"   content="Quality slider drives bits-per-pixel curves and PSNR-vs-bpp comparison showing AVIF's ~50% rate savings vs JPEG.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-compression--avif-vs-jpeg-quality.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: AVIF vs JPEG — 30-Year Improvement.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"AVIF vs JPEG — 30-Year Improvement","alternateName":"color-compression/avif-vs-jpeg-quality","description":"Quality slider drives bits-per-pixel curves and PSNR-vs-bpp comparison showing AVIF's ~50% rate savings vs JPEG.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"AVIF, JPEG, image compression","url":"https://encyclopedia-of-color.vercel.app/modules/color-compression/avif-vs-jpeg-quality/","image":"https://encyclopedia-of-color.vercel.app/og/color-compression--avif-vs-jpeg-quality.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="color-compression/avif-vs-jpeg-quality">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.11">D11 Computational</span><span class="chip" data-i18n="bloom.L2">L2 Understand</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">AVIF vs JPEG — 30-Year Improvement</h1>
+    <p class="module-subtitle">AVIF (AV1 stills, 2019) typically delivers JPEG-equivalent quality at 1/3 to 1/2 the bytes thanks to better prediction, transforms, and entropy coding</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">JPEG (1992) uses DCT + zig-zag + Huffman. AVIF (2019) uses HEVC-class block prediction, multiple transform sizes (4×4 to 64×64), arithmetic coding (CABAC), and supports 10-bit + wide gamut. Catch: AVIF encoding is ~50× slower than JPEG, decode is ~5× slower.</p>
+      <p class="zone-guide">Slide quality level to see file-size approximation curves.</p>
+      <enc-slider id="q" label="quality (0=low → 100=lossless)" min="10" max="100" step="1" value="70" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="AVIF vs JPEG"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="AV1 Spec 2018; AVIF MIAF 2019"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

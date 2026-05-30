@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-compression/avif-vs-jpeg-quality",
+  "title": {"en": "AVIF vs JPEG — 30-Year Improvement", "ko": "AVIF vs JPEG — 30년의 발전"},
+  "subtitle": {"en": "AVIF (2019) delivers JPEG-equivalent quality at 40-50% smaller file via better prediction, transforms, and entropy coding", "ko": "AVIF (2019)가 JPEG 동등 품질을 40-50% 작은 파일로 — 더 나은 예측·변환·엔트로피 코딩"},
+  "description": {"en": "Quality slider drives bits-per-pixel curves and PSNR-vs-bpp comparison showing AVIF's ~50% rate savings vs JPEG.", "ko": "품질 슬라이더로 비트율 곡선과 PSNR-bpp 비교로 AVIF가 JPEG 대비 ~50% 비트 절감을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 11, "category": "color-compression",
+  "layout": "A", "prerequisites": ["color-compression/jpeg-chroma-420-subsampling"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "AV1 2018", "section": "AVIF"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["AVIF", "JPEG", "image compression"],
+  "estimated_hours": 8, "status": "shipped"
+}

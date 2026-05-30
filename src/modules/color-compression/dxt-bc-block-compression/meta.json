@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-compression/dxt-bc-block-compression",
+  "title": {"en": "DXT / BC1 — 4×4 Block Texture Compression", "ko": "DXT / BC1 — 4×4 블록 텍스처 압축"},
+  "subtitle": {"en": "2 endpoint colours + 16 × 2-bit indices = 64 bits / 16 px = 4 bpp; GPU-native fixed-rate format for real-time rendering", "ko": "2 엔드포인트 + 16 × 2비트 인덱스 = 64비트 / 16픽셀 = 4 bpp; 실시간 렌더링용 GPU 고정 속도 포맷"},
+  "description": {"en": "Palette-size slider drives 2/4/8/16-entry block quantization with original vs compressed images and BC1 layout diagram.", "ko": "팔레트 크기 슬라이더로 2/4/8/16 블록 양자화와 원본·압축 이미지 비교, BC1 레이아웃 도식을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 11, "category": "color-compression",
+  "layout": "A", "prerequisites": ["color-quantization/uniform-grid-quantizer"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Iourcha 1999", "section": "S3TC"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["DXT", "BC1", "texture compression"],
+  "estimated_hours": 8, "status": "shipped"
+}
