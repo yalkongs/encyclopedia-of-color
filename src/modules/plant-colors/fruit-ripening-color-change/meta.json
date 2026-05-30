@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "plant-colors/fruit-ripening-color-change",
+  "title": {
+    "en": "Fruit Ripening — Chlorophyll Out, Lycopene In",
+    "ko": "과일 익음 — 엽록소 out, 리코펜 in"
+  },
+  "subtitle": {
+    "en": "a green tomato decays chlorophyll while synthesising lycopene; ethylene-driven biochemistry shifts the colour from chlorophyll-green to lycopene-red in a few days",
+    "ko": "녹색 토마토가 엽록소 분해 + 리코펜 합성 — 에틸렌 구동, 며칠 사이 적색 전환"
+  },
+  "description": {
+    "en": "Tomato colour sweeps green → yellow → red as day advances. Two coupled pigment trajectories driven by ethylene cascade.",
+    "ko": "토마토 색이 일자에 따라 녹→황→적. 에틸렌 cascade로 두 색소 trajectory 결합."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 9,
+  "category": "plant-colors",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Carrari & Fernie 2006", "section": "Ripening" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["tomato", "ripening", "lycopene", "ethylene"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

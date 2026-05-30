@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "plant-colors/iridescent-marbles-begonia",
+  "title": {
+    "en": "Iridescent Begonia — Photonic Chloroplasts",
+    "ko": "베고니아 무지개 — 광결정 엽록체"
+  },
+  "subtitle": {
+    "en": "Begonia pavonina has iridoplasts — modified chloroplasts with stacked thylakoid lamellae acting as a photonic crystal — they reflect blue while still doing photosynthesis under deep-shade conditions",
+    "ko": "Begonia pavonina의 iridoplast — 적층 thylakoid가 광결정으로 작용해 청색 반사하면서 깊은 그늘에서 광합성"
+  },
+  "description": {
+    "en": "Leaf swatch with optional iridescent spots. Toggle on/off the iridoplast structure to compare appearance. Photonic structure that boosts shade-adapted photosynthesis.",
+    "ko": "잎 swatch + iridescent 점. 토글로 iridoplast 비교. 음지 광합성을 부스트하는 광결정 구조."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 9,
+  "category": "plant-colors",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [14],
+  "textbook_refs": [
+    { "source": "Jacobs 2016", "section": "Iridoplast" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["begonia", "iridoplast", "structural color"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

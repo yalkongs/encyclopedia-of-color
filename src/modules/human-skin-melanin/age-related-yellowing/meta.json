@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "human-skin-melanin/age-related-yellowing",
+  "title": {
+    "en": "Age-Related Yellowing — Lipofuscin Accumulation",
+    "ko": "노화 황변 — 리포푸신 축적"
+  },
+  "subtitle": {
+    "en": "aged skin and lens accumulate lipofuscin, a yellow-brown fluorescent pigment from lipid peroxidation; the eye lens specifically yellows enough to block blue light by age 70",
+    "ko": "노화 피부·렌즈에 리포푸신 축적 — 수정체는 70세에 청색 60% 감소"
+  },
+  "description": {
+    "en": "Crystalline-lens swatch yellows with age; transmittance plot shows blue-end absorption growth. Cataract IOL replacement restores blue perception.",
+    "ko": "수정체 swatch가 나이에 따라 황변; 투과율 플롯에 청색 흡수 성장. 백내장 IOL 교체로 청색 회복."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "human-skin-melanin",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Boulton 2001", "section": "Lipofuscin" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["aging", "lipofuscin", "cataract", "yellowing"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

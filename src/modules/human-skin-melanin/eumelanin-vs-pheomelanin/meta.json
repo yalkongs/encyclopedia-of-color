@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "human-skin-melanin/eumelanin-vs-pheomelanin",
+  "title": {
+    "en": "Eumelanin vs Pheomelanin — Two Pigments, One Skin",
+    "ko": "에우멜라닌 vs 페오멜라닌 — 두 색소"
+  },
+  "subtitle": {
+    "en": "eumelanin (brown-black) absorbs broadly; pheomelanin (red-yellow) absorbs only blue; their ratio sets skin and hair colour",
+    "ko": "에우(갈-흑) 광범위 흡수, 페오(적-황) 청색만 — 비율이 피부·머리색"
+  },
+  "description": {
+    "en": "Eu/pheo ratio slider drives hair colour from red through blonde to black. Foundation of human pigmentation diversity.",
+    "ko": "Eu/pheo 비율 슬라이더로 적·금·갈·흑발 색 변화. 인간 색소 다양성 기반."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "human-skin-melanin",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Sturm 2009", "section": "Pigmentation genetics" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["melanin", "eumelanin", "pheomelanin", "hair color"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}
