@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-emotion/blue-calm-blood-pressure",
+  "title": {"en": "Blue and Calm — Hospital Blood-Pressure Studies", "ko": "청색과 진정 — 병원 혈압 연구"},
+  "subtitle": {"en": "Pre-op blue-painted wards show ~3-5 mmHg systolic-BP reduction vs neutral; Glasgow blue-light trial reported 9% drop in disorder calls", "ko": "수술 전 청색 병실이 중성 대비 수축기 혈압 ~3-5 mmHg 감소; 글래스고 청색 가로등 9% 무질서 신고 감소"},
+  "description": {"en": "Ambient-hue slider drives modelled calmness arc and BP/HR display with hospital ward scene shifting through hue palette.", "ko": "주변 색조 슬라이더로 진정 아크와 혈압/심박을 모델링하며 병실 장면이 색조 팔레트로 변합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "color-and-emotion",
+  "layout": "A", "prerequisites": ["color-and-emotion/red-arousal-cortisol"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Küller 2006", "section": "Colour environment"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["blue calm", "hospital colour", "BP"],
+  "estimated_hours": 8, "status": "shipped"
+}

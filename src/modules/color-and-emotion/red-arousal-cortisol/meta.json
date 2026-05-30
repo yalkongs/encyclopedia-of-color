@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-emotion/red-arousal-cortisol",
+  "title": {"en": "Red and Arousal — Sympathetic Activation", "ko": "적색과 각성 — 교감신경 활성화"},
+  "subtitle": {"en": "Saturated red elevates HR and cortisol vs neutral; Hill & Barton (Nature 2005) — red-uniform athletes win ~55-60% of matched bouts", "ko": "포화 적색이 심박과 코르티솔을 상승; Hill & Barton (Nature 2005) — 적색 유니폼 선수가 동일 조건 승률 ~55-60%"},
+  "description": {"en": "Saturation slider models HR-dial and cortisol-bar response to a red swatch, with effect-size caveat in footnote.", "ko": "채도 슬라이더로 심박 다이얼과 코르티솔 막대 반응을 모델링하며 효과 크기 주의 사항을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "color-and-emotion",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Hill Barton 2005", "section": "Red contests"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["red arousal", "cortisol", "sports"],
+  "estimated_hours": 8, "status": "shipped"
+}

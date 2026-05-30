@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-emotion/seasonal-color-affect",
+  "title": {"en": "Seasonal Colour Affect — Daylight, SAD & Light Therapy", "ko": "계절성 색 정서 — 일조, SAD, 광치료"},
+  "subtitle": {"en": "Above 50° latitude SAD ~5-10% of population; 10,000-lux blue-weighted light boxes alleviate ~80% of cases — melanopsin ipRGC peak at 480 nm", "ko": "위도 50° 이상에서 SAD 인구의 ~5-10%; 10,000 lux 청색 가중 광치료가 ~80% 완화 — 멜라놉신 ipRGC 480 nm 피크"},
+  "description": {"en": "Month slider drives 24-h day/night clock + SAD-risk bar with light-therapy treatment callout showing melanopsin's 480 nm peak.", "ko": "월 슬라이더로 24시간 일주야 시계와 SAD 위험 막대, 멜라놉신 480 nm 광치료 콜아웃을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "color-and-emotion",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Rosenthal 1984", "section": "SAD"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["SAD", "melanopsin", "light therapy"],
+  "estimated_hours": 8, "status": "shipped"
+}

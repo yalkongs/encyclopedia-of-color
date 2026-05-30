@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "color-and-emotion/cross-cultural-meaning-grid",
+  "title": {"en": "Cross-Cultural Colour Meaning — 6×6 Grid", "ko": "문화별 색 의미 — 6×6 격자"},
+  "subtitle": {"en": "Aslam 2006: white = death (East Asia) vs purity (West); red = wedding (China) vs warning (US); green = Islam vs envy", "ko": "Aslam 2006: 백색 = 동아시아 죽음 vs 서양 순결; 적색 = 중국 결혼 vs 미국 경고; 녹색 = 이슬람 vs 시기"},
+  "description": {"en": "Region selector highlights one row of 6 colours × 6 regions meaning grid showing universals and cultural specifics.", "ko": "지역 선택으로 6색 × 6지역 의미 격자의 한 행을 강조해 보편성과 문화별 특수성을 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "color-and-emotion",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Aslam 2006", "section": "Marketing colour"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["cultural colour", "Aslam 2006", "marketing"],
+  "estimated_hours": 8, "status": "shipped"
+}
