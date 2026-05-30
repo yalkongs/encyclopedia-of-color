@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "attention-and-perception/pop-out-search-asymmetry",
+  "title": {"en": "Pop-Out Search — Single-Feature Pre-Attentive", "ko": "팝아웃 탐색 — 단일 특징 전주의"},
+  "subtitle": {"en": "Unique-colour target among uniform distractors 'pops out' — flat RT across set size; conjunction targets require serial O(n) search", "ko": "단일 색 목표가 균일 방해 자극 속에서 '튀어나옴' — 세트 크기 무관 평평 RT; 결합 목표는 순차 O(n)"},
+  "description": {"en": "Distractor-count slider shows feature vs conjunction search panels with RT vs set size flat-line and linear-rise comparison.", "ko": "방해 자극 수 슬라이더로 특징·결합 탐색 패널과 RT vs 세트 크기 평평·선형 비교를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 12, "category": "attention-and-perception",
+  "layout": "A", "prerequisites": ["attention-and-perception/stroop-rt-color-word"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Treisman Gelade 1980", "section": "FIT"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["pop-out", "feature search", "Treisman"],
+  "estimated_hours": 8, "status": "shipped"
+}

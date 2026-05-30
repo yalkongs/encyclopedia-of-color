@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "attention-and-perception/change-blindness-flicker",
+  "title": {"en": "Change Blindness — Rensink Flicker Paradigm", "ko": "변화 맹시 — 렌싱크 플리커 패러다임"},
+  "subtitle": {"en": "Images A and B alternate with blank screens; viewers often need 30+ s to spot large colour changes — visual memory sparser than introspection suggests", "ko": "이미지 A와 B가 빈 화면 사이로 교대; 큰 색 변화를 30초 이상 못 찾기도 함 — 시각 기억은 내성보다 희소"},
+  "description": {"en": "Blank-duration slider controls flicker pacing; live A/blank/B/blank cycle with annotated two colour changes demonstrating change blindness.", "ko": "블랭크 시간 슬라이더로 플리커 속도 제어; A/블랭크/B/블랭크 사이클과 두 색 변화 주석으로 변화 맹시 시연."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "attention-and-perception",
+  "layout": "A", "prerequisites": ["attention-and-perception/inattentional-blindness-color"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Rensink 1997", "section": "Flicker"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["change blindness", "Rensink", "flicker"],
+  "estimated_hours": 8, "status": "shipped"
+}

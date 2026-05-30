@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "attention-and-perception/inattentional-blindness-color",
+  "title": {"en": "Inattentional Blindness — Missing the Gorilla", "ko": "비주의 맹시 — 고릴라를 놓침"},
+  "subtitle": {"en": "Simons & Chabris 1999: ~50% miss a person in gorilla suit during pass-counting task; coloured/salient objects more detectable", "ko": "사이먼스 & 채브리스 1999: 패스 세기 중 ~50%가 고릴라 미감지; 채도·현저 객체일수록 감지율 상승"},
+  "description": {"en": "Salience slider drives detection-probability curve with basketball scene and unexpected coloured object whose colour shifts grey→red.", "ko": "현저도 슬라이더로 감지 확률 곡선을 보이며 농구 장면과 회색→적색 변하는 비예상 객체를 표시합니다."},
+  "tier": "reference", "bloom_level": "L2", "domain": 12, "category": "attention-and-perception",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Simons Chabris 1999", "section": "Gorilla"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["inattentional blindness", "gorilla", "Simons Chabris"],
+  "estimated_hours": 8, "status": "shipped"
+}

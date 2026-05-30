@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "attention-and-perception/stroop-rt-color-word",
+  "title": {"en": "Stroop Effect — Word vs Ink Interference", "ko": "스트룹 효과 — 단어와 잉크 색 간섭"},
+  "subtitle": {"en": "Naming 'RED' printed in blue is 200-400 ms slower than naming a neutral string; automatic reading interferes with controlled colour identification", "ko": "파란색으로 인쇄된 'RED'의 잉크 색 명명이 중립 문자열보다 200-400 ms 느림 — 자동 읽기가 통제 색 인식 간섭"},
+  "description": {"en": "Incongruency-proportion slider drives expected-RT chart with 5×6 Stroop word grid demonstrating interference visually.", "ko": "불일치 비율 슬라이더로 예상 RT 차트와 5×6 스트룹 단어 격자로 간섭을 시각적으로 보여줍니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 12, "category": "attention-and-perception",
+  "layout": "A", "prerequisites": [], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Stroop 1935", "section": "Stroop effect"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["Stroop", "interference", "executive function"],
+  "estimated_hours": 8, "status": "shipped"
+}
