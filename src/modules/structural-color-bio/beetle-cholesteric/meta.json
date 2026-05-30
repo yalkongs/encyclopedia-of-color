@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "structural-color-bio/beetle-cholesteric",
+  "title": {
+    "en": "Beetle Cholesteric — Circularly Polarised Reflection",
+    "ko": "딱정벌레 콜레스테릭 — 원편광 반사"
+  },
+  "subtitle": {
+    "en": "Plusiotis (Chrysina) beetles reflect left-circularly-polarised metallic gold/green via a cholesteric chitin helicoid — pitch matches half-wavelength, handedness encodes which polarisation reflects",
+    "ko": "Plusiotis 딱정벌레의 chitin 헬리코이드 — 왼쪽 원편광만 반사, pitch가 색을 결정"
+  },
+  "description": {
+    "en": "Bouligand helicoid schematic + beetle silhouette filled by Bragg-pitch colour. Slider tunes pitch from blue to red metallic appearance.",
+    "ko": "Bouligand schematic + 딱정벌레 실루엣. 슬라이더로 pitch 조정 청→적 금속색."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 9,
+  "category": "structural-color-bio",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [14],
+  "textbook_refs": [
+    { "source": "Sharma et al. 2009", "section": "Cholesteric beetle" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["cholesteric", "Bouligand", "Chrysina", "circular polarisation"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

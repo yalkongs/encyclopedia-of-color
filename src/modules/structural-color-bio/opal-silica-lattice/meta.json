@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "structural-color-bio/opal-silica-lattice",
+  "title": {
+    "en": "Opal — Silica Sphere Bragg Lattice",
+    "ko": "오팔 — 실리카 구 Bragg 격자"
+  },
+  "subtitle": {
+    "en": "opal is hydrated silica with ~250 nm spheres self-assembled into a close-packed lattice; viewing angle shifts the Bragg condition and the stone flashes a different colour",
+    "ko": "오팔은 ~250 nm 실리카 구가 close-packed 격자 — 시야각이 Bragg 조건 바꿔 색 flash"
+  },
+  "description": {
+    "en": "Opal stone with flash patches that update angle-dependent. Slider tunes viewing angle from 0 to 70°; flashed colour sweeps red → blue.",
+    "ko": "오팔 스톤 + flash 패치, 각도 의존. 슬라이더로 0-70° 시야각 → 적·청 색 sweep."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "structural-color-bio",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [13, 14],
+  "textbook_refs": [
+    { "source": "Sanders 1964", "section": "Opal lattice" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["opal", "Bragg lattice", "play of colour"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

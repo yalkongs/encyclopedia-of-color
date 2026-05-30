@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "structural-color-bio/mother-of-pearl-nacre",
+  "title": {
+    "en": "Nacre — Aragonite Brick Walls",
+    "ko": "진주모 — 아라고나이트 벽돌벽"
+  },
+  "subtitle": {
+    "en": "mollusc nacre is alternating ~500 nm aragonite (n=1.6) and ~30 nm protein layers — the brick-and-mortar gives both iridescence and exceptional mechanical strength",
+    "ko": "조개 nacre는 ~500 nm 아라고나이트와 ~30 nm 단백질 교번 — 광택과 강도 모두"
+  },
+  "description": {
+    "en": "Brick-wall schematic + pearl with iridescent gradient. Tablet-thickness slider tunes the centre wavelength of the broadband sheen.",
+    "ko": "벽돌벽 schematic + 진주 그라디언트. 타블렛 두께 슬라이더로 sheen 중심 파장 조정."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 9,
+  "category": "structural-color-bio",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [13],
+  "textbook_refs": [
+    { "source": "Addadi & Weiner 1997", "section": "Nacre" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["nacre", "mother of pearl", "aragonite", "biomineralisation"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

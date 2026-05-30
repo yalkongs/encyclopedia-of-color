@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "structural-color-bio/peacock-photonic-barbule",
+  "title": {
+    "en": "Peacock Feather — 2D Photonic Crystal",
+    "ko": "공작 깃털 — 2D 광결정"
+  },
+  "subtitle": {
+    "en": "peacock tail barbules contain a 2D lattice of melanin rods in keratin; different lattice spacings in the same feather give blue, green, copper, and yellow eye-spot zones",
+    "ko": "공작 깃털 안 2D 멜라닌-keratin 격자; 같은 깃털에서 격자 간격이 청·녹·동·황 띠 만든다"
+  },
+  "description": {
+    "en": "Lattice schematic + eye-spot swatch. Slider tunes lattice constant; reflected colour cycles through visible. Same molecule everywhere — only spacing varies.",
+    "ko": "격자 schematic + eye-spot swatch. 격자 상수 슬라이더로 반사색 변화. 같은 분자, 다른 간격."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 9,
+  "category": "structural-color-bio",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [14, 15],
+  "textbook_refs": [
+    { "source": "Zi et al. 2003", "section": "Peacock photonic crystal" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["peacock", "photonic crystal", "structural color"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}
