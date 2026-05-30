@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Gold Nanoparticles — Plasmonic Resonance — bulk gold is yellow-metall…</title>
+  <meta name="description" content="Gold-particle illustration + colloidal solution swatch + LSPR absorption band. Size slider shifts the band from ~520 nm (red solution) toward ~600 nm (purple/grey).">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/band-gap-materials/gold-nanoparticle-plasmon/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Gold Nanoparticles — Plasmonic Resonance">
+  <meta property="og:description"    content="Gold-particle illustration + colloidal solution swatch + LSPR absorption band. Size slider shifts the band from ~520 nm (red solution) toward ~600 nm (purple/grey).">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/band-gap-materials/gold-nanoparticle-plasmon/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/band-gap-materials--gold-nanoparticle-plasmon.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Gold Nanoparticles — Plasmonic Resonance.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Gold Nanoparticles — Plasmonic Resonance">
+  <meta name="twitter:description"   content="Gold-particle illustration + colloidal solution swatch + LSPR absorption band. Size slider shifts the band from ~520 nm (red solution) toward ~600 nm (purple/grey).">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/band-gap-materials--gold-nanoparticle-plasmon.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Gold Nanoparticles — Plasmonic Resonance.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gold Nanoparticles — Plasmonic Resonance","alternateName":"band-gap-materials/gold-nanoparticle-plasmon","description":"Gold-particle illustration + colloidal solution swatch + LSPR absorption band. Size slider shifts the band from ~520 nm (red solution) toward ~600 nm (purple/grey).","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"plasmon, gold nanoparticle, LSPR, Lycurgus cup, Faraday","url":"https://encyclopedia-of-color.vercel.app/modules/band-gap-materials/gold-nanoparticle-plasmon/","image":"https://encyclopedia-of-color.vercel.app/og/band-gap-materials--gold-nanoparticle-plasmon.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="band-gap-materials/gold-nanoparticle-plasmon">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Gold Nanoparticles — Plasmonic Resonance</h1>
+      <p class="module-subtitle">bulk gold is yellow-metallic; suspend 20-nm gold particles in water and the solution is ruby red — collective electron oscillation absorbs green light at the plasmon resonance</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Lycurgus Cup (Roman, 4th century) is dichroic — green by reflection, red by transmission — because of suspended gold nanoparticles. Their <em>localised surface plasmon resonance</em> (LSPR) absorbs green ~525 nm; the complement is red. Particle shape and size shift the band: 10 nm spheres absorb 520 nm; 100 nm spheres widen and red-shift to ~600 nm; gold nanorods extend into the NIR.
+        </p>
+        <p class="zone-guide">
+          Drag the particle size; the LSPR band moves and the solution colour changes from ruby red through violet to grey-brown.
+        </p>
+        <enc-slider id="size" label="Au sphere diameter (nm)" min="5" max="150" step="5" value="20" unit=" nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Au plasmon"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Mie 1908 — gold sol theory; Link &amp; El-Sayed 1999 — LSPR review"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

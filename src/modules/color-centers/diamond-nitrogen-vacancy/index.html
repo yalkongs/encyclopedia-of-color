@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Diamond NV Centre — Single-Atom Quantum Defect — a nitrogen atom + ad…</title>
+  <meta name="description" content="Lattice with N + V; 532 nm pump in, 637 nm red out; pump power slider drives saturating emission. Foundation of quantum-grade diamond magnetometry and single-photon sources.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-centers/diamond-nitrogen-vacancy/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Diamond NV Centre — Single-Atom Quantum Defect">
+  <meta property="og:description"    content="Lattice with N + V; 532 nm pump in, 637 nm red out; pump power slider drives saturating emission. Foundation of quantum-grade diamond magnetometry and single-photon sources.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-centers/diamond-nitrogen-vacancy/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-centers--diamond-nitrogen-vacancy.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Diamond NV Centre — Single-Atom Quantum Defect.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Diamond NV Centre — Single-Atom Quantum Defect">
+  <meta name="twitter:description"   content="Lattice with N + V; 532 nm pump in, 637 nm red out; pump power slider drives saturating emission. Foundation of quantum-grade diamond magnetometry and single-photon sources.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-centers--diamond-nitrogen-vacancy.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Diamond NV Centre — Single-Atom Quantum Defect.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Diamond NV Centre — Single-Atom Quantum Defect","alternateName":"color-centers/diamond-nitrogen-vacancy","description":"Lattice with N + V; 532 nm pump in, 637 nm red out; pump power slider drives saturating emission. Foundation of quantum-grade diamond magnetometry and single-photon sources.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"NV center, diamond, quantum sensing, single photon","url":"https://encyclopedia-of-color.vercel.app/modules/color-centers/diamond-nitrogen-vacancy/","image":"https://encyclopedia-of-color.vercel.app/og/color-centers--diamond-nitrogen-vacancy.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-centers/diamond-nitrogen-vacancy">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Diamond NV Centre — Single-Atom Quantum Defect</h1>
+      <p class="module-subtitle">a nitrogen atom + adjacent carbon vacancy in diamond — the NV⁻ centre absorbs 532 nm green and emits 637 nm red; each centre is a single-spin qubit usable at room temperature</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The NV centre is a point defect with rich physics: a substitutional N adjacent to a C vacancy in the diamond lattice. The negatively-charged NV⁻ has a singlet ground state with three sub-levels at zero magnetic field; under 532 nm green excitation it relaxes to 637 nm red phonon-assisted fluorescence. The spin state can be read optically — the centre is one of the few room-temperature quantum sensors.
+        </p>
+        <p class="zone-guide">
+          Drag the green excitation power. Emitted red intensity rises linearly until saturation. The 532-nm-in / 637-nm-out wavelength labels reveal the Stokes shift.
+        </p>
+        <enc-slider id="P" label="532 nm pump (mW)" min="0" max="50" step="1" value="10" unit=" mW"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="NV center"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Doherty et al. 2013 — NV center physics review; Aharonovich quantum diamond"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "causes-of-color-intro/nassau-15-causes-tour",
+  "title": {
+    "en": "Nassau's 15 Causes of Colour",
+    "ko": "Nassau의 15가지 색 원인"
+  },
+  "subtitle": {
+    "en": "Kurt Nassau catalogued every physical mechanism that produces colour into fifteen distinct causes — from incandescence to band gaps to scattering — covering everything from a rainbow to a soap bubble",
+    "ko": "Nassau는 색을 만드는 모든 물리 메커니즘을 15가지로 분류했다 — 백열·밴드갭·산란 등 무지개부터 비누방울까지 포함"
+  },
+  "description": {
+    "en": "Slider tours the 15 Nassau causes; each shows name, group (emission/transitions/solid state/optics), one example, and a representative swatch. Site-wide tag taxonomy.",
+    "ko": "슬라이더로 15 원인 투어; 이름·그룹(방출/전이/고체/광학)·예시·대표 swatch. 사이트 전역 태그 분류."
+  },
+  "tier": "reference",
+  "bloom_level": "L1",
+  "domain": 3,
+  "category": "causes-of-color-intro",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+  "textbook_refs": [
+    { "source": "Nassau 2001 §1", "section": "15 causes" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["Nassau", "causes of color", "taxonomy", "color physics"],
+  "estimated_hours": 8,
+  "status": "shipped"
+}

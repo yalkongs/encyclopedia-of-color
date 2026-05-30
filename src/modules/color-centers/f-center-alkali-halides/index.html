@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>F-Centres — Trapped Electron in an Anion Vacancy — irradiate NaCl or…</title>
+  <meta name="description" content="Lattice schematic with electron in vacancy + crystal swatch + visible-band absorption notch. Toggle host (NaCl/KCl/KBr/LiF) — F-band shifts with lattice spacing.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-centers/f-center-alkali-halides/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="F-Centres — Trapped Electron in an Anion Vacancy">
+  <meta property="og:description"    content="Lattice schematic with electron in vacancy + crystal swatch + visible-band absorption notch. Toggle host (NaCl/KCl/KBr/LiF) — F-band shifts with lattice spacing.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-centers/f-center-alkali-halides/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-centers--f-center-alkali-halides.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: F-Centres — Trapped Electron in an Anion Vacancy.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="F-Centres — Trapped Electron in an Anion Vacancy">
+  <meta name="twitter:description"   content="Lattice schematic with electron in vacancy + crystal swatch + visible-band absorption notch. Toggle host (NaCl/KCl/KBr/LiF) — F-band shifts with lattice spacing.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-centers--f-center-alkali-halides.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: F-Centres — Trapped Electron in an Anion Vacancy.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"F-Centres — Trapped Electron in an Anion Vacancy","alternateName":"color-centers/f-center-alkali-halides","description":"Lattice schematic with electron in vacancy + crystal swatch + visible-band absorption notch. Toggle host (NaCl/KCl/KBr/LiF) — F-band shifts with lattice spacing.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"F-center, color center, alkali halide, Nassau, vacancy","url":"https://encyclopedia-of-color.vercel.app/modules/color-centers/f-center-alkali-halides/","image":"https://encyclopedia-of-color.vercel.app/og/color-centers--f-center-alkali-halides.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-centers/f-center-alkali-halides">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">F-Centres — Trapped Electron in an Anion Vacancy</h1>
+      <p class="module-subtitle">irradiate NaCl or KCl with X-rays or fast neutrons and a chloride ion leaves; an electron drops into the empty hole and absorbs in the visible — the crystal turns yellow/violet</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A <em>colour centre</em> (Farbenzentrum, F-centre) is a point defect: a missing halide ion (anion vacancy) whose negative charge is replaced by a trapped electron. The electron's allowed energy levels in the cavity have spacings in the visible — so the crystal absorbs a specific colour and the complement shines through. NaCl absorbs 460 nm → yellow-orange tint. KCl absorbs 560 nm → magenta tint. Different host lattice → different colour.
+        </p>
+        <p class="zone-guide">
+          Pick a host crystal. The schematic shows the trapped electron in the vacancy; the absorption band and resulting tint follow.
+        </p>
+        <enc-toggle id="host" label="Host crystal" options="NaCl,KCl,KBr,LiF" value="NaCl"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="F-centre"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §10 — color centres; Mollwo 1933 F-centre discovery"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

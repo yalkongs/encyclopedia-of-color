@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "band-gap-materials/cdse-red",
+  "title": {
+    "en": "Cadmium Selenide CdSe — Quantum Dot Size vs Colour",
+    "ko": "셀렌화 카드뮴 CdSe — 양자점 크기 vs 색"
+  },
+  "subtitle": {
+    "en": "bulk CdSe is dark red (Eg 1.74 eV); shrink to a 2-nm nanocrystal and Eg climbs to 2.7 eV — the same crystal glows green-to-orange across the visible just by changing size",
+    "ko": "벌크 CdSe는 어두운 적색(Eg 1.74 eV); 2 nm로 축소하면 Eg 2.7 eV — 같은 결정이 크기만으로 녹·황·적 형광"
+  },
+  "description": {
+    "en": "Nine CdSe dots from 2 to 10 nm, each emitting at its size-tuned wavelength. Slider picks the active dot; large swatch shows the colour and Eg formula displays.",
+    "ko": "2~10 nm CdSe 점 9개, 각자 크기 맞춤 형광. 슬라이더로 활성 점 선택; 큰 swatch에 색 표시."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 3,
+  "category": "band-gap-materials",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [7],
+  "textbook_refs": [
+    { "source": "Murray et al. 1993", "section": "Quantum dots" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["quantum dot", "CdSe", "size confinement", "QLED"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

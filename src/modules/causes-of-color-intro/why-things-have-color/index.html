@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Why Things Have Colour — Absorb · Reflect · Transmit — white light hi…</title>
+  <meta name="description" content="Toggle an everyday object. Three spectral rows show absorbed/reflected/transmitted bands; perceived-colour swatch is integrated reflectance (opaque) or transmittance (transparent).">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/causes-of-color-intro/why-things-have-color/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Why Things Have Colour — Absorb · Reflect · Transmit">
+  <meta property="og:description"    content="Toggle an everyday object. Three spectral rows show absorbed/reflected/transmitted bands; perceived-colour swatch is integrated reflectance (opaque) or transmittance (transparent).">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/causes-of-color-intro/why-things-have-color/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/causes-of-color-intro--why-things-have-color.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Why Things Have Colour — Absorb · Reflect · Transmit.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Why Things Have Colour — Absorb · Reflect · Transmit">
+  <meta name="twitter:description"   content="Toggle an everyday object. Three spectral rows show absorbed/reflected/transmitted bands; perceived-colour swatch is integrated reflectance (opaque) or transmittance (transparent).">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/causes-of-color-intro--why-things-have-color.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Why Things Have Colour — Absorb · Reflect · Transmit.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Why Things Have Colour — Absorb · Reflect · Transmit","alternateName":"causes-of-color-intro/why-things-have-color","description":"Toggle an everyday object. Three spectral rows show absorbed/reflected/transmitted bands; perceived-colour swatch is integrated reflectance (opaque) or transmittance (transparent).","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"absorb, reflect, transmit, colour basics","url":"https://encyclopedia-of-color.vercel.app/modules/causes-of-color-intro/why-things-have-color/","image":"https://encyclopedia-of-color.vercel.app/og/causes-of-color-intro--why-things-have-color.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="causes-of-color-intro/why-things-have-color">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Why Things Have Colour — Absorb · Reflect · Transmit</h1>
+      <p class="module-subtitle">white light hits an object; the object splits the spectrum into three buckets — absorbed (becomes heat), reflected (what we see if opaque), transmitted (what we see if transparent)</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Every coloured object follows the same energy balance: incident light = absorbed + reflected + transmitted. For an opaque object only absorbed + reflected matter; for a transparent one, transmitted vs absorbed. The wavelengths that survive (reflect or transmit) are the colour you see; the wavelengths absorbed warm the object.
+        </p>
+        <p class="zone-guide">
+          Pick an object class. Three bars show the wavelength-resolved absorbance / reflectance / transmittance; the final swatch is what the eye perceives.
+        </p>
+        <enc-toggle id="obj" label="Object" options="red-apple,green-leaf,white-paper,red-glass,clear-glass" value="red-apple"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Why things have color"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §1 — basic categorisation; Hunt The Reproduction of Colour"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

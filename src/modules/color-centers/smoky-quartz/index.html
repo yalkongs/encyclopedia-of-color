@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Smoky Quartz — Al³⁺ Impurity + Radiation — colourless quartz with tra…</title>
+  <meta name="description" content="Hexagonal crystal swatch darkens with cumulative dose; annealing slider reverses. Reaction equation [AlO₄·H]⁻ + radiation → [AlO₄]⁰ + H⁰ + e⁻ shows the mechanism.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/color-centers/smoky-quartz/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Smoky Quartz — Al³⁺ Impurity + Radiation">
+  <meta property="og:description"    content="Hexagonal crystal swatch darkens with cumulative dose; annealing slider reverses. Reaction equation [AlO₄·H]⁻ + radiation → [AlO₄]⁰ + H⁰ + e⁻ shows the mechanism.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/color-centers/smoky-quartz/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/color-centers--smoky-quartz.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Smoky Quartz — Al³⁺ Impurity + Radiation.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Smoky Quartz — Al³⁺ Impurity + Radiation">
+  <meta name="twitter:description"   content="Hexagonal crystal swatch darkens with cumulative dose; annealing slider reverses. Reaction equation [AlO₄·H]⁻ + radiation → [AlO₄]⁰ + H⁰ + e⁻ shows the mechanism.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/color-centers--smoky-quartz.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Smoky Quartz — Al³⁺ Impurity + Radiation.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Smoky Quartz — Al³⁺ Impurity + Radiation","alternateName":"color-centers/smoky-quartz","description":"Hexagonal crystal swatch darkens with cumulative dose; annealing slider reverses. Reaction equation [AlO₄·H]⁻ + radiation → [AlO₄]⁰ + H⁰ + e⁻ shows the mechanism.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"smoky quartz, color center, Al impurity, irradiation","url":"https://encyclopedia-of-color.vercel.app/modules/color-centers/smoky-quartz/","image":"https://encyclopedia-of-color.vercel.app/og/color-centers--smoky-quartz.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="color-centers/smoky-quartz">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Smoky Quartz — Al³⁺ Impurity + Natural Radiation</h1>
+      <p class="module-subtitle">colourless quartz with trace Al³⁺ darkens to brown-grey when ionising radiation knocks an electron loose; the resulting [AlO₄]⁰ centre absorbs broadly across the visible</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Pure quartz (SiO₂) is colourless. Substitute one in ~10⁴ Si⁴⁺ with Al³⁺ + charge-compensating H⁺ — still colourless until natural radiation removes one electron from the [AlO₄]⁻ → forming the paramagnetic [AlO₄]⁰ hole centre. Broad visible absorption gives the iconic smoky brown. Heating to 400 °C reverses the colour (electron returns).
+        </p>
+        <p class="zone-guide">
+          Drag the cumulative radiation dose; the crystal darkens. Heating slider resets it. Real Scottish/Brazilian cairngorms accumulate over geological time near uranium-bearing rocks.
+        </p>
+        <enc-slider id="dose" label="Cumulative radiation dose" min="0" max="100" step="2" value="50" unit="%"></enc-slider>
+        <enc-slider id="T" label="Annealing temperature (°C)" min="0" max="500" step="10" value="0" unit=" °C"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Smoky quartz"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §10 — colour centres in minerals"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

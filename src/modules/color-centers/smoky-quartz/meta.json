@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "color-centers/smoky-quartz",
+  "title": {
+    "en": "Smoky Quartz — Al³⁺ Impurity + Radiation",
+    "ko": "연수정 — Al³⁺ 불순물 + 방사선"
+  },
+  "subtitle": {
+    "en": "colourless quartz with trace Al³⁺ darkens to brown-grey when ionising radiation knocks an electron loose; the resulting [AlO₄]⁰ centre absorbs broadly across the visible",
+    "ko": "Al³⁺ 미량 함유 무색 수정이 이온화 방사선으로 전자 손실 → [AlO₄]⁰가 가시광 흡수, 연갈색"
+  },
+  "description": {
+    "en": "Hexagonal crystal swatch darkens with cumulative dose; annealing slider reverses. Reaction equation [AlO₄·H]⁻ + radiation → [AlO₄]⁰ + H⁰ + e⁻ shows the mechanism.",
+    "ko": "6각 결정 swatch가 누적 dose에 따라 어두워짐; anneal 슬라이더로 복원. 반응식 표시."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 3,
+  "category": "color-centers",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [8],
+  "textbook_refs": [
+    { "source": "Nassau 2001 §10", "section": "Quartz color centres" }
+  ],
+  "standards": [],
+  "interaction_count": 2,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["smoky quartz", "color center", "Al impurity", "irradiation"],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

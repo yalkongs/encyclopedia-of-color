@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Cadmium Sulphide CdS — Yellow at Eg 2.42 eV — CdS sits at the sweet s…</title>
+  <meta name="description" content="CdS pigment + bandgap diagram + absorption edge swatch. Particle-size slider shows quantum confinement raising Eg below 5 nm.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/band-gap-materials/cds-yellow/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Cadmium Sulphide CdS — Yellow at Eg 2.42 eV">
+  <meta property="og:description"    content="CdS pigment + bandgap diagram + absorption edge swatch. Particle-size slider shows quantum confinement raising Eg below 5 nm.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/band-gap-materials/cds-yellow/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/band-gap-materials--cds-yellow.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Cadmium Sulphide CdS — Yellow at Eg 2.42 eV.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Cadmium Sulphide CdS — Yellow at Eg 2.42 eV">
+  <meta name="twitter:description"   content="CdS pigment + bandgap diagram + absorption edge swatch. Particle-size slider shows quantum confinement raising Eg below 5 nm.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/band-gap-materials--cds-yellow.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Cadmium Sulphide CdS — Yellow at Eg 2.42 eV.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Cadmium Sulphide CdS — Yellow at Eg 2.42 eV","alternateName":"band-gap-materials/cds-yellow","description":"CdS pigment + bandgap diagram + absorption edge swatch. Particle-size slider shows quantum confinement raising Eg below 5 nm.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"cadmium yellow, CdS, bandgap, Impressionist","url":"https://encyclopedia-of-color.vercel.app/modules/band-gap-materials/cds-yellow/","image":"https://encyclopedia-of-color.vercel.app/og/band-gap-materials--cds-yellow.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="band-gap-materials/cds-yellow">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Cadmium Sulphide CdS — Bandgap 2.42 eV Yellow</h1>
+      <p class="module-subtitle">CdS sits at the sweet spot — its 2.42 eV bandgap absorbs everything above 512 nm (cyan-violet), leaving the yellow-orange-red half to reflect; impressionists loved it</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Cadmium yellow (CdS) was patented in 1817 and became the artist standard for permanent yellow by 1840. Bandgap 2.42 eV → absorption edge at 512 nm → all wavelengths shorter (blue/violet/UV) absorbed, longer (yellow/orange/red) reflected. Monet, Renoir, Van Gogh: all the bright yellow you see in Impressionism is essentially CdS.
+        </p>
+        <p class="zone-guide">
+          Particle-size slider tunes the bandgap via quantum confinement: small nano-particles widen E_g and shift colour toward greenish-yellow; bulk CdS is the canonical yellow.
+        </p>
+        <enc-slider id="size" label="Particle size (nm)" min="3" max="30" step="1" value="20" unit=" nm"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="CdS yellow"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Nassau §8 — CdS band-gap colour; Berns 2019 §6 cadmium pigments"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
