@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "camera-optics/pinhole-vs-lens-imaging",
+  "title": {
+    "en": "Pinhole vs Lens",
+    "ko": "핀홀 vs 렌즈"
+  },
+  "subtitle": {
+    "en": "a pinhole keeps everything in focus by letting only one ray per direction through — but gathers little light; a lens floods the sensor but only one plane reads sharp",
+    "ko": "핀홀은 방향당 한 광선만 통과시켜 모든 거리를 초점에 두지만 빛이 거의 안 모인다; 렌즈는 센서에 빛을 흘리지만 한 평면만 또렷이 읽힌다"
+  },
+  "description": {
+    "en": "A pinhole picks one ray per direction — infinite depth of field but dim and slightly soft. A lens gathers a fat cone and focuses to one point, so one distance reads sharp but the image is bright.",
+    "ko": "핀홀은 방향당 한 광선을 골라 무한 심도를 얻지만 어둡고 약간 부드럽다. 렌즈는 두꺼운 광선 원뿔을 모아 한 센서 점으로 굽혀, 한 거리만 또렷하지만 이미지는 밝다."
+  },
+  "tier": "atom",
+  "bloom_level": "L2",
+  "domain": 10,
+  "category": "camera-optics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Hecht",
+      "section": "§5 imaging"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "pinhole",
+    "lens",
+    "imaging",
+    "depth of field",
+    "diffraction"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

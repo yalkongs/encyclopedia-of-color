@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "imaging-basics/exposure-intuition",
+  "title": {
+    "en": "Exposure: Too Dark, Too Bright",
+    "ko": "노출: 너무 어둡거나 너무 밝거나"
+  },
+  "subtitle": {
+    "en": "underexposed crushes the shadows; overexposed clips the highlights — the histogram tells you which end you are losing",
+    "ko": "노출 부족은 그림자를 뭉개고 노출 과다는 하이라이트를 잘라낸다 — 히스토그램이 어느 쪽을 잃고 있는지 알려준다"
+  },
+  "description": {
+    "en": "Exposure sets how much light hits the sensor. Under crushes shadows past black; over pushes highlights past white. The histogram piles up at the wall you are losing — drag exposure and watch it move.",
+    "ko": "노출은 센서에 닿는 빛의 양이다. 부족은 그림자를 검정 너머로 뭉개고, 과다는 하이라이트를 흰색 너머로 민다. 히스토그램이 잃고 있는 벽에 쌓인다 — 노출을 끌어 그 움직임을 본다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 10,
+  "category": "imaging-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Adams",
+      "section": "exposure"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "exposure",
+    "EV",
+    "histogram",
+    "underexposed",
+    "overexposed"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

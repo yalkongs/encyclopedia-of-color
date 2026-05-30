@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "camera-optics/aperture-depth-of-field",
+  "title": {
+    "en": "Aperture & Depth of Field",
+    "ko": "조리개와 심도"
+  },
+  "subtitle": {
+    "en": "a wide aperture lets a single distance be sharp and dissolves everything else; a tiny aperture pulls a long range into focus at the cost of light",
+    "ko": "넓은 조리개는 한 거리만 또렷이 하고 나머지를 녹이며, 좁은 조리개는 더 넓은 범위를 초점에 두지만 빛을 잃는다"
+  },
+  "description": {
+    "en": "The aperture is an iris. Wide open (small f) one slim slice is sharp; stopped down, near and far focus together — at the cost of light. f-number trades depth of field for brightness.",
+    "ko": "조리개는 홍채와 같다. 활짝 열면(작은 f-수) 한 얇은 슬라이스만 또렷하다. 좁히면 가까운 곳과 먼 곳이 함께 초점에 들지만 센서에 닿는 빛이 줄어든다 — f-수는 심도와 밝기를 맞바꾼다."
+  },
+  "tier": "reference",
+  "bloom_level": "L3",
+  "domain": 10,
+  "category": "camera-optics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Adams",
+      "section": "f-number"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "aperture",
+    "f-stop",
+    "depth of field",
+    "DoF",
+    "bokeh"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

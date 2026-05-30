@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Aperture &amp; Depth of Field — a wide aperture lets a single distance be…</title>
+  <meta name="description" content="The aperture is an iris. Wide open (small f) one slim slice is sharp; stopped down, near and far focus together — at the cost of light. f-number trades depth of field for brightness.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/camera-optics/aperture-depth-of-field/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Aperture &amp; Depth of Field">
+  <meta property="og:description"    content="The aperture is an iris. Wide open (small f) one slim slice is sharp; stopped down, near and far focus together — at the cost of light. f-number trades depth of field for brightness.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/camera-optics/aperture-depth-of-field/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/camera-optics--aperture-depth-of-field.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Aperture &amp; Depth of Field.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Aperture &amp; Depth of Field">
+  <meta name="twitter:description"   content="The aperture is an iris. Wide open (small f) one slim slice is sharp; stopped down, near and far focus together — at the cost of light. f-number trades depth of field for brightness.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/camera-optics--aperture-depth-of-field.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Aperture &amp; Depth of Field.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Aperture & Depth of Field","alternateName":"camera-optics/aperture-depth-of-field","description":"The aperture is an iris. Wide open (small f) one slim slice is sharp; stopped down, near and far focus together — at the cost of light. f-number trades depth of field for brightness.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"aperture, f-stop, depth of field, DoF, bokeh","url":"https://encyclopedia-of-color.vercel.app/modules/camera-optics/aperture-depth-of-field/","image":"https://encyclopedia-of-color.vercel.app/og/camera-optics--aperture-depth-of-field.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="camera-optics/aperture-depth-of-field">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L3">L3 Apply</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Aperture & Depth of Field</h1>
+      <p class="module-subtitle">a wide aperture lets a single distance be sharp and dissolves everything else; a tiny aperture pulls a long range into focus at the cost of light</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The aperture is an iris that sets how big the lens opening is. Wide open (a small f-number such as f/1.4), the cone of light that misses the focused plane lands as a big blur disc — only one slim slice of the scene reads sharp. Stopped down (a large f-number such as f/16), the cone shrinks and the depth of field grows; near and far points alike come into focus.
+        </p>
+        <div class="math-block" data-tex="\text{DoF} \;\propto\; N\quad(N = f/D)"></div>
+        <p class="zone-guide">
+          Drag the aperture and watch the background dissolve or sharpen while the focused subject stays put. The grasses and trees behind the flower go from a wash to clear blades as you stop down — the cost is less light reaching the sensor.
+        </p>
+        <enc-slider id="fstop" label="Aperture" min="14" max="220" step="2" value="40" unit="× f/10"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Aperture and depth of field"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Adams, The Negative; f-number"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

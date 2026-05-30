@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Shutter: Freeze or Smear — a short shutter freezes the moment; a long…</title>
+  <meta name="description" content="The shutter sets how long the sensor sees the scene. A fast shutter freezes; a slow one smears moving subjects into trails. Stills stay sharp at any speed; movement is what gets recorded as a streak.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/imaging-basics/shutter-speed-motion-freeze/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Shutter: Freeze or Smear">
+  <meta property="og:description"    content="The shutter sets how long the sensor sees the scene. A fast shutter freezes; a slow one smears moving subjects into trails. Stills stay sharp at any speed; movement is what gets recorded as a streak.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/imaging-basics/shutter-speed-motion-freeze/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/imaging-basics--shutter-speed-motion-freeze.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Shutter: Freeze or Smear.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Shutter: Freeze or Smear">
+  <meta name="twitter:description"   content="The shutter sets how long the sensor sees the scene. A fast shutter freezes; a slow one smears moving subjects into trails. Stills stay sharp at any speed; movement is what gets recorded as a streak.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/imaging-basics--shutter-speed-motion-freeze.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Shutter: Freeze or Smear.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Shutter: Freeze or Smear","alternateName":"imaging-basics/shutter-speed-motion-freeze","description":"The shutter sets how long the sensor sees the scene. A fast shutter freezes; a slow one smears moving subjects into trails. Stills stay sharp at any speed; movement is what gets recorded as a streak.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"shutter speed, motion blur, freeze, panning, photography","url":"https://encyclopedia-of-color.vercel.app/modules/imaging-basics/shutter-speed-motion-freeze/","image":"https://encyclopedia-of-color.vercel.app/og/imaging-basics--shutter-speed-motion-freeze.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="imaging-basics/shutter-speed-motion-freeze">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L1">L1 Identify</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Shutter: Freeze or Smear</h1>
+      <p class="module-subtitle">a short shutter freezes the moment; a long one paints the subject as a trail of where it was during the exposure</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The shutter decides how long the sensor sees the scene. Open it for a tiny fraction of a second and the world is frozen — a bird's wings, a rain drop, a sprinter mid-stride. Open it for a long fraction and anything that moves smears across the frame as a trail of light, while still things stay sharp.
+        </p>
+        <div class="math-block" data-tex="\text{streak length} \;\propto\; v \cdot t_{shutter}"></div>
+        <p class="zone-guide">
+          Drag the shutter from a thousandth of a second to a quarter second. The flying subject snaps from a single sharp ball to a long blur tracking the path it took. The background, sitting still, stays sharp at every speed.
+        </p>
+        <enc-slider id="speed" label="Shutter (1/x s)" min="4" max="2000" step="1" value="500" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Shutter speed motion freeze versus blur"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Adams, The Negative; shutter speed"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

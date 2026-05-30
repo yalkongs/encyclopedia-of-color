@@ -94,6 +94,16 @@ const CATEGORY_META: Record<string, { title: string; sub: string }> = {
   'specialty-print':              { title: 'Specialty Print',         sub: 'Domain 7 · Hexachrome, metallic, foil, UV-curing inks' },
   'print-3d-color':               { title: '3D-Print Colour',         sub: 'Domain 7 · MultiJet Fusion, full-colour resin, FDM blends' },
   'print-color-management':       { title: 'Print Colour Management', sub: 'Domain 7 · G7, ISO 12647 / Fogra, proofing, spectrophotometry' },
+  // Domain 10
+  'imaging-basics':               { title: 'Imaging Basics',          sub: 'Domain 10 · how a camera makes an image, exposure, shutter' },
+  'camera-optics':                { title: 'Camera Optics',           sub: 'Domain 10 · pinhole vs lens, aperture, bokeh, MTF' },
+  'sensor-physics':               { title: 'Sensor Physics',          sub: 'Domain 10 · Bayer CFA, quantum efficiency, shot noise' },
+  'white-balance-algorithms':     { title: 'White Balance',           sub: 'Domain 10 · Gray World, MaxRGB, Retinex' },
+  'camera-color-pipeline':        { title: 'Camera Colour Pipeline',  sub: 'Domain 10 · RAW → IDT → ACEScg, DNG matrices' },
+  'film-emulation':               { title: 'Film Emulation',          sub: 'Domain 10 · B&W and colour film tone curves' },
+  'color-grading':                { title: 'Colour Grading',          sub: 'Domain 10 · Lift / Gamma / Gain wheels, 3D LUTs' },
+  'exposure-photometry':          { title: 'Exposure & Photometry',   sub: 'Domain 10 · Zone System, sunny-16, metering' },
+  'computational-photography':    { title: 'Computational Photography', sub: 'Domain 10 · HDR bracket, panorama, stack focus' },
 };
 
 const D4_ORDER = ['colorimetry-intro', 'cie-1931-matching', 'xyz-transformation', 'color-space-slicer', 'oklch-harmony-explorer', 'color-difference-delta-e', 'gamut-mapping-3d', 'hdr-color-spaces', 'icc-color-management', 'color-appearance-models'];
@@ -240,7 +250,12 @@ async function main() {
     'four-color-separation', 'dot-gain-absorbance', 'security-ink-tilter',
     'extended-gamut-print', 'specialty-print', 'print-3d-color', 'print-color-management',
   ];
-  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER];
+  const D10_ORDER = [
+    'imaging-basics', 'camera-optics', 'sensor-physics', 'white-balance-algorithms',
+    'camera-color-pipeline', 'film-emulation', 'color-grading',
+    'exposure-photometry', 'computational-photography',
+  ];
+  const known = [...D1_ORDER, ...D2_ORDER, ...D4_ORDER, ...D5_ORDER, ...D6_ORDER, ...D7_ORDER, ...D10_ORDER];
   const sortedCats = [
     ...D1_ORDER.filter((c) => byCategory.has(c)),
     ...D2_ORDER.filter((c) => byCategory.has(c)),
@@ -248,6 +263,7 @@ async function main() {
     ...D5_ORDER.filter((c) => byCategory.has(c)),
     ...D6_ORDER.filter((c) => byCategory.has(c)),
     ...D7_ORDER.filter((c) => byCategory.has(c)),
+    ...D10_ORDER.filter((c) => byCategory.has(c)),
     ...[...byCategory.keys()].filter((c) => !known.includes(c)).sort(),
   ];
 

@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "imaging-basics/how-camera-makes-image",
+  "title": {
+    "en": "How a Camera Makes an Image",
+    "ko": "카메라가 이미지를 만드는 법"
+  },
+  "subtitle": {
+    "en": "light from the scene passes through a lens, lands on a sensor, and becomes a grid of numbers — that grid is the picture",
+    "ko": "장면의 빛이 렌즈를 지나 센서에 닿아 숫자의 격자가 된다 — 그 격자가 사진이다"
+  },
+  "description": {
+    "en": "A camera is three stages: light passes through the lens, the sensor counts photons per cell, the counts become an image. Brighter scenes give bigger numbers; the path is the same for every photograph.",
+    "ko": "카메라는 세 단계다: 빛이 렌즈를 지나고, 센서가 셀별로 광자를 세고, 그 수가 이미지가 된다. 밝은 장면일수록 큰 수가 된다 — 모든 사진이 같은 경로를 거친다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 10,
+  "category": "imaging-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Adams",
+      "section": "The Negative"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "camera",
+    "sensor",
+    "image pipeline",
+    "imaging basics",
+    "photons"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

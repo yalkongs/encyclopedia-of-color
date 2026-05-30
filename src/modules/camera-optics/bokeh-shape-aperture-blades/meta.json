@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "camera-optics/bokeh-shape-aperture-blades",
+  "title": {
+    "en": "Bokeh & Aperture Blades",
+    "ko": "보케와 조리개 날개"
+  },
+  "subtitle": {
+    "en": "an out-of-focus highlight is a tiny picture of the aperture itself — a five-bladed iris paints pentagons, a fifteen-bladed iris paints discs",
+    "ko": "초점이 빗나간 하이라이트는 조리개 자체의 작은 사진이다 — 5날 홍채는 오각형을, 15날은 원반을 그린다"
+  },
+  "description": {
+    "en": "A point of light off the focal plane spreads in the shape of the aperture. Many curved blades approximate a circle; few straight blades produce visible polygonal bokeh in highlights.",
+    "ko": "초점 평면 밖의 점광은 조리개 개구 모양으로 센서에 퍼진다. 많은 곡선 날은 원에 가깝고, 적은 직선 날은 모든 하이라이트에 보이는 다각형 보케를 만든다."
+  },
+  "tier": "reference",
+  "bloom_level": "L4",
+  "domain": 10,
+  "category": "camera-optics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Photography optics",
+      "section": "aperture blades"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "bokeh",
+    "aperture blades",
+    "iris",
+    "polygon",
+    "photography"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

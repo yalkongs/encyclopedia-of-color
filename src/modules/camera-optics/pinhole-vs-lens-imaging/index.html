@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Pinhole vs Lens — a pinhole keeps everything in focus by letting only…</title>
+  <meta name="description" content="A pinhole picks one ray per direction — infinite depth of field but dim and slightly soft. A lens gathers a fat cone and focuses to one point, so one distance reads sharp but the image is bright.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/camera-optics/pinhole-vs-lens-imaging/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Pinhole vs Lens">
+  <meta property="og:description"    content="A pinhole picks one ray per direction — infinite depth of field but dim and slightly soft. A lens gathers a fat cone and focuses to one point, so one distance reads sharp but the image is bright.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/camera-optics/pinhole-vs-lens-imaging/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/camera-optics--pinhole-vs-lens-imaging.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Pinhole vs Lens.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Pinhole vs Lens">
+  <meta name="twitter:description"   content="A pinhole picks one ray per direction — infinite depth of field but dim and slightly soft. A lens gathers a fat cone and focuses to one point, so one distance reads sharp but the image is bright.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/camera-optics--pinhole-vs-lens-imaging.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Pinhole vs Lens.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Pinhole vs Lens","alternateName":"camera-optics/pinhole-vs-lens-imaging","description":"A pinhole picks one ray per direction — infinite depth of field but dim and slightly soft. A lens gathers a fat cone and focuses to one point, so one distance reads sharp but the image is bright.","educationalLevel":"Beginner","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"pinhole, lens, imaging, depth of field, diffraction","url":"https://encyclopedia-of-color.vercel.app/modules/camera-optics/pinhole-vs-lens-imaging/","image":"https://encyclopedia-of-color.vercel.app/og/camera-optics--pinhole-vs-lens-imaging.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="camera-optics/pinhole-vs-lens-imaging">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L2">L2 Understand</span>
+        <span class="chip chip-tier" data-tier="atom" data-i18n="tier.atom">Atom</span>
+      </div>
+      <h1 class="module-title">Pinhole vs Lens</h1>
+      <p class="module-subtitle">a pinhole keeps everything in focus by letting only one ray per direction through — but gathers little light; a lens floods the sensor but only one plane reads sharp</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A pinhole image picks one ray per direction from the scene, so every distance is in focus and no plane is favoured. The price is brightness — almost no light gets through and what does spreads slightly by diffraction. A lens gathers a fat cone of rays from each scene point and bends them to one sensor point; near and far points form bigger cones, so only one distance is truly sharp.
+        </p>
+        <div class="math-block" data-tex="\text{pinhole: infinite DoF, dim}\quad|\quad\text{lens: one focal plane, bright}"></div>
+        <p class="zone-guide">
+          Switch optics. The pinhole image is soft and dim with the near and far flowers equally in focus; the lens image is bright with one flower crisp and the other dissolved. The compromise is the whole reason lens design exists.
+        </p>
+        <enc-toggle id="opt" label="Optics" options="pinhole,lens" labels="pinhole,lens" value="lens"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Pinhole versus lens imaging"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Hecht §5; pinhole and lens imaging"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

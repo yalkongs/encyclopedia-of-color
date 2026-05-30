@@ -1,0 +1,44 @@
+{
+  "schema_version": "v2",
+  "id": "imaging-basics/shutter-speed-motion-freeze",
+  "title": {
+    "en": "Shutter: Freeze or Smear",
+    "ko": "셔터: 얼리거나 번지거나"
+  },
+  "subtitle": {
+    "en": "a short shutter freezes the moment; a long one paints the subject as a trail of where it was during the exposure",
+    "ko": "짧은 셔터는 순간을 얼리고, 긴 셔터는 노출 동안 피사체가 있었던 자취를 그림으로 남긴다"
+  },
+  "description": {
+    "en": "The shutter sets how long the sensor sees the scene. A fast shutter freezes; a slow one smears moving subjects into trails. Stills stay sharp at any speed; movement is what gets recorded as a streak.",
+    "ko": "셔터는 센서가 장면을 보는 시간을 정한다. 빠른 셔터는 얼리고, 느린 셔터는 움직이는 피사체를 자취로 번지게 한다. 정지한 것은 어떤 속도에서도 또렷하고, 움직임만 줄무늬로 기록된다."
+  },
+  "tier": "atom",
+  "bloom_level": "L1",
+  "domain": 10,
+  "category": "imaging-basics",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "textbook_refs": [
+    {
+      "source": "Adams",
+      "section": "shutter speed"
+    }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": [
+    "designers-path"
+  ],
+  "seo_keywords": [
+    "shutter speed",
+    "motion blur",
+    "freeze",
+    "panning",
+    "photography"
+  ],
+  "estimated_hours": 10,
+  "status": "shipped"
+}

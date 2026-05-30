@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Bokeh &amp; Aperture Blades — an out-of-focus highlight is a tiny picture…</title>
+  <meta name="description" content="A point of light off the focal plane spreads in the shape of the aperture. Many curved blades approximate a circle; few straight blades produce visible polygonal bokeh in highlights.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/camera-optics/bokeh-shape-aperture-blades/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Bokeh &amp; Aperture Blades">
+  <meta property="og:description"    content="A point of light off the focal plane spreads in the shape of the aperture. Many curved blades approximate a circle; few straight blades produce visible polygonal bokeh in highlights.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/camera-optics/bokeh-shape-aperture-blades/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/camera-optics--bokeh-shape-aperture-blades.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Bokeh &amp; Aperture Blades.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Bokeh &amp; Aperture Blades">
+  <meta name="twitter:description"   content="A point of light off the focal plane spreads in the shape of the aperture. Many curved blades approximate a circle; few straight blades produce visible polygonal bokeh in highlights.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/camera-optics--bokeh-shape-aperture-blades.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Bokeh &amp; Aperture Blades.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Bokeh & Aperture Blades","alternateName":"camera-optics/bokeh-shape-aperture-blades","description":"A point of light off the focal plane spreads in the shape of the aperture. Many curved blades approximate a circle; few straight blades produce visible polygonal bokeh in highlights.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"bokeh, aperture blades, iris, polygon, photography","url":"https://encyclopedia-of-color.vercel.app/modules/camera-optics/bokeh-shape-aperture-blades/","image":"https://encyclopedia-of-color.vercel.app/og/camera-optics--bokeh-shape-aperture-blades.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="camera-optics/bokeh-shape-aperture-blades">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.10">D10 Imaging</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Bokeh & Aperture Blades</h1>
+      <p class="module-subtitle">an out-of-focus highlight is a tiny picture of the aperture itself — a five-bladed iris paints pentagons, a fifteen-bladed iris paints discs</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A point of light that lies far from the focal plane spreads across the sensor in the shape of the aperture opening. With many curved blades the iris looks like a circle and bokeh balls come out smooth and round; with few straight blades the iris is a polygon and every highlight is the same polygon.
+        </p>
+        <div class="math-block" data-tex="\text{bokeh shape} \;=\; \text{aperture polygon (N blades)}"></div>
+        <p class="zone-guide">
+          Drag the blade count and watch the iris on the left and the bokeh highlights on the right take the same shape. Wide stop-down — the iris polygon shows through every out-of-focus spot in the picture.
+        </p>
+        <enc-slider id="blades" label="Aperture blades" min="2" max="15" step="1" value="6" unit=""></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Bokeh shape from aperture blade count"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Photography optics; aperture blade design"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
