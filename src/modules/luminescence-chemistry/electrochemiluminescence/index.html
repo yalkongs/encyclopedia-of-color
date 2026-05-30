@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>ECL — Light from Electrodes, No External Lamp — an electrode oxidises…</title>
+  <meta name="description" content="Cell schematic with ECL glow at electrode + I-V curve. Apply potential past threshold to ignite emission; over-potential degrades coreactant. Foundation of Roche Elecsys clinical assays.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/electrochemiluminescence/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="ECL — Light from Electrodes, No External Lamp">
+  <meta property="og:description"    content="Cell schematic with ECL glow at electrode + I-V curve. Apply potential past threshold to ignite emission; over-potential degrades coreactant. Foundation of Roche Elecsys clinical assays.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/electrochemiluminescence/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--electrochemiluminescence.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: ECL — Light from Electrodes, No External Lamp.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="ECL — Light from Electrodes, No External Lamp">
+  <meta name="twitter:description"   content="Cell schematic with ECL glow at electrode + I-V curve. Apply potential past threshold to ignite emission; over-potential degrades coreactant. Foundation of Roche Elecsys clinical assays.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--electrochemiluminescence.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: ECL — Light from Electrodes, No External Lamp.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"ECL — Light from Electrodes, No External Lamp","alternateName":"luminescence-chemistry/electrochemiluminescence","description":"Cell schematic with ECL glow at electrode + I-V curve. Apply potential past threshold to ignite emission; over-potential degrades coreactant. Foundation of Roche Elecsys clinical assays.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"ECL, electrochemiluminescence, Ru bipyridyl, Elecsys","url":"https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/electrochemiluminescence/","image":"https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--electrochemiluminescence.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="luminescence-chemistry/electrochemiluminescence">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L6">L6 Create</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">ECL — Light from Electrodes, No External Lamp</h1>
+      <p class="module-subtitle">an electrode oxidises [Ru(bipy)₃]²⁺ and reduces a coreactant; their electron-transfer recombination lands Ru in S₁, which emits the same 620 nm orange band</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          Electrochemiluminescence (ECL) is light from a redox reaction at an electrode. The classic system is [Ru(bipy)₃]²⁺ in tripropylamine (TPA) buffer. Applying ~+1.2 V at the electrode oxidises both Ru²⁺→Ru³⁺ and TPA→TPA•⁺. TPA•⁺ loses a proton to TPA•, a strong reductant that hands one electron back to Ru³⁺ landing it in the excited [Ru(bipy)₃]²⁺* singlet. Decay emits 620 nm orange light. No external lamp needed — used in clinical immunoassays (Elecsys).
+        </p>
+        <p class="zone-guide">
+          Drag the applied potential. Below the Ru²⁺/³⁺ threshold (~+1.05 V) nothing happens; above it, output rises sharply; further oxidation degrades TPA and quenches. The window shows the orange ECL glow at the active potential.
+        </p>
+        <enc-slider id="V" label="Applied potential (V vs Ag/AgCl)" min="80" max="160" step="2" value="120" unit=" (×10⁻²)"></enc-slider>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="ECL"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Bard Electrogenerated Chemiluminescence (2004)"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

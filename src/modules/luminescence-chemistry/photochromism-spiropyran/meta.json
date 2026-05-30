@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "luminescence-chemistry/photochromism-spiropyran",
+  "title": {
+    "en": "Photochromism — UV Opens a Ring, Colour Appears",
+    "ko": "포토크로미즘 — UV가 ring을 열면 색 등장"
+  },
+  "subtitle": {
+    "en": "a spiropyran's closed form is colourless; UV breaks the C-O bond, the molecule unfolds into the planar conjugated merocyanine, and the eyepiece goes blue",
+    "ko": "스피로피란 닫힌 형태는 무색; UV가 C-O 결합을 끊으면 평면 공액 merocyanine으로 펴져 청자색"
+  },
+  "description": {
+    "en": "SP/MC equilibrium driven by UV. Steady-state fraction = kf·UV/(kf·UV+kb). Two swatches (colourless SP, blue MC) + dynamic colour intensity bar follow the slider.",
+    "ko": "UV가 구동하는 SP/MC 평형. 정상상태 비율 = kf·UV/(kf·UV+kb). 두 swatch + 동적 색 강도 막대가 슬라이더 추적."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 3,
+  "category": "luminescence-chemistry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "Bouas-Laurent 2001 IUPAC", "section": "Photochromism" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["photochromism", "spiropyran", "merocyanine", "Transitions lens"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

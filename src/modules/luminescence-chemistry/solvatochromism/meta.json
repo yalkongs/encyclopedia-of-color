@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "luminescence-chemistry/solvatochromism",
+  "title": {
+    "en": "Solvatochromism — Solvent Polarity Shifts Colour",
+    "ko": "솔바토크로미즘 — 용매 극성이 색을 이동"
+  },
+  "subtitle": {
+    "en": "a dye with polar excited state is stabilised by polar solvents — λ_max red-shifts as polarity rises; Reichardt's betaine moves 350 nm across the polarity scale",
+    "ko": "극성 들뜬 상태 염료는 극성 용매에서 안정화 — λ_max가 극성 따라 적색 이동; 라이하르트 betaine은 350 nm 이동"
+  },
+  "description": {
+    "en": "Six solvents from hexane to water; Reichardt's betaine λ_max swings 460-920 nm. Flask swatch grid + spectrum-strip markers visualise the polarity-driven shift.",
+    "ko": "헥산~물까지 6개 용매; Reichardt betaine λ_max가 460-920 nm 변화. 플라스크 swatch + 스펙트럼 마커로 극성 이동 시각화."
+  },
+  "tier": "reference",
+  "bloom_level": "L5",
+  "domain": 3,
+  "category": "luminescence-chemistry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [6],
+  "textbook_refs": [
+    { "source": "Reichardt 2003", "section": "E_T(30) scale" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["solvatochromism", "Reichardt betaine", "E_T(30)", "solvent polarity"],
+  "estimated_hours": 12,
+  "status": "shipped"
+}

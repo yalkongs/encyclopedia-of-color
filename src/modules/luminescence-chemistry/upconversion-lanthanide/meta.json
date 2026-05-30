@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "luminescence-chemistry/upconversion-lanthanide",
+  "title": {
+    "en": "Upconversion — Two IR Photons, One Visible Photon",
+    "ko": "상향 변환 — IR 2개 → visible 1개"
+  },
+  "subtitle": {
+    "en": "two low-energy IR photons land on Yb³⁺, energy hops to Er³⁺, which emits one higher-energy visible photon — a single chemistry that defies energy in, lower energy out",
+    "ko": "IR 광자 2개가 Yb³⁺에 흡수, 에너지가 Er³⁺로 이동해 visible 1개 방출 — '들어간 에너지보다 큰 광자' 화학"
+  },
+  "description": {
+    "en": "Energy ladder diagram + intensity-quadratic output. Pump-power slider drives green and red emissions; log-log plot reveals the slope-2 signature.",
+    "ko": "에너지 사다리 + 강도-제곱 출력. 펌프 슬라이더가 녹/적 방출 구동; log-log 플롯에서 기울기 2 시그니처."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 3,
+  "category": "luminescence-chemistry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "Auzel 2004", "section": "Upconversion review" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["upconversion", "anti-Stokes", "Yb", "Er", "lanthanide"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

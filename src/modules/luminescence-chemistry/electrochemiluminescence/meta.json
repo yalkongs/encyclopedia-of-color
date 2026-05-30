@@ -1,0 +1,34 @@
+{
+  "schema_version": "v2",
+  "id": "luminescence-chemistry/electrochemiluminescence",
+  "title": {
+    "en": "ECL — Light from Electrodes, No External Lamp",
+    "ko": "ECL — 외부 광원 없이 전극에서 빛"
+  },
+  "subtitle": {
+    "en": "an electrode oxidises [Ru(bipy)₃]²⁺ and reduces a coreactant; their electron-transfer recombination lands Ru in S₁, which emits the same 620 nm orange band",
+    "ko": "전극이 Ru와 coreactant를 산화-환원, 재결합이 Ru를 S₁로 올려 620 nm 오렌지 방출"
+  },
+  "description": {
+    "en": "Cell schematic with ECL glow at electrode + I-V curve. Apply potential past threshold to ignite emission; over-potential degrades coreactant. Foundation of Roche Elecsys clinical assays.",
+    "ko": "전극 ECL glow + I-V 곡선. threshold 이상 인가하면 발광, 과전압은 coreactant 분해. Roche Elecsys 임상 분석 기반."
+  },
+  "tier": "reference",
+  "bloom_level": "L6",
+  "domain": 3,
+  "category": "luminescence-chemistry",
+  "layout": "A",
+  "prerequisites": [],
+  "leads_to": [],
+  "see_also": [],
+  "nassau_causes": [9],
+  "textbook_refs": [
+    { "source": "Bard 2004", "section": "ECL" }
+  ],
+  "standards": [],
+  "interaction_count": 1,
+  "learning_paths": ["designers-path"],
+  "seo_keywords": ["ECL", "electrochemiluminescence", "Ru bipyridyl", "Elecsys"],
+  "estimated_hours": 14,
+  "status": "shipped"
+}

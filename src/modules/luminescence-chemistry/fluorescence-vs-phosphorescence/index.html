@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Fluorescence vs Phosphorescence — Singlet vs Triplet — absorb a photo…</title>
+  <meta name="description" content="Jablonski diagram with absorption, S₁ fluorescence path, and T₁ phosphorescence path via ISC. Log-time decay curve contrasts ns and ms lifetimes; Stokes-shifted emission swatch.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/fluorescence-vs-phosphorescence/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Fluorescence vs Phosphorescence — Singlet vs Triplet">
+  <meta property="og:description"    content="Jablonski diagram with absorption, S₁ fluorescence path, and T₁ phosphorescence path via ISC. Log-time decay curve contrasts ns and ms lifetimes; Stokes-shifted emission swatch.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/fluorescence-vs-phosphorescence/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--fluorescence-vs-phosphorescence.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Fluorescence vs Phosphorescence — Singlet vs Triplet.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Fluorescence vs Phosphorescence — Singlet vs Triplet">
+  <meta name="twitter:description"   content="Jablonski diagram with absorption, S₁ fluorescence path, and T₁ phosphorescence path via ISC. Log-time decay curve contrasts ns and ms lifetimes; Stokes-shifted emission swatch.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--fluorescence-vs-phosphorescence.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Fluorescence vs Phosphorescence — Singlet vs Triplet.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Fluorescence vs Phosphorescence — Singlet vs Triplet","alternateName":"luminescence-chemistry/fluorescence-vs-phosphorescence","description":"Jablonski diagram with absorption, S₁ fluorescence path, and T₁ phosphorescence path via ISC. Log-time decay curve contrasts ns and ms lifetimes; Stokes-shifted emission swatch.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"fluorescence, phosphorescence, Jablonski, ISC, singlet","url":"https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/fluorescence-vs-phosphorescence/","image":"https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--fluorescence-vs-phosphorescence.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="luminescence-chemistry/fluorescence-vs-phosphorescence">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L4">L4 Analyze</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Fluorescence vs Phosphorescence — Singlet vs Triplet</h1>
+      <p class="module-subtitle">absorb a photon, drop to S₁, then either emit immediately (fluorescence, ns) or cross to T₁ first and emit after milliseconds-to-seconds (phosphorescence)</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          The Jablonski diagram lays it out: absorption populates S₁ (or higher); after fast vibrational relaxation the molecule sits at the v=0 level of S₁; from there it can either (a) emit a photon and drop to S₀ — <b>fluorescence</b>, ns timescale, allowed transition, small Stokes shift; or (b) intersystem-cross (ISC) to the triplet T₁ and emit slowly — <b>phosphorescence</b>, ms-to-min, forbidden by spin, larger Stokes shift.
+        </p>
+        <p class="zone-guide">
+          Toggle the pathway. The Jablonski diagram highlights the active transition; the time-resolved decay curve shows the contrasting lifetimes; the emission swatch shows the Stokes-shifted colour.
+        </p>
+        <enc-toggle id="path" label="Emission pathway" options="fluorescence,phosphorescence" value="fluorescence"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Fluorescence vs phosphorescence"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Lakowicz Principles of Fluorescence Spectroscopy (2006); Turro Modern Molecular Photochemistry"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Solvatochromism — Solvent Polarity Shifts Colour — a dye with polar e…</title>
+  <meta name="description" content="Six solvents from hexane to water; Reichardt's betaine λ_max swings 460-920 nm. Flask swatch grid + spectrum-strip markers visualise the polarity-driven shift.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/solvatochromism/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Solvatochromism — Solvent Polarity Shifts Colour">
+  <meta property="og:description"    content="Six solvents from hexane to water; Reichardt's betaine λ_max swings 460-920 nm. Flask swatch grid + spectrum-strip markers visualise the polarity-driven shift.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/solvatochromism/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--solvatochromism.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Solvatochromism — Solvent Polarity Shifts Colour.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Solvatochromism — Solvent Polarity Shifts Colour">
+  <meta name="twitter:description"   content="Six solvents from hexane to water; Reichardt's betaine λ_max swings 460-920 nm. Flask swatch grid + spectrum-strip markers visualise the polarity-driven shift.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--solvatochromism.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Solvatochromism — Solvent Polarity Shifts Colour.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Solvatochromism — Solvent Polarity Shifts Colour","alternateName":"luminescence-chemistry/solvatochromism","description":"Six solvents from hexane to water; Reichardt's betaine λ_max swings 460-920 nm. Flask swatch grid + spectrum-strip markers visualise the polarity-driven shift.","educationalLevel":"Advanced","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"solvatochromism, Reichardt betaine, E_T(30), solvent polarity","url":"https://encyclopedia-of-color.vercel.app/modules/luminescence-chemistry/solvatochromism/","image":"https://encyclopedia-of-color.vercel.app/og/luminescence-chemistry--solvatochromism.png"}</script>
+  <!-- AUTO-META v2 END -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../core/styles/base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <enc-module-shell layout="A" module-id="luminescence-chemistry/solvatochromism">
+    <header class="module-header">
+      <div class="chip-row">
+        <span class="chip" data-i18n="domain.3">D3 Chemistry</span>
+        <span class="chip" data-i18n="bloom.L5">L5 Evaluate</span>
+        <span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span>
+      </div>
+      <h1 class="module-title">Solvatochromism — Solvent Polarity Shifts the Colour</h1>
+      <p class="module-subtitle">a dye with polar excited state is stabilised by polar solvents — λ_max red-shifts as polarity rises; Reichardt's betaine moves 350 nm across the polarity scale</p>
+    </header>
+    <div class="workstation-A">
+      <aside class="control-panel">
+        <p class="zone-definition">
+          A solvatochromic dye changes its absorption maximum with solvent polarity. If the excited state is more polar than the ground state, polar solvents stabilise S₁ more than S₀, the gap narrows, λ_max red-shifts (<b>positive</b> solvatochromism). The reverse case (more polar S₀) gives <b>negative</b> solvatochromism. Reichardt's betaine dye is the canonical example, used to <em>define</em> the E_T(30) polarity scale.
+        </p>
+        <p class="zone-guide">
+          Pick a solvent. The swatch and absorption marker shift along the visible spectrum; the E_T(30) value places the solvent on the polarity scale.
+        </p>
+        <enc-toggle id="sol" label="Solvent" options="hexane,toluene,chloroform,acetone,methanol,water" value="acetone"></enc-toggle>
+      </aside>
+      <main class="canvas-viewport">
+        <enc-canvas-stage id="stage" tabindex="0" aria-label="Solvatochromism"></enc-canvas-stage>
+      </main>
+    </div>
+    <enc-citation-footer data-refs="Reichardt 2003 Solvents and Solvent Effects in Organic Chemistry"></enc-citation-footer>
+  </enc-module-shell>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
