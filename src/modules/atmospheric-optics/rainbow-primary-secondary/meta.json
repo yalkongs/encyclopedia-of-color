@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "atmospheric-optics/rainbow-primary-secondary",
+  "title": {"en": "Primary & Secondary Rainbows — Descartes Geometry", "ko": "1·2차 무지개 — 데카르트 기하"},
+  "subtitle": {"en": "Primary 42° (1 internal reflection) and secondary 51° (2 reflections, reversed colour order); dark Alexander's band between explained by no-caustic gap", "ko": "1차 42°(내부 반사 1회)와 2차 51°(반사 2회, 색 순서 반전); 사이 알렉산더 어두운 띠는 코스틱 부재"},
+  "description": {"en": "Impact-parameter slider traces wavelength-dependent ray paths through a water drop; table shows primary/secondary observed angles for 5 wavelengths.", "ko": "충돌 계수 슬라이더로 물방울 내 파장별 광선 경로를 추적하고 5개 파장의 1·2차 관측 각도 표를 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "atmospheric-optics",
+  "layout": "A", "prerequisites": ["refraction-snell/snells-law-interactive"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Lee Fraser 2001", "section": "Rainbow geometry"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["rainbow", "Descartes", "Alexander band"],
+  "estimated_hours": 8, "status": "shipped"
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Primary &amp; Secondary Rainbows — Descartes Geometry — Primary 42° (1 in…</title>
+  <meta name="description" content="Impact-parameter slider traces wavelength-dependent ray paths through a water drop; table shows primary/secondary observed angles for 5 wavelengths.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/rainbow-primary-secondary/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Primary &amp; Secondary Rainbows — Descartes Geometry">
+  <meta property="og:description"    content="Impact-parameter slider traces wavelength-dependent ray paths through a water drop; table shows primary/secondary observed angles for 5 wavelengths.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/rainbow-primary-secondary/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--rainbow-primary-secondary.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Primary &amp; Secondary Rainbows — Descartes Geometry.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Primary &amp; Secondary Rainbows — Descartes Geometry">
+  <meta name="twitter:description"   content="Impact-parameter slider traces wavelength-dependent ray paths through a water drop; table shows primary/secondary observed angles for 5 wavelengths.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--rainbow-primary-secondary.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Primary &amp; Secondary Rainbows — Descartes Geometry.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Primary & Secondary Rainbows — Descartes Geometry","alternateName":"atmospheric-optics/rainbow-primary-secondary","description":"Impact-parameter slider traces wavelength-dependent ray paths through a water drop; table shows primary/secondary observed angles for 5 wavelengths.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"rainbow, Descartes, Alexander band","url":"https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/rainbow-primary-secondary/","image":"https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--rainbow-primary-secondary.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="atmospheric-optics/rainbow-primary-secondary">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Primary & Secondary Rainbows — Descartes Geometry</h1>
+    <p class="module-subtitle">Primary rainbow: one internal reflection inside the drop, peaks at 42° from antisolar point; secondary: two internal reflections, 51° with reversed colour order — dark Alexander's band between</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Newton solved this in 1666. For each wavelength, calculate the angle of minimum deviation (∂D/∂θ_i = 0). Result: red appears on the outer edge of the primary (42.4°), violet on the inner (40.7°); secondary reverses (50.6° violet outer, 53.4° red inner) because of the extra reflection.</p>
+      <p class="zone-guide">Slide ray's impact parameter b/R from rim to centre to trace the cone of deviation.</p>
+      <enc-slider id="b" label="impact parameter b/R" min="0" max="1" step="0.01" value="0.86" unit=""></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Rainbow"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Descartes 1637 Meteora; Lee Fraser Rainbow Bridge 2001"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>

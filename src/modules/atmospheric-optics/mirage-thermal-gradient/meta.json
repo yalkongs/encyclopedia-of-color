@@ -1,0 +1,12 @@
+{
+  "schema_version": "v2", "id": "atmospheric-optics/mirage-thermal-gradient",
+  "title": {"en": "Mirage — Refractive-Index Gradient Over Hot Road", "ko": "신기루 — 뜨거운 노면의 굴절률 기울기"},
+  "subtitle": {"en": "Hot air n<cool air n; vertical n-gradient bends light, projecting inverted 'puddle' image; cold-sea version (Fata Morgana) floats ships above the horizon", "ko": "뜨거운 공기 n < 차가운 공기 n; 수직 n 기울기가 빛을 굽혀 거꾸로 '물웅덩이' 이미지 — 차가운 바다 위에서는 파타 모르가나"},
+  "description": {"en": "ΔT slider controls thermal gradient; ray-trace shows direct vs curved mirage ray + inverted virtual palm-tree image and n(y) profile inset.", "ko": "ΔT 슬라이더로 열 기울기 조절; 직진 vs 굽은 신기루 광선과 거꾸로 뒤집힌 야자나무 가상 이미지, n(y) 프로파일을 표시합니다."},
+  "tier": "reference", "bloom_level": "L3", "domain": 1, "category": "atmospheric-optics",
+  "layout": "A", "prerequisites": ["refraction-snell/snells-law-interactive"], "leads_to": [], "see_also": [],
+  "textbook_refs": [{"source": "Lehn 1985", "section": "Mirage"}],
+  "standards": [], "interaction_count": 1, "learning_paths": ["designers-path"],
+  "seo_keywords": ["mirage", "Fata Morgana", "refractive gradient"],
+  "estimated_hours": 8, "status": "shipped"
+}

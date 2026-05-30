@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- AUTO-META v2 START · do not edit, run `npm run inject-meta` -->
+  <title>Mirage — Refractive-Index Gradient Over Hot Road — Hot air n&lt;cool air…</title>
+  <meta name="description" content="ΔT slider controls thermal gradient; ray-trace shows direct vs curved mirage ray + inverted virtual palm-tree image and n(y) profile inset.">
+  <link rel="canonical" href="https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/mirage-thermal-gradient/">
+
+  <meta property="og:type"           content="website">
+  <meta property="og:site_name"      content="Interactive Encyclopedia of Color">
+  <meta property="og:title"          content="Mirage — Refractive-Index Gradient Over Hot Road">
+  <meta property="og:description"    content="ΔT slider controls thermal gradient; ray-trace shows direct vs curved mirage ray + inverted virtual palm-tree image and n(y) profile inset.">
+  <meta property="og:url"            content="https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/mirage-thermal-gradient/">
+  <meta property="og:image"          content="https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--mirage-thermal-gradient.png">
+  <meta property="og:image:width"    content="1200">
+  <meta property="og:image:height"   content="630">
+  <meta property="og:image:alt"      content="Interactive simulation: Mirage — Refractive-Index Gradient Over Hot Road.">
+  <meta property="og:locale"         content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+
+  <meta name="twitter:card"          content="summary_large_image">
+  <meta name="twitter:site"          content="@encyclopediacolor">
+  <meta name="twitter:title"         content="Mirage — Refractive-Index Gradient Over Hot Road">
+  <meta name="twitter:description"   content="ΔT slider controls thermal gradient; ray-trace shows direct vs curved mirage ray + inverted virtual palm-tree image and n(y) profile inset.">
+  <meta name="twitter:image"         content="https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--mirage-thermal-gradient.png">
+  <meta name="twitter:image:alt"     content="Interactive simulation: Mirage — Refractive-Index Gradient Over Hot Road.">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Mirage — Refractive-Index Gradient Over Hot Road","alternateName":"atmospheric-optics/mirage-thermal-gradient","description":"ΔT slider controls thermal gradient; ray-trace shows direct vs curved mirage ray + inverted virtual palm-tree image and n(y) profile inset.","educationalLevel":"Intermediate","learningResourceType":"Simulation","isPartOf":{"@type":"Collection","name":"Interactive Encyclopedia of Color"},"inLanguage":["en","ko"],"license":"https://creativecommons.org/licenses/by-sa/4.0/","keywords":"mirage, Fata Morgana, refractive gradient","url":"https://encyclopedia-of-color.vercel.app/modules/atmospheric-optics/mirage-thermal-gradient/","image":"https://encyclopedia-of-color.vercel.app/og/atmospheric-optics--mirage-thermal-gradient.png"}</script>
+  <!-- AUTO-META v2 END --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../../core/styles/base.css"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<enc-module-shell layout="A" module-id="atmospheric-optics/mirage-thermal-gradient">
+  <header class="module-header">
+    <div class="chip-row"><span class="chip" data-i18n="domain.1">D1 Optics</span><span class="chip" data-i18n="bloom.L3">L3 Apply</span><span class="chip chip-tier" data-tier="reference" data-i18n="tier.reference">Reference</span></div>
+    <h1 class="module-title">Mirage — Refractive-Index Gradient Over Hot Road</h1>
+    <p class="module-subtitle">Hot air n &lt; cool air n; vertical n-gradient bends light, producing inverted images that look like puddles of water on desert sand or asphalt</p>
+  </header>
+  <div class="workstation-A">
+    <aside class="control-panel">
+      <p class="zone-definition">Inferior mirage: hot air near ground has lower n (≈1.00027 at 60 °C vs 1.00029 at 20 °C). Light rays from distant objects bend upward, then to your eye — the brain projects the image below its real position, creating the illusion of water reflection. Superior mirages (cold sea air) produce floating ships ("Fata Morgana").</p>
+      <p class="zone-guide">Slide ground-temperature contrast.</p>
+      <enc-slider id="dt" label="ΔT (ground − air, °C)" min="0" max="60" step="1" value="40" unit="°C"></enc-slider>
+    </aside>
+    <main class="canvas-viewport"><enc-canvas-stage id="stage" tabindex="0" aria-label="Mirage"></enc-canvas-stage></main>
+  </div>
+  <enc-citation-footer data-refs="Lehn Mirage 1985; Young Distinguishing Mirage 2006"></enc-citation-footer>
+</enc-module-shell>
+<script type="module" src="./main.ts"></script>
+</body></html>
